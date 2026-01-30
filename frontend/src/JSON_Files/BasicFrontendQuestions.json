@@ -1,0 +1,5099 @@
+[
+  {
+    "id": 1,
+    "category": "HTML",
+    "level": "basic",
+    "question": "Which tag is used to create a hyperlink?",
+    "options": ["<link>", "<a>", "<href>", "<url>"],
+    "answerIndex": 1,
+    "explanation": "<a> tag is used for hyperlinks."
+  },
+  {
+    "id": 2,
+    "category": "HTML",
+    "level": "basic",
+    "question": "Which attribute is used to provide an image path?",
+    "options": ["href", "src", "path", "link"],
+    "answerIndex": 1,
+    "explanation": "src defines the image source path."
+  },
+  {
+    "id": 3,
+    "category": "HTML",
+    "level": "basic",
+    "question": "Which HTML tag is used for the largest heading?",
+    "options": ["<h6>", "<h1>", "<head>", "<title>"],
+    "answerIndex": 1,
+    "explanation": "<h1> is the largest heading."
+  },
+  {
+    "id": 4,
+    "category": "HTML",
+    "level": "basic",
+    "question": "Which tag is used to create a line break?",
+    "options": ["<br>", "<lb>", "<break>", "<hr>"],
+    "answerIndex": 0,
+    "explanation": "<br> adds a line break."
+  },
+  {
+    "id": 5,
+    "category": "HTML",
+    "level": "basic",
+    "question": "Which tag is used to create an unordered list?",
+    "options": ["<ol>", "<ul>", "<li>", "<list>"],
+    "answerIndex": 1,
+    "explanation": "<ul> creates an unordered list."
+  },
+  {
+    "id": 6,
+    "category": "HTML",
+    "level": "basic",
+    "question": "Which tag is used to define a table row?",
+    "options": ["<td>", "<tr>", "<th>", "<table-row>"],
+    "answerIndex": 1,
+    "explanation": "<tr> defines a table row."
+  },
+  {
+    "id": 7,
+    "category": "CSS",
+    "level": "basic",
+    "question": "Which CSS property changes text color?",
+    "options": ["font-style", "color", "text-color", "background-color"],
+    "answerIndex": 1,
+    "explanation": "color sets the text color."
+  },
+  {
+    "id": 8,
+    "category": "CSS",
+    "level": "basic",
+    "question": "Which symbol is used for class selector in CSS?",
+    "options": ["#", ".", "@", "*"],
+    "answerIndex": 1,
+    "explanation": "Dot (.) is used for class selector."
+  },
+  {
+    "id": 9,
+    "category": "CSS",
+    "level": "basic",
+    "question": "Which symbol is used for id selector in CSS?",
+    "options": ["#", ".", "@", "&"],
+    "answerIndex": 0,
+    "explanation": "Hash (#) is used for id selector."
+  },
+  {
+    "id": 10,
+    "category": "CSS",
+    "level": "basic",
+    "question": "Which property adds space inside an element?",
+    "options": ["margin", "padding", "border", "gap"],
+    "answerIndex": 1,
+    "explanation": "padding adds inner space."
+  },
+  {
+    "id": 11,
+    "category": "CSS",
+    "level": "basic",
+    "question": "Which property adds space outside an element?",
+    "options": ["margin", "padding", "border-spacing", "gap"],
+    "answerIndex": 0,
+    "explanation": "margin adds outer space."
+  },
+  {
+    "id": 12,
+    "category": "CSS",
+    "level": "basic",
+    "question": "Which display value makes items align easily in row/column?",
+    "options": ["block", "inline", "flex", "none"],
+    "answerIndex": 2,
+    "explanation": "flex is used for flexible layouts."
+  },
+  {
+    "id": 13,
+    "category": "CSS",
+    "level": "basic",
+    "question": "Which property makes element corners round?",
+    "options": ["corner-radius", "border-round", "border-radius", "radius"],
+    "answerIndex": 2,
+    "explanation": "border-radius rounds corners."
+  },
+  {
+    "id": 14,
+    "category": "CSS",
+    "level": "basic",
+    "question": "Which property sets the background color?",
+    "options": ["bgcolor", "background-color", "color", "background-style"],
+    "answerIndex": 1,
+    "explanation": "background-color sets element background."
+  },
+  {
+    "id": 15,
+    "category": "JavaScript",
+    "level": "basic",
+    "question": "Which keyword declares a block-scoped variable?",
+    "options": ["var", "let", "function", "scope"],
+    "answerIndex": 1,
+    "explanation": "let is block-scoped."
+  },
+  {
+    "id": 16,
+    "category": "JavaScript",
+    "level": "basic",
+    "question": "Which keyword is used to define a constant?",
+    "options": ["let", "const", "var", "fixed"],
+    "answerIndex": 1,
+    "explanation": "const defines a constant binding."
+  },
+  {
+    "id": 17,
+    "category": "JavaScript",
+    "level": "basic",
+    "question": "Which operator checks value and type both?",
+    "options": ["==", "=", "===", "!="],
+    "answerIndex": 2,
+    "explanation": "=== checks value and type."
+  },
+  {
+    "id": 18,
+    "category": "JavaScript",
+    "level": "basic",
+    "question": "What is the output of typeof [] ?",
+    "options": ["array", "object", "list", "undefined"],
+    "answerIndex": 1,
+    "explanation": "Arrays are objects in JavaScript."
+  },
+  {
+    "id": 19,
+    "category": "JavaScript",
+    "level": "basic",
+    "question": "Which method converts JSON string to object?",
+    "options": [
+      "JSON.stringify()",
+      "JSON.parse()",
+      "JSON.toObject()",
+      "JSON.convert()"
+    ],
+    "answerIndex": 1,
+    "explanation": "JSON.parse converts string to object."
+  },
+  {
+    "id": 20,
+    "category": "JavaScript",
+    "level": "basic",
+    "question": "Which method converts object to JSON string?",
+    "options": [
+      "JSON.parse()",
+      "JSON.stringify()",
+      "JSON.encode()",
+      "JSON.objectify()"
+    ],
+    "answerIndex": 1,
+    "explanation": "JSON.stringify converts object to string."
+  },
+  {
+    "id": 21,
+    "category": "JavaScript",
+    "level": "basic",
+    "question": "Which array method adds an item at the end?",
+    "options": ["pop()", "push()", "shift()", "unshift()"],
+    "answerIndex": 1,
+    "explanation": "push() adds at the end."
+  },
+  {
+    "id": 22,
+    "category": "JavaScript",
+    "level": "basic",
+    "question": "Which array method removes the last item?",
+    "options": ["pop()", "push()", "shift()", "unshift()"],
+    "answerIndex": 0,
+    "explanation": "pop() removes last item."
+  },
+  {
+    "id": 23,
+    "category": "JavaScript",
+    "level": "basic",
+    "question": "Which array method removes the first item?",
+    "options": ["pop()", "shift()", "push()", "slice()"],
+    "answerIndex": 1,
+    "explanation": "shift() removes first item."
+  },
+  {
+    "id": 24,
+    "category": "JavaScript",
+    "level": "basic",
+    "question": "Which array method adds an item at the start?",
+    "options": ["push()", "unshift()", "shift()", "pop()"],
+    "answerIndex": 1,
+    "explanation": "unshift() adds at the start."
+  },
+  {
+    "id": 25,
+    "category": "JavaScript",
+    "level": "basic",
+    "question": "Which function runs once after a delay?",
+    "options": ["setInterval()", "setTimeout()", "runAfter()", "delay()"],
+    "answerIndex": 1,
+    "explanation": "setTimeout runs once after delay."
+  },
+  {
+    "id": 26,
+    "category": "JavaScript",
+    "level": "basic",
+    "question": "Which function runs repeatedly at intervals?",
+    "options": ["setInterval()", "setTimeout()", "repeat()", "loopTimer()"],
+    "answerIndex": 0,
+    "explanation": "setInterval runs repeatedly."
+  },
+  {
+    "id": 27,
+    "category": "JavaScript",
+    "level": "basic",
+    "question": "Which loop is commonly used to iterate arrays (modern JS)?",
+    "options": ["for..in", "for..of", "switch", "goto"],
+    "answerIndex": 1,
+    "explanation": "for..of iterates values of arrays."
+  },
+  {
+    "id": 28,
+    "category": "JavaScript",
+    "level": "basic",
+    "question": "Which method joins array items into a string?",
+    "options": ["join()", "merge()", "concat()", "link()"],
+    "answerIndex": 0,
+    "explanation": "join() returns a string."
+  },
+  {
+    "id": 29,
+    "category": "JavaScript",
+    "level": "basic",
+    "question": "Which method creates a new array with filtered items?",
+    "options": ["filter()", "find()", "map()", "reduce()"],
+    "answerIndex": 0,
+    "explanation": "filter() returns items that match condition."
+  },
+  {
+    "id": 30,
+    "category": "JavaScript",
+    "level": "basic",
+    "question": "Which method creates a new array by transforming items?",
+    "options": ["map()", "filter()", "find()", "push()"],
+    "answerIndex": 0,
+    "explanation": "map() returns transformed array."
+  },
+  {
+    "id": 31,
+    "category": "React",
+    "level": "basic",
+    "question": "React is mainly used for building what?",
+    "options": ["Database", "User Interface", "Server", "Compiler"],
+    "answerIndex": 1,
+    "explanation": "React is used to build UI."
+  },
+  {
+    "id": 32,
+    "category": "React",
+    "level": "basic",
+    "question": "Which hook is used for state in functional components?",
+    "options": ["useFetch", "useState", "useData", "useClass"],
+    "answerIndex": 1,
+    "explanation": "useState is used for state."
+  },
+  {
+    "id": 33,
+    "category": "React",
+    "level": "basic",
+    "question": "Which hook is used for side effects?",
+    "options": ["useEffect", "useState", "useSide", "useMemo"],
+    "answerIndex": 0,
+    "explanation": "useEffect handles side effects."
+  },
+  {
+    "id": 34,
+    "category": "React",
+    "level": "basic",
+    "question": "Props are used to pass data from?",
+    "options": [
+      "Child to Parent",
+      "Parent to Child",
+      "Server to DB",
+      "DB to Server"
+    ],
+    "answerIndex": 1,
+    "explanation": "Props flow from parent to child."
+  },
+  {
+    "id": 35,
+    "category": "React",
+    "level": "basic",
+    "question": "State in React is?",
+    "options": [
+      "Read-only",
+      "Mutable data that affects UI",
+      "Only for CSS",
+      "Only for routes"
+    ],
+    "answerIndex": 1,
+    "explanation": "State updates can re-render UI."
+  },
+  {
+    "id": 36,
+    "category": "React",
+    "level": "basic",
+    "question": "What is a key used for in React lists?",
+    "options": [
+      "To style elements",
+      "To uniquely identify items",
+      "To fetch API",
+      "To create routes"
+    ],
+    "answerIndex": 1,
+    "explanation": "Keys help React identify list items."
+  },
+  {
+    "id": 37,
+    "category": "React",
+    "level": "basic",
+    "question": "Which prop is used to render nested components?",
+    "options": ["props.child", "props.children", "props.inside", "props.inner"],
+    "answerIndex": 1,
+    "explanation": "props.children renders nested content."
+  },
+  {
+    "id": 38,
+    "category": "React",
+    "level": "basic",
+    "question": "What is the default port for React dev server (common)?",
+    "options": ["3000", "5000", "8000", "4200"],
+    "answerIndex": 0,
+    "explanation": "React commonly runs on port 3000."
+  },
+  {
+    "id": 39,
+    "category": "React",
+    "level": "basic",
+    "question": "Which hook memoizes a value?",
+    "options": ["useMemo", "useValue", "useCache", "useKeep"],
+    "answerIndex": 0,
+    "explanation": "useMemo memoizes a computed value."
+  },
+  {
+    "id": 40,
+    "category": "React",
+    "level": "basic",
+    "question": "Which hook memoizes a function?",
+    "options": ["useMemo", "useCallback", "useFunction", "useRef"],
+    "answerIndex": 1,
+    "explanation": "useCallback memoizes a function."
+  },
+  {
+    "id": 41,
+    "category": "React Router",
+    "level": "basic",
+    "question": "Which component is used to navigate without reloading the page?",
+    "options": ["<a>", "<Link>", "<Route>", "<Switch>"],
+    "answerIndex": 1,
+    "explanation": "<Link> is used for SPA navigation."
+  },
+  {
+    "id": 42,
+    "category": "React Router",
+    "level": "basic",
+    "question": "Which hook is used to navigate programmatically in React Router v6?",
+    "options": ["useHistory", "useNavigate", "useRoute", "useRouter"],
+    "answerIndex": 1,
+    "explanation": "useNavigate is used in React Router v6."
+  },
+  {
+    "id": 43,
+    "category": "HTTP",
+    "level": "basic",
+    "question": "Which HTTP method is used to fetch data?",
+    "options": ["GET", "POST", "PUT", "DELETE"],
+    "answerIndex": 0,
+    "explanation": "GET is used to fetch data."
+  },
+  {
+    "id": 44,
+    "category": "HTTP",
+    "level": "basic",
+    "question": "Which HTTP method is used to create new data?",
+    "options": ["GET", "POST", "PUT", "DELETE"],
+    "answerIndex": 1,
+    "explanation": "POST is used to create data."
+  },
+  {
+    "id": 45,
+    "category": "HTTP",
+    "level": "basic",
+    "question": "Which HTTP method is used to update existing data (full update)?",
+    "options": ["GET", "POST", "PUT", "TRACE"],
+    "answerIndex": 2,
+    "explanation": "PUT is used to update/replace data."
+  },
+  {
+    "id": 46,
+    "category": "HTTP",
+    "level": "basic",
+    "question": "Which status code means 'Not Found'?",
+    "options": ["200", "301", "404", "500"],
+    "answerIndex": 2,
+    "explanation": "404 means Not Found."
+  },
+  {
+    "id": 47,
+    "category": "HTTP",
+    "level": "basic",
+    "question": "Which status code means 'OK'?",
+    "options": ["200", "201", "401", "500"],
+    "answerIndex": 0,
+    "explanation": "200 means OK."
+  },
+  {
+    "id": 48,
+    "category": "HTTP",
+    "level": "basic",
+    "question": "Which status code means 'Created'?",
+    "options": ["200", "201", "404", "500"],
+    "answerIndex": 1,
+    "explanation": "201 means Created."
+  },
+  {
+    "id": 49,
+    "category": "Node.js",
+    "level": "basic",
+    "question": "Node.js is based on which JavaScript engine?",
+    "options": ["SpiderMonkey", "V8", "Chakra", "Nashorn"],
+    "answerIndex": 1,
+    "explanation": "Node.js uses Google's V8 engine."
+  },
+  {
+    "id": 50,
+    "category": "Node.js",
+    "level": "basic",
+    "question": "Which keyword is used to import a module in CommonJS?",
+    "options": ["import", "require", "include", "using"],
+    "answerIndex": 1,
+    "explanation": "require is used in CommonJS."
+  },
+  {
+    "id": 51,
+    "category": "Node.js",
+    "level": "basic",
+    "question": "Which object is used to work with file system in Node?",
+    "options": ["fs", "http", "path", "net"],
+    "answerIndex": 0,
+    "explanation": "fs module is used for file system."
+  },
+  {
+    "id": 52,
+    "category": "Express.js",
+    "level": "basic",
+    "question": "Express is used to build what?",
+    "options": ["Frontend UI", "Backend server", "Database", "CSS framework"],
+    "answerIndex": 1,
+    "explanation": "Express is a Node.js framework for servers."
+  },
+  {
+    "id": 53,
+    "category": "Express.js",
+    "level": "basic",
+    "question": "Which method is used to create a GET route in Express?",
+    "options": ["app.get()", "app.fetch()", "app.routeGet()", "app.read()"],
+    "answerIndex": 0,
+    "explanation": "app.get() handles GET requests."
+  },
+  {
+    "id": 54,
+    "category": "Express.js",
+    "level": "basic",
+    "question": "Which method is used to create a POST route in Express?",
+    "options": ["app.post()", "app.push()", "app.send()", "app.create()"],
+    "answerIndex": 0,
+    "explanation": "app.post() handles POST requests."
+  },
+  {
+    "id": 55,
+    "category": "Express.js",
+    "level": "basic",
+    "question": "Which middleware parses JSON body in Express?",
+    "options": [
+      "express.text()",
+      "express.json()",
+      "express.body()",
+      "express.parse()"
+    ],
+    "answerIndex": 1,
+    "explanation": "express.json() parses JSON request body."
+  },
+  {
+    "id": 56,
+    "category": "Express.js",
+    "level": "basic",
+    "question": "req and res stand for?",
+    "options": [
+      "request, response",
+      "read, send",
+      "react, server",
+      "route, system"
+    ],
+    "answerIndex": 0,
+    "explanation": "req=request, res=response."
+  },
+  {
+    "id": 57,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "MongoDB stores data in which structure?",
+    "options": ["Tables", "Rows", "Documents", "Sheets"],
+    "answerIndex": 2,
+    "explanation": "MongoDB stores documents."
+  },
+  {
+    "id": 58,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "MongoDB is a ___ database.",
+    "options": ["Relational", "NoSQL", "Spreadsheet", "Graph only"],
+    "answerIndex": 1,
+    "explanation": "MongoDB is a NoSQL database."
+  },
+  {
+    "id": 59,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "Which command shows all databases in Mongo shell?",
+    "options": ["show dbs", "list db", "show database", "db.show()"],
+    "answerIndex": 0,
+    "explanation": "show dbs lists all databases."
+  },
+  {
+    "id": 60,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "Which method is used to find documents in MongoDB?",
+    "options": ["find()", "search()", "get()", "select()"],
+    "answerIndex": 0,
+    "explanation": "find() returns matching documents."
+  },
+  {
+    "id": 61,
+    "category": "Mongoose",
+    "level": "basic",
+    "question": "Mongoose is used for?",
+    "options": [
+      "CSS styling",
+      "MongoDB object modeling",
+      "React routing",
+      "Testing only"
+    ],
+    "answerIndex": 1,
+    "explanation": "Mongoose is an ODM for MongoDB."
+  },
+  {
+    "id": 62,
+    "category": "Mongoose",
+    "level": "basic",
+    "question": "In Mongoose, a Schema defines?",
+    "options": [
+      "UI layout",
+      "Document structure",
+      "Routing paths",
+      "API tools"
+    ],
+    "answerIndex": 1,
+    "explanation": "Schema defines document fields and types."
+  },
+  {
+    "id": 63,
+    "category": "Auth",
+    "level": "basic",
+    "question": "JWT stands for?",
+    "options": [
+      "Java Web Token",
+      "JSON Web Token",
+      "Join Web Token",
+      "JSON Wide Token"
+    ],
+    "answerIndex": 1,
+    "explanation": "JWT = JSON Web Token."
+  },
+  {
+    "id": 64,
+    "category": "Auth",
+    "level": "basic",
+    "question": "Which HTTP header usually carries JWT token?",
+    "options": ["Content-Type", "Authorization", "Accept", "Host"],
+    "answerIndex": 1,
+    "explanation": "Authorization header commonly carries JWT."
+  },
+  {
+    "id": 65,
+    "category": "Web",
+    "level": "basic",
+    "question": "CORS is related to?",
+    "options": [
+      "Styling",
+      "Cross origin requests",
+      "Database indexing",
+      "File uploads"
+    ],
+    "answerIndex": 1,
+    "explanation": "CORS controls cross-origin requests."
+  },
+  {
+    "id": 66,
+    "category": "Git",
+    "level": "basic",
+    "question": "Which command checks git status?",
+    "options": ["git check", "git status", "git state", "git info"],
+    "answerIndex": 1,
+    "explanation": "git status shows current state."
+  },
+  {
+    "id": 67,
+    "category": "Git",
+    "level": "basic",
+    "question": "Which command stages files?",
+    "options": ["git push", "git add", "git stage", "git upload"],
+    "answerIndex": 1,
+    "explanation": "git add stages changes."
+  },
+  {
+    "id": 68,
+    "category": "Git",
+    "level": "basic",
+    "question": "Which command commits changes?",
+    "options": ["git commit", "git push", "git save", "git pack"],
+    "answerIndex": 0,
+    "explanation": "git commit creates a commit."
+  },
+  {
+    "id": 69,
+    "category": "Git",
+    "level": "basic",
+    "question": "Which command creates a new branch?",
+    "options": [
+      "git branch <name>",
+      "git new branch",
+      "git checkout <name>",
+      "git make <name>"
+    ],
+    "answerIndex": 0,
+    "explanation": "git branch <name> creates a branch."
+  },
+  {
+    "id": 70,
+    "category": "Git",
+    "level": "basic",
+    "question": "Which command switches branch (modern way)?",
+    "options": ["git move", "git switch", "git shift", "git swap"],
+    "answerIndex": 1,
+    "explanation": "git switch changes branches."
+  },
+  {
+    "id": 71,
+    "category": "JavaScript",
+    "level": "basic",
+    "question": "Which value is falsy?",
+    "options": ["'0'", "[]", "0", "{}"],
+    "answerIndex": 2,
+    "explanation": "0 is a falsy value."
+  },
+  {
+    "id": 72,
+    "category": "JavaScript",
+    "level": "basic",
+    "question": "Which method finds the first matching item in array?",
+    "options": ["find()", "filter()", "map()", "reduce()"],
+    "answerIndex": 0,
+    "explanation": "find() returns first matching element."
+  },
+  {
+    "id": 73,
+    "category": "JavaScript",
+    "level": "basic",
+    "question": "Which method checks if array includes a value?",
+    "options": ["has()", "includes()", "contains()", "inArray()"],
+    "answerIndex": 1,
+    "explanation": "includes() checks value existence."
+  },
+  {
+    "id": 74,
+    "category": "JavaScript",
+    "level": "basic",
+    "question": "Which keyword is used to handle errors in try block?",
+    "options": ["catch", "error", "except", "handle"],
+    "answerIndex": 0,
+    "explanation": "catch handles errors."
+  },
+  {
+    "id": 75,
+    "category": "JavaScript",
+    "level": "basic",
+    "question": "Which statement is used to exit a loop?",
+    "options": ["stop", "break", "exit", "end"],
+    "answerIndex": 1,
+    "explanation": "break exits the loop."
+  },
+  {
+    "id": 76,
+    "category": "JavaScript",
+    "level": "basic",
+    "question": "Which keyword is used to create a function?",
+    "options": ["func", "function", "def", "fn"],
+    "answerIndex": 1,
+    "explanation": "function keyword creates a function."
+  },
+  {
+    "id": 77,
+    "category": "React",
+    "level": "basic",
+    "question": "React components should return what?",
+    "options": ["A number", "JSX", "Only CSS", "Only JSON"],
+    "answerIndex": 1,
+    "explanation": "Components return JSX."
+  },
+  {
+    "id": 78,
+    "category": "React",
+    "level": "basic",
+    "question": "Which hook gives a mutable reference object?",
+    "options": ["useMemo", "useCallback", "useRef", "useState"],
+    "answerIndex": 2,
+    "explanation": "useRef returns a mutable ref object."
+  },
+  {
+    "id": 79,
+    "category": "React",
+    "level": "basic",
+    "question": "Which lifecycle is replaced by useEffect in functional components?",
+    "options": [
+      "constructor only",
+      "componentDidMount/Update/Unmount",
+      "render",
+      "setState"
+    ],
+    "answerIndex": 1,
+    "explanation": "useEffect can handle mount/update/unmount logic."
+  },
+  {
+    "id": 80,
+    "category": "React Router",
+    "level": "basic",
+    "question": "Which component defines a path and element?",
+    "options": ["<Link>", "<Route>", "<Router>", "<Navigate>"],
+    "answerIndex": 1,
+    "explanation": "<Route> maps a path to an element."
+  },
+  {
+    "id": 81,
+    "category": "React Router",
+    "level": "basic",
+    "question": "Which component is used to redirect in v6?",
+    "options": ["<Redirect>", "<Navigate>", "<Go>", "<Switch>"],
+    "answerIndex": 1,
+    "explanation": "<Navigate> is used for redirects in v6."
+  },
+  {
+    "id": 82,
+    "category": "Node.js",
+    "level": "basic",
+    "question": "npm stands for?",
+    "options": [
+      "Node Project Manager",
+      "Node Package Manager",
+      "New Package Module",
+      "Node Program Maker"
+    ],
+    "answerIndex": 1,
+    "explanation": "npm = Node Package Manager."
+  },
+  {
+    "id": 83,
+    "category": "Node.js",
+    "level": "basic",
+    "question": "Which file usually stores dependencies list?",
+    "options": ["index.html", "package.json", "server.js", ".env"],
+    "answerIndex": 1,
+    "explanation": "package.json stores dependencies."
+  },
+  {
+    "id": 84,
+    "category": "Express.js",
+    "level": "basic",
+    "question": "Which Express method starts the server?",
+    "options": ["app.run()", "app.listen()", "app.start()", "app.open()"],
+    "answerIndex": 1,
+    "explanation": "app.listen starts server on a port."
+  },
+  {
+    "id": 85,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "In MongoDB, the unique identifier field is?",
+    "options": ["id", "_id", "uid", "key"],
+    "answerIndex": 1,
+    "explanation": "_id is default unique identifier."
+  },
+  {
+    "id": 86,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "Which operation removes documents?",
+    "options": ["deleteOne()", "removeAll()", "dropRow()", "cut()"],
+    "answerIndex": 0,
+    "explanation": "deleteOne deletes one matching document."
+  },
+  {
+    "id": 87,
+    "category": "Web",
+    "level": "basic",
+    "question": "Which protocol is used for secure websites?",
+    "options": ["HTTP", "HTTPS", "FTP", "SMTP"],
+    "answerIndex": 1,
+    "explanation": "HTTPS is secure HTTP."
+  },
+  {
+    "id": 88,
+    "category": "Web",
+    "level": "basic",
+    "question": "Which data format is commonly used in REST APIs?",
+    "options": ["XML only", "JSON", "DOCX", "PNG"],
+    "answerIndex": 1,
+    "explanation": "JSON is common for REST APIs."
+  },
+  {
+    "id": 89,
+    "category": "CSS",
+    "level": "basic",
+    "question": "Which unit is relative to root font-size?",
+    "options": ["px", "rem", "cm", "pt"],
+    "answerIndex": 1,
+    "explanation": "rem is relative to root font-size."
+  },
+  {
+    "id": 90,
+    "category": "CSS",
+    "level": "basic",
+    "question": "Which property is used to make text bold?",
+    "options": ["font-weight", "text-style", "bold", "font-bold"],
+    "answerIndex": 0,
+    "explanation": "font-weight controls boldness."
+  },
+  {
+    "id": 91,
+    "category": "HTML",
+    "level": "basic",
+    "question": "Which input type hides entered text?",
+    "options": ["text", "password", "hidden", "secure"],
+    "answerIndex": 1,
+    "explanation": "password type masks input."
+  },
+  {
+    "id": 92,
+    "category": "HTML",
+    "level": "basic",
+    "question": "Which tag is used to collect user input?",
+    "options": ["<form>", "<input>", "<field>", "<data>"],
+    "answerIndex": 1,
+    "explanation": "<input> collects user input."
+  },
+  {
+    "id": 93,
+    "category": "JavaScript",
+    "level": "basic",
+    "question": "Which keyword stops function execution and returns a value?",
+    "options": ["stop", "return", "break", "exit"],
+    "answerIndex": 1,
+    "explanation": "return exits function and returns value."
+  },
+  {
+    "id": 94,
+    "category": "JavaScript",
+    "level": "basic",
+    "question": "Which built-in method converts string to number?",
+    "options": ["Number()", "toString()", "stringify()", "join()"],
+    "answerIndex": 0,
+    "explanation": "Number() converts to number."
+  },
+  {
+    "id": 95,
+    "category": "React",
+    "level": "basic",
+    "question": "Which is correct to update state based on previous state?",
+    "options": [
+      "setCount(count + 1)",
+      "setCount(prev => prev + 1)",
+      "count++",
+      "updateCount()"
+    ],
+    "answerIndex": 1,
+    "explanation": "Functional update uses previous value safely."
+  },
+  {
+    "id": 96,
+    "category": "React",
+    "level": "basic",
+    "question": "Which hook is used to read context value?",
+    "options": ["useContext", "useStore", "useProvider", "useRedux"],
+    "answerIndex": 0,
+    "explanation": "useContext reads a context value."
+  },
+  {
+    "id": 97,
+    "category": "Express.js",
+    "level": "basic",
+    "question": "Which package is commonly used to load .env variables?",
+    "options": ["envify", "dotenv", "config-js", "safe-env"],
+    "answerIndex": 1,
+    "explanation": "dotenv loads environment variables."
+  },
+  {
+    "id": 98,
+    "category": "Auth",
+    "level": "basic",
+    "question": "Which is safer for storing tokens in browser (common recommendation)?",
+    "options": [
+      "localStorage",
+      "sessionStorage",
+      "HttpOnly cookies",
+      "window.name"
+    ],
+    "answerIndex": 2,
+    "explanation": "HttpOnly cookies reduce XSS token theft risk."
+  },
+  {
+    "id": 99,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "Which method updates one document in MongoDB?",
+    "options": ["updateOne()", "update()", "modifyRow()", "setOne()"],
+    "answerIndex": 0,
+    "explanation": "updateOne updates a single matching document."
+  },
+  {
+    "id": 100,
+    "category": "Mongoose",
+    "level": "basic",
+    "question": "Which method creates a new document in Mongoose model?",
+    "options": [
+      "Model.create()",
+      "Model.add()",
+      "Model.insertRow()",
+      "Model.newDoc()"
+    ],
+    "answerIndex": 0,
+    "explanation": "Model.create() creates a new document."
+  },
+  {
+    "id": 101,
+    "category": "HTML",
+    "level": "basic",
+    "question": "Which tag is used to define the document title shown in the browser tab?",
+    "options": ["<meta>", "<title>", "<head>", "<h1>"],
+    "answerIndex": 1,
+    "explanation": "<title> sets the browser tab title."
+  },
+  {
+    "id": 102,
+    "category": "HTML",
+    "level": "basic",
+    "question": "Which tag is used to define a paragraph?",
+    "options": ["<p>", "<para>", "<text>", "<span>"],
+    "answerIndex": 0,
+    "explanation": "<p> defines a paragraph."
+  },
+  {
+    "id": 103,
+    "category": "HTML",
+    "level": "basic",
+    "question": "Which tag is used to create a horizontal line?",
+    "options": ["<br>", "<line>", "<hr>", "<hl>"],
+    "answerIndex": 2,
+    "explanation": "<hr> creates a horizontal rule."
+  },
+  {
+    "id": 104,
+    "category": "HTML",
+    "level": "basic",
+    "question": "Which attribute makes an input field required?",
+    "options": ["validate", "required", "must", "needed"],
+    "answerIndex": 1,
+    "explanation": "required makes the field mandatory."
+  },
+  {
+    "id": 105,
+    "category": "HTML",
+    "level": "basic",
+    "question": "Which attribute provides placeholder text in an input?",
+    "options": ["label", "hint", "placeholder", "value"],
+    "answerIndex": 2,
+    "explanation": "placeholder shows hint text inside input."
+  },
+  {
+    "id": 106,
+    "category": "HTML",
+    "level": "basic",
+    "question": "Which tag is used to group form elements with a caption?",
+    "options": ["<group>", "<fieldset>", "<section>", "<legend>"],
+    "answerIndex": 1,
+    "explanation": "<fieldset> groups related form controls (caption via <legend>)."
+  },
+  {
+    "id": 107,
+    "category": "HTML",
+    "level": "basic",
+    "question": "Which tag is used to play video in HTML?",
+    "options": ["<media>", "<video>", "<movie>", "<player>"],
+    "answerIndex": 1,
+    "explanation": "<video> embeds video content."
+  },
+  {
+    "id": 108,
+    "category": "HTML",
+    "level": "basic",
+    "question": "Which tag is used to play audio in HTML?",
+    "options": ["<sound>", "<audio>", "<mp3>", "<player>"],
+    "answerIndex": 1,
+    "explanation": "<audio> embeds audio content."
+  },
+  {
+    "id": 109,
+    "category": "HTML",
+    "level": "basic",
+    "question": "Which semantic tag is commonly used for page navigation links?",
+    "options": ["<nav>", "<menu>", "<navigate>", "<links>"],
+    "answerIndex": 0,
+    "explanation": "<nav> represents navigation section."
+  },
+  {
+    "id": 110,
+    "category": "CSS",
+    "level": "basic",
+    "question": "Which property sets the font size?",
+    "options": ["font-style", "font-size", "text-size", "size"],
+    "answerIndex": 1,
+    "explanation": "font-size sets the size of text."
+  },
+  {
+    "id": 111,
+    "category": "CSS",
+    "level": "basic",
+    "question": "Which property is used to change the font?",
+    "options": ["font-family", "font-text", "text-font", "family-font"],
+    "answerIndex": 0,
+    "explanation": "font-family sets the font."
+  },
+  {
+    "id": 112,
+    "category": "CSS",
+    "level": "basic",
+    "question": "Which property controls the space between lines of text?",
+    "options": ["line-height", "letter-spacing", "word-spacing", "text-gap"],
+    "answerIndex": 0,
+    "explanation": "line-height controls line spacing."
+  },
+  {
+    "id": 113,
+    "category": "CSS",
+    "level": "basic",
+    "question": "Which property centers text horizontally inside an element?",
+    "options": [
+      "text-align: center",
+      "align-text: center",
+      "center-text: true",
+      "justify: center"
+    ],
+    "answerIndex": 0,
+    "explanation": "text-align: center centers inline text."
+  },
+  {
+    "id": 114,
+    "category": "CSS",
+    "level": "basic",
+    "question": "Which position value places an element relative to the viewport?",
+    "options": ["relative", "absolute", "fixed", "static"],
+    "answerIndex": 2,
+    "explanation": "fixed positions relative to the viewport."
+  },
+  {
+    "id": 115,
+    "category": "CSS",
+    "level": "basic",
+    "question": "Which property controls stacking order of positioned elements?",
+    "options": ["z-index", "stack-order", "layer", "order-index"],
+    "answerIndex": 0,
+    "explanation": "z-index controls stacking order."
+  },
+  {
+    "id": 116,
+    "category": "CSS",
+    "level": "basic",
+    "question": "Which pseudo-class targets an element when mouse is over it?",
+    "options": [":focus", ":hover", ":active", ":visited"],
+    "answerIndex": 1,
+    "explanation": ":hover applies styles on mouse hover."
+  },
+  {
+    "id": 117,
+    "category": "CSS",
+    "level": "basic",
+    "question": "Which property hides overflow content?",
+    "options": [
+      "overflow: hidden",
+      "display: none",
+      "visibility: hidden",
+      "clip: hide"
+    ],
+    "answerIndex": 0,
+    "explanation": "overflow: hidden clips overflow content."
+  },
+  {
+    "id": 118,
+    "category": "CSS",
+    "level": "basic",
+    "question": "Which unit is a percentage of the viewport width?",
+    "options": ["vw", "vh", "rem", "em"],
+    "answerIndex": 0,
+    "explanation": "vw is viewport width unit."
+  },
+  {
+    "id": 119,
+    "category": "CSS",
+    "level": "basic",
+    "question": "Which property adds a shadow to an element box?",
+    "options": ["text-shadow", "box-shadow", "shadow-box", "border-shadow"],
+    "answerIndex": 1,
+    "explanation": "box-shadow adds shadow to element."
+  },
+  {
+    "id": 120,
+    "category": "JavaScript",
+    "level": "basic",
+    "question": "Which function is used to print to console?",
+    "options": ["console.print()", "console.log()", "print()", "log.console()"],
+    "answerIndex": 1,
+    "explanation": "console.log() prints to console."
+  },
+  {
+    "id": 121,
+    "category": "JavaScript",
+    "level": "basic",
+    "question": "Which keyword is used to declare a variable (function-scoped)?",
+    "options": ["var", "let", "const", "scope"],
+    "answerIndex": 0,
+    "explanation": "var is function-scoped."
+  },
+  {
+    "id": 122,
+    "category": "JavaScript",
+    "level": "basic",
+    "question": "Which method converts a string to uppercase?",
+    "options": ["upper()", "toUpperCase()", "capitalize()", "makeUpper()"],
+    "answerIndex": 1,
+    "explanation": "toUpperCase() converts to uppercase."
+  },
+  {
+    "id": 123,
+    "category": "JavaScript",
+    "level": "basic",
+    "question": "Which method converts a string to lowercase?",
+    "options": ["lower()", "toLowerCase()", "small()", "makeLower()"],
+    "answerIndex": 1,
+    "explanation": "toLowerCase() converts to lowercase."
+  },
+  {
+    "id": 124,
+    "category": "JavaScript",
+    "level": "basic",
+    "question": "Which method removes whitespace from both ends of a string?",
+    "options": ["trim()", "strip()", "cut()", "clean()"],
+    "answerIndex": 0,
+    "explanation": "trim() removes leading/trailing whitespace."
+  },
+  {
+    "id": 125,
+    "category": "JavaScript",
+    "level": "basic",
+    "question": "Which array method returns a portion of an array without changing it?",
+    "options": ["splice()", "slice()", "cut()", "portion()"],
+    "answerIndex": 1,
+    "explanation": "slice() returns a shallow copy of a portion."
+  },
+  {
+    "id": 126,
+    "category": "JavaScript",
+    "level": "basic",
+    "question": "Which array method removes/replaces items and mutates the array?",
+    "options": ["slice()", "splice()", "split()", "map()"],
+    "answerIndex": 1,
+    "explanation": "splice() mutates the array."
+  },
+  {
+    "id": 127,
+    "category": "JavaScript",
+    "level": "basic",
+    "question": "Which statement is used to handle multiple conditions?",
+    "options": ["if-else", "switch", "loop", "try-catch"],
+    "answerIndex": 1,
+    "explanation": "switch is used for multiple cases."
+  },
+  {
+    "id": 128,
+    "category": "JavaScript",
+    "level": "basic",
+    "question": "Which keyword is used to export in ES modules?",
+    "options": ["module", "export", "share", "send"],
+    "answerIndex": 1,
+    "explanation": "export is used in ES modules."
+  },
+  {
+    "id": 129,
+    "category": "JavaScript",
+    "level": "basic",
+    "question": "Which keyword is used to import in ES modules?",
+    "options": ["import", "require", "include", "get"],
+    "answerIndex": 0,
+    "explanation": "import is used in ES modules."
+  },
+  {
+    "id": 130,
+    "category": "JavaScript",
+    "level": "basic",
+    "question": "Which value represents 'no value' (intentional absence)?",
+    "options": ["undefined", "null", "false", "0"],
+    "answerIndex": 1,
+    "explanation": "null represents intentional absence of value."
+  },
+  {
+    "id": 131,
+    "category": "React",
+    "level": "basic",
+    "question": "In React, a component name should start with?",
+    "options": [
+      "A number",
+      "Lowercase letter",
+      "Uppercase letter",
+      "Special character"
+    ],
+    "answerIndex": 2,
+    "explanation": "React components should start with uppercase."
+  },
+  {
+    "id": 132,
+    "category": "React",
+    "level": "basic",
+    "question": "Which prop is used to apply CSS class in React?",
+    "options": ["class", "className", "classname", "cssClass"],
+    "answerIndex": 1,
+    "explanation": "className is used instead of class."
+  },
+  {
+    "id": 133,
+    "category": "React",
+    "level": "basic",
+    "question": "Which event handler is used for input change in React?",
+    "options": ["onClick", "onChange", "onInputChange", "onType"],
+    "answerIndex": 1,
+    "explanation": "onChange handles input changes."
+  },
+  {
+    "id": 134,
+    "category": "React",
+    "level": "basic",
+    "question": "Which hook is used to manage reducer-based state?",
+    "options": ["useReducer", "useState", "useEffect", "useMemo"],
+    "answerIndex": 0,
+    "explanation": "useReducer manages complex state logic."
+  },
+  {
+    "id": 135,
+    "category": "React",
+    "level": "basic",
+    "question": "Which hook is used to optimize expensive calculations?",
+    "options": ["useEffect", "useMemo", "useState", "useRef"],
+    "answerIndex": 1,
+    "explanation": "useMemo memoizes expensive calculations."
+  },
+  {
+    "id": 136,
+    "category": "React",
+    "level": "basic",
+    "question": "Which is the correct way to pass a number prop?",
+    "options": ["count='5'", "count={5}", "count=(5)", "count:[5]"],
+    "answerIndex": 1,
+    "explanation": "Use curly braces to pass number values."
+  },
+  {
+    "id": 137,
+    "category": "React",
+    "level": "basic",
+    "question": "Which React feature helps avoid reloading the page?",
+    "options": [
+      "Server rendering",
+      "Single Page Application behavior",
+      "CSS modules",
+      "HTML caching"
+    ],
+    "answerIndex": 1,
+    "explanation": "React apps commonly behave like SPAs."
+  },
+  {
+    "id": 138,
+    "category": "React Router",
+    "level": "basic",
+    "question": "Where do you define routes in React Router v6?",
+    "options": ["<Switch>", "<Routes>", "<RouterSwitch>", "<RouteList>"],
+    "answerIndex": 1,
+    "explanation": "Routes are wrapped in <Routes> in v6."
+  },
+  {
+    "id": 139,
+    "category": "React Router",
+    "level": "basic",
+    "question": "Which hook is used to read URL params in React Router v6?",
+    "options": ["useParams", "useQuery", "useRouteParams", "useMatchParams"],
+    "answerIndex": 0,
+    "explanation": "useParams reads route parameters."
+  },
+  {
+    "id": 140,
+    "category": "React Router",
+    "level": "basic",
+    "question": "Which component is used to render child routes inside parent layout?",
+    "options": ["<Children>", "<Outlet>", "<Slot>", "<Render>"],
+    "answerIndex": 1,
+    "explanation": "<Outlet> renders nested routes."
+  },
+  {
+    "id": 141,
+    "category": "Node.js",
+    "level": "basic",
+    "question": "Which global object provides environment variables in Node.js?",
+    "options": ["process.env", "env.process", "node.env", "system.env"],
+    "answerIndex": 0,
+    "explanation": "process.env contains environment variables."
+  },
+  {
+    "id": 142,
+    "category": "Node.js",
+    "level": "basic",
+    "question": "Which module is used to create a basic HTTP server in Node?",
+    "options": ["http", "fs", "url", "events"],
+    "answerIndex": 0,
+    "explanation": "http module can create servers."
+  },
+  {
+    "id": 143,
+    "category": "Express.js",
+    "level": "basic",
+    "question": "What does app.use() do in Express?",
+    "options": [
+      "Starts server",
+      "Registers middleware",
+      "Creates database",
+      "Builds UI"
+    ],
+    "answerIndex": 1,
+    "explanation": "app.use() registers middleware."
+  },
+  {
+    "id": 144,
+    "category": "Express.js",
+    "level": "basic",
+    "question": "Which Express object contains query parameters?",
+    "options": ["req.query", "req.params", "req.body", "res.query"],
+    "answerIndex": 0,
+    "explanation": "req.query contains query string params."
+  },
+  {
+    "id": 145,
+    "category": "Express.js",
+    "level": "basic",
+    "question": "Which Express object contains URL params like /user/:id?",
+    "options": ["req.query", "req.params", "req.body", "res.params"],
+    "answerIndex": 1,
+    "explanation": "req.params contains route parameters."
+  },
+  {
+    "id": 146,
+    "category": "Express.js",
+    "level": "basic",
+    "question": "Which Express object contains POST request body (after parsing)?",
+    "options": ["req.body", "req.params", "req.query", "res.body"],
+    "answerIndex": 0,
+    "explanation": "req.body contains parsed request body."
+  },
+  {
+    "id": 147,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "In MongoDB, data is stored inside a?",
+    "options": ["Folder", "Collection", "Sheet", "File only"],
+    "answerIndex": 1,
+    "explanation": "Collections store documents."
+  },
+  {
+    "id": 148,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "Which command selects a database in Mongo shell?",
+    "options": [
+      "select dbName",
+      "use dbName",
+      "open dbName",
+      "db select dbName"
+    ],
+    "answerIndex": 1,
+    "explanation": "use dbName switches/creates database."
+  },
+  {
+    "id": 149,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "Which method inserts one document in MongoDB?",
+    "options": ["insertOne()", "addOne()", "createDoc()", "pushOne()"],
+    "answerIndex": 0,
+    "explanation": "insertOne() inserts a single document."
+  },
+  {
+    "id": 150,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "Which method inserts multiple documents in MongoDB?",
+    "options": ["insertMany()", "insertAll()", "multiInsert()", "addMany()"],
+    "answerIndex": 0,
+    "explanation": "insertMany() inserts multiple documents."
+  },
+  {
+    "id": 151,
+    "category": "Mongoose",
+    "level": "basic",
+    "question": "Which method finds all documents in Mongoose model?",
+    "options": [
+      "Model.all()",
+      "Model.find()",
+      "Model.get()",
+      "Model.selectAll()"
+    ],
+    "answerIndex": 1,
+    "explanation": "Model.find() gets matching documents (all if empty filter)."
+  },
+  {
+    "id": 152,
+    "category": "Mongoose",
+    "level": "basic",
+    "question": "Which method finds one document by id in Mongoose?",
+    "options": ["findId()", "findById()", "getById()", "oneById()"],
+    "answerIndex": 1,
+    "explanation": "findById() finds a document by _id."
+  },
+  {
+    "id": 153,
+    "category": "Mongoose",
+    "level": "basic",
+    "question": "In Mongoose, which function creates a model?",
+    "options": [
+      "mongoose.model()",
+      "mongoose.schema()",
+      "mongoose.create()",
+      "mongoose.make()"
+    ],
+    "answerIndex": 0,
+    "explanation": "mongoose.model() creates/gets a model."
+  },
+  {
+    "id": 154,
+    "category": "Auth",
+    "level": "basic",
+    "question": "What is hashing mainly used for in authentication?",
+    "options": [
+      "Encrypting UI",
+      "Storing passwords safely",
+      "Caching images",
+      "Compressing files"
+    ],
+    "answerIndex": 1,
+    "explanation": "Passwords are stored as hashes for security."
+  },
+  {
+    "id": 155,
+    "category": "Auth",
+    "level": "basic",
+    "question": "Which library is commonly used for password hashing in Node?",
+    "options": ["bcrypt", "axios", "moment", "chalk"],
+    "answerIndex": 0,
+    "explanation": "bcrypt is commonly used for hashing passwords."
+  },
+  {
+    "id": 156,
+    "category": "Auth",
+    "level": "basic",
+    "question": "Which HTTP status code means 'Unauthorized'?",
+    "options": ["401", "403", "404", "500"],
+    "answerIndex": 0,
+    "explanation": "401 means Unauthorized."
+  },
+  {
+    "id": 157,
+    "category": "Auth",
+    "level": "basic",
+    "question": "Which HTTP status code means 'Forbidden'?",
+    "options": ["401", "403", "200", "302"],
+    "answerIndex": 1,
+    "explanation": "403 means Forbidden."
+  },
+  {
+    "id": 158,
+    "category": "Web",
+    "level": "basic",
+    "question": "Which HTTP header tells the server the body format?",
+    "options": ["Accept", "Content-Type", "Authorization", "Host"],
+    "answerIndex": 1,
+    "explanation": "Content-Type describes request body type."
+  },
+  {
+    "id": 159,
+    "category": "Web",
+    "level": "basic",
+    "question": "Which HTTP header tells what response formats the client accepts?",
+    "options": ["Accept", "Content-Type", "Cache-Control", "Origin"],
+    "answerIndex": 0,
+    "explanation": "Accept specifies acceptable response types."
+  },
+  {
+    "id": 160,
+    "category": "Git",
+    "level": "basic",
+    "question": "Which command uploads commits to remote repository?",
+    "options": ["git pull", "git push", "git commit", "git add"],
+    "answerIndex": 1,
+    "explanation": "git push sends commits to remote."
+  },
+  {
+    "id": 161,
+    "category": "Git",
+    "level": "basic",
+    "question": "Which command downloads and merges remote changes?",
+    "options": ["git push", "git pull", "git init", "git fork"],
+    "answerIndex": 1,
+    "explanation": "git pull fetches and merges changes."
+  },
+  {
+    "id": 162,
+    "category": "Git",
+    "level": "basic",
+    "question": "Which command initializes a git repository?",
+    "options": ["git start", "git init", "git create", "git new"],
+    "answerIndex": 1,
+    "explanation": "git init creates a new repository."
+  },
+  {
+    "id": 163,
+    "category": "Git",
+    "level": "basic",
+    "question": "Which file is commonly used to ignore files in git?",
+    "options": [".gitignore", ".ignore", "ignore.txt", ".gitstop"],
+    "answerIndex": 0,
+    "explanation": ".gitignore lists ignored patterns."
+  },
+  {
+    "id": 164,
+    "category": "JavaScript",
+    "level": "basic",
+    "question": "Which keyword creates a class in JavaScript?",
+    "options": ["type", "class", "object", "struct"],
+    "answerIndex": 1,
+    "explanation": "class keyword defines a class."
+  },
+  {
+    "id": 165,
+    "category": "JavaScript",
+    "level": "basic",
+    "question": "Which method converts an array to a string with commas by default?",
+    "options": ["toString()", "stringify()", "joinAll()", "asString()"],
+    "answerIndex": 0,
+    "explanation": "toString() converts array to comma-separated string."
+  },
+  {
+    "id": 166,
+    "category": "JavaScript",
+    "level": "basic",
+    "question": "Which is used to create a copy of an object (shallow) with spread?",
+    "options": ["{...obj}", "{obj...}", "[...obj]", "(...obj)"],
+    "answerIndex": 0,
+    "explanation": "{...obj} creates a shallow copy."
+  },
+  {
+    "id": 167,
+    "category": "JavaScript",
+    "level": "basic",
+    "question": "Which is used to copy an array (shallow) with spread?",
+    "options": ["{...arr}", "[...arr]", "(...arr)", "copy(arr)"],
+    "answerIndex": 1,
+    "explanation": "[...arr] creates a shallow copy."
+  },
+  {
+    "id": 168,
+    "category": "JavaScript",
+    "level": "basic",
+    "question": "Which operator is used for default value when left side is null/undefined?",
+    "options": ["||", "??", "&&", "?: "],
+    "answerIndex": 1,
+    "explanation": "?? is nullish coalescing operator."
+  },
+  {
+    "id": 169,
+    "category": "JavaScript",
+    "level": "basic",
+    "question": "Which operator is used to combine conditions (AND)?",
+    "options": ["||", "&&", "!", "??"],
+    "answerIndex": 1,
+    "explanation": "&& means logical AND."
+  },
+  {
+    "id": 170,
+    "category": "JavaScript",
+    "level": "basic",
+    "question": "Which operator is used to invert a boolean value?",
+    "options": ["!", "~", "not", "invert"],
+    "answerIndex": 0,
+    "explanation": "! negates a boolean."
+  },
+  {
+    "id": 171,
+    "category": "React",
+    "level": "basic",
+    "question": "Which hook runs side effects after render?",
+    "options": ["useState", "useEffect", "useRef", "useContext"],
+    "answerIndex": 1,
+    "explanation": "useEffect runs after render."
+  },
+  {
+    "id": 172,
+    "category": "React",
+    "level": "basic",
+    "question": "Which React feature helps reuse UI parts?",
+    "options": ["Components", "Routes", "Reducers", "Tokens"],
+    "answerIndex": 0,
+    "explanation": "Components help reuse UI."
+  },
+  {
+    "id": 173,
+    "category": "React",
+    "level": "basic",
+    "question": "Which prop is used to set default value for uncontrolled input?",
+    "options": ["value", "defaultValue", "setValue", "initValue"],
+    "answerIndex": 1,
+    "explanation": "defaultValue sets initial value for uncontrolled input."
+  },
+  {
+    "id": 174,
+    "category": "React",
+    "level": "basic",
+    "question": "Controlled input in React uses which prop?",
+    "options": ["defaultValue", "value", "text", "inputValue"],
+    "answerIndex": 1,
+    "explanation": "value makes it controlled by state."
+  },
+  {
+    "id": 175,
+    "category": "React Router",
+    "level": "basic",
+    "question": "Which component wraps the app to enable routing?",
+    "options": ["<RouterProvider>", "<BrowserRouter>", "<Route>", "<Routes>"],
+    "answerIndex": 1,
+    "explanation": "<BrowserRouter> enables routing in web apps."
+  },
+  {
+    "id": 176,
+    "category": "React Router",
+    "level": "basic",
+    "question": "Which hook gives current location object?",
+    "options": ["useLocation", "usePath", "useURL", "useRoute"],
+    "answerIndex": 0,
+    "explanation": "useLocation returns location info."
+  },
+  {
+    "id": 177,
+    "category": "Node.js",
+    "level": "basic",
+    "question": "Which command installs a package and saves it to dependencies?",
+    "options": [
+      "npm add <pkg>",
+      "npm install <pkg>",
+      "npm get <pkg>",
+      "npm push <pkg>"
+    ],
+    "answerIndex": 1,
+    "explanation": "npm install <pkg> installs and saves to dependencies."
+  },
+  {
+    "id": 178,
+    "category": "Node.js",
+    "level": "basic",
+    "question": "Which file commonly contains environment variables?",
+    "options": ["env.json", ".env", "vars.txt", "config.lock"],
+    "answerIndex": 1,
+    "explanation": ".env commonly stores environment variables."
+  },
+  {
+    "id": 179,
+    "category": "Express.js",
+    "level": "basic",
+    "question": "Which status method sets response status code in Express?",
+    "options": ["res.code()", "res.status()", "res.setStatus()", "res.http()"],
+    "answerIndex": 1,
+    "explanation": "res.status(code) sets status code."
+  },
+  {
+    "id": 180,
+    "category": "Express.js",
+    "level": "basic",
+    "question": "Which method sends JSON response in Express?",
+    "options": ["res.json()", "res.sendJSON()", "res.object()", "res.data()"],
+    "answerIndex": 0,
+    "explanation": "res.json() sends JSON response."
+  },
+  {
+    "id": 181,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "Which query operator means 'greater than' in MongoDB?",
+    "options": ["$gt", "$lt", "$gte", "$in"],
+    "answerIndex": 0,
+    "explanation": "$gt means greater than."
+  },
+  {
+    "id": 182,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "Which query operator means 'in array of values'?",
+    "options": ["$in", "$all", "$has", "$like"],
+    "answerIndex": 0,
+    "explanation": "$in matches any of the values."
+  },
+  {
+    "id": 183,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "Which MongoDB method sorts results?",
+    "options": ["order()", "sort()", "arrange()", "rank()"],
+    "answerIndex": 1,
+    "explanation": "sort() sorts query results."
+  },
+  {
+    "id": 184,
+    "category": "Mongoose",
+    "level": "basic",
+    "question": "Which Mongoose method deletes one document?",
+    "options": ["deleteOne()", "removeAll()", "dropOne()", "cutOne()"],
+    "answerIndex": 0,
+    "explanation": "deleteOne() deletes one matching document."
+  },
+  {
+    "id": 185,
+    "category": "Mongoose",
+    "level": "basic",
+    "question": "Which Mongoose method updates by id?",
+    "options": [
+      "updateById()",
+      "findByIdAndUpdate()",
+      "setById()",
+      "patchById()"
+    ],
+    "answerIndex": 1,
+    "explanation": "findByIdAndUpdate() updates a document by id."
+  },
+  {
+    "id": 186,
+    "category": "Auth",
+    "level": "basic",
+    "question": "Which part of JWT contains user data/claims?",
+    "options": ["Header", "Payload", "Signature", "Footer"],
+    "answerIndex": 1,
+    "explanation": "Payload contains claims."
+  },
+  {
+    "id": 187,
+    "category": "Auth",
+    "level": "basic",
+    "question": "JWT is mainly used for?",
+    "options": [
+      "Styling pages",
+      "Authentication/Authorization",
+      "Database backup",
+      "Image compression"
+    ],
+    "answerIndex": 1,
+    "explanation": "JWT is used for auth flows."
+  },
+  {
+    "id": 188,
+    "category": "Web",
+    "level": "basic",
+    "question": "Which method is used to fetch data in browser JS?",
+    "options": ["fetch()", "get()", "http()", "ajax()"],
+    "answerIndex": 0,
+    "explanation": "fetch() is used to make HTTP requests."
+  },
+  {
+    "id": 189,
+    "category": "Web",
+    "level": "basic",
+    "question": "Which API provides localStorage in the browser?",
+    "options": ["Storage API", "Cache API", "File API", "Media API"],
+    "answerIndex": 0,
+    "explanation": "Storage API provides localStorage/sessionStorage."
+  },
+  {
+    "id": 190,
+    "category": "Git",
+    "level": "basic",
+    "question": "Which command shows commit history?",
+    "options": ["git log", "git history", "git commits", "git track"],
+    "answerIndex": 0,
+    "explanation": "git log shows commit history."
+  },
+  {
+    "id": 191,
+    "category": "Git",
+    "level": "basic",
+    "question": "Which command clones a remote repository?",
+    "options": ["git copy", "git clone", "git pull", "git fork"],
+    "answerIndex": 1,
+    "explanation": "git clone downloads a repository."
+  },
+  {
+    "id": 192,
+    "category": "CSS",
+    "level": "basic",
+    "question": "Which property is used to create space between flex items?",
+    "options": ["gap", "padding", "margin-left", "space-between"],
+    "answerIndex": 0,
+    "explanation": "gap sets spacing between flex/grid items."
+  },
+  {
+    "id": 193,
+    "category": "CSS",
+    "level": "basic",
+    "question": "Which value aligns flex items vertically (cross axis) to center?",
+    "options": [
+      "justify-content: center",
+      "align-items: center",
+      "text-align: center",
+      "place-items: center"
+    ],
+    "answerIndex": 1,
+    "explanation": "align-items controls cross-axis alignment in flex."
+  },
+  {
+    "id": 194,
+    "category": "CSS",
+    "level": "basic",
+    "question": "Which value aligns flex items horizontally (main axis) to center?",
+    "options": [
+      "align-items: center",
+      "justify-content: center",
+      "text-align: center",
+      "center: true"
+    ],
+    "answerIndex": 1,
+    "explanation": "justify-content controls main-axis alignment in flex."
+  },
+  {
+    "id": 195,
+    "category": "HTML",
+    "level": "basic",
+    "question": "Which attribute opens a link in a new tab?",
+    "options": ["new='true'", "target='_blank'", "open='tab'", "blank='true'"],
+    "answerIndex": 1,
+    "explanation": "target='_blank' opens in a new tab."
+  },
+  {
+    "id": 196,
+    "category": "JavaScript",
+    "level": "basic",
+    "question": "Which function converts a number string to integer?",
+    "options": ["parseInt()", "parseFloat()", "Number.toInt()", "int()"],
+    "answerIndex": 0,
+    "explanation": "parseInt() converts to integer."
+  },
+  {
+    "id": 197,
+    "category": "JavaScript",
+    "level": "basic",
+    "question": "Which function converts a number string to decimal number?",
+    "options": ["parseInt()", "parseFloat()", "Number.toFloat()", "float()"],
+    "answerIndex": 1,
+    "explanation": "parseFloat() converts to floating number."
+  },
+  {
+    "id": 198,
+    "category": "React",
+    "level": "basic",
+    "question": "What is the correct way to render a variable in JSX?",
+    "options": ["{{name}}", "{name}", "<name>", "($name)"],
+    "answerIndex": 1,
+    "explanation": "Use { } to render JS expressions in JSX."
+  },
+  {
+    "id": 199,
+    "category": "Express.js",
+    "level": "basic",
+    "question": "Which middleware is commonly used to enable CORS in Express?",
+    "options": ["cors", "helmet", "morgan", "cookie-parser"],
+    "answerIndex": 0,
+    "explanation": "cors package enables CORS handling."
+  },
+  {
+    "id": 200,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "Which method limits number of results in MongoDB query?",
+    "options": ["limit()", "top()", "cap()", "max()"],
+    "answerIndex": 0,
+    "explanation": "limit() restricts result count."
+  },
+  {
+    "id": 201,
+    "category": "HTML",
+    "level": "basic",
+    "question": "Which tag is used to add a comment in HTML?",
+    "options": ["// comment", "<!-- comment -->", "/* comment */", "<comment>"],
+    "answerIndex": 1,
+    "explanation": "HTML comments use <!-- -->."
+  },
+  {
+    "id": 202,
+    "category": "HTML",
+    "level": "basic",
+    "question": "Which attribute is used to uniquely identify an element?",
+    "options": ["class", "id", "name", "key"],
+    "answerIndex": 1,
+    "explanation": "id should be unique on a page."
+  },
+  {
+    "id": 203,
+    "category": "HTML",
+    "level": "basic",
+    "question": "Which tag is used to mark important highlighted text?",
+    "options": ["<strong>", "<mark>", "<em>", "<b>"],
+    "answerIndex": 1,
+    "explanation": "<mark> highlights text."
+  },
+  {
+    "id": 204,
+    "category": "HTML",
+    "level": "basic",
+    "question": "Which tag is used to show code text inline?",
+    "options": ["<code>", "<pre>", "<kbd>", "<samp>"],
+    "answerIndex": 0,
+    "explanation": "<code> represents inline code."
+  },
+  {
+    "id": 205,
+    "category": "HTML",
+    "level": "basic",
+    "question": "Which tag preserves spaces and line breaks exactly as written?",
+    "options": ["<p>", "<pre>", "<code>", "<span>"],
+    "answerIndex": 1,
+    "explanation": "<pre> preserves whitespace formatting."
+  },
+  {
+    "id": 206,
+    "category": "HTML",
+    "level": "basic",
+    "question": "Which input type is used to select a date?",
+    "options": ["datetime", "date", "calendar", "day"],
+    "answerIndex": 1,
+    "explanation": "type='date' opens a date picker (browser support varies)."
+  },
+  {
+    "id": 207,
+    "category": "HTML",
+    "level": "basic",
+    "question": "Which input type is used to select a color?",
+    "options": ["palette", "color", "paint", "rgb"],
+    "answerIndex": 1,
+    "explanation": "type='color' opens a color picker."
+  },
+  {
+    "id": 208,
+    "category": "HTML",
+    "level": "basic",
+    "question": "Which tag is used to group options inside a select dropdown?",
+    "options": ["<group>", "<optgroup>", "<fieldset>", "<optionset>"],
+    "answerIndex": 1,
+    "explanation": "<optgroup> groups related options."
+  },
+  {
+    "id": 209,
+    "category": "HTML",
+    "level": "basic",
+    "question": "Which attribute is used to give a hint about input format?",
+    "options": ["pattern", "format", "hint", "mask"],
+    "answerIndex": 0,
+    "explanation": "pattern defines a regex the value must match."
+  },
+  {
+    "id": 210,
+    "category": "HTML",
+    "level": "basic",
+    "question": "Which attribute automatically focuses an input when page loads?",
+    "options": ["focus", "autofocus", "autoFocus", "focus-on-load"],
+    "answerIndex": 1,
+    "explanation": "autofocus focuses the element on load."
+  },
+  {
+    "id": 211,
+    "category": "CSS",
+    "level": "basic",
+    "question": "Which property changes the thickness of text (boldness)?",
+    "options": ["font-weight", "font-bold", "text-weight", "weight"],
+    "answerIndex": 0,
+    "explanation": "font-weight controls boldness."
+  },
+  {
+    "id": 212,
+    "category": "CSS",
+    "level": "basic",
+    "question": "Which property makes text italic?",
+    "options": ["font-italic", "font-style", "text-style", "style-font"],
+    "answerIndex": 1,
+    "explanation": "font-style: italic makes text italic."
+  },
+  {
+    "id": 213,
+    "category": "CSS",
+    "level": "basic",
+    "question": "Which property underlines text?",
+    "options": ["text-decoration", "font-underline", "underline", "decoration"],
+    "answerIndex": 0,
+    "explanation": "text-decoration controls underline/line-through."
+  },
+  {
+    "id": 214,
+    "category": "CSS",
+    "level": "basic",
+    "question": "Which value removes underline from links?",
+    "options": [
+      "text-decoration: none",
+      "decoration: off",
+      "underline: false",
+      "link-style: none"
+    ],
+    "answerIndex": 0,
+    "explanation": "text-decoration: none removes underline."
+  },
+  {
+    "id": 215,
+    "category": "CSS",
+    "level": "basic",
+    "question": "Which property controls the type of list bullets/markers?",
+    "options": ["list-style-type", "list-type", "bullet-style", "marker-type"],
+    "answerIndex": 0,
+    "explanation": "list-style-type controls bullet/number style."
+  },
+  {
+    "id": 216,
+    "category": "CSS",
+    "level": "basic",
+    "question": "Which property sets the spacing between columns/rows in CSS Grid?",
+    "options": ["gap", "space", "grid-space", "margin"],
+    "answerIndex": 0,
+    "explanation": "gap sets grid (and flex) spacing."
+  },
+  {
+    "id": 217,
+    "category": "CSS",
+    "level": "basic",
+    "question": "Which function is used to create a CSS variable value fallback?",
+    "options": [
+      "var(--x, fallback)",
+      "var(--x || fallback)",
+      "get(--x, fallback)",
+      "fallback(--x)"
+    ],
+    "answerIndex": 0,
+    "explanation": "var(--name, fallback) uses fallback if variable is missing."
+  },
+  {
+    "id": 218,
+    "category": "CSS",
+    "level": "basic",
+    "question": "Which pseudo-class targets the first child element?",
+    "options": [":first", ":first-child", ":first-of-type", ":child-first"],
+    "answerIndex": 1,
+    "explanation": ":first-child targets an element that is the first child."
+  },
+  {
+    "id": 219,
+    "category": "CSS",
+    "level": "basic",
+    "question": "Which pseudo-class targets an element when it receives keyboard focus?",
+    "options": [":hover", ":focus", ":active", ":visited"],
+    "answerIndex": 1,
+    "explanation": ":focus applies when element is focused."
+  },
+  {
+    "id": 220,
+    "category": "CSS",
+    "level": "basic",
+    "question": "Which property is used to make an element a flex container?",
+    "options": [
+      "display: flex",
+      "position: flex",
+      "flex: container",
+      "layout: flex"
+    ],
+    "answerIndex": 0,
+    "explanation": "display: flex creates a flex container."
+  },
+  {
+    "id": 221,
+    "category": "JavaScript",
+    "level": "basic",
+    "question": "Which keyword is used to declare a variable that can be reassigned?",
+    "options": ["const", "let", "fixed", "final"],
+    "answerIndex": 1,
+    "explanation": "let declares a re-assignable variable."
+  },
+  {
+    "id": 222,
+    "category": "JavaScript",
+    "level": "basic",
+    "question": "Which statement is used to handle exceptions?",
+    "options": ["try...catch", "if...else", "switch", "for...of"],
+    "answerIndex": 0,
+    "explanation": "try...catch handles exceptions."
+  },
+  {
+    "id": 223,
+    "category": "JavaScript",
+    "level": "basic",
+    "question": "Which method converts an object’s keys into an array?",
+    "options": [
+      "Object.keys()",
+      "Object.values()",
+      "Object.entries()",
+      "Object.toArray()"
+    ],
+    "answerIndex": 0,
+    "explanation": "Object.keys() returns an array of keys."
+  },
+  {
+    "id": 224,
+    "category": "JavaScript",
+    "level": "basic",
+    "question": "Which method converts an object’s values into an array?",
+    "options": [
+      "Object.keys()",
+      "Object.values()",
+      "Object.entries()",
+      "Object.valueArray()"
+    ],
+    "answerIndex": 1,
+    "explanation": "Object.values() returns an array of values."
+  },
+  {
+    "id": 225,
+    "category": "JavaScript",
+    "level": "basic",
+    "question": "Which method converts an object into an array of [key, value] pairs?",
+    "options": [
+      "Object.entries()",
+      "Object.pairs()",
+      "Object.items()",
+      "Object.map()"
+    ],
+    "answerIndex": 0,
+    "explanation": "Object.entries() returns key-value pairs."
+  },
+  {
+    "id": 226,
+    "category": "JavaScript",
+    "level": "basic",
+    "question": "Which array method creates a new array without changing the original?",
+    "options": ["push()", "pop()", "map()", "splice()"],
+    "answerIndex": 2,
+    "explanation": "map() returns a new array."
+  },
+  {
+    "id": 227,
+    "category": "JavaScript",
+    "level": "basic",
+    "question": "Which array method mutates the original array?",
+    "options": ["map()", "filter()", "splice()", "slice()"],
+    "answerIndex": 2,
+    "explanation": "splice() changes the original array."
+  },
+  {
+    "id": 228,
+    "category": "JavaScript",
+    "level": "basic",
+    "question": "Which array method sorts an array in place?",
+    "options": ["sort()", "order()", "arrange()", "rank()"],
+    "answerIndex": 0,
+    "explanation": "sort() mutates the original array."
+  },
+  {
+    "id": 229,
+    "category": "JavaScript",
+    "level": "basic",
+    "question": "Which method converts a string into an array using a separator?",
+    "options": ["split()", "join()", "slice()", "splice()"],
+    "answerIndex": 0,
+    "explanation": "split() divides a string into an array."
+  },
+  {
+    "id": 230,
+    "category": "JavaScript",
+    "level": "basic",
+    "question": "Which method combines array items into a single string with a separator?",
+    "options": ["split()", "join()", "merge()", "combine()"],
+    "answerIndex": 1,
+    "explanation": "join() combines items into a string."
+  },
+  {
+    "id": 231,
+    "category": "React",
+    "level": "basic",
+    "question": "Which hook is used to store state in a functional component?",
+    "options": ["useEffect", "useState", "useMemo", "useRef"],
+    "answerIndex": 1,
+    "explanation": "useState stores component state."
+  },
+  {
+    "id": 232,
+    "category": "React",
+    "level": "basic",
+    "question": "Which hook is used to perform side effects like fetching data?",
+    "options": ["useEffect", "useState", "useCallback", "useContext"],
+    "answerIndex": 0,
+    "explanation": "useEffect is used for side effects."
+  },
+  {
+    "id": 233,
+    "category": "React",
+    "level": "basic",
+    "question": "Which prop is used to pass content inside a component?",
+    "options": ["props.content", "props.children", "props.inner", "props.slot"],
+    "answerIndex": 1,
+    "explanation": "props.children contains nested content."
+  },
+  {
+    "id": 234,
+    "category": "React",
+    "level": "basic",
+    "question": "What is React Fragment shorthand?",
+    "options": [
+      "<>...</>",
+      "<fragment>...</fragment>",
+      "<Frag>...</Frag>",
+      "<F>...</F>"
+    ],
+    "answerIndex": 0,
+    "explanation": "<>...</> is Fragment shorthand."
+  },
+  {
+    "id": 235,
+    "category": "React",
+    "level": "basic",
+    "question": "Which hook can prevent unnecessary re-render by memoizing a function?",
+    "options": ["useMemo", "useCallback", "useEffect", "useRef"],
+    "answerIndex": 1,
+    "explanation": "useCallback memoizes a function."
+  },
+  {
+    "id": 236,
+    "category": "React",
+    "level": "basic",
+    "question": "Which hook memoizes a computed value?",
+    "options": ["useCallback", "useMemo", "useEffect", "useState"],
+    "answerIndex": 1,
+    "explanation": "useMemo memoizes a value."
+  },
+  {
+    "id": 237,
+    "category": "React",
+    "level": "basic",
+    "question": "Which hook is used to read data from React Context?",
+    "options": ["useStore", "useContext", "useProvider", "useReducer"],
+    "answerIndex": 1,
+    "explanation": "useContext reads context value."
+  },
+  {
+    "id": 238,
+    "category": "React",
+    "level": "basic",
+    "question": "Which prop is used to set inline styles in React?",
+    "options": [
+      "style='...'",
+      "style={{...}}",
+      "css={{...}}",
+      "classStyle={{...}}"
+    ],
+    "answerIndex": 1,
+    "explanation": "React uses style={{}} object for inline styles."
+  },
+  {
+    "id": 239,
+    "category": "React",
+    "level": "basic",
+    "question": "Which is the correct way to render a list in React?",
+    "options": [
+      "items.render()",
+      "items.map()",
+      "items.loop()",
+      "items.forEach() in JSX"
+    ],
+    "answerIndex": 1,
+    "explanation": "map() is used to render lists."
+  },
+  {
+    "id": 240,
+    "category": "React",
+    "level": "basic",
+    "question": "Which prop should be unique when rendering list items?",
+    "options": ["id", "name", "key", "ref"],
+    "answerIndex": 2,
+    "explanation": "key helps React identify list items."
+  },
+  {
+    "id": 241,
+    "category": "JavaScript",
+    "level": "basic",
+    "question": "What will Boolean('') return?",
+    "options": ["true", "false", "null", "undefined"],
+    "answerIndex": 1,
+    "explanation": "Empty string is falsy."
+  },
+  {
+    "id": 242,
+    "category": "JavaScript",
+    "level": "basic",
+    "question": "What will Boolean('0') return?",
+    "options": ["true", "false", "0", "NaN"],
+    "answerIndex": 0,
+    "explanation": "Non-empty string is truthy."
+  },
+  {
+    "id": 243,
+    "category": "JavaScript",
+    "level": "basic",
+    "question": "Which value is truthy?",
+    "options": ["0", "''", "null", "[]"],
+    "answerIndex": 3,
+    "explanation": "Empty array [] is truthy."
+  },
+  {
+    "id": 244,
+    "category": "JavaScript",
+    "level": "basic",
+    "question": "Which operator is used to check if a property exists in an object?",
+    "options": ["has", "in", "exists", "of"],
+    "answerIndex": 1,
+    "explanation": "'prop' in obj checks property existence."
+  },
+  {
+    "id": 245,
+    "category": "JavaScript",
+    "level": "basic",
+    "question": "Which method is used to add a new property to an object immutably (common pattern)?",
+    "options": [
+      "Object.add()",
+      "{...obj, newKey: val}",
+      "obj.push()",
+      "obj.addKey()"
+    ],
+    "answerIndex": 1,
+    "explanation": "Spread creates a new object with added property."
+  },
+  {
+    "id": 246,
+    "category": "CSS",
+    "level": "basic",
+    "question": "Which property changes the position reference for absolutely positioned children?",
+    "options": ["display", "position", "float", "overflow"],
+    "answerIndex": 1,
+    "explanation": "A positioned parent (like position: relative) becomes reference."
+  },
+  {
+    "id": 247,
+    "category": "CSS",
+    "level": "basic",
+    "question": "Which position value keeps the element in normal flow but allows offsets?",
+    "options": ["static", "relative", "absolute", "fixed"],
+    "answerIndex": 1,
+    "explanation": "position: relative keeps space but allows top/left offsets."
+  },
+  {
+    "id": 248,
+    "category": "CSS",
+    "level": "basic",
+    "question": "Which position value removes the element from normal flow?",
+    "options": ["relative", "absolute", "static", "inherit"],
+    "answerIndex": 1,
+    "explanation": "position: absolute removes from normal flow."
+  },
+  {
+    "id": 249,
+    "category": "CSS",
+    "level": "basic",
+    "question": "Which property sets the element’s box model behavior to include padding/border in width?",
+    "options": ["box-sizing", "box-model", "sizing", "layout-sizing"],
+    "answerIndex": 0,
+    "explanation": "box-sizing controls how width/height are calculated."
+  },
+  {
+    "id": 250,
+    "category": "CSS",
+    "level": "basic",
+    "question": "Which value makes box-sizing include padding and border in width/height?",
+    "options": ["content-box", "border-box", "padding-box", "outer-box"],
+    "answerIndex": 1,
+    "explanation": "border-box includes padding and border."
+  },
+  {
+    "id": 251,
+    "category": "HTML",
+    "level": "basic",
+    "question": "Which tag is used to create a clickable button?",
+    "options": ["<btn>", "<button>", "<click>", "<input type='button' only>"],
+    "answerIndex": 1,
+    "explanation": "<button> creates a button element."
+  },
+  {
+    "id": 252,
+    "category": "HTML",
+    "level": "basic",
+    "question": "Which input type is used for checkboxes?",
+    "options": ["check", "checkbox", "tick", "option"],
+    "answerIndex": 1,
+    "explanation": "type='checkbox' creates a checkbox."
+  },
+  {
+    "id": 253,
+    "category": "HTML",
+    "level": "basic",
+    "question": "Which input type is used for radio buttons?",
+    "options": ["radio", "select-one", "choice", "single"],
+    "answerIndex": 0,
+    "explanation": "type='radio' creates radio buttons."
+  },
+  {
+    "id": 254,
+    "category": "HTML",
+    "level": "basic",
+    "question": "Which attribute groups radio buttons together?",
+    "options": ["id", "name", "group", "for"],
+    "answerIndex": 1,
+    "explanation": "Radio inputs with same name behave as a group."
+  },
+  {
+    "id": 255,
+    "category": "HTML",
+    "level": "basic",
+    "question": "Which attribute disables an input?",
+    "options": ["readonly", "disabled", "inactive", "blocked"],
+    "answerIndex": 1,
+    "explanation": "disabled prevents interaction and submission."
+  },
+  {
+    "id": 256,
+    "category": "HTML",
+    "level": "basic",
+    "question": "Which attribute prevents editing but still submits value?",
+    "options": ["disabled", "readonly", "locked", "freeze"],
+    "answerIndex": 1,
+    "explanation": "readonly prevents editing but value can be submitted."
+  },
+  {
+    "id": 257,
+    "category": "CSS",
+    "level": "basic",
+    "question": "Which property clips content to create a circle/rounded shape easily?",
+    "options": ["border-radius", "clip-radius", "shape-radius", "rounding"],
+    "answerIndex": 0,
+    "explanation": "border-radius can make circles with 50%."
+  },
+  {
+    "id": 258,
+    "category": "CSS",
+    "level": "basic",
+    "question": "Which value of border-radius makes a perfect circle (for a square element)?",
+    "options": ["10px", "25%", "50%", "100%"],
+    "answerIndex": 2,
+    "explanation": "50% makes a circle if width=height."
+  },
+  {
+    "id": 259,
+    "category": "CSS",
+    "level": "basic",
+    "question": "Which property is used to change an element's transparency without affecting layout?",
+    "options": ["display", "visibility", "opacity", "z-index"],
+    "answerIndex": 2,
+    "explanation": "opacity changes transparency."
+  },
+  {
+    "id": 260,
+    "category": "CSS",
+    "level": "basic",
+    "question": "Which property makes a grid container?",
+    "options": ["display: grid", "position: grid", "grid: on", "layout: grid"],
+    "answerIndex": 0,
+    "explanation": "display: grid enables CSS Grid."
+  },
+  {
+    "id": 261,
+    "category": "JavaScript",
+    "level": "basic",
+    "question": "Which method is used to select a single element by id?",
+    "options": [
+      "document.getElementById()",
+      "document.querySelectorAll()",
+      "document.getById()",
+      "document.selectId()"
+    ],
+    "answerIndex": 0,
+    "explanation": "getElementById selects by id."
+  },
+  {
+    "id": 262,
+    "category": "JavaScript",
+    "level": "basic",
+    "question": "Which method returns the first element matching a CSS selector?",
+    "options": [
+      "querySelector()",
+      "querySelectorAll()",
+      "getElementsByClassName()",
+      "getElementsByTagName()"
+    ],
+    "answerIndex": 0,
+    "explanation": "querySelector returns the first match."
+  },
+  {
+    "id": 263,
+    "category": "JavaScript",
+    "level": "basic",
+    "question": "Which method returns all elements matching a CSS selector?",
+    "options": [
+      "querySelectorAll()",
+      "querySelector()",
+      "getElementById()",
+      "getElementsById()"
+    ],
+    "answerIndex": 0,
+    "explanation": "querySelectorAll returns all matches."
+  },
+  {
+    "id": 264,
+    "category": "JavaScript",
+    "level": "basic",
+    "question": "Which method adds an event listener to an element?",
+    "options": ["addEventListener()", "onEvent()", "listen()", "attachEvent()"],
+    "answerIndex": 0,
+    "explanation": "addEventListener attaches an event handler."
+  },
+  {
+    "id": 265,
+    "category": "JavaScript",
+    "level": "basic",
+    "question": "Which event is fired when a button is clicked?",
+    "options": ["press", "click", "tap", "mouseclick"],
+    "answerIndex": 1,
+    "explanation": "click event fires on click."
+  },
+  {
+    "id": 266,
+    "category": "JavaScript",
+    "level": "basic",
+    "question": "Which event fires when an input value changes (commonly)?",
+    "options": ["change", "type", "update", "edit"],
+    "answerIndex": 0,
+    "explanation": "change event fires when value changes and element loses focus (often)."
+  },
+  {
+    "id": 267,
+    "category": "JavaScript",
+    "level": "basic",
+    "question": "Which event fires when a key is pressed down?",
+    "options": ["keydown", "keypress", "keyhold", "keytap"],
+    "answerIndex": 0,
+    "explanation": "keydown fires when key is pressed."
+  },
+  {
+    "id": 268,
+    "category": "JavaScript",
+    "level": "basic",
+    "question": "Which event fires when the DOM is fully loaded?",
+    "options": ["load", "DOMContentLoaded", "ready", "domready"],
+    "answerIndex": 1,
+    "explanation": "DOMContentLoaded fires when HTML is parsed."
+  },
+  {
+    "id": 269,
+    "category": "React",
+    "level": "basic",
+    "question": "In React, state should be updated using?",
+    "options": [
+      "Direct assignment",
+      "Setter function from useState",
+      "Changing props",
+      "Reloading page"
+    ],
+    "answerIndex": 1,
+    "explanation": "Use setState function from useState."
+  },
+  {
+    "id": 270,
+    "category": "React",
+    "level": "basic",
+    "question": "Which is correct to update an array state immutably?",
+    "options": [
+      "arr.push(x)",
+      "setArr([...arr, x])",
+      "arr[arr.length]=x",
+      "setArr(arr) after push"
+    ],
+    "answerIndex": 1,
+    "explanation": "Spread creates a new array with added item."
+  },
+  {
+    "id": 271,
+    "category": "React",
+    "level": "basic",
+    "question": "Which is correct to update an object state immutably?",
+    "options": [
+      "obj.key = v",
+      "setObj({ ...obj, key: v })",
+      "delete obj.key; setObj(obj)",
+      "setObj(obj.key=v)"
+    ],
+    "answerIndex": 1,
+    "explanation": "Spread creates a new object with updated field."
+  },
+  {
+    "id": 272,
+    "category": "React",
+    "level": "basic",
+    "question": "Which hook is used to manage complex state logic with actions?",
+    "options": ["useReducer", "useMemo", "useRef", "useEffect"],
+    "answerIndex": 0,
+    "explanation": "useReducer manages state with actions."
+  },
+  {
+    "id": 273,
+    "category": "React",
+    "level": "basic",
+    "question": "Which hook can store a value that does NOT trigger re-render when changed?",
+    "options": ["useState", "useRef", "useEffect", "useContext"],
+    "answerIndex": 1,
+    "explanation": "useRef changes do not re-render."
+  },
+  {
+    "id": 274,
+    "category": "React",
+    "level": "basic",
+    "question": "Which hook is used to handle form inputs commonly?",
+    "options": ["useState", "useMemo", "useCallback", "useLayoutEffect"],
+    "answerIndex": 0,
+    "explanation": "useState is commonly used for form state."
+  },
+  {
+    "id": 275,
+    "category": "CSS",
+    "level": "basic",
+    "question": "Which selector selects all elements?",
+    "options": ["*", "#", ".", "all"],
+    "answerIndex": 0,
+    "explanation": "* selects all elements."
+  },
+  {
+    "id": 276,
+    "category": "CSS",
+    "level": "basic",
+    "question": "Which selector selects elements by attribute, like input[type='text']?",
+    "options": [
+      "Attribute selector",
+      "Class selector",
+      "ID selector",
+      "Universal selector"
+    ],
+    "answerIndex": 0,
+    "explanation": "Attribute selectors target elements by attributes."
+  },
+  {
+    "id": 277,
+    "category": "CSS",
+    "level": "basic",
+    "question": "Which combinator selects direct children only?",
+    "options": [" ", ">", "+", "~"],
+    "answerIndex": 1,
+    "explanation": "> selects direct child elements."
+  },
+  {
+    "id": 278,
+    "category": "CSS",
+    "level": "basic",
+    "question": "Which combinator selects the next immediate sibling?",
+    "options": [" ", ">", "+", "~"],
+    "answerIndex": 2,
+    "explanation": "+ selects the next sibling."
+  },
+  {
+    "id": 279,
+    "category": "CSS",
+    "level": "basic",
+    "question": "Which combinator selects all following siblings?",
+    "options": [" ", ">", "+", "~"],
+    "answerIndex": 3,
+    "explanation": "~ selects all following siblings."
+  },
+  {
+    "id": 280,
+    "category": "JavaScript",
+    "level": "basic",
+    "question": "Which storage persists even after closing the browser tab/window?",
+    "options": [
+      "sessionStorage",
+      "localStorage",
+      "memoryStorage",
+      "tempStorage"
+    ],
+    "answerIndex": 1,
+    "explanation": "localStorage persists until cleared."
+  },
+  {
+    "id": 281,
+    "category": "JavaScript",
+    "level": "basic",
+    "question": "Which storage is cleared when the tab is closed?",
+    "options": [
+      "localStorage",
+      "sessionStorage",
+      "cookieStorage",
+      "permStorage"
+    ],
+    "answerIndex": 1,
+    "explanation": "sessionStorage is cleared when tab closes."
+  },
+  {
+    "id": 282,
+    "category": "JavaScript",
+    "level": "basic",
+    "question": "Which method saves data to localStorage?",
+    "options": [
+      "localStorage.setItem()",
+      "localStorage.save()",
+      "localStorage.add()",
+      "localStorage.store()"
+    ],
+    "answerIndex": 0,
+    "explanation": "setItem(key, value) saves data."
+  },
+  {
+    "id": 283,
+    "category": "JavaScript",
+    "level": "basic",
+    "question": "Which method reads data from localStorage?",
+    "options": [
+      "localStorage.getItem()",
+      "localStorage.read()",
+      "localStorage.fetch()",
+      "localStorage.load()"
+    ],
+    "answerIndex": 0,
+    "explanation": "getItem(key) reads data."
+  },
+  {
+    "id": 284,
+    "category": "JavaScript",
+    "level": "basic",
+    "question": "Which method removes a key from localStorage?",
+    "options": [
+      "localStorage.removeItem()",
+      "localStorage.delete()",
+      "localStorage.clearKey()",
+      "localStorage.unset()"
+    ],
+    "answerIndex": 0,
+    "explanation": "removeItem(key) removes a key."
+  },
+  {
+    "id": 285,
+    "category": "JavaScript",
+    "level": "basic",
+    "question": "Which method removes all keys from localStorage?",
+    "options": [
+      "localStorage.clear()",
+      "localStorage.reset()",
+      "localStorage.removeAll()",
+      "localStorage.deleteAll()"
+    ],
+    "answerIndex": 0,
+    "explanation": "clear() removes everything in localStorage."
+  },
+  {
+    "id": 286,
+    "category": "React",
+    "level": "basic",
+    "question": "What is the correct way to handle click in React?",
+    "options": ["onclick='fn()'", "onClick={fn}", "click={fn}", "onTap={fn}"],
+    "answerIndex": 1,
+    "explanation": "React uses onClick with a function reference."
+  },
+  {
+    "id": 287,
+    "category": "React",
+    "level": "basic",
+    "question": "Which is correct for conditional rendering using ternary?",
+    "options": [
+      "if (a) <A/> else <B/>",
+      "a ? <A/> : <B/>",
+      "a => <A/> : <B/>",
+      "<A/> ?? <B/>"
+    ],
+    "answerIndex": 1,
+    "explanation": "Ternary works inside JSX."
+  },
+  {
+    "id": 288,
+    "category": "React",
+    "level": "basic",
+    "question": "Which function is used to create a React app quickly (classic tool)?",
+    "options": ["create-react-app", "react-new", "make-react", "react-init"],
+    "answerIndex": 0,
+    "explanation": "create-react-app is a common starter tool."
+  },
+  {
+    "id": 289,
+    "category": "React",
+    "level": "basic",
+    "question": "Which hook is used to optimize rendering of a component (HOC)?",
+    "options": ["React.memo", "useMemo", "useCallback", "useEffect"],
+    "answerIndex": 0,
+    "explanation": "React.memo memoizes a component."
+  },
+  {
+    "id": 290,
+    "category": "React",
+    "level": "basic",
+    "question": "Which API is used to create a Context object?",
+    "options": [
+      "React.createContext()",
+      "React.makeContext()",
+      "React.useContext()",
+      "React.Context()"
+    ],
+    "answerIndex": 0,
+    "explanation": "React.createContext() creates context."
+  },
+  {
+    "id": 291,
+    "category": "CSS",
+    "level": "basic",
+    "question": "Which property changes the element size using scaling/rotation/translation?",
+    "options": ["transform", "transition", "translate", "scale"],
+    "answerIndex": 0,
+    "explanation": "transform applies translate/scale/rotate."
+  },
+  {
+    "id": 292,
+    "category": "CSS",
+    "level": "basic",
+    "question": "Which transform function moves an element on X and Y axis?",
+    "options": ["scale()", "rotate()", "translate()", "skew()"],
+    "answerIndex": 2,
+    "explanation": "translate() moves an element."
+  },
+  {
+    "id": 293,
+    "category": "CSS",
+    "level": "basic",
+    "question": "Which transform function rotates an element?",
+    "options": ["rotate()", "spin()", "turn()", "tilt()"],
+    "answerIndex": 0,
+    "explanation": "rotate() rotates an element."
+  },
+  {
+    "id": 294,
+    "category": "HTML",
+    "level": "basic",
+    "question": "Which attribute is used with <label> to connect it to an input?",
+    "options": ["id", "name", "for", "target"],
+    "answerIndex": 2,
+    "explanation": "label for='id' links label to input."
+  },
+  {
+    "id": 295,
+    "category": "JavaScript",
+    "level": "basic",
+    "question": "Which method is used to stop default behavior of an event?",
+    "options": ["stop()", "preventDefault()", "cancel()", "stopDefault()"],
+    "answerIndex": 1,
+    "explanation": "preventDefault stops default action."
+  },
+  {
+    "id": 296,
+    "category": "JavaScript",
+    "level": "basic",
+    "question": "Which method is used to stop event bubbling?",
+    "options": [
+      "stopPropagation()",
+      "stopBubble()",
+      "preventBubble()",
+      "blockPropagation()"
+    ],
+    "answerIndex": 0,
+    "explanation": "stopPropagation stops bubbling."
+  },
+  {
+    "id": 297,
+    "category": "JavaScript",
+    "level": "basic",
+    "question": "Which method converts a NodeList to an Array (common)?",
+    "options": ["Array.from()", "Array.make()", "Array.cast()", "toArray()"],
+    "answerIndex": 0,
+    "explanation": "Array.from converts array-like to array."
+  },
+  {
+    "id": 298,
+    "category": "JavaScript",
+    "level": "basic",
+    "question": "Which operator is used to check both type and value equality?",
+    "options": ["==", "===", "=", "!="],
+    "answerIndex": 1,
+    "explanation": "=== checks strict equality."
+  },
+  {
+    "id": 299,
+    "category": "React",
+    "level": "basic",
+    "question": "Which prop is used to set default checked state for an uncontrolled checkbox?",
+    "options": ["checked", "defaultChecked", "isChecked", "checkedDefault"],
+    "answerIndex": 1,
+    "explanation": "defaultChecked sets initial checked state (uncontrolled)."
+  },
+  {
+    "id": 300,
+    "category": "React",
+    "level": "basic",
+    "question": "Which prop controls checked state for a controlled checkbox?",
+    "options": ["defaultChecked", "checked", "value", "selected"],
+    "answerIndex": 1,
+    "explanation": "checked controls checkbox state in controlled component."
+  },
+
+  {
+    "id": 301,
+    "category": "HTML",
+    "level": "basic",
+    "question": "Which tag is used to define the main content of a document?",
+    "options": ["<main>", "<section>", "<article>", "<content>"],
+    "answerIndex": 0,
+    "explanation": "<main> represents the main content area."
+  },
+  {
+    "id": 302,
+    "category": "HTML",
+    "level": "basic",
+    "question": "Which tag is commonly used to define a footer section?",
+    "options": ["<bottom>", "<footer>", "<end>", "<foot>"],
+    "answerIndex": 1,
+    "explanation": "<footer> defines the footer for a section/page."
+  },
+  {
+    "id": 303,
+    "category": "HTML",
+    "level": "basic",
+    "question": "Which tag is commonly used to define a header section?",
+    "options": ["<top>", "<header>", "<head>", "<heading>"],
+    "answerIndex": 1,
+    "explanation": "<header> defines a header for a section/page."
+  },
+  {
+    "id": 304,
+    "category": "HTML",
+    "level": "basic",
+    "question": "Which tag represents self-contained content like a blog post?",
+    "options": ["<article>", "<section>", "<aside>", "<div>"],
+    "answerIndex": 0,
+    "explanation": "<article> is for self-contained content."
+  },
+  {
+    "id": 305,
+    "category": "HTML",
+    "level": "basic",
+    "question": "Which tag represents content indirectly related to the main content (sidebar)?",
+    "options": ["<aside>", "<section>", "<nav>", "<article>"],
+    "answerIndex": 0,
+    "explanation": "<aside> is used for side content like a sidebar."
+  },
+  {
+    "id": 306,
+    "category": "HTML",
+    "level": "basic",
+    "question": "Which tag is used to define a section in a document?",
+    "options": ["<section>", "<part>", "<block>", "<segment>"],
+    "answerIndex": 0,
+    "explanation": "<section> defines a logical section."
+  },
+  {
+    "id": 307,
+    "category": "HTML",
+    "level": "basic",
+    "question": "Which tag is used to display preformatted text?",
+    "options": ["<pre>", "<code>", "<text>", "<format>"],
+    "answerIndex": 0,
+    "explanation": "<pre> preserves whitespace and formatting."
+  },
+  {
+    "id": 308,
+    "category": "HTML",
+    "level": "basic",
+    "question": "Which tag is used to show keyboard input text?",
+    "options": ["<kbd>", "<code>", "<samp>", "<key>"],
+    "answerIndex": 0,
+    "explanation": "<kbd> represents keyboard input."
+  },
+  {
+    "id": 309,
+    "category": "HTML",
+    "level": "basic",
+    "question": "Which tag is used to show the result/output of a calculation?",
+    "options": ["<result>", "<output>", "<calc>", "<value>"],
+    "answerIndex": 1,
+    "explanation": "<output> represents the result of a calculation."
+  },
+  {
+    "id": 310,
+    "category": "HTML",
+    "level": "basic",
+    "question": "Which element provides a built-in tooltip when hovered?",
+    "options": [
+      "title attribute",
+      "tooltip attribute",
+      "hint attribute",
+      "hover attribute"
+    ],
+    "answerIndex": 0,
+    "explanation": "The title attribute shows a tooltip on hover."
+  },
+  {
+    "id": 311,
+    "category": "CSS",
+    "level": "basic",
+    "question": "Which property sets the space between lines of text?",
+    "options": [
+      "line-height",
+      "letter-spacing",
+      "word-spacing",
+      "text-spacing"
+    ],
+    "answerIndex": 0,
+    "explanation": "line-height controls vertical spacing between lines."
+  },
+  {
+    "id": 312,
+    "category": "CSS",
+    "level": "basic",
+    "question": "Which property sets the style of a border (solid, dashed, etc.)?",
+    "options": ["border-type", "border-style", "border-mode", "border-kind"],
+    "answerIndex": 1,
+    "explanation": "border-style sets the border pattern."
+  },
+  {
+    "id": 313,
+    "category": "CSS",
+    "level": "basic",
+    "question": "Which property sets the border color?",
+    "options": ["border-color", "border-paint", "stroke", "border-shade"],
+    "answerIndex": 0,
+    "explanation": "border-color sets the border color."
+  },
+  {
+    "id": 314,
+    "category": "CSS",
+    "level": "basic",
+    "question": "Which property sets the border width?",
+    "options": [
+      "border-width",
+      "border-size",
+      "border-thickness",
+      "border-weight"
+    ],
+    "answerIndex": 0,
+    "explanation": "border-width sets border thickness."
+  },
+  {
+    "id": 315,
+    "category": "CSS",
+    "level": "basic",
+    "question": "Which property changes the order of flex items?",
+    "options": ["order", "flex-order", "z-index", "arrange"],
+    "answerIndex": 0,
+    "explanation": "order controls arrangement of flex items."
+  },
+  {
+    "id": 316,
+    "category": "CSS",
+    "level": "basic",
+    "question": "Which property allows flex items to wrap to next line?",
+    "options": ["flex-wrap", "flex-flow", "wrap-items", "line-wrap"],
+    "answerIndex": 0,
+    "explanation": "flex-wrap enables wrapping."
+  },
+  {
+    "id": 317,
+    "category": "CSS",
+    "level": "basic",
+    "question": "Which value makes flex items NOT wrap?",
+    "options": ["wrap", "nowrap", "no-wrap", "block"],
+    "answerIndex": 1,
+    "explanation": "nowrap disables wrapping."
+  },
+  {
+    "id": 318,
+    "category": "CSS",
+    "level": "basic",
+    "question": "Which property sets how flex items grow to fill space?",
+    "options": ["flex-grow", "flex-size", "grow", "flex-fill"],
+    "answerIndex": 0,
+    "explanation": "flex-grow controls how items expand."
+  },
+  {
+    "id": 319,
+    "category": "CSS",
+    "level": "basic",
+    "question": "Which property sets how flex items shrink when space is tight?",
+    "options": ["flex-shrink", "flex-cut", "shrink", "flex-tight"],
+    "answerIndex": 0,
+    "explanation": "flex-shrink controls shrinking."
+  },
+  {
+    "id": 320,
+    "category": "CSS",
+    "level": "basic",
+    "question": "Which property sets the initial size of a flex item before growing/shrinking?",
+    "options": ["flex-basis", "flex-size", "base-size", "initial-width"],
+    "answerIndex": 0,
+    "explanation": "flex-basis sets the base size."
+  },
+  {
+    "id": 321,
+    "category": "JavaScript",
+    "level": "basic",
+    "question": "Which operator is used to assign a default value when left side is falsy?",
+    "options": ["??", "||", "&&", "::"],
+    "answerIndex": 1,
+    "explanation": "|| returns right side if left is falsy."
+  },
+  {
+    "id": 322,
+    "category": "JavaScript",
+    "level": "basic",
+    "question": "Which operator is used for null/undefined default only?",
+    "options": ["||", "??", "&&", "?: "],
+    "answerIndex": 1,
+    "explanation": "?? only falls back for null or undefined."
+  },
+  {
+    "id": 323,
+    "category": "JavaScript",
+    "level": "basic",
+    "question": "Which statement repeats code while a condition is true?",
+    "options": ["if", "while", "switch", "try"],
+    "answerIndex": 1,
+    "explanation": "while loop repeats while condition is true."
+  },
+  {
+    "id": 324,
+    "category": "JavaScript",
+    "level": "basic",
+    "question": "Which loop runs at least once even if condition is false?",
+    "options": ["for", "while", "do...while", "for...of"],
+    "answerIndex": 2,
+    "explanation": "do...while executes once before checking."
+  },
+  {
+    "id": 325,
+    "category": "JavaScript",
+    "level": "basic",
+    "question": "Which keyword is used to skip to the next loop iteration?",
+    "options": ["break", "continue", "skip", "next"],
+    "answerIndex": 1,
+    "explanation": "continue skips to next iteration."
+  },
+  {
+    "id": 326,
+    "category": "JavaScript",
+    "level": "basic",
+    "question": "Which operator is used to get the remainder of a division?",
+    "options": ["/", "%", "*", "//"],
+    "answerIndex": 1,
+    "explanation": "% gives remainder."
+  },
+  {
+    "id": 327,
+    "category": "JavaScript",
+    "level": "basic",
+    "question": "Which method converts a number to a fixed decimal string?",
+    "options": ["toFixed()", "fixed()", "toDecimal()", "round()"],
+    "answerIndex": 0,
+    "explanation": "toFixed() formats number to decimals."
+  },
+  {
+    "id": 328,
+    "category": "JavaScript",
+    "level": "basic",
+    "question": "Which Math method rounds down to the nearest integer?",
+    "options": ["Math.round()", "Math.floor()", "Math.ceil()", "Math.trunc()"],
+    "answerIndex": 1,
+    "explanation": "Math.floor rounds down."
+  },
+  {
+    "id": 329,
+    "category": "JavaScript",
+    "level": "basic",
+    "question": "Which Math method rounds up to the nearest integer?",
+    "options": ["Math.round()", "Math.floor()", "Math.ceil()", "Math.up()"],
+    "answerIndex": 2,
+    "explanation": "Math.ceil rounds up."
+  },
+  {
+    "id": 330,
+    "category": "JavaScript",
+    "level": "basic",
+    "question": "Which Math method returns the largest number from a list?",
+    "options": ["Math.max()", "Math.high()", "Math.top()", "Math.big()"],
+    "answerIndex": 0,
+    "explanation": "Math.max returns the maximum value."
+  },
+  {
+    "id": 331,
+    "category": "React",
+    "level": "basic",
+    "question": "What does React use to update the UI efficiently?",
+    "options": ["Real DOM", "Virtual DOM", "Shadow DOM only", "HTML templates"],
+    "answerIndex": 1,
+    "explanation": "React uses Virtual DOM for efficient updates."
+  },
+  {
+    "id": 332,
+    "category": "React",
+    "level": "basic",
+    "question": "Which hook is used to access the previous state/value commonly?",
+    "options": ["usePrev", "useRef", "useMemo", "useContext"],
+    "answerIndex": 1,
+    "explanation": "useRef can store previous values without re-render."
+  },
+  {
+    "id": 333,
+    "category": "React",
+    "level": "basic",
+    "question": "Which prop is used to set an input's value in a controlled component?",
+    "options": ["defaultValue", "value", "text", "currentValue"],
+    "answerIndex": 1,
+    "explanation": "value controls input value from state."
+  },
+  {
+    "id": 334,
+    "category": "React",
+    "level": "basic",
+    "question": "Which event is commonly used to handle form submit in React?",
+    "options": ["onSend", "onSubmit", "onClick", "onPost"],
+    "answerIndex": 1,
+    "explanation": "onSubmit handles form submission."
+  },
+  {
+    "id": 335,
+    "category": "React",
+    "level": "basic",
+    "question": "What is the correct way to prevent default form submit in React?",
+    "options": [
+      "event.stop()",
+      "event.preventDefault()",
+      "event.cancel()",
+      "event.block()"
+    ],
+    "answerIndex": 1,
+    "explanation": "preventDefault stops default submit behavior."
+  },
+  {
+    "id": 336,
+    "category": "React",
+    "level": "basic",
+    "question": "Which hook is used to create a memoized component without re-render on same props?",
+    "options": ["useMemo", "React.memo", "useCallback", "useRef"],
+    "answerIndex": 1,
+    "explanation": "React.memo memoizes a component."
+  },
+  {
+    "id": 337,
+    "category": "React",
+    "level": "basic",
+    "question": "Which hook is used to generate unique ids for accessibility (React 18)?",
+    "options": ["useId", "useUID", "useKey", "useUnique"],
+    "answerIndex": 0,
+    "explanation": "useId generates stable unique IDs."
+  },
+  {
+    "id": 338,
+    "category": "React",
+    "level": "basic",
+    "question": "Which is used to create a portal in React?",
+    "options": [
+      "React.createPortal()",
+      "React.portal()",
+      "createPortal()",
+      "Portal.create()"
+    ],
+    "answerIndex": 0,
+    "explanation": "ReactDOM.createPortal renders outside the parent DOM tree."
+  },
+  {
+    "id": 339,
+    "category": "React",
+    "level": "basic",
+    "question": "Which hook is used to debug custom hooks in React DevTools?",
+    "options": ["useDebugValue", "useLog", "useDevTools", "useInspect"],
+    "answerIndex": 0,
+    "explanation": "useDebugValue labels custom hooks."
+  },
+  {
+    "id": 340,
+    "category": "React",
+    "level": "basic",
+    "question": "What is the correct way to pass a boolean prop true?",
+    "options": [
+      "enabled='true'",
+      "enabled={true}",
+      "enabled",
+      "enabled=true()"
+    ],
+    "answerIndex": 2,
+    "explanation": "In JSX, <Comp enabled /> means enabled={true}."
+  },
+  {
+    "id": 341,
+    "category": "HTML",
+    "level": "basic",
+    "question": "Which attribute is used to make an input accept only numbers?",
+    "options": [
+      "type='number'",
+      "type='numeric'",
+      "type='int'",
+      "type='digit'"
+    ],
+    "answerIndex": 0,
+    "explanation": "type='number' is for numeric input."
+  },
+  {
+    "id": 342,
+    "category": "HTML",
+    "level": "basic",
+    "question": "Which input type is used to upload a file?",
+    "options": ["file", "upload", "document", "attachment"],
+    "answerIndex": 0,
+    "explanation": "type='file' allows file selection."
+  },
+  {
+    "id": 343,
+    "category": "HTML",
+    "level": "basic",
+    "question": "Which attribute is required on <form> to send files correctly?",
+    "options": [
+      "method='file'",
+      "enctype='multipart/form-data'",
+      "content='multipart'",
+      "type='upload'"
+    ],
+    "answerIndex": 1,
+    "explanation": "multipart/form-data is needed for file uploads."
+  },
+  {
+    "id": 344,
+    "category": "HTML",
+    "level": "basic",
+    "question": "Which input attribute sets minimum allowed value (number/date)?",
+    "options": ["min", "minimum", "low", "start"],
+    "answerIndex": 0,
+    "explanation": "min sets the minimum value."
+  },
+  {
+    "id": 345,
+    "category": "HTML",
+    "level": "basic",
+    "question": "Which input attribute sets maximum allowed value (number/date)?",
+    "options": ["max", "maximum", "high", "end"],
+    "answerIndex": 0,
+    "explanation": "max sets the maximum value."
+  },
+  {
+    "id": 346,
+    "category": "CSS",
+    "level": "basic",
+    "question": "Which property changes the visibility but still keeps the element space?",
+    "options": [
+      "display: none",
+      "visibility: hidden",
+      "opacity: 0",
+      "remove: true"
+    ],
+    "answerIndex": 1,
+    "explanation": "visibility: hidden hides element but keeps space."
+  },
+  {
+    "id": 347,
+    "category": "CSS",
+    "level": "basic",
+    "question": "Which property makes an element scrollable when content overflows?",
+    "options": [
+      "overflow: scroll",
+      "scroll: auto",
+      "flow: scroll",
+      "overflow: wrap"
+    ],
+    "answerIndex": 0,
+    "explanation": "overflow: scroll forces scrollbars."
+  },
+  {
+    "id": 348,
+    "category": "CSS",
+    "level": "basic",
+    "question": "Which value shows scrollbars only when needed?",
+    "options": [
+      "overflow: scroll",
+      "overflow: auto",
+      "overflow: hidden",
+      "overflow: clip"
+    ],
+    "answerIndex": 1,
+    "explanation": "overflow: auto shows scrollbars when needed."
+  },
+  {
+    "id": 349,
+    "category": "CSS",
+    "level": "basic",
+    "question": "Which property sets the spacing between grid columns?",
+    "options": ["column-gap", "grid-gap-x", "x-gap", "gap-x"],
+    "answerIndex": 0,
+    "explanation": "column-gap sets column spacing (gap also works)."
+  },
+  {
+    "id": 350,
+    "category": "CSS",
+    "level": "basic",
+    "question": "Which property sets the spacing between grid rows?",
+    "options": ["row-gap", "grid-gap-y", "y-gap", "gap-y"],
+    "answerIndex": 0,
+    "explanation": "row-gap sets row spacing (gap also works)."
+  },
+  {
+    "id": 351,
+    "category": "JavaScript",
+    "level": "basic",
+    "question": "Which method converts a JSON string into an object?",
+    "options": [
+      "JSON.stringify()",
+      "JSON.parse()",
+      "JSON.object()",
+      "JSON.decode()"
+    ],
+    "answerIndex": 1,
+    "explanation": "JSON.parse converts JSON string to object."
+  },
+  {
+    "id": 352,
+    "category": "JavaScript",
+    "level": "basic",
+    "question": "Which method converts an object into a JSON string?",
+    "options": [
+      "JSON.parse()",
+      "JSON.stringify()",
+      "JSON.encode()",
+      "JSON.toText()"
+    ],
+    "answerIndex": 1,
+    "explanation": "JSON.stringify converts object to JSON string."
+  },
+  {
+    "id": 353,
+    "category": "JavaScript",
+    "level": "basic",
+    "question": "Which method schedules a function to run repeatedly after a delay?",
+    "options": [
+      "setTimeout()",
+      "setInterval()",
+      "repeatTimeout()",
+      "loopTimeout()"
+    ],
+    "answerIndex": 1,
+    "explanation": "setInterval runs repeatedly."
+  },
+  {
+    "id": 354,
+    "category": "JavaScript",
+    "level": "basic",
+    "question": "Which method cancels a setTimeout timer?",
+    "options": [
+      "clearTimeout()",
+      "stopTimeout()",
+      "cancelTimeout()",
+      "removeTimeout()"
+    ],
+    "answerIndex": 0,
+    "explanation": "clearTimeout cancels setTimeout."
+  },
+  {
+    "id": 355,
+    "category": "JavaScript",
+    "level": "basic",
+    "question": "Which method cancels a setInterval timer?",
+    "options": [
+      "clearInterval()",
+      "stopInterval()",
+      "cancelInterval()",
+      "removeInterval()"
+    ],
+    "answerIndex": 0,
+    "explanation": "clearInterval cancels setInterval."
+  },
+  {
+    "id": 356,
+    "category": "JavaScript",
+    "level": "basic",
+    "question": "Which operator is used to check if two values are not equal (strict)?",
+    "options": ["!=", "!==", "<>", "not="],
+    "answerIndex": 1,
+    "explanation": "!== checks strict not-equal."
+  },
+  {
+    "id": 357,
+    "category": "JavaScript",
+    "level": "basic",
+    "question": "Which method returns the length of a string?",
+    "options": ["size()", "length", "count()", "len()"],
+    "answerIndex": 1,
+    "explanation": "length property gives string length."
+  },
+  {
+    "id": 358,
+    "category": "JavaScript",
+    "level": "basic",
+    "question": "Which method returns the length of an array?",
+    "options": ["size()", "length", "count()", "len()"],
+    "answerIndex": 1,
+    "explanation": "length property gives array length."
+  },
+  {
+    "id": 359,
+    "category": "JavaScript",
+    "level": "basic",
+    "question": "Which keyword is used to create a block scope in JavaScript?",
+    "options": ["{}", "()", "[]", "<>"],
+    "answerIndex": 0,
+    "explanation": "Curly braces create a block scope."
+  },
+  {
+    "id": 360,
+    "category": "JavaScript",
+    "level": "basic",
+    "question": "Which method checks if a number is an integer?",
+    "options": [
+      "Number.isInteger()",
+      "Math.isInt()",
+      "isInteger()",
+      "parseInt()"
+    ],
+    "answerIndex": 0,
+    "explanation": "Number.isInteger checks integer."
+  },
+  {
+    "id": 361,
+    "category": "React",
+    "level": "basic",
+    "question": "Which hook is used to run cleanup when component unmounts?",
+    "options": [
+      "useState cleanup",
+      "return function inside useEffect",
+      "useMemo cleanup",
+      "useRef cleanup"
+    ],
+    "answerIndex": 1,
+    "explanation": "Return a cleanup function from useEffect."
+  },
+  {
+    "id": 362,
+    "category": "React",
+    "level": "basic",
+    "question": "What does dependency array in useEffect control?",
+    "options": [
+      "CSS styles",
+      "When effect runs",
+      "Props validation",
+      "Component name"
+    ],
+    "answerIndex": 1,
+    "explanation": "Dependencies control when the effect runs."
+  },
+  {
+    "id": 363,
+    "category": "React",
+    "level": "basic",
+    "question": "Which hook is used to reference a DOM element in React?",
+    "options": ["useDOM", "useRef", "useEffect", "useMemo"],
+    "answerIndex": 1,
+    "explanation": "useRef can hold a DOM reference."
+  },
+  {
+    "id": 364,
+    "category": "React",
+    "level": "basic",
+    "question": "Which method is used to render React app in React 18?",
+    "options": [
+      "ReactDOM.render()",
+      "createRoot().render()",
+      "renderApp()",
+      "React.render()"
+    ],
+    "answerIndex": 1,
+    "explanation": "React 18 uses createRoot().render()."
+  },
+  {
+    "id": 365,
+    "category": "React",
+    "level": "basic",
+    "question": "Which concept describes passing data deeply through many components?",
+    "options": ["State lifting", "Prop drilling", "Memoization", "Hydration"],
+    "answerIndex": 1,
+    "explanation": "Prop drilling is passing props through many levels."
+  },
+  {
+    "id": 366,
+    "category": "React",
+    "level": "basic",
+    "question": "Which is a common solution to avoid prop drilling?",
+    "options": [
+      "More props",
+      "React Context",
+      "Inline CSS",
+      "Bigger components"
+    ],
+    "answerIndex": 1,
+    "explanation": "Context helps avoid prop drilling."
+  },
+  {
+    "id": 367,
+    "category": "React",
+    "level": "basic",
+    "question": "Which pattern is used to pass a function from parent to child?",
+    "options": ["Props callback", "Context only", "Reducer only", "Portal"],
+    "answerIndex": 0,
+    "explanation": "Passing a callback via props is common."
+  },
+  {
+    "id": 368,
+    "category": "React",
+    "level": "basic",
+    "question": "Which syntax is used to conditionally add a className in React?",
+    "options": [
+      "className = if()",
+      "className={condition ? 'a' : 'b'}",
+      "className: condition",
+      "className => condition"
+    ],
+    "answerIndex": 1,
+    "explanation": "Ternary inside className is common."
+  },
+  {
+    "id": 369,
+    "category": "CSS",
+    "level": "basic",
+    "question": "Which CSS function creates a linear color gradient?",
+    "options": [
+      "color-gradient()",
+      "linear-gradient()",
+      "gradient-linear()",
+      "fade()"
+    ],
+    "answerIndex": 1,
+    "explanation": "linear-gradient() creates gradients."
+  },
+  {
+    "id": 370,
+    "category": "CSS",
+    "level": "basic",
+    "question": "Which property makes an element stick during scroll after a threshold?",
+    "options": [
+      "position: fixed",
+      "position: sticky",
+      "position: absolute",
+      "position: relative"
+    ],
+    "answerIndex": 1,
+    "explanation": "position: sticky sticks based on scroll position."
+  },
+  {
+    "id": 371,
+    "category": "CSS",
+    "level": "basic",
+    "question": "Which property sets the top offset for a sticky element?",
+    "options": ["top", "offset-top", "sticky-top", "y"],
+    "answerIndex": 0,
+    "explanation": "top sets the sticky threshold."
+  },
+  {
+    "id": 372,
+    "category": "HTML",
+    "level": "basic",
+    "question": "Which tag is used to define a progress bar?",
+    "options": ["<progress>", "<meter>", "<bar>", "<loading>"],
+    "answerIndex": 0,
+    "explanation": "<progress> shows task progress."
+  },
+  {
+    "id": 373,
+    "category": "HTML",
+    "level": "basic",
+    "question": "Which tag is used to represent a scalar measurement within a range?",
+    "options": ["<progress>", "<meter>", "<range>", "<scale>"],
+    "answerIndex": 1,
+    "explanation": "<meter> represents a scalar measurement."
+  },
+  {
+    "id": 374,
+    "category": "JavaScript",
+    "level": "basic",
+    "question": "Which method is used to make an HTTP request in modern browsers?",
+    "options": ["fetch()", "http()", "request()", "ajax() only"],
+    "answerIndex": 0,
+    "explanation": "fetch() is standard for HTTP requests."
+  },
+  {
+    "id": 375,
+    "category": "JavaScript",
+    "level": "basic",
+    "question": "Which fetch method reads JSON from the response?",
+    "options": ["res.toJSON()", "res.json()", "res.parse()", "res.bodyJSON()"],
+    "answerIndex": 1,
+    "explanation": "res.json() parses response body as JSON."
+  },
+  {
+    "id": 376,
+    "category": "JavaScript",
+    "level": "basic",
+    "question": "Which fetch option sets the HTTP method?",
+    "options": ["type", "method", "mode", "action"],
+    "answerIndex": 1,
+    "explanation": "method sets request method."
+  },
+  {
+    "id": 377,
+    "category": "JavaScript",
+    "level": "basic",
+    "question": "Which fetch option sets request headers?",
+    "options": ["headers", "header", "httpHeaders", "meta"],
+    "answerIndex": 0,
+    "explanation": "headers option sets request headers."
+  },
+  {
+    "id": 378,
+    "category": "JavaScript",
+    "level": "basic",
+    "question": "Which object is used to work with URLs in the browser?",
+    "options": ["URL", "Link", "Href", "LocationOnly"],
+    "answerIndex": 0,
+    "explanation": "URL is a built-in object for URLs."
+  },
+  {
+    "id": 379,
+    "category": "JavaScript",
+    "level": "basic",
+    "question": "Which property gives the current page URL?",
+    "options": [
+      "document.url",
+      "window.location.href",
+      "window.url",
+      "location.page"
+    ],
+    "answerIndex": 1,
+    "explanation": "window.location.href is the current URL."
+  },
+  {
+    "id": 380,
+    "category": "React",
+    "level": "basic",
+    "question": "Which hook is used to lazy initialize state?",
+    "options": [
+      "useState(() => initialValue)",
+      "useEffect(() => initialValue)",
+      "useMemo(initialValue)",
+      "useRef(() => initialValue)"
+    ],
+    "answerIndex": 0,
+    "explanation": "useState can take a function for lazy init."
+  },
+  {
+    "id": 381,
+    "category": "React",
+    "level": "basic",
+    "question": "Which React feature lets you load a component lazily?",
+    "options": ["React.lazy()", "React.load()", "useLazy()", "lazyImport()"],
+    "answerIndex": 0,
+    "explanation": "React.lazy enables lazy-loaded components."
+  },
+  {
+    "id": 382,
+    "category": "React",
+    "level": "basic",
+    "question": "Which component shows fallback UI while lazy component loads?",
+    "options": ["<Loading>", "<Suspense>", "<Fallback>", "<Await>"],
+    "answerIndex": 1,
+    "explanation": "<Suspense> shows fallback while loading."
+  },
+  {
+    "id": 383,
+    "category": "React",
+    "level": "basic",
+    "question": "Which prop in <Suspense> sets the fallback UI?",
+    "options": ["loading", "fallback", "loader", "pending"],
+    "answerIndex": 1,
+    "explanation": "fallback prop sets loading UI."
+  },
+  {
+    "id": 384,
+    "category": "CSS",
+    "level": "basic",
+    "question": "Which property is used to change the font color?",
+    "options": ["font-color", "color", "text-color", "foreground"],
+    "answerIndex": 1,
+    "explanation": "color sets text color."
+  },
+  {
+    "id": 385,
+    "category": "CSS",
+    "level": "basic",
+    "question": "Which property sets the background image?",
+    "options": [
+      "bg-image",
+      "background-image",
+      "image-background",
+      "background-src"
+    ],
+    "answerIndex": 1,
+    "explanation": "background-image sets a background image."
+  },
+  {
+    "id": 386,
+    "category": "CSS",
+    "level": "basic",
+    "question": "Which property controls background image repetition?",
+    "options": [
+      "background-repeat",
+      "background-loop",
+      "background-tile",
+      "repeat-background"
+    ],
+    "answerIndex": 0,
+    "explanation": "background-repeat controls tiling."
+  },
+  {
+    "id": 387,
+    "category": "CSS",
+    "level": "basic",
+    "question": "Which property controls background image size?",
+    "options": ["background-size", "background-scale", "image-size", "bg-size"],
+    "answerIndex": 0,
+    "explanation": "background-size controls image sizing."
+  },
+  {
+    "id": 388,
+    "category": "HTML",
+    "level": "basic",
+    "question": "Which attribute is used to make an input accept only specific file types?",
+    "options": ["types", "accept", "fileType", "format"],
+    "answerIndex": 1,
+    "explanation": "accept restricts selectable file types."
+  },
+  {
+    "id": 389,
+    "category": "HTML",
+    "level": "basic",
+    "question": "Which input type is used to enter an email address?",
+    "options": ["mail", "email", "text-email", "emailbox"],
+    "answerIndex": 1,
+    "explanation": "type='email' validates email format."
+  },
+  {
+    "id": 390,
+    "category": "HTML",
+    "level": "basic",
+    "question": "Which input type is used to enter a URL?",
+    "options": ["url", "link", "website", "href"],
+    "answerIndex": 0,
+    "explanation": "type='url' validates URL format."
+  },
+  {
+    "id": 391,
+    "category": "JavaScript",
+    "level": "basic",
+    "question": "Which array method creates a new array with only unique values (common approach)?",
+    "options": [
+      "new Set(arr)",
+      "arr.unique()",
+      "unique(arr)",
+      "arr.distinct()"
+    ],
+    "answerIndex": 0,
+    "explanation": "Using Set is a common way to get unique values."
+  },
+  {
+    "id": 392,
+    "category": "JavaScript",
+    "level": "basic",
+    "question": "Which built-in object stores unique values only?",
+    "options": ["Map", "Set", "Array", "Object"],
+    "answerIndex": 1,
+    "explanation": "Set stores unique values."
+  },
+  {
+    "id": 393,
+    "category": "JavaScript",
+    "level": "basic",
+    "question": "Which built-in object stores key-value pairs with any key type?",
+    "options": ["Object", "Map", "Set", "WeakSet"],
+    "answerIndex": 1,
+    "explanation": "Map stores key-value pairs with any key type."
+  },
+  {
+    "id": 394,
+    "category": "JavaScript",
+    "level": "basic",
+    "question": "Which Map method is used to set a key-value pair?",
+    "options": ["put()", "set()", "add()", "insert()"],
+    "answerIndex": 1,
+    "explanation": "map.set(key, value) adds/updates a pair."
+  },
+  {
+    "id": 395,
+    "category": "JavaScript",
+    "level": "basic",
+    "question": "Which Set method adds a value?",
+    "options": ["push()", "add()", "set()", "insert()"],
+    "answerIndex": 1,
+    "explanation": "set.add(value) adds a value."
+  },
+  {
+    "id": 396,
+    "category": "React",
+    "level": "basic",
+    "question": "Which hook is used to subscribe to external stores (React 18)?",
+    "options": [
+      "useSyncExternalStore",
+      "useExternalStore",
+      "useStoreSync",
+      "useSubscribe"
+    ],
+    "answerIndex": 0,
+    "explanation": "useSyncExternalStore is for external store subscriptions."
+  },
+  {
+    "id": 397,
+    "category": "React",
+    "level": "basic",
+    "question": "Which hook is used to insert styles before layout effects (advanced)?",
+    "options": [
+      "useStyleEffect",
+      "useInsertionEffect",
+      "useLayoutEffect",
+      "useEffect"
+    ],
+    "answerIndex": 1,
+    "explanation": "useInsertionEffect is used by CSS-in-JS libraries."
+  },
+  {
+    "id": 398,
+    "category": "CSS",
+    "level": "basic",
+    "question": "Which property controls whether text can wrap to the next line?",
+    "options": ["text-wrap", "white-space", "wrap-style", "line-wrap"],
+    "answerIndex": 1,
+    "explanation": "white-space controls text wrapping behavior."
+  },
+  {
+    "id": 399,
+    "category": "CSS",
+    "level": "basic",
+    "question": "Which value prevents text from wrapping to the next line?",
+    "options": [
+      "white-space: nowrap",
+      "white-space: no-wrap",
+      "text-wrap: none",
+      "wrap: off"
+    ],
+    "answerIndex": 0,
+    "explanation": "white-space: nowrap prevents wrapping."
+  },
+  {
+    "id": 400,
+    "category": "CSS",
+    "level": "basic",
+    "question": "Which property shows three dots (...) when text overflows (needs nowrap + hidden too)?",
+    "options": ["text-overflow", "overflow-dots", "text-clip", "ellipsis"],
+    "answerIndex": 0,
+    "explanation": "text-overflow: ellipsis shows dots on overflow (with required conditions)."
+  },
+
+  {
+    "id": 401,
+    "category": "HTML",
+    "level": "basic",
+    "question": "Which tag is used to embed an image with responsive sources?",
+    "options": ["<imgset>", "<picture>", "<sourceimg>", "<responsive>"],
+    "answerIndex": 1,
+    "explanation": "<picture> helps serve different images for different conditions."
+  },
+  {
+    "id": 402,
+    "category": "HTML",
+    "level": "basic",
+    "question": "Which tag inside <picture> provides a media-based source?",
+    "options": ["<img>", "<source>", "<src>", "<media>"],
+    "answerIndex": 1,
+    "explanation": "<source> specifies an image source for <picture>."
+  },
+  {
+    "id": 403,
+    "category": "HTML",
+    "level": "basic",
+    "question": "Which tag is used to define a caption for a figure?",
+    "options": ["<caption>", "<figcaption>", "<figure-caption>", "<legend>"],
+    "answerIndex": 1,
+    "explanation": "<figcaption> provides a caption for <figure>."
+  },
+  {
+    "id": 404,
+    "category": "HTML",
+    "level": "basic",
+    "question": "Which tag is used to wrap media/content with an optional caption?",
+    "options": ["<media>", "<figure>", "<frame>", "<block>"],
+    "answerIndex": 1,
+    "explanation": "<figure> wraps self-contained content like images/diagrams."
+  },
+  {
+    "id": 405,
+    "category": "HTML",
+    "level": "basic",
+    "question": "Which attribute makes a checkbox checked by default?",
+    "options": ["selected", "checked", "default", "active"],
+    "answerIndex": 1,
+    "explanation": "checked makes checkbox checked initially."
+  },
+  {
+    "id": 406,
+    "category": "HTML",
+    "level": "basic",
+    "question": "Which attribute allows an input to accept multiple files?",
+    "options": ["many", "multiple", "multi", "files"],
+    "answerIndex": 1,
+    "explanation": "multiple allows selecting multiple files."
+  },
+  {
+    "id": 407,
+    "category": "HTML",
+    "level": "basic",
+    "question": "Which attribute specifies the form submission URL?",
+    "options": ["action", "to", "href", "target"],
+    "answerIndex": 0,
+    "explanation": "action defines where the form data is sent."
+  },
+  {
+    "id": 408,
+    "category": "HTML",
+    "level": "basic",
+    "question": "Which form method sends data in the URL query string?",
+    "options": ["GET", "POST", "PUT", "PATCH"],
+    "answerIndex": 0,
+    "explanation": "GET sends form data in the URL."
+  },
+  {
+    "id": 409,
+    "category": "HTML",
+    "level": "basic",
+    "question": "Which attribute is used to disable browser autocomplete in a form/input?",
+    "options": [
+      "autofill='off'",
+      "autocomplete='off'",
+      "complete='no'",
+      "autofill='false'"
+    ],
+    "answerIndex": 1,
+    "explanation": "autocomplete='off' disables autocomplete (browser behavior may vary)."
+  },
+  {
+    "id": 410,
+    "category": "HTML",
+    "level": "basic",
+    "question": "Which input type is used to enter a phone number (semantic)?",
+    "options": ["phone", "tel", "mobile", "number"],
+    "answerIndex": 1,
+    "explanation": "type='tel' is used for telephone numbers."
+  },
+  {
+    "id": 411,
+    "category": "CSS",
+    "level": "basic",
+    "question": "Which property sets the space between letters?",
+    "options": ["letter-spacing", "word-spacing", "line-height", "text-gap"],
+    "answerIndex": 0,
+    "explanation": "letter-spacing controls space between letters."
+  },
+  {
+    "id": 412,
+    "category": "CSS",
+    "level": "basic",
+    "question": "Which property sets the space between words?",
+    "options": ["word-spacing", "letter-spacing", "line-gap", "text-spacing"],
+    "answerIndex": 0,
+    "explanation": "word-spacing controls space between words."
+  },
+  {
+    "id": 413,
+    "category": "CSS",
+    "level": "basic",
+    "question": "Which property makes text appear with a line through it?",
+    "options": [
+      "text-decoration: line-through",
+      "text-style: strike",
+      "font-decoration: cut",
+      "text-line: through"
+    ],
+    "answerIndex": 0,
+    "explanation": "text-decoration: line-through strikes text."
+  },
+  {
+    "id": 414,
+    "category": "CSS",
+    "level": "basic",
+    "question": "Which property changes the style of the mouse cursor?",
+    "options": ["cursor", "pointer-style", "mouse-style", "hand"],
+    "answerIndex": 0,
+    "explanation": "cursor changes the mouse cursor."
+  },
+  {
+    "id": 415,
+    "category": "CSS",
+    "level": "basic",
+    "question": "Which display value allows setting width/height but keeps element inline?",
+    "options": ["inline", "block", "inline-block", "flex"],
+    "answerIndex": 2,
+    "explanation": "inline-block allows width/height while staying inline."
+  },
+  {
+    "id": 416,
+    "category": "CSS",
+    "level": "basic",
+    "question": "Which property aligns text to the right?",
+    "options": [
+      "text-align: right",
+      "align-text: right",
+      "text-right: true",
+      "justify: right"
+    ],
+    "answerIndex": 0,
+    "explanation": "text-align: right aligns inline text to the right."
+  },
+  {
+    "id": 417,
+    "category": "CSS",
+    "level": "basic",
+    "question": "Which property can round only top-left corner?",
+    "options": [
+      "border-radius",
+      "border-top-left-radius",
+      "corner-top-left",
+      "radius-top-left"
+    ],
+    "answerIndex": 1,
+    "explanation": "border-top-left-radius rounds the top-left corner."
+  },
+  {
+    "id": 418,
+    "category": "CSS",
+    "level": "basic",
+    "question": "Which property controls how an image/video fits inside its box?",
+    "options": ["object-fit", "image-fit", "fit-mode", "object-size"],
+    "answerIndex": 0,
+    "explanation": "object-fit controls replaced element fitting."
+  },
+  {
+    "id": 419,
+    "category": "CSS",
+    "level": "basic",
+    "question": "Which object-fit value fills the box and may crop the image?",
+    "options": ["contain", "cover", "fill", "scale-down"],
+    "answerIndex": 1,
+    "explanation": "cover fills and may crop."
+  },
+  {
+    "id": 420,
+    "category": "CSS",
+    "level": "basic",
+    "question": "Which property clips an element to a circle/shape using a mask path?",
+    "options": ["clip-path", "shape-cut", "mask-shape", "crop-path"],
+    "answerIndex": 0,
+    "explanation": "clip-path clips an element to a shape."
+  },
+  {
+    "id": 421,
+    "category": "JavaScript",
+    "level": "basic",
+    "question": "Which keyword is used to create a constant variable?",
+    "options": ["let", "const", "var", "static"],
+    "answerIndex": 1,
+    "explanation": "const creates a constant binding."
+  },
+  {
+    "id": 422,
+    "category": "JavaScript",
+    "level": "basic",
+    "question": "Which value is returned by typeof null?",
+    "options": ["null", "object", "undefined", "number"],
+    "answerIndex": 1,
+    "explanation": "typeof null is 'object' (legacy behavior)."
+  },
+  {
+    "id": 423,
+    "category": "JavaScript",
+    "level": "basic",
+    "question": "Which method converts a string to a number (simple)?",
+    "options": ["Number()", "String()", "toString()", "join()"],
+    "answerIndex": 0,
+    "explanation": "Number() converts to number."
+  },
+  {
+    "id": 424,
+    "category": "JavaScript",
+    "level": "basic",
+    "question": "Which method checks if a string starts with a substring?",
+    "options": ["startsWith()", "beginWith()", "start()", "hasStart()"],
+    "answerIndex": 0,
+    "explanation": "startsWith() checks prefix."
+  },
+  {
+    "id": 425,
+    "category": "JavaScript",
+    "level": "basic",
+    "question": "Which method checks if a string ends with a substring?",
+    "options": ["endsWith()", "finishWith()", "end()", "hasEnd()"],
+    "answerIndex": 0,
+    "explanation": "endsWith() checks suffix."
+  },
+  {
+    "id": 426,
+    "category": "JavaScript",
+    "level": "basic",
+    "question": "Which method repeats a string N times?",
+    "options": ["repeat()", "times()", "multiply()", "loop()"],
+    "answerIndex": 0,
+    "explanation": "repeat(n) repeats a string."
+  },
+  {
+    "id": 427,
+    "category": "JavaScript",
+    "level": "basic",
+    "question": "Which method returns a substring by start and end indexes?",
+    "options": ["substring()", "sub()", "sliceText()", "cut()"],
+    "answerIndex": 0,
+    "explanation": "substring(start, end) returns part of string."
+  },
+  {
+    "id": 428,
+    "category": "JavaScript",
+    "level": "basic",
+    "question": "Which method adds items to the beginning of an array?",
+    "options": ["push()", "pop()", "shift()", "unshift()"],
+    "answerIndex": 3,
+    "explanation": "unshift() adds to the start."
+  },
+  {
+    "id": 429,
+    "category": "JavaScript",
+    "level": "basic",
+    "question": "Which method removes items from the beginning of an array?",
+    "options": ["pop()", "shift()", "push()", "unshift()"],
+    "answerIndex": 1,
+    "explanation": "shift() removes from the start."
+  },
+  {
+    "id": 430,
+    "category": "JavaScript",
+    "level": "basic",
+    "question": "Which method merges two arrays and returns a new array?",
+    "options": ["concat()", "merge()", "combine()", "appendAll()"],
+    "answerIndex": 0,
+    "explanation": "concat() returns a new merged array."
+  },
+  {
+    "id": 431,
+    "category": "React",
+    "level": "basic",
+    "question": "JSX allows writing what inside JavaScript?",
+    "options": ["SQL", "HTML-like syntax", "Only CSS", "Only JSON"],
+    "answerIndex": 1,
+    "explanation": "JSX is HTML-like syntax in JS."
+  },
+  {
+    "id": 432,
+    "category": "React",
+    "level": "basic",
+    "question": "What must be returned by a React component?",
+    "options": [
+      "Only string",
+      "A single React element/tree",
+      "Only object",
+      "Only number"
+    ],
+    "answerIndex": 1,
+    "explanation": "Components return JSX/React elements."
+  },
+  {
+    "id": 433,
+    "category": "React",
+    "level": "basic",
+    "question": "Which prop is used to pass a function from parent to child?",
+    "options": ["callback", "A function in props", "useEffect", "ref only"],
+    "answerIndex": 1,
+    "explanation": "Pass the function as a prop to child."
+  },
+  {
+    "id": 434,
+    "category": "React",
+    "level": "basic",
+    "question": "Which hook is used to reduce unnecessary renders by memoizing values?",
+    "options": ["useEffect", "useMemo", "useState", "useContext"],
+    "answerIndex": 1,
+    "explanation": "useMemo memoizes a computed value."
+  },
+  {
+    "id": 435,
+    "category": "React",
+    "level": "basic",
+    "question": "Which hook is used to memoize a function for child props optimization?",
+    "options": ["useCallback", "useMemo", "useRef", "useReducer"],
+    "answerIndex": 0,
+    "explanation": "useCallback memoizes a function."
+  },
+  {
+    "id": 436,
+    "category": "React",
+    "level": "basic",
+    "question": "Which hook is used to get a unique id for labels/inputs?",
+    "options": ["useKey", "useId", "useUID", "useUniqueId"],
+    "answerIndex": 1,
+    "explanation": "useId generates unique IDs for accessibility."
+  },
+  {
+    "id": 437,
+    "category": "React",
+    "level": "basic",
+    "question": "Which syntax correctly adds a JavaScript expression in JSX?",
+    "options": ["{{expr}}", "{expr}", "(expr)", "<expr>"],
+    "answerIndex": 1,
+    "explanation": "Use {expr} to embed expressions."
+  },
+  {
+    "id": 438,
+    "category": "React",
+    "level": "basic",
+    "question": "What is the correct prop name for 'for' attribute in React label?",
+    "options": ["for", "htmlFor", "labelFor", "refFor"],
+    "answerIndex": 1,
+    "explanation": "React uses htmlFor instead of for."
+  },
+  {
+    "id": 439,
+    "category": "React",
+    "level": "basic",
+    "question": "Which method is used to create a Context in React?",
+    "options": [
+      "createContext()",
+      "useContext()",
+      "makeContext()",
+      "new Context()"
+    ],
+    "answerIndex": 0,
+    "explanation": "React.createContext() creates a context."
+  },
+  {
+    "id": 440,
+    "category": "React",
+    "level": "basic",
+    "question": "Which component provides a Context value to children?",
+    "options": [
+      "Context.Consumer",
+      "Context.Provider",
+      "Context.Giver",
+      "Context.Value"
+    ],
+    "answerIndex": 1,
+    "explanation": "Provider supplies context value to subtree."
+  },
+  {
+    "id": 441,
+    "category": "HTML",
+    "level": "basic",
+    "question": "Which tag is used to create a text area input?",
+    "options": [
+      "<input type='textarea'>",
+      "<textarea>",
+      "<text-area>",
+      "<input area>"
+    ],
+    "answerIndex": 1,
+    "explanation": "<textarea> creates multi-line input."
+  },
+  {
+    "id": 442,
+    "category": "HTML",
+    "level": "basic",
+    "question": "Which attribute sets number of visible rows in a textarea?",
+    "options": ["rows", "cols", "height", "lines"],
+    "answerIndex": 0,
+    "explanation": "rows sets visible lines."
+  },
+  {
+    "id": 443,
+    "category": "HTML",
+    "level": "basic",
+    "question": "Which attribute sets number of visible columns in a textarea?",
+    "options": ["rows", "cols", "width", "chars"],
+    "answerIndex": 1,
+    "explanation": "cols sets visible character width."
+  },
+  {
+    "id": 444,
+    "category": "CSS",
+    "level": "basic",
+    "question": "Which property controls how content is aligned along the main axis in flexbox?",
+    "options": [
+      "align-items",
+      "justify-content",
+      "align-content",
+      "place-items"
+    ],
+    "answerIndex": 1,
+    "explanation": "justify-content aligns items on main axis."
+  },
+  {
+    "id": 445,
+    "category": "CSS",
+    "level": "basic",
+    "question": "Which property controls how content is aligned along the cross axis in flexbox?",
+    "options": [
+      "align-items",
+      "justify-content",
+      "justify-items",
+      "text-align"
+    ],
+    "answerIndex": 0,
+    "explanation": "align-items aligns items on cross axis."
+  },
+  {
+    "id": 446,
+    "category": "CSS",
+    "level": "basic",
+    "question": "Which value spreads flex items with equal space around them?",
+    "options": ["space-between", "space-around", "space-evenly", "center"],
+    "answerIndex": 1,
+    "explanation": "space-around adds equal space around items."
+  },
+  {
+    "id": 447,
+    "category": "CSS",
+    "level": "basic",
+    "question": "Which value spreads flex items with equal space between and at ends?",
+    "options": ["space-between", "space-around", "space-evenly", "stretch"],
+    "answerIndex": 2,
+    "explanation": "space-evenly adds equal space everywhere."
+  },
+  {
+    "id": 448,
+    "category": "JavaScript",
+    "level": "basic",
+    "question": "Which function converts a string to an integer?",
+    "options": ["parseInt()", "parseFloat()", "Number()", "toInt()"],
+    "answerIndex": 0,
+    "explanation": "parseInt converts string to integer."
+  },
+  {
+    "id": 449,
+    "category": "JavaScript",
+    "level": "basic",
+    "question": "Which function converts a string to a floating-point number?",
+    "options": ["parseFloat()", "parseInt()", "Float()", "toFloat()"],
+    "answerIndex": 0,
+    "explanation": "parseFloat converts string to float."
+  },
+  {
+    "id": 450,
+    "category": "JavaScript",
+    "level": "basic",
+    "question": "Which method returns a random number between 0 and 1?",
+    "options": ["Math.random()", "Math.rand()", "random()", "Number.random()"],
+    "answerIndex": 0,
+    "explanation": "Math.random returns 0 <= n < 1."
+  },
+  {
+    "id": 451,
+    "category": "JavaScript",
+    "level": "basic",
+    "question": "Which method rounds a number to the nearest integer?",
+    "options": ["Math.floor()", "Math.round()", "Math.ceil()", "Math.near()"],
+    "answerIndex": 1,
+    "explanation": "Math.round rounds to nearest integer."
+  },
+  {
+    "id": 452,
+    "category": "JavaScript",
+    "level": "basic",
+    "question": "Which statement creates a new error object?",
+    "options": ["new Error()", "Error.create()", "throw new()", "make Error()"],
+    "answerIndex": 0,
+    "explanation": "new Error(message) creates an Error object."
+  },
+  {
+    "id": 453,
+    "category": "JavaScript",
+    "level": "basic",
+    "question": "Which keyword is used to manually throw an error?",
+    "options": ["throw", "catch", "error", "raise"],
+    "answerIndex": 0,
+    "explanation": "throw raises an error."
+  },
+  {
+    "id": 454,
+    "category": "JavaScript",
+    "level": "basic",
+    "question": "Which built-in method checks if an array is actually an array?",
+    "options": [
+      "Array.isArray()",
+      "isArray()",
+      "typeof arr === 'array'",
+      "arr.isArray()"
+    ],
+    "answerIndex": 0,
+    "explanation": "Array.isArray(value) checks arrays."
+  },
+  {
+    "id": 455,
+    "category": "JavaScript",
+    "level": "basic",
+    "question": "Which operator is used to create a shallow copy of an object (common)?",
+    "options": ["...", "===", "??", "&&"],
+    "answerIndex": 0,
+    "explanation": "Spread (...) is used in { ...obj }."
+  },
+  {
+    "id": 456,
+    "category": "React",
+    "level": "basic",
+    "question": "Which hook is used to store and update state based on actions?",
+    "options": ["useReducer", "useState", "useEffect", "useMemo"],
+    "answerIndex": 0,
+    "explanation": "useReducer is for action-based state updates."
+  },
+  {
+    "id": 457,
+    "category": "React",
+    "level": "basic",
+    "question": "Which hook is useful for optimizing slow input updates (React 18)?",
+    "options": ["useDeferredValue", "useMemo", "useRef", "useLayoutEffect"],
+    "answerIndex": 0,
+    "explanation": "useDeferredValue can defer updates."
+  },
+  {
+    "id": 458,
+    "category": "React",
+    "level": "basic",
+    "question": "Which hook marks updates as low priority (React 18)?",
+    "options": ["useTransition", "useMemo", "useState", "useEffect"],
+    "answerIndex": 0,
+    "explanation": "useTransition marks updates as transitions."
+  },
+  {
+    "id": 459,
+    "category": "CSS",
+    "level": "basic",
+    "question": "Which property sets the size of a background image?",
+    "options": ["background-size", "background-scale", "bg-size", "image-size"],
+    "answerIndex": 0,
+    "explanation": "background-size controls background image size."
+  },
+  {
+    "id": 460,
+    "category": "CSS",
+    "level": "basic",
+    "question": "Which value scales background image to cover container (may crop)?",
+    "options": ["contain", "cover", "fill", "stretch"],
+    "answerIndex": 1,
+    "explanation": "cover fills container and may crop."
+  },
+  {
+    "id": 461,
+    "category": "CSS",
+    "level": "basic",
+    "question": "Which value scales background image to fit inside container (no crop)?",
+    "options": ["contain", "cover", "fill", "stretch"],
+    "answerIndex": 0,
+    "explanation": "contain fits entire image without cropping."
+  },
+  {
+    "id": 462,
+    "category": "CSS",
+    "level": "basic",
+    "question": "Which property changes the opacity of only the background (not children) using RGBA?",
+    "options": [
+      "opacity",
+      "background-color: rgba()",
+      "filter: opacity()",
+      "alpha()"
+    ],
+    "answerIndex": 1,
+    "explanation": "Use rgba() in background-color to affect only background."
+  },
+  {
+    "id": 463,
+    "category": "HTML",
+    "level": "basic",
+    "question": "Which attribute is used on <script> to load a JS file?",
+    "options": ["href", "src", "link", "file"],
+    "answerIndex": 1,
+    "explanation": "src loads an external script."
+  },
+  {
+    "id": 464,
+    "category": "HTML",
+    "level": "basic",
+    "question": "Which script attribute loads the script after HTML is parsed?",
+    "options": ["defer", "async", "late", "delay"],
+    "answerIndex": 0,
+    "explanation": "defer executes after parsing, in order."
+  },
+  {
+    "id": 465,
+    "category": "HTML",
+    "level": "basic",
+    "question": "Which script attribute loads and executes as soon as it’s ready (may be out of order)?",
+    "options": ["defer", "async", "sync", "ordered"],
+    "answerIndex": 1,
+    "explanation": "async loads and executes independently."
+  },
+  {
+    "id": 466,
+    "category": "JavaScript",
+    "level": "basic",
+    "question": "Which statement is used to create a promise that resolves immediately?",
+    "options": [
+      "Promise.resolve()",
+      "Promise.done()",
+      "Promise.now()",
+      "Promise.success()"
+    ],
+    "answerIndex": 0,
+    "explanation": "Promise.resolve creates a resolved promise."
+  },
+  {
+    "id": 467,
+    "category": "JavaScript",
+    "level": "basic",
+    "question": "Which statement is used to create a promise that rejects immediately?",
+    "options": [
+      "Promise.reject()",
+      "Promise.fail()",
+      "Promise.error()",
+      "Promise.throw()"
+    ],
+    "answerIndex": 0,
+    "explanation": "Promise.reject creates a rejected promise."
+  },
+  {
+    "id": 468,
+    "category": "JavaScript",
+    "level": "basic",
+    "question": "Which method runs multiple promises in parallel and resolves when all succeed?",
+    "options": [
+      "Promise.all()",
+      "Promise.any()",
+      "Promise.race()",
+      "Promise.some()"
+    ],
+    "answerIndex": 0,
+    "explanation": "Promise.all resolves when all promises resolve."
+  },
+  {
+    "id": 469,
+    "category": "JavaScript",
+    "level": "basic",
+    "question": "Which Promise method resolves when any one promise resolves (or rejects if all reject)?",
+    "options": [
+      "Promise.any()",
+      "Promise.all()",
+      "Promise.race()",
+      "Promise.first()"
+    ],
+    "answerIndex": 0,
+    "explanation": "Promise.any resolves with the first fulfilled promise."
+  },
+  {
+    "id": 470,
+    "category": "JavaScript",
+    "level": "basic",
+    "question": "Which Promise method resolves/rejects as soon as the first promise settles?",
+    "options": [
+      "Promise.race()",
+      "Promise.all()",
+      "Promise.any()",
+      "Promise.wait()"
+    ],
+    "answerIndex": 0,
+    "explanation": "Promise.race settles with the first settled promise."
+  },
+  {
+    "id": 471,
+    "category": "React",
+    "level": "basic",
+    "question": "Which file is commonly the entry point where React app mounts (Vite default)?",
+    "options": ["main.jsx", "index.html only", "app.jsx", "root.js"],
+    "answerIndex": 0,
+    "explanation": "Vite commonly uses main.jsx as entry."
+  },
+  {
+    "id": 472,
+    "category": "React",
+    "level": "basic",
+    "question": "Which prop is used to set an image source in JSX?",
+    "options": ["href", "src", "link", "path"],
+    "answerIndex": 1,
+    "explanation": "img src sets image source."
+  },
+  {
+    "id": 473,
+    "category": "React",
+    "level": "basic",
+    "question": "Which attribute is used to add accessibility text to an image?",
+    "options": ["aria", "alt", "title", "desc"],
+    "answerIndex": 1,
+    "explanation": "alt provides alternative text."
+  },
+  {
+    "id": 474,
+    "category": "React",
+    "level": "basic",
+    "question": "Which prop is used to dangerously set raw HTML in React?",
+    "options": ["innerHTML", "dangerouslySetInnerHTML", "setHTML", "rawHTML"],
+    "answerIndex": 1,
+    "explanation": "dangerouslySetInnerHTML sets raw HTML."
+  },
+  {
+    "id": 475,
+    "category": "React",
+    "level": "basic",
+    "question": "Why is it called dangerouslySetInnerHTML?",
+    "options": [
+      "It breaks CSS",
+      "It can cause XSS if used with untrusted content",
+      "It is slow",
+      "It disables hooks"
+    ],
+    "answerIndex": 1,
+    "explanation": "Untrusted HTML can lead to XSS vulnerabilities."
+  },
+  {
+    "id": 476,
+    "category": "CSS",
+    "level": "basic",
+    "question": "Which unit is relative to the element's font size?",
+    "options": ["px", "em", "rem", "vw"],
+    "answerIndex": 1,
+    "explanation": "em is relative to the element's font size."
+  },
+  {
+    "id": 477,
+    "category": "CSS",
+    "level": "basic",
+    "question": "Which unit is relative to the root (html) font size?",
+    "options": ["em", "rem", "vh", "%"],
+    "answerIndex": 1,
+    "explanation": "rem is relative to the root font size."
+  },
+  {
+    "id": 478,
+    "category": "CSS",
+    "level": "basic",
+    "question": "Which unit is relative to the viewport height?",
+    "options": ["vw", "vh", "rem", "em"],
+    "answerIndex": 1,
+    "explanation": "vh is viewport height unit."
+  },
+  {
+    "id": 479,
+    "category": "CSS",
+    "level": "basic",
+    "question": "Which unit is relative to the viewport width?",
+    "options": ["vw", "vh", "rem", "em"],
+    "answerIndex": 0,
+    "explanation": "vw is viewport width unit."
+  },
+  {
+    "id": 480,
+    "category": "HTML",
+    "level": "basic",
+    "question": "Which attribute defines an element’s tooltip text?",
+    "options": ["hint", "title", "tooltip", "label"],
+    "answerIndex": 1,
+    "explanation": "title shows tooltip in many browsers."
+  },
+  {
+    "id": 481,
+    "category": "JavaScript",
+    "level": "basic",
+    "question": "Which DOM property sets or gets HTML content inside an element?",
+    "options": ["textContent", "innerHTML", "innerText", "htmlValue"],
+    "answerIndex": 1,
+    "explanation": "innerHTML gets/sets HTML content."
+  },
+  {
+    "id": 482,
+    "category": "JavaScript",
+    "level": "basic",
+    "question": "Which DOM property sets or gets only text content (no HTML)?",
+    "options": ["innerHTML", "textContent", "htmlText", "outerHTML"],
+    "answerIndex": 1,
+    "explanation": "textContent sets/gets text only."
+  },
+  {
+    "id": 483,
+    "category": "JavaScript",
+    "level": "basic",
+    "question": "Which method adds a class to an element in DOM?",
+    "options": [
+      "element.addClass()",
+      "element.classList.add()",
+      "element.class.add()",
+      "element.style.class()"
+    ],
+    "answerIndex": 1,
+    "explanation": "classList.add adds a class."
+  },
+  {
+    "id": 484,
+    "category": "JavaScript",
+    "level": "basic",
+    "question": "Which method removes a class from an element in DOM?",
+    "options": [
+      "element.classList.remove()",
+      "element.removeClass()",
+      "element.class.remove()",
+      "element.style.removeClass()"
+    ],
+    "answerIndex": 0,
+    "explanation": "classList.remove removes a class."
+  },
+  {
+    "id": 485,
+    "category": "JavaScript",
+    "level": "basic",
+    "question": "Which method toggles a class on an element in DOM?",
+    "options": [
+      "classList.toggle()",
+      "toggleClass()",
+      "class.toggle()",
+      "switchClass()"
+    ],
+    "answerIndex": 0,
+    "explanation": "classList.toggle toggles a class."
+  },
+  {
+    "id": 486,
+    "category": "React",
+    "level": "basic",
+    "question": "What is the correct way to update state based on previous state?",
+    "options": [
+      "setCount(count + 1)",
+      "setCount(prev => prev + 1)",
+      "count++",
+      "count = count + 1"
+    ],
+    "answerIndex": 1,
+    "explanation": "Functional update uses the previous value safely."
+  },
+  {
+    "id": 487,
+    "category": "React",
+    "level": "basic",
+    "question": "Which technique helps split large React code into smaller chunks?",
+    "options": [
+      "Code splitting",
+      "Prop drilling",
+      "DOM cloning",
+      "CSS nesting"
+    ],
+    "answerIndex": 0,
+    "explanation": "Code splitting loads code on demand."
+  },
+  {
+    "id": 488,
+    "category": "React",
+    "level": "basic",
+    "question": "Which pattern is used to render different UI for different routes?",
+    "options": ["Routing", "Memoization", "Ref forwarding", "Hydration"],
+    "answerIndex": 0,
+    "explanation": "Routing renders UI based on URL."
+  },
+  {
+    "id": 489,
+    "category": "CSS",
+    "level": "basic",
+    "question": "Which property sets the minimum width of an element?",
+    "options": ["min-width", "minimum-width", "min-size", "width-min"],
+    "answerIndex": 0,
+    "explanation": "min-width sets the minimum width."
+  },
+  {
+    "id": 490,
+    "category": "CSS",
+    "level": "basic",
+    "question": "Which property sets the maximum width of an element?",
+    "options": ["max-width", "maximum-width", "max-size", "width-max"],
+    "answerIndex": 0,
+    "explanation": "max-width sets the maximum width."
+  },
+  {
+    "id": 491,
+    "category": "CSS",
+    "level": "basic",
+    "question": "Which property makes an element transparent but still clickable (keeps layout)?",
+    "options": [
+      "display: none",
+      "visibility: hidden",
+      "opacity: 0",
+      "hidden: true"
+    ],
+    "answerIndex": 2,
+    "explanation": "opacity: 0 hides visually but keeps layout and events."
+  },
+  {
+    "id": 492,
+    "category": "JavaScript",
+    "level": "basic",
+    "question": "Which method converts a value to a boolean?",
+    "options": ["Boolean()", "toBool()", "bool()", "asBoolean()"],
+    "answerIndex": 0,
+    "explanation": "Boolean(value) converts to true/false."
+  },
+  {
+    "id": 493,
+    "category": "JavaScript",
+    "level": "basic",
+    "question": "Which operator converts a value to boolean quickly?",
+    "options": ["!!", "~~", "--", "++"],
+    "answerIndex": 0,
+    "explanation": "!!value converts to boolean."
+  },
+  {
+    "id": 494,
+    "category": "JavaScript",
+    "level": "basic",
+    "question": "Which function delays execution by placing callback in the task queue?",
+    "options": [
+      "setTimeout(fn, 0)",
+      "setInterval(fn, 0)",
+      "delay(fn)",
+      "queue(fn)"
+    ],
+    "answerIndex": 0,
+    "explanation": "setTimeout with 0 delay defers execution."
+  },
+  {
+    "id": 495,
+    "category": "JavaScript",
+    "level": "basic",
+    "question": "Which API is used to run a callback before the next repaint?",
+    "options": [
+      "requestAnimationFrame()",
+      "setTimeout()",
+      "setInterval()",
+      "queueMicrotask()"
+    ],
+    "answerIndex": 0,
+    "explanation": "requestAnimationFrame runs before repaint."
+  },
+  {
+    "id": 496,
+    "category": "React",
+    "level": "basic",
+    "question": "Which hook is typically used for performing DOM measurements?",
+    "options": ["useEffect", "useLayoutEffect", "useMemo", "useState"],
+    "answerIndex": 1,
+    "explanation": "useLayoutEffect runs before paint, good for measurements."
+  },
+  {
+    "id": 497,
+    "category": "React",
+    "level": "basic",
+    "question": "Which function is used to create a ref in class components?",
+    "options": [
+      "React.createRef()",
+      "useRef()",
+      "createReference()",
+      "new Ref()"
+    ],
+    "answerIndex": 0,
+    "explanation": "React.createRef() is used in class components."
+  },
+  {
+    "id": 498,
+    "category": "React",
+    "level": "basic",
+    "question": "Which method is used to forward refs to child components?",
+    "options": [
+      "React.forwardRef()",
+      "React.passRef()",
+      "forwardRef()",
+      "useForwardRef()"
+    ],
+    "answerIndex": 0,
+    "explanation": "React.forwardRef forwards refs."
+  },
+  {
+    "id": 499,
+    "category": "CSS",
+    "level": "basic",
+    "question": "Which media feature is used to target screen width in media queries?",
+    "options": [
+      "min-width/max-width",
+      "width-screen",
+      "screen-size",
+      "device-width-only"
+    ],
+    "answerIndex": 0,
+    "explanation": "min-width/max-width are used in media queries."
+  },
+  {
+    "id": 500,
+    "category": "CSS",
+    "level": "basic",
+    "question": "Which rule defines styles only when the screen is below 600px (example)?",
+    "options": [
+      "@media (max-width: 600px)",
+      "@screen (width < 600px)",
+      "@media small(600)",
+      "@responsive 600px"
+    ],
+    "answerIndex": 0,
+    "explanation": "@media (max-width: 600px) applies below 600px."
+  }
+]

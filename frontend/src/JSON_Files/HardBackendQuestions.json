@@ -1,0 +1,3548 @@
+[
+  {
+    "id": 31,
+    "category": "MongoDB",
+    "level": "hard",
+    "question": "Which read concern provides the strongest guarantee that transaction reads come from a majority-committed snapshot?",
+    "options": ["local", "available", "majority", "linearizable"],
+    "answerIndex": 2,
+    "explanation": "`readConcern: 'majority'` ensures reads reflect majority-committed data (stronger than local)."
+  },
+  {
+    "id": 32,
+    "category": "Node.js",
+    "level": "hard",
+    "question": "What is a common cause of `MaxListenersExceededWarning` in Node.js apps?",
+    "options": [
+      "Too many HTTP routes",
+      "Adding many listeners to the same EventEmitter without cleanup",
+      "Using async/await",
+      "Running on Windows"
+    ],
+    "answerIndex": 1,
+    "explanation": "It occurs when many listeners are attached to the same emitter (often due to leaks)."
+  },
+  {
+    "id": 33,
+    "category": "Express.js",
+    "level": "hard",
+    "question": "Why should you avoid doing heavy synchronous work inside an Express middleware?",
+    "options": [
+      "It breaks JSON parsing",
+      "It blocks the event loop and delays all requests",
+      "It disables keep-alive",
+      "It changes HTTP status codes"
+    ],
+    "answerIndex": 1,
+    "explanation": "Synchronous CPU work blocks the event loop, reducing throughput for all requests."
+  },
+  {
+    "id": 34,
+    "category": "MongoDB",
+    "level": "hard",
+    "question": "Which index strategy best supports case-insensitive string sorting and matching for a field?",
+    "options": [
+      "Hashed index",
+      "Text index only",
+      "Use collation + normal index",
+      "Sparse index"
+    ],
+    "answerIndex": 2,
+    "explanation": "Use a normal index with a defined collation (strength) for case-insensitive comparisons."
+  },
+  {
+    "id": 35,
+    "category": "Node.js",
+    "level": "hard",
+    "question": "Which statement is true about unhandled promise rejections in modern Node.js?",
+    "options": [
+      "They are always ignored",
+      "They can terminate the process depending on Node settings/version",
+      "They are converted into HTTP 500 automatically",
+      "They only happen with callbacks"
+    ],
+    "answerIndex": 1,
+    "explanation": "Unhandled rejections are serious; behavior depends on Node version/flags and can crash the process."
+  },
+  {
+    "id": 36,
+    "category": "Express.js",
+    "level": "hard",
+    "question": "What is the best practice to avoid exposing stack traces and internals in production error responses?",
+    "options": [
+      "Send `err.stack` always",
+      "Use centralized error handler and environment-based response",
+      "Disable try/catch",
+      "Use only `res.end()`"
+    ],
+    "answerIndex": 1,
+    "explanation": "Centralize error handling and return safe messages in production while logging details server-side."
+  },
+  {
+    "id": 37,
+    "category": "MongoDB",
+    "level": "hard",
+    "question": "Which option helps reduce the chance of duplicate writes when retrying network-failed operations?",
+    "options": [
+      "retryWrites",
+      "allowDiskUse",
+      "bypassDocumentValidation",
+      "maxTimeMS"
+    ],
+    "answerIndex": 0,
+    "explanation": "`retryWrites` enables driver retryable writes for certain operations to improve reliability."
+  },
+  {
+    "id": 38,
+    "category": "Node.js",
+    "level": "hard",
+    "question": "In Node.js, what does backpressure in streams mainly prevent?",
+    "options": [
+      "SQL injection",
+      "Memory buildup when the writable side can't keep up",
+      "CORS errors",
+      "JWT expiration"
+    ],
+    "answerIndex": 1,
+    "explanation": "Backpressure controls flow so producers don't overwhelm consumers, preventing memory spikes."
+  },
+  {
+    "id": 39,
+    "category": "Express.js",
+    "level": "hard",
+    "question": "Which approach best prevents parameter pollution attacks (e.g., `?role=user&role=admin`) in Express?",
+    "options": [
+      "Use `res.sendStatus(200)`",
+      "Validate and normalize query params server-side",
+      "Disable GET routes",
+      "Only use cookies"
+    ],
+    "answerIndex": 1,
+    "explanation": "Always validate/normalize inputs; multiple same-name params can be exploited if not handled."
+  },
+  {
+    "id": 40,
+    "category": "MongoDB",
+    "level": "hard",
+    "question": "What is a key risk of using a wildcard index (`$**`) everywhere?",
+    "options": [
+      "It disables queries",
+      "It can increase index size and write overhead significantly",
+      "It makes writes faster",
+      "It forces sharding"
+    ],
+    "answerIndex": 1,
+    "explanation": "Wildcard indexes may grow large and add write cost; use them selectively."
+  },
+  {
+    "id": 41,
+    "category": "Node.js",
+    "level": "hard",
+    "question": "Which API is typically used to inspect memory usage and help detect leaks at runtime in Node.js?",
+    "options": [
+      "process.memoryUsage()",
+      "fs.stat()",
+      "crypto.randomBytes()",
+      "dns.lookup()"
+    ],
+    "answerIndex": 0,
+    "explanation": "`process.memoryUsage()` returns heap and RSS stats useful for monitoring memory growth."
+  },
+  {
+    "id": 42,
+    "category": "Express.js",
+    "level": "hard",
+    "question": "If you call `next()` after sending a response in Express, what can happen?",
+    "options": [
+      "Nothing, it's fine",
+      "It may trigger 'Can't set headers after they are sent' or double handlers",
+      "It automatically retries the request",
+      "It closes the DB connection"
+    ],
+    "answerIndex": 1,
+    "explanation": "Calling `next()` can continue to later middleware that tries to write again."
+  },
+  {
+    "id": 43,
+    "category": "MongoDB",
+    "level": "hard",
+    "question": "Which aggregation stage is used to split an array field into multiple documents (one per element)?",
+    "options": ["$unwind", "$split", "$arrayToObject", "$bucket"],
+    "answerIndex": 0,
+    "explanation": "`$unwind` deconstructs an array field into separate output documents."
+  },
+  {
+    "id": 44,
+    "category": "Node.js",
+    "level": "hard",
+    "question": "Which HTTP client feature helps avoid socket exhaustion under high outbound request load in Node.js?",
+    "options": [
+      "Disable keep-alive",
+      "Use an Agent with keepAlive and sensible maxSockets",
+      "Always open new TCP sockets",
+      "Use synchronous requests"
+    ],
+    "answerIndex": 1,
+    "explanation": "A configured Agent reuses sockets and limits concurrency to prevent exhaustion."
+  },
+  {
+    "id": 45,
+    "category": "Express.js",
+    "level": "hard",
+    "question": "What is the safest way to implement file uploads in an Express API?",
+    "options": [
+      "Accept any file type and store with original name",
+      "Validate file type/size, store safely, and scan if needed",
+      "Base64 everything in JSON",
+      "Disable limits to avoid errors"
+    ],
+    "answerIndex": 1,
+    "explanation": "Always validate size/type, store with safe names/paths, and apply security controls."
+  },
+  {
+    "id": 46,
+    "category": "MongoDB",
+    "level": "hard",
+    "question": "Which MongoDB concept describes distributing data across multiple machines using a shard key?",
+    "options": ["Replication", "Sharding", "Capping", "MapReduce"],
+    "answerIndex": 1,
+    "explanation": "Sharding partitions data across shards using a shard key."
+  },
+  {
+    "id": 47,
+    "category": "Node.js",
+    "level": "hard",
+    "question": "What is the main downside of using `cluster` to scale CPU usage compared to `worker_threads`?",
+    "options": [
+      "Cluster shares memory across workers",
+      "Cluster uses separate processes with higher memory overhead",
+      "Cluster cannot listen on ports",
+      "Cluster runs only on Linux"
+    ],
+    "answerIndex": 1,
+    "explanation": "`cluster` forks processes (more overhead); `worker_threads` are threads inside a process."
+  },
+  {
+    "id": 48,
+    "category": "MongoDB",
+    "level": "hard",
+    "question": "Which index improves performance for queries that search for words in large text fields?",
+    "options": ["Text index", "Hashed index", "2dsphere index", "TTL index"],
+    "answerIndex": 0,
+    "explanation": "Text indexes support text search features like tokenization and stemming (depending on language)."
+  },
+  {
+    "id": 49,
+    "category": "Express.js",
+    "level": "hard",
+    "question": "Which middleware approach is best to prevent brute-force login attempts?",
+    "options": [
+      "Disable HTTPS",
+      "Rate limit + lockout policies + monitoring",
+      "Use GET for login",
+      "Store passwords in plain text"
+    ],
+    "answerIndex": 1,
+    "explanation": "Rate limiting plus lockouts and monitoring reduce brute-force risk."
+  },
+  {
+    "id": 50,
+    "category": "Node.js",
+    "level": "hard",
+    "question": "What does `--max-old-space-size` control in Node.js?",
+    "options": [
+      "CPU core count",
+      "V8 heap limit for old generation memory",
+      "HTTP request size",
+      "MongoDB connection pool size"
+    ],
+    "answerIndex": 1,
+    "explanation": "It sets V8’s old-space heap size (affects max memory before OOM)."
+  },
+  {
+    "id": 51,
+    "category": "MongoDB",
+    "level": "hard",
+    "question": "Which MongoDB feature lets you react to database changes in near real-time?",
+    "options": [
+      "Change Streams",
+      "TTL indexes",
+      "Capped collections only",
+      "GridFS"
+    ],
+    "answerIndex": 0,
+    "explanation": "Change Streams allow applications to subscribe to insert/update/delete events."
+  },
+  {
+    "id": 52,
+    "category": "Express.js",
+    "level": "hard",
+    "question": "What is the main security risk of reflecting user input directly in error messages returned by an API?",
+    "options": [
+      "Better caching",
+      "Potential XSS/log injection or information disclosure",
+      "Faster responses",
+      "Automatic encryption"
+    ],
+    "answerIndex": 1,
+    "explanation": "Echoing input can enable injection attacks or leak sensitive details."
+  },
+  {
+    "id": 53,
+    "category": "Node.js",
+    "level": "hard",
+    "question": "Which scenario most likely causes a memory leak in an Express + Node server?",
+    "options": [
+      "Using `const` variables",
+      "Storing per-request data in a global array/object without cleanup",
+      "Using JSON responses",
+      "Using async/await"
+    ],
+    "answerIndex": 1,
+    "explanation": "Keeping request-scoped objects globally prevents garbage collection."
+  },
+  {
+    "id": 54,
+    "category": "MongoDB",
+    "level": "hard",
+    "question": "Which operation is atomic at the document level in MongoDB?",
+    "options": [
+      "Updating multiple documents with updateMany",
+      "Updating a single document with updateOne",
+      "Running $lookup across collections",
+      "Dropping a database"
+    ],
+    "answerIndex": 1,
+    "explanation": "Single-document updates are atomic in MongoDB."
+  },
+  {
+    "id": 55,
+    "category": "Express.js",
+    "level": "hard",
+    "question": "Which header should you check/use to correctly handle idempotency for POST requests (e.g., payments) in APIs?",
+    "options": ["Idempotency-Key", "ETag", "Server", "Accept-Encoding"],
+    "answerIndex": 0,
+    "explanation": "An `Idempotency-Key` helps safely retry POST without double-processing."
+  },
+  {
+    "id": 56,
+    "category": "Node.js",
+    "level": "hard",
+    "question": "What is the impact of a long synchronous JSON.parse on a very large string in Node.js?",
+    "options": [
+      "It runs in parallel automatically",
+      "It blocks the event loop until parsing completes",
+      "It becomes asynchronous in production",
+      "It only affects that request thread"
+    ],
+    "answerIndex": 1,
+    "explanation": "JSON.parse is synchronous and can block the event loop significantly on large payloads."
+  },
+  {
+    "id": 57,
+    "category": "MongoDB",
+    "level": "hard",
+    "question": "Which pattern best enforces uniqueness for a field like email at the database level?",
+    "options": [
+      "Application-only check",
+      "Unique index on the field",
+      "Text index",
+      "TTL index"
+    ],
+    "answerIndex": 1,
+    "explanation": "A unique index guarantees uniqueness even under concurrency."
+  },
+  {
+    "id": 58,
+    "category": "Express.js",
+    "level": "hard",
+    "question": "Why is it risky to trust `req.headers.origin` alone for security decisions?",
+    "options": [
+      "Origin is always missing",
+      "Headers can be spoofed; you must use auth + server validation",
+      "It encrypts requests",
+      "It improves caching"
+    ],
+    "answerIndex": 1,
+    "explanation": "Client-controlled headers can be spoofed; rely on authentication/authorization instead."
+  },
+  {
+    "id": 59,
+    "category": "Node.js",
+    "level": "hard",
+    "question": "Which tool/approach is best to gracefully shut down an Express server to avoid dropping in-flight requests?",
+    "options": [
+      "Kill process immediately",
+      "Stop accepting new connections, wait for active requests, then close",
+      "Restart the router",
+      "Clear console logs"
+    ],
+    "answerIndex": 1,
+    "explanation": "Graceful shutdown closes the server to new requests and waits for ongoing requests to finish."
+  },
+  {
+    "id": 60,
+    "category": "MongoDB",
+    "level": "hard",
+    "question": "In a sharded MongoDB cluster, what is a major reason to choose a good shard key?",
+    "options": [
+      "To reduce document size",
+      "To avoid jumbo chunks and ensure even data distribution",
+      "To enable $text search",
+      "To disable indexes"
+    ],
+    "answerIndex": 1,
+    "explanation": "A good shard key distributes reads/writes evenly and prevents hotspotting/jumbo chunks."
+  },
+  {
+    "id": 61,
+    "category": "Express.js",
+    "level": "hard",
+    "question": "Which is the best practice to prevent NoSQL injection in MongoDB queries built from request input?",
+    "options": [
+      "Use string concatenation",
+      "Whitelist fields and validate types, avoid directly passing objects into queries",
+      "Disable indexes",
+      "Use HTTP instead of HTTPS"
+    ],
+    "answerIndex": 1,
+    "explanation": "Validate/normalize input and never pass untrusted objects directly into query operators."
+  },
+  {
+    "id": 62,
+    "category": "Node.js",
+    "level": "hard",
+    "question": "Which Node.js feature helps you detect performance bottlenecks by providing CPU profiling hooks?",
+    "options": ["inspector", "readline", "path", "querystring"],
+    "answerIndex": 0,
+    "explanation": "The Node Inspector (Chrome DevTools) supports CPU profiling and performance debugging."
+  },
+  {
+    "id": 63,
+    "category": "MongoDB",
+    "level": "hard",
+    "question": "What does `explain('executionStats')` primarily help you understand?",
+    "options": [
+      "Encryption keys",
+      "Query plan and how many documents/index keys were examined",
+      "User permissions",
+      "Shard rebalancing status"
+    ],
+    "answerIndex": 1,
+    "explanation": "It shows the chosen plan and runtime stats like docs examined vs returned."
+  },
+  {
+    "id": 64,
+    "category": "Express.js",
+    "level": "hard",
+    "question": "Which approach best protects an API from large JSON payload DoS attacks?",
+    "options": [
+      "Increase body size limit",
+      "Set strict body size limits and use rate limiting",
+      "Disable JSON parsing",
+      "Always respond 200"
+    ],
+    "answerIndex": 1,
+    "explanation": "Limit body size (e.g., express.json limit) and rate limit to prevent resource exhaustion."
+  },
+  {
+    "id": 65,
+    "category": "Node.js",
+    "level": "hard",
+    "question": "What is the main benefit of using `pipeline()` from the `stream` module?",
+    "options": [
+      "It makes HTTP faster",
+      "It properly forwards errors and manages stream cleanup",
+      "It converts streams to JSON",
+      "It disables backpressure"
+    ],
+    "answerIndex": 1,
+    "explanation": "`pipeline()` connects streams with correct error handling and cleanup."
+  },
+  {
+    "id": 66,
+    "category": "MongoDB",
+    "level": "hard",
+    "question": "Which feature helps you store and query geospatial data like coordinates and distances?",
+    "options": ["2dsphere index", "TTL index", "Hashed index", "Sparse index"],
+    "answerIndex": 0,
+    "explanation": "A `2dsphere` index supports geospatial queries on GeoJSON data."
+  },
+  {
+    "id": 67,
+    "category": "Express.js",
+    "level": "hard",
+    "question": "Which method is best for preventing mass assignment vulnerabilities (e.g., user sends `isAdmin:true`)?",
+    "options": [
+      "Use `Object.assign(req.body)` directly to DB",
+      "Pick/whitelist allowed fields before saving",
+      "Allow all fields for flexibility",
+      "Store req.body as-is"
+    ],
+    "answerIndex": 1,
+    "explanation": "Whitelist allowed fields and ignore unexpected ones to prevent privilege escalation."
+  },
+  {
+    "id": 68,
+    "category": "Node.js",
+    "level": "hard",
+    "question": "What does `server.keepAliveTimeout` mainly control in Node.js HTTP servers?",
+    "options": [
+      "JWT expiration",
+      "How long to keep idle keep-alive connections open",
+      "MongoDB session timeout",
+      "DNS cache duration"
+    ],
+    "answerIndex": 1,
+    "explanation": "It sets how long an idle keep-alive socket stays open before closing."
+  },
+  {
+    "id": 69,
+    "category": "MongoDB",
+    "level": "hard",
+    "question": "Which update operator prevents adding duplicate values to an array field?",
+    "options": ["$push", "$addToSet", "$pull", "$pop"],
+    "answerIndex": 1,
+    "explanation": "`$addToSet` adds only if the value is not already present."
+  },
+  {
+    "id": 70,
+    "category": "Express.js",
+    "level": "hard",
+    "question": "What is the best reason to use `helmet` in an Express app?",
+    "options": [
+      "It replaces authentication",
+      "It sets security-related HTTP headers",
+      "It compresses responses",
+      "It adds database indexes"
+    ],
+    "answerIndex": 1,
+    "explanation": "Helmet helps set headers like CSP, HSTS, X-Frame-Options to improve security."
+  },
+  {
+    "id": 71,
+    "category": "Node.js",
+    "level": "hard",
+    "question": "Which scenario is most appropriate for using `setImmediate()` instead of `process.nextTick()`?",
+    "options": [
+      "When you want to run before I/O always",
+      "When you want to yield and run after I/O callbacks",
+      "When you want to block the event loop",
+      "When you want to terminate the process"
+    ],
+    "answerIndex": 1,
+    "explanation": "`setImmediate()` runs in the check phase after I/O, helping avoid starving the event loop."
+  },
+  {
+    "id": 72,
+    "category": "MongoDB",
+    "level": "hard",
+    "question": "What is a common downside of using `$regex` queries without an anchored prefix?",
+    "options": [
+      "They always use indexes perfectly",
+      "They often cause collection scans and are slow",
+      "They only work on numbers",
+      "They encrypt data"
+    ],
+    "answerIndex": 1,
+    "explanation": "Unanchored regex usually can’t use indexes effectively, leading to scans."
+  },
+  {
+    "id": 73,
+    "category": "Express.js",
+    "level": "hard",
+    "question": "Which approach best ensures consistent API responses (success/error) across many routes?",
+    "options": [
+      "Each route returns random shapes",
+      "Use a shared response/error utility + centralized error middleware",
+      "Disable error handling",
+      "Return HTML always"
+    ],
+    "answerIndex": 1,
+    "explanation": "Central patterns (helpers + error middleware) keep response formats consistent."
+  },
+  {
+    "id": 74,
+    "category": "Node.js",
+    "level": "hard",
+    "question": "What is the main concern with using `eval()` or `vm.runInThisContext()` on untrusted input in Node.js?",
+    "options": [
+      "It improves security",
+      "Remote code execution risk",
+      "It makes code faster",
+      "It disables garbage collection"
+    ],
+    "answerIndex": 1,
+    "explanation": "Executing untrusted code can lead to full compromise (RCE)."
+  },
+  {
+    "id": 75,
+    "category": "MongoDB",
+    "level": "hard",
+    "question": "Which technique helps keep frequently-read fields in RAM to improve read performance?",
+    "options": [
+      "Use larger documents",
+      "Proper indexing and working set fits in memory",
+      "Disable caching",
+      "Use $where"
+    ],
+    "answerIndex": 1,
+    "explanation": "Performance improves when the working set (indexes + hot data) fits in RAM."
+  },
+  {
+    "id": 76,
+    "category": "Express.js",
+    "level": "hard",
+    "question": "What is a secure way to store refresh tokens in a web app using cookies?",
+    "options": [
+      "LocalStorage",
+      "HttpOnly + Secure cookie (and SameSite as appropriate)",
+      "In URL query params",
+      "In console logs"
+    ],
+    "answerIndex": 1,
+    "explanation": "HttpOnly+Secure cookies reduce XSS token theft risk; set SameSite appropriately."
+  },
+  {
+    "id": 77,
+    "category": "Node.js",
+    "level": "hard",
+    "question": "Which practice best prevents file descriptor leaks in Node.js?",
+    "options": [
+      "Never close streams",
+      "Always close file handles/streams (use finally/pipeline)",
+      "Use synchronous fs only",
+      "Increase heap size"
+    ],
+    "answerIndex": 1,
+    "explanation": "Always close handles; `pipeline()` and try/finally help ensure cleanup."
+  },
+  {
+    "id": 78,
+    "category": "MongoDB",
+    "level": "hard",
+    "question": "What is the purpose of `allowDiskUse: true` in aggregation?",
+    "options": [
+      "Encrypt output",
+      "Allow stages like sort/group to spill to disk when memory is insufficient",
+      "Force index usage",
+      "Disable sharding"
+    ],
+    "answerIndex": 1,
+    "explanation": "It allows disk spill for memory-intensive aggregation operations."
+  },
+  {
+    "id": 79,
+    "category": "Express.js",
+    "level": "hard",
+    "question": "Which is the most correct order for typical Express middleware setup?",
+    "options": [
+      "Routes first, then body parsers",
+      "Security + parsers + auth + routes + error handler last",
+      "Error handler first",
+      "Static files only"
+    ],
+    "answerIndex": 1,
+    "explanation": "Middleware runs in order; error handler should be last to catch forwarded errors."
+  },
+  {
+    "id": 80,
+    "category": "Node.js",
+    "level": "hard",
+    "question": "Why is it important to set timeouts (e.g., on HTTP servers/clients) in production Node apps?",
+    "options": [
+      "To increase memory use",
+      "To avoid hanging connections consuming resources forever",
+      "To disable caching",
+      "To fix CORS"
+    ],
+    "answerIndex": 1,
+    "explanation": "Timeouts prevent resource exhaustion from stuck sockets/requests."
+  },
+  {
+    "id": 81,
+    "category": "MongoDB",
+    "level": "hard",
+    "question": "Which MongoDB field is often used for 'seek pagination' because it is monotonically increasing and indexed by default?",
+    "options": ["name", "createdAt string", "_id", "description"],
+    "answerIndex": 2,
+    "explanation": "`_id` (ObjectId) is indexed by default and roughly increases over time, useful for cursor pagination."
+  },
+  {
+    "id": 82,
+    "category": "Express.js",
+    "level": "hard",
+    "question": "Which technique best prevents leaking sensitive headers (like Authorization) in logs?",
+    "options": [
+      "Log all headers always",
+      "Redact sensitive fields in logging middleware",
+      "Disable logging completely",
+      "Return 404 for all routes"
+    ],
+    "answerIndex": 1,
+    "explanation": "Redaction/masking avoids accidentally storing secrets in logs."
+  },
+  {
+    "id": 83,
+    "category": "Node.js",
+    "level": "hard",
+    "question": "What is the main benefit of using `zlib` compression (gzip/brotli) in an Express app?",
+    "options": [
+      "Reduces bandwidth by compressing responses",
+      "Improves database speed",
+      "Encrypts responses",
+      "Fixes CORS"
+    ],
+    "answerIndex": 0,
+    "explanation": "Compression reduces response payload size, saving bandwidth and often improving load times."
+  },
+  {
+    "id": 84,
+    "category": "MongoDB",
+    "level": "hard",
+    "question": "Which schema design often improves performance for one-to-many reads when you usually fetch children with parent?",
+    "options": [
+      "Always reference in separate collections",
+      "Embed child documents when bounded and frequently read together",
+      "Store everything in one string",
+      "Disable indexes"
+    ],
+    "answerIndex": 1,
+    "explanation": "Embedding can reduce joins/extra queries when children are bounded and commonly read with parent."
+  },
+  {
+    "id": 85,
+    "category": "Express.js",
+    "level": "hard",
+    "question": "Which header is typically used to enforce HTTPS by instructing browsers to only use secure connections?",
+    "options": [
+      "Strict-Transport-Security",
+      "X-Powered-By",
+      "Pragma",
+      "Expires"
+    ],
+    "answerIndex": 0,
+    "explanation": "HSTS (`Strict-Transport-Security`) tells browsers to use HTTPS for the site."
+  },
+  {
+    "id": 86,
+    "category": "Node.js",
+    "level": "hard",
+    "question": "In Node.js, what is a major advantage of using `Buffer` for binary data instead of strings?",
+    "options": [
+      "Buffers are always smaller than any data",
+      "Buffers represent raw bytes without encoding issues",
+      "Buffers automatically encrypt data",
+      "Buffers are only for JSON"
+    ],
+    "answerIndex": 1,
+    "explanation": "Buffers store raw bytes, avoiding encoding/decoding problems with binary content."
+  },
+  {
+    "id": 87,
+    "category": "MongoDB",
+    "level": "hard",
+    "question": "Which tool is the correct way to enforce JSON schema validation at collection level in MongoDB?",
+    "options": [
+      "$project",
+      "validator with JSON Schema in collection options",
+      "TTL index",
+      "text index"
+    ],
+    "answerIndex": 1,
+    "explanation": "MongoDB supports schema validation using `validator` rules (JSON Schema) on collections."
+  },
+  {
+    "id": 88,
+    "category": "Express.js",
+    "level": "hard",
+    "question": "Which practice best prevents CORS misconfiguration from exposing your API to any website?",
+    "options": [
+      "Set `origin: '*'` always",
+      "Use an allowlist of trusted origins and validate dynamically",
+      "Disable OPTIONS requests",
+      "Use GET only"
+    ],
+    "answerIndex": 1,
+    "explanation": "Allowlist trusted origins; avoid permissive wildcard in sensitive APIs."
+  },
+  {
+    "id": 89,
+    "category": "Node.js",
+    "level": "hard",
+    "question": "Which situation benefits most from using a message queue (e.g., RabbitMQ/Kafka) with a Node backend?",
+    "options": [
+      "Simple hello world API",
+      "Long-running background jobs and decoupling services",
+      "Static HTML site only",
+      "Local variable storage"
+    ],
+    "answerIndex": 1,
+    "explanation": "Queues help with async processing, retries, and decoupling heavy tasks from request cycle."
+  },
+  {
+    "id": 90,
+    "category": "MongoDB",
+    "level": "hard",
+    "question": "Which query operator is safest for matching exact ObjectId values from request strings?",
+    "options": [
+      "$where",
+      "Use ObjectId() conversion and direct match",
+      "$regex",
+      "$text"
+    ],
+    "answerIndex": 1,
+    "explanation": "Convert to ObjectId type and match exactly; avoid `$where`/regex for IDs."
+  },
+  {
+    "id": 91,
+    "category": "Express.js",
+    "level": "hard",
+    "question": "Which HTTP method is best for a fully idempotent update of a resource (replace semantics)?",
+    "options": ["POST", "PUT", "PATCH", "CONNECT"],
+    "answerIndex": 1,
+    "explanation": "PUT is idempotent and typically represents full replacement of a resource."
+  },
+  {
+    "id": 92,
+    "category": "Node.js",
+    "level": "hard",
+    "question": "What is a main risk of not handling `error` events on Node.js streams?",
+    "options": [
+      "Nothing happens",
+      "Process can crash due to unhandled 'error' event",
+      "Streams become faster",
+      "It disables backpressure"
+    ],
+    "answerIndex": 1,
+    "explanation": "Unhandled `error` events can crash the process; always attach error handling or use `pipeline()`."
+  },
+  {
+    "id": 93,
+    "category": "MongoDB",
+    "level": "hard",
+    "question": "Which index type is designed for queries on spherical geometry (Earth-like) coordinates?",
+    "options": ["2dsphere", "2d", "hashed", "wildcard"],
+    "answerIndex": 0,
+    "explanation": "`2dsphere` supports spherical geometry calculations for GeoJSON data."
+  },
+  {
+    "id": 94,
+    "category": "Express.js",
+    "level": "hard",
+    "question": "Which technique best protects against CSRF when using cookie-based auth?",
+    "options": [
+      "Disable cookies",
+      "SameSite cookies + CSRF tokens (double submit or server tokens)",
+      "Allow any origin",
+      "Use GET for state changes"
+    ],
+    "answerIndex": 1,
+    "explanation": "SameSite helps, but CSRF tokens provide stronger protection for cookie auth."
+  },
+  {
+    "id": 95,
+    "category": "Node.js",
+    "level": "hard",
+    "question": "Which is the most reliable way to ensure a DB connection is released back to the pool even when errors happen?",
+    "options": [
+      "Ignore errors",
+      "Use try/finally to always release/close",
+      "Only use callbacks",
+      "Restart server after each request"
+    ],
+    "answerIndex": 1,
+    "explanation": "`try/finally` ensures cleanup regardless of success or failure."
+  },
+  {
+    "id": 96,
+    "category": "MongoDB",
+    "level": "hard",
+    "question": "Which aggregation stage is used to compute totals per key (like sales per user) by grouping documents?",
+    "options": ["$group", "$match", "$limit", "$replaceRoot"],
+    "answerIndex": 0,
+    "explanation": "`$group` aggregates documents by a key and computes accumulators like sum/avg."
+  },
+  {
+    "id": 97,
+    "category": "Express.js",
+    "level": "hard",
+    "question": "What is the correct Express response behavior for a successful DELETE request with no body?",
+    "options": [
+      "200 with random JSON",
+      "204 No Content",
+      "301 Redirect",
+      "500 Internal Server Error"
+    ],
+    "answerIndex": 1,
+    "explanation": "204 No Content is standard when delete succeeds and you return no response body."
+  },
+  {
+    "id": 98,
+    "category": "Node.js",
+    "level": "hard",
+    "question": "Which security practice helps prevent dependency attacks in Node.js projects?",
+    "options": [
+      "Never update packages",
+      "Use lockfiles + audit + pin versions and verify sources",
+      "Install any package quickly",
+      "Disable CI"
+    ],
+    "answerIndex": 1,
+    "explanation": "Lockfiles, audits, and pinned versions reduce risk of malicious/changed dependencies."
+  },
+  {
+    "id": 99,
+    "category": "MongoDB",
+    "level": "hard",
+    "question": "Which MongoDB feature helps ensure writes are distributed evenly and avoid a single hot shard?",
+    "options": [
+      "Bad shard key",
+      "Choosing a high-cardinality shard key with good distribution",
+      "Disabling replication",
+      "Using only one shard"
+    ],
+    "answerIndex": 1,
+    "explanation": "A well-distributed, high-cardinality shard key prevents hotspots and balances load."
+  },
+  {
+    "id": 100,
+    "category": "Express.js",
+    "level": "hard",
+    "question": "Which approach is best to version an Express REST API without breaking existing clients?",
+    "options": [
+      "Change endpoints randomly",
+      "Use URL versioning like `/api/v1` (or header-based versioning) with clear deprecation",
+      "Remove old routes immediately",
+      "Only use query params for versioning always"
+    ],
+    "answerIndex": 1,
+    "explanation": "Versioning (URL or headers) with deprecation policy avoids breaking existing consumers."
+  },
+  {
+    "id": 101,
+    "category": "Node.js",
+    "level": "hard",
+    "question": "Which Node.js mechanism best handles unexpected errors to prevent the process from continuing in a corrupted state?",
+    "options": [
+      "Ignore errors and continue",
+      "Use a top-level crash strategy + restart (process manager) after logging",
+      "Only add console.log everywhere",
+      "Disable try/catch globally"
+    ],
+    "answerIndex": 1,
+    "explanation": "For truly unexpected errors, safest is log/flush and exit so a supervisor (PM2/Docker/K8s) restarts cleanly."
+  },
+  {
+    "id": 102,
+    "category": "Express.js",
+    "level": "hard",
+    "question": "Which Express behavior is true about error-handling middleware?",
+    "options": [
+      "It must be registered before routes",
+      "It must have 4 parameters (err, req, res, next)",
+      "It runs only for 404 routes",
+      "It cannot send responses"
+    ],
+    "answerIndex": 1,
+    "explanation": "Express recognizes error middleware by the 4-arg signature: (err, req, res, next)."
+  },
+  {
+    "id": 103,
+    "category": "MongoDB",
+    "level": "hard",
+    "question": "Which index is best for queries that filter by `userId` and sort by `createdAt` descending frequently?",
+    "options": [
+      "Two separate single-field indexes",
+      "A compound index on (userId, createdAt)",
+      "A hashed index on createdAt",
+      "A text index on userId"
+    ],
+    "answerIndex": 1,
+    "explanation": "A compound index in the correct order can support both the filter and the sort efficiently."
+  },
+  {
+    "id": 104,
+    "category": "Node.js",
+    "level": "hard",
+    "question": "What is the main benefit of using `Promise.allSettled()` instead of `Promise.all()`?",
+    "options": [
+      "It stops at first success",
+      "It waits for all promises and returns both fulfilled and rejected results",
+      "It runs promises sequentially",
+      "It makes promises faster"
+    ],
+    "answerIndex": 1,
+    "explanation": "`allSettled` collects outcomes of all promises without failing fast on the first rejection."
+  },
+  {
+    "id": 105,
+    "category": "Express.js",
+    "level": "hard",
+    "question": "Which technique best ensures request validation runs before hitting business logic in every route?",
+    "options": [
+      "Validate inside controllers manually each time",
+      "Use route-level validation middleware before controllers",
+      "Only validate in frontend",
+      "Validate after sending response"
+    ],
+    "answerIndex": 1,
+    "explanation": "Put validation middleware before the controller/handler so invalid requests never reach business logic."
+  },
+  {
+    "id": 106,
+    "category": "MongoDB",
+    "level": "hard",
+    "question": "Which MongoDB feature allows sorting results by text search relevance score?",
+    "options": ["$geoNear", "$meta: 'textScore'", "$natural", "$rand"],
+    "answerIndex": 1,
+    "explanation": "Text search can project and sort using `{ score: { $meta: 'textScore' } }`."
+  },
+  {
+    "id": 107,
+    "category": "Node.js",
+    "level": "hard",
+    "question": "What does `EventEmitter.once()` do differently from `on()`?",
+    "options": [
+      "It runs the listener forever",
+      "It registers a listener that auto-removes after the first call",
+      "It blocks the event loop",
+      "It triggers events immediately"
+    ],
+    "answerIndex": 1,
+    "explanation": "`once()` automatically removes the listener after it fires one time, reducing leak risk."
+  },
+  {
+    "id": 108,
+    "category": "Express.js",
+    "level": "hard",
+    "question": "Which is the safest way to handle unknown routes (404) in Express while keeping error middleware working?",
+    "options": [
+      "Throw inside every route",
+      "Add a final 404 handler after routes, before error middleware",
+      "Put 404 handler at the top",
+      "Disable next() usage"
+    ],
+    "answerIndex": 1,
+    "explanation": "Order: routes -> 404 handler -> error handler. This keeps routing clean and errors centralized."
+  },
+  {
+    "id": 109,
+    "category": "MongoDB",
+    "level": "hard",
+    "question": "Which index type is used for queries that match documents within a polygon/near a point on Earth?",
+    "options": ["2dsphere", "text", "TTL", "hashed"],
+    "answerIndex": 0,
+    "explanation": "Geospatial queries on GeoJSON use a `2dsphere` index."
+  },
+  {
+    "id": 110,
+    "category": "Node.js",
+    "level": "hard",
+    "question": "What is a key advantage of using `Readable.from()` in Node.js?",
+    "options": [
+      "It disables backpressure",
+      "It creates a readable stream from an iterable/async iterable",
+      "It encrypts stream data",
+      "It converts buffers to JSON"
+    ],
+    "answerIndex": 1,
+    "explanation": "`Readable.from()` turns (async) iterables into streams, integrating with pipeline/backpressure."
+  },
+  {
+    "id": 111,
+    "category": "Express.js",
+    "level": "hard",
+    "question": "What is a common security issue if you enable `express.static` for uploads without restrictions?",
+    "options": [
+      "It improves caching",
+      "It may serve malicious files (XSS) directly to users",
+      "It encrypts images",
+      "It disables CORS automatically"
+    ],
+    "answerIndex": 1,
+    "explanation": "Serving user uploads publicly without controls can expose XSS/malware risks."
+  },
+  {
+    "id": 112,
+    "category": "MongoDB",
+    "level": "hard",
+    "question": "Which operation is best to ensure you update a document only if its version matches (optimistic concurrency)?",
+    "options": [
+      "findOneAndUpdate with a version in the filter",
+      "updateMany without filters",
+      "drop collection",
+      "aggregate then insert"
+    ],
+    "answerIndex": 0,
+    "explanation": "Include a version field in the filter so the update succeeds only if the version is unchanged."
+  },
+  {
+    "id": 113,
+    "category": "Node.js",
+    "level": "hard",
+    "question": "Which Node.js feature lets you create per-request context for logging without passing parameters everywhere?",
+    "options": ["AsyncLocalStorage", "setTimeout", "Buffer.concat", "fs.watch"],
+    "answerIndex": 0,
+    "explanation": "`AsyncLocalStorage` propagates context across async boundaries (request ID, user ID, etc.)."
+  },
+  {
+    "id": 114,
+    "category": "Express.js",
+    "level": "hard",
+    "question": "Which is the best way to prevent timing attacks during password comparison?",
+    "options": [
+      "Use `===` on strings",
+      "Use a constant-time comparison method (or bcrypt compare)",
+      "Convert to uppercase then compare",
+      "Compare in the frontend only"
+    ],
+    "answerIndex": 1,
+    "explanation": "Use constant-time comparisons or trusted hash compare functions to reduce timing leak risk."
+  },
+  {
+    "id": 115,
+    "category": "MongoDB",
+    "level": "hard",
+    "question": "What is the main benefit of using projections in queries (selecting only needed fields)?",
+    "options": [
+      "It changes shard key",
+      "It reduces network and memory usage",
+      "It forces full collection scan",
+      "It disables indexes"
+    ],
+    "answerIndex": 1,
+    "explanation": "Projections reduce data transferred and processed, improving performance."
+  },
+  {
+    "id": 116,
+    "category": "Node.js",
+    "level": "hard",
+    "question": "Which type of attack is most directly mitigated by setting HTTP response header `X-Frame-Options`?",
+    "options": ["SQL injection", "Clickjacking", "CSRF", "DNS spoofing"],
+    "answerIndex": 1,
+    "explanation": "`X-Frame-Options` helps prevent clickjacking by blocking framing by other sites."
+  },
+  {
+    "id": 117,
+    "category": "Express.js",
+    "level": "hard",
+    "question": "Why is it recommended to disable `X-Powered-By` header in Express?",
+    "options": [
+      "It breaks JSON parsing",
+      "It reduces information disclosure about your stack",
+      "It enables HTTP/3",
+      "It speeds up database queries"
+    ],
+    "answerIndex": 1,
+    "explanation": "Hiding framework details reduces easy fingerprinting for attackers."
+  },
+  {
+    "id": 118,
+    "category": "MongoDB",
+    "level": "hard",
+    "question": "Which approach is best for storing very large files (videos) in MongoDB when you must store them there?",
+    "options": [
+      "Store as normal document field",
+      "Use GridFS",
+      "Store in index only",
+      "Store in config database"
+    ],
+    "answerIndex": 1,
+    "explanation": "GridFS stores large files in chunks across collections, designed for large binary data."
+  },
+  {
+    "id": 119,
+    "category": "Node.js",
+    "level": "hard",
+    "question": "What can happen if you keep adding setInterval timers per request in an API server?",
+    "options": [
+      "Nothing, timers are auto-cleaned",
+      "Memory leak and CPU overhead due to accumulating timers",
+      "It improves response time",
+      "It disables garbage collection"
+    ],
+    "answerIndex": 1,
+    "explanation": "Per-request intervals often never get cleared, causing leaks and unnecessary CPU wakeups."
+  },
+  {
+    "id": 120,
+    "category": "Express.js",
+    "level": "hard",
+    "question": "Which approach is best to ensure secure password storage in a Node/Express app?",
+    "options": [
+      "Encrypt password and store",
+      "Hash with a slow adaptive algorithm (bcrypt/argon2) + salt",
+      "Store plain text in DB",
+      "Hash with md5"
+    ],
+    "answerIndex": 1,
+    "explanation": "Use slow password hashing (bcrypt/argon2) with salt to resist brute force."
+  },
+  {
+    "id": 121,
+    "category": "MongoDB",
+    "level": "hard",
+    "question": "Which aggregation stage is best to create multiple pipelines and return multiple result sets in one query?",
+    "options": ["$facet", "$unionWith", "$merge", "$out"],
+    "answerIndex": 0,
+    "explanation": "`$facet` runs multiple sub-pipelines and returns combined results."
+  },
+  {
+    "id": 122,
+    "category": "Node.js",
+    "level": "hard",
+    "question": "Which environment variable is commonly used to set production mode behavior in Node apps?",
+    "options": ["NODE_ENV", "NODE_PATH_ONLY", "V8_MODE", "EXPRESS_ENV_ONLY"],
+    "answerIndex": 0,
+    "explanation": "`NODE_ENV=production` often enables optimizations and disables verbose error output."
+  },
+  {
+    "id": 123,
+    "category": "Express.js",
+    "level": "hard",
+    "question": "Which strategy best prevents an attacker from enumerating valid user accounts on login/forgot-password APIs?",
+    "options": [
+      "Return different messages for valid/invalid users",
+      "Return the same generic message for both cases",
+      "Expose user IDs in response",
+      "Send stack traces"
+    ],
+    "answerIndex": 1,
+    "explanation": "Use a generic response to avoid revealing whether the account exists."
+  },
+  {
+    "id": 124,
+    "category": "MongoDB",
+    "level": "hard",
+    "question": "What is a common drawback of very large embedded arrays in MongoDB documents?",
+    "options": [
+      "They improve all writes",
+      "Document can hit 16MB limit and updates become expensive",
+      "They enable faster joins always",
+      "They reduce index size"
+    ],
+    "answerIndex": 1,
+    "explanation": "Huge arrays can approach document size limit and make updates slower/heavier."
+  },
+  {
+    "id": 125,
+    "category": "Node.js",
+    "level": "hard",
+    "question": "Which built-in module is used to create a cryptographically secure random token in Node.js?",
+    "options": ["crypto", "math", "os", "url"],
+    "answerIndex": 0,
+    "explanation": "Use `crypto.randomBytes()` (or `crypto.webcrypto`) for secure random tokens."
+  },
+  {
+    "id": 126,
+    "category": "Express.js",
+    "level": "hard",
+    "question": "Which is the best way to protect sensitive config like DB passwords in an Express backend?",
+    "options": [
+      "Hardcode in source",
+      "Use environment variables/secret manager and never commit secrets",
+      "Store in frontend",
+      "Print them in logs"
+    ],
+    "answerIndex": 1,
+    "explanation": "Secrets should be stored outside code (env/secret manager) and rotated if exposed."
+  },
+  {
+    "id": 127,
+    "category": "MongoDB",
+    "level": "hard",
+    "question": "Which method helps you ensure a query uses an index and not a collection scan (when debugging)?",
+    "options": [
+      "countDocuments()",
+      "explain() and check winning plan / IXSCAN",
+      "dropIndexes()",
+      "compact()"
+    ],
+    "answerIndex": 1,
+    "explanation": "`explain()` shows whether the plan uses `IXSCAN` (index scan) vs `COLLSCAN`."
+  },
+  {
+    "id": 128,
+    "category": "Node.js",
+    "level": "hard",
+    "question": "Which scenario can cause an 'event loop lag' spike even if CPU is not maxed?",
+    "options": [
+      "Many tiny asynchronous operations",
+      "Long GC pauses due to memory pressure",
+      "Using HTTP keep-alive",
+      "Using dotenv"
+    ],
+    "answerIndex": 1,
+    "explanation": "Heavy memory pressure can cause long garbage collection pauses, increasing event loop delay."
+  },
+  {
+    "id": 129,
+    "category": "Express.js",
+    "level": "hard",
+    "question": "Which technique is best to handle multi-tenant authorization in Express APIs?",
+    "options": [
+      "Only check if user is logged in",
+      "Verify tenantId ownership/role for every request (middleware/guards)",
+      "Trust tenantId from client",
+      "Store tenantId in UI only"
+    ],
+    "answerIndex": 1,
+    "explanation": "Always enforce tenant-level access control on the server per request."
+  },
+  {
+    "id": 130,
+    "category": "MongoDB",
+    "level": "hard",
+    "question": "Which MongoDB feature helps you automatically reduce index size by indexing only documents that match a condition?",
+    "options": ["Sparse index", "Partial index", "Hashed index", "TTL index"],
+    "answerIndex": 1,
+    "explanation": "Partial indexes index only documents matching a filter expression, reducing overhead."
+  },
+  {
+    "id": 131,
+    "category": "Node.js",
+    "level": "hard",
+    "question": "What is a common reason to use `res.write()` + `res.end()` (streaming) instead of `res.json()` for some endpoints?",
+    "options": [
+      "To disable HTTP",
+      "To stream large responses progressively and reduce memory usage",
+      "To avoid status codes",
+      "To make DB faster"
+    ],
+    "answerIndex": 1,
+    "explanation": "Streaming sends chunks progressively and avoids building the entire payload in memory."
+  },
+  {
+    "id": 132,
+    "category": "Express.js",
+    "level": "hard",
+    "question": "Which header is most relevant to caching validation to avoid re-downloading unchanged resources?",
+    "options": ["ETag", "Origin", "Referer", "TE"],
+    "answerIndex": 0,
+    "explanation": "ETag supports conditional requests via `If-None-Match` to validate cached content."
+  },
+  {
+    "id": 133,
+    "category": "MongoDB",
+    "level": "hard",
+    "question": "Which technique helps prevent 'lost updates' when multiple clients update the same doc concurrently?",
+    "options": [
+      "Use random delays",
+      "Use optimistic concurrency (version field) or transactions",
+      "Disable indexes",
+      "Use $where"
+    ],
+    "answerIndex": 1,
+    "explanation": "Version checks or transactions ensure updates don't silently overwrite each other."
+  },
+  {
+    "id": 134,
+    "category": "Node.js",
+    "level": "hard",
+    "question": "Which statement best describes Node.js 'handles' preventing process exit?",
+    "options": [
+      "Only DB queries keep it alive",
+      "Open timers/sockets/servers keep the event loop active",
+      "Console logs keep it alive",
+      "Imports keep it alive"
+    ],
+    "answerIndex": 1,
+    "explanation": "Active handles like servers, sockets, and timers keep the event loop from exiting."
+  },
+  {
+    "id": 135,
+    "category": "Express.js",
+    "level": "hard",
+    "question": "Which security control best reduces risk of HTTP parameter tampering for critical fields like price?",
+    "options": [
+      "Trust client price",
+      "Recalculate price on server from product DB and ignore client-sent price",
+      "Hide price in UI only",
+      "Use GET instead of POST"
+    ],
+    "answerIndex": 1,
+    "explanation": "Never trust client for critical values; recompute/validate server-side."
+  },
+  {
+    "id": 136,
+    "category": "MongoDB",
+    "level": "hard",
+    "question": "Which stage writes aggregation results back into a collection by updating existing docs or inserting new ones?",
+    "options": ["$merge", "$out", "$facet", "$setWindowFields"],
+    "answerIndex": 0,
+    "explanation": "`$merge` can insert/replace/merge into a target collection based on keys."
+  },
+  {
+    "id": 137,
+    "category": "Node.js",
+    "level": "hard",
+    "question": "Which approach best limits concurrent async tasks (like calling 1000 APIs) to avoid overload?",
+    "options": [
+      "Run all at once with Promise.all",
+      "Use a concurrency limiter (queue/semaphore) and process in batches",
+      "Use recursion without await",
+      "Disable keep-alive"
+    ],
+    "answerIndex": 1,
+    "explanation": "Limit concurrency to protect your server and downstream services."
+  },
+  {
+    "id": 138,
+    "category": "Express.js",
+    "level": "hard",
+    "question": "Which is the best approach to implement request correlation ID in Express for tracing logs?",
+    "options": [
+      "Use random console logs",
+      "Generate/read a request ID in middleware and attach to req + response header",
+      "Store it in global variable without isolation",
+      "Only set it in frontend"
+    ],
+    "answerIndex": 1,
+    "explanation": "Create/use a correlation ID per request in middleware and propagate it to logs/headers."
+  },
+  {
+    "id": 139,
+    "category": "MongoDB",
+    "level": "hard",
+    "question": "Which operator can update a nested field without replacing the whole document?",
+    "options": ["ReplaceOne", "$set", "$renameAll", "$truncate"],
+    "answerIndex": 1,
+    "explanation": "`$set` updates specific fields, including nested paths, without replacing the document."
+  },
+  {
+    "id": 140,
+    "category": "Node.js",
+    "level": "hard",
+    "question": "What is the security benefit of using `httpOnly` cookies for tokens?",
+    "options": [
+      "They are visible to JavaScript",
+      "They reduce XSS token theft because JS can't read them",
+      "They disable CSRF automatically",
+      "They compress cookies"
+    ],
+    "answerIndex": 1,
+    "explanation": "HttpOnly cookies cannot be read by JS, reducing token theft via XSS."
+  },
+  {
+    "id": 141,
+    "category": "Express.js",
+    "level": "hard",
+    "question": "Which is the best method to control access to an endpoint based on user role?",
+    "options": [
+      "Hide the button in UI",
+      "Server-side authorization middleware that checks roles/permissions",
+      "Trust a 'role' field from client",
+      "Use query params for roles"
+    ],
+    "answerIndex": 1,
+    "explanation": "Authorization must be enforced on the server, not just in the UI."
+  },
+  {
+    "id": 142,
+    "category": "MongoDB",
+    "level": "hard",
+    "question": "Why can using `skip()` with very large offsets become slow in MongoDB?",
+    "options": [
+      "MongoDB doesn't support skip",
+      "It still must scan and discard many results before returning the page",
+      "It uses GPU",
+      "It disables indexes"
+    ],
+    "answerIndex": 1,
+    "explanation": "Large skips cause the server to walk through many docs/keys, wasting work."
+  },
+  {
+    "id": 143,
+    "category": "Node.js",
+    "level": "hard",
+    "question": "Which practice best prevents path traversal in file download endpoints (e.g., `../../etc/passwd`)?",
+    "options": [
+      "Use user input directly in fs paths",
+      "Whitelist file IDs and map to safe server paths",
+      "Use eval for path building",
+      "Disable URL encoding"
+    ],
+    "answerIndex": 1,
+    "explanation": "Never trust path input; map safe IDs to real paths and validate/normalize."
+  },
+  {
+    "id": 144,
+    "category": "Express.js",
+    "level": "hard",
+    "question": "Which response header helps prevent MIME sniffing in browsers?",
+    "options": [
+      "X-Content-Type-Options: nosniff",
+      "Accept-Language",
+      "Upgrade-Insecure-Requests",
+      "Host"
+    ],
+    "answerIndex": 0,
+    "explanation": "`nosniff` reduces risk of browsers interpreting files as a different content type."
+  },
+  {
+    "id": 145,
+    "category": "MongoDB",
+    "level": "hard",
+    "question": "Which operator is used to remove matching elements from an array?",
+    "options": ["$pull", "$push", "$addToSet", "$inc"],
+    "answerIndex": 0,
+    "explanation": "`$pull` removes all array elements that match a condition."
+  },
+  {
+    "id": 146,
+    "category": "Node.js",
+    "level": "hard",
+    "question": "What is the main reason to use `Object.freeze()` (or immutability) for config objects in Node apps?",
+    "options": [
+      "To speed up network",
+      "To prevent accidental mutation at runtime",
+      "To increase heap size",
+      "To enable clustering"
+    ],
+    "answerIndex": 1,
+    "explanation": "Freezing config prevents accidental changes that can cause hard-to-debug issues."
+  },
+  {
+    "id": 147,
+    "category": "Express.js",
+    "level": "hard",
+    "question": "Which approach best avoids duplicate side effects when a client retries a request after a timeout?",
+    "options": [
+      "Always process again",
+      "Use idempotency keys and store request outcomes",
+      "Disable retries forever",
+      "Use GET for payments"
+    ],
+    "answerIndex": 1,
+    "explanation": "Idempotency keys let you safely replay requests without repeating side effects."
+  },
+  {
+    "id": 148,
+    "category": "MongoDB",
+    "level": "hard",
+    "question": "Which technique best supports 'soft delete' while keeping queries fast?",
+    "options": [
+      "Drop documents",
+      "Add `deletedAt` (or `isDeleted`) field + index and filter it in queries",
+      "Store deletes in logs only",
+      "Use regex on status"
+    ],
+    "answerIndex": 1,
+    "explanation": "Soft delete with indexed flag/date keeps reads efficient and preserves history."
+  },
+  {
+    "id": 149,
+    "category": "Node.js",
+    "level": "hard",
+    "question": "Which API can help you measure event loop delay/latency in Node.js?",
+    "options": [
+      "perf_hooks.monitorEventLoopDelay()",
+      "fs.readdir()",
+      "crypto.createHash()",
+      "http.createServer()"
+    ],
+    "answerIndex": 0,
+    "explanation": "`perf_hooks` provides event loop delay monitoring to detect lag under load."
+  },
+  {
+    "id": 150,
+    "category": "Express.js",
+    "level": "hard",
+    "question": "Which approach best prevents 'open redirect' vulnerabilities in Express apps?",
+    "options": [
+      "Allow redirect to any URL from query",
+      "Allowlist redirect domains/paths and validate before redirecting",
+      "Always redirect to req.query.next",
+      "Encode URL twice"
+    ],
+    "answerIndex": 1,
+    "explanation": "Validate redirect targets against an allowlist to prevent redirecting users to malicious sites."
+  },
+  {
+    "id": 151,
+    "category": "MongoDB",
+    "level": "hard",
+    "question": "Which stage is used to sort documents in an aggregation pipeline?",
+    "options": ["$sort", "$order", "$arrange", "$rank"],
+    "answerIndex": 0,
+    "explanation": "`$sort` orders documents by one or more fields."
+  },
+  {
+    "id": 152,
+    "category": "Node.js",
+    "level": "hard",
+    "question": "What is the main risk of using `JSON.stringify()` on objects with circular references?",
+    "options": [
+      "It becomes faster",
+      "It throws an error and can break the request handler",
+      "It encrypts data",
+      "It auto-fixes cycles"
+    ],
+    "answerIndex": 1,
+    "explanation": "Circular structures cause `JSON.stringify` to throw unless handled."
+  },
+  {
+    "id": 153,
+    "category": "Express.js",
+    "level": "hard",
+    "question": "Which practice best ensures consistent authentication across microservices?",
+    "options": [
+      "Each service uses different secret formats randomly",
+      "Centralized identity/JWT validation standards (issuer/audience/keys) across services",
+      "No auth between services",
+      "Trust internal IP only"
+    ],
+    "answerIndex": 1,
+    "explanation": "Standardize token validation (iss/aud/keys/rotation) and enforce consistently."
+  },
+  {
+    "id": 154,
+    "category": "MongoDB",
+    "level": "hard",
+    "question": "Which feature helps encrypt data at rest at the storage engine level (commonly configured in MongoDB deployments)?",
+    "options": [
+      "Aggregation pipelines",
+      "Encryption at rest (storage engine encryption)",
+      "TTL indexes",
+      "Text search"
+    ],
+    "answerIndex": 1,
+    "explanation": "Encryption at rest protects stored data on disk (deployment configuration/feature)."
+  },
+  {
+    "id": 155,
+    "category": "Node.js",
+    "level": "hard",
+    "question": "Which HTTP status code is most appropriate when a required upstream service is down and your API can't fulfill the request?",
+    "options": ["200", "404", "503", "418"],
+    "answerIndex": 2,
+    "explanation": "503 Service Unavailable indicates temporary inability to handle the request."
+  },
+  {
+    "id": 156,
+    "category": "Express.js",
+    "level": "hard",
+    "question": "Which approach best prevents leaking internal errors to clients while still being debuggable?",
+    "options": [
+      "Send full stack to client",
+      "Return a generic error + log full details with correlation ID",
+      "Hide all logs",
+      "Always return 200"
+    ],
+    "answerIndex": 1,
+    "explanation": "Clients get safe message; logs keep full error details tied to request ID."
+  },
+  {
+    "id": 157,
+    "category": "MongoDB",
+    "level": "hard",
+    "question": "Which MongoDB tool helps you watch query performance by inspecting slow operations?",
+    "options": [
+      "system.profile profiler / slow query logs",
+      "ObjectId()",
+      "GridFS",
+      "bsondump only"
+    ],
+    "answerIndex": 0,
+    "explanation": "MongoDB profiler and slow query logs help identify slow operations and patterns."
+  },
+  {
+    "id": 158,
+    "category": "Node.js",
+    "level": "hard",
+    "question": "Which is the best practice to prevent prototype pollution when merging user input objects?",
+    "options": [
+      "Use deep merge on req.body directly",
+      "Sanitize keys like __proto__/constructor/prototype or use safe merge libs",
+      "Always trust JSON",
+      "Store raw input in global config"
+    ],
+    "answerIndex": 1,
+    "explanation": "Block dangerous keys and use safe merging to prevent prototype pollution vulnerabilities."
+  },
+  {
+    "id": 159,
+    "category": "Express.js",
+    "level": "hard",
+    "question": "Which HTTP header is typically used by clients to send a JWT to an Express API?",
+    "options": [
+      "Authorization: Bearer <token>",
+      "Cookie: jwt=<token> always",
+      "Host: <token>",
+      "Accept: <token>"
+    ],
+    "answerIndex": 0,
+    "explanation": "Standard practice is `Authorization: Bearer <token>` for sending JWTs."
+  },
+  {
+    "id": 160,
+    "category": "MongoDB",
+    "level": "hard",
+    "question": "Which best describes a capped collection?",
+    "options": [
+      "Unlimited size collection",
+      "Fixed-size collection that overwrites oldest documents when full",
+      "Collection with only capped indexes",
+      "Encrypted-only collection"
+    ],
+    "answerIndex": 1,
+    "explanation": "Capped collections keep insertion order and have a fixed size, rolling over old docs."
+  },
+  {
+    "id": 161,
+    "category": "Node.js",
+    "level": "hard",
+    "question": "Which statement about `async` functions is true in Node.js?",
+    "options": [
+      "They never throw errors",
+      "They always return a Promise",
+      "They run in separate threads automatically",
+      "They block the event loop by default"
+    ],
+    "answerIndex": 1,
+    "explanation": "An `async` function always returns a Promise (resolved value or rejected error)."
+  },
+  {
+    "id": 162,
+    "category": "Express.js",
+    "level": "hard",
+    "question": "Which approach best protects APIs from SSRF when users provide URLs (e.g., image fetch)?",
+    "options": [
+      "Fetch any URL directly",
+      "Validate/allowlist domains, block internal IP ranges, and set timeouts",
+      "Disable HTTPS validation",
+      "Use eval on the URL"
+    ],
+    "answerIndex": 1,
+    "explanation": "SSRF defenses include allowlists, IP range blocking, DNS re-checks, and strict timeouts."
+  },
+  {
+    "id": 163,
+    "category": "MongoDB",
+    "level": "hard",
+    "question": "Which is a major cost of having too many indexes on a frequently-written collection?",
+    "options": [
+      "Reads become slower always",
+      "Writes become slower because each write updates multiple indexes",
+      "Sharding becomes impossible",
+      "Documents shrink automatically"
+    ],
+    "answerIndex": 1,
+    "explanation": "Each additional index adds write overhead (updates to index structures)."
+  },
+  {
+    "id": 164,
+    "category": "Node.js",
+    "level": "hard",
+    "question": "Which approach best prevents blocking when generating PDFs/images in a Node API?",
+    "options": [
+      "Generate synchronously in request thread",
+      "Offload to background job/worker and return job status",
+      "Use console.log",
+      "Disable cluster"
+    ],
+    "answerIndex": 1,
+    "explanation": "Heavy CPU tasks should run in workers/queues; request returns quickly with status/result."
+  },
+  {
+    "id": 165,
+    "category": "Express.js",
+    "level": "hard",
+    "question": "Which is the most correct behavior for an API when a resource doesn't exist?",
+    "options": [
+      "200 with empty object",
+      "404 Not Found",
+      "500 Internal Server Error",
+      "302 Redirect"
+    ],
+    "answerIndex": 1,
+    "explanation": "404 indicates the requested resource is not available."
+  },
+  {
+    "id": 166,
+    "category": "MongoDB",
+    "level": "hard",
+    "question": "Which stage is used to add or overwrite fields in aggregation documents (modern replacement for many $project uses)?",
+    "options": ["$addFields / $set", "$push", "$join", "$keyBy"],
+    "answerIndex": 0,
+    "explanation": "`$set` (alias of `$addFields`) adds/overwrites fields while keeping others."
+  },
+  {
+    "id": 167,
+    "category": "Node.js",
+    "level": "hard",
+    "question": "What is the main reliability benefit of using `try/catch` around `await` calls in route handlers?",
+    "options": [
+      "It makes DB faster",
+      "It lets you forward errors to centralized error handler",
+      "It disables async",
+      "It prevents all bugs forever"
+    ],
+    "answerIndex": 1,
+    "explanation": "Catching errors allows forwarding with `next(err)` or returning controlled responses."
+  },
+  {
+    "id": 168,
+    "category": "Express.js",
+    "level": "hard",
+    "question": "Which strategy is best to prevent replay attacks for sensitive operations (OTP/verification)?",
+    "options": [
+      "Allow OTP reuse",
+      "Use short expiry + one-time use tokens + server-side tracking",
+      "Store OTP in frontend only",
+      "Use GET requests"
+    ],
+    "answerIndex": 1,
+    "explanation": "Short expiry and one-time use with server tracking prevents replays."
+  },
+  {
+    "id": 169,
+    "category": "MongoDB",
+    "level": "hard",
+    "question": "Which MongoDB feature can automatically delete old log documents after X days?",
+    "options": [
+      "Text index",
+      "TTL index",
+      "2dsphere index",
+      "Capped collection only"
+    ],
+    "answerIndex": 1,
+    "explanation": "TTL indexes expire documents based on a date field after a configured time."
+  },
+  {
+    "id": 170,
+    "category": "Node.js",
+    "level": "hard",
+    "question": "Which is the best approach to handle huge JSON request bodies safely in Express?",
+    "options": [
+      "No limits and parse everything",
+      "Set body size limits and prefer streaming uploads for huge data",
+      "Use eval to parse",
+      "Store in global variable"
+    ],
+    "answerIndex": 1,
+    "explanation": "Apply strict limits; for large data use streaming/multipart rather than huge JSON."
+  },
+  {
+    "id": 171,
+    "category": "Express.js",
+    "level": "hard",
+    "question": "Which HTTP status code is most appropriate when a user is authenticated but not allowed to access a resource?",
+    "options": ["401", "403", "404", "500"],
+    "answerIndex": 1,
+    "explanation": "403 Forbidden means authenticated but lacking permission."
+  },
+  {
+    "id": 172,
+    "category": "MongoDB",
+    "level": "hard",
+    "question": "Which query is best optimized by an index on `{ status: 1, createdAt: -1 }`?",
+    "options": [
+      "find({createdAt}) only",
+      "find({status}).sort({createdAt:-1})",
+      "find({name}).sort({status:1})",
+      "find({status}).sort({name:1})"
+    ],
+    "answerIndex": 1,
+    "explanation": "The compound index supports filtering on status and sorting by createdAt descending."
+  },
+  {
+    "id": 173,
+    "category": "Node.js",
+    "level": "hard",
+    "question": "Which library/category is commonly used to protect Express apps from HTTP parameter pollution (HPP)?",
+    "options": [
+      "hpp middleware",
+      "cors middleware only",
+      "morgan only",
+      "dotenv only"
+    ],
+    "answerIndex": 0,
+    "explanation": "HPP middleware (or custom normalization) helps mitigate parameter pollution."
+  },
+  {
+    "id": 174,
+    "category": "Express.js",
+    "level": "hard",
+    "question": "Which approach best secures password reset links?",
+    "options": [
+      "Use userId only in link",
+      "Use single-use random token stored hashed with expiry",
+      "Use password in link",
+      "Make token never expire"
+    ],
+    "answerIndex": 1,
+    "explanation": "Use random, single-use, expiring tokens (store hashed) to keep reset links safe."
+  },
+  {
+    "id": 175,
+    "category": "MongoDB",
+    "level": "hard",
+    "question": "Which stage is used to limit the number of documents in aggregation results?",
+    "options": ["$limit", "$cap", "$truncate", "$take"],
+    "answerIndex": 0,
+    "explanation": "`$limit` restricts the number of documents passed forward."
+  },
+  {
+    "id": 176,
+    "category": "Node.js",
+    "level": "hard",
+    "question": "What is a major risk of keeping JWTs valid for very long time without rotation/blacklist?",
+    "options": [
+      "They become shorter",
+      "Stolen tokens remain usable for long period",
+      "They stop working on mobile",
+      "They auto-encrypt DB"
+    ],
+    "answerIndex": 1,
+    "explanation": "Long-lived tokens increase damage window if compromised; use short TTL + refresh/rotation."
+  },
+  {
+    "id": 177,
+    "category": "Express.js",
+    "level": "hard",
+    "question": "Which technique best avoids leaking PII in API responses?",
+    "options": [
+      "Return full user object always",
+      "Use DTO/response shaping to exclude sensitive fields",
+      "Store PII in query params",
+      "Log responses publicly"
+    ],
+    "answerIndex": 1,
+    "explanation": "Shape responses and explicitly exclude sensitive fields like passwords, tokens, secrets."
+  },
+  {
+    "id": 178,
+    "category": "MongoDB",
+    "level": "hard",
+    "question": "Which operator is used to increment a numeric field atomically?",
+    "options": ["$inc", "$set", "$mul", "$avg"],
+    "answerIndex": 0,
+    "explanation": "`$inc` increments (or decrements) numeric fields atomically."
+  },
+  {
+    "id": 179,
+    "category": "Node.js",
+    "level": "hard",
+    "question": "What is the main point of using a circuit breaker pattern in Node microservices?",
+    "options": [
+      "To increase payload size",
+      "To stop calling failing services temporarily and recover gracefully",
+      "To disable TLS",
+      "To replace caching"
+    ],
+    "answerIndex": 1,
+    "explanation": "Circuit breakers prevent cascading failures by failing fast and allowing recovery."
+  },
+  {
+    "id": 180,
+    "category": "Express.js",
+    "level": "hard",
+    "question": "Which approach best prevents request smuggling issues at the app level?",
+    "options": [
+      "Ignore proxy setup",
+      "Use trusted reverse proxy config, keep dependencies updated, and validate headers",
+      "Disable HTTP/1.1",
+      "Always set status 201"
+    ],
+    "answerIndex": 1,
+    "explanation": "Most mitigations are at proxy/server layer; ensure correct proxy config and patched stacks."
+  },
+  {
+    "id": 181,
+    "category": "MongoDB",
+    "level": "hard",
+    "question": "Which is the best way to store money values in MongoDB to avoid floating-point issues?",
+    "options": [
+      "Double with decimals",
+      "Use Decimal128 or store integers in smallest unit (paise/cents)",
+      "Store as string always",
+      "Store as array"
+    ],
+    "answerIndex": 1,
+    "explanation": "Use Decimal128 or integer minor units to avoid floating-point rounding errors."
+  },
+  {
+    "id": 182,
+    "category": "Node.js",
+    "level": "hard",
+    "question": "Which is the recommended way to handle CPU-heavy image resizing in a Node API?",
+    "options": [
+      "Do it sync in request handler",
+      "Offload to worker threads/background queue",
+      "Do it in MongoDB",
+      "Use setTimeout loops"
+    ],
+    "answerIndex": 1,
+    "explanation": "CPU-heavy tasks should run off the main event loop to keep latency low."
+  },
+  {
+    "id": 183,
+    "category": "Express.js",
+    "level": "hard",
+    "question": "Which practice is best for safe database errors handling in Express controllers?",
+    "options": [
+      "Return raw DB error to client",
+      "Map errors to safe messages/codes and log details internally",
+      "Ignore errors",
+      "Always return 200"
+    ],
+    "answerIndex": 1,
+    "explanation": "Expose safe error codes; keep detailed DB errors only in logs for debugging."
+  },
+  {
+    "id": 184,
+    "category": "MongoDB",
+    "level": "hard",
+    "question": "Which feature helps you compute rolling totals or ranks in aggregation (window functions)?",
+    "options": ["$setWindowFields", "$bucket", "$merge", "$graphLookup"],
+    "answerIndex": 0,
+    "explanation": "`$setWindowFields` enables window function style computations (rank, moving avg, etc.)."
+  },
+  {
+    "id": 185,
+    "category": "Node.js",
+    "level": "hard",
+    "question": "Which scenario is a sign that your Node.js process is I/O bound rather than CPU bound?",
+    "options": [
+      "CPU always at 100%",
+      "High time waiting on DB/network with low CPU usage",
+      "Only synchronous code",
+      "No external calls"
+    ],
+    "answerIndex": 1,
+    "explanation": "If CPU is low but latency high due to network/DB waits, the system is I/O bound."
+  },
+  {
+    "id": 186,
+    "category": "Express.js",
+    "level": "hard",
+    "question": "Which is the best practice to ensure request body is parsed safely for JSON APIs?",
+    "options": [
+      "Use `express.json()` with a size limit",
+      "Parse manually with eval",
+      "Disable parsing always",
+      "Accept any content-type"
+    ],
+    "answerIndex": 0,
+    "explanation": "Use `express.json({ limit })` and validate content-type/size."
+  },
+  {
+    "id": 187,
+    "category": "MongoDB",
+    "level": "hard",
+    "question": "Which operation is best to remove a field from all documents?",
+    "options": [
+      "$unset with updateMany",
+      "$deleteField",
+      "$removeKey",
+      "$dropField"
+    ],
+    "answerIndex": 0,
+    "explanation": "Use `updateMany({}, { $unset: { field: 1 } })` to remove a field across docs."
+  },
+  {
+    "id": 188,
+    "category": "Node.js",
+    "level": "hard",
+    "question": "Which HTTP header helps mitigate CSRF when using cookie auth by restricting cross-site cookie sending?",
+    "options": [
+      "SameSite (cookie attribute)",
+      "Access-Control-Allow-Origin",
+      "Accept",
+      "Via"
+    ],
+    "answerIndex": 0,
+    "explanation": "SameSite is a cookie attribute that reduces cross-site cookie sending (CSRF mitigation)."
+  },
+  {
+    "id": 189,
+    "category": "Express.js",
+    "level": "hard",
+    "question": "Which approach best prevents sending invalid ObjectIds to MongoDB from Express routes?",
+    "options": [
+      "Let MongoDB throw always",
+      "Validate ObjectId format in middleware before querying",
+      "Use regex for everything",
+      "Convert IDs to numbers"
+    ],
+    "answerIndex": 1,
+    "explanation": "Validate IDs early to avoid unnecessary DB calls and reduce error noise."
+  },
+  {
+    "id": 190,
+    "category": "MongoDB",
+    "level": "hard",
+    "question": "Which replication concept ensures a replica set can elect a primary if the current primary fails?",
+    "options": [
+      "Capping",
+      "Failover via election",
+      "MapReduce",
+      "Index intersection only"
+    ],
+    "answerIndex": 1,
+    "explanation": "Replica sets support automatic failover by electing a new primary."
+  },
+  {
+    "id": 191,
+    "category": "Node.js",
+    "level": "hard",
+    "question": "What is the main advantage of using structured logging (JSON logs) in Node backends?",
+    "options": [
+      "It makes logs smaller always",
+      "It enables easier searching/aggregation in log systems",
+      "It prevents all attacks",
+      "It replaces monitoring"
+    ],
+    "answerIndex": 1,
+    "explanation": "JSON logs are machine-readable and easy to query in ELK/Datadog/CloudWatch, etc."
+  },
+  {
+    "id": 192,
+    "category": "Express.js",
+    "level": "hard",
+    "question": "Which technique helps ensure API responses are compressed only when the client supports it?",
+    "options": [
+      "Always gzip without checking",
+      "Use content negotiation (Accept-Encoding) via compression middleware",
+      "Disable headers",
+      "Send images as text"
+    ],
+    "answerIndex": 1,
+    "explanation": "Compression middleware checks `Accept-Encoding` and compresses accordingly."
+  },
+  {
+    "id": 193,
+    "category": "MongoDB",
+    "level": "hard",
+    "question": "Which command helps you move/rename a collection safely while preserving data?",
+    "options": ["renameCollection", "drop", "repairDatabase", "compact all"],
+    "answerIndex": 0,
+    "explanation": "`renameCollection` renames a collection (within constraints) without copying all data manually."
+  },
+  {
+    "id": 194,
+    "category": "Node.js",
+    "level": "hard",
+    "question": "Why is using `forEach(async () => ...)` a common bug in Node.js?",
+    "options": [
+      "forEach is faster always",
+      "forEach doesn’t await async callbacks, so errors/order can be lost",
+      "It runs in threads",
+      "It disables promises"
+    ],
+    "answerIndex": 1,
+    "explanation": "`forEach` doesn’t await; use `for...of` with await or `Promise.all` with map."
+  },
+  {
+    "id": 195,
+    "category": "Express.js",
+    "level": "hard",
+    "question": "Which practice best protects against JSON hijacking / unsafe GET JSON responses in old contexts?",
+    "options": [
+      "Return JSON only for GET always",
+      "Use proper content-type + consider anti-CSRF for state changes; avoid sensitive data in GET",
+      "Disable HTTPS",
+      "Use eval in frontend"
+    ],
+    "answerIndex": 1,
+    "explanation": "Keep sensitive operations non-GET, set correct content-type, and enforce auth/CSRF rules."
+  },
+  {
+    "id": 196,
+    "category": "MongoDB",
+    "level": "hard",
+    "question": "Which approach best speeds up frequent `$lookup` joins by reducing joined data size?",
+    "options": [
+      "Join all fields always",
+      "Project only needed fields before/inside lookup pipeline",
+      "Disable indexes",
+      "Use regex in join fields"
+    ],
+    "answerIndex": 1,
+    "explanation": "Projecting only required fields reduces work and memory during lookup."
+  },
+  {
+    "id": 197,
+    "category": "Node.js",
+    "level": "hard",
+    "question": "Which is a key benefit of using `undici` (or fetch) with proper pooling compared to naive request creation each time?",
+    "options": [
+      "No sockets are used",
+      "Better connection reuse and throughput under load",
+      "It disables TLS",
+      "It forces HTTP/0.9"
+    ],
+    "answerIndex": 1,
+    "explanation": "A good client pools/reuses connections, improving performance and reducing socket overhead."
+  },
+  {
+    "id": 198,
+    "category": "Express.js",
+    "level": "hard",
+    "question": "What is the best approach to return validation errors from an Express API?",
+    "options": [
+      "Return 500 always",
+      "Return 400 with a clear errors array and field messages",
+      "Return 200 with error text",
+      "Redirect to home page"
+    ],
+    "answerIndex": 1,
+    "explanation": "Validation issues are client errors; return 400 with structured field error details."
+  },
+  {
+    "id": 199,
+    "category": "MongoDB",
+    "level": "hard",
+    "question": "Which approach is best when you must guarantee 'exactly once' processing of an event with MongoDB?",
+    "options": [
+      "Process event without tracking",
+      "Use an idempotency key/eventId stored with unique index + transactional update",
+      "Use random retries only",
+      "Only rely on timeouts"
+    ],
+    "answerIndex": 1,
+    "explanation": "Idempotency keys with unique index (and transactions if needed) prevent duplicate processing."
+  },
+  {
+    "id": 200,
+    "category": "Node.js",
+    "level": "hard",
+    "question": "Which Node.js pattern best prevents the 'thundering herd' when many requests trigger the same expensive computation?",
+    "options": [
+      "Compute separately for each request",
+      "Use single-flight/deduping: share the same in-progress promise per key",
+      "Disable caching",
+      "Use more console logs"
+    ],
+    "answerIndex": 1,
+    "explanation": "Single-flight caches the in-flight promise so concurrent callers wait for one computation."
+  },
+
+  {
+    "id": 201,
+    "category": "MongoDB",
+    "level": "hard",
+    "question": "Which MongoDB operator is best to ensure a field exists and is not null in a query?",
+    "options": ["$exists + $ne: null", "$has", "$present", "$notNullOnly"],
+    "answerIndex": 0,
+    "explanation": "Use `{ field: { $exists: true, $ne: null } }` to ensure presence and non-null value."
+  },
+  {
+    "id": 202,
+    "category": "Node.js",
+    "level": "hard",
+    "question": "What is the main reason to prefer `for...of` with `await` over `Array.map(async...)` when order matters?",
+    "options": [
+      "map runs slower always",
+      "`for...of` executes sequentially preserving order",
+      "map cannot return arrays",
+      "for...of runs in worker threads"
+    ],
+    "answerIndex": 1,
+    "explanation": "`for...of` with `await` runs sequentially, which preserves strict ordering."
+  },
+  {
+    "id": 203,
+    "category": "Express.js",
+    "level": "hard",
+    "question": "Which approach best prevents accidentally exposing internal fields like `_id`, `__v`, or `passwordHash` in API responses?",
+    "options": [
+      "Return DB objects directly",
+      "Use explicit serialization/DTO layer and pick allowed fields",
+      "Use console.log before sending",
+      "Disable JSON responses"
+    ],
+    "answerIndex": 1,
+    "explanation": "A DTO/serializer ensures only safe fields are returned consistently."
+  },
+  {
+    "id": 204,
+    "category": "MongoDB",
+    "level": "hard",
+    "question": "Which MongoDB feature helps reduce network calls by updating and returning the updated document in one operation?",
+    "options": ["findOneAndUpdate", "insertMany", "distinct", "mapReduce"],
+    "answerIndex": 0,
+    "explanation": "`findOneAndUpdate` can update and return the modified document (with options)."
+  },
+  {
+    "id": 205,
+    "category": "Node.js",
+    "level": "hard",
+    "question": "Which built-in mechanism is best to handle graceful shutdown signals in Node.js?",
+    "options": [
+      "Listen to SIGINT/SIGTERM and close resources",
+      "Use setInterval forever",
+      "Only handle uncaughtException",
+      "Ignore signals always"
+    ],
+    "answerIndex": 0,
+    "explanation": "Handle SIGINT/SIGTERM, stop accepting new work, close server/DB, then exit."
+  },
+  {
+    "id": 206,
+    "category": "Express.js",
+    "level": "hard",
+    "question": "Which practice best ensures your Express app correctly parses client IP behind multiple proxies?",
+    "options": [
+      "Disable trust proxy",
+      "Configure `trust proxy` with correct hop count or function",
+      "Use req.connection only always",
+      "Hardcode IP range"
+    ],
+    "answerIndex": 1,
+    "explanation": "Proper `trust proxy` configuration ensures accurate `req.ip` and secure cookie behavior."
+  },
+  {
+    "id": 207,
+    "category": "MongoDB",
+    "level": "hard",
+    "question": "Which pattern best supports 'upsert' safely for a unique key (like email) under concurrency?",
+    "options": [
+      "find then insert",
+      "Use updateOne with upsert + unique index",
+      "Use delete then insert",
+      "Use $where"
+    ],
+    "answerIndex": 1,
+    "explanation": "Upsert plus a unique index prevents duplicates even under concurrent writes."
+  },
+  {
+    "id": 208,
+    "category": "Node.js",
+    "level": "hard",
+    "question": "What is the main impact of excessive synchronous logging (console.log) in high-traffic Node servers?",
+    "options": [
+      "It improves throughput",
+      "It can become a bottleneck and increase latency",
+      "It encrypts logs",
+      "It reduces memory usage"
+    ],
+    "answerIndex": 1,
+    "explanation": "Heavy logging can block/stall the event loop and I/O, increasing response time."
+  },
+  {
+    "id": 209,
+    "category": "Express.js",
+    "level": "hard",
+    "question": "Which technique best prevents sending duplicate responses when using multiple async branches in a route handler?",
+    "options": [
+      "Use `return` after sending response in each branch",
+      "Call res.send twice for safety",
+      "Always call next() after res.send",
+      "Use setTimeout to delay"
+    ],
+    "answerIndex": 0,
+    "explanation": "Use `return` after responding to prevent execution continuing into other branches."
+  },
+  {
+    "id": 210,
+    "category": "MongoDB",
+    "level": "hard",
+    "question": "Which aggregation stage is best to remove duplicate documents by grouping on a key and taking the first?",
+    "options": ["$group", "$dedupe", "$unique", "$distinctStage"],
+    "answerIndex": 0,
+    "explanation": "Use `$group` on the key and `$first` to keep one doc per group."
+  },
+  {
+    "id": 211,
+    "category": "Node.js",
+    "level": "hard",
+    "question": "Which is the safest way to manage connection pooling for outbound HTTP calls in Node?",
+    "options": [
+      "Create a new client/agent per request",
+      "Reuse a shared Agent/client with keep-alive and limits",
+      "Disable pooling always",
+      "Use synchronous HTTP"
+    ],
+    "answerIndex": 1,
+    "explanation": "A shared pooled client reduces socket churn and improves throughput."
+  },
+  {
+    "id": 212,
+    "category": "Express.js",
+    "level": "hard",
+    "question": "Which technique helps ensure consistent request timeouts across all Express routes?",
+    "options": [
+      "Set timeout in each controller manually",
+      "Use a timeout middleware applied globally",
+      "Only rely on browser timeout",
+      "Disable keep-alive"
+    ],
+    "answerIndex": 1,
+    "explanation": "Global timeout middleware enforces limits consistently for all routes."
+  },
+  {
+    "id": 213,
+    "category": "MongoDB",
+    "level": "hard",
+    "question": "Which concept best describes 'covering index' in MongoDB?",
+    "options": [
+      "Index that covers all collections",
+      "Query satisfied entirely from index without fetching document",
+      "Index that encrypts data",
+      "Index that replicates data"
+    ],
+    "answerIndex": 1,
+    "explanation": "If filter/sort/projection fields are in the index, MongoDB may avoid document fetch."
+  },
+  {
+    "id": 214,
+    "category": "Node.js",
+    "level": "hard",
+    "question": "What is the main issue with using `Math.random()` for security tokens?",
+    "options": [
+      "It is too slow",
+      "It is not cryptographically secure/predictable",
+      "It consumes too much memory",
+      "It requires HTTPS"
+    ],
+    "answerIndex": 1,
+    "explanation": "Use `crypto.randomBytes()` because `Math.random()` is not secure."
+  },
+  {
+    "id": 215,
+    "category": "Express.js",
+    "level": "hard",
+    "question": "Which technique best prevents SQL/NoSQL injection when building filters from query params like `sort` and `filter`?",
+    "options": [
+      "Pass req.query directly to DB",
+      "Whitelist allowed fields/operators and map safely",
+      "Use eval for flexibility",
+      "Disable query params"
+    ],
+    "answerIndex": 1,
+    "explanation": "Whitelist and map inputs to safe DB query structures."
+  },
+  {
+    "id": 216,
+    "category": "MongoDB",
+    "level": "hard",
+    "question": "Which stage is best to reshape nested documents into a flat structure for API output?",
+    "options": [
+      "$project (or $set + expressions)",
+      "$geoNear",
+      "$bucketAuto",
+      "$planCacheStats"
+    ],
+    "answerIndex": 0,
+    "explanation": "`$project` (and `$set`) can transform/rename fields and compute new ones."
+  },
+  {
+    "id": 217,
+    "category": "Node.js",
+    "level": "hard",
+    "question": "Which practice best reduces cold start time for a Node serverless function?",
+    "options": [
+      "Import everything eagerly",
+      "Minimize bundle size and reuse connections across invocations when allowed",
+      "Use synchronous CPU loops",
+      "Disable caching"
+    ],
+    "answerIndex": 1,
+    "explanation": "Smaller bundles and connection reuse (where supported) reduce cold starts."
+  },
+  {
+    "id": 218,
+    "category": "Express.js",
+    "level": "hard",
+    "question": "Which method best prevents logging sensitive request bodies (like passwords) in Express?",
+    "options": [
+      "Log all bodies for debugging always",
+      "Redact/mask sensitive fields in logging middleware",
+      "Disable JSON parsing",
+      "Store logs in cookies"
+    ],
+    "answerIndex": 1,
+    "explanation": "Masking prevents secrets from being stored in logs."
+  },
+  {
+    "id": 219,
+    "category": "MongoDB",
+    "level": "hard",
+    "question": "Which query pattern benefits from an index on `{ tenantId: 1, userId: 1 }`?",
+    "options": [
+      "find({ userId }) only always",
+      "find({ tenantId, userId })",
+      "find({ createdAt })",
+      "find({ name: /a/ })"
+    ],
+    "answerIndex": 1,
+    "explanation": "The compound index supports queries filtering on both tenantId and userId."
+  },
+  {
+    "id": 220,
+    "category": "Node.js",
+    "level": "hard",
+    "question": "Which Node.js feature is best for preventing 'callback hell' in modern codebases?",
+    "options": [
+      "Callbacks only",
+      "Promises + async/await",
+      "eval chains",
+      "setInterval nesting"
+    ],
+    "answerIndex": 1,
+    "explanation": "Promises and async/await improve readability and error handling compared to deep callbacks."
+  },
+  {
+    "id": 221,
+    "category": "Express.js",
+    "level": "hard",
+    "question": "When an Express route needs to send a file, which is safer than manually piping fs streams without error handling?",
+    "options": [
+      "res.sendFile()",
+      "res.send({file})",
+      "console.log(file)",
+      "res.redirect(filePath)"
+    ],
+    "answerIndex": 0,
+    "explanation": "`res.sendFile()` handles headers and many edge cases more safely than manual piping."
+  },
+  {
+    "id": 222,
+    "category": "MongoDB",
+    "level": "hard",
+    "question": "Which stage can be used to join documents from another collection using a pipeline (more advanced than localField/foreignField)?",
+    "options": ["$lookup with pipeline", "$connect", "$join", "$hydrate"],
+    "answerIndex": 0,
+    "explanation": "`$lookup` supports a pipeline form for complex join conditions and projections."
+  },
+  {
+    "id": 223,
+    "category": "Node.js",
+    "level": "hard",
+    "question": "Which technique best prevents partial writes when updating multiple related records across services?",
+    "options": [
+      "Hope it works",
+      "Use saga/outbox pattern with retries and idempotency",
+      "Use random delays",
+      "Disable transactions everywhere"
+    ],
+    "answerIndex": 1,
+    "explanation": "Saga/outbox + idempotency provides reliable distributed updates without 2PC."
+  },
+  {
+    "id": 224,
+    "category": "Express.js",
+    "level": "hard",
+    "question": "Which is the best practice for setting CORS when you have credentials (cookies) enabled?",
+    "options": [
+      "Use `origin: '*'` with credentials",
+      "Use a specific allowlist origin and set `credentials: true`",
+      "Disable OPTIONS",
+      "Use GET only"
+    ],
+    "answerIndex": 1,
+    "explanation": "With credentials, you must use specific origins (not '*') and allowlist them."
+  },
+  {
+    "id": 225,
+    "category": "MongoDB",
+    "level": "hard",
+    "question": "Which technique best supports fast analytics queries without impacting OLTP performance heavily?",
+    "options": [
+      "Run heavy aggregation on primary always",
+      "Use read replicas/secondary analytics or separate analytics store",
+      "Disable indexes",
+      "Use $where for analytics"
+    ],
+    "answerIndex": 1,
+    "explanation": "Running analytics on secondaries or separate systems reduces load on primary."
+  },
+  {
+    "id": 226,
+    "category": "Node.js",
+    "level": "hard",
+    "question": "What is a common pitfall with `async` Express handlers if you don't forward errors?",
+    "options": [
+      "Errors automatically go to error middleware always",
+      "Promise rejections may not reach error handler unless wrapped/next",
+      "They become syntax errors",
+      "They disable routing"
+    ],
+    "answerIndex": 1,
+    "explanation": "You must catch and forward errors (or use a wrapper) so Express error middleware handles them."
+  },
+  {
+    "id": 227,
+    "category": "Express.js",
+    "level": "hard",
+    "question": "Which technique best ensures consistent API pagination metadata (total, page, limit)?",
+    "options": [
+      "Return only array",
+      "Return `{data, meta}` with stable fields across endpoints",
+      "Return HTML tables",
+      "Return random keys"
+    ],
+    "answerIndex": 1,
+    "explanation": "Use a consistent `{ data, meta }` response contract across endpoints."
+  },
+  {
+    "id": 228,
+    "category": "MongoDB",
+    "level": "hard",
+    "question": "Which MongoDB feature helps keep track of schema changes and enforce required fields over time?",
+    "options": [
+      "Collection validator (JSON Schema) + migrations",
+      "Hashed index",
+      "Capped collections",
+      "TTL indexes only"
+    ],
+    "answerIndex": 0,
+    "explanation": "Validators enforce rules; migrations update old documents to new shape."
+  },
+  {
+    "id": 229,
+    "category": "Node.js",
+    "level": "hard",
+    "question": "Which approach best improves performance when serializing large objects repeatedly in Node?",
+    "options": [
+      "Serialize on every request from scratch",
+      "Cache computed results (when safe) and avoid repeated heavy serialization",
+      "Use eval",
+      "Disable JSON"
+    ],
+    "answerIndex": 1,
+    "explanation": "Caching and avoiding repeated work improves performance (ensure correctness)."
+  },
+  {
+    "id": 230,
+    "category": "Express.js",
+    "level": "hard",
+    "question": "Which practice best prevents 'broken access control' in Express APIs?",
+    "options": [
+      "Only add authentication",
+      "Add authorization checks for every action + test with forbidden cases",
+      "Trust userId in body",
+      "Hide routes in UI"
+    ],
+    "answerIndex": 1,
+    "explanation": "Authorization must be enforced per route/action, not just authentication."
+  },
+  {
+    "id": 231,
+    "category": "MongoDB",
+    "level": "hard",
+    "question": "Which feature helps you store time-series data efficiently (like IoT metrics) in MongoDB?",
+    "options": [
+      "Time series collections",
+      "Capped collections only",
+      "Hashed index only",
+      "GridFS"
+    ],
+    "answerIndex": 0,
+    "explanation": "Time series collections are optimized for time-based measurements and storage."
+  },
+  {
+    "id": 232,
+    "category": "Node.js",
+    "level": "hard",
+    "question": "Which is the best practice to prevent 'too many open files' (EMFILE) errors in Node apps?",
+    "options": [
+      "Open files without limits",
+      "Limit concurrency of fs operations and close handles properly",
+      "Increase console logs",
+      "Disable streaming"
+    ],
+    "answerIndex": 1,
+    "explanation": "Control fs concurrency and ensure cleanup to avoid exhausting file descriptors."
+  },
+  {
+    "id": 233,
+    "category": "Express.js",
+    "level": "hard",
+    "question": "Which technique best improves API observability for latency and error rates?",
+    "options": [
+      "Only console.log",
+      "Metrics + tracing + structured logs with correlation IDs",
+      "Disable monitoring",
+      "Store logs in DB only"
+    ],
+    "answerIndex": 1,
+    "explanation": "Observability needs metrics, traces, and structured logs tied to request IDs."
+  },
+  {
+    "id": 234,
+    "category": "MongoDB",
+    "level": "hard",
+    "question": "Which index can support sorting by distance in geospatial queries?",
+    "options": ["2dsphere", "text", "hashed", "TTL"],
+    "answerIndex": 0,
+    "explanation": "Geospatial queries with `$near` require a `2dsphere` index for distance sorting."
+  },
+  {
+    "id": 235,
+    "category": "Node.js",
+    "level": "hard",
+    "question": "Which is the main benefit of using `node:diagnostics_channel` (or similar) instrumentation?",
+    "options": [
+      "It replaces authentication",
+      "It allows low-overhead event-based diagnostics hooks",
+      "It compresses responses",
+      "It changes MongoDB schema"
+    ],
+    "answerIndex": 1,
+    "explanation": "Diagnostics channels provide hooks for tooling/telemetry with minimal overhead."
+  },
+  {
+    "id": 236,
+    "category": "Express.js",
+    "level": "hard",
+    "question": "Which approach best prevents insecure direct object references (IDOR) in Express APIs?",
+    "options": [
+      "Use sequential IDs and trust them",
+      "Check resource ownership/permission on server for every ID",
+      "Hide IDs in UI only",
+      "Use GET only"
+    ],
+    "answerIndex": 1,
+    "explanation": "Always verify the authenticated user can access the resource they request."
+  },
+  {
+    "id": 237,
+    "category": "MongoDB",
+    "level": "hard",
+    "question": "Which write pattern minimizes contention when many clients update different fields of the same document?",
+    "options": [
+      "Replace whole document each time",
+      "Use atomic operators like $set/$inc on specific fields",
+      "Drop and reinsert",
+      "Use $where updates"
+    ],
+    "answerIndex": 1,
+    "explanation": "Targeted atomic updates reduce conflicts and avoid overwriting unrelated fields."
+  },
+  {
+    "id": 238,
+    "category": "Node.js",
+    "level": "hard",
+    "question": "Which option best describes why Node.js is not ideal for heavy CPU-bound workloads on a single process?",
+    "options": [
+      "It cannot do I/O",
+      "Single event loop can be blocked by CPU work, hurting concurrency",
+      "It has no networking",
+      "It cannot use async/await"
+    ],
+    "answerIndex": 1,
+    "explanation": "CPU-heavy work blocks the event loop; use workers/processes for CPU parallelism."
+  },
+  {
+    "id": 239,
+    "category": "Express.js",
+    "level": "hard",
+    "question": "Which is the best practice for API rate limiting when you have multiple instances (horizontal scaling)?",
+    "options": [
+      "In-memory per instance only",
+      "Use shared store (Redis) or gateway-based rate limiting",
+      "Disable rate limiting",
+      "Store limits in cookies"
+    ],
+    "answerIndex": 1,
+    "explanation": "Distributed rate limiting needs a shared state or centralized gateway."
+  },
+  {
+    "id": 240,
+    "category": "MongoDB",
+    "level": "hard",
+    "question": "Which aggregation stage is used to count documents after a filter?",
+    "options": ["$count", "$sum", "$size", "$tally"],
+    "answerIndex": 0,
+    "explanation": "`$count` returns the count of documents that reach that stage."
+  },
+  {
+    "id": 241,
+    "category": "Node.js",
+    "level": "hard",
+    "question": "Which practice best reduces risk when using user-supplied regex patterns in Node APIs?",
+    "options": [
+      "Allow any regex",
+      "Limit regex features/length and apply timeouts (ReDoS protection)",
+      "Run regex in infinite loop",
+      "Convert regex to eval"
+    ],
+    "answerIndex": 1,
+    "explanation": "Untrusted regex can cause ReDoS; validate and limit complexity/time."
+  },
+  {
+    "id": 242,
+    "category": "Express.js",
+    "level": "hard",
+    "question": "Which HTTP header is important for preventing sensitive pages from being cached by shared proxies?",
+    "options": ["Cache-Control: no-store", "Accept-Charset", "DNT", "Alt-Svc"],
+    "answerIndex": 0,
+    "explanation": "`Cache-Control: no-store` prevents storing sensitive responses in caches."
+  },
+  {
+    "id": 243,
+    "category": "MongoDB",
+    "level": "hard",
+    "question": "Which strategy best supports fast 'starts with' searches on a field like username?",
+    "options": [
+      "Unanchored regex",
+      "Anchored prefix regex with index or store normalized prefix fields",
+      "Always $where",
+      "Use TTL index"
+    ],
+    "answerIndex": 1,
+    "explanation": "Prefix-anchored regex can use an index; normalize case to improve matching."
+  },
+  {
+    "id": 244,
+    "category": "Node.js",
+    "level": "hard",
+    "question": "Which is the recommended way to handle configuration for different environments (dev/stage/prod)?",
+    "options": [
+      "Single hardcoded config",
+      "Environment-based configs with env vars + validation",
+      "Store config in client",
+      "Use random values"
+    ],
+    "answerIndex": 1,
+    "explanation": "Use env vars/secret managers and validate at startup to avoid misconfigurations."
+  },
+  {
+    "id": 245,
+    "category": "Express.js",
+    "level": "hard",
+    "question": "Which practice best prevents sensitive tokens from being included in Referer headers?",
+    "options": [
+      "Put tokens in URL query",
+      "Avoid tokens in URLs; use Authorization header or HttpOnly cookies",
+      "Use HTTP only",
+      "Use GET for login"
+    ],
+    "answerIndex": 1,
+    "explanation": "Tokens in URLs can leak via Referer logs; use headers/cookies instead."
+  },
+  {
+    "id": 246,
+    "category": "MongoDB",
+    "level": "hard",
+    "question": "Which index type supports queries on multiple fields with different data types and evolving schema (without predefining each field)?",
+    "options": [
+      "Wildcard index ($**)",
+      "TTL index",
+      "2d index",
+      "Hashed index"
+    ],
+    "answerIndex": 0,
+    "explanation": "Wildcard indexes can index unknown fields, useful for flexible schemas (with overhead)."
+  },
+  {
+    "id": 247,
+    "category": "Node.js",
+    "level": "hard",
+    "question": "Which issue can happen if you share a mutable global cache across requests without proper keying?",
+    "options": [
+      "Better security",
+      "Data leakage between users/tenants",
+      "Faster encryption",
+      "Automatic sharding"
+    ],
+    "answerIndex": 1,
+    "explanation": "Bad cache keying can return one user's data to another (security bug)."
+  },
+  {
+    "id": 248,
+    "category": "Express.js",
+    "level": "hard",
+    "question": "Which is the best practice to protect against request body 'JSON bombs' (deeply nested JSON)?",
+    "options": [
+      "Increase recursion limit",
+      "Set body limits and validate depth/shape",
+      "Disable TLS",
+      "Use eval parsing"
+    ],
+    "answerIndex": 1,
+    "explanation": "Limit body size and validate structure/depth to prevent CPU/memory abuse."
+  },
+  {
+    "id": 249,
+    "category": "MongoDB",
+    "level": "hard",
+    "question": "Which approach best supports auditing changes to critical fields (who changed what, when)?",
+    "options": [
+      "No logs",
+      "Write an audit log collection (append-only) or use change streams to capture events",
+      "Only store current state",
+      "Disable updates"
+    ],
+    "answerIndex": 1,
+    "explanation": "Audit logs (or change-stream driven audit) record mutations with actor and timestamp."
+  },
+  {
+    "id": 250,
+    "category": "Node.js",
+    "level": "hard",
+    "question": "What is the main benefit of using `node --enable-source-maps` in production debugging?",
+    "options": [
+      "It increases bundle size",
+      "It maps stack traces back to original source for better debugging",
+      "It disables errors",
+      "It encrypts logs"
+    ],
+    "answerIndex": 1,
+    "explanation": "Source maps make stack traces readable when code is transpiled/bundled."
+  },
+  {
+    "id": 251,
+    "category": "Express.js",
+    "level": "hard",
+    "question": "Which practice best prevents 'mixed content' issues when your Express app is behind HTTPS proxy?",
+    "options": [
+      "Force http links",
+      "Use `trust proxy` + generate URLs as https (respect X-Forwarded-Proto)",
+      "Disable cookies",
+      "Use only localhost"
+    ],
+    "answerIndex": 1,
+    "explanation": "Correct proxy trust ensures secure URL generation and cookie settings behind TLS termination."
+  },
+  {
+    "id": 252,
+    "category": "MongoDB",
+    "level": "hard",
+    "question": "Which operator can conditionally set a field only if it doesn't already exist (in update pipeline style)?",
+    "options": [
+      "$ifNull in update pipeline with $set",
+      "$maybe",
+      "$coalesceOnly",
+      "$existsSet"
+    ],
+    "answerIndex": 0,
+    "explanation": "Using update pipeline, `$set: { field: { $ifNull: ['$field', <default>] } }` sets default when null/missing."
+  },
+  {
+    "id": 253,
+    "category": "Node.js",
+    "level": "hard",
+    "question": "Which is the best approach to protect against HTTP request flooding at the Node app level?",
+    "options": [
+      "No limits",
+      "Rate limiting + request size limits + circuit breakers",
+      "More console.log",
+      "Disable keep-alive"
+    ],
+    "answerIndex": 1,
+    "explanation": "Combine rate limits, payload limits, and resilience patterns to reduce overload."
+  },
+  {
+    "id": 254,
+    "category": "Express.js",
+    "level": "hard",
+    "question": "Which approach best ensures that only JSON is accepted by a JSON-only API endpoint?",
+    "options": [
+      "Accept any Content-Type",
+      "Check `Content-Type` and reject unsupported types (415)",
+      "Always parse as text",
+      "Disable body parser"
+    ],
+    "answerIndex": 1,
+    "explanation": "Validate content-type and respond 415 Unsupported Media Type if incorrect."
+  },
+  {
+    "id": 255,
+    "category": "MongoDB",
+    "level": "hard",
+    "question": "Which concept best describes storing references and using `$lookup` only when needed, to avoid huge documents?",
+    "options": [
+      "Normalization (referencing)",
+      "Always embedding",
+      "Capping",
+      "Bucketing only"
+    ],
+    "answerIndex": 0,
+    "explanation": "Referencing (normalization) keeps documents smaller; use `$lookup` when you need joined data."
+  },
+  {
+    "id": 256,
+    "category": "Node.js",
+    "level": "hard",
+    "question": "Which Node.js behavior can lead to 'memory bloat' if you keep large Buffers referenced in a cache?",
+    "options": [
+      "Buffers are stored on disk",
+      "Buffers stay in memory as long as referenced, preventing GC",
+      "Buffers auto-shrink",
+      "Buffers are always weak references"
+    ],
+    "answerIndex": 1,
+    "explanation": "If cached, Buffers remain strongly referenced and can't be garbage collected."
+  },
+  {
+    "id": 257,
+    "category": "Express.js",
+    "level": "hard",
+    "question": "Which strategy best secures admin-only routes in Express?",
+    "options": [
+      "Frontend-only protection",
+      "Auth middleware + role/permission checks + audit logging",
+      "Use GET only",
+      "Hide route name"
+    ],
+    "answerIndex": 1,
+    "explanation": "Server-side authorization plus auditing is required for admin routes."
+  },
+  {
+    "id": 258,
+    "category": "MongoDB",
+    "level": "hard",
+    "question": "Which operator helps you update a field based on its current value (like `count = count + 1`)?",
+    "options": ["$inc", "$setStatic", "$copy", "$append"],
+    "answerIndex": 0,
+    "explanation": "`$inc` updates a numeric field relative to its current value atomically."
+  },
+  {
+    "id": 259,
+    "category": "Node.js",
+    "level": "hard",
+    "question": "Which pattern best handles retries for transient failures without causing traffic spikes?",
+    "options": [
+      "Retry immediately in tight loop",
+      "Exponential backoff + jitter + max attempts",
+      "Retry forever",
+      "No timeouts"
+    ],
+    "answerIndex": 1,
+    "explanation": "Backoff with jitter prevents synchronized retries and reduces overload."
+  },
+  {
+    "id": 260,
+    "category": "Express.js",
+    "level": "hard",
+    "question": "Which approach best prevents leaking server version info in HTTP responses?",
+    "options": [
+      "Enable X-Powered-By",
+      "Disable or remove identifying headers and configure reverse proxy",
+      "Return stack traces",
+      "Expose package.json"
+    ],
+    "answerIndex": 1,
+    "explanation": "Minimize fingerprinting by removing identifying headers and keeping infra configured."
+  },
+  {
+    "id": 261,
+    "category": "MongoDB",
+    "level": "hard",
+    "question": "Which technique helps ensure case-insensitive unique email storage in MongoDB?",
+    "options": [
+      "Store as-is with unique index",
+      "Store normalized lowercase email + unique index (or collation-aware unique index)",
+      "Use text index",
+      "Use regex everywhere"
+    ],
+    "answerIndex": 1,
+    "explanation": "Normalize (lowercase) or use collation so `A@x.com` and `a@x.com` are treated the same."
+  },
+  {
+    "id": 262,
+    "category": "Node.js",
+    "level": "hard",
+    "question": "Which is the main advantage of using `node:test` (built-in test runner) where available?",
+    "options": [
+      "It replaces TypeScript",
+      "It provides a built-in testing framework without extra dependencies",
+      "It runs only in browser",
+      "It disables async"
+    ],
+    "answerIndex": 1,
+    "explanation": "A built-in runner reduces external deps and integrates with Node."
+  },
+  {
+    "id": 263,
+    "category": "Express.js",
+    "level": "hard",
+    "question": "Which method is best to prevent request log forging (newline injection) in Express logs?",
+    "options": [
+      "Log raw user input",
+      "Sanitize/escape control characters before logging",
+      "Disable logging",
+      "Use GET only"
+    ],
+    "answerIndex": 1,
+    "explanation": "Strip/escape newlines and control chars to prevent fake log lines."
+  },
+  {
+    "id": 264,
+    "category": "MongoDB",
+    "level": "hard",
+    "question": "Which aggregation stage is used to compute derived fields like `year` from a date field?",
+    "options": [
+      "$addFields / $set with $year",
+      "$join",
+      "$bucketAutoOnly",
+      "$profile"
+    ],
+    "answerIndex": 0,
+    "explanation": "Use `$set/$addFields` with expressions like `$year`, `$month`, etc."
+  },
+  {
+    "id": 265,
+    "category": "Node.js",
+    "level": "hard",
+    "question": "Which is a common risk of enabling very permissive CORS in a Node/Express backend?",
+    "options": [
+      "Faster DB queries",
+      "Sensitive endpoints can be called from untrusted sites in the browser context",
+      "It improves encryption",
+      "It disables cookies"
+    ],
+    "answerIndex": 1,
+    "explanation": "Permissive CORS can expose APIs to abuse from arbitrary web origins (especially with credentials)."
+  },
+  {
+    "id": 266,
+    "category": "Express.js",
+    "level": "hard",
+    "question": "Which practice best ensures headers are not modified after the response is started in Express?",
+    "options": [
+      "Set headers after res.send",
+      "Set headers before writing body and avoid multiple sends",
+      "Call next() after every send",
+      "Use console.log"
+    ],
+    "answerIndex": 1,
+    "explanation": "Once the body is sent, headers are locked; set headers early and respond once."
+  },
+  {
+    "id": 267,
+    "category": "MongoDB",
+    "level": "hard",
+    "question": "Which stage can combine documents from two collections into one pipeline similar to SQL UNION?",
+    "options": ["$unionWith", "$lookup", "$facet", "$merge"],
+    "answerIndex": 0,
+    "explanation": "`$unionWith` appends results from another collection to the pipeline."
+  },
+  {
+    "id": 268,
+    "category": "Node.js",
+    "level": "hard",
+    "question": "Which scenario is best suited for using Redis caching in a Node backend?",
+    "options": [
+      "Per-request secrets storage",
+      "Frequently-read data with expensive DB queries and acceptable staleness",
+      "Storing passwords",
+      "Replacing MongoDB entirely"
+    ],
+    "answerIndex": 1,
+    "explanation": "Redis is great for caching hot reads and reducing DB load when staleness is acceptable."
+  },
+  {
+    "id": 269,
+    "category": "Express.js",
+    "level": "hard",
+    "question": "Which is the best practice to ensure API documentation stays in sync with Express routes?",
+    "options": [
+      "Never document",
+      "Use OpenAPI/Swagger generated/validated from code or tests",
+      "Write docs once and forget",
+      "Only comment in code"
+    ],
+    "answerIndex": 1,
+    "explanation": "OpenAPI + tests/validation keeps docs aligned with actual behavior."
+  },
+  {
+    "id": 270,
+    "category": "MongoDB",
+    "level": "hard",
+    "question": "Which update operator removes the last element from an array?",
+    "options": ["$pop: 1", "$pop: -1", "$pullLast", "$sliceLast"],
+    "answerIndex": 0,
+    "explanation": "`$pop: 1` removes the last element; `$pop: -1` removes the first."
+  },
+  {
+    "id": 271,
+    "category": "Node.js",
+    "level": "hard",
+    "question": "Which is the best practice to avoid blocking the event loop when doing heavy JSON transformations?",
+    "options": [
+      "Do everything sync in handler",
+      "Chunk work, offload to worker, or precompute/cache results",
+      "Add more routes",
+      "Disable GC"
+    ],
+    "answerIndex": 1,
+    "explanation": "Offload heavy CPU or chunk processing to keep event loop responsive."
+  },
+  {
+    "id": 272,
+    "category": "Express.js",
+    "level": "hard",
+    "question": "Which is the best way to store sessions in production when running multiple Express instances?",
+    "options": [
+      "MemoryStore",
+      "Shared session store like Redis",
+      "Local file per instance only",
+      "Browser localStorage only"
+    ],
+    "answerIndex": 1,
+    "explanation": "A shared store (Redis) ensures sessions work across instances."
+  },
+  {
+    "id": 273,
+    "category": "MongoDB",
+    "level": "hard",
+    "question": "Which query is most helped by an index on `{ emailLower: 1 }` unique?",
+    "options": [
+      "Search by email exact match",
+      "Search by age range",
+      "Sort by createdAt only",
+      "Text search on bio"
+    ],
+    "answerIndex": 0,
+    "explanation": "Exact-match lookups on normalized email are fast and uniqueness is enforced."
+  },
+  {
+    "id": 274,
+    "category": "Node.js",
+    "level": "hard",
+    "question": "What is the main security risk of deserializing untrusted data with unsafe libraries in Node?",
+    "options": [
+      "Faster performance",
+      "Remote code execution or prototype pollution",
+      "Smaller payloads",
+      "Better caching"
+    ],
+    "answerIndex": 1,
+    "explanation": "Unsafe deserialization can lead to RCE or object/prototype manipulation vulnerabilities."
+  },
+  {
+    "id": 275,
+    "category": "Express.js",
+    "level": "hard",
+    "question": "Which HTTP status code should you return when the client sends malformed JSON to `express.json()`?",
+    "options": ["400", "200", "304", "503"],
+    "answerIndex": 0,
+    "explanation": "Malformed JSON is a client error; respond 400 Bad Request (often via error handler)."
+  },
+  {
+    "id": 276,
+    "category": "MongoDB",
+    "level": "hard",
+    "question": "Which design helps reduce write amplification for high-frequency counters?",
+    "options": [
+      "Update one hot document always",
+      "Use counter sharding (multiple docs) and aggregate",
+      "Store counter in text index",
+      "Disable writes"
+    ],
+    "answerIndex": 1,
+    "explanation": "Sharded counters avoid single hot-spot document contention under heavy writes."
+  },
+  {
+    "id": 277,
+    "category": "Node.js",
+    "level": "hard",
+    "question": "Which mechanism helps protect Node from 'zip bomb' style decompression attacks?",
+    "options": [
+      "Unlimited decompression",
+      "Set size limits and validate before decompressing/streaming",
+      "Disable TLS",
+      "Use eval"
+    ],
+    "answerIndex": 1,
+    "explanation": "Apply strict limits and streaming controls to prevent resource exhaustion."
+  },
+  {
+    "id": 278,
+    "category": "Express.js",
+    "level": "hard",
+    "question": "Which practice best prevents storing passwords in logs when debugging authentication?",
+    "options": [
+      "Log req.body fully",
+      "Never log secrets; mask password fields before logging",
+      "Send passwords in query params",
+      "Use GET login"
+    ],
+    "answerIndex": 1,
+    "explanation": "Always redact secrets; never log raw passwords or tokens."
+  },
+  {
+    "id": 279,
+    "category": "MongoDB",
+    "level": "hard",
+    "question": "Which MongoDB option ensures an update fails if it would violate schema validation rules?",
+    "options": [
+      "bypassDocumentValidation: true",
+      "runValidators: true (driver/ODM) + collection validator",
+      "ignoreValidation: true",
+      "skipValidation: true"
+    ],
+    "answerIndex": 1,
+    "explanation": "MongoDB validators enforce rules; ODM/driver validation options help catch issues too."
+  },
+  {
+    "id": 280,
+    "category": "Node.js",
+    "level": "hard",
+    "question": "Which is the best practice for handling secrets in Node apps running in containers?",
+    "options": [
+      "Bake secrets into image",
+      "Use secret injection (K8s secrets/SM) and rotate",
+      "Store in public repo",
+      "Print secrets on startup"
+    ],
+    "answerIndex": 1,
+    "explanation": "Inject secrets at runtime via secret stores; avoid embedding in images."
+  },
+  {
+    "id": 281,
+    "category": "Express.js",
+    "level": "hard",
+    "question": "Which is the safest way to implement 'download invoice' endpoint?",
+    "options": [
+      "Accept file path from client and read it",
+      "Verify ownership, generate or fetch by safe ID, set correct headers",
+      "Return server filesystem listing",
+      "Use eval to build path"
+    ],
+    "answerIndex": 1,
+    "explanation": "Use safe identifiers, auth checks, and controlled headers to prevent traversal and data leaks."
+  },
+  {
+    "id": 282,
+    "category": "MongoDB",
+    "level": "hard",
+    "question": "Which stage is used to perform graph traversal queries like finding friends-of-friends?",
+    "options": ["$graphLookup", "$lookup", "$facet", "$merge"],
+    "answerIndex": 0,
+    "explanation": "`$graphLookup` performs recursive searches on a collection (graph traversal)."
+  },
+  {
+    "id": 283,
+    "category": "Node.js",
+    "level": "hard",
+    "question": "What is a key reason to avoid long-lived in-memory caches in serverless Node functions?",
+    "options": [
+      "They never persist",
+      "They can cause unpredictable memory usage across warm invocations",
+      "They improve cold start always",
+      "They force HTTP/2"
+    ],
+    "answerIndex": 1,
+    "explanation": "Warm containers can keep caches longer than expected, risking memory bloat."
+  },
+  {
+    "id": 284,
+    "category": "Express.js",
+    "level": "hard",
+    "question": "Which HTTP status code is best when the server successfully created a resource?",
+    "options": ["200", "201", "204", "409"],
+    "answerIndex": 1,
+    "explanation": "201 Created is standard for successful resource creation."
+  },
+  {
+    "id": 285,
+    "category": "MongoDB",
+    "level": "hard",
+    "question": "Which strategy best supports multi-field search with flexible filters in MongoDB?",
+    "options": [
+      "Use $where always",
+      "Create targeted compound indexes and use $and/$or carefully",
+      "Disable indexes",
+      "Store everything as one field"
+    ],
+    "answerIndex": 1,
+    "explanation": "Design indexes based on real query patterns; use compound indexes and selective filters."
+  },
+  {
+    "id": 286,
+    "category": "Node.js",
+    "level": "hard",
+    "question": "Which is the best practice to prevent memory leaks with EventEmitters in Node?",
+    "options": [
+      "Never remove listeners",
+      "Remove listeners on cleanup and use once() where appropriate",
+      "Increase max listeners always",
+      "Use global emitters for everything"
+    ],
+    "answerIndex": 1,
+    "explanation": "Clean up listeners and prefer `once()` to reduce leak chances."
+  },
+  {
+    "id": 287,
+    "category": "Express.js",
+    "level": "hard",
+    "question": "Which strategy best ensures reliable file upload limits in Express?",
+    "options": [
+      "No limits",
+      "Enforce limits at middleware (multer/busboy) + reverse proxy + app validation",
+      "Only validate in UI",
+      "Store as base64 in URL"
+    ],
+    "answerIndex": 1,
+    "explanation": "Apply limits at every layer to prevent oversized uploads and resource abuse."
+  },
+  {
+    "id": 288,
+    "category": "MongoDB",
+    "level": "hard",
+    "question": "Which operation can compact documents by rewriting them and may reclaim space after many updates (with caveats)?",
+    "options": ["compact", "count", "find", "distinct"],
+    "answerIndex": 0,
+    "explanation": "`compact` can reclaim space at the storage level (requires considerations and downtime constraints)."
+  },
+  {
+    "id": 289,
+    "category": "Node.js",
+    "level": "hard",
+    "question": "What is the main risk of using `child_process.exec()` with untrusted user input?",
+    "options": [
+      "It runs slower",
+      "Command injection",
+      "It increases RAM always",
+      "It disables HTTPS"
+    ],
+    "answerIndex": 1,
+    "explanation": "Untrusted input can inject shell commands; avoid or strictly sanitize and prefer execFile."
+  },
+  {
+    "id": 290,
+    "category": "Express.js",
+    "level": "hard",
+    "question": "Which is the best practice to implement API caching while respecting user-specific data?",
+    "options": [
+      "Cache everything globally",
+      "Cache only public/tenant-safe responses and key by user/tenant where needed",
+      "Disable auth",
+      "Use random keys"
+    ],
+    "answerIndex": 1,
+    "explanation": "Cache must be keyed correctly to avoid serving one user's data to another."
+  },
+  {
+    "id": 291,
+    "category": "MongoDB",
+    "level": "hard",
+    "question": "Which pattern best supports storing user activity logs efficiently at scale?",
+    "options": [
+      "One document per user updated forever",
+      "Append-only log documents with TTL/partitioning and indexes on userId+time",
+      "Embed infinite arrays",
+      "Store in single string"
+    ],
+    "answerIndex": 1,
+    "explanation": "Append-only logs with TTL and time-based indexing scale better than growing arrays."
+  },
+  {
+    "id": 292,
+    "category": "Node.js",
+    "level": "hard",
+    "question": "Which technique best prevents denial-of-service via huge numbers of concurrent open connections?",
+    "options": [
+      "Unlimited keep-alive",
+      "Set connection limits/timeouts at proxy + server + use rate limiting",
+      "Disable HTTP",
+      "Use only POST"
+    ],
+    "answerIndex": 1,
+    "explanation": "Connection limits and timeouts at multiple layers reduce resource exhaustion."
+  },
+  {
+    "id": 293,
+    "category": "Express.js",
+    "level": "hard",
+    "question": "Which approach is best to implement partial updates of a resource in REST?",
+    "options": [
+      "PUT always",
+      "PATCH with validation and field allowlist",
+      "GET with body",
+      "DELETE with JSON"
+    ],
+    "answerIndex": 1,
+    "explanation": "PATCH is used for partial updates; validate and allowlist fields."
+  },
+  {
+    "id": 294,
+    "category": "MongoDB",
+    "level": "hard",
+    "question": "Which stage can write aggregation results into a new collection, replacing it completely?",
+    "options": ["$out", "$merge", "$facet", "$sort"],
+    "answerIndex": 0,
+    "explanation": "`$out` writes results to a collection and replaces existing content."
+  },
+  {
+    "id": 295,
+    "category": "Node.js",
+    "level": "hard",
+    "question": "Which is the best practice to avoid leaking sensitive environment variables in error responses?",
+    "options": [
+      "Return process.env in response",
+      "Never include env vars in responses; log securely if needed",
+      "Send .env file to client",
+      "Expose config endpoint"
+    ],
+    "answerIndex": 1,
+    "explanation": "Environment variables often contain secrets; never expose them to clients."
+  },
+  {
+    "id": 296,
+    "category": "Express.js",
+    "level": "hard",
+    "question": "Which is the best approach to avoid race conditions when two requests update the same resource?",
+    "options": [
+      "Do nothing",
+      "Use optimistic concurrency (version) or transactions/atomic updates",
+      "Increase timeout",
+      "Use more console logs"
+    ],
+    "answerIndex": 1,
+    "explanation": "Version checks or atomic updates prevent overwriting concurrent changes."
+  },
+  {
+    "id": 297,
+    "category": "MongoDB",
+    "level": "hard",
+    "question": "Which feature lets you create a unique constraint only for documents matching a filter (like active users only)?",
+    "options": [
+      "Partial unique index",
+      "TTL index",
+      "Text index",
+      "Hashed index"
+    ],
+    "answerIndex": 0,
+    "explanation": "A partial unique index enforces uniqueness only on documents that match the partial filter."
+  },
+  {
+    "id": 298,
+    "category": "Node.js",
+    "level": "hard",
+    "question": "Which is the best practice to handle timezone correctly when storing dates in MongoDB from Node?",
+    "options": [
+      "Store local time strings only",
+      "Store UTC in DB and convert to local time in UI",
+      "Store random formats",
+      "Store as numbers without meaning"
+    ],
+    "answerIndex": 1,
+    "explanation": "Store UTC consistently, then format/convert for users at the edges (UI/API)."
+  },
+  {
+    "id": 299,
+    "category": "Express.js",
+    "level": "hard",
+    "question": "Which approach best secures internal-only endpoints (health/admin) in Express?",
+    "options": [
+      "Expose publicly with no auth",
+      "Protect via network controls + auth (if needed) + minimal output",
+      "Return stack traces",
+      "Use query param secret"
+    ],
+    "answerIndex": 1,
+    "explanation": "Use network restrictions (VPC/IP allowlist) plus auth and avoid leaking internals."
+  },
+  {
+    "id": 300,
+    "category": "MongoDB",
+    "level": "hard",
+    "question": "Which best practice helps prevent accidental deletion of important collections/data?",
+    "options": [
+      "Give everyone admin",
+      "Use least privilege roles + backups + safeguards (confirmation/soft delete)",
+      "Disable backups",
+      "Drop database in scripts"
+    ],
+    "answerIndex": 1,
+    "explanation": "Least privilege plus backups and safe ops processes reduce accidental destructive actions."
+  }
+]

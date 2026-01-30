@@ -1,0 +1,4113 @@
+[
+  {
+    "id": 1,
+    "category": "Node.js",
+    "level": "medium",
+    "question": "Why is using synchronous fs methods (like fs.readFileSync) risky in an API server?",
+    "options": [
+      "They break MongoDB schema",
+      "They block the event loop and reduce concurrency",
+      "They automatically crash Express",
+      "They only work in browsers"
+    ],
+    "answerIndex": 1,
+    "explanation": "Sync I/O blocks the event loop, so other requests must wait."
+  },
+  {
+    "id": 2,
+    "category": "Node.js",
+    "level": "medium",
+    "question": "Which statement best describes Node.js 'backpressure' in streams?",
+    "options": [
+      "A memory leak in Express",
+      "A slowdown when writable stream can't handle incoming data rate",
+      "A MongoDB index issue",
+      "A JWT validation error"
+    ],
+    "answerIndex": 1,
+    "explanation": "Backpressure happens when a writable destination is slower than the readable source."
+  },
+  {
+    "id": 3,
+    "category": "Node.js",
+    "level": "medium",
+    "question": "What is a common benefit of using streams over buffering entire data in memory?",
+    "options": [
+      "Streams make code always synchronous",
+      "Streams reduce memory usage for large data",
+      "Streams automatically compress JSON",
+      "Streams prevent all errors"
+    ],
+    "answerIndex": 1,
+    "explanation": "Streams process data in chunks, reducing memory usage for large files/responses."
+  },
+  {
+    "id": 4,
+    "category": "Node.js",
+    "level": "medium",
+    "question": "Which is true about process.nextTick() compared to setImmediate()?",
+    "options": [
+      "setImmediate runs before nextTick always",
+      "nextTick runs before the event loop continues to I/O phases",
+      "They are identical",
+      "nextTick runs only after a 0ms timer"
+    ],
+    "answerIndex": 1,
+    "explanation": "process.nextTick callbacks run before the event loop continues, which can starve I/O if overused."
+  },
+  {
+    "id": 5,
+    "category": "Node.js",
+    "level": "medium",
+    "question": "What can happen if you schedule too many process.nextTick() callbacks repeatedly?",
+    "options": [
+      "MongoDB will drop collections",
+      "Event loop starvation (I/O delays)",
+      "Express routes stop matching",
+      "JSON parsing becomes impossible"
+    ],
+    "answerIndex": 1,
+    "explanation": "Excess nextTick tasks can delay I/O and timers by starving the event loop."
+  },
+  {
+    "id": 6,
+    "category": "Node.js",
+    "level": "medium",
+    "question": "Which Node.js feature is commonly used to run CPU-heavy tasks without blocking the main thread?",
+    "options": [
+      "Express Router",
+      "worker_threads",
+      "mongoose.populate()",
+      "MongoDB $lookup"
+    ],
+    "answerIndex": 1,
+    "explanation": "worker_threads allows CPU-intensive work in separate threads."
+  },
+  {
+    "id": 7,
+    "category": "Node.js",
+    "level": "medium",
+    "question": "What is the main difference between cluster and worker_threads?",
+    "options": [
+      "cluster uses threads; worker_threads uses processes",
+      "cluster uses processes; worker_threads uses threads",
+      "Both are the same",
+      "worker_threads is only for MongoDB"
+    ],
+    "answerIndex": 1,
+    "explanation": "cluster forks multiple processes; worker_threads runs multiple threads within a process."
+  },
+  {
+    "id": 8,
+    "category": "Node.js",
+    "level": "medium",
+    "question": "Why should you avoid storing large objects on global scope in Node.js servers?",
+    "options": [
+      "They become MongoDB documents",
+      "They can increase memory usage and reduce GC efficiency",
+      "Express will overwrite them",
+      "They prevent async/await"
+    ],
+    "answerIndex": 1,
+    "explanation": "Large globals can cause higher memory usage and more GC pressure."
+  },
+  {
+    "id": 9,
+    "category": "Node.js",
+    "level": "medium",
+    "question": "Which is a good use case for child_process.fork()?",
+    "options": [
+      "Serving static files",
+      "Running another Node.js script as a separate process",
+      "Creating MongoDB indexes",
+      "Defining Express middleware"
+    ],
+    "answerIndex": 1,
+    "explanation": "fork() runs another Node process with an IPC channel."
+  },
+  {
+    "id": 10,
+    "category": "Node.js",
+    "level": "medium",
+    "question": "Which approach is best to handle unhandled promise rejections in production?",
+    "options": [
+      "Ignore them",
+      "Log and crash gracefully / restart via process manager",
+      "Convert all code to sync",
+      "Disable Promises"
+    ],
+    "answerIndex": 1,
+    "explanation": "Unhandled rejections can leave app in bad state; log and restart safely."
+  },
+  {
+    "id": 11,
+    "category": "Express.js",
+    "level": "medium",
+    "question": "Why do async errors in Express routes sometimes not reach error middleware automatically?",
+    "options": [
+      "Because Express blocks Promises",
+      "Because thrown errors in async functions become rejected Promises unless passed to next()",
+      "Because MongoDB stops them",
+      "Because res.json swallows errors"
+    ],
+    "answerIndex": 1,
+    "explanation": "Async errors are Promise rejections; you must catch and pass to next(err) or use an async wrapper."
+  },
+  {
+    "id": 12,
+    "category": "Express.js",
+    "level": "medium",
+    "question": "What is the correct order for Express error middleware parameters?",
+    "options": [
+      "(req, res, next, err)",
+      "(err, req, res, next)",
+      "(err, res, req, next)",
+      "(req, err, res, next)"
+    ],
+    "answerIndex": 1,
+    "explanation": "Express recognizes error middleware by the 4-arg signature (err, req, res, next)."
+  },
+  {
+    "id": 13,
+    "category": "Express.js",
+    "level": "medium",
+    "question": "What is a common reason to set 'trust proxy' in Express?",
+    "options": [
+      "To enable MongoDB transactions",
+      "To correctly read client IP and protocol when behind a reverse proxy",
+      "To speed up JSON parsing",
+      "To enable file uploads"
+    ],
+    "answerIndex": 1,
+    "explanation": "Behind proxies, headers like X-Forwarded-For/Proto need trust proxy to be used correctly."
+  },
+  {
+    "id": 14,
+    "category": "Express.js",
+    "level": "medium",
+    "question": "Which status code is most appropriate when validation fails for request body data?",
+    "options": ["200", "201", "400", "500"],
+    "answerIndex": 2,
+    "explanation": "400 Bad Request is used when client sends invalid input."
+  },
+  {
+    "id": 15,
+    "category": "Express.js",
+    "level": "medium",
+    "question": "Which status code best fits when a user is authenticated but lacks permission?",
+    "options": ["401", "403", "404", "409"],
+    "answerIndex": 1,
+    "explanation": "403 Forbidden means authenticated but not authorized."
+  },
+  {
+    "id": 16,
+    "category": "Express.js",
+    "level": "medium",
+    "question": "Why is using a centralized error handler better than repeating try/catch in every route?",
+    "options": [
+      "It reduces database size",
+      "It standardizes responses and avoids duplicated code",
+      "It makes routes synchronous",
+      "It removes need for middleware"
+    ],
+    "answerIndex": 1,
+    "explanation": "Central error handling keeps consistent error responses and reduces repetition."
+  },
+  {
+    "id": 17,
+    "category": "Express.js",
+    "level": "medium",
+    "question": "What does CORS mainly control for a browser client?",
+    "options": [
+      "How MongoDB stores data",
+      "Whether a browser can call an API from a different origin",
+      "How fast Node event loop runs",
+      "How JWT is encrypted"
+    ],
+    "answerIndex": 1,
+    "explanation": "CORS policies decide cross-origin access for browsers."
+  },
+  {
+    "id": 18,
+    "category": "Express.js",
+    "level": "medium",
+    "question": "Which is a safe way to return errors without leaking internal details?",
+    "options": [
+      "Return full stack trace to client always",
+      "Return generic message and log detailed error server-side",
+      "Hide all errors and send 200",
+      "Send MongoDB raw error object always"
+    ],
+    "answerIndex": 1,
+    "explanation": "Clients should get safe messages; detailed logs stay on server."
+  },
+  {
+    "id": 19,
+    "category": "Express.js",
+    "level": "medium",
+    "question": "What is the main risk of accepting large JSON bodies without limits?",
+    "options": [
+      "It breaks route params",
+      "It can lead to memory pressure / DoS",
+      "It disables CORS",
+      "It forces MongoDB sharding"
+    ],
+    "answerIndex": 1,
+    "explanation": "Large payloads can cause high memory usage and denial-of-service issues."
+  },
+  {
+    "id": 20,
+    "category": "Express.js",
+    "level": "medium",
+    "question": "Which is the best place to put request logging middleware like morgan?",
+    "options": [
+      "After 404 handler",
+      "Near the top before routes",
+      "Inside MongoDB schema",
+      "In package-lock.json"
+    ],
+    "answerIndex": 1,
+    "explanation": "Logging should run early to capture all requests."
+  },
+  {
+    "id": 21,
+    "category": "MongoDB",
+    "level": "medium",
+    "question": "Why can using skip() for pagination become slow on large collections?",
+    "options": [
+      "skip disables indexes always",
+      "MongoDB must scan and discard skipped documents",
+      "skip changes _id values",
+      "skip only works on arrays"
+    ],
+    "answerIndex": 1,
+    "explanation": "Large skips require scanning many documents, making it slower as page number grows."
+  },
+  {
+    "id": 22,
+    "category": "MongoDB",
+    "level": "medium",
+    "question": "Which pagination approach is usually more efficient than skip/limit for large datasets?",
+    "options": [
+      "Offset pagination with skip",
+      "Cursor-based pagination using a sorted field (like _id)",
+      "Random pagination",
+      "Regex pagination"
+    ],
+    "answerIndex": 1,
+    "explanation": "Cursor-based pagination avoids scanning skipped documents."
+  },
+  {
+    "id": 23,
+    "category": "MongoDB",
+    "level": "medium",
+    "question": "What is the main purpose of a compound index in MongoDB?",
+    "options": [
+      "Store two collections together",
+      "Speed queries that filter/sort on multiple fields",
+      "Encrypt two fields",
+      "Join two databases"
+    ],
+    "answerIndex": 1,
+    "explanation": "Compound indexes help queries that use multiple fields together."
+  },
+  {
+    "id": 24,
+    "category": "MongoDB",
+    "level": "medium",
+    "question": "Which is true about MongoDB text indexes?",
+    "options": [
+      "They support full JOINs",
+      "They enable $text searches on indexed fields",
+      "They encrypt strings",
+      "They only index numbers"
+    ],
+    "answerIndex": 1,
+    "explanation": "Text indexes support text search using the $text operator."
+  },
+  {
+    "id": 25,
+    "category": "MongoDB",
+    "level": "medium",
+    "question": "Why is indexing too many fields a bad idea?",
+    "options": [
+      "It makes reads slower always",
+      "It increases storage and slows writes/updates",
+      "It disables aggregation",
+      "It prevents sharding"
+    ],
+    "answerIndex": 1,
+    "explanation": "Indexes speed reads but add overhead to writes and consume storage."
+  },
+  {
+    "id": 26,
+    "category": "MongoDB",
+    "level": "medium",
+    "question": "What is the main benefit of using projection in queries?",
+    "options": [
+      "It auto-sorts data",
+      "It returns only needed fields reducing network and memory use",
+      "It encrypts data",
+      "It creates indexes automatically"
+    ],
+    "answerIndex": 1,
+    "explanation": "Projection reduces payload size by returning only required fields."
+  },
+  {
+    "id": 27,
+    "category": "MongoDB",
+    "level": "medium",
+    "question": "What does $lookup do in aggregation?",
+    "options": [
+      "Creates a new database",
+      "Performs a join-like operation with another collection",
+      "Deletes duplicates",
+      "Adds an index"
+    ],
+    "answerIndex": 1,
+    "explanation": "$lookup combines documents from another collection (left outer join style)."
+  },
+  {
+    "id": 28,
+    "category": "MongoDB",
+    "level": "medium",
+    "question": "Why can $lookup be expensive?",
+    "options": [
+      "It forces full-text search",
+      "It may scan large collections and increase memory usage",
+      "It disables BSON",
+      "It blocks Node event loop"
+    ],
+    "answerIndex": 1,
+    "explanation": "Join-like operations can be heavy, especially without proper indexes."
+  },
+  {
+    "id": 29,
+    "category": "MongoDB",
+    "level": "medium",
+    "question": "Which accumulator is used to count documents in a $group stage?",
+    "options": ["$count", "$sum: 1", "$size", "$inc"],
+    "answerIndex": 1,
+    "explanation": "Using { $sum: 1 } inside $group counts documents per group."
+  },
+  {
+    "id": 30,
+    "category": "MongoDB",
+    "level": "medium",
+    "question": "What is the purpose of $unwind in aggregation?",
+    "options": [
+      "Merge two collections",
+      "Flatten an array field into multiple documents",
+      "Encrypt an array",
+      "Create a unique index"
+    ],
+    "answerIndex": 1,
+    "explanation": "$unwind outputs a document for each element of an array."
+  },
+  {
+    "id": 31,
+    "category": "MongoDB",
+    "level": "medium",
+    "question": "Which is true about ObjectId ordering when sorting by _id ascending?",
+    "options": [
+      "It is random",
+      "It roughly follows creation time order",
+      "It sorts by username",
+      "It sorts by document size"
+    ],
+    "answerIndex": 1,
+    "explanation": "ObjectId includes a time component so sorting by _id often reflects insertion time."
+  },
+  {
+    "id": 32,
+    "category": "MongoDB",
+    "level": "medium",
+    "question": "When using upsert: true, which operator sets fields only during insert and not during update?",
+    "options": ["$set", "$setOnInsert", "$push", "$rename"],
+    "answerIndex": 1,
+    "explanation": "$setOnInsert applies only when a new document is inserted via upsert."
+  },
+  {
+    "id": 33,
+    "category": "MongoDB",
+    "level": "medium",
+    "question": "What is the risk of using $where in MongoDB queries?",
+    "options": [
+      "It speeds up queries too much",
+      "It can be slow and may introduce security/performance issues",
+      "It auto-creates indexes",
+      "It forces sharding"
+    ],
+    "answerIndex": 1,
+    "explanation": "$where runs JavaScript and is generally slower and riskier than normal queries."
+  },
+  {
+    "id": 34,
+    "category": "MongoDB",
+    "level": "medium",
+    "question": "Which index helps when you frequently query by prefix text (like startsWith) in a field?",
+    "options": [
+      "Hashed index",
+      "Regular B-tree index on that field",
+      "Text index only",
+      "TTL index"
+    ],
+    "answerIndex": 1,
+    "explanation": "A normal index can help prefix queries depending on pattern and collation."
+  },
+  {
+    "id": 35,
+    "category": "MongoDB",
+    "level": "medium",
+    "question": "What does TTL index do in MongoDB?",
+    "options": [
+      "Encrypts documents",
+      "Automatically deletes documents after a time",
+      "Improves joins",
+      "Prevents duplicates"
+    ],
+    "answerIndex": 1,
+    "explanation": "TTL indexes expire documents based on a date field."
+  },
+  {
+    "id": 36,
+    "category": "MongoDB",
+    "level": "medium",
+    "question": "Which operator is best to ensure array values stay unique while adding items?",
+    "options": ["$push", "$addToSet", "$pull", "$pop"],
+    "answerIndex": 1,
+    "explanation": "$addToSet adds to array only if the value isn't already present."
+  },
+  {
+    "id": 37,
+    "category": "MongoDB",
+    "level": "medium",
+    "question": "Why is storing passwords directly in MongoDB dangerous?",
+    "options": [
+      "MongoDB will auto-share them",
+      "Passwords must be hashed (and salted) to reduce breach impact",
+      "MongoDB doesn't allow strings",
+      "Express can't read them"
+    ],
+    "answerIndex": 1,
+    "explanation": "Passwords should be stored as strong hashes to protect users if DB leaks."
+  },
+  {
+    "id": 38,
+    "category": "MongoDB",
+    "level": "medium",
+    "question": "In Mongoose, what does runValidators: true on update help prevent?",
+    "options": [
+      "Route matching errors",
+      "Saving invalid data during update operations",
+      "JWT token expiration",
+      "CORS failures"
+    ],
+    "answerIndex": 1,
+    "explanation": "Updates may skip validators unless runValidators is enabled."
+  },
+  {
+    "id": 39,
+    "category": "MongoDB",
+    "level": "medium",
+    "question": "What is the benefit of using lean() in Mongoose read queries?",
+    "options": [
+      "It encrypts output",
+      "It returns plain objects and can improve performance",
+      "It auto-populates refs",
+      "It auto-creates indexes"
+    ],
+    "answerIndex": 1,
+    "explanation": "lean() skips Mongoose document wrappers, often faster for reads."
+  },
+  {
+    "id": 40,
+    "category": "MongoDB",
+    "level": "medium",
+    "question": "What does 'strict' mode in Mongoose mainly control?",
+    "options": [
+      "JWT strict validation",
+      "Whether fields not in schema are saved",
+      "Whether indexes are unique",
+      "Whether queries are cached"
+    ],
+    "answerIndex": 1,
+    "explanation": "Strict mode controls ignoring or saving unknown fields."
+  },
+  {
+    "id": 41,
+    "category": "MongoDB",
+    "level": "medium",
+    "question": "Which is a common pattern for storing relationships in MongoDB using Mongoose?",
+    "options": [
+      "SQL joins only",
+      "ObjectId references with populate",
+      "CSS selectors",
+      "File paths in __dirname"
+    ],
+    "answerIndex": 1,
+    "explanation": "References use ObjectId fields and populate() to fetch related docs."
+  },
+  {
+    "id": 42,
+    "category": "MongoDB",
+    "level": "medium",
+    "question": "What is one drawback of heavy populate usage in Mongoose?",
+    "options": [
+      "It deletes indexes",
+      "It can cause extra queries/large payloads",
+      "It disables JSON parsing",
+      "It makes schema invalid"
+    ],
+    "answerIndex": 1,
+    "explanation": "Populate may add additional queries and increase response size."
+  },
+  {
+    "id": 43,
+    "category": "MongoDB",
+    "level": "medium",
+    "question": "Which scenario is best for embedding documents instead of referencing?",
+    "options": [
+      "Many-to-many with huge growth",
+      "One-to-few data always read together",
+      "Cross-database joins",
+      "When data changes every second"
+    ],
+    "answerIndex": 1,
+    "explanation": "Embedding suits data that is owned and commonly read together."
+  },
+  {
+    "id": 44,
+    "category": "MongoDB",
+    "level": "medium",
+    "question": "Which scenario is best for referencing instead of embedding?",
+    "options": [
+      "Small fixed sub-documents",
+      "Large growing arrays that could exceed document limits",
+      "Data that never changes",
+      "Single user profile only"
+    ],
+    "answerIndex": 1,
+    "explanation": "Large or unbounded arrays are better modeled with references."
+  },
+  {
+    "id": 45,
+    "category": "Express.js",
+    "level": "medium",
+    "question": "Why should you validate user input before using it in MongoDB queries?",
+    "options": [
+      "To make routes faster always",
+      "To prevent invalid data and reduce injection-like risks",
+      "To enable CORS",
+      "To avoid using JSON"
+    ],
+    "answerIndex": 1,
+    "explanation": "Validation prevents bad data and helps avoid query/operator injection patterns."
+  },
+  {
+    "id": 46,
+    "category": "Express.js",
+    "level": "medium",
+    "question": "Which is a common technique to handle async route errors without repeating try/catch?",
+    "options": [
+      "Write all routes sync",
+      "Use an async wrapper that catches and calls next(err)",
+      "Disable middleware",
+      "Use MongoDB Compass"
+    ],
+    "answerIndex": 1,
+    "explanation": "Async wrappers capture rejections and forward them to error middleware."
+  },
+  {
+    "id": 47,
+    "category": "Express.js",
+    "level": "medium",
+    "question": "Why is sending a response twice (e.g., res.json then res.send) a problem?",
+    "options": [
+      "It speeds up the client",
+      "It causes 'headers already sent' errors",
+      "It creates MongoDB duplicates",
+      "It disables cookies"
+    ],
+    "answerIndex": 1,
+    "explanation": "Once headers/body are sent, sending again triggers an error."
+  },
+  {
+    "id": 48,
+    "category": "Express.js",
+    "level": "medium",
+    "question": "What is the purpose of res.locals in Express?",
+    "options": [
+      "Store global config forever",
+      "Store request-scoped data for templates/middleware",
+      "Store MongoDB documents permanently",
+      "Store environment variables"
+    ],
+    "answerIndex": 1,
+    "explanation": "res.locals is useful for passing data through middleware for that request."
+  },
+  {
+    "id": 49,
+    "category": "Express.js",
+    "level": "medium",
+    "question": "Which status code is appropriate when creating a resource successfully?",
+    "options": ["200", "201", "204", "304"],
+    "answerIndex": 1,
+    "explanation": "201 Created is the standard for successful creation."
+  },
+  {
+    "id": 50,
+    "category": "Express.js",
+    "level": "medium",
+    "question": "Which status code is best when delete succeeds but you return no content?",
+    "options": ["200", "201", "204", "409"],
+    "answerIndex": 2,
+    "explanation": "204 No Content indicates success with no response body."
+  },
+  {
+    "id": 51,
+    "category": "Express.js",
+    "level": "medium",
+    "question": "Why is it useful to use a request ID in Express logs?",
+    "options": [
+      "To increase MongoDB speed",
+      "To trace a single request across logs/services",
+      "To render HTML faster",
+      "To avoid JSON parsing"
+    ],
+    "answerIndex": 1,
+    "explanation": "Request IDs help correlate logs for debugging distributed flows."
+  },
+  {
+    "id": 52,
+    "category": "Express.js",
+    "level": "medium",
+    "question": "Which middleware order is best for protected routes (common pattern)?",
+    "options": [
+      "Route handler then auth middleware",
+      "Auth middleware then route handler",
+      "Error handler first",
+      "MongoDB connect inside route only"
+    ],
+    "answerIndex": 1,
+    "explanation": "Auth middleware should run before the protected route handler."
+  },
+  {
+    "id": 53,
+    "category": "Node.js",
+    "level": "medium",
+    "question": "Which is a common reason to use a process manager like PM2 for Node apps?",
+    "options": [
+      "To design schemas",
+      "To restart app on crash and manage logs",
+      "To write Express routes",
+      "To run MongoDB queries"
+    ],
+    "answerIndex": 1,
+    "explanation": "Process managers handle restarts, monitoring, and clustering."
+  },
+  {
+    "id": 54,
+    "category": "Node.js",
+    "level": "medium",
+    "question": "What does 'graceful shutdown' usually mean for a Node server?",
+    "options": [
+      "Delete DB on exit",
+      "Stop accepting new requests and finish in-flight requests before exit",
+      "Immediately kill the process",
+      "Disable HTTP"
+    ],
+    "answerIndex": 1,
+    "explanation": "Graceful shutdown closes server and cleans resources safely."
+  },
+  {
+    "id": 55,
+    "category": "Node.js",
+    "level": "medium",
+    "question": "Why should you close DB connections during graceful shutdown?",
+    "options": [
+      "To reduce schema size",
+      "To avoid leaked sockets and ensure clean exit",
+      "To speed up CPU",
+      "To enable CORS"
+    ],
+    "answerIndex": 1,
+    "explanation": "Closing connections prevents resource leaks and hanging processes."
+  },
+  {
+    "id": 56,
+    "category": "Node.js",
+    "level": "medium",
+    "question": "Which signal is commonly used to stop a Node process gracefully in production?",
+    "options": ["SIGKILL", "SIGTERM", "SIGZERO", "SIGNODE"],
+    "answerIndex": 1,
+    "explanation": "SIGTERM is commonly used for graceful termination handling."
+  },
+  {
+    "id": 57,
+    "category": "MongoDB",
+    "level": "medium",
+    "question": "What is the main purpose of transactions in MongoDB?",
+    "options": [
+      "Speed up reads always",
+      "Group multiple operations to succeed/fail together",
+      "Enable CORS",
+      "Create indexes automatically"
+    ],
+    "answerIndex": 1,
+    "explanation": "Transactions ensure atomicity across multiple operations/collections."
+  },
+  {
+    "id": 58,
+    "category": "MongoDB",
+    "level": "medium",
+    "question": "MongoDB transactions are most commonly used with which deployment type?",
+    "options": [
+      "Standalone only",
+      "Replica sets (and sharded clusters)",
+      "Browser localStorage",
+      "Express routers"
+    ],
+    "answerIndex": 1,
+    "explanation": "Transactions require replica sets (and are supported in sharded clusters too)."
+  },
+  {
+    "id": 59,
+    "category": "MongoDB",
+    "level": "medium",
+    "question": "What is a common benefit of using bulkWrite() in MongoDB?",
+    "options": [
+      "Runs queries in browser",
+      "Reduces round trips by batching multiple operations",
+      "Auto-creates schemas",
+      "Encrypts all fields"
+    ],
+    "answerIndex": 1,
+    "explanation": "bulkWrite batches operations for efficiency."
+  },
+  {
+    "id": 60,
+    "category": "MongoDB",
+    "level": "medium",
+    "question": "Why can using regex queries without anchors be slow?",
+    "options": [
+      "They force sharding",
+      "They may not use indexes effectively and scan many docs",
+      "They break BSON",
+      "They disable projections"
+    ],
+    "answerIndex": 1,
+    "explanation": "Unanchored regex often causes collection scans or large index scans."
+  },
+  {
+    "id": 61,
+    "category": "MongoDB",
+    "level": "medium",
+    "question": "What is the main reason to use a unique index instead of only checking duplicates in code?",
+    "options": [
+      "Code checks are always faster",
+      "Unique index prevents race-condition duplicates at DB level",
+      "It encrypts data",
+      "It disables inserts"
+    ],
+    "answerIndex": 1,
+    "explanation": "DB-level unique constraint avoids concurrent duplicate inserts."
+  },
+  {
+    "id": 62,
+    "category": "MongoDB",
+    "level": "medium",
+    "question": "Which MongoDB feature helps you see if a query used an index?",
+    "options": ["populate()", "explain()", "dropIndex()", "unwind()"],
+    "answerIndex": 1,
+    "explanation": "explain() shows query plan and whether indexes were used."
+  },
+  {
+    "id": 63,
+    "category": "MongoDB",
+    "level": "medium",
+    "question": "Which is a common way to speed up 'sort by createdAt desc' queries?",
+    "options": [
+      "Drop all indexes",
+      "Index createdAt (and match filters as needed)",
+      "Use $where",
+      "Use skip only"
+    ],
+    "answerIndex": 1,
+    "explanation": "A supporting index can speed both filtering and sorting."
+  },
+  {
+    "id": 64,
+    "category": "MongoDB",
+    "level": "medium",
+    "question": "What does a partial index do in MongoDB?",
+    "options": [
+      "Indexes only part of the collection based on a filter",
+      "Indexes only half the fields randomly",
+      "Splits index across shards always",
+      "Creates duplicate indexes"
+    ],
+    "answerIndex": 0,
+    "explanation": "Partial indexes index documents that match a specified filter expression."
+  },
+  {
+    "id": 65,
+    "category": "MongoDB",
+    "level": "medium",
+    "question": "What is the benefit of using $project early in an aggregation pipeline (when possible)?",
+    "options": [
+      "It increases document size",
+      "It reduces data carried forward improving performance",
+      "It disables indexes",
+      "It forces $lookup"
+    ],
+    "answerIndex": 1,
+    "explanation": "Reducing fields early can lower memory and CPU usage."
+  },
+  {
+    "id": 66,
+    "category": "Express.js",
+    "level": "medium",
+    "question": "Which approach best helps avoid 'Cannot set headers after they are sent'?",
+    "options": [
+      "Call next() after res.send()",
+      "Return after sending response and avoid multiple sends",
+      "Use more middleware",
+      "Disable res.json"
+    ],
+    "answerIndex": 1,
+    "explanation": "Once you send a response, return to prevent further execution sending again."
+  },
+  {
+    "id": 67,
+    "category": "Express.js",
+    "level": "medium",
+    "question": "Which is a common best practice for API versioning in Express?",
+    "options": [
+      "Put version in database name",
+      "Use route prefixes like /api/v1",
+      "Use only headers always",
+      "Hardcode version in code comments"
+    ],
+    "answerIndex": 1,
+    "explanation": "A route prefix like /api/v1 is a simple and common approach."
+  },
+  {
+    "id": 68,
+    "category": "Express.js",
+    "level": "medium",
+    "question": "Why is it useful to separate routes and controllers in an Express app?",
+    "options": [
+      "To make code longer",
+      "To improve maintainability and separation of concerns",
+      "To remove middleware",
+      "To disable MongoDB"
+    ],
+    "answerIndex": 1,
+    "explanation": "Separating concerns keeps code clean and easier to test."
+  },
+  {
+    "id": 69,
+    "category": "Express.js",
+    "level": "medium",
+    "question": "What is a common reason to use compression middleware in Express?",
+    "options": [
+      "To compress MongoDB documents",
+      "To reduce response size over network",
+      "To encrypt passwords",
+      "To fix CORS"
+    ],
+    "answerIndex": 1,
+    "explanation": "Compression reduces bandwidth and can improve load time."
+  },
+  {
+    "id": 70,
+    "category": "Express.js",
+    "level": "medium",
+    "question": "Which is a common downside of enabling compression for already-compressed files (like images)?",
+    "options": [
+      "It improves quality",
+      "It wastes CPU with little benefit",
+      "It deletes files",
+      "It breaks routers"
+    ],
+    "answerIndex": 1,
+    "explanation": "Compressing already-compressed content often provides minimal gain but costs CPU."
+  },
+  {
+    "id": 71,
+    "category": "Node.js",
+    "level": "medium",
+    "question": "Why should you avoid CPU-heavy loops inside an Express route handler?",
+    "options": [
+      "MongoDB will stop working",
+      "They block the event loop and delay other requests",
+      "They disable CORS",
+      "They break JSON.stringify"
+    ],
+    "answerIndex": 1,
+    "explanation": "CPU-heavy loops block the single-threaded event loop."
+  },
+  {
+    "id": 72,
+    "category": "Node.js",
+    "level": "medium",
+    "question": "Which is a safer way to handle CPU-heavy image processing in a Node API?",
+    "options": [
+      "Run it in the same request thread always",
+      "Offload to worker thread or separate service/queue",
+      "Convert to synchronous fs calls",
+      "Do it in MongoDB aggregation"
+    ],
+    "answerIndex": 1,
+    "explanation": "Offloading prevents blocking the main event loop handling requests."
+  },
+  {
+    "id": 73,
+    "category": "Node.js",
+    "level": "medium",
+    "question": "Why is using console.log heavily in production risky for performance?",
+    "options": [
+      "It changes MongoDB schema",
+      "It can block or slow down due to I/O and log volume",
+      "It disables express.json()",
+      "It breaks JWT tokens"
+    ],
+    "answerIndex": 1,
+    "explanation": "Excess logging can become I/O bottleneck and increase latency."
+  },
+  {
+    "id": 74,
+    "category": "Node.js",
+    "level": "medium",
+    "question": "What is a common benefit of using a structured logger (JSON logs) instead of plain console.log?",
+    "options": [
+      "It makes MongoDB faster",
+      "It helps searching/filtering logs in production systems",
+      "It replaces Express",
+      "It removes need for errors"
+    ],
+    "answerIndex": 1,
+    "explanation": "Structured logs are easier to query and analyze."
+  },
+  {
+    "id": 75,
+    "category": "MongoDB",
+    "level": "medium",
+    "question": "What does 'write concern' mainly control in MongoDB?",
+    "options": [
+      "How queries are sorted",
+      "Acknowledgement level for writes",
+      "How CORS works",
+      "How Express routes match"
+    ],
+    "answerIndex": 1,
+    "explanation": "Write concern specifies when a write is considered successful (acknowledged)."
+  },
+  {
+    "id": 76,
+    "category": "MongoDB",
+    "level": "medium",
+    "question": "What does 'read preference' mainly control in MongoDB replica sets?",
+    "options": [
+      "Which fields to project",
+      "Whether reads go to primary or secondary",
+      "How indexes are built",
+      "How documents are validated"
+    ],
+    "answerIndex": 1,
+    "explanation": "Read preference decides where reads are routed (primary/secondary)."
+  },
+  {
+    "id": 77,
+    "category": "MongoDB",
+    "level": "medium",
+    "question": "Why is it important to create indexes for fields used in frequent filters?",
+    "options": [
+      "Indexes make updates fail",
+      "Indexes reduce query scan cost and speed lookups",
+      "Indexes reduce BSON size",
+      "Indexes auto-validate schema"
+    ],
+    "answerIndex": 1,
+    "explanation": "Indexes help MongoDB find matching docs faster without scanning everything."
+  },
+  {
+    "id": 78,
+    "category": "MongoDB",
+    "level": "medium",
+    "question": "What is the main reason to avoid huge embedded arrays in a single document?",
+    "options": [
+      "Arrays cannot be indexed",
+      "Document size limit and update costs",
+      "MongoDB doesn't store arrays",
+      "Express can't parse arrays"
+    ],
+    "answerIndex": 1,
+    "explanation": "Very large documents can hit size limits and become expensive to update."
+  },
+  {
+    "id": 79,
+    "category": "MongoDB",
+    "level": "medium",
+    "question": "Which approach helps prevent 'operator injection' when using MongoDB queries from user input?",
+    "options": [
+      "Directly spread req.body into query",
+      "Whitelist allowed fields and sanitize objects",
+      "Disable JSON parsing",
+      "Use $where always"
+    ],
+    "answerIndex": 1,
+    "explanation": "Whitelisting/sanitizing prevents user from injecting operators like $gt/$ne."
+  },
+  {
+    "id": 80,
+    "category": "Express.js",
+    "level": "medium",
+    "question": "Why is returning a consistent error format (like {success:false,message,...}) useful?",
+    "options": [
+      "It increases DB size",
+      "Clients can handle errors predictably",
+      "It disables caching",
+      "It prevents async code"
+    ],
+    "answerIndex": 1,
+    "explanation": "Consistency makes frontend error handling simpler."
+  },
+  {
+    "id": 81,
+    "category": "Express.js",
+    "level": "medium",
+    "question": "What is a common security risk if you enable CORS with origin: '*' while using cookies for auth?",
+    "options": [
+      "Nothing, it's always safe",
+      "Browsers may block cookies, and you can accidentally expose APIs to unwanted origins",
+      "MongoDB indexes break",
+      "Routes stop working"
+    ],
+    "answerIndex": 1,
+    "explanation": "Cookie auth needs careful CORS config (specific origins + credentials)."
+  },
+  {
+    "id": 82,
+    "category": "Node.js",
+    "level": "medium",
+    "question": "What is a common reason to use environment variables instead of hardcoding config?",
+    "options": [
+      "To make JSON invalid",
+      "To keep secrets and allow different configs per environment",
+      "To slow down app",
+      "To avoid npm"
+    ],
+    "answerIndex": 1,
+    "explanation": "Env vars separate code from configuration and keep secrets out of repo."
+  },
+  {
+    "id": 83,
+    "category": "Node.js",
+    "level": "medium",
+    "question": "Which pattern helps avoid memory leaks with event listeners?",
+    "options": [
+      "Add listeners repeatedly without remove",
+      "Remove listeners when no longer needed",
+      "Always use global emitter",
+      "Never use events"
+    ],
+    "answerIndex": 1,
+    "explanation": "Cleaning up listeners prevents accumulating references."
+  },
+  {
+    "id": 84,
+    "category": "Node.js",
+    "level": "medium",
+    "question": "What is one benefit of using async fs.promises APIs instead of callback-based fs?",
+    "options": [
+      "They run on GPU",
+      "Cleaner async/await code flow",
+      "They disable errors",
+      "They are always faster than streams"
+    ],
+    "answerIndex": 1,
+    "explanation": "fs.promises works well with async/await for readable async code."
+  },
+  {
+    "id": 85,
+    "category": "MongoDB",
+    "level": "medium",
+    "question": "Why can sorting without an index be expensive in MongoDB?",
+    "options": [
+      "MongoDB can't sort",
+      "It may require in-memory sort and scan many documents",
+      "It deletes documents",
+      "It forces replica set failover"
+    ],
+    "answerIndex": 1,
+    "explanation": "Without an index, MongoDB may sort large result sets in memory."
+  },
+  {
+    "id": 86,
+    "category": "MongoDB",
+    "level": "medium",
+    "question": "Which stage placement is usually better for performance: $match early or late?",
+    "options": [
+      "Late, always",
+      "Early, to reduce documents processed",
+      "It doesn't matter",
+      "$match should be removed"
+    ],
+    "answerIndex": 1,
+    "explanation": "Putting $match early reduces the amount of data processed in later stages."
+  },
+  {
+    "id": 87,
+    "category": "MongoDB",
+    "level": "medium",
+    "question": "What is an advantage of using update operators ($set, $inc) instead of replacing the whole document?",
+    "options": [
+      "It increases document size",
+      "It updates only needed fields and can reduce race overwrite",
+      "It disables validation",
+      "It removes indexes"
+    ],
+    "answerIndex": 1,
+    "explanation": "Operators update specific fields, reducing unnecessary overwrites."
+  },
+  {
+    "id": 88,
+    "category": "Express.js",
+    "level": "medium",
+    "question": "Why is it recommended to keep DB connection logic outside route handlers?",
+    "options": [
+      "To slow down app",
+      "To avoid reconnecting per request and improve performance",
+      "To disable middleware",
+      "To make routes shorter only"
+    ],
+    "answerIndex": 1,
+    "explanation": "Connecting once at startup avoids repeated connections and overhead."
+  },
+  {
+    "id": 89,
+    "category": "Express.js",
+    "level": "medium",
+    "question": "Which technique helps prevent users from brute-forcing login endpoints?",
+    "options": [
+      "Disable HTTPS",
+      "Rate limiting and account lock policies",
+      "Increase response size",
+      "Use $where queries"
+    ],
+    "answerIndex": 1,
+    "explanation": "Rate limiting slows brute-force attempts."
+  },
+  {
+    "id": 90,
+    "category": "Node.js",
+    "level": "medium",
+    "question": "What is a common reason to use connection pooling for MongoDB in Node apps?",
+    "options": [
+      "To create multiple DBs per user",
+      "To reuse connections and improve throughput",
+      "To disable indexing",
+      "To make queries synchronous"
+    ],
+    "answerIndex": 1,
+    "explanation": "Pooling reuses connections, improving performance and reducing overhead."
+  },
+  {
+    "id": 91,
+    "category": "MongoDB",
+    "level": "medium",
+    "question": "What does 'atomic' mean for MongoDB single-document updates?",
+    "options": [
+      "They can partially apply fields",
+      "All changes to one document apply as one unit",
+      "They require transactions always",
+      "They only work on _id"
+    ],
+    "answerIndex": 1,
+    "explanation": "Single-document updates are atomic: either all changes apply or none."
+  },
+  {
+    "id": 92,
+    "category": "MongoDB",
+    "level": "medium",
+    "question": "Which is a valid reason to use a transaction even though single document operations are atomic?",
+    "options": [
+      "Only to speed up reads",
+      "When updating multiple documents/collections that must stay consistent",
+      "To enable CORS",
+      "To create a schema"
+    ],
+    "answerIndex": 1,
+    "explanation": "Transactions help maintain consistency across multiple writes."
+  },
+  {
+    "id": 93,
+    "category": "Express.js",
+    "level": "medium",
+    "question": "Which strategy is best to handle 'async' errors from Mongoose in Express routes?",
+    "options": [
+      "Ignore errors and send 200",
+      "Catch errors and forward to next(err) / centralized error handler",
+      "Use only callbacks",
+      "Disable mongoose"
+    ],
+    "answerIndex": 1,
+    "explanation": "Handle promise rejections and forward them to error middleware."
+  },
+  {
+    "id": 94,
+    "category": "Node.js",
+    "level": "medium",
+    "question": "Why is storing files directly in MongoDB usually not ideal for large files?",
+    "options": [
+      "MongoDB doesn't support binary",
+      "Large binaries can bloat DB; object storage is often better",
+      "Express can't send files",
+      "Node can't read buffers"
+    ],
+    "answerIndex": 1,
+    "explanation": "Large files can bloat the database; external storage (or GridFS) is often preferred."
+  },
+  {
+    "id": 95,
+    "category": "MongoDB",
+    "level": "medium",
+    "question": "What is GridFS used for in MongoDB?",
+    "options": [
+      "Storing very large files in chunks",
+      "Creating joins",
+      "Encrypting passwords",
+      "Serving React builds"
+    ],
+    "answerIndex": 0,
+    "explanation": "GridFS stores large files by splitting them into chunks across collections."
+  },
+  {
+    "id": 96,
+    "category": "Express.js",
+    "level": "medium",
+    "question": "Which status code is appropriate when a resource already exists and causes a conflict on create?",
+    "options": ["302", "404", "409", "500"],
+    "answerIndex": 2,
+    "explanation": "409 Conflict is commonly used for duplicate/constraint conflicts."
+  },
+  {
+    "id": 97,
+    "category": "MongoDB",
+    "level": "medium",
+    "question": "Which is a common way to prevent duplicate emails in a users collection?",
+    "options": [
+      "Only check in frontend",
+      "Create a unique index on email",
+      "Use $where with JS",
+      "Store email in array"
+    ],
+    "answerIndex": 1,
+    "explanation": "A unique index enforces uniqueness at the database level."
+  },
+  {
+    "id": 98,
+    "category": "Node.js",
+    "level": "medium",
+    "question": "What is the purpose of 'compression' using zlib in Node servers?",
+    "options": [
+      "To compress MongoDB collections",
+      "To reduce response payload size (gzip/deflate)",
+      "To encrypt JWT",
+      "To parse JSON faster"
+    ],
+    "answerIndex": 1,
+    "explanation": "zlib helps compress data for network transfer (gzip/deflate)."
+  },
+  {
+    "id": 99,
+    "category": "Express.js",
+    "level": "medium",
+    "question": "Which approach helps keep Express apps secure from common attacks on HTTP headers?",
+    "options": [
+      "Use helmet and disable unnecessary headers",
+      "Use only GET routes",
+      "Store tokens in query params",
+      "Use $where"
+    ],
+    "answerIndex": 0,
+    "explanation": "helmet sets protective headers and can remove/adjust risky defaults."
+  },
+  {
+    "id": 100,
+    "category": "MongoDB",
+    "level": "medium",
+    "question": "Why is it useful to use indexes that match both filter and sort fields (when possible)?",
+    "options": [
+      "It makes updates slower",
+      "It can avoid in-memory sort and speed query execution",
+      "It disables aggregation",
+      "It prevents using projection"
+    ],
+    "answerIndex": 1,
+    "explanation": "A supporting index can satisfy both filter and sort efficiently."
+  },
+
+  {
+    "id": 101,
+    "category": "Node.js",
+    "level": "medium",
+    "question": "What is the main advantage of using async/await over deeply nested callbacks in Node.js?",
+    "options": [
+      "It makes code run on GPU",
+      "It improves readability and error handling flow",
+      "It removes the event loop",
+      "It automatically indexes MongoDB"
+    ],
+    "answerIndex": 1,
+    "explanation": "async/await makes async code easier to read and manage with try/catch."
+  },
+  {
+    "id": 102,
+    "category": "Node.js",
+    "level": "medium",
+    "question": "Which scenario is most likely to cause a memory leak in a Node.js server?",
+    "options": [
+      "Using let instead of var",
+      "Keeping references in a global array that never gets cleared",
+      "Using express.json()",
+      "Using MongoDB indexes"
+    ],
+    "answerIndex": 1,
+    "explanation": "Unbounded global collections keep references and prevent garbage collection."
+  },
+  {
+    "id": 103,
+    "category": "Node.js",
+    "level": "medium",
+    "question": "Why is it risky to JSON.stringify() very large objects inside a hot API route?",
+    "options": [
+      "It changes req.params",
+      "It can be CPU-heavy and block the event loop",
+      "It creates indexes",
+      "It disables CORS"
+    ],
+    "answerIndex": 1,
+    "explanation": "Stringifying huge objects can be slow and block other requests."
+  },
+  {
+    "id": 104,
+    "category": "Node.js",
+    "level": "medium",
+    "question": "What is one key benefit of using HTTP keep-alive for Node.js servers/clients?",
+    "options": [
+      "It disables TLS",
+      "It reuses TCP connections reducing latency",
+      "It forces JSON responses",
+      "It prevents rate limiting"
+    ],
+    "answerIndex": 1,
+    "explanation": "Keep-alive reuses connections and reduces handshake overhead."
+  },
+  {
+    "id": 105,
+    "category": "Node.js",
+    "level": "medium",
+    "question": "Which is a common reason to prefer using Buffer streams for large file uploads?",
+    "options": [
+      "To store files in req.params",
+      "To avoid loading the entire file into memory",
+      "To make MongoDB faster",
+      "To remove middleware"
+    ],
+    "answerIndex": 1,
+    "explanation": "Streaming uploads prevents high memory usage."
+  },
+  {
+    "id": 106,
+    "category": "Node.js",
+    "level": "medium",
+    "question": "What is the purpose of 'heap snapshots' in Node.js debugging?",
+    "options": [
+      "To optimize MongoDB aggregation",
+      "To analyze memory usage and find leaks",
+      "To speed up Express routing",
+      "To encrypt tokens"
+    ],
+    "answerIndex": 1,
+    "explanation": "Heap snapshots help inspect memory allocations and leaks."
+  },
+  {
+    "id": 107,
+    "category": "Node.js",
+    "level": "medium",
+    "question": "Why is it better to use a config file + environment variables for DB URI instead of hardcoding it?",
+    "options": [
+      "Hardcoding is faster",
+      "It supports different environments and avoids leaking secrets",
+      "It makes routes shorter",
+      "It avoids needing MongoDB"
+    ],
+    "answerIndex": 1,
+    "explanation": "Secrets and environment-specific config should not be hardcoded in source code."
+  },
+  {
+    "id": 108,
+    "category": "Node.js",
+    "level": "medium",
+    "question": "Which is a correct reason to enable source maps in Node debugging (TypeScript/build tools)?",
+    "options": [
+      "To index MongoDB fields",
+      "To see original source in stack traces",
+      "To compress responses",
+      "To enable CORS"
+    ],
+    "answerIndex": 1,
+    "explanation": "Source maps map compiled code back to original source for easier debugging."
+  },
+  {
+    "id": 109,
+    "category": "Node.js",
+    "level": "medium",
+    "question": "What is the main risk of using eval() or Function() with user input in Node.js?",
+    "options": [
+      "Route conflicts",
+      "Remote code execution (security vulnerability)",
+      "MongoDB duplicate keys",
+      "CORS failure"
+    ],
+    "answerIndex": 1,
+    "explanation": "Executing user-controlled code can lead to serious security issues."
+  },
+  {
+    "id": 110,
+    "category": "Node.js",
+    "level": "medium",
+    "question": "Which technique best reduces blocking from CPU-heavy JSON parsing on huge payloads?",
+    "options": [
+      "Use sync fs",
+      "Limit body size and avoid huge payloads",
+      "Disable middleware",
+      "Use $lookup"
+    ],
+    "answerIndex": 1,
+    "explanation": "Setting body size limits and keeping payloads small reduces CPU and memory pressure."
+  },
+  {
+    "id": 111,
+    "category": "Express.js",
+    "level": "medium",
+    "question": "Why should you keep authentication logic in middleware instead of repeating it in every controller?",
+    "options": [
+      "To make DB faster",
+      "To reuse logic and keep controllers clean",
+      "To avoid using routes",
+      "To reduce MongoDB storage"
+    ],
+    "answerIndex": 1,
+    "explanation": "Middleware enables reusable auth checks across multiple routes."
+  },
+  {
+    "id": 112,
+    "category": "Express.js",
+    "level": "medium",
+    "question": "What is a common reason to use express-async-errors or an async wrapper utility?",
+    "options": [
+      "To compress responses",
+      "To automatically forward async errors to error middleware",
+      "To create indexes",
+      "To parse cookies"
+    ],
+    "answerIndex": 1,
+    "explanation": "These tools help catch async route errors and pass them to centralized error handlers."
+  },
+  {
+    "id": 113,
+    "category": "Express.js",
+    "level": "medium",
+    "question": "When should you return 422 Unprocessable Entity instead of 400 Bad Request (common API style)?",
+    "options": [
+      "When server crashes",
+      "When request format is valid but validation rules fail",
+      "When auth fails",
+      "When route not found"
+    ],
+    "answerIndex": 1,
+    "explanation": "422 is often used when JSON is valid but fields fail business validation."
+  },
+  {
+    "id": 114,
+    "category": "Express.js",
+    "level": "medium",
+    "question": "Why is sending JWT tokens in query parameters generally discouraged?",
+    "options": [
+      "Because JWT can't be in URL",
+      "Because URLs can be logged and leaked more easily",
+      "Because it disables HTTPS",
+      "Because MongoDB rejects it"
+    ],
+    "answerIndex": 1,
+    "explanation": "Query params often get logged in browsers, proxies, and server logs."
+  },
+  {
+    "id": 115,
+    "category": "Express.js",
+    "level": "medium",
+    "question": "Which is a good reason to use Helmet in Express?",
+    "options": [
+      "To handle MongoDB schema",
+      "To set security-related HTTP headers",
+      "To paginate results",
+      "To generate JWT tokens"
+    ],
+    "answerIndex": 1,
+    "explanation": "Helmet helps protect against common web vulnerabilities via headers."
+  },
+  {
+    "id": 116,
+    "category": "Express.js",
+    "level": "medium",
+    "question": "What is the main advantage of using Router() modules for large Express apps?",
+    "options": [
+      "Faster MongoDB queries",
+      "Better code organization and scalability",
+      "Automatic JWT refresh",
+      "Automatic sharding"
+    ],
+    "answerIndex": 1,
+    "explanation": "Routers help split routes into smaller maintainable modules."
+  },
+  {
+    "id": 117,
+    "category": "Express.js",
+    "level": "medium",
+    "question": "Which approach helps prevent attackers from sending too many requests to a single endpoint?",
+    "options": [
+      "Increase response size",
+      "Rate limiting middleware",
+      "Disable JSON parsing",
+      "Use $where queries"
+    ],
+    "answerIndex": 1,
+    "explanation": "Rate limiting reduces abuse by restricting request frequency."
+  },
+  {
+    "id": 118,
+    "category": "Express.js",
+    "level": "medium",
+    "question": "Why should you avoid exposing raw database error messages to clients?",
+    "options": [
+      "They are too short",
+      "They may leak internal details and help attackers",
+      "They break JSON",
+      "They cause 404 errors"
+    ],
+    "answerIndex": 1,
+    "explanation": "Raw errors can leak schema and system info; log them server-side instead."
+  },
+  {
+    "id": 119,
+    "category": "Express.js",
+    "level": "medium",
+    "question": "Which header is commonly used to protect against clickjacking?",
+    "options": [
+      "X-Frame-Options",
+      "X-Powered-By",
+      "Accept-Encoding",
+      "Cache-Control"
+    ],
+    "answerIndex": 0,
+    "explanation": "X-Frame-Options can prevent a page from being embedded in an iframe."
+  },
+  {
+    "id": 120,
+    "category": "Express.js",
+    "level": "medium",
+    "question": "Why is it helpful to disable the 'X-Powered-By' header in Express?",
+    "options": [
+      "To enable CORS",
+      "To reduce information disclosure about tech stack",
+      "To speed up MongoDB",
+      "To fix routing"
+    ],
+    "answerIndex": 1,
+    "explanation": "Hiding server details can reduce fingerprinting by attackers."
+  },
+  {
+    "id": 121,
+    "category": "MongoDB",
+    "level": "medium",
+    "question": "What is the main purpose of an index on { email: 1 } in a users collection?",
+    "options": [
+      "To encrypt email",
+      "To speed up lookups by email",
+      "To store multiple emails",
+      "To enable $lookup"
+    ],
+    "answerIndex": 1,
+    "explanation": "Indexes speed query filtering on the indexed field."
+  },
+  {
+    "id": 122,
+    "category": "MongoDB",
+    "level": "medium",
+    "question": "What does a sparse index do?",
+    "options": [
+      "Indexes documents only if the field exists",
+      "Indexes only half the collection randomly",
+      "Deletes missing fields",
+      "Makes queries slower"
+    ],
+    "answerIndex": 0,
+    "explanation": "Sparse indexes only include documents where the indexed field is present."
+  },
+  {
+    "id": 123,
+    "category": "MongoDB",
+    "level": "medium",
+    "question": "Why can a unique index with sparse behave differently than a normal unique index?",
+    "options": [
+      "It duplicates entries",
+      "It allows multiple documents missing the field but enforces uniqueness when present",
+      "It disables uniqueness always",
+      "It forces sharding"
+    ],
+    "answerIndex": 1,
+    "explanation": "Sparse unique indexes don't index missing fields, so multiple docs can omit the field."
+  },
+  {
+    "id": 124,
+    "category": "MongoDB",
+    "level": "medium",
+    "question": "What is the main goal of schema validation in MongoDB collections?",
+    "options": [
+      "Improve CSS rendering",
+      "Ensure documents follow required structure/rules",
+      "Create routes automatically",
+      "Speed up Node timers"
+    ],
+    "answerIndex": 1,
+    "explanation": "Schema validation enforces structure and data quality at DB level."
+  },
+  {
+    "id": 125,
+    "category": "MongoDB",
+    "level": "medium",
+    "question": "Which is the correct reason to use a capped collection?",
+    "options": [
+      "To store unlimited documents",
+      "To keep a fixed-size rolling log-like collection",
+      "To enforce unique emails",
+      "To run $lookup faster"
+    ],
+    "answerIndex": 1,
+    "explanation": "Capped collections have fixed size and overwrite oldest entries."
+  },
+  {
+    "id": 126,
+    "category": "MongoDB",
+    "level": "medium",
+    "question": "Why can $group be memory-intensive in aggregation?",
+    "options": [
+      "It compresses responses",
+      "It may hold many groups in memory while processing",
+      "It disables indexes always",
+      "It runs JavaScript by default"
+    ],
+    "answerIndex": 1,
+    "explanation": "Grouping large datasets can require substantial memory for group state."
+  },
+  {
+    "id": 127,
+    "category": "MongoDB",
+    "level": "medium",
+    "question": "What does allowDiskUse: true help with in aggregation?",
+    "options": [
+      "Encrypts disk data",
+      "Allows aggregation stages to spill to disk when memory limit is exceeded",
+      "Disables sharding",
+      "Creates indexes automatically"
+    ],
+    "answerIndex": 1,
+    "explanation": "It allows MongoDB to use temporary files for large aggregations."
+  },
+  {
+    "id": 128,
+    "category": "MongoDB",
+    "level": "medium",
+    "question": "Why is it recommended to index foreignField/localField used in $lookup when collections are large?",
+    "options": [
+      "To disable projection",
+      "To speed join matching and reduce scan",
+      "To encrypt IDs",
+      "To avoid using $match"
+    ],
+    "answerIndex": 1,
+    "explanation": "Indexes on join keys reduce scanning during $lookup."
+  },
+  {
+    "id": 129,
+    "category": "MongoDB",
+    "level": "medium",
+    "question": "What is the main benefit of using an aggregation pipeline instead of doing processing in Node.js after fetching all docs?",
+    "options": [
+      "Pipelines always use GPU",
+      "Reduce data transfer and leverage DB-side processing",
+      "Makes Express routes shorter only",
+      "Prevents index usage"
+    ],
+    "answerIndex": 1,
+    "explanation": "Doing work in DB can reduce network overhead and memory usage in the app."
+  },
+  {
+    "id": 130,
+    "category": "MongoDB",
+    "level": "medium",
+    "question": "What problem can occur if you store dates as strings instead of Date type in MongoDB?",
+    "options": [
+      "Better sorting always",
+      "Incorrect sorting/range queries and harder date operations",
+      "Faster TTL deletion",
+      "Automatic timezone conversion"
+    ],
+    "answerIndex": 1,
+    "explanation": "Strings can sort lexicographically and break date range operations."
+  },
+  {
+    "id": 131,
+    "category": "MongoDB",
+    "level": "medium",
+    "question": "In Mongoose, why can Model.findByIdAndUpdate() return the old document by default?",
+    "options": [
+      "Because MongoDB can't update",
+      "Because default option returns the pre-update doc unless { new: true } is set",
+      "Because express.json blocks it",
+      "Because populate disables update"
+    ],
+    "answerIndex": 1,
+    "explanation": "You must set { new: true } (or returnDocument) to get updated doc."
+  },
+  {
+    "id": 132,
+    "category": "MongoDB",
+    "level": "medium",
+    "question": "Which Mongoose option helps ensure update validators run on findOneAndUpdate?",
+    "options": [
+      "runValidators: true",
+      "validateOnSave: true",
+      "strictUpdate: true",
+      "safeUpdate: true"
+    ],
+    "answerIndex": 0,
+    "explanation": "runValidators enforces schema validators during update operations."
+  },
+  {
+    "id": 133,
+    "category": "MongoDB",
+    "level": "medium",
+    "question": "Why is it useful to define indexes in a Mongoose schema instead of creating them manually later?",
+    "options": [
+      "It avoids MongoDB",
+      "It keeps index definitions close to model and easier to maintain",
+      "It disables writes",
+      "It makes populate automatic"
+    ],
+    "answerIndex": 1,
+    "explanation": "Schema-defined indexes are versioned with code and easier to manage."
+  },
+  {
+    "id": 134,
+    "category": "MongoDB",
+    "level": "medium",
+    "question": "What is the main risk of using Model.updateMany() without a filter?",
+    "options": [
+      "It only updates one doc",
+      "It may update all documents accidentally",
+      "It creates a new collection",
+      "It drops indexes"
+    ],
+    "answerIndex": 1,
+    "explanation": "An empty filter can match everything and update all documents."
+  },
+  {
+    "id": 135,
+    "category": "MongoDB",
+    "level": "medium",
+    "question": "Which is a good reason to store 'createdAt' and 'updatedAt' timestamps?",
+    "options": [
+      "To reduce DB size",
+      "To support auditing, sorting, and debugging",
+      "To enable CORS",
+      "To prevent JWT expiry"
+    ],
+    "answerIndex": 1,
+    "explanation": "Timestamps help track record lifecycle and support sorting/filtering."
+  },
+  {
+    "id": 136,
+    "category": "MongoDB",
+    "level": "medium",
+    "question": "Why can 'populate' be slower than a manual aggregation with $lookup in some cases?",
+    "options": [
+      "Populate always uses GPU",
+      "Populate may issue multiple queries and extra hydration overhead",
+      "Populate deletes indexes",
+      "Populate disables projection"
+    ],
+    "answerIndex": 1,
+    "explanation": "Populate can run extra queries and create full Mongoose docs, adding overhead."
+  },
+  {
+    "id": 137,
+    "category": "Express.js",
+    "level": "medium",
+    "question": "Why is using res.status(204).json({...}) incorrect?",
+    "options": [
+      "204 cannot be used in Express",
+      "204 means no content, so response body should be empty",
+      "JSON can't be sent",
+      "It forces 500 error"
+    ],
+    "answerIndex": 1,
+    "explanation": "204 No Content responses should not include a body."
+  },
+  {
+    "id": 138,
+    "category": "Express.js",
+    "level": "medium",
+    "question": "Which is a better API response when a GET request returns an empty list?",
+    "options": [
+      "404 Not Found",
+      "200 OK with []",
+      "500 Internal Server Error",
+      "302 Redirect"
+    ],
+    "answerIndex": 1,
+    "explanation": "An empty list is a valid result, usually returned with 200 and an empty array."
+  },
+  {
+    "id": 139,
+    "category": "Express.js",
+    "level": "medium",
+    "question": "Why should you avoid doing heavy DB queries inside a middleware that runs for every request?",
+    "options": [
+      "It improves speed",
+      "It can increase latency for all endpoints",
+      "It fixes caching",
+      "It reduces code size"
+    ],
+    "answerIndex": 1,
+    "explanation": "Global middleware runs on every request, so expensive work affects all routes."
+  },
+  {
+    "id": 140,
+    "category": "Express.js",
+    "level": "medium",
+    "question": "What is the main security risk of leaving debug endpoints enabled in production?",
+    "options": [
+      "They speed up server",
+      "They may expose sensitive data or internal actions",
+      "They improve logs",
+      "They fix CORS"
+    ],
+    "answerIndex": 1,
+    "explanation": "Debug endpoints can leak data or allow dangerous operations."
+  },
+  {
+    "id": 141,
+    "category": "Node.js",
+    "level": "medium",
+    "question": "Why is it important to handle 'error' events on Node.js streams?",
+    "options": [
+      "Because errors are ignored otherwise",
+      "Unhandled stream errors can crash the process",
+      "It creates indexes",
+      "It disables CORS"
+    ],
+    "answerIndex": 1,
+    "explanation": "If 'error' event is not handled, Node can throw and crash."
+  },
+  {
+    "id": 142,
+    "category": "Node.js",
+    "level": "medium",
+    "question": "Which pattern helps avoid callback hell in Node.js codebases?",
+    "options": [
+      "Nested callbacks",
+      "Promisify + async/await",
+      "Synchronous loops",
+      "More global variables"
+    ],
+    "answerIndex": 1,
+    "explanation": "Promises and async/await reduce nested callback complexity."
+  },
+  {
+    "id": 143,
+    "category": "Node.js",
+    "level": "medium",
+    "question": "What is a common reason to use an LRU cache in a Node API server?",
+    "options": [
+      "To store passwords",
+      "To reduce repeated expensive computations/DB reads",
+      "To replace MongoDB",
+      "To disable JSON parsing"
+    ],
+    "answerIndex": 1,
+    "explanation": "Caching frequently used results reduces load and latency."
+  },
+  {
+    "id": 144,
+    "category": "Node.js",
+    "level": "medium",
+    "question": "Why is it recommended to set timeouts on outgoing HTTP requests from Node.js?",
+    "options": [
+      "To break TLS",
+      "To avoid hanging requests consuming resources",
+      "To make MongoDB faster",
+      "To enable routing"
+    ],
+    "answerIndex": 1,
+    "explanation": "Timeouts prevent stuck connections from tying up resources."
+  },
+  {
+    "id": 145,
+    "category": "Node.js",
+    "level": "medium",
+    "question": "Which is a common reason to use AbortController with fetch-like APIs in Node?",
+    "options": [
+      "To create indexes",
+      "To cancel requests and free resources",
+      "To parse JSON faster",
+      "To disable event loop"
+    ],
+    "answerIndex": 1,
+    "explanation": "AbortController lets you cancel in-flight async operations like HTTP requests."
+  },
+  {
+    "id": 146,
+    "category": "Node.js",
+    "level": "medium",
+    "question": "What does 'hot path' mean in backend performance context?",
+    "options": [
+      "A route that runs rarely",
+      "A frequently executed code path where optimization matters",
+      "A MongoDB index type",
+      "An Express router mount path"
+    ],
+    "answerIndex": 1,
+    "explanation": "Hot paths run frequently; inefficient code there impacts performance most."
+  },
+  {
+    "id": 147,
+    "category": "Node.js",
+    "level": "medium",
+    "question": "Why is using bcrypt hashing inside a single request handler potentially slow under heavy load?",
+    "options": [
+      "It is non-cryptographic",
+      "Hashing is CPU-intensive and can reduce throughput",
+      "It blocks MongoDB only",
+      "It makes JSON invalid"
+    ],
+    "answerIndex": 1,
+    "explanation": "Password hashing is CPU heavy; many concurrent hashes can increase latency."
+  },
+  {
+    "id": 148,
+    "category": "Express.js",
+    "level": "medium",
+    "question": "Which is a correct reason to separate validation middleware from controller logic?",
+    "options": [
+      "To reduce MongoDB indexes",
+      "To keep controllers focused and reuse validation",
+      "To disable errors",
+      "To avoid using req.body"
+    ],
+    "answerIndex": 1,
+    "explanation": "Separation improves reuse and keeps business logic clean."
+  },
+  {
+    "id": 149,
+    "category": "Express.js",
+    "level": "medium",
+    "question": "Why is it important to validate ObjectId format before calling Model.findById?",
+    "options": [
+      "To speed up React",
+      "To avoid cast errors and return proper 400 responses",
+      "To enable $lookup",
+      "To create a schema"
+    ],
+    "answerIndex": 1,
+    "explanation": "Invalid ObjectId strings can throw/cause cast errors; validate early."
+  },
+  {
+    "id": 150,
+    "category": "Express.js",
+    "level": "medium",
+    "question": "Which is a good pattern for API responses on server errors?",
+    "options": [
+      "Always return 200 with error message",
+      "Return 500 and a generic message, log details server-side",
+      "Return 404 always",
+      "Return raw stack trace"
+    ],
+    "answerIndex": 1,
+    "explanation": "Server errors should be safe for clients and detailed for logs."
+  },
+  {
+    "id": 151,
+    "category": "Express.js",
+    "level": "medium",
+    "question": "What is a major reason to implement request payload size limits?",
+    "options": [
+      "To enable cookies",
+      "To reduce DoS risk and memory usage",
+      "To fix 404 routes",
+      "To make MongoDB unique indexes"
+    ],
+    "answerIndex": 1,
+    "explanation": "Limits protect server from huge payload attacks and memory pressure."
+  },
+  {
+    "id": 152,
+    "category": "Express.js",
+    "level": "medium",
+    "question": "Which header is used to control caching behavior in HTTP responses?",
+    "options": ["Cache-Control", "Accept", "Origin", "Upgrade"],
+    "answerIndex": 0,
+    "explanation": "Cache-Control instructs clients/proxies how to cache responses."
+  },
+  {
+    "id": 153,
+    "category": "Express.js",
+    "level": "medium",
+    "question": "When is ETag most useful?",
+    "options": [
+      "To encrypt passwords",
+      "To support conditional requests and caching (304 responses)",
+      "To create MongoDB indexes",
+      "To mount routers"
+    ],
+    "answerIndex": 1,
+    "explanation": "ETag helps clients validate cached content and avoid re-downloading unchanged data."
+  },
+  {
+    "id": 154,
+    "category": "MongoDB",
+    "level": "medium",
+    "question": "Why can using $regex with leading wildcard (like /.*abc/) be slow?",
+    "options": [
+      "It always uses text index",
+      "It often can't use standard indexes efficiently",
+      "It forces sharding",
+      "It converts BSON to XML"
+    ],
+    "answerIndex": 1,
+    "explanation": "Leading wildcard prevents efficient index prefix scanning, causing scans."
+  },
+  {
+    "id": 155,
+    "category": "MongoDB",
+    "level": "medium",
+    "question": "What is the benefit of using $facet in aggregation?",
+    "options": [
+      "Encrypts output",
+      "Runs multiple pipelines in one query (e.g., data + count)",
+      "Creates indexes",
+      "Deletes duplicates"
+    ],
+    "answerIndex": 1,
+    "explanation": "$facet lets you produce multiple result sets (like paginated data and total count) in one pipeline."
+  },
+  {
+    "id": 156,
+    "category": "MongoDB",
+    "level": "medium",
+    "question": "Which aggregation stage is typically used to create computed fields?",
+    "options": ["$addFields", "$drop", "$limit", "$skip"],
+    "answerIndex": 0,
+    "explanation": "$addFields adds new fields based on expressions."
+  },
+  {
+    "id": 157,
+    "category": "MongoDB",
+    "level": "medium",
+    "question": "What is the main advantage of using $set in aggregation (modern) over $addFields?",
+    "options": [
+      "$set is faster always",
+      "They are functionally similar; $set is an alias for clarity",
+      "$set deletes fields",
+      "$addFields is deprecated in MongoDB shell"
+    ],
+    "answerIndex": 1,
+    "explanation": "$set is essentially an alias of $addFields in aggregation."
+  },
+  {
+    "id": 158,
+    "category": "MongoDB",
+    "level": "medium",
+    "question": "Why is a hashed index not suitable for range queries?",
+    "options": [
+      "It deletes documents",
+      "Hashing destroys sort order needed for ranges",
+      "It can't be created",
+      "It only works with arrays"
+    ],
+    "answerIndex": 1,
+    "explanation": "Hashed indexes are good for equality, not ordered range scans."
+  },
+  {
+    "id": 159,
+    "category": "MongoDB",
+    "level": "medium",
+    "question": "What is the key difference between countDocuments() and estimatedDocumentCount()?",
+    "options": [
+      "Both always identical speed",
+      "countDocuments respects filter; estimated uses metadata (approx)",
+      "estimated requires filter; count doesn't",
+      "Both require aggregation always"
+    ],
+    "answerIndex": 1,
+    "explanation": "countDocuments counts matching docs; estimatedDocumentCount gives an approximate total count."
+  },
+  {
+    "id": 160,
+    "category": "MongoDB",
+    "level": "medium",
+    "question": "Why can counting documents frequently be expensive in high-traffic apps?",
+    "options": [
+      "Counts are free always",
+      "Counts may scan indexes/collection and add load",
+      "Counts remove indexes",
+      "Counts disable replicas"
+    ],
+    "answerIndex": 1,
+    "explanation": "Counting can add query load; caching or approximate counts are sometimes used."
+  },
+  {
+    "id": 161,
+    "category": "MongoDB",
+    "level": "medium",
+    "question": "In Mongoose, why can you get a CastError when querying by _id?",
+    "options": [
+      "Because _id can't be queried",
+      "Because the provided id string is not a valid ObjectId format",
+      "Because indexes are missing",
+      "Because populate failed"
+    ],
+    "answerIndex": 1,
+    "explanation": "Invalid ObjectId strings can cause CastError during casting."
+  },
+  {
+    "id": 162,
+    "category": "MongoDB",
+    "level": "medium",
+    "question": "Which is a good way to prevent slow queries from causing API timeouts?",
+    "options": [
+      "Disable indexes",
+      "Add proper indexes and use query limits/timeouts",
+      "Use $where everywhere",
+      "Use skip for all pagination"
+    ],
+    "answerIndex": 1,
+    "explanation": "Indexing and query limits (and sometimes maxTimeMS) help control query cost."
+  },
+  {
+    "id": 163,
+    "category": "MongoDB",
+    "level": "medium",
+    "question": "What is a common reason to use projection with populate in Mongoose?",
+    "options": [
+      "To return every field always",
+      "To return only needed fields from referenced docs",
+      "To create more documents",
+      "To disable joins"
+    ],
+    "answerIndex": 1,
+    "explanation": "Selecting fields reduces payload size and can improve performance."
+  },
+  {
+    "id": 164,
+    "category": "MongoDB",
+    "level": "medium",
+    "question": "Why can 'N+1 query' happen with naive populate usage?",
+    "options": [
+      "Because populate always uses aggregation",
+      "Because it may trigger many extra queries for related docs",
+      "Because indexes break",
+      "Because Node can't parse JSON"
+    ],
+    "answerIndex": 1,
+    "explanation": "Fetching relations per item can create many extra queries (N+1 problem)."
+  },
+  {
+    "id": 165,
+    "category": "Express.js",
+    "level": "medium",
+    "question": "Which is a good practice for handling unknown routes in Express APIs?",
+    "options": [
+      "Return 200 always",
+      "Return 404 with a clear JSON message",
+      "Redirect to /",
+      "Throw without handler"
+    ],
+    "answerIndex": 1,
+    "explanation": "Unknown endpoints should return 404 with a consistent response."
+  },
+  {
+    "id": 166,
+    "category": "Express.js",
+    "level": "medium",
+    "question": "Why is it recommended to use HTTPS for APIs that use tokens/cookies?",
+    "options": [
+      "To make routing faster",
+      "To prevent interception of credentials and data",
+      "To enable MongoDB sharding",
+      "To avoid indexes"
+    ],
+    "answerIndex": 1,
+    "explanation": "HTTPS encrypts traffic, protecting tokens/cookies from being sniffed."
+  },
+  {
+    "id": 167,
+    "category": "Express.js",
+    "level": "medium",
+    "question": "What is the main reason to use SameSite cookies for authentication?",
+    "options": [
+      "To increase cookie size",
+      "To reduce CSRF risk by controlling cross-site cookie sending",
+      "To speed up MongoDB",
+      "To disable CORS"
+    ],
+    "answerIndex": 1,
+    "explanation": "SameSite helps limit when cookies are sent on cross-site requests."
+  },
+  {
+    "id": 168,
+    "category": "Express.js",
+    "level": "medium",
+    "question": "Which HTTP status code is most appropriate when authentication is missing/invalid?",
+    "options": ["401", "403", "404", "422"],
+    "answerIndex": 0,
+    "explanation": "401 Unauthorized indicates authentication is required or failed."
+  },
+  {
+    "id": 169,
+    "category": "Node.js",
+    "level": "medium",
+    "question": "Why is it important to sanitize filenames before saving uploads on the server?",
+    "options": [
+      "To enable CORS",
+      "To prevent path traversal and unsafe file paths",
+      "To increase compression",
+      "To create MongoDB indexes"
+    ],
+    "answerIndex": 1,
+    "explanation": "Unsanitized filenames can lead to directory traversal vulnerabilities."
+  },
+  {
+    "id": 170,
+    "category": "Node.js",
+    "level": "medium",
+    "question": "Which approach is safest for handling user-uploaded files?",
+    "options": [
+      "Save with original name anywhere",
+      "Validate type/size, store safely, and restrict execution",
+      "Run uploaded files automatically",
+      "Store in environment variables"
+    ],
+    "answerIndex": 1,
+    "explanation": "Validate uploads and store them safely to reduce security risks."
+  },
+  {
+    "id": 171,
+    "category": "Node.js",
+    "level": "medium",
+    "question": "What is a key reason to use async queue/background jobs for sending emails?",
+    "options": [
+      "To block the event loop",
+      "To avoid slowing user response and retry failures",
+      "To avoid DB indexes",
+      "To disable middleware"
+    ],
+    "answerIndex": 1,
+    "explanation": "Background jobs improve response time and reliability with retries."
+  },
+  {
+    "id": 172,
+    "category": "Node.js",
+    "level": "medium",
+    "question": "Why can too many open sockets cause issues in a Node server?",
+    "options": [
+      "They create schemas",
+      "They consume memory/FD limits and can crash server",
+      "They improve speed",
+      "They fix timeouts"
+    ],
+    "answerIndex": 1,
+    "explanation": "Open connections use resources and can hit OS file descriptor limits."
+  },
+  {
+    "id": 173,
+    "category": "Node.js",
+    "level": "medium",
+    "question": "Which practice helps avoid keeping requests hanging forever in Express?",
+    "options": [
+      "Never send response",
+      "Set server/request timeouts and handle slow operations",
+      "Disable error middleware",
+      "Use $where"
+    ],
+    "answerIndex": 1,
+    "explanation": "Timeouts and proper async handling prevent hanging requests."
+  },
+  {
+    "id": 174,
+    "category": "MongoDB",
+    "level": "medium",
+    "question": "Why is it important to handle duplicate key errors from MongoDB when using unique indexes?",
+    "options": [
+      "Because they mean DB crashed",
+      "Because writes can fail and you should return a proper conflict response",
+      "Because they speed up writes",
+      "Because they delete documents"
+    ],
+    "answerIndex": 1,
+    "explanation": "Unique constraints can cause duplicate key errors that should map to 409-like responses."
+  },
+  {
+    "id": 175,
+    "category": "MongoDB",
+    "level": "medium",
+    "question": "Which is a good reason to use transactions for 'order creation + stock update'?",
+    "options": [
+      "To make reads slower",
+      "To ensure both operations succeed or both rollback",
+      "To avoid indexes",
+      "To disable aggregation"
+    ],
+    "answerIndex": 1,
+    "explanation": "Transactions keep multi-step operations consistent."
+  },
+  {
+    "id": 176,
+    "category": "MongoDB",
+    "level": "medium",
+    "question": "What is a major performance benefit of using $match before $lookup (when possible)?",
+    "options": [
+      "It increases join size",
+      "It reduces documents entering the join stage",
+      "It disables indexes",
+      "It forces disk use"
+    ],
+    "answerIndex": 1,
+    "explanation": "Filtering early reduces work for expensive stages like $lookup."
+  },
+  {
+    "id": 177,
+    "category": "MongoDB",
+    "level": "medium",
+    "question": "What is a common pitfall when using Date.now() as a default in Mongoose schema?",
+    "options": [
+      "It returns string",
+      "Using Date.now() (with parentheses) stores a fixed time at schema creation",
+      "It breaks indexes",
+      "It disables timestamps"
+    ],
+    "answerIndex": 1,
+    "explanation": "You should pass Date.now (function reference), not Date.now()."
+  },
+  {
+    "id": 178,
+    "category": "MongoDB",
+    "level": "medium",
+    "question": "Why do we prefer storing references using ObjectId type instead of plain string ids in MongoDB?",
+    "options": [
+      "Strings are not supported",
+      "ObjectId is standard, efficient, and works well with populate/indexes",
+      "ObjectId is encrypted",
+      "Strings break JSON"
+    ],
+    "answerIndex": 1,
+    "explanation": "ObjectId is the native id type and integrates well with tooling and indexing."
+  },
+  {
+    "id": 179,
+    "category": "Express.js",
+    "level": "medium",
+    "question": "Which is a common reason to implement CSRF protection for cookie-based auth?",
+    "options": [
+      "To speed up MongoDB",
+      "Cookies are sent automatically; CSRF prevents unwanted cross-site actions",
+      "JWT cannot be used",
+      "To enable routing"
+    ],
+    "answerIndex": 1,
+    "explanation": "CSRF protection helps stop cross-site requests that include cookies automatically."
+  },
+  {
+    "id": 180,
+    "category": "Express.js",
+    "level": "medium",
+    "question": "Why should you avoid placing secrets in response payloads or logs?",
+    "options": [
+      "They are too big",
+      "They can leak credentials and compromise security",
+      "They reduce compression",
+      "They disable indexes"
+    ],
+    "answerIndex": 1,
+    "explanation": "Secrets in logs/responses can be exposed to attackers or staff unintentionally."
+  },
+  {
+    "id": 181,
+    "category": "Express.js",
+    "level": "medium",
+    "question": "Which approach is best for validating request body in Express?",
+    "options": [
+      "Trust client always",
+      "Use a validation library/schema and return clear errors",
+      "Only validate in MongoDB",
+      "Validate only in frontend"
+    ],
+    "answerIndex": 1,
+    "explanation": "Server-side validation ensures correctness and security."
+  },
+  {
+    "id": 182,
+    "category": "Node.js",
+    "level": "medium",
+    "question": "What is the advantage of using connection pooling with the MongoDB driver/Mongoose?",
+    "options": [
+      "It disables TLS",
+      "It reuses connections for better performance and scalability",
+      "It forces sharding",
+      "It deletes idle sockets"
+    ],
+    "answerIndex": 1,
+    "explanation": "Pooling avoids creating a new connection per request and improves throughput."
+  },
+  {
+    "id": 183,
+    "category": "Node.js",
+    "level": "medium",
+    "question": "Why is it important to handle promise rejections when using async functions?",
+    "options": [
+      "Uncaught rejections are ignored always",
+      "Unhandled rejections can crash or leave app in bad state",
+      "They speed up DB",
+      "They create indexes"
+    ],
+    "answerIndex": 1,
+    "explanation": "Unhandled promise rejections can cause instability and should be handled."
+  },
+  {
+    "id": 184,
+    "category": "MongoDB",
+    "level": "medium",
+    "question": "What is the main purpose of optimistic concurrency control (versioning like __v) in Mongoose?",
+    "options": [
+      "To compress JSON",
+      "To prevent lost updates when multiple writes happen concurrently",
+      "To create indexes",
+      "To enable CORS"
+    ],
+    "answerIndex": 1,
+    "explanation": "Versioning helps detect concurrent updates and avoid overwriting changes silently."
+  },
+  {
+    "id": 185,
+    "category": "MongoDB",
+    "level": "medium",
+    "question": "Why can updating arrays with many elements be costly in MongoDB documents?",
+    "options": [
+      "Arrays cannot be updated",
+      "Large document rewrites and index updates can be expensive",
+      "It disables TTL",
+      "It breaks BSON"
+    ],
+    "answerIndex": 1,
+    "explanation": "Large updates may rewrite parts of documents and update indexes, costing CPU/IO."
+  },
+  {
+    "id": 186,
+    "category": "MongoDB",
+    "level": "medium",
+    "question": "Which is a common best practice for designing indexes for queries that filter + sort?",
+    "options": [
+      "Index only the sorted field always",
+      "Create a compound index matching filter fields then sort field",
+      "Avoid indexes entirely",
+      "Use text index for everything"
+    ],
+    "answerIndex": 1,
+    "explanation": "Compound indexes can satisfy both filter and sort efficiently."
+  },
+  {
+    "id": 187,
+    "category": "MongoDB",
+    "level": "medium",
+    "question": "Why can using too many $or conditions slow a MongoDB query?",
+    "options": [
+      "$or deletes indexes",
+      "It may require multiple index scans and merges",
+      "It forces sharding always",
+      "It disables projection"
+    ],
+    "answerIndex": 1,
+    "explanation": "$or can trigger multiple scans and combine results, increasing cost."
+  },
+  {
+    "id": 188,
+    "category": "Express.js",
+    "level": "medium",
+    "question": "Why is it useful to separate 'service layer' from controllers in Express apps?",
+    "options": [
+      "To store data in controllers",
+      "To reuse business logic and keep controllers thin",
+      "To remove models",
+      "To disable middleware"
+    ],
+    "answerIndex": 1,
+    "explanation": "Service layer improves reuse and testability of business logic."
+  },
+  {
+    "id": 189,
+    "category": "Express.js",
+    "level": "medium",
+    "question": "Which is a correct reason to use a global 404 handler after all routes?",
+    "options": [
+      "To catch unmatched routes and return 404 consistently",
+      "To make routes faster",
+      "To create MongoDB indexes",
+      "To disable errors"
+    ],
+    "answerIndex": 0,
+    "explanation": "A final 404 handler catches requests that didn't match any route."
+  },
+  {
+    "id": 190,
+    "category": "Express.js",
+    "level": "medium",
+    "question": "What is the main reason to sanitize output (like escaping) when rendering templates in Express?",
+    "options": [
+      "To enable CORS",
+      "To prevent XSS attacks",
+      "To speed up MongoDB",
+      "To fix routing"
+    ],
+    "answerIndex": 1,
+    "explanation": "Escaping prevents injected scripts from executing in the browser."
+  },
+  {
+    "id": 191,
+    "category": "Node.js",
+    "level": "medium",
+    "question": "Which is a common cause of 'EADDRINUSE' error when starting an Express server?",
+    "options": [
+      "MongoDB not running",
+      "Port already in use",
+      "JSON parse error",
+      "Missing index"
+    ],
+    "answerIndex": 1,
+    "explanation": "EADDRINUSE indicates the port is already occupied by another process."
+  },
+  {
+    "id": 192,
+    "category": "Node.js",
+    "level": "medium",
+    "question": "Why can using too many dependencies increase backend risk?",
+    "options": [
+      "It always makes app faster",
+      "More dependencies can increase security vulnerabilities and maintenance",
+      "It removes need for MongoDB",
+      "It reduces deployment size"
+    ],
+    "answerIndex": 1,
+    "explanation": "Each dependency can add vulnerabilities and update overhead."
+  },
+  {
+    "id": 193,
+    "category": "MongoDB",
+    "level": "medium",
+    "question": "What is the main reason to use schema-level validation in Mongoose even if MongoDB also supports validation?",
+    "options": [
+      "To avoid using MongoDB validation always",
+      "To validate at application layer and provide better error messages",
+      "To disable indexes",
+      "To speed up aggregation always"
+    ],
+    "answerIndex": 1,
+    "explanation": "Mongoose validation improves developer experience and keeps app consistent."
+  },
+  {
+    "id": 194,
+    "category": "MongoDB",
+    "level": "medium",
+    "question": "Which behavior is common when querying { field: null } in MongoDB?",
+    "options": [
+      "Matches only missing fields",
+      "Matches null and missing fields",
+      "Matches only non-null fields",
+      "Matches only arrays"
+    ],
+    "answerIndex": 1,
+    "explanation": "{ field: null } typically matches documents where field is null or does not exist."
+  },
+  {
+    "id": 195,
+    "category": "MongoDB",
+    "level": "medium",
+    "question": "How can you query only documents where a field exists AND is null?",
+    "options": [
+      "{ field: null }",
+      "{ field: { $eq: null, $exists: true } }",
+      "{ field: { $nullOnly: true } }",
+      "{ $existsNull: 'field' }"
+    ],
+    "answerIndex": 1,
+    "explanation": "Combine $exists: true with $eq: null to exclude missing fields."
+  },
+  {
+    "id": 196,
+    "category": "MongoDB",
+    "level": "medium",
+    "question": "Why is using $elemMatch helpful for arrays of objects?",
+    "options": [
+      "It deletes arrays",
+      "It ensures multiple conditions apply to the same array element",
+      "It always returns first element only",
+      "It disables indexes"
+    ],
+    "answerIndex": 1,
+    "explanation": "$elemMatch makes sure conditions target the same array element."
+  },
+  {
+    "id": 197,
+    "category": "MongoDB",
+    "level": "medium",
+    "question": "What is the main benefit of using $addToSet with $each together?",
+    "options": [
+      "To add duplicates faster",
+      "To add multiple unique items to an array in one update",
+      "To remove array elements",
+      "To rename fields"
+    ],
+    "answerIndex": 1,
+    "explanation": "$addToSet with $each adds multiple values while avoiding duplicates."
+  },
+  {
+    "id": 198,
+    "category": "Express.js",
+    "level": "medium",
+    "question": "Why is it recommended to return 429 status code sometimes?",
+    "options": [
+      "When DB is down",
+      "When rate limit is exceeded (too many requests)",
+      "When route not found",
+      "When user is forbidden"
+    ],
+    "answerIndex": 1,
+    "explanation": "429 Too Many Requests indicates rate limiting."
+  },
+  {
+    "id": 199,
+    "category": "Node.js",
+    "level": "medium",
+    "question": "Why might you choose to use a message queue (like Redis-based) with Node backend?",
+    "options": [
+      "To replace Express routing",
+      "To handle background jobs and retries reliably",
+      "To store CSS files",
+      "To create MongoDB indexes"
+    ],
+    "answerIndex": 1,
+    "explanation": "Queues help process tasks asynchronously with retry support."
+  },
+  {
+    "id": 200,
+    "category": "MongoDB",
+    "level": "medium",
+    "question": "Which is a common reason to avoid storing derived/calculated fields that can be computed on read?",
+    "options": [
+      "Because MongoDB can't store numbers",
+      "It can cause data inconsistency unless carefully updated",
+      "It always slows reads",
+      "It prevents indexing"
+    ],
+    "answerIndex": 1,
+    "explanation": "Derived fields can become stale and inconsistent if not updated everywhere."
+  },
+  {
+    "id": 201,
+    "category": "Node.js",
+    "level": "medium",
+    "question": "Why is using a single shared MongoDB connection better than connecting inside every request?",
+    "options": [
+      "It makes JSON parsing faster",
+      "It avoids repeated connection overhead and improves throughput",
+      "It disables indexes",
+      "It forces sharding"
+    ],
+    "answerIndex": 1,
+    "explanation": "Creating connections per request is expensive; reusing a pooled connection improves performance."
+  },
+  {
+    "id": 202,
+    "category": "Node.js",
+    "level": "medium",
+    "question": "What is the main benefit of using async iterators with streams in Node.js?",
+    "options": [
+      "They make streams synchronous",
+      "They allow consuming stream data with for-await-of",
+      "They remove backpressure",
+      "They disable errors"
+    ],
+    "answerIndex": 1,
+    "explanation": "Async iterators let you read stream chunks using for-await-of in a clean async style."
+  },
+  {
+    "id": 203,
+    "category": "Node.js",
+    "level": "medium",
+    "question": "Why can creating too many worker threads be harmful?",
+    "options": [
+      "Workers run in the same event loop",
+      "Thread overhead and CPU contention can reduce performance",
+      "It disables Express routers",
+      "It deletes MongoDB indexes"
+    ],
+    "answerIndex": 1,
+    "explanation": "Too many threads increase context switching and resource usage, hurting performance."
+  },
+  {
+    "id": 204,
+    "category": "Node.js",
+    "level": "medium",
+    "question": "What is a common reason to use a circuit breaker pattern in Node services calling external APIs?",
+    "options": [
+      "To compress responses",
+      "To prevent cascading failures when dependency is down",
+      "To create MongoDB schema",
+      "To enable CORS"
+    ],
+    "answerIndex": 1,
+    "explanation": "Circuit breakers stop repeated failing calls, allowing recovery and protecting the system."
+  },
+  {
+    "id": 205,
+    "category": "Node.js",
+    "level": "medium",
+    "question": "Why should you avoid storing request-specific data in global variables in an Express app?",
+    "options": [
+      "Because globals are faster",
+      "Because concurrent requests can overwrite each other",
+      "Because MongoDB can't read globals",
+      "Because it breaks JWT signing"
+    ],
+    "answerIndex": 1,
+    "explanation": "Globals are shared across requests; concurrent users can corrupt each other's data."
+  },
+  {
+    "id": 206,
+    "category": "Node.js",
+    "level": "medium",
+    "question": "What is the main advantage of using a reverse proxy (like Nginx) in front of a Node app?",
+    "options": [
+      "It replaces MongoDB",
+      "It can handle TLS, buffering, and serve static files efficiently",
+      "It removes need for routes",
+      "It forces clustering"
+    ],
+    "answerIndex": 1,
+    "explanation": "Reverse proxies can offload TLS, improve performance, and provide better network handling."
+  },
+  {
+    "id": 207,
+    "category": "Node.js",
+    "level": "medium",
+    "question": "Why is it recommended to handle 'SIGTERM' in Node applications?",
+    "options": [
+      "To speed up routing",
+      "To perform graceful shutdown and cleanup before exit",
+      "To create indexes",
+      "To enable cookies"
+    ],
+    "answerIndex": 1,
+    "explanation": "Handling SIGTERM lets you stop accepting requests and close resources cleanly."
+  },
+  {
+    "id": 208,
+    "category": "Node.js",
+    "level": "medium",
+    "question": "Which is a common benefit of using a Node HTTP Agent with keepAlive enabled for outgoing requests?",
+    "options": [
+      "It disables DNS",
+      "It reuses connections to reduce latency and overhead",
+      "It makes requests synchronous",
+      "It blocks event loop less"
+    ],
+    "answerIndex": 1,
+    "explanation": "Keep-alive reuses TCP connections, reducing handshake costs for repeated calls."
+  },
+  {
+    "id": 209,
+    "category": "Node.js",
+    "level": "medium",
+    "question": "What is the main risk of accepting untrusted JSON and directly using it in Object.assign on configs?",
+    "options": [
+      "It makes JSON invalid",
+      "Prototype pollution vulnerability",
+      "It speeds up MongoDB",
+      "It disables Express"
+    ],
+    "answerIndex": 1,
+    "explanation": "Merging untrusted objects can overwrite prototypes and cause security issues."
+  },
+  {
+    "id": 210,
+    "category": "Node.js",
+    "level": "medium",
+    "question": "Why do we prefer using 'await Promise.all(...)' for independent async tasks?",
+    "options": [
+      "It forces sequential execution",
+      "It runs them in parallel and reduces total time",
+      "It disables error handling",
+      "It blocks the event loop"
+    ],
+    "answerIndex": 1,
+    "explanation": "Promise.all runs independent async operations concurrently, reducing latency."
+  },
+  {
+    "id": 211,
+    "category": "Express.js",
+    "level": "medium",
+    "question": "What does 'next(err)' do in Express?",
+    "options": [
+      "Stops the server",
+      "Passes error to the error-handling middleware",
+      "Creates a new route",
+      "Restarts MongoDB"
+    ],
+    "answerIndex": 1,
+    "explanation": "Calling next(err) forwards the error to error middleware for centralized handling."
+  },
+  {
+    "id": 212,
+    "category": "Express.js",
+    "level": "medium",
+    "question": "Why is it important to place error middleware after all routes?",
+    "options": [
+      "So it runs first",
+      "So it can catch errors from any route/middleware above it",
+      "To speed up routing",
+      "To enable CORS"
+    ],
+    "answerIndex": 1,
+    "explanation": "Express processes middleware in order; error handler must come after routes."
+  },
+  {
+    "id": 213,
+    "category": "Express.js",
+    "level": "medium",
+    "question": "Which response status code is best for successful PUT that returns updated resource?",
+    "options": ["200", "201", "204", "304"],
+    "answerIndex": 0,
+    "explanation": "200 OK is common when returning the updated resource body."
+  },
+  {
+    "id": 214,
+    "category": "Express.js",
+    "level": "medium",
+    "question": "When is 304 Not Modified typically returned?",
+    "options": [
+      "When creating a resource",
+      "When cached content is still valid (conditional GET)",
+      "When user is forbidden",
+      "When DB is down"
+    ],
+    "answerIndex": 1,
+    "explanation": "304 is used with caching headers like If-None-Match / If-Modified-Since."
+  },
+  {
+    "id": 215,
+    "category": "Express.js",
+    "level": "medium",
+    "question": "Which is a correct way to handle unknown JSON body parsing errors in Express?",
+    "options": [
+      "Ignore the error",
+      "Use error middleware to catch body-parser errors and respond 400",
+      "Return 200 always",
+      "Restart MongoDB"
+    ],
+    "answerIndex": 1,
+    "explanation": "Invalid JSON should return a 400 response, often via centralized error handling."
+  },
+  {
+    "id": 216,
+    "category": "Express.js",
+    "level": "medium",
+    "question": "Why is using 'app.use(express.json())' before routes important?",
+    "options": [
+      "To create indexes",
+      "So req.body is available in route handlers",
+      "To enable HTTPS",
+      "To mount routers correctly"
+    ],
+    "answerIndex": 1,
+    "explanation": "Body parsing must happen before handlers that read req.body."
+  },
+  {
+    "id": 217,
+    "category": "Express.js",
+    "level": "medium",
+    "question": "What is the main reason to use a dedicated validation library (e.g., Joi/Zod) in Express APIs?",
+    "options": [
+      "To remove need for DB",
+      "To enforce consistent schemas and clear validation errors",
+      "To disable middleware",
+      "To speed up DNS"
+    ],
+    "answerIndex": 1,
+    "explanation": "Schema validation libraries make validation consistent and maintainable."
+  },
+  {
+    "id": 218,
+    "category": "Express.js",
+    "level": "medium",
+    "question": "Which is a common risk if you trust req.headers['x-forwarded-for'] without setting trust proxy properly?",
+    "options": [
+      "Better performance",
+      "IP spoofing and incorrect client IP detection",
+      "MongoDB duplicate keys",
+      "Route mismatch"
+    ],
+    "answerIndex": 1,
+    "explanation": "Without trust proxy, forwarded headers can be spoofed by clients."
+  },
+  {
+    "id": 219,
+    "category": "Express.js",
+    "level": "medium",
+    "question": "Why is returning 404 for a missing resource different from 403?",
+    "options": [
+      "They mean same thing",
+      "404 means not found; 403 means found but access denied",
+      "403 is for JSON only",
+      "404 is only for POST"
+    ],
+    "answerIndex": 1,
+    "explanation": "404 indicates resource doesn't exist; 403 indicates you can't access it."
+  },
+  {
+    "id": 220,
+    "category": "Express.js",
+    "level": "medium",
+    "question": "What is a common benefit of using compression middleware in Express for JSON APIs?",
+    "options": [
+      "It encrypts responses",
+      "It reduces response size and bandwidth usage",
+      "It speeds MongoDB inserts",
+      "It prevents CSRF"
+    ],
+    "answerIndex": 1,
+    "explanation": "Compression reduces payload size, often improving network performance."
+  },
+  {
+    "id": 221,
+    "category": "MongoDB",
+    "level": "medium",
+    "question": "Why can using $in with a very large array be slow?",
+    "options": [
+      "It creates new documents",
+      "It can increase query processing and memory usage",
+      "It disables indexes always",
+      "It forces $lookup"
+    ],
+    "answerIndex": 1,
+    "explanation": "Large $in arrays can be expensive to evaluate and may impact index usage."
+  },
+  {
+    "id": 222,
+    "category": "MongoDB",
+    "level": "medium",
+    "question": "What is the main reason to prefer projection when returning user documents?",
+    "options": [
+      "To include password hash always",
+      "To exclude sensitive fields and reduce payload",
+      "To disable indexes",
+      "To change ObjectId"
+    ],
+    "answerIndex": 1,
+    "explanation": "Projection helps avoid leaking sensitive fields and reduces bandwidth."
+  },
+  {
+    "id": 223,
+    "category": "MongoDB",
+    "level": "medium",
+    "question": "Which is a common reason to use 'select: false' for password fields in Mongoose?",
+    "options": [
+      "To make password required",
+      "To exclude it from query results by default",
+      "To encrypt it automatically",
+      "To index it for fast search"
+    ],
+    "answerIndex": 1,
+    "explanation": "select: false prevents password from being returned unless explicitly selected."
+  },
+  {
+    "id": 224,
+    "category": "MongoDB",
+    "level": "medium",
+    "question": "Why is 'lean()' often used for read-only endpoints in Mongoose?",
+    "options": [
+      "To auto-update documents",
+      "To return plain objects faster without Mongoose document overhead",
+      "To force populate",
+      "To enable transactions"
+    ],
+    "answerIndex": 1,
+    "explanation": "lean() avoids hydration, improving read performance when you don't need doc methods."
+  },
+  {
+    "id": 225,
+    "category": "MongoDB",
+    "level": "medium",
+    "question": "What is the purpose of a covered query in MongoDB?",
+    "options": [
+      "Query that uses only collection scan",
+      "Query satisfied entirely by an index without reading documents",
+      "Query that always uses $lookup",
+      "Query that encrypts results"
+    ],
+    "answerIndex": 1,
+    "explanation": "Covered queries can be faster because MongoDB reads only index entries."
+  },
+  {
+    "id": 226,
+    "category": "MongoDB",
+    "level": "medium",
+    "question": "Why can storing arrays with frequently changing order be costly?",
+    "options": [
+      "Arrays can't be updated",
+      "Reordering can cause document changes and index updates",
+      "It disables BSON",
+      "It breaks ObjectId"
+    ],
+    "answerIndex": 1,
+    "explanation": "Large array updates can trigger bigger document modifications and index maintenance."
+  },
+  {
+    "id": 227,
+    "category": "MongoDB",
+    "level": "medium",
+    "question": "What does 'db.collection.find().sort({ createdAt: -1 }).limit(10)' benefit from most?",
+    "options": [
+      "A text index",
+      "An index on createdAt (descending or usable order)",
+      "A TTL index",
+      "A hashed index"
+    ],
+    "answerIndex": 1,
+    "explanation": "An index on createdAt can speed both sorting and limiting top results."
+  },
+  {
+    "id": 228,
+    "category": "MongoDB",
+    "level": "medium",
+    "question": "Why is it recommended to store money values as integers (like paise/cents) sometimes?",
+    "options": [
+      "MongoDB can't store decimals",
+      "To avoid floating point rounding issues",
+      "To enable $lookup",
+      "To speed up CORS"
+    ],
+    "answerIndex": 1,
+    "explanation": "Integers avoid floating-point precision errors common with currency."
+  },
+  {
+    "id": 229,
+    "category": "MongoDB",
+    "level": "medium",
+    "question": "What is the main purpose of 'mongoose.populate()'?",
+    "options": [
+      "To compress responses",
+      "To replace ObjectId references with referenced documents",
+      "To create indexes",
+      "To validate JWT"
+    ],
+    "answerIndex": 1,
+    "explanation": "populate fetches referenced documents and attaches them to the result."
+  },
+  {
+    "id": 230,
+    "category": "MongoDB",
+    "level": "medium",
+    "question": "Which is a common performance improvement when using populate?",
+    "options": [
+      "Populate everything always",
+      "Select only needed fields and limit depth",
+      "Disable indexes",
+      "Use $where"
+    ],
+    "answerIndex": 1,
+    "explanation": "Limiting selected fields and population depth reduces queries and payload size."
+  },
+  {
+    "id": 231,
+    "category": "MongoDB",
+    "level": "medium",
+    "question": "Why can unique indexes still allow duplicates if you store email with different casing?",
+    "options": [
+      "Unique indexes are broken",
+      "Because 'Test@x.com' and 'test@x.com' are different strings without normalization/collation",
+      "Because MongoDB converts to lowercase automatically",
+      "Because _id changes"
+    ],
+    "answerIndex": 1,
+    "explanation": "Without normalization or case-insensitive collation, casing variants are treated as different values."
+  },
+  {
+    "id": 232,
+    "category": "MongoDB",
+    "level": "medium",
+    "question": "Which is a common approach to handle case-insensitive uniqueness for emails?",
+    "options": [
+      "Store email as-is only",
+      "Store a normalized lowercased email and index it uniquely",
+      "Use $where",
+      "Disable unique index"
+    ],
+    "answerIndex": 1,
+    "explanation": "Lowercasing a normalized field and indexing it uniquely prevents casing duplicates."
+  },
+  {
+    "id": 233,
+    "category": "MongoDB",
+    "level": "medium",
+    "question": "What is a common downside of using very large documents in MongoDB?",
+    "options": [
+      "They compress automatically",
+      "They increase network transfer and update cost; can hit size limits",
+      "They speed up queries always",
+      "They avoid indexing"
+    ],
+    "answerIndex": 1,
+    "explanation": "Large documents cost more to read/write and can approach MongoDB's document size limit."
+  },
+  {
+    "id": 234,
+    "category": "MongoDB",
+    "level": "medium",
+    "question": "Which aggregation stage is used to filter documents?",
+    "options": ["$filter", "$match", "$where", "$find"],
+    "answerIndex": 1,
+    "explanation": "$match filters documents in an aggregation pipeline."
+  },
+  {
+    "id": 235,
+    "category": "MongoDB",
+    "level": "medium",
+    "question": "What does $sort do in an aggregation pipeline?",
+    "options": [
+      "Joins collections",
+      "Sorts documents by specified fields",
+      "Deletes duplicates",
+      "Adds indexes"
+    ],
+    "answerIndex": 1,
+    "explanation": "$sort orders documents in the pipeline."
+  },
+  {
+    "id": 236,
+    "category": "MongoDB",
+    "level": "medium",
+    "question": "Which stage is used to limit output documents in aggregation?",
+    "options": ["$limit", "$cap", "$top", "$max"],
+    "answerIndex": 0,
+    "explanation": "$limit restricts number of documents passed forward."
+  },
+  {
+    "id": 237,
+    "category": "MongoDB",
+    "level": "medium",
+    "question": "Which stage is used to skip documents in aggregation (pagination)?",
+    "options": ["$skip", "$offset", "$jump", "$pass"],
+    "answerIndex": 0,
+    "explanation": "$skip ignores the first N documents."
+  },
+  {
+    "id": 238,
+    "category": "Express.js",
+    "level": "medium",
+    "question": "Why is it better to keep controllers free of database-specific error codes?",
+    "options": [
+      "To make code longer",
+      "To map DB errors to domain/API errors in one place (service/error layer)",
+      "To disable logging",
+      "To avoid using middleware"
+    ],
+    "answerIndex": 1,
+    "explanation": "Central mapping keeps controllers clean and ensures consistent API responses."
+  },
+  {
+    "id": 239,
+    "category": "Express.js",
+    "level": "medium",
+    "question": "What is the main purpose of using a validation + sanitize middleware before hitting MongoDB?",
+    "options": [
+      "To create indexes",
+      "To prevent invalid data and reduce injection risks",
+      "To speed up TLS",
+      "To enable HTTP/2"
+    ],
+    "answerIndex": 1,
+    "explanation": "Validation and sanitization improve correctness and security before DB queries."
+  },
+  {
+    "id": 240,
+    "category": "Express.js",
+    "level": "medium",
+    "question": "Which is a good reason to implement API rate limits per IP or per user?",
+    "options": [
+      "To increase DB size",
+      "To mitigate abuse and protect server resources",
+      "To disable caching",
+      "To make routes slower"
+    ],
+    "answerIndex": 1,
+    "explanation": "Rate limits protect endpoints from abuse and spikes."
+  },
+  {
+    "id": 241,
+    "category": "Express.js",
+    "level": "medium",
+    "question": "Which header is commonly used to send JWT token in API requests (typical pattern)?",
+    "options": [
+      "Authorization: Bearer <token>",
+      "Cookie: jwt=<token> always",
+      "X-Token in URL",
+      "Accept-Token header only"
+    ],
+    "answerIndex": 0,
+    "explanation": "The common pattern is Authorization header with Bearer token."
+  },
+  {
+    "id": 242,
+    "category": "Express.js",
+    "level": "medium",
+    "question": "What is the main benefit of using HttpOnly cookies for tokens?",
+    "options": [
+      "They are readable by JavaScript",
+      "They reduce XSS token theft risk because JS can't read them",
+      "They disable CSRF risk completely",
+      "They speed up MongoDB"
+    ],
+    "answerIndex": 1,
+    "explanation": "HttpOnly cookies can't be read by JS, reducing XSS theft risk."
+  },
+  {
+    "id": 243,
+    "category": "Express.js",
+    "level": "medium",
+    "question": "Why do HttpOnly cookies still require CSRF protection in many cases?",
+    "options": [
+      "Because cookies are not sent automatically",
+      "Because browsers send cookies automatically on cross-site requests",
+      "Because MongoDB requires it",
+      "Because Express blocks cookies"
+    ],
+    "answerIndex": 1,
+    "explanation": "Cookies can be sent automatically, so CSRF protections are still needed."
+  },
+  {
+    "id": 244,
+    "category": "Node.js",
+    "level": "medium",
+    "question": "Why should you avoid using Math.random() for security tokens?",
+    "options": [
+      "It is too slow",
+      "It is not cryptographically secure",
+      "It breaks Express",
+      "It creates MongoDB duplicates"
+    ],
+    "answerIndex": 1,
+    "explanation": "Math.random() is predictable; use crypto.randomBytes for secure tokens."
+  },
+  {
+    "id": 245,
+    "category": "Node.js",
+    "level": "medium",
+    "question": "Which Node.js API is appropriate for generating secure random tokens?",
+    "options": [
+      "crypto.randomBytes()",
+      "Date.now()",
+      "Math.random()",
+      "Buffer.allocUnsafe()"
+    ],
+    "answerIndex": 0,
+    "explanation": "crypto.randomBytes() provides cryptographically secure random bytes."
+  },
+  {
+    "id": 246,
+    "category": "Node.js",
+    "level": "medium",
+    "question": "What is a common reason to use a health check endpoint in Node/Express apps?",
+    "options": [
+      "To create indexes",
+      "To help load balancers/monitors verify service is alive",
+      "To validate user passwords",
+      "To enable CORS"
+    ],
+    "answerIndex": 1,
+    "explanation": "Health checks help monitoring and orchestration systems manage the service."
+  },
+  {
+    "id": 247,
+    "category": "Node.js",
+    "level": "medium",
+    "question": "Why is it useful to set 'maxListeners' or watch for EventEmitter memory leak warnings?",
+    "options": [
+      "To speed up MongoDB",
+      "To detect too many listeners that may indicate memory leaks",
+      "To disable Express routers",
+      "To enable HTTPS"
+    ],
+    "answerIndex": 1,
+    "explanation": "Many listeners can signal leaks; Node warns when listener count is high."
+  },
+  {
+    "id": 248,
+    "category": "Node.js",
+    "level": "medium",
+    "question": "What is a common reason to use 'once' listeners instead of 'on' sometimes?",
+    "options": [
+      "To run forever",
+      "To auto-remove listener after one event, reducing leak risk",
+      "To disable events",
+      "To create indexes"
+    ],
+    "answerIndex": 1,
+    "explanation": "once() auto-cleans listener after first call, reducing memory accumulation."
+  },
+  {
+    "id": 249,
+    "category": "MongoDB",
+    "level": "medium",
+    "question": "Why is it important to limit fields returned from a users collection in APIs?",
+    "options": [
+      "To increase response size",
+      "To avoid leaking sensitive info like password hashes/tokens",
+      "To disable indexes",
+      "To force aggregation"
+    ],
+    "answerIndex": 1,
+    "explanation": "Returning only safe fields reduces the chance of exposing sensitive data."
+  },
+  {
+    "id": 250,
+    "category": "MongoDB",
+    "level": "medium",
+    "question": "Which is a common technique to hide sensitive fields in Mongoose output globally?",
+    "options": [
+      "Disable JSON output",
+      "Use schema toJSON/toObject transform to remove fields",
+      "Use $where",
+      "Store secrets in plain text"
+    ],
+    "answerIndex": 1,
+    "explanation": "Transforms can remove fields like password and __v before sending responses."
+  },
+  {
+    "id": 251,
+    "category": "MongoDB",
+    "level": "medium",
+    "question": "What is the benefit of using an index on a boolean field combined with another field (compound)?",
+    "options": [
+      "Boolean indexes are useless always",
+      "Compound index can help queries like { active: true, createdAt: -1 }",
+      "It disables sorting",
+      "It forces transactions"
+    ],
+    "answerIndex": 1,
+    "explanation": "Combining fields in an index can support common filter+sort patterns."
+  },
+  {
+    "id": 252,
+    "category": "MongoDB",
+    "level": "medium",
+    "question": "Why can indexing a low-cardinality field alone (like active: true/false) be less useful?",
+    "options": [
+      "Because MongoDB forbids it",
+      "It may not reduce search enough due to many matches",
+      "Because it breaks aggregation",
+      "Because it deletes documents"
+    ],
+    "answerIndex": 1,
+    "explanation": "Low-cardinality indexes may not be selective; compound indexes are often better."
+  },
+  {
+    "id": 253,
+    "category": "MongoDB",
+    "level": "medium",
+    "question": "What does a 'multikey' index mean in MongoDB?",
+    "options": [
+      "Index across multiple collections",
+      "An index on an array field that indexes each element",
+      "An index that expires",
+      "An index for text search only"
+    ],
+    "answerIndex": 1,
+    "explanation": "MongoDB creates multikey indexes when indexing array fields."
+  },
+  {
+    "id": 254,
+    "category": "MongoDB",
+    "level": "medium",
+    "question": "Why might a multikey index behave differently with sorting?",
+    "options": [
+      "It disables sort always",
+      "Array indexing can limit which sorts can be covered efficiently",
+      "It forces disk use always",
+      "It removes _id"
+    ],
+    "answerIndex": 1,
+    "explanation": "Multikey indexes have restrictions that can affect sort optimization."
+  },
+  {
+    "id": 255,
+    "category": "MongoDB",
+    "level": "medium",
+    "question": "What is the main purpose of $expr in MongoDB queries/aggregation?",
+    "options": [
+      "Encrypt fields",
+      "Use aggregation expressions in match queries",
+      "Create indexes",
+      "Drop collections"
+    ],
+    "answerIndex": 1,
+    "explanation": "$expr allows using expressions like comparisons between fields in a $match."
+  },
+  {
+    "id": 256,
+    "category": "MongoDB",
+    "level": "medium",
+    "question": "Why can using $expr sometimes reduce index usage?",
+    "options": [
+      "It always uses indexes",
+      "Some expressions make it harder to use standard indexes",
+      "It deletes indexes",
+      "It requires transactions"
+    ],
+    "answerIndex": 1,
+    "explanation": "Complex expressions may prevent efficient index scans depending on the query."
+  },
+  {
+    "id": 257,
+    "category": "MongoDB",
+    "level": "medium",
+    "question": "What is the main difference between $push and $addToSet?",
+    "options": [
+      "Both avoid duplicates",
+      "$push allows duplicates; $addToSet avoids duplicates",
+      "$addToSet removes values",
+      "$push only works on numbers"
+    ],
+    "answerIndex": 1,
+    "explanation": "$push appends values; $addToSet appends only if value isn't present."
+  },
+  {
+    "id": 258,
+    "category": "Express.js",
+    "level": "medium",
+    "question": "Why is using parameterized queries not exactly the same in MongoDB compared to SQL?",
+    "options": [
+      "MongoDB can't be injected",
+      "MongoDB uses structured objects; risks come from operator injection and unsanitized objects",
+      "MongoDB uses only strings",
+      "MongoDB requires SQL syntax"
+    ],
+    "answerIndex": 1,
+    "explanation": "MongoDB injection often happens via operators ($gt, $ne) in untrusted objects, not SQL strings."
+  },
+  {
+    "id": 259,
+    "category": "Express.js",
+    "level": "medium",
+    "question": "What is a common best practice for storing refresh tokens (if used) in MongoDB?",
+    "options": [
+      "Store in plain text and log them",
+      "Store hashed tokens and rotate/revoke them",
+      "Store in query params",
+      "Store in localStorage on server"
+    ],
+    "answerIndex": 1,
+    "explanation": "Hashing and rotation reduce risk if DB leaks and allow revocation."
+  },
+  {
+    "id": 260,
+    "category": "Express.js",
+    "level": "medium",
+    "question": "Why is it risky to use req.body directly to create a MongoDB document (Model.create(req.body))?",
+    "options": [
+      "It is always safe",
+      "It can allow mass assignment of fields you didn't intend",
+      "It disables validation",
+      "It forces indexing"
+    ],
+    "answerIndex": 1,
+    "explanation": "Users might send extra fields (like role: 'admin'); whitelist allowed fields."
+  },
+  {
+    "id": 261,
+    "category": "Express.js",
+    "level": "medium",
+    "question": "What is 'mass assignment' in REST APIs?",
+    "options": [
+      "Assigning many routes at once",
+      "Allowing client to set protected fields by sending extra JSON fields",
+      "Assigning random ports",
+      "Bulk indexing collections"
+    ],
+    "answerIndex": 1,
+    "explanation": "Mass assignment happens when you blindly map user input to database fields."
+  },
+  {
+    "id": 262,
+    "category": "Node.js",
+    "level": "medium",
+    "question": "Why can an unbounded in-memory cache be dangerous in a Node server?",
+    "options": [
+      "It makes cache faster",
+      "It can grow until out-of-memory and crash the process",
+      "It creates indexes",
+      "It disables TLS"
+    ],
+    "answerIndex": 1,
+    "explanation": "Without eviction/limits, cache can grow indefinitely and exhaust memory."
+  },
+  {
+    "id": 263,
+    "category": "Node.js",
+    "level": "medium",
+    "question": "What is one benefit of using a TTL for cached items?",
+    "options": [
+      "It stores items forever",
+      "It automatically expires stale entries",
+      "It disables caching",
+      "It makes MongoDB slower"
+    ],
+    "answerIndex": 1,
+    "explanation": "TTL ensures cached data doesn't stay outdated and memory doesn't grow forever."
+  },
+  {
+    "id": 264,
+    "category": "Node.js",
+    "level": "medium",
+    "question": "Why can 'await' inside a for-loop be slower than using Promise.all for independent tasks?",
+    "options": [
+      "await is not supported",
+      "It runs tasks sequentially instead of concurrently",
+      "Promise.all is synchronous",
+      "It breaks Express"
+    ],
+    "answerIndex": 1,
+    "explanation": "Await inside loop waits each task before starting the next; Promise.all runs them concurrently."
+  },
+  {
+    "id": 265,
+    "category": "Node.js",
+    "level": "medium",
+    "question": "Why is it important to validate and limit file upload sizes in Express apps?",
+    "options": [
+      "To enable cookies",
+      "To prevent memory/disk abuse and DoS",
+      "To create indexes",
+      "To reduce routing conflicts"
+    ],
+    "answerIndex": 1,
+    "explanation": "Large uploads can exhaust resources; size limits protect the server."
+  },
+  {
+    "id": 266,
+    "category": "Express.js",
+    "level": "medium",
+    "question": "What is a typical reason to use 'express.static'?",
+    "options": [
+      "To run MongoDB transactions",
+      "To serve static files like images/CSS/JS",
+      "To validate ObjectId",
+      "To parse JSON bodies"
+    ],
+    "answerIndex": 1,
+    "explanation": "express.static serves files directly from a directory."
+  },
+  {
+    "id": 267,
+    "category": "Express.js",
+    "level": "medium",
+    "question": "Why is it better to serve static files via CDN or reverse proxy in production?",
+    "options": [
+      "It blocks HTTPS",
+      "It reduces load on Node process and improves caching",
+      "It disables compression",
+      "It creates duplicate routes"
+    ],
+    "answerIndex": 1,
+    "explanation": "CDNs/proxies cache and serve static assets efficiently, reducing backend load."
+  },
+  {
+    "id": 268,
+    "category": "Express.js",
+    "level": "medium",
+    "question": "What is a common use of 'morgan' in Express?",
+    "options": [
+      "Schema validation",
+      "HTTP request logging",
+      "MongoDB indexing",
+      "JWT signing"
+    ],
+    "answerIndex": 1,
+    "explanation": "morgan is used to log HTTP requests."
+  },
+  {
+    "id": 269,
+    "category": "Express.js",
+    "level": "medium",
+    "question": "Why is correlation ID useful in microservices architecture with Express?",
+    "options": [
+      "To enable cookies",
+      "To trace a request across multiple services/logs",
+      "To create indexes",
+      "To store passwords"
+    ],
+    "answerIndex": 1,
+    "explanation": "Correlation IDs allow tracking one request end-to-end."
+  },
+  {
+    "id": 270,
+    "category": "MongoDB",
+    "level": "medium",
+    "question": "Why can using 'select *' style (return all fields) be harmful in MongoDB APIs?",
+    "options": [
+      "It increases security",
+      "It can leak sensitive data and increase payload size",
+      "It speeds up queries",
+      "It improves caching always"
+    ],
+    "answerIndex": 1,
+    "explanation": "Returning all fields can expose secrets and waste bandwidth."
+  },
+  {
+    "id": 271,
+    "category": "MongoDB",
+    "level": "medium",
+    "question": "What is the main purpose of collation in MongoDB?",
+    "options": [
+      "Encrypt data",
+      "Control string comparison rules like case/locale",
+      "Create worker threads",
+      "Serve static files"
+    ],
+    "answerIndex": 1,
+    "explanation": "Collation defines language-specific string comparison and case sensitivity."
+  },
+  {
+    "id": 272,
+    "category": "MongoDB",
+    "level": "medium",
+    "question": "Why can an index not be used if query collation doesn't match index collation?",
+    "options": [
+      "Because MongoDB is broken",
+      "Because string comparison rules differ, so index can't guarantee correct order/match",
+      "Because _id changes",
+      "Because $lookup fails"
+    ],
+    "answerIndex": 1,
+    "explanation": "Indexes are built with specific collation; mismatched collation may prevent usage."
+  },
+  {
+    "id": 273,
+    "category": "MongoDB",
+    "level": "medium",
+    "question": "What does 'hydration' mean in Mongoose context?",
+    "options": [
+      "Adding watermarks",
+      "Converting raw MongoDB results into Mongoose document instances",
+      "Creating indexes",
+      "Encrypting fields"
+    ],
+    "answerIndex": 1,
+    "explanation": "Mongoose wraps raw docs into model instances with getters/methods (hydration)."
+  },
+  {
+    "id": 274,
+    "category": "MongoDB",
+    "level": "medium",
+    "question": "Why can lean() reduce memory usage in Mongoose-heavy endpoints?",
+    "options": [
+      "It stores more documents",
+      "It avoids creating Mongoose document objects for each result",
+      "It disables indexes",
+      "It enables disk use"
+    ],
+    "answerIndex": 1,
+    "explanation": "Returning plain objects avoids extra overhead per document."
+  },
+  {
+    "id": 275,
+    "category": "MongoDB",
+    "level": "medium",
+    "question": "What is a common technique to implement soft delete in MongoDB?",
+    "options": [
+      "Drop the collection",
+      "Add a field like deletedAt/isDeleted and filter it in queries",
+      "Use $where",
+      "Use hashed indexes"
+    ],
+    "answerIndex": 1,
+    "explanation": "Soft delete marks docs as deleted without physically removing them."
+  },
+  {
+    "id": 276,
+    "category": "MongoDB",
+    "level": "medium",
+    "question": "What is a downside of soft delete if not handled carefully?",
+    "options": [
+      "It speeds up queries always",
+      "Queries may return deleted data unless filtered consistently",
+      "It prevents indexing",
+      "It disables updates"
+    ],
+    "answerIndex": 1,
+    "explanation": "If you forget filters, deleted records may appear in results."
+  },
+  {
+    "id": 277,
+    "category": "MongoDB",
+    "level": "medium",
+    "question": "Why can 'findOneAndUpdate' be preferred over 'find + save' in some cases?",
+    "options": [
+      "It runs two queries always",
+      "It can update atomically in one operation",
+      "It disables validation",
+      "It removes indexes"
+    ],
+    "answerIndex": 1,
+    "explanation": "A single atomic update reduces race conditions compared to separate read-then-write."
+  },
+  {
+    "id": 278,
+    "category": "MongoDB",
+    "level": "medium",
+    "question": "Which MongoDB operator can increment a numeric field atomically?",
+    "options": ["$inc", "$plus", "$add", "$sumField"],
+    "answerIndex": 0,
+    "explanation": "$inc increments a number field atomically."
+  },
+  {
+    "id": 279,
+    "category": "MongoDB",
+    "level": "medium",
+    "question": "Which MongoDB operator can update nested fields without replacing the full object?",
+    "options": [
+      "Dot notation with $set",
+      "$replaceNested",
+      "$renameAll",
+      "$nestedUpdate"
+    ],
+    "answerIndex": 0,
+    "explanation": "Using $set with dot notation updates nested fields directly."
+  },
+  {
+    "id": 280,
+    "category": "MongoDB",
+    "level": "medium",
+    "question": "Why should you be careful when using updateMany with $set on nested fields?",
+    "options": [
+      "It only updates one doc",
+      "It can modify many documents and cause widespread changes if filter is too broad",
+      "It deletes indexes",
+      "It forces aggregation"
+    ],
+    "answerIndex": 1,
+    "explanation": "Broad filters can update too many docs; always double-check filters."
+  },
+  {
+    "id": 281,
+    "category": "Express.js",
+    "level": "medium",
+    "question": "Why is it a good idea to validate query params (like page, limit) in pagination endpoints?",
+    "options": [
+      "To increase payload size",
+      "To prevent abuse and invalid values causing slow queries",
+      "To disable caching",
+      "To create indexes"
+    ],
+    "answerIndex": 1,
+    "explanation": "Valid limits prevent heavy queries and improve reliability."
+  },
+  {
+    "id": 282,
+    "category": "Express.js",
+    "level": "medium",
+    "question": "Which is a common best practice for returning paginated API results?",
+    "options": [
+      "Return only data array",
+      "Return data + meta like page, limit, totalCount",
+      "Return HTML only",
+      "Return 404 if page is empty"
+    ],
+    "answerIndex": 1,
+    "explanation": "Pagination metadata helps clients render paging UI and know total counts."
+  },
+  {
+    "id": 283,
+    "category": "Express.js",
+    "level": "medium",
+    "question": "Why might you choose to return 202 Accepted for some endpoints?",
+    "options": [
+      "When request is rejected",
+      "When processing happens asynchronously in background",
+      "When resource not found",
+      "When user is forbidden"
+    ],
+    "answerIndex": 1,
+    "explanation": "202 indicates the request is accepted but processing is not completed yet."
+  },
+  {
+    "id": 284,
+    "category": "Node.js",
+    "level": "medium",
+    "question": "What is the main benefit of using a job queue for image/video processing in Node apps?",
+    "options": [
+      "To block event loop",
+      "To process heavy tasks asynchronously with retries",
+      "To remove MongoDB",
+      "To disable HTTP"
+    ],
+    "answerIndex": 1,
+    "explanation": "Queues offload heavy work and allow retries and scaling."
+  },
+  {
+    "id": 285,
+    "category": "Node.js",
+    "level": "medium",
+    "question": "Why is it useful to set 'NODE_ENV=production' in production deployments?",
+    "options": [
+      "To enable debug logs",
+      "To enable production optimizations and disable dev-only behavior",
+      "To disable MongoDB",
+      "To force CORS"
+    ],
+    "answerIndex": 1,
+    "explanation": "Many libraries change behavior based on NODE_ENV for performance/security."
+  },
+  {
+    "id": 286,
+    "category": "Node.js",
+    "level": "medium",
+    "question": "What is a common reason to use 'dotenv' only in development?",
+    "options": [
+      "dotenv breaks production",
+      "Production often uses real environment variables from server/platform",
+      "dotenv is required for MongoDB",
+      "dotenv creates indexes"
+    ],
+    "answerIndex": 1,
+    "explanation": "In production, secrets are typically injected via environment, not .env files."
+  },
+  {
+    "id": 287,
+    "category": "Node.js",
+    "level": "medium",
+    "question": "Why is it important to avoid logging full request bodies for auth endpoints?",
+    "options": [
+      "It improves security",
+      "It can leak passwords/tokens into logs",
+      "It reduces errors",
+      "It enables caching"
+    ],
+    "answerIndex": 1,
+    "explanation": "Logs may expose credentials; avoid logging sensitive data."
+  },
+  {
+    "id": 288,
+    "category": "Node.js",
+    "level": "medium",
+    "question": "What is the main advantage of using 'async' DNS resolution or caching DNS in high-traffic apps?",
+    "options": [
+      "To disable HTTP/2",
+      "To reduce repeated DNS lookups and latency",
+      "To create indexes",
+      "To replace Express"
+    ],
+    "answerIndex": 1,
+    "explanation": "Reducing DNS overhead can improve performance for frequent outbound calls."
+  },
+  {
+    "id": 289,
+    "category": "MongoDB",
+    "level": "medium",
+    "question": "Why is it important to avoid using regex for search when text index fits the use case?",
+    "options": [
+      "Regex is always faster",
+      "Text index can be more efficient and featureful for search",
+      "Text index disables $match",
+      "Regex is required for MongoDB"
+    ],
+    "answerIndex": 1,
+    "explanation": "Text indexes are built for search, while regex may cause scans."
+  },
+  {
+    "id": 290,
+    "category": "MongoDB",
+    "level": "medium",
+    "question": "Which is a common issue when using $text search with sorting by relevance?",
+    "options": [
+      "It can't return results",
+      "You need to use textScore metadata to sort by relevance",
+      "It deletes documents",
+      "It forces sharding"
+    ],
+    "answerIndex": 1,
+    "explanation": "Text search relevance requires using {$meta:'textScore'} to sort by score."
+  },
+  {
+    "id": 291,
+    "category": "MongoDB",
+    "level": "medium",
+    "question": "What is the purpose of $meta: 'textScore' in MongoDB?",
+    "options": [
+      "Encrypt results",
+      "Expose text search relevance score",
+      "Create indexes",
+      "Skip documents"
+    ],
+    "answerIndex": 1,
+    "explanation": "$meta:'textScore' returns relevance score for $text queries."
+  },
+  {
+    "id": 292,
+    "category": "MongoDB",
+    "level": "medium",
+    "question": "Why is it important to index fields used in $lookup pipelines when using pipeline form of $lookup?",
+    "options": [
+      "To disable sorting",
+      "To reduce scanning inside lookup pipeline",
+      "To enable CORS",
+      "To create JWT tokens"
+    ],
+    "answerIndex": 1,
+    "explanation": "Indexes on lookup match fields improve performance inside joined pipeline."
+  },
+  {
+    "id": 293,
+    "category": "Express.js",
+    "level": "medium",
+    "question": "Why is it recommended to return 400 when ObjectId format is invalid rather than 500?",
+    "options": [
+      "500 is better always",
+      "Invalid id is client error; 400 is appropriate",
+      "Because Express requires it",
+      "Because MongoDB returns 200"
+    ],
+    "answerIndex": 1,
+    "explanation": "Invalid input is a client-side issue; server shouldn't report internal error."
+  },
+  {
+    "id": 294,
+    "category": "Express.js",
+    "level": "medium",
+    "question": "What is the benefit of using an API gateway in front of multiple Node services?",
+    "options": [
+      "To replace MongoDB",
+      "Centralize auth, routing, and rate limiting",
+      "To disable HTTPS",
+      "To force monolith"
+    ],
+    "answerIndex": 1,
+    "explanation": "API gateways provide a single entry point and shared concerns handling."
+  },
+  {
+    "id": 295,
+    "category": "Express.js",
+    "level": "medium",
+    "question": "Which is a common best practice to avoid exposing stack traces in production error responses?",
+    "options": [
+      "Always include stack trace",
+      "Send generic message to client and log stack internally",
+      "Disable error handling",
+      "Return 200 on errors"
+    ],
+    "answerIndex": 1,
+    "explanation": "Stack traces leak internals; keep them in logs only."
+  },
+  {
+    "id": 296,
+    "category": "MongoDB",
+    "level": "medium",
+    "question": "Why can using 'select: false' still allow password to be fetched sometimes?",
+    "options": [
+      "It can never be fetched",
+      "If you explicitly .select('+password') in query, it will be included",
+      "Because MongoDB ignores it",
+      "Because indexes force it"
+    ],
+    "answerIndex": 1,
+    "explanation": "Mongoose allows overriding select false by explicitly selecting the field."
+  },
+  {
+    "id": 297,
+    "category": "MongoDB",
+    "level": "medium",
+    "question": "What is a common reason to use 'strictQuery' in Mongoose (concept)?",
+    "options": [
+      "To allow any query keys",
+      "To control unknown query filters and reduce unexpected queries",
+      "To disable validation",
+      "To create TTL indexes"
+    ],
+    "answerIndex": 1,
+    "explanation": "Strict query helps handle unknown filter keys and improves query safety."
+  },
+  {
+    "id": 298,
+    "category": "Node.js",
+    "level": "medium",
+    "question": "Why is it useful to add a shutdown timeout during graceful shutdown?",
+    "options": [
+      "To keep server running forever",
+      "To force exit if connections never finish, preventing stuck deployments",
+      "To disable HTTP keep-alive",
+      "To create indexes"
+    ],
+    "answerIndex": 1,
+    "explanation": "A max shutdown time prevents the process from hanging indefinitely."
+  },
+  {
+    "id": 299,
+    "category": "Node.js",
+    "level": "medium",
+    "question": "What is a common reason to use structured validation errors in APIs?",
+    "options": [
+      "To hide errors completely",
+      "To let frontend show field-level errors easily",
+      "To make MongoDB slower",
+      "To disable CORS"
+    ],
+    "answerIndex": 1,
+    "explanation": "Structured errors (field, message) help clients map messages to inputs."
+  },
+  {
+    "id": 300,
+    "category": "MongoDB",
+    "level": "medium",
+    "question": "Why should you be careful when using 'deleteMany' in production scripts?",
+    "options": [
+      "It only deletes one document",
+      "A wrong filter can delete large amounts of data",
+      "It creates indexes",
+      "It disables aggregation"
+    ],
+    "answerIndex": 1,
+    "explanation": "deleteMany can remove many documents; always verify filters and backups."
+  }
+]

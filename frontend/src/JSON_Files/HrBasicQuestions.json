@@ -1,0 +1,4120 @@
+[
+  {
+    "id": 1,
+    "category": "HR",
+    "level": "basic",
+    "question": "Tell me about yourself.",
+    "options": [
+      "Give a short job-focused summary",
+      "Tell full life story",
+      "Talk only hobbies",
+      "Say nothing"
+    ],
+    "answerIndex": 0,
+    "explanation": "Keep it brief and relevant: present, skills, goal."
+  },
+  {
+    "id": 2,
+    "category": "HR",
+    "level": "basic",
+    "question": "Why are you looking for a job change?",
+    "options": [
+      "Growth and learning",
+      "To escape work",
+      "Because friends said",
+      "No reason"
+    ],
+    "answerIndex": 0,
+    "explanation": "Focus on growth, skills, better role fit."
+  },
+  {
+    "id": 3,
+    "category": "HR",
+    "level": "basic",
+    "question": "Why should we hire you?",
+    "options": [
+      "Match skills to role needs",
+      "Because I need job",
+      "Because I am lucky",
+      "Because you called"
+    ],
+    "answerIndex": 0,
+    "explanation": "Show value + fit + attitude."
+  },
+  {
+    "id": 4,
+    "category": "HR",
+    "level": "basic",
+    "question": "What are your strengths?",
+    "options": [
+      "2-3 strengths with examples",
+      "Many strengths no proof",
+      "I have none",
+      "I am perfect"
+    ],
+    "answerIndex": 0,
+    "explanation": "Specific strengths with proof."
+  },
+  {
+    "id": 5,
+    "category": "HR",
+    "level": "basic",
+    "question": "What is your weakness?",
+    "options": [
+      "Real weakness + improvement",
+      "I have no weakness",
+      "I am too perfect",
+      "Blame others"
+    ],
+    "answerIndex": 0,
+    "explanation": "Be honest and show progress."
+  },
+  {
+    "id": 6,
+    "category": "HR",
+    "level": "basic",
+    "question": "What do you know about our company?",
+    "options": [
+      "Basic research + role match",
+      "Nothing",
+      "Only salary info",
+      "Guess randomly"
+    ],
+    "answerIndex": 0,
+    "explanation": "Show you researched and care."
+  },
+  {
+    "id": 7,
+    "category": "HR",
+    "level": "basic",
+    "question": "Why do you want this role?",
+    "options": [
+      "Skills + interest match",
+      "Just for money",
+      "No idea",
+      "Because easy"
+    ],
+    "answerIndex": 0,
+    "explanation": "Connect role to your skills and goals."
+  },
+  {
+    "id": 8,
+    "category": "HR",
+    "level": "basic",
+    "question": "What are your short-term goals?",
+    "options": [
+      "Learn and perform well in role",
+      "Become CEO soon",
+      "No goals",
+      "Quit soon"
+    ],
+    "answerIndex": 0,
+    "explanation": "Keep realistic and role-aligned."
+  },
+  {
+    "id": 9,
+    "category": "HR",
+    "level": "basic",
+    "question": "What are your long-term goals?",
+    "options": [
+      "Grow to higher responsibility",
+      "Get rich fast",
+      "No plan",
+      "Change field randomly"
+    ],
+    "answerIndex": 0,
+    "explanation": "Show steady growth path."
+  },
+  {
+    "id": 10,
+    "category": "HR",
+    "level": "basic",
+    "question": "Are you comfortable working in a team?",
+    "options": [
+      "Yes, I collaborate and communicate",
+      "No, I hate teams",
+      "Only alone",
+      "Not sure"
+    ],
+    "answerIndex": 0,
+    "explanation": "Teamwork is key for most roles."
+  },
+
+  {
+    "id": 11,
+    "category": "HR",
+    "level": "basic",
+    "question": "Are you comfortable working independently?",
+    "options": [
+      "Yes, I can own tasks",
+      "No, I need help always",
+      "Never",
+      "Not sure"
+    ],
+    "answerIndex": 0,
+    "explanation": "Shows responsibility and ownership."
+  },
+  {
+    "id": 12,
+    "category": "HR",
+    "level": "basic",
+    "question": "How do you handle pressure?",
+    "options": [
+      "Plan, prioritize, communicate",
+      "Panic always",
+      "Avoid work",
+      "Blame deadlines"
+    ],
+    "answerIndex": 0,
+    "explanation": "Method matters."
+  },
+  {
+    "id": 13,
+    "category": "HR",
+    "level": "basic",
+    "question": "How do you manage your time?",
+    "options": [
+      "Priorities + checklist + deadlines",
+      "No plan",
+      "Do random tasks",
+      "Only multitask"
+    ],
+    "answerIndex": 0,
+    "explanation": "Simple system works."
+  },
+  {
+    "id": 14,
+    "category": "HR",
+    "level": "basic",
+    "question": "What motivates you?",
+    "options": [
+      "Learning, impact, growth",
+      "Only money",
+      "Only praise",
+      "Nothing"
+    ],
+    "answerIndex": 0,
+    "explanation": "Motivation linked to work is best."
+  },
+  {
+    "id": 15,
+    "category": "HR",
+    "level": "basic",
+    "question": "What is your expected salary?",
+    "options": [
+      "Give range based on market + skills",
+      "Say very high random",
+      "Say very low",
+      "Say nothing"
+    ],
+    "answerIndex": 0,
+    "explanation": "Give a reasonable range."
+  },
+  {
+    "id": 16,
+    "category": "HR",
+    "level": "basic",
+    "question": "Are you open to relocation?",
+    "options": [
+      "Yes/No with clear condition",
+      "Avoid answer",
+      "Lie always",
+      "Get angry"
+    ],
+    "answerIndex": 0,
+    "explanation": "Be honest and clear."
+  },
+  {
+    "id": 17,
+    "category": "HR",
+    "level": "basic",
+    "question": "Are you open to working shifts?",
+    "options": [
+      "Answer clearly + conditions",
+      "Say yes then refuse later",
+      "Say no rudely",
+      "Ignore"
+    ],
+    "answerIndex": 0,
+    "explanation": "Clarity avoids mismatch."
+  },
+  {
+    "id": 18,
+    "category": "HR",
+    "level": "basic",
+    "question": "When can you join?",
+    "options": [
+      "Give accurate notice period/date",
+      "Say tomorrow always",
+      "Say any date uncertain",
+      "Avoid"
+    ],
+    "answerIndex": 0,
+    "explanation": "Be realistic."
+  },
+  {
+    "id": 19,
+    "category": "HR",
+    "level": "basic",
+    "question": "Do you have any offer in hand?",
+    "options": ["Answer honestly", "Lie", "Hide always", "Get defensive"],
+    "answerIndex": 0,
+    "explanation": "Honesty builds trust."
+  },
+  {
+    "id": 20,
+    "category": "HR",
+    "level": "basic",
+    "question": "Why did you leave your previous job?",
+    "options": [
+      "Positive reason without blaming",
+      "Insult manager",
+      "Complain a lot",
+      "Say 'boring'"
+    ],
+    "answerIndex": 0,
+    "explanation": "Stay professional."
+  },
+
+  {
+    "id": 21,
+    "category": "HR",
+    "level": "basic",
+    "question": "What is your greatest achievement?",
+    "options": [
+      "One relevant achievement with impact",
+      "No achievements",
+      "Too many random",
+      "Lie"
+    ],
+    "answerIndex": 0,
+    "explanation": "Show results."
+  },
+  {
+    "id": 22,
+    "category": "HR",
+    "level": "basic",
+    "question": "Tell me about your hobbies.",
+    "options": [
+      "Share 1-2, show positive traits",
+      "Say none",
+      "Say only gaming 24/7",
+      "Overshare"
+    ],
+    "answerIndex": 0,
+    "explanation": "Keep it simple and positive."
+  },
+  {
+    "id": 23,
+    "category": "HR",
+    "level": "basic",
+    "question": "How would your friends describe you?",
+    "options": [
+      "2-3 traits with small example",
+      "Say 'perfect'",
+      "Say 'bad'",
+      "No idea"
+    ],
+    "answerIndex": 0,
+    "explanation": "Balanced and believable."
+  },
+  {
+    "id": 24,
+    "category": "HR",
+    "level": "basic",
+    "question": "How would your manager describe you?",
+    "options": [
+      "Reliable, learner, responsible",
+      "Lazy",
+      "Always right",
+      "No clue"
+    ],
+    "answerIndex": 0,
+    "explanation": "Show professionalism."
+  },
+  {
+    "id": 25,
+    "category": "HR",
+    "level": "basic",
+    "question": "What kind of work environment do you prefer?",
+    "options": [
+      "Collaborative + clear goals",
+      "No rules",
+      "Only comfort",
+      "Anything but work"
+    ],
+    "answerIndex": 0,
+    "explanation": "Mention what helps you perform."
+  },
+  {
+    "id": 26,
+    "category": "HR",
+    "level": "basic",
+    "question": "Do you prefer WFH or office?",
+    "options": [
+      "Flexible based on role needs",
+      "Only WFH no matter what",
+      "Only office always",
+      "Refuse"
+    ],
+    "answerIndex": 0,
+    "explanation": "Flexibility helps."
+  },
+  {
+    "id": 27,
+    "category": "HR",
+    "level": "basic",
+    "question": "What are your communication skills like?",
+    "options": [
+      "Clear, polite, ask questions",
+      "Poor but no effort",
+      "Never talk",
+      "Only text"
+    ],
+    "answerIndex": 0,
+    "explanation": "Communication is important."
+  },
+  {
+    "id": 28,
+    "category": "HR",
+    "level": "basic",
+    "question": "How do you take feedback?",
+    "options": ["Accept, learn, improve", "Get angry", "Ignore", "Argue"],
+    "answerIndex": 0,
+    "explanation": "Coachability matters."
+  },
+  {
+    "id": 29,
+    "category": "HR",
+    "level": "basic",
+    "question": "How do you handle criticism?",
+    "options": ["Listen, clarify, improve", "Fight", "Quit", "Cry"],
+    "answerIndex": 0,
+    "explanation": "Stay calm and learn."
+  },
+  {
+    "id": 30,
+    "category": "HR",
+    "level": "basic",
+    "question": "Are you a quick learner?",
+    "options": ["Yes, with example", "No", "Maybe", "No idea"],
+    "answerIndex": 0,
+    "explanation": "Add a short proof."
+  },
+
+  {
+    "id": 31,
+    "category": "HR",
+    "level": "basic",
+    "question": "Tell me about a challenge you faced.",
+    "options": [
+      "Brief situation + what you did",
+      "No challenges ever",
+      "Blame others",
+      "Random story"
+    ],
+    "answerIndex": 0,
+    "explanation": "Show problem-solving."
+  },
+  {
+    "id": 32,
+    "category": "HR",
+    "level": "basic",
+    "question": "How do you prioritize tasks?",
+    "options": [
+      "Urgent/important + deadlines",
+      "Do easy tasks first always",
+      "Random",
+      "Wait for manager"
+    ],
+    "answerIndex": 0,
+    "explanation": "A simple prioritization method."
+  },
+  {
+    "id": 33,
+    "category": "HR",
+    "level": "basic",
+    "question": "Do you miss deadlines?",
+    "options": [
+      "Rarely; communicate early if risk",
+      "Yes often",
+      "Never but lie",
+      "Depends"
+    ],
+    "answerIndex": 0,
+    "explanation": "Ownership and communication."
+  },
+  {
+    "id": 34,
+    "category": "HR",
+    "level": "basic",
+    "question": "How do you handle repetitive tasks?",
+    "options": [
+      "Stay consistent, automate if possible",
+      "Get bored and stop",
+      "Complain",
+      "Avoid"
+    ],
+    "answerIndex": 0,
+    "explanation": "Consistency matters."
+  },
+  {
+    "id": 35,
+    "category": "HR",
+    "level": "basic",
+    "question": "How do you handle change?",
+    "options": [
+      "Adapt and learn quickly",
+      "Hate change",
+      "Refuse new tools",
+      "Delay"
+    ],
+    "answerIndex": 0,
+    "explanation": "Adaptability is valued."
+  },
+  {
+    "id": 36,
+    "category": "HR",
+    "level": "basic",
+    "question": "What do you do if you don’t know something?",
+    "options": [
+      "Ask, research, then act",
+      "Pretend I know",
+      "Do nothing",
+      "Blame"
+    ],
+    "answerIndex": 0,
+    "explanation": "Shows maturity."
+  },
+  {
+    "id": 37,
+    "category": "HR",
+    "level": "basic",
+    "question": "Do you enjoy learning new skills?",
+    "options": [
+      "Yes, continuous learning",
+      "No",
+      "Only if paid extra",
+      "Never"
+    ],
+    "answerIndex": 0,
+    "explanation": "Growth mindset."
+  },
+  {
+    "id": 38,
+    "category": "HR",
+    "level": "basic",
+    "question": "Describe your work ethic.",
+    "options": [
+      "Reliable, responsible, consistent",
+      "Lazy",
+      "Only when watched",
+      "No idea"
+    ],
+    "answerIndex": 0,
+    "explanation": "Show dependable behavior."
+  },
+  {
+    "id": 39,
+    "category": "HR",
+    "level": "basic",
+    "question": "What does success mean to you?",
+    "options": [
+      "Meeting goals + learning + impact",
+      "Only money",
+      "Only fame",
+      "Nothing"
+    ],
+    "answerIndex": 0,
+    "explanation": "Keep practical."
+  },
+  {
+    "id": 40,
+    "category": "HR",
+    "level": "basic",
+    "question": "What does failure mean to you?",
+    "options": [
+      "Learning opportunity",
+      "End of life",
+      "Blame others",
+      "Avoid trying"
+    ],
+    "answerIndex": 0,
+    "explanation": "Positive learning view."
+  },
+
+  {
+    "id": 41,
+    "category": "HR",
+    "level": "basic",
+    "question": "How do you deal with a difficult teammate?",
+    "options": [
+      "Talk calmly, focus on solution",
+      "Fight",
+      "Complain to all",
+      "Ignore work"
+    ],
+    "answerIndex": 0,
+    "explanation": "Professional conflict handling."
+  },
+  {
+    "id": 42,
+    "category": "HR",
+    "level": "basic",
+    "question": "Have you ever worked in a group project?",
+    "options": [
+      "Yes, explain your role briefly",
+      "No",
+      "I did nothing",
+      "I controlled all"
+    ],
+    "answerIndex": 0,
+    "explanation": "Show teamwork."
+  },
+  {
+    "id": 43,
+    "category": "HR",
+    "level": "basic",
+    "question": "What role do you take in a team?",
+    "options": [
+      "Depends: contributor/leader as needed",
+      "Always boss",
+      "Always silent",
+      "Always absent"
+    ],
+    "answerIndex": 0,
+    "explanation": "Flexibility is good."
+  },
+  {
+    "id": 44,
+    "category": "HR",
+    "level": "basic",
+    "question": "Are you comfortable taking responsibility?",
+    "options": ["Yes, I own outcomes", "No", "Only if easy", "Not sure"],
+    "answerIndex": 0,
+    "explanation": "Ownership is valued."
+  },
+  {
+    "id": 45,
+    "category": "HR",
+    "level": "basic",
+    "question": "How do you handle mistakes?",
+    "options": ["Accept, fix, learn", "Hide it", "Blame others", "Quit"],
+    "answerIndex": 0,
+    "explanation": "Accountability matters."
+  },
+  {
+    "id": 46,
+    "category": "HR",
+    "level": "basic",
+    "question": "Have you ever disagreed with someone at work?",
+    "options": [
+      "Yes, handled respectfully",
+      "No never",
+      "Yes, fought",
+      "Always disagree"
+    ],
+    "answerIndex": 0,
+    "explanation": "Show maturity."
+  },
+  {
+    "id": 47,
+    "category": "HR",
+    "level": "basic",
+    "question": "Are you okay with multi-tasking?",
+    "options": [
+      "Yes, with prioritization",
+      "Yes but no plan",
+      "No never",
+      "Only easy tasks"
+    ],
+    "answerIndex": 0,
+    "explanation": "Balance tasks properly."
+  },
+  {
+    "id": 48,
+    "category": "HR",
+    "level": "basic",
+    "question": "Do you prefer routine or variety?",
+    "options": [
+      "Balanced based on work",
+      "Only routine always",
+      "Only variety always",
+      "No idea"
+    ],
+    "answerIndex": 0,
+    "explanation": "Balanced answer."
+  },
+  {
+    "id": 49,
+    "category": "HR",
+    "level": "basic",
+    "question": "What do you do to stay organized?",
+    "options": [
+      "Notes, tools, schedule",
+      "Nothing",
+      "Only memory",
+      "Ask others"
+    ],
+    "answerIndex": 0,
+    "explanation": "Organization helps performance."
+  },
+  {
+    "id": 50,
+    "category": "HR",
+    "level": "basic",
+    "question": "How do you handle meetings?",
+    "options": [
+      "Prepare, listen, summarize actions",
+      "Talk nonstop",
+      "Never speak",
+      "Skip"
+    ],
+    "answerIndex": 0,
+    "explanation": "Shows professionalism."
+  },
+
+  {
+    "id": 51,
+    "category": "HR",
+    "level": "basic",
+    "question": "What are your top 3 values?",
+    "options": [
+      "Honesty, learning, teamwork (example)",
+      "Money, sleep, fame",
+      "No values",
+      "Anything"
+    ],
+    "answerIndex": 0,
+    "explanation": "Values should match workplace."
+  },
+  {
+    "id": 52,
+    "category": "HR",
+    "level": "basic",
+    "question": "Do you consider yourself punctual?",
+    "options": [
+      "Yes, I respect time",
+      "No",
+      "Sometimes late always",
+      "Not important"
+    ],
+    "answerIndex": 0,
+    "explanation": "Punctuality matters."
+  },
+  {
+    "id": 53,
+    "category": "HR",
+    "level": "basic",
+    "question": "How do you handle boring tasks?",
+    "options": ["Discipline + small goals", "Avoid", "Delay", "Complain"],
+    "answerIndex": 0,
+    "explanation": "Shows discipline."
+  },
+  {
+    "id": 54,
+    "category": "HR",
+    "level": "basic",
+    "question": "What do you do outside work/study?",
+    "options": [
+      "Balanced activities + learning",
+      "Only sleep",
+      "Only parties",
+      "Nothing"
+    ],
+    "answerIndex": 0,
+    "explanation": "Shows balance."
+  },
+  {
+    "id": 55,
+    "category": "HR",
+    "level": "basic",
+    "question": "How do you improve yourself?",
+    "options": [
+      "Courses, practice, feedback",
+      "I don’t improve",
+      "Only luck",
+      "Copy others"
+    ],
+    "answerIndex": 0,
+    "explanation": "Self-improvement mindset."
+  },
+  {
+    "id": 56,
+    "category": "HR",
+    "level": "basic",
+    "question": "Are you comfortable asking questions?",
+    "options": [
+      "Yes, to avoid mistakes",
+      "No, I stay silent",
+      "Only after failure",
+      "Never"
+    ],
+    "answerIndex": 0,
+    "explanation": "Asking smart questions is good."
+  },
+  {
+    "id": 57,
+    "category": "HR",
+    "level": "basic",
+    "question": "How do you handle an unclear task?",
+    "options": [
+      "Clarify requirements then proceed",
+      "Guess and do",
+      "Delay forever",
+      "Stop working"
+    ],
+    "answerIndex": 0,
+    "explanation": "Clarification avoids rework."
+  },
+  {
+    "id": 58,
+    "category": "HR",
+    "level": "basic",
+    "question": "How do you handle feedback from juniors/seniors?",
+    "options": [
+      "Accept respectfully",
+      "Ignore juniors",
+      "Fear seniors",
+      "Argue always"
+    ],
+    "answerIndex": 0,
+    "explanation": "Respect and openness."
+  },
+  {
+    "id": 59,
+    "category": "HR",
+    "level": "basic",
+    "question": "What do you do if you finish work early?",
+    "options": [
+      "Ask for more work / learn",
+      "Relax all day always",
+      "Leave without telling",
+      "Create drama"
+    ],
+    "answerIndex": 0,
+    "explanation": "Shows proactiveness."
+  },
+  {
+    "id": 60,
+    "category": "HR",
+    "level": "basic",
+    "question": "Are you okay with learning on the job?",
+    "options": ["Yes, I adapt", "No", "Only if easy", "Never"],
+    "answerIndex": 0,
+    "explanation": "Learning is expected."
+  },
+
+  {
+    "id": 61,
+    "category": "HR",
+    "level": "basic",
+    "question": "Do you have any gaps in education/work?",
+    "options": [
+      "Explain honestly with what you learned",
+      "Lie",
+      "Hide",
+      "Blame"
+    ],
+    "answerIndex": 0,
+    "explanation": "Honesty + learning matters."
+  },
+  {
+    "id": 62,
+    "category": "HR",
+    "level": "basic",
+    "question": "What is your notice period?",
+    "options": [
+      "Give exact duration",
+      "Say zero always",
+      "Say unsure",
+      "Avoid"
+    ],
+    "answerIndex": 0,
+    "explanation": "Clear info helps hiring."
+  },
+  {
+    "id": 63,
+    "category": "HR",
+    "level": "basic",
+    "question": "What are your preferred working hours?",
+    "options": [
+      "Flexible within reason",
+      "Only 2 hours",
+      "No work weekends ever (if role needs)",
+      "Avoid"
+    ],
+    "answerIndex": 0,
+    "explanation": "Be honest but cooperative."
+  },
+  {
+    "id": 64,
+    "category": "HR",
+    "level": "basic",
+    "question": "Do you have any commitments that affect work timing?",
+    "options": [
+      "Share honestly if any",
+      "Lie",
+      "Overshare personal details",
+      "Refuse"
+    ],
+    "answerIndex": 0,
+    "explanation": "Keep professional."
+  },
+  {
+    "id": 65,
+    "category": "HR",
+    "level": "basic",
+    "question": "Are you comfortable with a probation period?",
+    "options": ["Yes", "No", "Only if paid double", "Argue"],
+    "answerIndex": 0,
+    "explanation": "Most jobs have probation."
+  },
+  {
+    "id": 66,
+    "category": "HR",
+    "level": "basic",
+    "question": "Do you have any questions for me?",
+    "options": [
+      "Ask about role, team, growth",
+      "Say no always",
+      "Ask only salary first",
+      "Ask personal questions"
+    ],
+    "answerIndex": 0,
+    "explanation": "Good questions show interest."
+  },
+  {
+    "id": 67,
+    "category": "HR",
+    "level": "basic",
+    "question": "How do you handle confidentiality?",
+    "options": [
+      "Keep data private, follow policy",
+      "Share with friends",
+      "Post online",
+      "Not important"
+    ],
+    "answerIndex": 0,
+    "explanation": "Trust and ethics."
+  },
+  {
+    "id": 68,
+    "category": "HR",
+    "level": "basic",
+    "question": "Have you ever worked with strict rules/process?",
+    "options": [
+      "Yes, I follow process",
+      "No rules for me",
+      "I break rules",
+      "Not sure"
+    ],
+    "answerIndex": 0,
+    "explanation": "Process adherence matters."
+  },
+  {
+    "id": 69,
+    "category": "HR",
+    "level": "basic",
+    "question": "Do you take initiative?",
+    "options": ["Yes, with example", "No", "Only if told", "Never"],
+    "answerIndex": 0,
+    "explanation": "Initiative is valued."
+  },
+  {
+    "id": 70,
+    "category": "HR",
+    "level": "basic",
+    "question": "What is your biggest learning recently?",
+    "options": ["Share one skill/lesson", "Nothing", "Random", "Lie"],
+    "answerIndex": 0,
+    "explanation": "Shows growth."
+  },
+
+  {
+    "id": 71,
+    "category": "HR",
+    "level": "basic",
+    "question": "How do you handle a slow teammate?",
+    "options": [
+      "Support + communicate",
+      "Insult them",
+      "Complain to everyone",
+      "Do nothing"
+    ],
+    "answerIndex": 0,
+    "explanation": "Team support attitude."
+  },
+  {
+    "id": 72,
+    "category": "HR",
+    "level": "basic",
+    "question": "Would you work overtime if needed?",
+    "options": [
+      "Yes, when required and planned",
+      "Never",
+      "Always daily",
+      "Only for extra money"
+    ],
+    "answerIndex": 0,
+    "explanation": "Balanced and realistic."
+  },
+  {
+    "id": 73,
+    "category": "HR",
+    "level": "basic",
+    "question": "How do you avoid burnout?",
+    "options": [
+      "Breaks, planning, balance",
+      "Work 24/7",
+      "Ignore health",
+      "No idea"
+    ],
+    "answerIndex": 0,
+    "explanation": "Shows maturity."
+  },
+  {
+    "id": 74,
+    "category": "HR",
+    "level": "basic",
+    "question": "Do you prefer leading or following?",
+    "options": [
+      "Both depending on situation",
+      "Only lead",
+      "Only follow",
+      "Neither"
+    ],
+    "answerIndex": 0,
+    "explanation": "Flexibility."
+  },
+  {
+    "id": 75,
+    "category": "HR",
+    "level": "basic",
+    "question": "What is your biggest improvement area?",
+    "options": [
+      "Pick one and explain efforts",
+      "None",
+      "All areas",
+      "Blame others"
+    ],
+    "answerIndex": 0,
+    "explanation": "Shows self-awareness."
+  },
+  {
+    "id": 76,
+    "category": "HR",
+    "level": "basic",
+    "question": "How do you handle rejection?",
+    "options": ["Learn and try again", "Give up", "Get angry", "Blame"],
+    "answerIndex": 0,
+    "explanation": "Resilience."
+  },
+  {
+    "id": 77,
+    "category": "HR",
+    "level": "basic",
+    "question": "How do you behave in a new team?",
+    "options": [
+      "Observe, learn, contribute",
+      "Try to dominate",
+      "Stay silent forever",
+      "Judge others"
+    ],
+    "answerIndex": 0,
+    "explanation": "Good onboarding behavior."
+  },
+  {
+    "id": 78,
+    "category": "HR",
+    "level": "basic",
+    "question": "Can you describe yourself in 3 words?",
+    "options": [
+      "Positive + true traits",
+      "Perfect, perfect, perfect",
+      "Bad words",
+      "No answer"
+    ],
+    "answerIndex": 0,
+    "explanation": "Simple, believable traits."
+  },
+  {
+    "id": 79,
+    "category": "HR",
+    "level": "basic",
+    "question": "What kind of manager do you work best with?",
+    "options": [
+      "Clear goals + supportive feedback",
+      "No manager",
+      "Manager who never talks",
+      "Manager who shouts"
+    ],
+    "answerIndex": 0,
+    "explanation": "Professional preference."
+  },
+  {
+    "id": 80,
+    "category": "HR",
+    "level": "basic",
+    "question": "How do you handle a task you dislike?",
+    "options": [
+      "Do it professionally and on time",
+      "Refuse",
+      "Delay",
+      "Complain"
+    ],
+    "answerIndex": 0,
+    "explanation": "Professionalism."
+  },
+
+  {
+    "id": 81,
+    "category": "HR",
+    "level": "basic",
+    "question": "Have you ever helped someone learn something?",
+    "options": ["Yes, short example", "No", "I don’t help", "Not sure"],
+    "answerIndex": 0,
+    "explanation": "Mentoring mindset."
+  },
+  {
+    "id": 82,
+    "category": "HR",
+    "level": "basic",
+    "question": "Do you prefer planning or improvising?",
+    "options": [
+      "Plan first, adapt when needed",
+      "Only improvise",
+      "Only plan",
+      "No idea"
+    ],
+    "answerIndex": 0,
+    "explanation": "Plan + adapt is best."
+  },
+  {
+    "id": 83,
+    "category": "HR",
+    "level": "basic",
+    "question": "What is your biggest professional goal right now?",
+    "options": [
+      "Become strong in role skills",
+      "Become famous",
+      "No goal",
+      "Quit"
+    ],
+    "answerIndex": 0,
+    "explanation": "Role-aligned goal."
+  },
+  {
+    "id": 84,
+    "category": "HR",
+    "level": "basic",
+    "question": "How do you handle disagreements?",
+    "options": ["Respectful discussion", "Shout", "Silent treatment", "Fight"],
+    "answerIndex": 0,
+    "explanation": "Communication."
+  },
+  {
+    "id": 85,
+    "category": "HR",
+    "level": "basic",
+    "question": "What do you do if you are wrong?",
+    "options": ["Accept and correct", "Defend ego", "Blame others", "Ignore"],
+    "answerIndex": 0,
+    "explanation": "Accountability."
+  },
+  {
+    "id": 86,
+    "category": "HR",
+    "level": "basic",
+    "question": "Do you like taking ownership?",
+    "options": ["Yes, I take responsibility", "No", "Only if easy", "Not sure"],
+    "answerIndex": 0,
+    "explanation": "Ownership matters."
+  },
+  {
+    "id": 87,
+    "category": "HR",
+    "level": "basic",
+    "question": "What is your biggest non-technical skill?",
+    "options": [
+      "Communication/teamwork/time mgmt",
+      "Nothing",
+      "Only luck",
+      "Anger"
+    ],
+    "answerIndex": 0,
+    "explanation": "HR loves soft skills."
+  },
+  {
+    "id": 88,
+    "category": "HR",
+    "level": "basic",
+    "question": "How do you handle confidentiality of company data?",
+    "options": [
+      "Follow policy and keep secure",
+      "Share casually",
+      "Post online",
+      "Ignore"
+    ],
+    "answerIndex": 0,
+    "explanation": "Trust and ethics."
+  },
+  {
+    "id": 89,
+    "category": "HR",
+    "level": "basic",
+    "question": "Do you have any leadership experience?",
+    "options": [
+      "If yes, brief example; if no, willingness",
+      "Lie yes",
+      "Say no rudely",
+      "Avoid"
+    ],
+    "answerIndex": 0,
+    "explanation": "Honesty + willingness."
+  },
+  {
+    "id": 90,
+    "category": "HR",
+    "level": "basic",
+    "question": "What would you do if you don’t understand instructions?",
+    "options": ["Ask for clarification", "Pretend", "Do nothing", "Complain"],
+    "answerIndex": 0,
+    "explanation": "Clarify early."
+  },
+
+  {
+    "id": 91,
+    "category": "HR",
+    "level": "basic",
+    "question": "How do you handle multiple priorities?",
+    "options": ["Prioritize + communicate", "Do random", "Panic", "Delay"],
+    "answerIndex": 0,
+    "explanation": "Prioritization + communication."
+  },
+  {
+    "id": 92,
+    "category": "HR",
+    "level": "basic",
+    "question": "What do you do when you feel stressed?",
+    "options": ["Break, plan, talk to lead", "Shout", "Quit", "Ignore"],
+    "answerIndex": 0,
+    "explanation": "Healthy coping."
+  },
+  {
+    "id": 93,
+    "category": "HR",
+    "level": "basic",
+    "question": "Are you comfortable learning from mistakes?",
+    "options": ["Yes", "No", "Never make mistakes", "Not sure"],
+    "answerIndex": 0,
+    "explanation": "Growth mindset."
+  },
+  {
+    "id": 94,
+    "category": "HR",
+    "level": "basic",
+    "question": "What is your availability for interview rounds?",
+    "options": [
+      "Give clear days/times",
+      "Anytime but unsure",
+      "Avoid",
+      "Get rude"
+    ],
+    "answerIndex": 0,
+    "explanation": "Clear scheduling."
+  },
+  {
+    "id": 95,
+    "category": "HR",
+    "level": "basic",
+    "question": "Do you have any concerns about this role?",
+    "options": [
+      "Ask clarity on expectations/tools",
+      "Say many negative things",
+      "Say nothing always",
+      "Blame company"
+    ],
+    "answerIndex": 0,
+    "explanation": "Ask smart clarifying questions."
+  },
+  {
+    "id": 96,
+    "category": "HR",
+    "level": "basic",
+    "question": "Are you okay with background verification?",
+    "options": ["Yes", "No", "Only for others", "Argue"],
+    "answerIndex": 0,
+    "explanation": "Standard process."
+  },
+  {
+    "id": 97,
+    "category": "HR",
+    "level": "basic",
+    "question": "What are your top qualities?",
+    "options": [
+      "Honest, consistent, learner (with proof)",
+      "Perfect only",
+      "No qualities",
+      "Random"
+    ],
+    "answerIndex": 0,
+    "explanation": "Keep it real."
+  },
+  {
+    "id": 98,
+    "category": "HR",
+    "level": "basic",
+    "question": "How do you introduce yourself to a new client/team?",
+    "options": [
+      "Polite intro + role + purpose",
+      "Talk too long",
+      "Stay silent",
+      "Joke too much"
+    ],
+    "answerIndex": 0,
+    "explanation": "Professional first impression."
+  },
+  {
+    "id": 99,
+    "category": "HR",
+    "level": "basic",
+    "question": "What would you do if your teammate is absent and work is pending?",
+    "options": [
+      "Inform lead + help cover + plan",
+      "Ignore",
+      "Blame teammate",
+      "Stop working"
+    ],
+    "answerIndex": 0,
+    "explanation": "Team responsibility."
+  },
+  {
+    "id": 100,
+    "category": "HR",
+    "level": "basic",
+    "question": "What will you do in your first 30 days if selected?",
+    "options": [
+      "Learn process, meet team, deliver small wins",
+      "Change everything fast",
+      "Relax",
+      "Ask for promotion"
+    ],
+    "answerIndex": 0,
+    "explanation": "Show learning + contribution plan."
+  },
+
+  {
+    "id": 101,
+    "category": "HR",
+    "level": "basic",
+    "question": "What do you do when you receive unclear requirements?",
+    "options": [
+      "Ask questions, confirm scope, then start",
+      "Assume and build",
+      "Wait silently",
+      "Complain"
+    ],
+    "answerIndex": 0,
+    "explanation": "Clarifying early avoids rework."
+  },
+  {
+    "id": 102,
+    "category": "HR",
+    "level": "basic",
+    "question": "How do you respond to a last-minute change?",
+    "options": [
+      "Stay calm, re-plan, inform stakeholders",
+      "Get angry",
+      "Ignore it",
+      "Quit"
+    ],
+    "answerIndex": 0,
+    "explanation": "Adaptability matters."
+  },
+  {
+    "id": 103,
+    "category": "HR",
+    "level": "basic",
+    "question": "How do you keep yourself accountable?",
+    "options": [
+      "Track tasks and review progress",
+      "Hope it works",
+      "Let others remind me",
+      "Avoid deadlines"
+    ],
+    "answerIndex": 0,
+    "explanation": "Simple tracking builds consistency."
+  },
+  {
+    "id": 104,
+    "category": "HR",
+    "level": "basic",
+    "question": "What would you do if you are assigned work outside your comfort zone?",
+    "options": [
+      "Learn quickly and ask for guidance",
+      "Refuse",
+      "Delay forever",
+      "Complain"
+    ],
+    "answerIndex": 0,
+    "explanation": "Shows growth mindset."
+  },
+  {
+    "id": 105,
+    "category": "HR",
+    "level": "basic",
+    "question": "How do you handle a misunderstanding with a colleague?",
+    "options": [
+      "Talk directly and clarify politely",
+      "Gossip",
+      "Block them",
+      "Escalate instantly"
+    ],
+    "answerIndex": 0,
+    "explanation": "Direct, respectful communication works best."
+  },
+
+  {
+    "id": 106,
+    "category": "HR",
+    "level": "basic",
+    "question": "Do you prefer detailed instructions or freedom to decide?",
+    "options": [
+      "A mix: clarity on goal, freedom on approach",
+      "Only freedom always",
+      "Only instructions always",
+      "No preference"
+    ],
+    "answerIndex": 0,
+    "explanation": "Balanced answer shows maturity."
+  },
+  {
+    "id": 107,
+    "category": "HR",
+    "level": "basic",
+    "question": "How do you react when someone interrupts you in a meeting?",
+    "options": [
+      "Let them finish, then respond calmly",
+      "Argue",
+      "Stay silent forever",
+      "Walk out"
+    ],
+    "answerIndex": 0,
+    "explanation": "Professionalism in communication."
+  },
+  {
+    "id": 108,
+    "category": "HR",
+    "level": "basic",
+    "question": "What do you do if you make an error in front of others?",
+    "options": [
+      "Accept, correct, and move forward",
+      "Get defensive",
+      "Blame others",
+      "Hide"
+    ],
+    "answerIndex": 0,
+    "explanation": "Confidence + accountability."
+  },
+  {
+    "id": 109,
+    "category": "HR",
+    "level": "basic",
+    "question": "How do you deal with repetitive feedback?",
+    "options": [
+      "Work on it with a plan and show improvement",
+      "Ignore it",
+      "Get angry",
+      "Avoid the person"
+    ],
+    "answerIndex": 0,
+    "explanation": "Consistent improvement matters."
+  },
+  {
+    "id": 110,
+    "category": "HR",
+    "level": "basic",
+    "question": "What would you do if two tasks have the same deadline?",
+    "options": [
+      "Prioritize by impact, communicate, split work",
+      "Do both randomly",
+      "Delay both",
+      "Pick easiest only"
+    ],
+    "answerIndex": 0,
+    "explanation": "Prioritize + communicate early."
+  },
+
+  {
+    "id": 111,
+    "category": "HR",
+    "level": "basic",
+    "question": "How do you handle work you don’t enjoy?",
+    "options": [
+      "Do it professionally and finish on time",
+      "Refuse",
+      "Delay",
+      "Complain daily"
+    ],
+    "answerIndex": 0,
+    "explanation": "Discipline is valued."
+  },
+  {
+    "id": 112,
+    "category": "HR",
+    "level": "basic",
+    "question": "How do you ensure quality in your work?",
+    "options": [
+      "Review, test/check, and confirm requirements",
+      "Submit without checking",
+      "Hope it works",
+      "Let others fix"
+    ],
+    "answerIndex": 0,
+    "explanation": "Quality checks reduce mistakes."
+  },
+  {
+    "id": 113,
+    "category": "HR",
+    "level": "basic",
+    "question": "How do you handle feedback you disagree with?",
+    "options": [
+      "Ask for clarity and discuss with facts",
+      "Argue emotionally",
+      "Ignore it",
+      "Complain to others"
+    ],
+    "answerIndex": 0,
+    "explanation": "Facts + calm discussion."
+  },
+  {
+    "id": 114,
+    "category": "HR",
+    "level": "basic",
+    "question": "What do you do if a teammate takes credit for your work?",
+    "options": [
+      "Talk privately, clarify contribution, involve lead if needed",
+      "Fight publicly",
+      "Stay silent always",
+      "Spread rumors"
+    ],
+    "answerIndex": 0,
+    "explanation": "Handle calmly and professionally."
+  },
+  {
+    "id": 115,
+    "category": "HR",
+    "level": "basic",
+    "question": "How do you stay productive when working from home?",
+    "options": [
+      "Schedule, focus blocks, remove distractions",
+      "Work randomly",
+      "Sleep more",
+      "Only chats"
+    ],
+    "answerIndex": 0,
+    "explanation": "Routine + focus habits help."
+  },
+
+  {
+    "id": 116,
+    "category": "HR",
+    "level": "basic",
+    "question": "How do you act when you are new to a process?",
+    "options": [
+      "Observe, ask, learn, then contribute",
+      "Pretend expert",
+      "Avoid tasks",
+      "Criticize process"
+    ],
+    "answerIndex": 0,
+    "explanation": "Good onboarding behavior."
+  },
+  {
+    "id": 117,
+    "category": "HR",
+    "level": "basic",
+    "question": "What would you do if your manager is unavailable and you’re stuck?",
+    "options": [
+      "Try research, ask teammate, send concise update",
+      "Stop work",
+      "Wait silently",
+      "Guess and submit"
+    ],
+    "answerIndex": 0,
+    "explanation": "Ownership + communication."
+  },
+  {
+    "id": 118,
+    "category": "HR",
+    "level": "basic",
+    "question": "How do you handle working with someone very different from you?",
+    "options": [
+      "Respect differences and focus on goals",
+      "Judge them",
+      "Avoid them",
+      "Force your way"
+    ],
+    "answerIndex": 0,
+    "explanation": "Diversity teamwork."
+  },
+  {
+    "id": 119,
+    "category": "HR",
+    "level": "basic",
+    "question": "What do you do if you are running late?",
+    "options": [
+      "Inform early and adjust plan",
+      "Say nothing",
+      "Lie",
+      "Cancel suddenly"
+    ],
+    "answerIndex": 0,
+    "explanation": "Early communication is professional."
+  },
+  {
+    "id": 120,
+    "category": "HR",
+    "level": "basic",
+    "question": "What would you do if you are asked to do something unethical?",
+    "options": [
+      "Refuse politely and report via proper channel",
+      "Do it",
+      "Ignore",
+      "Laugh"
+    ],
+    "answerIndex": 0,
+    "explanation": "Integrity matters."
+  },
+
+  {
+    "id": 121,
+    "category": "HR",
+    "level": "basic",
+    "question": "How do you handle confidential information?",
+    "options": [
+      "Follow policy, limit access, stay careful",
+      "Share with friends",
+      "Post online",
+      "Not important"
+    ],
+    "answerIndex": 0,
+    "explanation": "Trust is key."
+  },
+  {
+    "id": 122,
+    "category": "HR",
+    "level": "basic",
+    "question": "How do you maintain work-life balance?",
+    "options": [
+      "Plan time, take breaks, set boundaries",
+      "Work nonstop",
+      "Avoid work always",
+      "No balance needed"
+    ],
+    "answerIndex": 0,
+    "explanation": "Shows sustainability."
+  },
+  {
+    "id": 123,
+    "category": "HR",
+    "level": "basic",
+    "question": "How do you manage stress before an important task?",
+    "options": [
+      "Prepare early and break task into parts",
+      "Panic",
+      "Delay",
+      "Skip it"
+    ],
+    "answerIndex": 0,
+    "explanation": "Preparation reduces stress."
+  },
+  {
+    "id": 124,
+    "category": "HR",
+    "level": "basic",
+    "question": "How do you handle a teammate who doesn’t respond?",
+    "options": [
+      "Follow up politely, use proper channel, inform lead if needed",
+      "Spam messages",
+      "Insult them",
+      "Give up"
+    ],
+    "answerIndex": 0,
+    "explanation": "Respectful follow-up."
+  },
+  {
+    "id": 125,
+    "category": "HR",
+    "level": "basic",
+    "question": "What would you do if you disagree with team decision?",
+    "options": [
+      "Share viewpoint once with reasons, then support final decision",
+      "Fight until you win",
+      "Leave team",
+      "Complain later"
+    ],
+    "answerIndex": 0,
+    "explanation": "Healthy collaboration."
+  },
+
+  {
+    "id": 126,
+    "category": "HR",
+    "level": "basic",
+    "question": "How do you prepare for an interview?",
+    "options": [
+      "Research role/company, revise basics, practice answers",
+      "Just show up",
+      "Only memorize",
+      "Copy others"
+    ],
+    "answerIndex": 0,
+    "explanation": "Preparation shows seriousness."
+  },
+  {
+    "id": 127,
+    "category": "HR",
+    "level": "basic",
+    "question": "What is your preferred communication style?",
+    "options": [
+      "Clear, timely, respectful updates",
+      "Silent",
+      "Aggressive",
+      "Only jokes"
+    ],
+    "answerIndex": 0,
+    "explanation": "Professional communication."
+  },
+  {
+    "id": 128,
+    "category": "HR",
+    "level": "basic",
+    "question": "How do you handle a complaint from a client/user?",
+    "options": [
+      "Listen, apologize if needed, solve and update",
+      "Argue",
+      "Ignore",
+      "Blame client"
+    ],
+    "answerIndex": 0,
+    "explanation": "Service mindset."
+  },
+  {
+    "id": 129,
+    "category": "HR",
+    "level": "basic",
+    "question": "How do you keep learning regularly?",
+    "options": [
+      "Small daily practice + courses/projects",
+      "Only sometimes",
+      "Never learn",
+      "Wait for training"
+    ],
+    "answerIndex": 0,
+    "explanation": "Consistency matters."
+  },
+  {
+    "id": 130,
+    "category": "HR",
+    "level": "basic",
+    "question": "What do you do when you feel demotivated?",
+    "options": [
+      "Take short break, reset goals, ask for clarity",
+      "Quit",
+      "Blame others",
+      "Stop working"
+    ],
+    "answerIndex": 0,
+    "explanation": "Shows resilience."
+  },
+
+  {
+    "id": 131,
+    "category": "HR",
+    "level": "basic",
+    "question": "How do you handle a task with no clear deadline?",
+    "options": [
+      "Set a target date and confirm with manager",
+      "Delay forever",
+      "Ignore it",
+      "Do last minute"
+    ],
+    "answerIndex": 0,
+    "explanation": "Self-management."
+  },
+  {
+    "id": 132,
+    "category": "HR",
+    "level": "basic",
+    "question": "How do you handle an urgent task during planned work?",
+    "options": [
+      "Reprioritize and inform impacted people",
+      "Ignore urgent task",
+      "Do both without telling",
+      "Get angry"
+    ],
+    "answerIndex": 0,
+    "explanation": "Communication prevents surprises."
+  },
+  {
+    "id": 133,
+    "category": "HR",
+    "level": "basic",
+    "question": "How do you react to someone correcting you?",
+    "options": [
+      "Thank them and improve",
+      "Take it personally",
+      "Argue",
+      "Ignore"
+    ],
+    "answerIndex": 0,
+    "explanation": "Coachability."
+  },
+  {
+    "id": 134,
+    "category": "HR",
+    "level": "basic",
+    "question": "What would you do if you found a bug right before delivery?",
+    "options": [
+      "Report immediately and fix/mitigate",
+      "Hide it",
+      "Deliver anyway",
+      "Blame tester"
+    ],
+    "answerIndex": 0,
+    "explanation": "Quality + honesty."
+  },
+  {
+    "id": 135,
+    "category": "HR",
+    "level": "basic",
+    "question": "How do you handle repetitive meetings?",
+    "options": [
+      "Stay prepared, contribute, suggest improvements",
+      "Skip always",
+      "Complain",
+      "Distract others"
+    ],
+    "answerIndex": 0,
+    "explanation": "Professional behavior."
+  },
+
+  {
+    "id": 136,
+    "category": "HR",
+    "level": "basic",
+    "question": "What do you do if you don’t meet expectations?",
+    "options": [
+      "Ask feedback, improve plan, show progress",
+      "Hide",
+      "Blame team",
+      "Quit"
+    ],
+    "answerIndex": 0,
+    "explanation": "Growth approach."
+  },
+  {
+    "id": 137,
+    "category": "HR",
+    "level": "basic",
+    "question": "How do you react when you get new responsibilities?",
+    "options": ["Accept, learn, and plan", "Refuse", "Delay", "Panic"],
+    "answerIndex": 0,
+    "explanation": "Ownership."
+  },
+  {
+    "id": 138,
+    "category": "HR",
+    "level": "basic",
+    "question": "Do you prefer working with seniors or juniors?",
+    "options": [
+      "Comfortable with both",
+      "Only seniors",
+      "Only juniors",
+      "Neither"
+    ],
+    "answerIndex": 0,
+    "explanation": "Team flexibility."
+  },
+  {
+    "id": 139,
+    "category": "HR",
+    "level": "basic",
+    "question": "What is your biggest career lesson so far?",
+    "options": [
+      "Share one lesson with example",
+      "No lessons",
+      "Random quote",
+      "Blame others"
+    ],
+    "answerIndex": 0,
+    "explanation": "Shows reflection."
+  },
+  {
+    "id": 140,
+    "category": "HR",
+    "level": "basic",
+    "question": "How do you ensure you understand a task?",
+    "options": [
+      "Repeat back summary and confirm",
+      "Assume",
+      "Start without asking",
+      "Wait"
+    ],
+    "answerIndex": 0,
+    "explanation": "Confirmation avoids mistakes."
+  },
+
+  {
+    "id": 141,
+    "category": "HR",
+    "level": "basic",
+    "question": "How do you handle long working hours occasionally?",
+    "options": [
+      "Plan, stay focused, recover with rest",
+      "Complain and stop",
+      "Work slow intentionally",
+      "Refuse always"
+    ],
+    "answerIndex": 0,
+    "explanation": "Balanced attitude."
+  },
+  {
+    "id": 142,
+    "category": "HR",
+    "level": "basic",
+    "question": "What would you do if your teammate is struggling?",
+    "options": [
+      "Offer help and share knowledge",
+      "Ignore them",
+      "Mock them",
+      "Report immediately"
+    ],
+    "answerIndex": 0,
+    "explanation": "Supportive teamwork."
+  },
+  {
+    "id": 143,
+    "category": "HR",
+    "level": "basic",
+    "question": "How do you handle a strict manager?",
+    "options": [
+      "Understand expectations, deliver, communicate clearly",
+      "Argue",
+      "Avoid work",
+      "Complain"
+    ],
+    "answerIndex": 0,
+    "explanation": "Manage expectations professionally."
+  },
+  {
+    "id": 144,
+    "category": "HR",
+    "level": "basic",
+    "question": "How do you react if your idea is rejected?",
+    "options": [
+      "Accept, ask why, improve",
+      "Get angry",
+      "Stop contributing",
+      "Take revenge"
+    ],
+    "answerIndex": 0,
+    "explanation": "Maturity and learning."
+  },
+  {
+    "id": 145,
+    "category": "HR",
+    "level": "basic",
+    "question": "How do you handle a teammate who is rude?",
+    "options": [
+      "Stay calm, set boundaries, escalate if needed",
+      "Be rude back",
+      "Gossip",
+      "Quit"
+    ],
+    "answerIndex": 0,
+    "explanation": "Professional conflict handling."
+  },
+
+  {
+    "id": 146,
+    "category": "HR",
+    "level": "basic",
+    "question": "What do you do to stay focused?",
+    "options": [
+      "Remove distractions, set small goals",
+      "Keep phone always",
+      "Multitask constantly",
+      "Chat a lot"
+    ],
+    "answerIndex": 0,
+    "explanation": "Focus habits help."
+  },
+  {
+    "id": 147,
+    "category": "HR",
+    "level": "basic",
+    "question": "What would you do if you are assigned too much work?",
+    "options": [
+      "Communicate workload and negotiate priorities",
+      "Stay silent and fail",
+      "Blame manager",
+      "Quit"
+    ],
+    "answerIndex": 0,
+    "explanation": "Early communication prevents burnout."
+  },
+  {
+    "id": 148,
+    "category": "HR",
+    "level": "basic",
+    "question": "How do you handle a mistake made by your teammate?",
+    "options": [
+      "Support fixing it, avoid blame, learn",
+      "Expose them publicly",
+      "Ignore",
+      "Gossip"
+    ],
+    "answerIndex": 0,
+    "explanation": "Team-first approach."
+  },
+  {
+    "id": 149,
+    "category": "HR",
+    "level": "basic",
+    "question": "How do you behave in a client-facing call?",
+    "options": [
+      "Polite, clear, listen, confirm actions",
+      "Talk over client",
+      "Argue",
+      "Be casual too much"
+    ],
+    "answerIndex": 0,
+    "explanation": "Professional communication."
+  },
+  {
+    "id": 150,
+    "category": "HR",
+    "level": "basic",
+    "question": "Do you prefer starting early or late?",
+    "options": [
+      "Flexible as per team needs",
+      "Only late always",
+      "Only early always",
+      "No idea"
+    ],
+    "answerIndex": 0,
+    "explanation": "Flexibility helps."
+  },
+
+  {
+    "id": 151,
+    "category": "HR",
+    "level": "basic",
+    "question": "What do you do if you forget something important?",
+    "options": [
+      "Own it, correct quickly, prevent next time",
+      "Hide it",
+      "Blame others",
+      "Ignore"
+    ],
+    "answerIndex": 0,
+    "explanation": "Accountability."
+  },
+  {
+    "id": 152,
+    "category": "HR",
+    "level": "basic",
+    "question": "How do you handle being monitored or reviewed?",
+    "options": [
+      "Accept as improvement opportunity",
+      "Feel offended",
+      "Refuse",
+      "Stop working"
+    ],
+    "answerIndex": 0,
+    "explanation": "Professional mindset."
+  },
+  {
+    "id": 153,
+    "category": "HR",
+    "level": "basic",
+    "question": "How do you handle a new tool/software at work?",
+    "options": [
+      "Learn basics, practice, ask questions",
+      "Avoid",
+      "Complain",
+      "Refuse"
+    ],
+    "answerIndex": 0,
+    "explanation": "Learning attitude."
+  },
+  {
+    "id": 154,
+    "category": "HR",
+    "level": "basic",
+    "question": "What would you do if you are not included in a discussion that affects your work?",
+    "options": [
+      "Ask politely for context and updates",
+      "Get angry publicly",
+      "Ignore",
+      "Blame"
+    ],
+    "answerIndex": 0,
+    "explanation": "Seek clarity professionally."
+  },
+  {
+    "id": 155,
+    "category": "HR",
+    "level": "basic",
+    "question": "How do you keep a positive attitude at work?",
+    "options": [
+      "Focus on solutions and learning",
+      "Complain daily",
+      "Spread negativity",
+      "Avoid people"
+    ],
+    "answerIndex": 0,
+    "explanation": "Positivity improves teamwork."
+  },
+
+  {
+    "id": 156,
+    "category": "HR",
+    "level": "basic",
+    "question": "What would you do if you see someone breaking rules?",
+    "options": [
+      "Follow policy: warn/raise to lead/HR",
+      "Join them",
+      "Ignore always",
+      "Post online"
+    ],
+    "answerIndex": 0,
+    "explanation": "Integrity + process."
+  },
+  {
+    "id": 157,
+    "category": "HR",
+    "level": "basic",
+    "question": "How do you handle tasks with high attention to detail?",
+    "options": [
+      "Slow down, checklist, double-check",
+      "Rush",
+      "Guess",
+      "Skip review"
+    ],
+    "answerIndex": 0,
+    "explanation": "Detail discipline."
+  },
+  {
+    "id": 158,
+    "category": "HR",
+    "level": "basic",
+    "question": "How do you handle working with limited information?",
+    "options": [
+      "Gather info, confirm assumptions, proceed",
+      "Stop",
+      "Assume everything",
+      "Complain"
+    ],
+    "answerIndex": 0,
+    "explanation": "Smart assumptions + validation."
+  },
+  {
+    "id": 159,
+    "category": "HR",
+    "level": "basic",
+    "question": "What would you do if you are asked to do two things at once by two seniors?",
+    "options": [
+      "Clarify priority with both or manager",
+      "Do neither",
+      "Pick randomly",
+      "Argue"
+    ],
+    "answerIndex": 0,
+    "explanation": "Priority alignment is key."
+  },
+  {
+    "id": 160,
+    "category": "HR",
+    "level": "basic",
+    "question": "How do you handle a boring training session?",
+    "options": [
+      "Stay attentive and note key points",
+      "Sleep",
+      "Disturb others",
+      "Skip"
+    ],
+    "answerIndex": 0,
+    "explanation": "Professional behavior."
+  },
+
+  {
+    "id": 161,
+    "category": "HR",
+    "level": "basic",
+    "question": "How do you handle a performance review?",
+    "options": [
+      "Listen, accept feedback, plan improvements",
+      "Get defensive",
+      "Argue",
+      "Ignore"
+    ],
+    "answerIndex": 0,
+    "explanation": "Reviews are for growth."
+  },
+  {
+    "id": 162,
+    "category": "HR",
+    "level": "basic",
+    "question": "What would you do if you realize you misunderstood a task after starting?",
+    "options": [
+      "Inform quickly, correct direction",
+      "Hide it",
+      "Continue wrong work",
+      "Blame requirements"
+    ],
+    "answerIndex": 0,
+    "explanation": "Early correction saves time."
+  },
+  {
+    "id": 163,
+    "category": "HR",
+    "level": "basic",
+    "question": "How do you handle conflict between two teammates?",
+    "options": [
+      "Stay neutral, help them communicate, escalate if needed",
+      "Pick sides instantly",
+      "Ignore",
+      "Gossip"
+    ],
+    "answerIndex": 0,
+    "explanation": "Conflict mediation basics."
+  },
+  {
+    "id": 164,
+    "category": "HR",
+    "level": "basic",
+    "question": "How do you react when you are assigned a simple task?",
+    "options": ["Do it well and quickly", "Refuse", "Feel insulted", "Delay"],
+    "answerIndex": 0,
+    "explanation": "No task is beneath professionalism."
+  },
+  {
+    "id": 165,
+    "category": "HR",
+    "level": "basic",
+    "question": "How do you handle a task that requires collaboration with another team?",
+    "options": [
+      "Align goals, communicate, document decisions",
+      "Avoid them",
+      "Blame them",
+      "Wait only"
+    ],
+    "answerIndex": 0,
+    "explanation": "Cross-team communication."
+  },
+
+  {
+    "id": 166,
+    "category": "HR",
+    "level": "basic",
+    "question": "What would you do if you are asked to present your work?",
+    "options": [
+      "Prepare key points and speak clearly",
+      "Avoid",
+      "Read slides fast",
+      "Say nothing"
+    ],
+    "answerIndex": 0,
+    "explanation": "Preparation builds confidence."
+  },
+  {
+    "id": 167,
+    "category": "HR",
+    "level": "basic",
+    "question": "How do you handle silence in an interview?",
+    "options": [
+      "Stay calm, think, answer clearly",
+      "Panic",
+      "Talk random",
+      "End call"
+    ],
+    "answerIndex": 0,
+    "explanation": "Pause is okay."
+  },
+  {
+    "id": 168,
+    "category": "HR",
+    "level": "basic",
+    "question": "How do you introduce yourself in a professional email?",
+    "options": [
+      "Short greeting + purpose + details",
+      "Write very long story",
+      "No greeting",
+      "Use slang"
+    ],
+    "answerIndex": 0,
+    "explanation": "Clear and professional."
+  },
+  {
+    "id": 169,
+    "category": "HR",
+    "level": "basic",
+    "question": "What would you do if you are assigned a task with unrealistic timeline?",
+    "options": [
+      "Discuss scope, propose options, align deadline",
+      "Accept silently",
+      "Refuse rudely",
+      "Miss deadline"
+    ],
+    "answerIndex": 0,
+    "explanation": "Manage expectations early."
+  },
+  {
+    "id": 170,
+    "category": "HR",
+    "level": "basic",
+    "question": "How do you handle working with someone who micromanages?",
+    "options": [
+      "Provide updates proactively, align expectations",
+      "Argue",
+      "Ignore them",
+      "Complain"
+    ],
+    "answerIndex": 0,
+    "explanation": "Proactive updates reduce micromanagement."
+  },
+
+  {
+    "id": 171,
+    "category": "HR",
+    "level": "basic",
+    "question": "What would you do if you have a personal issue affecting work?",
+    "options": [
+      "Inform manager early and manage work",
+      "Disappear",
+      "Lie",
+      "Blame team"
+    ],
+    "answerIndex": 0,
+    "explanation": "Professional communication."
+  },
+  {
+    "id": 172,
+    "category": "HR",
+    "level": "basic",
+    "question": "How do you handle learning from senior engineers/colleagues?",
+    "options": [
+      "Ask questions, take notes, apply feedback",
+      "Stay silent always",
+      "Pretend",
+      "Avoid"
+    ],
+    "answerIndex": 0,
+    "explanation": "Learning attitude."
+  },
+  {
+    "id": 173,
+    "category": "HR",
+    "level": "basic",
+    "question": "What would you do if you are asked to mentor someone?",
+    "options": [
+      "Help them with patience and structure",
+      "Refuse",
+      "Mock them",
+      "Ignore"
+    ],
+    "answerIndex": 0,
+    "explanation": "Mentoring shows leadership."
+  },
+  {
+    "id": 174,
+    "category": "HR",
+    "level": "basic",
+    "question": "How do you handle office politics?",
+    "options": [
+      "Stay professional and focus on work",
+      "Join gossip",
+      "Create groups",
+      "Fight"
+    ],
+    "answerIndex": 0,
+    "explanation": "Professional focus."
+  },
+  {
+    "id": 175,
+    "category": "HR",
+    "level": "basic",
+    "question": "How do you behave when you are wrong in a discussion?",
+    "options": [
+      "Accept and correct politely",
+      "Argue more",
+      "Get angry",
+      "Leave"
+    ],
+    "answerIndex": 0,
+    "explanation": "Maturity."
+  },
+
+  {
+    "id": 176,
+    "category": "HR",
+    "level": "basic",
+    "question": "What do you do to build trust in a team?",
+    "options": [
+      "Be reliable, communicate, help others",
+      "Promise but not deliver",
+      "Hide info",
+      "Compete badly"
+    ],
+    "answerIndex": 0,
+    "explanation": "Trust is built by consistency."
+  },
+  {
+    "id": 177,
+    "category": "HR",
+    "level": "basic",
+    "question": "How do you handle a teammate who misses deadlines?",
+    "options": [
+      "Discuss and help, inform lead if repeated",
+      "Insult them",
+      "Ignore",
+      "Do their work always"
+    ],
+    "answerIndex": 0,
+    "explanation": "Support + accountability."
+  },
+  {
+    "id": 178,
+    "category": "HR",
+    "level": "basic",
+    "question": "What would you do if you don’t like the company policy?",
+    "options": [
+      "Follow it and suggest improvements respectfully",
+      "Break it",
+      "Complain online",
+      "Refuse"
+    ],
+    "answerIndex": 0,
+    "explanation": "Policies must be respected."
+  },
+  {
+    "id": 179,
+    "category": "HR",
+    "level": "basic",
+    "question": "How do you handle a long commute or travel for work?",
+    "options": [
+      "Plan time and stay punctual",
+      "Be late often",
+      "Complain daily",
+      "Avoid work"
+    ],
+    "answerIndex": 0,
+    "explanation": "Planning helps."
+  },
+  {
+    "id": 180,
+    "category": "HR",
+    "level": "basic",
+    "question": "How do you handle being asked the same question repeatedly?",
+    "options": ["Answer patiently and clarify", "Get angry", "Ignore", "Mock"],
+    "answerIndex": 0,
+    "explanation": "Patience is professional."
+  },
+
+  {
+    "id": 181,
+    "category": "HR",
+    "level": "basic",
+    "question": "What would you do if you are asked to work on weekends?",
+    "options": [
+      "Agree if needed occasionally, clarify comp-off/policy",
+      "Refuse rudely",
+      "Always say yes then skip",
+      "Complain"
+    ],
+    "answerIndex": 0,
+    "explanation": "Be flexible but clarify policy."
+  },
+  {
+    "id": 182,
+    "category": "HR",
+    "level": "basic",
+    "question": "How do you handle a teammate who is very quiet?",
+    "options": [
+      "Include them respectfully and ask input",
+      "Ignore them",
+      "Mock them",
+      "Force them"
+    ],
+    "answerIndex": 0,
+    "explanation": "Inclusive teamwork."
+  },
+  {
+    "id": 183,
+    "category": "HR",
+    "level": "basic",
+    "question": "How do you handle too many meetings?",
+    "options": [
+      "Ask for agenda, block focus time, update async",
+      "Attend all without focus",
+      "Skip randomly",
+      "Complain"
+    ],
+    "answerIndex": 0,
+    "explanation": "Smart meeting management."
+  },
+  {
+    "id": 184,
+    "category": "HR",
+    "level": "basic",
+    "question": "How do you handle a project delay?",
+    "options": [
+      "Inform early, explain reason, propose plan",
+      "Hide delay",
+      "Blame others",
+      "Give up"
+    ],
+    "answerIndex": 0,
+    "explanation": "Transparency matters."
+  },
+  {
+    "id": 185,
+    "category": "HR",
+    "level": "basic",
+    "question": "What would you do if you got a better offer after joining?",
+    "options": [
+      "Decide ethically, communicate properly, follow policy",
+      "Leave suddenly",
+      "Ghost",
+      "Threaten"
+    ],
+    "answerIndex": 0,
+    "explanation": "Professional exit if needed."
+  },
+
+  {
+    "id": 186,
+    "category": "HR",
+    "level": "basic",
+    "question": "How do you handle documenting your work?",
+    "options": [
+      "Write clear notes and update regularly",
+      "Never document",
+      "Only when forced",
+      "Copy paste"
+    ],
+    "answerIndex": 0,
+    "explanation": "Documentation helps teams."
+  },
+  {
+    "id": 187,
+    "category": "HR",
+    "level": "basic",
+    "question": "How do you handle a teammate who dominates discussions?",
+    "options": [
+      "Wait, then share points calmly, suggest turn-taking",
+      "Fight",
+      "Stay silent always",
+      "Leave meeting"
+    ],
+    "answerIndex": 0,
+    "explanation": "Professional communication."
+  },
+  {
+    "id": 188,
+    "category": "HR",
+    "level": "basic",
+    "question": "What would you do if you are asked to take a decision quickly?",
+    "options": [
+      "Ask key info, decide, communicate risks",
+      "Panic",
+      "Delay",
+      "Guess"
+    ],
+    "answerIndex": 0,
+    "explanation": "Quick decisions need clarity."
+  },
+  {
+    "id": 189,
+    "category": "HR",
+    "level": "basic",
+    "question": "How do you handle an interview question you don’t know?",
+    "options": [
+      "Be honest, share what you know, offer to learn",
+      "Lie",
+      "Stay silent",
+      "Change topic"
+    ],
+    "answerIndex": 0,
+    "explanation": "Honesty is better than guessing."
+  },
+  {
+    "id": 190,
+    "category": "HR",
+    "level": "basic",
+    "question": "How do you handle a new responsibility with no training?",
+    "options": [
+      "Self-learn, ask guidance, start small",
+      "Refuse",
+      "Wait forever",
+      "Complain"
+    ],
+    "answerIndex": 0,
+    "explanation": "Self-driven learning."
+  },
+
+  {
+    "id": 191,
+    "category": "HR",
+    "level": "basic",
+    "question": "What would you do if your work is criticized in public?",
+    "options": [
+      "Stay calm, ask for details, improve later",
+      "Argue loudly",
+      "Feel insulted and stop",
+      "Blame others"
+    ],
+    "answerIndex": 0,
+    "explanation": "Maintain professionalism."
+  },
+  {
+    "id": 192,
+    "category": "HR",
+    "level": "basic",
+    "question": "How do you handle a teammate who is always negative?",
+    "options": [
+      "Stay positive, focus on solutions, set boundaries",
+      "Join negativity",
+      "Fight",
+      "Avoid work"
+    ],
+    "answerIndex": 0,
+    "explanation": "Solution mindset."
+  },
+  {
+    "id": 193,
+    "category": "HR",
+    "level": "basic",
+    "question": "How do you handle a sudden production issue/urgent incident?",
+    "options": [
+      "Stay calm, inform, help fix, communicate updates",
+      "Panic",
+      "Ignore",
+      "Blame"
+    ],
+    "answerIndex": 0,
+    "explanation": "Calm response is key."
+  },
+  {
+    "id": 194,
+    "category": "HR",
+    "level": "basic",
+    "question": "How do you handle learning from failure?",
+    "options": [
+      "Reflect, identify cause, improve next time",
+      "Give up",
+      "Blame others",
+      "Avoid trying"
+    ],
+    "answerIndex": 0,
+    "explanation": "Growth mindset."
+  },
+  {
+    "id": 195,
+    "category": "HR",
+    "level": "basic",
+    "question": "What would you do if you are asked to do something beyond your role temporarily?",
+    "options": [
+      "Support if possible and align priorities",
+      "Refuse always",
+      "Delay",
+      "Complain"
+    ],
+    "answerIndex": 0,
+    "explanation": "Flexibility helps teams."
+  },
+
+  {
+    "id": 196,
+    "category": "HR",
+    "level": "basic",
+    "question": "How do you handle a teammate who asks too many questions?",
+    "options": [
+      "Answer patiently, guide them to resources",
+      "Get irritated",
+      "Ignore them",
+      "Mock them"
+    ],
+    "answerIndex": 0,
+    "explanation": "Support builds team strength."
+  },
+  {
+    "id": 197,
+    "category": "HR",
+    "level": "basic",
+    "question": "How do you handle receiving multiple instructions at once?",
+    "options": [
+      "Write down, confirm priority, execute step-by-step",
+      "Forget and guess",
+      "Do random",
+      "Say yes then fail"
+    ],
+    "answerIndex": 0,
+    "explanation": "Clarify and organize."
+  },
+  {
+    "id": 198,
+    "category": "HR",
+    "level": "basic",
+    "question": "How do you ensure you are improving over time?",
+    "options": [
+      "Track feedback, practice, set goals",
+      "Hope it happens",
+      "Compare only",
+      "Do nothing"
+    ],
+    "answerIndex": 0,
+    "explanation": "Intentional improvement."
+  },
+  {
+    "id": 199,
+    "category": "HR",
+    "level": "basic",
+    "question": "What would you do if you have to learn quickly for a project?",
+    "options": [
+      "Focus on essentials, practice, ask help",
+      "Avoid learning",
+      "Delay",
+      "Complain"
+    ],
+    "answerIndex": 0,
+    "explanation": "Learn fast by focusing on essentials."
+  },
+  {
+    "id": 200,
+    "category": "HR",
+    "level": "basic",
+    "question": "Why should we trust you?",
+    "options": [
+      "Because I am honest, consistent, and accountable",
+      "Because I said so",
+      "No reason",
+      "Because everyone trusts me"
+    ],
+    "answerIndex": 0,
+    "explanation": "Trust is earned by reliability and integrity."
+  },
+  {
+    "id": 201,
+    "category": "HR",
+    "level": "basic",
+    "question": "What do you do when you don’t get a reply to an important message?",
+    "options": [
+      "Follow up politely and use the right channel",
+      "Spam continuously",
+      "Get angry",
+      "Give up"
+    ],
+    "answerIndex": 0,
+    "explanation": "Professional follow-ups keep work moving."
+  },
+  {
+    "id": 202,
+    "category": "HR",
+    "level": "basic",
+    "question": "How do you handle a meeting with no agenda?",
+    "options": [
+      "Ask for purpose and expected outcome",
+      "Stay silent and waste time",
+      "Complain later",
+      "Leave immediately"
+    ],
+    "answerIndex": 0,
+    "explanation": "Clarifying agenda makes meetings useful."
+  },
+  {
+    "id": 203,
+    "category": "HR",
+    "level": "basic",
+    "question": "What would you do if you are asked to do something urgently during lunch/break?",
+    "options": [
+      "Help if critical, then take break later",
+      "Refuse rudely",
+      "Ignore",
+      "Fight"
+    ],
+    "answerIndex": 0,
+    "explanation": "Balanced flexibility is good."
+  },
+  {
+    "id": 204,
+    "category": "HR",
+    "level": "basic",
+    "question": "How do you handle working with a teammate who is much more experienced?",
+    "options": [
+      "Learn from them and contribute actively",
+      "Feel insecure and avoid",
+      "Compete negatively",
+      "Ignore their suggestions"
+    ],
+    "answerIndex": 0,
+    "explanation": "Learning mindset is valued."
+  },
+  {
+    "id": 205,
+    "category": "HR",
+    "level": "basic",
+    "question": "How do you handle working with a teammate who is less experienced?",
+    "options": [
+      "Support and guide respectfully",
+      "Insult them",
+      "Ignore them",
+      "Do everything alone"
+    ],
+    "answerIndex": 0,
+    "explanation": "Support builds stronger teams."
+  },
+
+  {
+    "id": 206,
+    "category": "HR",
+    "level": "basic",
+    "question": "What do you do if your task depends on someone else’s work?",
+    "options": [
+      "Coordinate early and track dependency",
+      "Wait silently",
+      "Blame them later",
+      "Stop working"
+    ],
+    "answerIndex": 0,
+    "explanation": "Dependency tracking prevents delays."
+  },
+  {
+    "id": 207,
+    "category": "HR",
+    "level": "basic",
+    "question": "How do you handle interruptions while working?",
+    "options": [
+      "Pause, note, resume with focus",
+      "Get angry",
+      "Stop working",
+      "Chat for long time"
+    ],
+    "answerIndex": 0,
+    "explanation": "Staying composed improves productivity."
+  },
+  {
+    "id": 208,
+    "category": "HR",
+    "level": "basic",
+    "question": "What would you do if you are not feeling well but have important work?",
+    "options": [
+      "Inform manager and plan work properly",
+      "Disappear",
+      "Work silently and fail",
+      "Blame team"
+    ],
+    "answerIndex": 0,
+    "explanation": "Communication helps manage expectations."
+  },
+  {
+    "id": 209,
+    "category": "HR",
+    "level": "basic",
+    "question": "How do you handle a teammate who doesn’t follow process?",
+    "options": [
+      "Remind politely and align on process",
+      "Fight",
+      "Ignore always",
+      "Complain to everyone"
+    ],
+    "answerIndex": 0,
+    "explanation": "Respect + alignment works best."
+  },
+  {
+    "id": 210,
+    "category": "HR",
+    "level": "basic",
+    "question": "What would you do if you notice a small issue others missed?",
+    "options": ["Report it and help fix", "Ignore it", "Hide it", "Make fun"],
+    "answerIndex": 0,
+    "explanation": "Proactiveness improves quality."
+  },
+
+  {
+    "id": 211,
+    "category": "HR",
+    "level": "basic",
+    "question": "How do you handle mistakes under tight time?",
+    "options": [
+      "Fix critical first, communicate, then improve",
+      "Hide mistakes",
+      "Rush and deliver wrong",
+      "Blame timeline"
+    ],
+    "answerIndex": 0,
+    "explanation": "Prioritize and communicate."
+  },
+  {
+    "id": 212,
+    "category": "HR",
+    "level": "basic",
+    "question": "How do you handle a teammate who talks too much and slows progress?",
+    "options": [
+      "Bring discussion back to topic politely",
+      "Argue",
+      "Ignore",
+      "Leave"
+    ],
+    "answerIndex": 0,
+    "explanation": "Keep meetings focused."
+  },
+  {
+    "id": 213,
+    "category": "HR",
+    "level": "basic",
+    "question": "What would you do if you receive conflicting instructions?",
+    "options": [
+      "Clarify with both and confirm priority",
+      "Pick randomly",
+      "Do nothing",
+      "Argue"
+    ],
+    "answerIndex": 0,
+    "explanation": "Avoid wrong delivery by clarifying."
+  },
+  {
+    "id": 214,
+    "category": "HR",
+    "level": "basic",
+    "question": "How do you handle a customer/user who is angry?",
+    "options": [
+      "Listen, stay calm, solve, update",
+      "Get angry back",
+      "Ignore",
+      "Blame user"
+    ],
+    "answerIndex": 0,
+    "explanation": "Calm handling protects company."
+  },
+  {
+    "id": 215,
+    "category": "HR",
+    "level": "basic",
+    "question": "How do you handle learning a skill you find difficult?",
+    "options": [
+      "Break into parts and practice daily",
+      "Give up",
+      "Complain",
+      "Avoid"
+    ],
+    "answerIndex": 0,
+    "explanation": "Small consistent practice works."
+  },
+
+  {
+    "id": 216,
+    "category": "HR",
+    "level": "basic",
+    "question": "What would you do if you are asked to do overtime without notice?",
+    "options": [
+      "Clarify urgency, help if possible, set boundaries",
+      "Shout and refuse",
+      "Always accept silently",
+      "Quit"
+    ],
+    "answerIndex": 0,
+    "explanation": "Be helpful but communicate clearly."
+  },
+  {
+    "id": 217,
+    "category": "HR",
+    "level": "basic",
+    "question": "How do you handle a teammate who doesn’t share updates?",
+    "options": [
+      "Ask for updates politely and set routine",
+      "Complain",
+      "Ignore",
+      "Gossip"
+    ],
+    "answerIndex": 0,
+    "explanation": "A simple update routine helps."
+  },
+  {
+    "id": 218,
+    "category": "HR",
+    "level": "basic",
+    "question": "What do you do if you realize you forgot to inform someone important?",
+    "options": [
+      "Inform immediately and apologize briefly",
+      "Hide it",
+      "Blame others",
+      "Ignore"
+    ],
+    "answerIndex": 0,
+    "explanation": "Quick correction is professional."
+  },
+  {
+    "id": 219,
+    "category": "HR",
+    "level": "basic",
+    "question": "How do you handle a situation where you have to say “no”?",
+    "options": [
+      "Say no politely and propose alternative",
+      "Say no rudely",
+      "Say yes then fail",
+      "Avoid answer"
+    ],
+    "answerIndex": 0,
+    "explanation": "Boundaries with alternatives help."
+  },
+  {
+    "id": 220,
+    "category": "HR",
+    "level": "basic",
+    "question": "What would you do if your manager asks you to do something impossible in time?",
+    "options": [
+      "Discuss scope, options, and realistic timeline",
+      "Say yes and fail",
+      "Refuse rudely",
+      "Disappear"
+    ],
+    "answerIndex": 0,
+    "explanation": "Negotiate priorities and scope."
+  },
+
+  {
+    "id": 221,
+    "category": "HR",
+    "level": "basic",
+    "question": "How do you handle public speaking or presentations?",
+    "options": [
+      "Prepare, practice, speak clearly",
+      "Avoid always",
+      "Read fast",
+      "Talk random"
+    ],
+    "answerIndex": 0,
+    "explanation": "Preparation builds confidence."
+  },
+  {
+    "id": 222,
+    "category": "HR",
+    "level": "basic",
+    "question": "What would you do if you receive too many tasks from different people?",
+    "options": [
+      "List tasks, ask priority, align with lead",
+      "Try all and fail",
+      "Ignore some silently",
+      "Complain"
+    ],
+    "answerIndex": 0,
+    "explanation": "Priority alignment prevents overload."
+  },
+  {
+    "id": 223,
+    "category": "HR",
+    "level": "basic",
+    "question": "How do you handle a teammate who is not cooperative?",
+    "options": [
+      "Talk politely, focus on goals, escalate if needed",
+      "Fight",
+      "Ignore",
+      "Blame publicly"
+    ],
+    "answerIndex": 0,
+    "explanation": "Professional approach works."
+  },
+  {
+    "id": 224,
+    "category": "HR",
+    "level": "basic",
+    "question": "What would you do if you are assigned a task with missing resources/access?",
+    "options": [
+      "Request access early and track",
+      "Wait silently",
+      "Guess",
+      "Blame IT later"
+    ],
+    "answerIndex": 0,
+    "explanation": "Proactive access requests save time."
+  },
+  {
+    "id": 225,
+    "category": "HR",
+    "level": "basic",
+    "question": "How do you handle a tough day at work?",
+    "options": [
+      "Prioritize, take short breaks, stay calm",
+      "Shout",
+      "Stop working",
+      "Spread negativity"
+    ],
+    "answerIndex": 0,
+    "explanation": "Stability under stress matters."
+  },
+
+  {
+    "id": 226,
+    "category": "HR",
+    "level": "basic",
+    "question": "What would you do if you are asked to relocate immediately?",
+    "options": [
+      "Clarify timeline and feasibility honestly",
+      "Say yes and later refuse",
+      "Get angry",
+      "Avoid answer"
+    ],
+    "answerIndex": 0,
+    "explanation": "Be honest and practical."
+  },
+  {
+    "id": 227,
+    "category": "HR",
+    "level": "basic",
+    "question": "How do you handle a teammate who always asks for help but doesn’t learn?",
+    "options": [
+      "Guide them with resources and set boundaries",
+      "Do everything for them",
+      "Insult them",
+      "Ignore"
+    ],
+    "answerIndex": 0,
+    "explanation": "Help + accountability is best."
+  },
+  {
+    "id": 228,
+    "category": "HR",
+    "level": "basic",
+    "question": "What would you do if you notice your teammate is stressed?",
+    "options": [
+      "Check in and offer support",
+      "Ignore",
+      "Mock them",
+      "Complain"
+    ],
+    "answerIndex": 0,
+    "explanation": "Empathy improves teamwork."
+  },
+  {
+    "id": 229,
+    "category": "HR",
+    "level": "basic",
+    "question": "How do you handle a disagreement in an online chat?",
+    "options": [
+      "Keep tone polite, use facts, call if needed",
+      "Type angrily",
+      "Spam emojis",
+      "Stop replying"
+    ],
+    "answerIndex": 0,
+    "explanation": "Clear communication reduces conflict."
+  },
+  {
+    "id": 230,
+    "category": "HR",
+    "level": "basic",
+    "question": "What would you do if you are asked to do a task without proper training?",
+    "options": [
+      "Learn basics fast and ask guidance",
+      "Refuse",
+      "Delay",
+      "Complain"
+    ],
+    "answerIndex": 0,
+    "explanation": "Learning attitude is valued."
+  },
+
+  {
+    "id": 231,
+    "category": "HR",
+    "level": "basic",
+    "question": "How do you handle an unexpected interview question?",
+    "options": [
+      "Pause, think, answer calmly",
+      "Panic",
+      "Talk random",
+      "End interview"
+    ],
+    "answerIndex": 0,
+    "explanation": "Calm thinking is good."
+  },
+  {
+    "id": 232,
+    "category": "HR",
+    "level": "basic",
+    "question": "What would you do if you joined a team and don’t understand their process?",
+    "options": [
+      "Ask and learn step-by-step",
+      "Criticize immediately",
+      "Ignore process",
+      "Do your own way"
+    ],
+    "answerIndex": 0,
+    "explanation": "Learn first, then improve later."
+  },
+  {
+    "id": 233,
+    "category": "HR",
+    "level": "basic",
+    "question": "How do you handle being compared with others?",
+    "options": [
+      "Focus on self-improvement",
+      "Get jealous",
+      "Insult others",
+      "Give up"
+    ],
+    "answerIndex": 0,
+    "explanation": "Growth mindset matters."
+  },
+  {
+    "id": 234,
+    "category": "HR",
+    "level": "basic",
+    "question": "What would you do if your teammate is absent and you need information from them?",
+    "options": [
+      "Check docs, ask others, inform lead",
+      "Wait only",
+      "Blame them",
+      "Stop"
+    ],
+    "answerIndex": 0,
+    "explanation": "Use alternatives and communicate."
+  },
+  {
+    "id": 235,
+    "category": "HR",
+    "level": "basic",
+    "question": "How do you handle negative feedback from a client/user?",
+    "options": ["Listen, accept, fix, update", "Argue", "Ignore", "Blame them"],
+    "answerIndex": 0,
+    "explanation": "Customer-first mindset."
+  },
+
+  {
+    "id": 236,
+    "category": "HR",
+    "level": "basic",
+    "question": "What would you do if you made a mistake that affects delivery?",
+    "options": [
+      "Inform early, fix, prevent repeat",
+      "Hide it",
+      "Blame others",
+      "Deliver anyway"
+    ],
+    "answerIndex": 0,
+    "explanation": "Transparency saves trust."
+  },
+  {
+    "id": 237,
+    "category": "HR",
+    "level": "basic",
+    "question": "How do you handle office discipline rules (attendance, dress, etc.)?",
+    "options": [
+      "Follow them responsibly",
+      "Ignore them",
+      "Break them often",
+      "Argue"
+    ],
+    "answerIndex": 0,
+    "explanation": "Policy adherence matters."
+  },
+  {
+    "id": 238,
+    "category": "HR",
+    "level": "basic",
+    "question": "What would you do if you feel you are underpaid?",
+    "options": [
+      "Discuss professionally with proof of value",
+      "Complain online",
+      "Threaten",
+      "Stop working"
+    ],
+    "answerIndex": 0,
+    "explanation": "Professional negotiation."
+  },
+  {
+    "id": 239,
+    "category": "HR",
+    "level": "basic",
+    "question": "How do you handle a teammate who is too competitive?",
+    "options": [
+      "Focus on collaboration and shared goals",
+      "Compete negatively",
+      "Fight",
+      "Avoid work"
+    ],
+    "answerIndex": 0,
+    "explanation": "Collaboration wins long-term."
+  },
+  {
+    "id": 240,
+    "category": "HR",
+    "level": "basic",
+    "question": "What would you do if your manager is unhappy with your performance?",
+    "options": [
+      "Ask feedback, create improvement plan",
+      "Argue",
+      "Blame others",
+      "Quit"
+    ],
+    "answerIndex": 0,
+    "explanation": "Improvement mindset."
+  },
+
+  {
+    "id": 241,
+    "category": "HR",
+    "level": "basic",
+    "question": "How do you handle tasks that require high accuracy?",
+    "options": [
+      "Use checklist and double-check work",
+      "Rush always",
+      "Guess",
+      "Skip review"
+    ],
+    "answerIndex": 0,
+    "explanation": "Accuracy needs process."
+  },
+  {
+    "id": 242,
+    "category": "HR",
+    "level": "basic",
+    "question": "What would you do if you are asked to take ownership of a failed task?",
+    "options": [
+      "Accept responsibility and fix forward",
+      "Deny",
+      "Blame others",
+      "Hide"
+    ],
+    "answerIndex": 0,
+    "explanation": "Ownership is respected."
+  },
+  {
+    "id": 243,
+    "category": "HR",
+    "level": "basic",
+    "question": "How do you handle situations when you feel tired at work?",
+    "options": [
+      "Take short break and prioritize tasks",
+      "Stop working fully",
+      "Complain",
+      "Ignore and make mistakes"
+    ],
+    "answerIndex": 0,
+    "explanation": "Energy management helps."
+  },
+  {
+    "id": 244,
+    "category": "HR",
+    "level": "basic",
+    "question": "What would you do if you are asked to work with a new manager?",
+    "options": [
+      "Adapt, learn expectations, communicate",
+      "Resist change",
+      "Complain",
+      "Ignore"
+    ],
+    "answerIndex": 0,
+    "explanation": "Adaptability matters."
+  },
+  {
+    "id": 245,
+    "category": "HR",
+    "level": "basic",
+    "question": "How do you handle a task where you need help?",
+    "options": [
+      "Ask early with details",
+      "Wait till last moment",
+      "Hide problem",
+      "Blame others"
+    ],
+    "answerIndex": 0,
+    "explanation": "Early help prevents delays."
+  },
+
+  {
+    "id": 246,
+    "category": "HR",
+    "level": "basic",
+    "question": "What would you do if you are asked to share progress but you have none?",
+    "options": [
+      "Be honest, explain blockers, next steps",
+      "Lie",
+      "Avoid",
+      "Blame"
+    ],
+    "answerIndex": 0,
+    "explanation": "Honest updates build trust."
+  },
+  {
+    "id": 247,
+    "category": "HR",
+    "level": "basic",
+    "question": "How do you handle a teammate who constantly complains?",
+    "options": [
+      "Redirect to solutions and boundaries",
+      "Join them",
+      "Fight",
+      "Avoid"
+    ],
+    "answerIndex": 0,
+    "explanation": "Solution focus helps team."
+  },
+  {
+    "id": 248,
+    "category": "HR",
+    "level": "basic",
+    "question": "What would you do if you see a safety/security risk?",
+    "options": [
+      "Report immediately through proper channel",
+      "Ignore",
+      "Share publicly",
+      "Wait"
+    ],
+    "answerIndex": 0,
+    "explanation": "Security awareness is critical."
+  },
+  {
+    "id": 249,
+    "category": "HR",
+    "level": "basic",
+    "question": "How do you handle a busy manager with little time?",
+    "options": [
+      "Send concise updates and questions",
+      "Send long messages",
+      "Wait always",
+      "Complain"
+    ],
+    "answerIndex": 0,
+    "explanation": "Concise communication works."
+  },
+  {
+    "id": 250,
+    "category": "HR",
+    "level": "basic",
+    "question": "What would you do if you are asked to join immediately but you have commitments?",
+    "options": [
+      "Explain honestly and propose feasible date",
+      "Say yes then delay",
+      "Ghost",
+      "Get rude"
+    ],
+    "answerIndex": 0,
+    "explanation": "Honesty prevents issues."
+  },
+
+  {
+    "id": 251,
+    "category": "HR",
+    "level": "basic",
+    "question": "How do you handle working on weekends for a critical release?",
+    "options": [
+      "Support with plan and recover later",
+      "Refuse rudely",
+      "Skip without telling",
+      "Complain"
+    ],
+    "answerIndex": 0,
+    "explanation": "Team support in critical times."
+  },
+  {
+    "id": 252,
+    "category": "HR",
+    "level": "basic",
+    "question": "What would you do if a teammate asks you to cover their work often?",
+    "options": [
+      "Help occasionally, set limits, inform if repeated",
+      "Always do it",
+      "Refuse harshly",
+      "Complain to all"
+    ],
+    "answerIndex": 0,
+    "explanation": "Help with boundaries."
+  },
+  {
+    "id": 253,
+    "category": "HR",
+    "level": "basic",
+    "question": "How do you handle a situation where you have to learn and deliver quickly?",
+    "options": [
+      "Learn essentials, deliver MVP, improve iteratively",
+      "Panic",
+      "Delay",
+      "Avoid"
+    ],
+    "answerIndex": 0,
+    "explanation": "Deliver step-by-step."
+  },
+  {
+    "id": 254,
+    "category": "HR",
+    "level": "basic",
+    "question": "What would you do if you receive a task you think is unnecessary?",
+    "options": [
+      "Clarify purpose and propose better option",
+      "Refuse",
+      "Ignore",
+      "Complain"
+    ],
+    "answerIndex": 0,
+    "explanation": "Clarification can optimize work."
+  },
+  {
+    "id": 255,
+    "category": "HR",
+    "level": "basic",
+    "question": "How do you handle a teammate who ignores your messages?",
+    "options": [
+      "Follow up politely and use alternate channel",
+      "Get angry",
+      "Spam",
+      "Stop"
+    ],
+    "answerIndex": 0,
+    "explanation": "Professional follow-up."
+  },
+
+  {
+    "id": 256,
+    "category": "HR",
+    "level": "basic",
+    "question": "What would you do if you are asked to work with strict deadlines frequently?",
+    "options": [
+      "Improve planning and communicate early",
+      "Complain always",
+      "Avoid",
+      "Quit"
+    ],
+    "answerIndex": 0,
+    "explanation": "Planning reduces stress."
+  },
+  {
+    "id": 257,
+    "category": "HR",
+    "level": "basic",
+    "question": "How do you handle unexpected travel for work?",
+    "options": [
+      "Plan logistics and communicate availability",
+      "Refuse always",
+      "Be late",
+      "Complain"
+    ],
+    "answerIndex": 0,
+    "explanation": "Preparedness helps."
+  },
+  {
+    "id": 258,
+    "category": "HR",
+    "level": "basic",
+    "question": "What would you do if your teammate is not meeting quality standards?",
+    "options": [
+      "Give constructive feedback and help",
+      "Insult them",
+      "Ignore",
+      "Complain"
+    ],
+    "answerIndex": 0,
+    "explanation": "Constructive approach works."
+  },
+  {
+    "id": 259,
+    "category": "HR",
+    "level": "basic",
+    "question": "How do you handle receiving instructions from multiple channels (email, chat, calls)?",
+    "options": [
+      "Organize in one task list and confirm priority",
+      "Forget some",
+      "Do random",
+      "Ignore"
+    ],
+    "answerIndex": 0,
+    "explanation": "Centralize tasks."
+  },
+  {
+    "id": 260,
+    "category": "HR",
+    "level": "basic",
+    "question": "What would you do if you have a conflict with company policy?",
+    "options": [
+      "Follow policy and discuss respectfully",
+      "Break it",
+      "Complain online",
+      "Refuse"
+    ],
+    "answerIndex": 0,
+    "explanation": "Policy adherence first."
+  },
+
+  {
+    "id": 261,
+    "category": "HR",
+    "level": "basic",
+    "question": "How do you handle “unknown unknowns” in a new project?",
+    "options": [
+      "Ask questions, research, start small",
+      "Avoid",
+      "Assume everything",
+      "Delay"
+    ],
+    "answerIndex": 0,
+    "explanation": "Exploration and learning."
+  },
+  {
+    "id": 262,
+    "category": "HR",
+    "level": "basic",
+    "question": "What would you do if a client asks for something out of scope?",
+    "options": [
+      "Explain scope and propose change request",
+      "Agree blindly",
+      "Argue",
+      "Ignore"
+    ],
+    "answerIndex": 0,
+    "explanation": "Scope management."
+  },
+  {
+    "id": 263,
+    "category": "HR",
+    "level": "basic",
+    "question": "How do you handle working with limited time and resources?",
+    "options": [
+      "Prioritize essentials and communicate tradeoffs",
+      "Complain",
+      "Quit",
+      "Ignore quality"
+    ],
+    "answerIndex": 0,
+    "explanation": "Tradeoff thinking."
+  },
+  {
+    "id": 264,
+    "category": "HR",
+    "level": "basic",
+    "question": "What would you do if your teammate is taking too long to finish their part?",
+    "options": [
+      "Check in politely and offer help",
+      "Insult them",
+      "Ignore and blame later",
+      "Fight"
+    ],
+    "answerIndex": 0,
+    "explanation": "Support + tracking."
+  },
+  {
+    "id": 265,
+    "category": "HR",
+    "level": "basic",
+    "question": "How do you handle a situation where you must follow instructions you disagree with?",
+    "options": [
+      "Follow professionally, share concern respectfully",
+      "Refuse",
+      "Complain",
+      "Ignore"
+    ],
+    "answerIndex": 0,
+    "explanation": "Professionalism matters."
+  },
+
+  {
+    "id": 266,
+    "category": "HR",
+    "level": "basic",
+    "question": "What would you do if you receive work after office hours?",
+    "options": [
+      "Respond based on urgency and clarify expectations",
+      "Ignore always",
+      "Get angry",
+      "Complain"
+    ],
+    "answerIndex": 0,
+    "explanation": "Balance + clarity."
+  },
+  {
+    "id": 267,
+    "category": "HR",
+    "level": "basic",
+    "question": "How do you handle working with a teammate in a different time zone?",
+    "options": [
+      "Align overlap hours and communicate async",
+      "Complain",
+      "Ignore time zones",
+      "Delay"
+    ],
+    "answerIndex": 0,
+    "explanation": "Async planning helps."
+  },
+  {
+    "id": 268,
+    "category": "HR",
+    "level": "basic",
+    "question": "What would you do if you get an opportunity to improve a process?",
+    "options": [
+      "Suggest with benefits and try small pilot",
+      "Keep silent",
+      "Force change",
+      "Complain"
+    ],
+    "answerIndex": 0,
+    "explanation": "Process improvement mindset."
+  },
+  {
+    "id": 269,
+    "category": "HR",
+    "level": "basic",
+    "question": "How do you handle a situation where you must deliver bad news?",
+    "options": [
+      "Be honest, brief, and give next steps",
+      "Hide it",
+      "Blame others",
+      "Avoid"
+    ],
+    "answerIndex": 0,
+    "explanation": "Transparency builds trust."
+  },
+  {
+    "id": 270,
+    "category": "HR",
+    "level": "basic",
+    "question": "What would you do if you notice someone is being treated unfairly?",
+    "options": [
+      "Support them and report via proper channel",
+      "Ignore",
+      "Join unfairness",
+      "Post online"
+    ],
+    "answerIndex": 0,
+    "explanation": "Fairness and ethics matter."
+  },
+
+  {
+    "id": 271,
+    "category": "HR",
+    "level": "basic",
+    "question": "How do you handle a teammate who refuses to accept feedback?",
+    "options": [
+      "Give calm feedback with examples and involve lead if needed",
+      "Fight",
+      "Ignore",
+      "Complain"
+    ],
+    "answerIndex": 0,
+    "explanation": "Professional escalation if required."
+  },
+  {
+    "id": 272,
+    "category": "HR",
+    "level": "basic",
+    "question": "What would you do if you are asked to do something that risks quality?",
+    "options": [
+      "Explain risk and propose safer option",
+      "Do it anyway",
+      "Hide risk",
+      "Blame later"
+    ],
+    "answerIndex": 0,
+    "explanation": "Quality-first thinking."
+  },
+  {
+    "id": 273,
+    "category": "HR",
+    "level": "basic",
+    "question": "How do you handle a task with many small steps?",
+    "options": [
+      "Break down, checklist, finish systematically",
+      "Rush",
+      "Skip steps",
+      "Do random"
+    ],
+    "answerIndex": 0,
+    "explanation": "Systematic work reduces errors."
+  },
+  {
+    "id": 274,
+    "category": "HR",
+    "level": "basic",
+    "question": "What would you do if your teammate criticizes you unfairly?",
+    "options": [
+      "Stay calm, ask for specifics, resolve privately",
+      "Fight publicly",
+      "Gossip",
+      "Quit"
+    ],
+    "answerIndex": 0,
+    "explanation": "Stay professional."
+  },
+  {
+    "id": 275,
+    "category": "HR",
+    "level": "basic",
+    "question": "How do you handle waiting time in projects (blocked work)?",
+    "options": [
+      "Work on other tasks, document, unblock proactively",
+      "Waste time",
+      "Complain",
+      "Stop"
+    ],
+    "answerIndex": 0,
+    "explanation": "Use time productively."
+  },
+
+  {
+    "id": 276,
+    "category": "HR",
+    "level": "basic",
+    "question": "What would you do if your manager gives you negative feedback?",
+    "options": [
+      "Accept, ask improvements, act on it",
+      "Argue",
+      "Ignore",
+      "Blame"
+    ],
+    "answerIndex": 0,
+    "explanation": "Feedback is for growth."
+  },
+  {
+    "id": 277,
+    "category": "HR",
+    "level": "basic",
+    "question": "How do you handle a teammate who always arrives late?",
+    "options": [
+      "Discuss politely, involve lead if needed",
+      "Insult them",
+      "Ignore always",
+      "Gossip"
+    ],
+    "answerIndex": 0,
+    "explanation": "Address respectfully."
+  },
+  {
+    "id": 278,
+    "category": "HR",
+    "level": "basic",
+    "question": "What would you do if you have to learn a new domain quickly?",
+    "options": [
+      "Start with basics, ask experts, practice",
+      "Avoid",
+      "Delay",
+      "Complain"
+    ],
+    "answerIndex": 0,
+    "explanation": "Structured learning helps."
+  },
+  {
+    "id": 279,
+    "category": "HR",
+    "level": "basic",
+    "question": "How do you handle a teammate who does not follow deadlines?",
+    "options": [
+      "Align expectations, help, escalate if repeated",
+      "Blame publicly",
+      "Ignore",
+      "Do their job always"
+    ],
+    "answerIndex": 0,
+    "explanation": "Support + accountability."
+  },
+  {
+    "id": 280,
+    "category": "HR",
+    "level": "basic",
+    "question": "What would you do if you are asked to take a role you didn’t expect?",
+    "options": [
+      "Clarify expectations and decide honestly",
+      "Accept silently",
+      "Refuse rudely",
+      "Disappear"
+    ],
+    "answerIndex": 0,
+    "explanation": "Clarity avoids mismatch."
+  },
+
+  {
+    "id": 281,
+    "category": "HR",
+    "level": "basic",
+    "question": "How do you handle a task that needs attention to detail and speed?",
+    "options": [
+      "Focus on critical parts and use checklist",
+      "Rush only",
+      "Slow only",
+      "Skip review"
+    ],
+    "answerIndex": 0,
+    "explanation": "Balance speed and quality."
+  },
+  {
+    "id": 282,
+    "category": "HR",
+    "level": "basic",
+    "question": "What would you do if your teammate is doing something risky?",
+    "options": [
+      "Warn them and inform lead if needed",
+      "Join them",
+      "Ignore",
+      "Record and post"
+    ],
+    "answerIndex": 0,
+    "explanation": "Safety and risk handling."
+  },
+  {
+    "id": 283,
+    "category": "HR",
+    "level": "basic",
+    "question": "How do you handle a situation where you must work with low supervision?",
+    "options": [
+      "Plan tasks and update progress",
+      "Do nothing",
+      "Wait for orders",
+      "Hide issues"
+    ],
+    "answerIndex": 0,
+    "explanation": "Self-management."
+  },
+  {
+    "id": 284,
+    "category": "HR",
+    "level": "basic",
+    "question": "What would you do if you don’t like a teammate’s working style?",
+    "options": [
+      "Focus on outcomes and communicate expectations",
+      "Fight",
+      "Complain",
+      "Avoid work"
+    ],
+    "answerIndex": 0,
+    "explanation": "Outcome-focused teamwork."
+  },
+  {
+    "id": 285,
+    "category": "HR",
+    "level": "basic",
+    "question": "How do you handle daily standups/updates?",
+    "options": [
+      "Share progress, blockers, next steps",
+      "Talk long stories",
+      "Say nothing",
+      "Complain"
+    ],
+    "answerIndex": 0,
+    "explanation": "Short structured updates work best."
+  },
+
+  {
+    "id": 286,
+    "category": "HR",
+    "level": "basic",
+    "question": "What would you do if you are asked to do multiple interviews in a day?",
+    "options": [
+      "Manage energy, stay prepared, be consistent",
+      "Cancel all",
+      "Get angry",
+      "Talk random"
+    ],
+    "answerIndex": 0,
+    "explanation": "Preparation and calmness help."
+  },
+  {
+    "id": 287,
+    "category": "HR",
+    "level": "basic",
+    "question": "How do you handle a teammate who is always right (ego)?",
+    "options": [
+      "Use facts, stay calm, focus on goal",
+      "Fight ego",
+      "Avoid them",
+      "Gossip"
+    ],
+    "answerIndex": 0,
+    "explanation": "Facts and calmness work."
+  },
+  {
+    "id": 288,
+    "category": "HR",
+    "level": "basic",
+    "question": "What would you do if you have to work on a task you consider low impact?",
+    "options": [
+      "Do it well and suggest improvements later",
+      "Ignore it",
+      "Refuse",
+      "Delay"
+    ],
+    "answerIndex": 0,
+    "explanation": "Professionalism."
+  },
+  {
+    "id": 289,
+    "category": "HR",
+    "level": "basic",
+    "question": "How do you handle receiving many emails/messages?",
+    "options": [
+      "Batch check, prioritize, respond clearly",
+      "Reply late always",
+      "Ignore",
+      "Get stressed"
+    ],
+    "answerIndex": 0,
+    "explanation": "Prioritization reduces overload."
+  },
+  {
+    "id": 290,
+    "category": "HR",
+    "level": "basic",
+    "question": "What would you do if you are asked to break a rule to finish faster?",
+    "options": [
+      "Refuse and propose safe alternative",
+      "Break it",
+      "Hide it",
+      "Blame manager"
+    ],
+    "answerIndex": 0,
+    "explanation": "Ethics + policy first."
+  },
+
+  {
+    "id": 291,
+    "category": "HR",
+    "level": "basic",
+    "question": "How do you handle a new teammate joining your team?",
+    "options": [
+      "Welcome them and share basics/resources",
+      "Ignore them",
+      "Make fun",
+      "Avoid"
+    ],
+    "answerIndex": 0,
+    "explanation": "Good culture matters."
+  },
+  {
+    "id": 292,
+    "category": "HR",
+    "level": "basic",
+    "question": "What would you do if you need approval but approver is absent?",
+    "options": [
+      "Use backup approver/process and inform lead",
+      "Wait silently",
+      "Skip approval",
+      "Blame"
+    ],
+    "answerIndex": 0,
+    "explanation": "Follow process and communicate."
+  },
+  {
+    "id": 293,
+    "category": "HR",
+    "level": "basic",
+    "question": "How do you handle a situation where you must learn from documentation?",
+    "options": [
+      "Read, try, note doubts, ask targeted questions",
+      "Skip docs",
+      "Complain docs bad",
+      "Wait for training"
+    ],
+    "answerIndex": 0,
+    "explanation": "Docs-first learning is common."
+  },
+  {
+    "id": 294,
+    "category": "HR",
+    "level": "basic",
+    "question": "What would you do if you feel you are not growing in your role?",
+    "options": [
+      "Discuss growth plan and take new challenges",
+      "Complain",
+      "Quit suddenly",
+      "Blame others"
+    ],
+    "answerIndex": 0,
+    "explanation": "Take initiative and communicate."
+  },
+  {
+    "id": 295,
+    "category": "HR",
+    "level": "basic",
+    "question": "How do you handle an interview where you feel nervous?",
+    "options": [
+      "Breathe, pause, answer step-by-step",
+      "Panic",
+      "Rush answers",
+      "Quit"
+    ],
+    "answerIndex": 0,
+    "explanation": "Pausing is okay."
+  },
+
+  {
+    "id": 296,
+    "category": "HR",
+    "level": "basic",
+    "question": "What would you do if your teammate keeps making the same mistake?",
+    "options": [
+      "Give guidance, suggest checklist, escalate if needed",
+      "Insult",
+      "Ignore",
+      "Gossip"
+    ],
+    "answerIndex": 0,
+    "explanation": "Support with structure helps."
+  },
+  {
+    "id": 297,
+    "category": "HR",
+    "level": "basic",
+    "question": "How do you handle responsibility when something goes wrong?",
+    "options": [
+      "Own it, fix it, learn from it",
+      "Blame others",
+      "Hide",
+      "Quit"
+    ],
+    "answerIndex": 0,
+    "explanation": "Ownership builds trust."
+  },
+  {
+    "id": 298,
+    "category": "HR",
+    "level": "basic",
+    "question": "What would you do if you are asked to join a call immediately?",
+    "options": [
+      "Join if possible; if not, give quick ETA",
+      "Ignore",
+      "Get angry",
+      "Delay without info"
+    ],
+    "answerIndex": 0,
+    "explanation": "Quick communication helps."
+  },
+  {
+    "id": 299,
+    "category": "HR",
+    "level": "basic",
+    "question": "How do you handle a situation where you must deliver results with uncertainty?",
+    "options": [
+      "Make assumptions, validate, communicate risks",
+      "Do nothing",
+      "Hide uncertainty",
+      "Panic"
+    ],
+    "answerIndex": 0,
+    "explanation": "Manage uncertainty professionally."
+  },
+  {
+    "id": 300,
+    "category": "HR",
+    "level": "basic",
+    "question": "What will you do if you don’t get selected?",
+    "options": [
+      "Ask feedback, improve, try again",
+      "Get angry",
+      "Give up",
+      "Blame interviewer"
+    ],
+    "answerIndex": 0,
+    "explanation": "Resilience and learning mindset."
+  }
+]

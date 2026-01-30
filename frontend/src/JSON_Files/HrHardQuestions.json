@@ -1,0 +1,4261 @@
+[
+  {
+    "id": 1,
+    "category": "HR",
+    "level": "hard",
+    "question": "You have 60 seconds: convince us why you are the safest hire for this role.",
+    "options": [
+      "Value + proof + risk-reduction (reliability, learning speed, communication)",
+      "Talk only about needs",
+      "Say generic lines",
+      "Explain full life story"
+    ],
+    "answerIndex": 0,
+    "explanation": "Hard HR tests: impact + credibility + low risk."
+  },
+  {
+    "id": 2,
+    "category": "HR",
+    "level": "hard",
+    "question": "Explain a time you failed publicly. What exactly did you change after that?",
+    "options": [
+      "Own it + specific change (process/behavior) + measurable result",
+      "Say you never failed",
+      "Blame others",
+      "Give vague learning"
+    ],
+    "answerIndex": 0,
+    "explanation": "They want specifics and evidence of growth."
+  },
+  {
+    "id": 3,
+    "category": "HR",
+    "level": "hard",
+    "question": "Tell me about a time you had conflict with your manager. How did it end?",
+    "options": [
+      "Respectful disagreement + data + alignment + outcome",
+      "Argued until won",
+      "Avoided manager",
+      "Escalated immediately"
+    ],
+    "answerIndex": 0,
+    "explanation": "Shows maturity and stakeholder handling."
+  },
+  {
+    "id": 4,
+    "category": "HR",
+    "level": "hard",
+    "question": "Describe your biggest professional mistake and why it happened (root cause).",
+    "options": [
+      "Root cause + fix + prevention system",
+      "Hide details",
+      "Blame teammate",
+      "Say 'carelessness' only"
+    ],
+    "answerIndex": 0,
+    "explanation": "Hard-level expects root-cause thinking."
+  },
+  {
+    "id": 5,
+    "category": "HR",
+    "level": "hard",
+    "question": "A teammate is underperforming and your deadline is at risk. What do you do?",
+    "options": [
+      "Clarify gaps, support, re-plan, escalate with facts if needed",
+      "Complain only",
+      "Do all work silently",
+      "Insult them"
+    ],
+    "answerIndex": 0,
+    "explanation": "Balance empathy + accountability + delivery."
+  },
+
+  {
+    "id": 6,
+    "category": "HR",
+    "level": "hard",
+    "question": "You discover a serious issue 1 hour before release. What’s your decision process?",
+    "options": [
+      "Assess severity, communicate, decide rollback/fix, document",
+      "Hide issue",
+      "Release anyway",
+      "Blame QA"
+    ],
+    "answerIndex": 0,
+    "explanation": "Risk management + communication under pressure."
+  },
+  {
+    "id": 7,
+    "category": "HR",
+    "level": "hard",
+    "question": "Tell me about a time you had to influence without authority.",
+    "options": [
+      "Used data, aligned incentives, small pilot, gained buy-in",
+      "Forced people",
+      "Complained",
+      "Waited for permission"
+    ],
+    "answerIndex": 0,
+    "explanation": "Influence is a senior trait."
+  },
+  {
+    "id": 8,
+    "category": "HR",
+    "level": "hard",
+    "question": "Your manager asks for a status update, but you have bad news. How do you communicate it?",
+    "options": [
+      "Early, clear, reason, impact, options, next steps",
+      "Hide until asked",
+      "Overpromise",
+      "Blame others"
+    ],
+    "answerIndex": 0,
+    "explanation": "Hard HR checks courage + clarity."
+  },
+  {
+    "id": 9,
+    "category": "HR",
+    "level": "hard",
+    "question": "Describe a time you chose the wrong option. How did you recover?",
+    "options": [
+      "Admit, correct fast, communicate, learn",
+      "Hide it",
+      "Blame others",
+      "Continue wrong path"
+    ],
+    "answerIndex": 0,
+    "explanation": "Recovery matters more than perfection."
+  },
+  {
+    "id": 10,
+    "category": "HR",
+    "level": "hard",
+    "question": "How do you handle a stakeholder who pressures you to take unethical shortcuts?",
+    "options": [
+      "Refuse politely, cite policy/risk, escalate appropriately",
+      "Agree secretly",
+      "Ignore",
+      "Post online"
+    ],
+    "answerIndex": 0,
+    "explanation": "Integrity + process under pressure."
+  },
+
+  {
+    "id": 11,
+    "category": "HR",
+    "level": "hard",
+    "question": "Tell me about a time you managed two seniors giving conflicting priorities.",
+    "options": [
+      "Align priorities transparently, confirm in writing, execute",
+      "Pick one silently",
+      "Try all and fail",
+      "Argue"
+    ],
+    "answerIndex": 0,
+    "explanation": "Hard: alignment + expectation management."
+  },
+  {
+    "id": 12,
+    "category": "HR",
+    "level": "hard",
+    "question": "What’s your method to prevent work from becoming invisible (without bragging)?",
+    "options": [
+      "Outcome-based updates, metrics, milestones, stakeholder alignment",
+      "Take loud credit",
+      "Stay silent",
+      "Complain"
+    ],
+    "answerIndex": 0,
+    "explanation": "Visibility is a skill at senior levels."
+  },
+  {
+    "id": 13,
+    "category": "HR",
+    "level": "hard",
+    "question": "Describe a time you handled a toxic high performer.",
+    "options": [
+      "Address behavior with evidence, set boundaries, escalate if needed",
+      "Ignore toxicity",
+      "Fight publicly",
+      "Quit immediately"
+    ],
+    "answerIndex": 0,
+    "explanation": "Culture protection is hard."
+  },
+  {
+    "id": 14,
+    "category": "HR",
+    "level": "hard",
+    "question": "You join a team with poor documentation and chaos. What is your first-week plan?",
+    "options": [
+      "Understand system, map gaps, create quick docs, align priorities",
+      "Criticize immediately",
+      "Change everything day 1",
+      "Wait for others"
+    ],
+    "answerIndex": 0,
+    "explanation": "Structured stabilization approach."
+  },
+  {
+    "id": 15,
+    "category": "HR",
+    "level": "hard",
+    "question": "Tell me about a time you had to say no to leadership.",
+    "options": [
+      "Explain constraints, offer alternatives, protect quality",
+      "Say yes and fail",
+      "Refuse rudely",
+      "Avoid"
+    ],
+    "answerIndex": 0,
+    "explanation": "Hard: assertiveness with respect."
+  },
+
+  {
+    "id": 16,
+    "category": "HR",
+    "level": "hard",
+    "question": "How do you decide what to escalate vs solve quietly?",
+    "options": [
+      "Assess impact/urgency/ownership, escalate with options",
+      "Escalate everything",
+      "Never escalate",
+      "Escalate emotionally"
+    ],
+    "answerIndex": 0,
+    "explanation": "Judgment in escalation is key."
+  },
+  {
+    "id": 17,
+    "category": "HR",
+    "level": "hard",
+    "question": "Describe a time you handled a serious miscommunication that damaged trust.",
+    "options": [
+      "Own, clarify, repair, document, prevent repeat",
+      "Blame others",
+      "Ignore",
+      "Over-apologize without fix"
+    ],
+    "answerIndex": 0,
+    "explanation": "Trust repair is a senior trait."
+  },
+  {
+    "id": 18,
+    "category": "HR",
+    "level": "hard",
+    "question": "How do you handle a team decision you strongly disagree with?",
+    "options": [
+      "Share concerns once with facts, then commit and support",
+      "Complain later",
+      "Refuse to cooperate",
+      "Quit"
+    ],
+    "answerIndex": 0,
+    "explanation": "Disagree-and-commit shows maturity."
+  },
+  {
+    "id": 19,
+    "category": "HR",
+    "level": "hard",
+    "question": "Tell me about a time you made a process change that met resistance.",
+    "options": [
+      "Listened, piloted, measured, scaled",
+      "Forced change",
+      "Gave up",
+      "Blamed team"
+    ],
+    "answerIndex": 0,
+    "explanation": "Change management is hard."
+  },
+  {
+    "id": 20,
+    "category": "HR",
+    "level": "hard",
+    "question": "What would you do if you realize your manager is making a harmful decision?",
+    "options": [
+      "Raise concerns privately with evidence and alternatives",
+      "Publicly shame them",
+      "Stay silent always",
+      "Complain to peers"
+    ],
+    "answerIndex": 0,
+    "explanation": "Protect business with professionalism."
+  },
+
+  {
+    "id": 21,
+    "category": "HR",
+    "level": "hard",
+    "question": "Describe a time you delivered big results with limited resources.",
+    "options": [
+      "Prioritized essentials, negotiated scope, delivered measurable impact",
+      "Complained and stopped",
+      "Reduced quality silently",
+      "No example"
+    ],
+    "answerIndex": 0,
+    "explanation": "Constraint leadership matters."
+  },
+  {
+    "id": 22,
+    "category": "HR",
+    "level": "hard",
+    "question": "How do you handle a client/stakeholder who constantly changes scope but refuses timeline changes?",
+    "options": [
+      "Document changes, renegotiate scope/timeline, offer options",
+      "Accept and burn out",
+      "Argue",
+      "Ignore"
+    ],
+    "answerIndex": 0,
+    "explanation": "Scope control + negotiation."
+  },
+  {
+    "id": 23,
+    "category": "HR",
+    "level": "hard",
+    "question": "Tell me about a time you prevented a major failure before it happened.",
+    "options": [
+      "Identified risk early, mitigated, validated outcome",
+      "Got lucky only",
+      "Ignored risk",
+      "No example"
+    ],
+    "answerIndex": 0,
+    "explanation": "Proactive risk management."
+  },
+  {
+    "id": 24,
+    "category": "HR",
+    "level": "hard",
+    "question": "How do you handle performance feedback that conflicts with your self-view?",
+    "options": [
+      "Ask specifics, reflect, validate, improve",
+      "Get defensive",
+      "Ignore",
+      "Attack reviewer"
+    ],
+    "answerIndex": 0,
+    "explanation": "Hard: openness and self-correction."
+  },
+  {
+    "id": 25,
+    "category": "HR",
+    "level": "hard",
+    "question": "Explain your negotiation strategy for salary without damaging relationship.",
+    "options": [
+      "Market data + value + range + flexibility + tone",
+      "Threaten",
+      "Demand only",
+      "Avoid topic"
+    ],
+    "answerIndex": 0,
+    "explanation": "Negotiation is collaboration, not conflict."
+  },
+
+  {
+    "id": 26,
+    "category": "HR",
+    "level": "hard",
+    "question": "Tell me about a time you handled repeated production incidents.",
+    "options": [
+      "Stabilize, post-mortem, root cause, preventive actions",
+      "Only firefight forever",
+      "Blame others",
+      "Hide issues"
+    ],
+    "answerIndex": 0,
+    "explanation": "Hard: prevention mindset."
+  },
+  {
+    "id": 27,
+    "category": "HR",
+    "level": "hard",
+    "question": "How do you measure your impact when work is not easily measurable?",
+    "options": [
+      "Define proxy metrics, outcomes, stakeholder feedback",
+      "Say 'can’t measure'",
+      "Only hours worked",
+      "Only feelings"
+    ],
+    "answerIndex": 0,
+    "explanation": "Impact framing shows seniority."
+  },
+  {
+    "id": 28,
+    "category": "HR",
+    "level": "hard",
+    "question": "Describe a time you handled a conflict of interest.",
+    "options": [
+      "Disclosed early and followed policy",
+      "Hid it",
+      "Used it for benefit",
+      "Ignored"
+    ],
+    "answerIndex": 0,
+    "explanation": "Ethics under pressure."
+  },
+  {
+    "id": 29,
+    "category": "HR",
+    "level": "hard",
+    "question": "How do you handle a team member who leaks confidential information?",
+    "options": [
+      "Address immediately, follow policy, escalate to HR/security",
+      "Ignore",
+      "Join them",
+      "Post publicly"
+    ],
+    "answerIndex": 0,
+    "explanation": "Confidentiality is critical."
+  },
+  {
+    "id": 30,
+    "category": "HR",
+    "level": "hard",
+    "question": "Tell me about a time you had to deliver a 'no win' message to a client/leader.",
+    "options": [
+      "Clear facts, empathy, options, next steps",
+      "Avoid message",
+      "Blame someone",
+      "Sugarcoat until worse"
+    ],
+    "answerIndex": 0,
+    "explanation": "Hard: courage + communication."
+  },
+
+  {
+    "id": 31,
+    "category": "HR",
+    "level": "hard",
+    "question": "How do you lead when you have no title?",
+    "options": [
+      "Create clarity, align people, deliver results, build trust",
+      "Boss others",
+      "Stay silent",
+      "Only complain"
+    ],
+    "answerIndex": 0,
+    "explanation": "Leadership is behavior, not title."
+  },
+  {
+    "id": 32,
+    "category": "HR",
+    "level": "hard",
+    "question": "Describe a time you handled a serious morale drop in team.",
+    "options": [
+      "Identify cause, support, reset goals, improve environment",
+      "Ignore morale",
+      "Push harder only",
+      "Blame HR"
+    ],
+    "answerIndex": 0,
+    "explanation": "Culture leadership is hard."
+  },
+  {
+    "id": 33,
+    "category": "HR",
+    "level": "hard",
+    "question": "How do you respond when someone senior publicly criticizes your work unfairly?",
+    "options": [
+      "Stay calm, ask for specifics, follow up privately, improve",
+      "Argue publicly",
+      "Attack back",
+      "Quit"
+    ],
+    "answerIndex": 0,
+    "explanation": "Hard: composure + boundaries."
+  },
+  {
+    "id": 34,
+    "category": "HR",
+    "level": "hard",
+    "question": "Tell me about a time you had to choose between company interest and team comfort.",
+    "options": [
+      "Prioritized business need while supporting team sustainably",
+      "Always choose comfort",
+      "Always choose business with no empathy",
+      "No example"
+    ],
+    "answerIndex": 0,
+    "explanation": "Balanced leadership judgment."
+  },
+  {
+    "id": 35,
+    "category": "HR",
+    "level": "hard",
+    "question": "How do you handle burnout risk in yourself while still delivering?",
+    "options": [
+      "Reprioritize, communicate, protect focus, recover responsibly",
+      "Hide burnout",
+      "Work 24/7",
+      "Blame others"
+    ],
+    "answerIndex": 0,
+    "explanation": "Sustainable delivery matters."
+  },
+
+  {
+    "id": 36,
+    "category": "HR",
+    "level": "hard",
+    "question": "Describe a time you had to rebuild a failing project.",
+    "options": [
+      "Assess, stabilize scope, align stakeholders, execute milestones",
+      "Panic",
+      "Blame others",
+      "No example"
+    ],
+    "answerIndex": 0,
+    "explanation": "Turnaround skill is advanced."
+  },
+  {
+    "id": 37,
+    "category": "HR",
+    "level": "hard",
+    "question": "How do you handle a teammate who refuses ownership and says 'not my job'?",
+    "options": [
+      "Clarify responsibilities, connect to goals, escalate if needed",
+      "Fight",
+      "Do everything yourself",
+      "Ignore"
+    ],
+    "answerIndex": 0,
+    "explanation": "Ownership culture is important."
+  },
+  {
+    "id": 38,
+    "category": "HR",
+    "level": "hard",
+    "question": "Tell me about a time you defended quality when others pushed for shortcuts.",
+    "options": [
+      "Explained risks, proposed alternatives, aligned decision",
+      "Accepted shortcuts silently",
+      "Argued emotionally",
+      "No example"
+    ],
+    "answerIndex": 0,
+    "explanation": "Hard: courage + reasoning."
+  },
+  {
+    "id": 39,
+    "category": "HR",
+    "level": "hard",
+    "question": "How do you handle a manager who expects you to be available 24/7?",
+    "options": [
+      "Clarify expectations, set boundaries, stay reliable, escalate if needed",
+      "Accept and burn out",
+      "Refuse rudely",
+      "Ignore messages"
+    ],
+    "answerIndex": 0,
+    "explanation": "Boundaries with professionalism."
+  },
+  {
+    "id": 40,
+    "category": "HR",
+    "level": "hard",
+    "question": "Describe a time you gave difficult feedback that improved someone.",
+    "options": [
+      "Private, specific, behavior-focused, supportive follow-up",
+      "Public criticism",
+      "Vague feedback",
+      "Avoid feedback"
+    ],
+    "answerIndex": 0,
+    "explanation": "Hard: feedback skill."
+  },
+
+  {
+    "id": 41,
+    "category": "HR",
+    "level": "hard",
+    "question": "How do you respond when your credibility is questioned?",
+    "options": [
+      "Stay calm, show evidence, invite review, deliver results",
+      "Get defensive",
+      "Attack person",
+      "Avoid"
+    ],
+    "answerIndex": 0,
+    "explanation": "Confidence through facts."
+  },
+  {
+    "id": 42,
+    "category": "HR",
+    "level": "hard",
+    "question": "Tell me about a time you made a decision with incomplete data and it paid off.",
+    "options": [
+      "Explain assumptions, mitigation, and outcome",
+      "Guessed randomly",
+      "Waited forever",
+      "No example"
+    ],
+    "answerIndex": 0,
+    "explanation": "Risk-aware decision-making."
+  },
+  {
+    "id": 43,
+    "category": "HR",
+    "level": "hard",
+    "question": "How do you handle conflicting KPIs (speed vs reliability) from leadership?",
+    "options": [
+      "Clarify priorities, propose balance, agree on metric tradeoff",
+      "Try everything always",
+      "Ignore KPIs",
+      "Complain"
+    ],
+    "answerIndex": 0,
+    "explanation": "Metric alignment is senior work."
+  },
+  {
+    "id": 44,
+    "category": "HR",
+    "level": "hard",
+    "question": "Describe a time you uncovered a hidden problem no one wanted to discuss.",
+    "options": [
+      "Raised it tactfully with evidence and solution path",
+      "Kept quiet",
+      "Gossiped",
+      "Attacked people"
+    ],
+    "answerIndex": 0,
+    "explanation": "Courage + tact."
+  },
+  {
+    "id": 45,
+    "category": "HR",
+    "level": "hard",
+    "question": "How do you handle a stakeholder who is powerful but wrong?",
+    "options": [
+      "Respectfully present data and alternatives, escalate if needed",
+      "Argue rudely",
+      "Accept wrong direction silently",
+      "Avoid"
+    ],
+    "answerIndex": 0,
+    "explanation": "Managing up is hard."
+  },
+
+  {
+    "id": 46,
+    "category": "HR",
+    "level": "hard",
+    "question": "Tell me about a time you improved your team’s operating rhythm (meetings/updates).",
+    "options": [
+      "Created lightweight rituals and improved visibility/results",
+      "Added more meetings only",
+      "Complained only",
+      "No example"
+    ],
+    "answerIndex": 0,
+    "explanation": "Operational excellence is senior."
+  },
+  {
+    "id": 47,
+    "category": "HR",
+    "level": "hard",
+    "question": "How do you handle a situation where you must fire/exit someone (as a lead)?",
+    "options": [
+      "Follow HR process, document, be respectful, fair",
+      "Humiliate them",
+      "Avoid process",
+      "Threaten"
+    ],
+    "answerIndex": 0,
+    "explanation": "People decisions need fairness and policy."
+  },
+  {
+    "id": 48,
+    "category": "HR",
+    "level": "hard",
+    "question": "Describe a time you managed a sensitive confidentiality issue under pressure.",
+    "options": [
+      "Limited sharing, followed policy, escalated correctly",
+      "Shared casually",
+      "Posted online",
+      "Ignored"
+    ],
+    "answerIndex": 0,
+    "explanation": "Confidentiality handling is critical."
+  },
+  {
+    "id": 49,
+    "category": "HR",
+    "level": "hard",
+    "question": "How do you handle a sudden role change (new manager/teams) without losing delivery?",
+    "options": [
+      "Quick alignment, clarify priorities, stabilize and deliver",
+      "Complain",
+      "Stop working",
+      "Ignore new manager"
+    ],
+    "answerIndex": 0,
+    "explanation": "Adaptability with structure."
+  },
+  {
+    "id": 50,
+    "category": "HR",
+    "level": "hard",
+    "question": "Tell me about a time you had to protect company reputation in a crisis.",
+    "options": [
+      "Calm comms, facts, quick fix, no blame",
+      "Argued publicly",
+      "Posted online",
+      "Ignored"
+    ],
+    "answerIndex": 0,
+    "explanation": "Reputation protection is senior."
+  },
+
+  {
+    "id": 51,
+    "category": "HR",
+    "level": "hard",
+    "question": "How do you handle a conflict where both sides are partly right?",
+    "options": [
+      "Find shared goal, agree actions, document decision",
+      "Pick a side",
+      "Avoid",
+      "Blame"
+    ],
+    "answerIndex": 0,
+    "explanation": "Nuanced conflict resolution."
+  },
+  {
+    "id": 52,
+    "category": "HR",
+    "level": "hard",
+    "question": "Tell me about a time you turned a 'no' into a 'yes' ethically.",
+    "options": [
+      "Addressed concerns, provided proof, negotiated scope",
+      "Manipulated person",
+      "Pressured them",
+      "No example"
+    ],
+    "answerIndex": 0,
+    "explanation": "Ethical persuasion matters."
+  },
+  {
+    "id": 53,
+    "category": "HR",
+    "level": "hard",
+    "question": "How do you handle repeating problems caused by organizational issues (not technical)?",
+    "options": [
+      "Escalate with evidence, propose process fix, align owners",
+      "Only complain",
+      "Accept forever",
+      "Blame individuals"
+    ],
+    "answerIndex": 0,
+    "explanation": "System-level thinking."
+  },
+  {
+    "id": 54,
+    "category": "HR",
+    "level": "hard",
+    "question": "Describe a time you had to choose between two high-priority deliverables.",
+    "options": [
+      "Evaluated impact, negotiated, communicated decision",
+      "Picked randomly",
+      "Tried both and failed",
+      "Avoided"
+    ],
+    "answerIndex": 0,
+    "explanation": "Tradeoff decision-making."
+  },
+  {
+    "id": 55,
+    "category": "HR",
+    "level": "hard",
+    "question": "How do you prevent misalignment in remote teams?",
+    "options": [
+      "Written decisions, async updates, clear owners, overlap sync",
+      "Only meetings",
+      "Assume alignment",
+      "No updates"
+    ],
+    "answerIndex": 0,
+    "explanation": "Remote alignment needs structure."
+  },
+
+  {
+    "id": 56,
+    "category": "HR",
+    "level": "hard",
+    "question": "Tell me about a time you had to reset expectations after overpromising.",
+    "options": [
+      "Owned it, renegotiated scope/timeline, rebuilt trust",
+      "Blamed others",
+      "Hid it",
+      "No example"
+    ],
+    "answerIndex": 0,
+    "explanation": "Expectation repair skill."
+  },
+  {
+    "id": 57,
+    "category": "HR",
+    "level": "hard",
+    "question": "How do you handle a team that values harmony over truth?",
+    "options": [
+      "Create safe feedback channels, use data, encourage honesty",
+      "Stay silent",
+      "Attack people",
+      "Quit"
+    ],
+    "answerIndex": 0,
+    "explanation": "Psychological safety + honesty."
+  },
+  {
+    "id": 58,
+    "category": "HR",
+    "level": "hard",
+    "question": "Describe a time you improved a teammate’s performance without authority.",
+    "options": [
+      "Coached, set clear expectations, gave feedback, saw improvement",
+      "Ordered them",
+      "Complained",
+      "No example"
+    ],
+    "answerIndex": 0,
+    "explanation": "Coaching skill."
+  },
+  {
+    "id": 59,
+    "category": "HR",
+    "level": "hard",
+    "question": "How do you handle an unfair performance review?",
+    "options": [
+      "Ask for evidence, present outcomes, agree on improvement plan",
+      "Get angry",
+      "Complain to everyone",
+      "Ignore"
+    ],
+    "answerIndex": 0,
+    "explanation": "Professional self-advocacy."
+  },
+  {
+    "id": 60,
+    "category": "HR",
+    "level": "hard",
+    "question": "Tell me about a time you handled a major delivery with high personal risk (your reputation).",
+    "options": [
+      "Prepared deeply, communicated, delivered, learned",
+      "Avoided responsibility",
+      "Blamed others",
+      "No example"
+    ],
+    "answerIndex": 0,
+    "explanation": "High-stakes reliability."
+  },
+
+  {
+    "id": 61,
+    "category": "HR",
+    "level": "hard",
+    "question": "How do you handle conflicting cultural communication styles in a global team?",
+    "options": [
+      "Adapt, clarify intent, document, avoid assumptions",
+      "Judge others",
+      "Avoid team",
+      "Fight"
+    ],
+    "answerIndex": 0,
+    "explanation": "Global collaboration maturity."
+  },
+  {
+    "id": 62,
+    "category": "HR",
+    "level": "hard",
+    "question": "Describe a time you created clarity from chaos.",
+    "options": [
+      "Mapped situation, set priorities, aligned owners, executed",
+      "Complained only",
+      "Waited for direction",
+      "No example"
+    ],
+    "answerIndex": 0,
+    "explanation": "Stabilization leadership."
+  },
+  {
+    "id": 63,
+    "category": "HR",
+    "level": "hard",
+    "question": "How do you handle when your manager takes credit for your work?",
+    "options": [
+      "Stay professional, document contributions, discuss privately, escalate if repeated",
+      "Fight publicly",
+      "Gossip",
+      "Quit"
+    ],
+    "answerIndex": 0,
+    "explanation": "Hard: diplomacy + boundaries."
+  },
+  {
+    "id": 64,
+    "category": "HR",
+    "level": "hard",
+    "question": "Tell me about a time you challenged a decision and were proven wrong.",
+    "options": [
+      "Accepted outcome, learned, improved judgment",
+      "Got defensive",
+      "Blamed others",
+      "No example"
+    ],
+    "answerIndex": 0,
+    "explanation": "Humility and learning."
+  },
+  {
+    "id": 65,
+    "category": "HR",
+    "level": "hard",
+    "question": "How do you handle a stakeholder who wants daily updates and instant replies?",
+    "options": [
+      "Set update cadence, channels, and expectations; keep concise",
+      "Agree then burn out",
+      "Ignore",
+      "Fight"
+    ],
+    "answerIndex": 0,
+    "explanation": "Expectation management."
+  },
+
+  {
+    "id": 66,
+    "category": "HR",
+    "level": "hard",
+    "question": "Describe a time you had to make a decision that upset some people.",
+    "options": [
+      "Communicated reasoning, empathy, and supported transition",
+      "Avoided decision",
+      "Blamed others",
+      "No example"
+    ],
+    "answerIndex": 0,
+    "explanation": "Leadership decisions can be unpopular."
+  },
+  {
+    "id": 67,
+    "category": "HR",
+    "level": "hard",
+    "question": "How do you ensure fairness when making people-related decisions?",
+    "options": [
+      "Use criteria, evidence, consistency, and documentation",
+      "Go by feelings",
+      "Favor friends",
+      "Avoid decisions"
+    ],
+    "answerIndex": 0,
+    "explanation": "Fairness protects culture and company."
+  },
+  {
+    "id": 68,
+    "category": "HR",
+    "level": "hard",
+    "question": "Tell me about a time you dealt with persistent low performance despite support.",
+    "options": [
+      "Documented, set PIP-like plan, escalated properly",
+      "Ignored it",
+      "Insulted them",
+      "Did all work yourself"
+    ],
+    "answerIndex": 0,
+    "explanation": "Hard: accountability with empathy."
+  },
+  {
+    "id": 69,
+    "category": "HR",
+    "level": "hard",
+    "question": "How do you handle uncertainty about company direction (strategy changes)?",
+    "options": [
+      "Seek clarity, focus on controllables, align priorities",
+      "Spread rumors",
+      "Panic",
+      "Stop working"
+    ],
+    "answerIndex": 0,
+    "explanation": "Stability under uncertainty."
+  },
+  {
+    "id": 70,
+    "category": "HR",
+    "level": "hard",
+    "question": "Describe a time you led a difficult change (new process/tool).",
+    "options": [
+      "Communicated why, trained, supported, measured adoption",
+      "Forced it",
+      "Complained",
+      "No example"
+    ],
+    "answerIndex": 0,
+    "explanation": "Change leadership is hard."
+  },
+
+  {
+    "id": 71,
+    "category": "HR",
+    "level": "hard",
+    "question": "How do you handle a request that conflicts with your values but is not illegal?",
+    "options": [
+      "Raise concern, seek guidance, follow policy, propose alternatives",
+      "Do it silently",
+      "Post online",
+      "Refuse rudely"
+    ],
+    "answerIndex": 0,
+    "explanation": "Ethical professionalism."
+  },
+  {
+    "id": 72,
+    "category": "HR",
+    "level": "hard",
+    "question": "Tell me about a time you recovered from a big rejection or setback.",
+    "options": [
+      "Reflect, improve, try again with better approach",
+      "Gave up",
+      "Blamed others",
+      "No example"
+    ],
+    "answerIndex": 0,
+    "explanation": "Resilience matters."
+  },
+  {
+    "id": 73,
+    "category": "HR",
+    "level": "hard",
+    "question": "How do you handle a team member who is brilliant but breaks rules?",
+    "options": [
+      "Enforce policy, address behavior, escalate if needed",
+      "Ignore rules",
+      "Protect them always",
+      "Fight"
+    ],
+    "answerIndex": 0,
+    "explanation": "Rules protect the org."
+  },
+  {
+    "id": 74,
+    "category": "HR",
+    "level": "hard",
+    "question": "Describe a time you had to reduce scope to meet deadline.",
+    "options": [
+      "Prioritized must-haves, aligned stakeholders, delivered value",
+      "Cut randomly",
+      "Hid scope cut",
+      "No example"
+    ],
+    "answerIndex": 0,
+    "explanation": "Scope reduction is strategy."
+  },
+  {
+    "id": 75,
+    "category": "HR",
+    "level": "hard",
+    "question": "How do you respond when asked 'Why did you leave so soon?'",
+    "options": [
+      "Brief honest reason + learning + fit now",
+      "Blame company",
+      "Lie",
+      "Get defensive"
+    ],
+    "answerIndex": 0,
+    "explanation": "Hard: narrative control."
+  },
+
+  {
+    "id": 76,
+    "category": "HR",
+    "level": "hard",
+    "question": "Tell me about a time you handled a serious interpersonal issue (harassment/bullying).",
+    "options": [
+      "Follow policy, support victim, report appropriately",
+      "Ignore",
+      "Handle privately without process",
+      "Spread rumors"
+    ],
+    "answerIndex": 0,
+    "explanation": "Safety and policy first."
+  },
+  {
+    "id": 77,
+    "category": "HR",
+    "level": "hard",
+    "question": "How do you handle when a teammate is spreading misinformation?",
+    "options": [
+      "Correct with facts, document, align with lead",
+      "Ignore",
+      "Fight",
+      "Gossip"
+    ],
+    "answerIndex": 0,
+    "explanation": "Protect truth and alignment."
+  },
+  {
+    "id": 78,
+    "category": "HR",
+    "level": "hard",
+    "question": "Describe a time you handled a 'political' situation without losing integrity.",
+    "options": [
+      "Stayed factual, avoided gossip, focused on outcomes",
+      "Joined gossip",
+      "Manipulated",
+      "No example"
+    ],
+    "answerIndex": 0,
+    "explanation": "Integrity under pressure."
+  },
+  {
+    "id": 79,
+    "category": "HR",
+    "level": "hard",
+    "question": "How do you manage your reputation and relationships across the org?",
+    "options": [
+      "Consistent delivery, transparent comms, respect, reliability",
+      "Networking only",
+      "Bragging",
+      "Avoid people"
+    ],
+    "answerIndex": 0,
+    "explanation": "Reputation is built by behavior."
+  },
+  {
+    "id": 80,
+    "category": "HR",
+    "level": "hard",
+    "question": "Tell me about a time you had to decide fast with incomplete info.",
+    "options": [
+      "Stated assumptions, mitigated risk, reviewed later",
+      "Waited forever",
+      "Guessed silently",
+      "Blamed others"
+    ],
+    "answerIndex": 0,
+    "explanation": "Risk-aware speed."
+  },
+
+  {
+    "id": 81,
+    "category": "HR",
+    "level": "hard",
+    "question": "How do you handle a situation where your team’s goal conflicts with customer needs?",
+    "options": [
+      "Align with leadership, balance tradeoffs, communicate",
+      "Ignore customer",
+      "Ignore team",
+      "No plan"
+    ],
+    "answerIndex": 0,
+    "explanation": "Hard: balancing stakeholders."
+  },
+  {
+    "id": 82,
+    "category": "HR",
+    "level": "hard",
+    "question": "Describe a time you improved operational efficiency (time/cost).",
+    "options": [
+      "Measured baseline, implemented change, showed savings",
+      "Vague improvement",
+      "No example",
+      "Took credit only"
+    ],
+    "answerIndex": 0,
+    "explanation": "Hard: measurable operations impact."
+  },
+  {
+    "id": 83,
+    "category": "HR",
+    "level": "hard",
+    "question": "How do you respond if asked about a sensitive personal topic in interview?",
+    "options": [
+      "Redirect politely to job-related info",
+      "Answer everything",
+      "Get angry",
+      "Walk out"
+    ],
+    "answerIndex": 0,
+    "explanation": "Maintain professional boundaries."
+  },
+  {
+    "id": 84,
+    "category": "HR",
+    "level": "hard",
+    "question": "Tell me about a time you admitted you were wrong and it improved outcome.",
+    "options": [
+      "Owned mistake early, corrected course, delivered better result",
+      "Hid mistake",
+      "Blamed others",
+      "No example"
+    ],
+    "answerIndex": 0,
+    "explanation": "Early correction saves time."
+  },
+  {
+    "id": 85,
+    "category": "HR",
+    "level": "hard",
+    "question": "How do you handle a stakeholder who keeps changing decisions after agreeing?",
+    "options": [
+      "Document decisions, confirm again, set change process",
+      "Accept chaos",
+      "Argue daily",
+      "Ignore"
+    ],
+    "answerIndex": 0,
+    "explanation": "Decision discipline matters."
+  },
+
+  {
+    "id": 86,
+    "category": "HR",
+    "level": "hard",
+    "question": "Describe a time you handled a security incident or sensitive risk.",
+    "options": [
+      "Escalated properly, contained, communicated, documented",
+      "Ignored",
+      "Posted online",
+      "No example"
+    ],
+    "answerIndex": 0,
+    "explanation": "Security response requires process."
+  },
+  {
+    "id": 87,
+    "category": "HR",
+    "level": "hard",
+    "question": "How do you handle when your team is missing a key skill?",
+    "options": [
+      "Upskill plan, hiring/mentorship, adjust scope",
+      "Blame team",
+      "Ignore gap",
+      "Quit"
+    ],
+    "answerIndex": 0,
+    "explanation": "Capability building is leadership."
+  },
+  {
+    "id": 88,
+    "category": "HR",
+    "level": "hard",
+    "question": "Tell me about a time you handled a role ambiguity (who owns what) and fixed it.",
+    "options": [
+      "Defined owners, documented, aligned, reduced confusion",
+      "Ignored",
+      "Blamed others",
+      "No example"
+    ],
+    "answerIndex": 0,
+    "explanation": "Ownership clarity is advanced."
+  },
+  {
+    "id": 89,
+    "category": "HR",
+    "level": "hard",
+    "question": "How do you handle when a teammate’s personal issue affects delivery?",
+    "options": [
+      "Empathy + adjust plan + communicate + support",
+      "Ignore them",
+      "Complain",
+      "Expose details"
+    ],
+    "answerIndex": 0,
+    "explanation": "Support while protecting delivery."
+  },
+  {
+    "id": 90,
+    "category": "HR",
+    "level": "hard",
+    "question": "Tell me about a time you protected quality even when you were not popular for it.",
+    "options": [
+      "Used risks, data, and alternatives; aligned decision",
+      "Gave up to be liked",
+      "Fought emotionally",
+      "No example"
+    ],
+    "answerIndex": 0,
+    "explanation": "Courage + reasoning."
+  },
+
+  {
+    "id": 91,
+    "category": "HR",
+    "level": "hard",
+    "question": "How do you handle an exit interview if you’re leaving due to manager issues?",
+    "options": [
+      "Be factual, professional, constructive, no personal attacks",
+      "Insult manager",
+      "Share gossip",
+      "Refuse to talk"
+    ],
+    "answerIndex": 0,
+    "explanation": "Protect reputation and stay professional."
+  },
+  {
+    "id": 92,
+    "category": "HR",
+    "level": "hard",
+    "question": "Describe a time you handled a large responsibility without enough authority/resources.",
+    "options": [
+      "Created alignment, negotiated, delivered stepwise",
+      "Complained only",
+      "Waited",
+      "No example"
+    ],
+    "answerIndex": 0,
+    "explanation": "Operating in constraints is hard."
+  },
+  {
+    "id": 93,
+    "category": "HR",
+    "level": "hard",
+    "question": "How do you handle a manager who gives unclear expectations and then criticizes results?",
+    "options": [
+      "Clarify upfront, confirm in writing, review mid-way",
+      "Get angry",
+      "Stop updating",
+      "Complain"
+    ],
+    "answerIndex": 0,
+    "explanation": "Expectation management and documentation."
+  },
+  {
+    "id": 94,
+    "category": "HR",
+    "level": "hard",
+    "question": "Tell me about a time you improved a team's accountability.",
+    "options": [
+      "Clear owners, deadlines, tracking, supportive follow-up",
+      "Punished everyone",
+      "Complained only",
+      "No example"
+    ],
+    "answerIndex": 0,
+    "explanation": "Accountability systems are advanced."
+  },
+  {
+    "id": 95,
+    "category": "HR",
+    "level": "hard",
+    "question": "How do you handle the question: 'What if you get a better offer after joining?'",
+    "options": [
+      "Answer ethically: commitment, communication, follow policy",
+      "Say you’ll leave anytime",
+      "Threaten for raise",
+      "Avoid"
+    ],
+    "answerIndex": 0,
+    "explanation": "They check reliability and ethics."
+  },
+
+  {
+    "id": 96,
+    "category": "HR",
+    "level": "hard",
+    "question": "Describe a time you managed a high-impact stakeholder with low patience.",
+    "options": [
+      "Concise updates, clear options, fast decisions",
+      "Avoid them",
+      "Argue",
+      "Promise anything"
+    ],
+    "answerIndex": 0,
+    "explanation": "Executive communication is a skill."
+  },
+  {
+    "id": 97,
+    "category": "HR",
+    "level": "hard",
+    "question": "How do you handle a teammate who is consistently negative and affects culture?",
+    "options": [
+      "Address behavior, coach, set boundaries, escalate if needed",
+      "Join negativity",
+      "Ignore",
+      "Fight"
+    ],
+    "answerIndex": 0,
+    "explanation": "Culture protection matters."
+  },
+  {
+    "id": 98,
+    "category": "HR",
+    "level": "hard",
+    "question": "Tell me about a time you managed a critical dependency failure.",
+    "options": [
+      "Communicated, replanned, delivered alternate/partial, learned",
+      "Waited silently",
+      "Blamed dependency",
+      "No example"
+    ],
+    "answerIndex": 0,
+    "explanation": "Dependency failure handling is advanced."
+  },
+  {
+    "id": 99,
+    "category": "HR",
+    "level": "hard",
+    "question": "How do you handle a scenario where honesty may hurt relationships but hiding truth hurts business?",
+    "options": [
+      "Be truthful with tact, focus on facts and solutions",
+      "Hide truth",
+      "Blame others",
+      "Attack person"
+    ],
+    "answerIndex": 0,
+    "explanation": "Hard: tactful honesty."
+  },
+  {
+    "id": 100,
+    "category": "HR",
+    "level": "hard",
+    "question": "Give an example of a time you made others better (not just delivered work).",
+    "options": [
+      "Mentored, improved process, raised team capability with result",
+      "Only personal achievement",
+      "Took credit for others",
+      "No example"
+    ],
+    "answerIndex": 0,
+    "explanation": "Hard HR looks for multiplier effect."
+  },
+
+  {
+    "id": 101,
+    "category": "HR",
+    "level": "hard",
+    "question": "Your manager blames you for a failure caused by unclear requirements. What do you do in the moment?",
+    "options": [
+      "Stay calm, share facts, accept your part, propose fix + prevention",
+      "Argue loudly",
+      "Blame manager back",
+      "Stay silent and resent"
+    ],
+    "answerIndex": 0,
+    "explanation": "Hard HR checks composure + accountability + solution focus."
+  },
+  {
+    "id": 102,
+    "category": "HR",
+    "level": "hard",
+    "question": "Tell me about a time you had to rebuild trust after breaking it.",
+    "options": [
+      "Own it, apologize, fix impact, change behavior, rebuild consistency",
+      "Hide mistake",
+      "Blame others",
+      "Avoid person"
+    ],
+    "answerIndex": 0,
+    "explanation": "Trust repair requires actions over words."
+  },
+  {
+    "id": 103,
+    "category": "HR",
+    "level": "hard",
+    "question": "You discover a teammate is manipulating metrics to look good. What do you do?",
+    "options": [
+      "Collect facts, confront/raise through proper channel, protect ethics",
+      "Ignore it",
+      "Join them",
+      "Post online"
+    ],
+    "answerIndex": 0,
+    "explanation": "Integrity + process is critical."
+  },
+  {
+    "id": 104,
+    "category": "HR",
+    "level": "hard",
+    "question": "Describe a time you had to deliver an unpopular decision to your team.",
+    "options": [
+      "Explain reasoning with empathy, support transition, listen concerns",
+      "Avoid decision",
+      "Blame leadership",
+      "Force without explanation"
+    ],
+    "answerIndex": 0,
+    "explanation": "Leadership communication under tension."
+  },
+  {
+    "id": 105,
+    "category": "HR",
+    "level": "hard",
+    "question": "How do you handle a stakeholder who tries to bypass process by going to your skip-level?",
+    "options": [
+      "Stay professional, align with manager, clarify process, keep transparency",
+      "Fight politically",
+      "Ignore stakeholder",
+      "Complain to peers"
+    ],
+    "answerIndex": 0,
+    "explanation": "Hard: politics handling without drama."
+  },
+
+  {
+    "id": 106,
+    "category": "HR",
+    "level": "hard",
+    "question": "Tell me about a time you handled a crisis where you were the single point of failure.",
+    "options": [
+      "Stabilize, communicate updates, delegate/seek help, document learnings",
+      "Panic",
+      "Hide issue",
+      "Blame others"
+    ],
+    "answerIndex": 0,
+    "explanation": "They want calm execution + communication."
+  },
+  {
+    "id": 107,
+    "category": "HR",
+    "level": "hard",
+    "question": "Your team is pushing a risky release. You disagree. What do you do?",
+    "options": [
+      "Present risk with data, propose safer path, escalate if needed",
+      "Agree silently",
+      "Block without reasons",
+      "Argue emotionally"
+    ],
+    "answerIndex": 0,
+    "explanation": "Hard: risk advocacy with professionalism."
+  },
+  {
+    "id": 108,
+    "category": "HR",
+    "level": "hard",
+    "question": "Describe a time you had to choose between protecting a person and protecting the company.",
+    "options": [
+      "Follow policy, be fair, document, escalate appropriately",
+      "Protect person always",
+      "Protect company with no empathy",
+      "Hide issue"
+    ],
+    "answerIndex": 0,
+    "explanation": "High-stakes ethics and fairness."
+  },
+  {
+    "id": 109,
+    "category": "HR",
+    "level": "hard",
+    "question": "How do you handle a teammate who is brilliant but consistently disrespectful?",
+    "options": [
+      "Address behavior with evidence, set boundaries, escalate if needed",
+      "Ignore because they deliver",
+      "Fight publicly",
+      "Quit immediately"
+    ],
+    "answerIndex": 0,
+    "explanation": "Culture matters as much as output."
+  },
+  {
+    "id": 110,
+    "category": "HR",
+    "level": "hard",
+    "question": "Tell me about a time you faced a conflict between two leaders and you were in the middle.",
+    "options": [
+      "Clarify goals, align priorities, document decisions, communicate neutrally",
+      "Pick side emotionally",
+      "Avoid both",
+      "Blame them"
+    ],
+    "answerIndex": 0,
+    "explanation": "Neutral alignment skill is advanced."
+  },
+
+  {
+    "id": 111,
+    "category": "HR",
+    "level": "hard",
+    "question": "A senior leader demands an unrealistic deadline in public. What do you say?",
+    "options": [
+      "Acknowledge, commit to quick assessment, provide realistic options soon",
+      "Say yes blindly",
+      "Say no rudely",
+      "Stay silent"
+    ],
+    "answerIndex": 0,
+    "explanation": "Hard: protect truth + respect."
+  },
+  {
+    "id": 112,
+    "category": "HR",
+    "level": "hard",
+    "question": "Describe a time you made a strategic tradeoff that reduced scope but increased value.",
+    "options": [
+      "Prioritized must-haves, aligned stakeholders, delivered impact",
+      "Cut randomly",
+      "Hid scope change",
+      "No example"
+    ],
+    "answerIndex": 0,
+    "explanation": "Strategic scoping is senior."
+  },
+  {
+    "id": 113,
+    "category": "HR",
+    "level": "hard",
+    "question": "How do you handle being asked to share confidential info “just this once”?",
+    "options": [
+      "Refuse politely, cite policy, offer safe alternative",
+      "Share it",
+      "Ignore request",
+      "Gossip"
+    ],
+    "answerIndex": 0,
+    "explanation": "Confidentiality is non-negotiable."
+  },
+  {
+    "id": 114,
+    "category": "HR",
+    "level": "hard",
+    "question": "Tell me about a time you successfully handled a performance review you disagreed with.",
+    "options": [
+      "Asked for examples, presented outcomes, agreed improvement plan",
+      "Got angry",
+      "Complained to everyone",
+      "Ignored review"
+    ],
+    "answerIndex": 0,
+    "explanation": "Professional self-advocacy."
+  },
+  {
+    "id": 115,
+    "category": "HR",
+    "level": "hard",
+    "question": "A teammate makes repeated mistakes that risk delivery. What’s your structured response?",
+    "options": [
+      "Diagnose cause, coach, set expectations, track, escalate if needed",
+      "Do their work silently",
+      "Insult them",
+      "Ignore"
+    ],
+    "answerIndex": 0,
+    "explanation": "Coaching + accountability is advanced."
+  },
+
+  {
+    "id": 116,
+    "category": "HR",
+    "level": "hard",
+    "question": "Describe a time you handled an incident where customers were impacted.",
+    "options": [
+      "Communicated clearly, fixed fast, did post-mortem, prevented repeat",
+      "Hid it",
+      "Blamed others",
+      "No example"
+    ],
+    "answerIndex": 0,
+    "explanation": "Incident ownership is a senior trait."
+  },
+  {
+    "id": 117,
+    "category": "HR",
+    "level": "hard",
+    "question": "How do you handle a leader who wants a scapegoat after failure?",
+    "options": [
+      "Focus on facts, shared responsibility, learning and prevention",
+      "Name someone quickly",
+      "Hide your part",
+      "Attack leader"
+    ],
+    "answerIndex": 0,
+    "explanation": "Blame culture hurts; facts help."
+  },
+  {
+    "id": 118,
+    "category": "HR",
+    "level": "hard",
+    "question": "Tell me about a time you faced a moral dilemma at work.",
+    "options": [
+      "Chose ethical path, followed process, accepted consequences",
+      "Ignored ethics",
+      "Did it for benefit",
+      "No example"
+    ],
+    "answerIndex": 0,
+    "explanation": "Integrity under pressure."
+  },
+  {
+    "id": 119,
+    "category": "HR",
+    "level": "hard",
+    "question": "How do you handle a manager who gives vague goals but expects perfect results?",
+    "options": [
+      "Clarify goals, confirm in writing, checkpoint early",
+      "Complain only",
+      "Stop updating",
+      "Do random"
+    ],
+    "answerIndex": 0,
+    "explanation": "Expectation management + documentation."
+  },
+  {
+    "id": 120,
+    "category": "HR",
+    "level": "hard",
+    "question": "Describe a time you led through chaos (unclear ownership, unclear timeline).",
+    "options": [
+      "Stabilized, assigned owners, set milestones, aligned stakeholders",
+      "Complained",
+      "Waited for direction",
+      "No example"
+    ],
+    "answerIndex": 0,
+    "explanation": "Stabilization leadership is hard."
+  },
+
+  {
+    "id": 121,
+    "category": "HR",
+    "level": "hard",
+    "question": "How do you handle a conflict where both parties accuse each other and facts are unclear?",
+    "options": [
+      "Collect evidence, listen neutrally, focus on resolution and policy",
+      "Pick a side",
+      "Ignore conflict",
+      "Gossip"
+    ],
+    "answerIndex": 0,
+    "explanation": "Neutral fact-finding + fairness."
+  },
+  {
+    "id": 122,
+    "category": "HR",
+    "level": "hard",
+    "question": "Tell me about a time you had to deliver results while personally burnt out.",
+    "options": [
+      "Reprioritized, communicated constraints, recovered responsibly",
+      "Worked nonstop silently",
+      "Quit suddenly",
+      "Blamed others"
+    ],
+    "answerIndex": 0,
+    "explanation": "Sustainable performance matters."
+  },
+  {
+    "id": 123,
+    "category": "HR",
+    "level": "hard",
+    "question": "How do you handle a stakeholder who repeatedly changes decisions after approval?",
+    "options": [
+      "Document decisions, enforce change process, align owners",
+      "Accept chaos silently",
+      "Argue daily",
+      "Ignore"
+    ],
+    "answerIndex": 0,
+    "explanation": "Decision discipline is key."
+  },
+  {
+    "id": 124,
+    "category": "HR",
+    "level": "hard",
+    "question": "Describe a time you had to protect fairness when your friend was involved.",
+    "options": [
+      "Applied same criteria and documented decision",
+      "Favored friend",
+      "Avoided decision",
+      "No example"
+    ],
+    "answerIndex": 0,
+    "explanation": "Fairness over relationships."
+  },
+  {
+    "id": 125,
+    "category": "HR",
+    "level": "hard",
+    "question": "How do you handle a teammate who undermines you in meetings?",
+    "options": [
+      "Address privately with examples, align expectations, escalate if needed",
+      "Fight publicly",
+      "Gossip",
+      "Quit"
+    ],
+    "answerIndex": 0,
+    "explanation": "Boundaries + professionalism."
+  },
+
+  {
+    "id": 126,
+    "category": "HR",
+    "level": "hard",
+    "question": "Tell me about a time you negotiated scope with a tough customer/stakeholder.",
+    "options": [
+      "Presented options, tradeoffs, aligned priorities, agreed scope",
+      "Promised everything",
+      "Argued",
+      "Avoided"
+    ],
+    "answerIndex": 0,
+    "explanation": "Negotiation protects delivery."
+  },
+  {
+    "id": 127,
+    "category": "HR",
+    "level": "hard",
+    "question": "How do you handle a situation where your values conflict with a request but it’s not illegal?",
+    "options": [
+      "Raise concern, seek guidance, propose alternatives",
+      "Do it silently",
+      "Post online",
+      "Refuse rudely"
+    ],
+    "answerIndex": 0,
+    "explanation": "Ethical professionalism."
+  },
+  {
+    "id": 128,
+    "category": "HR",
+    "level": "hard",
+    "question": "Describe a time you discovered a hidden risk that leadership didn’t want to hear.",
+    "options": [
+      "Raised tactfully with evidence and mitigation plan",
+      "Stayed silent",
+      "Gossiped",
+      "Attacked leadership"
+    ],
+    "answerIndex": 0,
+    "explanation": "Courage + tact is senior."
+  },
+  {
+    "id": 129,
+    "category": "HR",
+    "level": "hard",
+    "question": "How do you handle a manager who takes credit for your work repeatedly?",
+    "options": [
+      "Document work, discuss privately, escalate if pattern continues",
+      "Fight publicly",
+      "Gossip",
+      "Quit immediately"
+    ],
+    "answerIndex": 0,
+    "explanation": "Professional boundary setting."
+  },
+  {
+    "id": 130,
+    "category": "HR",
+    "level": "hard",
+    "question": "Tell me about a time you had to make a decision that increased short-term pain for long-term gain.",
+    "options": [
+      "Explained tradeoff, aligned stakeholders, executed, measured results",
+      "Avoided decision",
+      "Blamed others",
+      "No example"
+    ],
+    "answerIndex": 0,
+    "explanation": "Strategic thinking."
+  },
+
+  {
+    "id": 131,
+    "category": "HR",
+    "level": "hard",
+    "question": "How do you handle a team culture where people avoid accountability?",
+    "options": [
+      "Define owners, track commitments, build safe feedback, escalate when needed",
+      "Complain only",
+      "Do everything yourself",
+      "Ignore"
+    ],
+    "answerIndex": 0,
+    "explanation": "Accountability systems are advanced."
+  },
+  {
+    "id": 132,
+    "category": "HR",
+    "level": "hard",
+    "question": "Describe a time you handled a sensitive HR issue (harassment/bullying) appropriately.",
+    "options": [
+      "Followed policy, supported, reported through proper channel",
+      "Ignored",
+      "Handled privately without process",
+      "Shared rumors"
+    ],
+    "answerIndex": 0,
+    "explanation": "Safety and policy come first."
+  },
+  {
+    "id": 133,
+    "category": "HR",
+    "level": "hard",
+    "question": "How do you handle a stakeholder who wants instant replies at all hours?",
+    "options": [
+      "Set communication boundaries and reliable update cadence",
+      "Accept and burn out",
+      "Ignore",
+      "Fight"
+    ],
+    "answerIndex": 0,
+    "explanation": "Hard: boundaries with professionalism."
+  },
+  {
+    "id": 134,
+    "category": "HR",
+    "level": "hard",
+    "question": "Tell me about a time you failed to influence someone and what you learned.",
+    "options": [
+      "Reflect on approach, adjust strategy, try again later",
+      "Blame them",
+      "Say it never happens",
+      "No example"
+    ],
+    "answerIndex": 0,
+    "explanation": "Learning from influence failures shows maturity."
+  },
+  {
+    "id": 135,
+    "category": "HR",
+    "level": "hard",
+    "question": "How do you handle a project where success metrics are unclear?",
+    "options": [
+      "Define metrics with stakeholders and confirm in writing",
+      "Work without metrics",
+      "Pick random metrics",
+      "Avoid"
+    ],
+    "answerIndex": 0,
+    "explanation": "Metrics alignment prevents confusion."
+  },
+
+  {
+    "id": 136,
+    "category": "HR",
+    "level": "hard",
+    "question": "Describe a time you had to protect company reputation during a public issue.",
+    "options": [
+      "Calm facts, correct action, no blame, clear communication",
+      "Argued publicly",
+      "Posted online",
+      "Ignored"
+    ],
+    "answerIndex": 0,
+    "explanation": "Reputation management is advanced."
+  },
+  {
+    "id": 137,
+    "category": "HR",
+    "level": "hard",
+    "question": "How do you handle being asked to break compliance rules to meet deadline?",
+    "options": [
+      "Refuse, cite risk/policy, escalate appropriately",
+      "Do it secretly",
+      "Ignore",
+      "Blame later"
+    ],
+    "answerIndex": 0,
+    "explanation": "Compliance is non-negotiable."
+  },
+  {
+    "id": 138,
+    "category": "HR",
+    "level": "hard",
+    "question": "Tell me about a time you managed a critical dependency failure.",
+    "options": [
+      "Replanned, communicated, delivered alternate path, prevented repeat",
+      "Waited silently",
+      "Blamed dependency team",
+      "No example"
+    ],
+    "answerIndex": 0,
+    "explanation": "Advanced dependency handling."
+  },
+  {
+    "id": 139,
+    "category": "HR",
+    "level": "hard",
+    "question": "How do you handle an offer decision when two roles are equal in salary but different in growth?",
+    "options": [
+      "Choose based on learning, impact, long-term path",
+      "Pick randomly",
+      "Only brand name",
+      "Delay forever"
+    ],
+    "answerIndex": 0,
+    "explanation": "Hard: thoughtful decision-making."
+  },
+  {
+    "id": 140,
+    "category": "HR",
+    "level": "hard",
+    "question": "Describe a time you had to correct misinformation spread by a senior person.",
+    "options": [
+      "Correct respectfully with facts, ideally privately",
+      "Expose publicly",
+      "Stay silent",
+      "Gossip"
+    ],
+    "answerIndex": 0,
+    "explanation": "Respect + truth."
+  },
+
+  {
+    "id": 141,
+    "category": "HR",
+    "level": "hard",
+    "question": "How do you handle a team member who is emotionally aggressive in discussions?",
+    "options": [
+      "Stay calm, set boundaries, move to private, escalate if needed",
+      "Match aggression",
+      "Avoid forever",
+      "Gossip"
+    ],
+    "answerIndex": 0,
+    "explanation": "Emotional control + boundaries."
+  },
+  {
+    "id": 142,
+    "category": "HR",
+    "level": "hard",
+    "question": "Tell me about a time you had to deliver results while learning a new domain fast.",
+    "options": [
+      "Focused essentials, asked experts, delivered iteratively",
+      "Delayed until expert",
+      "Avoided responsibility",
+      "No example"
+    ],
+    "answerIndex": 0,
+    "explanation": "Execution while learning."
+  },
+  {
+    "id": 143,
+    "category": "HR",
+    "level": "hard",
+    "question": "How do you handle 'Why should we trust you?' when you have limited experience?",
+    "options": [
+      "Show reliability habits, learning speed, honesty, small proof wins",
+      "Say 'just trust me'",
+      "Overpromise",
+      "Talk unrelated"
+    ],
+    "answerIndex": 0,
+    "explanation": "Trust is built by behavior + proof."
+  },
+  {
+    "id": 144,
+    "category": "HR",
+    "level": "hard",
+    "question": "Describe a time you had to make a call that could fail and you still decided.",
+    "options": [
+      "Explained risk, mitigation, decision, and review",
+      "Avoided decision",
+      "Guessed silently",
+      "Blamed others"
+    ],
+    "answerIndex": 0,
+    "explanation": "Calculated risk taking."
+  },
+  {
+    "id": 145,
+    "category": "HR",
+    "level": "hard",
+    "question": "How do you handle a stakeholder who rejects every solution you propose?",
+    "options": [
+      "Ask constraints, offer options, align decision owner",
+      "Argue",
+      "Give up",
+      "Complain"
+    ],
+    "answerIndex": 0,
+    "explanation": "Discovery + options-based alignment."
+  },
+
+  {
+    "id": 146,
+    "category": "HR",
+    "level": "hard",
+    "question": "Tell me about a time you handled a conflict where emotions were high and time was short.",
+    "options": [
+      "De-escalated, focused on facts, agreed actions, moved forward",
+      "Fought",
+      "Avoided",
+      "No example"
+    ],
+    "answerIndex": 0,
+    "explanation": "High-pressure conflict handling."
+  },
+  {
+    "id": 147,
+    "category": "HR",
+    "level": "hard",
+    "question": "How do you handle a team where decisions are delayed due to fear of blame?",
+    "options": [
+      "Create safe culture, focus on learning, clarify decision owners",
+      "Blame people more",
+      "Ignore",
+      "Quit"
+    ],
+    "answerIndex": 0,
+    "explanation": "Psychological safety improves speed."
+  },
+  {
+    "id": 148,
+    "category": "HR",
+    "level": "hard",
+    "question": "Describe a time you handled a major expectation mismatch with a client/leader.",
+    "options": [
+      "Reset expectations with facts and options, rebuild trust",
+      "Hid mismatch",
+      "Blamed others",
+      "No example"
+    ],
+    "answerIndex": 0,
+    "explanation": "Expectation reset is advanced."
+  },
+  {
+    "id": 149,
+    "category": "HR",
+    "level": "hard",
+    "question": "How do you handle a teammate who is very competent but refuses collaboration?",
+    "options": [
+      "Align goals, define interfaces, set expectations, escalate if needed",
+      "Ignore them",
+      "Fight",
+      "Do everything yourself"
+    ],
+    "answerIndex": 0,
+    "explanation": "Collaboration is required for scale."
+  },
+  {
+    "id": 150,
+    "category": "HR",
+    "level": "hard",
+    "question": "Tell me about a time you improved a system so problems stopped repeating.",
+    "options": [
+      "Root cause, preventive fix, measurable reduction",
+      "Only temporary fixes",
+      "Blamed others",
+      "No example"
+    ],
+    "answerIndex": 0,
+    "explanation": "Prevention mindset is senior."
+  },
+
+  {
+    "id": 151,
+    "category": "HR",
+    "level": "hard",
+    "question": "How do you handle “Tell me something negative about your last company” trap?",
+    "options": [
+      "Stay professional: mention challenge, not insults, and learning",
+      "Insult company",
+      "Share gossip",
+      "Refuse rudely"
+    ],
+    "answerIndex": 0,
+    "explanation": "Protect professionalism."
+  },
+  {
+    "id": 152,
+    "category": "HR",
+    "level": "hard",
+    "question": "Describe a time you handled a senior stakeholder with low patience and high power.",
+    "options": [
+      "Concise updates, clear options, quick decisions",
+      "Avoid them",
+      "Overpromise",
+      "No example"
+    ],
+    "answerIndex": 0,
+    "explanation": "Executive communication skill."
+  },
+  {
+    "id": 153,
+    "category": "HR",
+    "level": "hard",
+    "question": "How do you handle a situation where you need to report your manager’s wrongdoing?",
+    "options": [
+      "Follow whistleblowing/policy channels with facts",
+      "Ignore",
+      "Threaten manager",
+      "Post online"
+    ],
+    "answerIndex": 0,
+    "explanation": "Policy-first and evidence-based."
+  },
+  {
+    "id": 154,
+    "category": "HR",
+    "level": "hard",
+    "question": "Tell me about a time you had to admit you don’t know in front of leadership.",
+    "options": [
+      "Admitted honestly and shared next steps to find out",
+      "Pretended",
+      "Avoided answer",
+      "Blamed others"
+    ],
+    "answerIndex": 0,
+    "explanation": "Honesty + plan builds trust."
+  },
+  {
+    "id": 155,
+    "category": "HR",
+    "level": "hard",
+    "question": "How do you handle a situation where team success depends on someone unreliable?",
+    "options": [
+      "Build backup plan, track, escalate early, reduce dependency risk",
+      "Hope they deliver",
+      "Blame later",
+      "Stop"
+    ],
+    "answerIndex": 0,
+    "explanation": "Risk management for people dependencies."
+  },
+
+  {
+    "id": 156,
+    "category": "HR",
+    "level": "hard",
+    "question": "Describe a time you handled a confidential business decision before it was announced.",
+    "options": [
+      "Kept strict confidentiality and followed access rules",
+      "Shared with friends",
+      "Posted hints online",
+      "Ignored"
+    ],
+    "answerIndex": 0,
+    "explanation": "Trustworthiness."
+  },
+  {
+    "id": 157,
+    "category": "HR",
+    "level": "hard",
+    "question": "How do you handle a conflict when you are personally involved emotionally?",
+    "options": [
+      "Pause, get facts, communicate calmly, seek mediation if needed",
+      "React immediately",
+      "Attack person",
+      "Avoid forever"
+    ],
+    "answerIndex": 0,
+    "explanation": "Self-control and fairness."
+  },
+  {
+    "id": 158,
+    "category": "HR",
+    "level": "hard",
+    "question": "Tell me about a time you had to protect a junior from unfair blame.",
+    "options": [
+      "Used facts, clarified responsibility, coached and supported",
+      "Stayed silent",
+      "Blamed junior",
+      "No example"
+    ],
+    "answerIndex": 0,
+    "explanation": "Fairness and leadership."
+  },
+  {
+    "id": 159,
+    "category": "HR",
+    "level": "hard",
+    "question": "How do you handle 'You are overqualified/underqualified' feedback in interview?",
+    "options": [
+      "Reframe fit with examples, learning plan, and motivation",
+      "Argue",
+      "Get offended",
+      "Avoid"
+    ],
+    "answerIndex": 0,
+    "explanation": "Confidence + clarity."
+  },
+  {
+    "id": 160,
+    "category": "HR",
+    "level": "hard",
+    "question": "Describe a time you handled a situation where doing the right thing cost you personally.",
+    "options": [
+      "Chose ethics, explained calmly, accepted outcome",
+      "Chose benefit",
+      "Hid truth",
+      "No example"
+    ],
+    "answerIndex": 0,
+    "explanation": "Integrity test."
+  },
+
+  {
+    "id": 161,
+    "category": "HR",
+    "level": "hard",
+    "question": "How do you handle a stakeholder who threatens escalation to get what they want?",
+    "options": [
+      "Stay calm, stick to facts/policy, offer options, involve manager",
+      "Give in instantly",
+      "Fight",
+      "Ignore"
+    ],
+    "answerIndex": 0,
+    "explanation": "Boundary + options."
+  },
+  {
+    "id": 162,
+    "category": "HR",
+    "level": "hard",
+    "question": "Tell me about a time you delivered results while facing internal politics.",
+    "options": [
+      "Stayed factual, avoided gossip, built alliances through delivery",
+      "Joined politics",
+      "Manipulated",
+      "No example"
+    ],
+    "answerIndex": 0,
+    "explanation": "Integrity under politics."
+  },
+  {
+    "id": 163,
+    "category": "HR",
+    "level": "hard",
+    "question": "How do you handle a team where meetings consume all productive time?",
+    "options": [
+      "Propose async updates, shorten meetings, clear agendas",
+      "Complain only",
+      "Skip meetings randomly",
+      "No plan"
+    ],
+    "answerIndex": 0,
+    "explanation": "Operational efficiency."
+  },
+  {
+    "id": 164,
+    "category": "HR",
+    "level": "hard",
+    "question": "Describe a time you handled a change that affected your compensation or role scope.",
+    "options": [
+      "Discussed professionally, aligned expectations, chose best path",
+      "Complained loudly",
+      "Quit suddenly",
+      "No example"
+    ],
+    "answerIndex": 0,
+    "explanation": "Maturity in sensitive topics."
+  },
+  {
+    "id": 165,
+    "category": "HR",
+    "level": "hard",
+    "question": "How do you handle when you realize you made a promise you cannot keep?",
+    "options": [
+      "Inform early, apologize briefly, renegotiate, deliver revised plan",
+      "Hide it",
+      "Overwork silently",
+      "Blame others"
+    ],
+    "answerIndex": 0,
+    "explanation": "Expectation correction is key."
+  },
+
+  {
+    "id": 166,
+    "category": "HR",
+    "level": "hard",
+    "question": "Tell me about a time you had to manage someone older/more experienced than you.",
+    "options": [
+      "Used respect, clarity, and collaboration",
+      "Used authority aggressively",
+      "Avoided them",
+      "No example"
+    ],
+    "answerIndex": 0,
+    "explanation": "People leadership without ego."
+  },
+  {
+    "id": 167,
+    "category": "HR",
+    "level": "hard",
+    "question": "How do you handle a teammate who violates boundaries (personal comments, jokes)?",
+    "options": [
+      "Address firmly, document, follow policy/HR route",
+      "Ignore",
+      "Laugh along",
+      "Fight publicly"
+    ],
+    "answerIndex": 0,
+    "explanation": "Safety and boundaries matter."
+  },
+  {
+    "id": 168,
+    "category": "HR",
+    "level": "hard",
+    "question": "Describe a time you had to make a tough call with no perfect answer.",
+    "options": [
+      "Compared tradeoffs, chose best option, communicated clearly",
+      "Delayed forever",
+      "Picked randomly",
+      "No example"
+    ],
+    "answerIndex": 0,
+    "explanation": "Judgment under ambiguity."
+  },
+  {
+    "id": 169,
+    "category": "HR",
+    "level": "hard",
+    "question": "How do you handle the question: 'What if your manager is wrong and refuses to listen?'",
+    "options": [
+      "Document facts, escalate respectfully, protect business",
+      "Fight",
+      "Give up",
+      "Complain"
+    ],
+    "answerIndex": 0,
+    "explanation": "Managing up is hard."
+  },
+  {
+    "id": 170,
+    "category": "HR",
+    "level": "hard",
+    "question": "Tell me about a time you had to deliver a message that could trigger resignation/anger.",
+    "options": [
+      "Private, empathetic, factual, with support options",
+      "Public confrontation",
+      "Blame them",
+      "No example"
+    ],
+    "answerIndex": 0,
+    "explanation": "High-stakes conversation skill."
+  },
+
+  {
+    "id": 171,
+    "category": "HR",
+    "level": "hard",
+    "question": "How do you handle a teammate who keeps missing deadlines but is well-liked by leadership?",
+    "options": [
+      "Use data, show impact, propose support plan, escalate carefully",
+      "Complain only",
+      "Attack them personally",
+      "Ignore"
+    ],
+    "answerIndex": 0,
+    "explanation": "Diplomacy + evidence."
+  },
+  {
+    "id": 172,
+    "category": "HR",
+    "level": "hard",
+    "question": "Describe a time you had to protect customer trust after a failure.",
+    "options": [
+      "Apologize, fix, communicate, prevent repeat",
+      "Hide issue",
+      "Blame customer",
+      "No example"
+    ],
+    "answerIndex": 0,
+    "explanation": "Customer trust recovery."
+  },
+  {
+    "id": 173,
+    "category": "HR",
+    "level": "hard",
+    "question": "How do you handle an interview where interviewer is biased or disrespectful?",
+    "options": [
+      "Stay calm, keep answers professional, set boundaries politely",
+      "Fight",
+      "Insult back",
+      "Walk out immediately"
+    ],
+    "answerIndex": 0,
+    "explanation": "Composure under discomfort."
+  },
+  {
+    "id": 174,
+    "category": "HR",
+    "level": "hard",
+    "question": "Tell me about a time you had to challenge unrealistic success metrics.",
+    "options": [
+      "Proposed better metrics with reasoning and aligned stakeholders",
+      "Accepted silently",
+      "Complained only",
+      "No example"
+    ],
+    "answerIndex": 0,
+    "explanation": "Metrics thinking is advanced."
+  },
+  {
+    "id": 175,
+    "category": "HR",
+    "level": "hard",
+    "question": "How do you handle a teammate who is secretly job hunting and stopped contributing?",
+    "options": [
+      "Address performance professionally, set expectations, escalate if needed",
+      "Ignore",
+      "Gossip",
+      "Attack personally"
+    ],
+    "answerIndex": 0,
+    "explanation": "Focus on behavior and delivery."
+  },
+
+  {
+    "id": 176,
+    "category": "HR",
+    "level": "hard",
+    "question": "Describe a time you handled a leadership change that impacted your project.",
+    "options": [
+      "Re-aligned goals, got clarity, protected delivery",
+      "Complained",
+      "Stopped work",
+      "No example"
+    ],
+    "answerIndex": 0,
+    "explanation": "Adaptation to leadership shifts."
+  },
+  {
+    "id": 177,
+    "category": "HR",
+    "level": "hard",
+    "question": "How do you handle a sensitive rumor in workplace?",
+    "options": [
+      "Avoid spreading, verify through proper channels, stay professional",
+      "Share it",
+      "Add details",
+      "Post online"
+    ],
+    "answerIndex": 0,
+    "explanation": "Rumors can damage culture."
+  },
+  {
+    "id": 178,
+    "category": "HR",
+    "level": "hard",
+    "question": "Tell me about a time you had to choose between speed and security.",
+    "options": [
+      "Protected security, explained risks, aligned decision",
+      "Chose speed always",
+      "Ignored security",
+      "No example"
+    ],
+    "answerIndex": 0,
+    "explanation": "Security is non-negotiable."
+  },
+  {
+    "id": 179,
+    "category": "HR",
+    "level": "hard",
+    "question": "How do you handle a situation where your team wants to hide a failure from customer?",
+    "options": [
+      "Advocate transparency, follow policy, protect trust",
+      "Agree to hide it",
+      "Ignore",
+      "Blame others"
+    ],
+    "answerIndex": 0,
+    "explanation": "Ethics and customer trust."
+  },
+  {
+    "id": 180,
+    "category": "HR",
+    "level": "hard",
+    "question": "Describe a time you set a boundary that improved your performance.",
+    "options": [
+      "Communicated availability/focus time and delivered better results",
+      "Refused everything",
+      "Fought with team",
+      "No example"
+    ],
+    "answerIndex": 0,
+    "explanation": "Healthy boundaries improve delivery."
+  },
+
+  {
+    "id": 181,
+    "category": "HR",
+    "level": "hard",
+    "question": "How do you handle a manager who gives credit selectively and demotivates team?",
+    "options": [
+      "Discuss privately with evidence, propose fair recognition process",
+      "Complain publicly",
+      "Quit",
+      "Gossip"
+    ],
+    "answerIndex": 0,
+    "explanation": "Culture repair needs tact."
+  },
+  {
+    "id": 182,
+    "category": "HR",
+    "level": "hard",
+    "question": "Tell me about a time you had to coach someone who didn’t want coaching.",
+    "options": [
+      "Build trust, use examples, agree goals, track progress",
+      "Force coaching",
+      "Give up instantly",
+      "No example"
+    ],
+    "answerIndex": 0,
+    "explanation": "Coaching resistance is hard."
+  },
+  {
+    "id": 183,
+    "category": "HR",
+    "level": "hard",
+    "question": "How do you handle a situation where you must report a close friend’s policy violation?",
+    "options": [
+      "Follow policy, keep it factual, avoid favoritism",
+      "Cover for them",
+      "Ignore",
+      "Post online"
+    ],
+    "answerIndex": 0,
+    "explanation": "Integrity over relationships."
+  },
+  {
+    "id": 184,
+    "category": "HR",
+    "level": "hard",
+    "question": "Describe a time you handled a project with high uncertainty and high scrutiny.",
+    "options": [
+      "Iterated, documented, communicated, delivered measurable value",
+      "Waited for clarity",
+      "Rushed blindly",
+      "No example"
+    ],
+    "answerIndex": 0,
+    "explanation": "Scrutiny needs structure."
+  },
+  {
+    "id": 185,
+    "category": "HR",
+    "level": "hard",
+    "question": "How do you handle a stakeholder who wants you to blame another team?",
+    "options": [
+      "Stick to facts, focus on resolution, avoid blame culture",
+      "Blame other team",
+      "Refuse to talk",
+      "Attack stakeholder"
+    ],
+    "answerIndex": 0,
+    "explanation": "Blame culture harms delivery."
+  },
+
+  {
+    "id": 186,
+    "category": "HR",
+    "level": "hard",
+    "question": "Tell me about a time you handled being replaced/removed from a project.",
+    "options": [
+      "Stayed professional, learned, helped transition",
+      "Got angry",
+      "Sabotaged",
+      "No example"
+    ],
+    "answerIndex": 0,
+    "explanation": "Maturity under ego hit."
+  },
+  {
+    "id": 187,
+    "category": "HR",
+    "level": "hard",
+    "question": "How do you handle a team member who creates fear in the team?",
+    "options": [
+      "Address behavior, document, escalate via HR/leadership",
+      "Ignore",
+      "Join fear",
+      "Fight"
+    ],
+    "answerIndex": 0,
+    "explanation": "Psychological safety matters."
+  },
+  {
+    "id": 188,
+    "category": "HR",
+    "level": "hard",
+    "question": "Describe a time you handled a critical client conversation alone.",
+    "options": [
+      "Prepared, listened, set expectations, follow-up plan",
+      "Improvised without plan",
+      "Argued",
+      "No example"
+    ],
+    "answerIndex": 0,
+    "explanation": "High-stakes communication."
+  },
+  {
+    "id": 189,
+    "category": "HR",
+    "level": "hard",
+    "question": "How do you handle conflicts when you’re wrong and still need to save the relationship?",
+    "options": [
+      "Own mistake, apologize, fix, rebuild trust",
+      "Defend ego",
+      "Blame others",
+      "Avoid"
+    ],
+    "answerIndex": 0,
+    "explanation": "Humility + action."
+  },
+  {
+    "id": 190,
+    "category": "HR",
+    "level": "hard",
+    "question": "Tell me about a time you took a stand that improved culture.",
+    "options": [
+      "Promoted fairness/ethics, influenced behavior, results improved",
+      "Joined gossip",
+      "Stayed silent",
+      "No example"
+    ],
+    "answerIndex": 0,
+    "explanation": "Culture leadership."
+  },
+
+  {
+    "id": 191,
+    "category": "HR",
+    "level": "hard",
+    "question": "How do you handle 'Tell me a reason we should NOT hire you'?",
+    "options": [
+      "Small real gap + mitigation plan + why still fit",
+      "Say 'no reason'",
+      "List many flaws",
+      "Get defensive"
+    ],
+    "answerIndex": 0,
+    "explanation": "Self-awareness + mitigation is key."
+  },
+  {
+    "id": 192,
+    "category": "HR",
+    "level": "hard",
+    "question": "Describe a time you delivered with extreme constraints and still kept stakeholders happy.",
+    "options": [
+      "Aligned expectations, frequent updates, delivered key value",
+      "Overpromised",
+      "Ignored updates",
+      "No example"
+    ],
+    "answerIndex": 0,
+    "explanation": "Expectation management under constraints."
+  },
+  {
+    "id": 193,
+    "category": "HR",
+    "level": "hard",
+    "question": "How do you handle a situation where your career growth is blocked by org structure?",
+    "options": [
+      "Discuss growth plan, seek projects, mentor, internal move strategy",
+      "Complain only",
+      "Quit angrily",
+      "Stop learning"
+    ],
+    "answerIndex": 0,
+    "explanation": "Strategic career management."
+  },
+  {
+    "id": 194,
+    "category": "HR",
+    "level": "hard",
+    "question": "Tell me about a time you had to choose ethics over quick success.",
+    "options": [
+      "Chose ethical path even if slower, followed policy",
+      "Chose success only",
+      "Hid unethical act",
+      "No example"
+    ],
+    "answerIndex": 0,
+    "explanation": "Integrity test."
+  },
+  {
+    "id": 195,
+    "category": "HR",
+    "level": "hard",
+    "question": "How do you handle the question: 'Will you leave if you get a better offer?'",
+    "options": [
+      "Commit to role, be ethical, communicate and follow policy",
+      "Say yes instantly",
+      "Threaten for raise",
+      "Avoid"
+    ],
+    "answerIndex": 0,
+    "explanation": "Reliability + ethics."
+  },
+
+  {
+    "id": 196,
+    "category": "HR",
+    "level": "hard",
+    "question": "Describe a time you had to lead a decision with incomplete buy-in.",
+    "options": [
+      "Communicated decision, reasons, listened, adjusted execution",
+      "Forced people",
+      "Avoided decision",
+      "No example"
+    ],
+    "answerIndex": 0,
+    "explanation": "Leadership under partial agreement."
+  },
+  {
+    "id": 197,
+    "category": "HR",
+    "level": "hard",
+    "question": "How do you handle a manager who is technically wrong but politically strong?",
+    "options": [
+      "Use tact + evidence, propose safe experiment, escalate carefully",
+      "Attack them",
+      "Stay silent",
+      "Complain"
+    ],
+    "answerIndex": 0,
+    "explanation": "Tactful influence is hard."
+  },
+  {
+    "id": 198,
+    "category": "HR",
+    "level": "hard",
+    "question": "Tell me about a time you fixed a broken handoff process between teams.",
+    "options": [
+      "Mapped gaps, clarified owners, created SLA/docs, improved outcomes",
+      "Complained only",
+      "Avoided other team",
+      "No example"
+    ],
+    "answerIndex": 0,
+    "explanation": "Operational improvement across teams."
+  },
+  {
+    "id": 199,
+    "category": "HR",
+    "level": "hard",
+    "question": "How do you handle a scenario where doing the right thing could cost your job?",
+    "options": [
+      "Follow ethics/policy, document, escalate properly",
+      "Do wrong thing",
+      "Hide truth",
+      "No answer"
+    ],
+    "answerIndex": 0,
+    "explanation": "High-integrity scenario."
+  },
+  {
+    "id": 200,
+    "category": "HR",
+    "level": "hard",
+    "question": "Give an example where you turned a failing situation into a success.",
+    "options": [
+      "Stabilized, aligned stakeholders, executed milestones, achieved outcome",
+      "Got lucky only",
+      "Blamed others",
+      "No example"
+    ],
+    "answerIndex": 0,
+    "explanation": "Turnaround capability is advanced."
+  },
+
+  {
+    "id": 201,
+    "category": "HR",
+    "level": "hard",
+    "question": "A senior leader asks you to hide a mistake from a customer. What do you do?",
+    "options": [
+      "Refuse tactfully, explain trust/legal risk, follow policy, escalate if needed",
+      "Agree and hide it",
+      "Ignore request",
+      "Blame someone else"
+    ],
+    "answerIndex": 0,
+    "explanation": "Hard HR checks ethics + courage + process."
+  },
+  {
+    "id": 202,
+    "category": "HR",
+    "level": "hard",
+    "question": "Describe a time you were accused unfairly. How did you protect yourself without damaging relationships?",
+    "options": [
+      "Stayed calm, used facts, documented, resolved privately",
+      "Fought publicly",
+      "Gossiped",
+      "Quit"
+    ],
+    "answerIndex": 0,
+    "explanation": "Composure + evidence + diplomacy."
+  },
+  {
+    "id": 203,
+    "category": "HR",
+    "level": "hard",
+    "question": "Your manager asks you to take credit for someone else’s work. What’s your response?",
+    "options": [
+      "Refuse and give proper credit; keep it professional",
+      "Take credit",
+      "Stay silent",
+      "Post online"
+    ],
+    "answerIndex": 0,
+    "explanation": "Integrity and fairness matter."
+  },
+  {
+    "id": 204,
+    "category": "HR",
+    "level": "hard",
+    "question": "Tell me about a time you had to deliver a painful truth to leadership.",
+    "options": [
+      "Shared facts, impact, options, next steps",
+      "Hid truth",
+      "Blamed others",
+      "No example"
+    ],
+    "answerIndex": 0,
+    "explanation": "Hard: courage + clarity."
+  },
+  {
+    "id": 205,
+    "category": "HR",
+    "level": "hard",
+    "question": "How do you handle a team where the best performer is also the biggest blocker?",
+    "options": [
+      "Address behavior, align incentives, set boundaries, escalate if needed",
+      "Ignore because they perform",
+      "Fight",
+      "Quit"
+    ],
+    "answerIndex": 0,
+    "explanation": "Balance output with collaboration."
+  },
+
+  {
+    "id": 206,
+    "category": "HR",
+    "level": "hard",
+    "question": "Describe a time you had to decide between two bad options.",
+    "options": [
+      "Chose least harmful option using risk/impact and communicated it",
+      "Picked randomly",
+      "Delayed until failure",
+      "No example"
+    ],
+    "answerIndex": 0,
+    "explanation": "Judgment under pressure."
+  },
+  {
+    "id": 207,
+    "category": "HR",
+    "level": "hard",
+    "question": "A teammate confides something sensitive that affects workplace safety. What do you do?",
+    "options": [
+      "Support them but follow policy and report appropriately",
+      "Keep secret always",
+      "Tell everyone",
+      "Ignore"
+    ],
+    "answerIndex": 0,
+    "explanation": "Safety + confidentiality boundaries."
+  },
+  {
+    "id": 208,
+    "category": "HR",
+    "level": "hard",
+    "question": "How do you handle a manager who retaliates when you give honest feedback?",
+    "options": [
+      "Stay factual, document, use formal channels if needed",
+      "Fight publicly",
+      "Stay silent forever",
+      "Gossip"
+    ],
+    "answerIndex": 0,
+    "explanation": "Protect yourself through process."
+  },
+  {
+    "id": 209,
+    "category": "HR",
+    "level": "hard",
+    "question": "Tell me about a time you had to push back on a goal you believed was harmful.",
+    "options": [
+      "Used data, explained impact, proposed alternatives",
+      "Accepted silently",
+      "Argued emotionally",
+      "No example"
+    ],
+    "answerIndex": 0,
+    "explanation": "Responsible pushback is advanced."
+  },
+  {
+    "id": 210,
+    "category": "HR",
+    "level": "hard",
+    "question": "How do you handle a culture where people fear speaking up?",
+    "options": [
+      "Create safe channels, use facts, encourage feedback, lead by example",
+      "Join silence",
+      "Blame HR only",
+      "Attack people"
+    ],
+    "answerIndex": 0,
+    "explanation": "Psychological safety leadership."
+  },
+
+  {
+    "id": 211,
+    "category": "HR",
+    "level": "hard",
+    "question": "Describe a time you managed a major conflict between two teams.",
+    "options": [
+      "Aligned goals, set owners, agreed process, reduced friction",
+      "Blamed one team",
+      "Avoided",
+      "No example"
+    ],
+    "answerIndex": 0,
+    "explanation": "Cross-team leadership is hard."
+  },
+  {
+    "id": 212,
+    "category": "HR",
+    "level": "hard",
+    "question": "A stakeholder keeps escalating to get special treatment. What do you do?",
+    "options": [
+      "Stick to policy, provide options, involve manager, document",
+      "Give in always",
+      "Fight",
+      "Ignore"
+    ],
+    "answerIndex": 0,
+    "explanation": "Boundary-setting with diplomacy."
+  },
+  {
+    "id": 213,
+    "category": "HR",
+    "level": "hard",
+    "question": "Tell me about a time you handled a serious compliance risk.",
+    "options": [
+      "Raised risk, followed policy, mitigated, documented",
+      "Ignored risk",
+      "Took shortcut",
+      "No example"
+    ],
+    "answerIndex": 0,
+    "explanation": "Compliance-first behavior."
+  },
+  {
+    "id": 214,
+    "category": "HR",
+    "level": "hard",
+    "question": "How do you handle a teammate who is consistently disrespectful to juniors?",
+    "options": [
+      "Address behavior, protect juniors, escalate if repeated",
+      "Ignore",
+      "Join bullying",
+      "Blame juniors"
+    ],
+    "answerIndex": 0,
+    "explanation": "Culture and safety matter."
+  },
+  {
+    "id": 215,
+    "category": "HR",
+    "level": "hard",
+    "question": "Describe a time you handled a situation where you had to choose fairness over convenience.",
+    "options": [
+      "Used consistent criteria and documented decision",
+      "Chose convenience",
+      "Favored friends",
+      "No example"
+    ],
+    "answerIndex": 0,
+    "explanation": "Fairness is leadership."
+  },
+
+  {
+    "id": 216,
+    "category": "HR",
+    "level": "hard",
+    "question": "How do you handle a project where leadership changes direction weekly?",
+    "options": [
+      "Confirm priorities frequently, document decisions, deliver in small increments",
+      "Complain",
+      "Ignore changes",
+      "Stop work"
+    ],
+    "answerIndex": 0,
+    "explanation": "Stability through structure."
+  },
+  {
+    "id": 217,
+    "category": "HR",
+    "level": "hard",
+    "question": "Tell me about a time you prevented a repeat incident using process change.",
+    "options": [
+      "Root cause, preventive action, measured reduction",
+      "Only firefighting",
+      "Blamed others",
+      "No example"
+    ],
+    "answerIndex": 0,
+    "explanation": "Prevention mindset."
+  },
+  {
+    "id": 218,
+    "category": "HR",
+    "level": "hard",
+    "question": "How do you handle when your teammate’s personal issue starts impacting delivery?",
+    "options": [
+      "Support privately, adjust plan, protect confidentiality, inform lead if needed",
+      "Expose details",
+      "Ignore them",
+      "Complain"
+    ],
+    "answerIndex": 0,
+    "explanation": "Empathy + delivery balance."
+  },
+  {
+    "id": 219,
+    "category": "HR",
+    "level": "hard",
+    "question": "Describe a time you handled a high-pressure negotiation with limited leverage.",
+    "options": [
+      "Used value framing, options, and calm tone",
+      "Threatened",
+      "Argued",
+      "No example"
+    ],
+    "answerIndex": 0,
+    "explanation": "Negotiation under constraint."
+  },
+  {
+    "id": 220,
+    "category": "HR",
+    "level": "hard",
+    "question": "How do you handle a manager who keeps moving goalposts and then evaluates you?",
+    "options": [
+      "Clarify goals early, document updates, checkpoint mid-way",
+      "Get angry",
+      "Stop updating",
+      "Accept silently"
+    ],
+    "answerIndex": 0,
+    "explanation": "Expectation management + documentation."
+  },
+
+  {
+    "id": 221,
+    "category": "HR",
+    "level": "hard",
+    "question": "Tell me about a time you made a decision that had legal/ethical considerations.",
+    "options": [
+      "Followed policy, consulted right people, documented",
+      "Ignored policy",
+      "Did what was faster",
+      "No example"
+    ],
+    "answerIndex": 0,
+    "explanation": "High-stakes responsibility."
+  },
+  {
+    "id": 222,
+    "category": "HR",
+    "level": "hard",
+    "question": "How do you handle a stakeholder who wants you to blame another team publicly?",
+    "options": [
+      "Stay factual, focus on resolution, avoid blame culture",
+      "Blame other team",
+      "Refuse to talk",
+      "Attack stakeholder"
+    ],
+    "answerIndex": 0,
+    "explanation": "Protect culture and relationships."
+  },
+  {
+    "id": 223,
+    "category": "HR",
+    "level": "hard",
+    "question": "Describe a time you handled a situation where you had to fire/exit someone (or recommend it).",
+    "options": [
+      "Followed HR process, documented, treated respectfully",
+      "Humiliated them",
+      "Avoided process",
+      "No example"
+    ],
+    "answerIndex": 0,
+    "explanation": "Fairness and policy."
+  },
+  {
+    "id": 224,
+    "category": "HR",
+    "level": "hard",
+    "question": "How do you handle being asked to share salary details or confidential info by peers?",
+    "options": [
+      "Politely decline and follow policy",
+      "Share freely",
+      "Lie",
+      "Get angry"
+    ],
+    "answerIndex": 0,
+    "explanation": "Confidentiality and professionalism."
+  },
+  {
+    "id": 225,
+    "category": "HR",
+    "level": "hard",
+    "question": "Tell me about a time you handled a broken trust with a customer/user after an outage.",
+    "options": [
+      "Owned it, communicated, fixed, prevented repeat",
+      "Hid issue",
+      "Blamed customer",
+      "No example"
+    ],
+    "answerIndex": 0,
+    "explanation": "Trust recovery is advanced."
+  },
+
+  {
+    "id": 226,
+    "category": "HR",
+    "level": "hard",
+    "question": "How do you handle a situation where leadership wants results but refuses to define success?",
+    "options": [
+      "Propose metrics/options and get explicit agreement",
+      "Work blindly",
+      "Pick random metric",
+      "Avoid"
+    ],
+    "answerIndex": 0,
+    "explanation": "Define success before execution."
+  },
+  {
+    "id": 227,
+    "category": "HR",
+    "level": "hard",
+    "question": "Describe a time you handled strong resistance to your leadership.",
+    "options": [
+      "Listened, addressed concerns, built buy-in, delivered",
+      "Forced compliance",
+      "Quit",
+      "No example"
+    ],
+    "answerIndex": 0,
+    "explanation": "Influence and trust building."
+  },
+  {
+    "id": 228,
+    "category": "HR",
+    "level": "hard",
+    "question": "How do you handle a teammate who is secretly undermining you with others?",
+    "options": [
+      "Gather facts, address directly, involve lead if needed",
+      "Gossip back",
+      "Fight publicly",
+      "Quit"
+    ],
+    "answerIndex": 0,
+    "explanation": "Hard: diplomacy + evidence."
+  },
+  {
+    "id": 229,
+    "category": "HR",
+    "level": "hard",
+    "question": "Tell me about a time you handled a conflict where you were partly at fault.",
+    "options": [
+      "Owned your part, apologized, fixed, learned",
+      "Denied fault",
+      "Blamed others",
+      "No example"
+    ],
+    "answerIndex": 0,
+    "explanation": "Accountability matters."
+  },
+  {
+    "id": 230,
+    "category": "HR",
+    "level": "hard",
+    "question": "How do you handle a toxic culture where gossip is normal?",
+    "options": [
+      "Avoid gossip, focus on facts, build trust, set boundaries",
+      "Join gossip",
+      "Fight everyone",
+      "Quit immediately"
+    ],
+    "answerIndex": 0,
+    "explanation": "Protect integrity and reputation."
+  },
+
+  {
+    "id": 231,
+    "category": "HR",
+    "level": "hard",
+    "question": "Describe a time you handled a high-risk change (could break production).",
+    "options": [
+      "Planned rollback, tested, communicated, monitored",
+      "Pushed without plan",
+      "Hoped it works",
+      "No example"
+    ],
+    "answerIndex": 0,
+    "explanation": "Risk control is advanced."
+  },
+  {
+    "id": 232,
+    "category": "HR",
+    "level": "hard",
+    "question": "How do you handle a teammate who refuses to share knowledge to stay important?",
+    "options": [
+      "Create documentation culture, encourage sharing, escalate if needed",
+      "Ignore",
+      "Fight",
+      "Do everything alone"
+    ],
+    "answerIndex": 0,
+    "explanation": "Knowledge hoarding hurts team."
+  },
+  {
+    "id": 233,
+    "category": "HR",
+    "level": "hard",
+    "question": "Tell me about a time you had to protect a junior engineer/teammate from unfair blame.",
+    "options": [
+      "Used facts, clarified ownership, supported growth",
+      "Stayed silent",
+      "Blamed junior",
+      "No example"
+    ],
+    "answerIndex": 0,
+    "explanation": "Fairness and leadership."
+  },
+  {
+    "id": 234,
+    "category": "HR",
+    "level": "hard",
+    "question": "How do you handle a stakeholder who demands immediate answers you don’t have?",
+    "options": [
+      "Be honest, commit to timeline, provide interim info",
+      "Guess confidently",
+      "Avoid",
+      "Blame others"
+    ],
+    "answerIndex": 0,
+    "explanation": "'I don't know' + plan builds trust."
+  },
+  {
+    "id": 235,
+    "category": "HR",
+    "level": "hard",
+    "question": "Describe a time you handled a situation where doing the right thing cost you recognition.",
+    "options": [
+      "Chose ethics, stayed professional, focused on long-term trust",
+      "Chose recognition",
+      "Hid truth",
+      "No example"
+    ],
+    "answerIndex": 0,
+    "explanation": "Integrity test."
+  },
+
+  {
+    "id": 236,
+    "category": "HR",
+    "level": "hard",
+    "question": "How do you handle a scenario where your team wants to “game the system” to hit targets?",
+    "options": [
+      "Stop it, explain ethics/risk, align with policy, escalate",
+      "Join them",
+      "Ignore",
+      "Post online"
+    ],
+    "answerIndex": 0,
+    "explanation": "Ethics and compliance."
+  },
+  {
+    "id": 237,
+    "category": "HR",
+    "level": "hard",
+    "question": "Tell me about a time you handled layoffs/restructure (directly or indirectly).",
+    "options": [
+      "Communicated respectfully, supported people, stayed professional",
+      "Gossiped",
+      "Celebrated",
+      "No example"
+    ],
+    "answerIndex": 0,
+    "explanation": "Sensitivity and professionalism."
+  },
+  {
+    "id": 238,
+    "category": "HR",
+    "level": "hard",
+    "question": "How do you handle a manager who is inconsistent (praises then criticizes unpredictably)?",
+    "options": [
+      "Seek clear expectations, document, ask for regular check-ins",
+      "React emotionally",
+      "Stop trying",
+      "Complain"
+    ],
+    "answerIndex": 0,
+    "explanation": "Create stability through structure."
+  },
+  {
+    "id": 239,
+    "category": "HR",
+    "level": "hard",
+    "question": "Describe a time you had to handle an escalation from a VIP customer.",
+    "options": [
+      "Priority response, clear updates, resolution, follow-up",
+      "Argued",
+      "Ignored",
+      "No example"
+    ],
+    "answerIndex": 0,
+    "explanation": "VIP escalation handling."
+  },
+  {
+    "id": 240,
+    "category": "HR",
+    "level": "hard",
+    "question": "How do you handle an interview question that is discriminatory?",
+    "options": [
+      "Redirect politely to job-related topics and keep calm",
+      "Answer it fully",
+      "Fight",
+      "Insult interviewer"
+    ],
+    "answerIndex": 0,
+    "explanation": "Professional boundary-setting."
+  },
+
+  {
+    "id": 241,
+    "category": "HR",
+    "level": "hard",
+    "question": "Tell me about a time you rebuilt a broken process end-to-end.",
+    "options": [
+      "Mapped, improved, implemented, measured impact",
+      "Complained only",
+      "Did partial fix",
+      "No example"
+    ],
+    "answerIndex": 0,
+    "explanation": "End-to-end ownership is advanced."
+  },
+  {
+    "id": 242,
+    "category": "HR",
+    "level": "hard",
+    "question": "How do you handle a teammate who constantly violates meeting etiquette (interrupts, dismisses)?",
+    "options": [
+      "Set rules, address privately, escalate if repeated",
+      "Interrupt back",
+      "Ignore",
+      "Leave team"
+    ],
+    "answerIndex": 0,
+    "explanation": "Protect respectful culture."
+  },
+  {
+    "id": 243,
+    "category": "HR",
+    "level": "hard",
+    "question": "Describe a time you managed a complex stakeholder map (many people, conflicting needs).",
+    "options": [
+      "Identified influencers, aligned priorities, communicated cadence",
+      "Tried to please everyone",
+      "Ignored some silently",
+      "No example"
+    ],
+    "answerIndex": 0,
+    "explanation": "Stakeholder mapping is advanced."
+  },
+  {
+    "id": 244,
+    "category": "HR",
+    "level": "hard",
+    "question": "How do you handle a situation where you must choose between transparency and protecting morale?",
+    "options": [
+      "Be honest with tact, share what’s safe, give plan/next steps",
+      "Hide truth",
+      "Dump all details",
+      "Avoid"
+    ],
+    "answerIndex": 0,
+    "explanation": "Tactful transparency."
+  },
+  {
+    "id": 245,
+    "category": "HR",
+    "level": "hard",
+    "question": "Tell me about a time you handled a dispute about credit/recognition fairly.",
+    "options": [
+      "Clarified contributions with evidence and gave proper credit",
+      "Took credit",
+      "Stayed silent",
+      "Gossiped"
+    ],
+    "answerIndex": 0,
+    "explanation": "Fair recognition builds trust."
+  },
+
+  {
+    "id": 246,
+    "category": "HR",
+    "level": "hard",
+    "question": "How do you handle a project with unrealistic scope and fixed deadline?",
+    "options": [
+      "Renegotiate scope, define MVP, align tradeoffs, document",
+      "Accept and fail",
+      "Complain only",
+      "Quit"
+    ],
+    "answerIndex": 0,
+    "explanation": "Scope negotiation is critical."
+  },
+  {
+    "id": 247,
+    "category": "HR",
+    "level": "hard",
+    "question": "Describe a time you handled a situation where someone broke policy but was protected by leadership.",
+    "options": [
+      "Stay factual, document, use proper channels carefully",
+      "Ignore",
+      "Attack leadership",
+      "Spread rumors"
+    ],
+    "answerIndex": 0,
+    "explanation": "Diplomacy + policy."
+  },
+  {
+    "id": 248,
+    "category": "HR",
+    "level": "hard",
+    "question": "How do you handle a teammate who repeatedly creates security risks (weak passwords, sharing access)?",
+    "options": [
+      "Correct immediately, educate, escalate if repeated",
+      "Ignore",
+      "Join them",
+      "Laugh"
+    ],
+    "answerIndex": 0,
+    "explanation": "Security is serious."
+  },
+  {
+    "id": 249,
+    "category": "HR",
+    "level": "hard",
+    "question": "Tell me about a time you had to manage expectations when you were missing key resources.",
+    "options": [
+      "Communicated constraints early and proposed options",
+      "Hid resource gap",
+      "Overpromised",
+      "No example"
+    ],
+    "answerIndex": 0,
+    "explanation": "Expectation management under constraints."
+  },
+  {
+    "id": 250,
+    "category": "HR",
+    "level": "hard",
+    "question": "How do you handle a scenario where you feel your manager is biased?",
+    "options": [
+      "Focus on evidence, request clear criteria, use HR channel if needed",
+      "Fight",
+      "Gossip",
+      "Quit"
+    ],
+    "answerIndex": 0,
+    "explanation": "Evidence + process protects you."
+  },
+
+  {
+    "id": 251,
+    "category": "HR",
+    "level": "hard",
+    "question": "Describe a time you handled a situation where confidentiality conflicted with transparency.",
+    "options": [
+      "Followed policy, shared minimal necessary, escalated properly",
+      "Shared everything",
+      "Hid everything",
+      "No example"
+    ],
+    "answerIndex": 0,
+    "explanation": "Balance through policy."
+  },
+  {
+    "id": 252,
+    "category": "HR",
+    "level": "hard",
+    "question": "How do you handle a team member who threatens to quit to avoid accountability?",
+    "options": [
+      "Keep discussion professional, set expectations, involve HR/lead",
+      "Beg them",
+      "Ignore",
+      "Blame"
+    ],
+    "answerIndex": 0,
+    "explanation": "Accountability with calmness."
+  },
+  {
+    "id": 253,
+    "category": "HR",
+    "level": "hard",
+    "question": "Tell me about a time you handled a serious customer data/privacy concern.",
+    "options": [
+      "Escalated immediately, followed incident process, contained, documented",
+      "Ignored",
+      "Covered up",
+      "No example"
+    ],
+    "answerIndex": 0,
+    "explanation": "Privacy incidents are high stakes."
+  },
+  {
+    "id": 254,
+    "category": "HR",
+    "level": "hard",
+    "question": "How do you handle a situation where leadership wants to move fast but you need more info?",
+    "options": [
+      "Ask key questions, propose safe experiment, timebox discovery",
+      "Delay forever",
+      "Guess silently",
+      "Complain"
+    ],
+    "answerIndex": 0,
+    "explanation": "Timeboxed discovery is advanced."
+  },
+  {
+    "id": 255,
+    "category": "HR",
+    "level": "hard",
+    "question": "Describe a time you handled a situation where your recommendation was rejected but later proven right.",
+    "options": [
+      "Stayed professional, focused on learning, improved process",
+      "Said 'I told you so'",
+      "Gossiped",
+      "No example"
+    ],
+    "answerIndex": 0,
+    "explanation": "Professional maturity."
+  },
+
+  {
+    "id": 256,
+    "category": "HR",
+    "level": "hard",
+    "question": "How do you handle a peer who is competitive and tries to block your growth?",
+    "options": [
+      "Focus on delivery, build allies, document, address professionally",
+      "Fight",
+      "Gossip",
+      "Quit"
+    ],
+    "answerIndex": 0,
+    "explanation": "Hard: politics handling with integrity."
+  },
+  {
+    "id": 257,
+    "category": "HR",
+    "level": "hard",
+    "question": "Tell me about a time you handled a high-impact risk that required immediate escalation.",
+    "options": [
+      "Escalated with facts and mitigation options quickly",
+      "Waited too long",
+      "Blamed others",
+      "No example"
+    ],
+    "answerIndex": 0,
+    "explanation": "Right-time escalation."
+  },
+  {
+    "id": 258,
+    "category": "HR",
+    "level": "hard",
+    "question": "How do you handle a team member who repeatedly violates respect and inclusion norms?",
+    "options": [
+      "Address, document, escalate via HR/leadership",
+      "Ignore",
+      "Join them",
+      "Laugh"
+    ],
+    "answerIndex": 0,
+    "explanation": "Inclusion and respect are mandatory."
+  },
+  {
+    "id": 259,
+    "category": "HR",
+    "level": "hard",
+    "question": "Describe a time you handled a conflict with a high performer who is also your friend.",
+    "options": [
+      "Stayed fair, used facts, kept it professional",
+      "Favored friend",
+      "Avoided conflict",
+      "No example"
+    ],
+    "answerIndex": 0,
+    "explanation": "Fairness over friendship."
+  },
+  {
+    "id": 260,
+    "category": "HR",
+    "level": "hard",
+    "question": "How do you handle a situation where your deliverable depends on a vendor/third party failing?",
+    "options": [
+      "Build contingency plan, communicate risk early, adjust scope",
+      "Hope vendor delivers",
+      "Blame vendor later",
+      "Stop work"
+    ],
+    "answerIndex": 0,
+    "explanation": "Contingency planning is advanced."
+  },
+
+  {
+    "id": 261,
+    "category": "HR",
+    "level": "hard",
+    "question": "Tell me about a time you handled an executive who was angry.",
+    "options": [
+      "Stayed calm, listened, gave plan, updated frequently",
+      "Got angry back",
+      "Avoided",
+      "No example"
+    ],
+    "answerIndex": 0,
+    "explanation": "Executive de-escalation."
+  },
+  {
+    "id": 262,
+    "category": "HR",
+    "level": "hard",
+    "question": "How do you handle a sudden investigation/audit request?",
+    "options": [
+      "Gather evidence, be transparent, follow process, respond calmly",
+      "Panic",
+      "Hide info",
+      "Blame others"
+    ],
+    "answerIndex": 0,
+    "explanation": "Audit readiness."
+  },
+  {
+    "id": 263,
+    "category": "HR",
+    "level": "hard",
+    "question": "Describe a time you handled a situation where your team was blamed unfairly by another team.",
+    "options": [
+      "Stayed factual, clarified timeline, focused on fix, avoided blame war",
+      "Started blame war",
+      "Gossiped",
+      "No example"
+    ],
+    "answerIndex": 0,
+    "explanation": "Protect relationships and truth."
+  },
+  {
+    "id": 264,
+    "category": "HR",
+    "level": "hard",
+    "question": "How do you handle a manager who wants you to compromise on ethics for results?",
+    "options": [
+      "Refuse, explain risk, follow policy, escalate appropriately",
+      "Agree secretly",
+      "Ignore",
+      "Post online"
+    ],
+    "answerIndex": 0,
+    "explanation": "Ethics is non-negotiable."
+  },
+  {
+    "id": 265,
+    "category": "HR",
+    "level": "hard",
+    "question": "Tell me about a time you handled a situation where you had to protect someone’s dignity during failure.",
+    "options": [
+      "Gave private feedback, focused on solution, avoided public blame",
+      "Humiliated them",
+      "Blamed publicly",
+      "No example"
+    ],
+    "answerIndex": 0,
+    "explanation": "Respectful leadership."
+  },
+
+  {
+    "id": 266,
+    "category": "HR",
+    "level": "hard",
+    "question": "How do you handle a team where trust is low between members?",
+    "options": [
+      "Increase transparency, clarify roles, build small wins, set norms",
+      "Ignore trust issues",
+      "Force bonding",
+      "Blame HR"
+    ],
+    "answerIndex": 0,
+    "explanation": "Trust rebuild needs structure."
+  },
+  {
+    "id": 267,
+    "category": "HR",
+    "level": "hard",
+    "question": "Describe a time you handled a situation where you had to choose between customer satisfaction and policy.",
+    "options": [
+      "Followed policy, explained clearly, offered alternatives",
+      "Broke policy",
+      "Blamed customer",
+      "No example"
+    ],
+    "answerIndex": 0,
+    "explanation": "Policy + empathy."
+  },
+  {
+    "id": 268,
+    "category": "HR",
+    "level": "hard",
+    "question": "How do you handle the question: 'If we hire you, what risk do we take?'",
+    "options": [
+      "Identify a small risk + mitigation plan + learning approach",
+      "Say no risk",
+      "List many risks",
+      "Avoid"
+    ],
+    "answerIndex": 0,
+    "explanation": "Self-awareness + mitigation."
+  },
+  {
+    "id": 269,
+    "category": "HR",
+    "level": "hard",
+    "question": "Tell me about a time you handled a critical misalignment with leadership expectations.",
+    "options": [
+      "Clarified, reset expectations, delivered aligned outcome",
+      "Ignored misalignment",
+      "Blamed leadership",
+      "No example"
+    ],
+    "answerIndex": 0,
+    "explanation": "Expectation alignment is advanced."
+  },
+  {
+    "id": 270,
+    "category": "HR",
+    "level": "hard",
+    "question": "How do you handle a scenario where your teammate’s behavior could trigger legal risk?",
+    "options": [
+      "Document, follow policy, escalate to HR/legal/security",
+      "Ignore",
+      "Handle alone secretly",
+      "Post online"
+    ],
+    "answerIndex": 0,
+    "explanation": "Legal risk needs formal process."
+  },
+
+  {
+    "id": 271,
+    "category": "HR",
+    "level": "hard",
+    "question": "Tell me about a time you had to manage conflict while staying neutral as a lead.",
+    "options": [
+      "Focused on facts, facilitated agreement, set actions",
+      "Picked favorites",
+      "Ignored conflict",
+      "No example"
+    ],
+    "answerIndex": 0,
+    "explanation": "Neutral facilitation is hard."
+  },
+  {
+    "id": 272,
+    "category": "HR",
+    "level": "hard",
+    "question": "How do you handle a situation where you must deliver while your team is demotivated?",
+    "options": [
+      "Rebuild clarity, celebrate small wins, remove blockers, support people",
+      "Push harder only",
+      "Ignore morale",
+      "No plan"
+    ],
+    "answerIndex": 0,
+    "explanation": "Motivation leadership."
+  },
+  {
+    "id": 273,
+    "category": "HR",
+    "level": "hard",
+    "question": "Describe a time you handled a situation where you needed to challenge a popular decision.",
+    "options": [
+      "Raised risks with evidence and alternatives, stayed respectful",
+      "Attacked people",
+      "Stayed silent",
+      "No example"
+    ],
+    "answerIndex": 0,
+    "explanation": "Courage + tact."
+  },
+  {
+    "id": 274,
+    "category": "HR",
+    "level": "hard",
+    "question": "How do you handle a scenario where you must correct a customer politely even if they are wrong?",
+    "options": [
+      "Use calm tone, facts, empathy, and next steps",
+      "Argue",
+      "Mock them",
+      "Ignore"
+    ],
+    "answerIndex": 0,
+    "explanation": "Customer communication skill."
+  },
+  {
+    "id": 275,
+    "category": "HR",
+    "level": "hard",
+    "question": "Tell me about a time you handled a high-stakes hiring decision or interview panel.",
+    "options": [
+      "Used structured criteria, fairness, evidence-based decision",
+      "Chose by feelings",
+      "Favored friend",
+      "No example"
+    ],
+    "answerIndex": 0,
+    "explanation": "Fair hiring mindset."
+  },
+
+  {
+    "id": 276,
+    "category": "HR",
+    "level": "hard",
+    "question": "How do you handle working with a leader who constantly interrupts and dismisses others?",
+    "options": [
+      "Set meeting norms, address privately, escalate if needed",
+      "Interrupt back",
+      "Ignore",
+      "Quit"
+    ],
+    "answerIndex": 0,
+    "explanation": "Protect respectful culture."
+  },
+  {
+    "id": 277,
+    "category": "HR",
+    "level": "hard",
+    "question": "Describe a time you handled a conflict with HR involved.",
+    "options": [
+      "Stayed factual, followed process, respected confidentiality",
+      "Gossiped",
+      "Attacked people",
+      "No example"
+    ],
+    "answerIndex": 0,
+    "explanation": "Process + confidentiality."
+  },
+  {
+    "id": 278,
+    "category": "HR",
+    "level": "hard",
+    "question": "How do you handle a scenario where you suspect fraud or serious misconduct?",
+    "options": [
+      "Collect facts safely and report via proper channel",
+      "Ignore",
+      "Accuse publicly without evidence",
+      "Post online"
+    ],
+    "answerIndex": 0,
+    "explanation": "Evidence + proper reporting."
+  },
+  {
+    "id": 279,
+    "category": "HR",
+    "level": "hard",
+    "question": "Tell me about a time you handled a situation where you had to protect data privacy.",
+    "options": [
+      "Followed privacy process, limited access, escalated incident",
+      "Shared data casually",
+      "Copied data to personal device",
+      "No example"
+    ],
+    "answerIndex": 0,
+    "explanation": "Privacy discipline."
+  },
+  {
+    "id": 280,
+    "category": "HR",
+    "level": "hard",
+    "question": "How do you handle a scenario where you must give feedback to someone who may cry/get emotional?",
+    "options": [
+      "Private, empathetic, specific, offer support/resources",
+      "Avoid feedback",
+      "Be harsh",
+      "Do it publicly"
+    ],
+    "answerIndex": 0,
+    "explanation": "Empathy + clarity."
+  },
+
+  {
+    "id": 281,
+    "category": "HR",
+    "level": "hard",
+    "question": "Tell me about a time you managed a major reset after a public failure.",
+    "options": [
+      "Owned it, communicated, fixed, implemented prevention",
+      "Blamed others",
+      "Hid",
+      "No example"
+    ],
+    "answerIndex": 0,
+    "explanation": "Hard: recovery leadership."
+  },
+  {
+    "id": 282,
+    "category": "HR",
+    "level": "hard",
+    "question": "How do you handle a teammate who constantly violates deadlines but is a 'favorite'?",
+    "options": [
+      "Use data and impact, propose plan, escalate diplomatically",
+      "Attack them",
+      "Complain only",
+      "Ignore"
+    ],
+    "answerIndex": 0,
+    "explanation": "Diplomacy + evidence."
+  },
+  {
+    "id": 283,
+    "category": "HR",
+    "level": "hard",
+    "question": "Describe a time you handled a complex ethical gray area.",
+    "options": [
+      "Consulted policy/experts, chose safest ethical option, documented",
+      "Did what benefits you",
+      "Ignored ethics",
+      "No example"
+    ],
+    "answerIndex": 0,
+    "explanation": "Ethical judgment."
+  },
+  {
+    "id": 284,
+    "category": "HR",
+    "level": "hard",
+    "question": "How do you handle being asked to share internal information with outsiders?",
+    "options": [
+      "Refuse and follow security policy",
+      "Share it",
+      "Hint indirectly",
+      "Ignore"
+    ],
+    "answerIndex": 0,
+    "explanation": "Information security discipline."
+  },
+  {
+    "id": 285,
+    "category": "HR",
+    "level": "hard",
+    "question": "Tell me about a time you handled a leadership demand that conflicted with team wellbeing.",
+    "options": [
+      "Protected delivery while setting sustainable plan for team",
+      "Burned out team silently",
+      "Refused rudely",
+      "No example"
+    ],
+    "answerIndex": 0,
+    "explanation": "Balance business and people."
+  },
+
+  {
+    "id": 286,
+    "category": "HR",
+    "level": "hard",
+    "question": "How do you handle a situation where you must choose between honesty and protecting a relationship with a leader?",
+    "options": [
+      "Be honest with tact and solutions; avoid personal attacks",
+      "Hide truth",
+      "Attack leader",
+      "Avoid"
+    ],
+    "answerIndex": 0,
+    "explanation": "Tactful truth builds long-term trust."
+  },
+  {
+    "id": 287,
+    "category": "HR",
+    "level": "hard",
+    "question": "Tell me about a time you handled an ambiguous policy situation and chose correctly.",
+    "options": [
+      "Sought clarification, followed principle, documented decision",
+      "Guessed silently",
+      "Ignored policy",
+      "No example"
+    ],
+    "answerIndex": 0,
+    "explanation": "Policy judgment."
+  },
+  {
+    "id": 288,
+    "category": "HR",
+    "level": "hard",
+    "question": "How do you handle a scenario where your teammate is being discriminated against?",
+    "options": [
+      "Support them and escalate via proper channel",
+      "Ignore",
+      "Join discrimination",
+      "Post online"
+    ],
+    "answerIndex": 0,
+    "explanation": "Inclusion and safety."
+  },
+  {
+    "id": 289,
+    "category": "HR",
+    "level": "hard",
+    "question": "Tell me about a time you handled a serious breakdown of accountability.",
+    "options": [
+      "Defined owners, rebuilt tracking, enforced follow-through",
+      "Complained only",
+      "Did everything yourself",
+      "No example"
+    ],
+    "answerIndex": 0,
+    "explanation": "Accountability system building."
+  },
+  {
+    "id": 290,
+    "category": "HR",
+    "level": "hard",
+    "question": "How do you handle an interview when recruiter is pushing you to reveal another company’s offer details?",
+    "options": [
+      "Share your expectations but keep other offer confidential",
+      "Reveal everything",
+      "Lie about offer",
+      "Get angry"
+    ],
+    "answerIndex": 0,
+    "explanation": "Professional negotiation boundaries."
+  },
+
+  {
+    "id": 291,
+    "category": "HR",
+    "level": "hard",
+    "question": "Tell me about a time you managed a complex conflict and both sides thanked you later.",
+    "options": [
+      "Facilitated calmly, aligned actions, improved relationship",
+      "Picked a side",
+      "Ignored conflict",
+      "No example"
+    ],
+    "answerIndex": 0,
+    "explanation": "High-level conflict resolution."
+  },
+  {
+    "id": 292,
+    "category": "HR",
+    "level": "hard",
+    "question": "How do you handle a situation where your manager demands you to work unpaid overtime regularly?",
+    "options": [
+      "Clarify policy, discuss workload, escalate respectfully if needed",
+      "Accept silently",
+      "Fight",
+      "Quit suddenly"
+    ],
+    "answerIndex": 0,
+    "explanation": "Boundaries + policy."
+  },
+  {
+    "id": 293,
+    "category": "HR",
+    "level": "hard",
+    "question": "Tell me about a time you handled a major trust issue caused by gossip.",
+    "options": [
+      "Stopped gossip, corrected facts, rebuilt trust with transparency",
+      "Joined gossip",
+      "Ignored",
+      "No example"
+    ],
+    "answerIndex": 0,
+    "explanation": "Culture protection."
+  },
+  {
+    "id": 294,
+    "category": "HR",
+    "level": "hard",
+    "question": "How do you handle a scenario where you need to report a safety hazard but team wants to ignore?",
+    "options": [
+      "Report via proper channel immediately and document",
+      "Ignore hazard",
+      "Wait until accident",
+      "No action"
+    ],
+    "answerIndex": 0,
+    "explanation": "Safety is non-negotiable."
+  },
+  {
+    "id": 295,
+    "category": "HR",
+    "level": "hard",
+    "question": "Tell me about a time you handled a situation where you had to stop a project.",
+    "options": [
+      "Used data/risk to justify pause, aligned stakeholders, planned next steps",
+      "Stopped without reason",
+      "Continued blindly",
+      "No example"
+    ],
+    "answerIndex": 0,
+    "explanation": "Stopping work is sometimes leadership."
+  },
+
+  {
+    "id": 296,
+    "category": "HR",
+    "level": "hard",
+    "question": "How do you handle a scenario where you are asked to be dishonest in an interview (e.g., hide previous termination)?",
+    "options": [
+      "Refuse to lie; stay honest and frame learning professionally",
+      "Lie",
+      "Avoid answer",
+      "Blame others"
+    ],
+    "answerIndex": 0,
+    "explanation": "Integrity even in pressure situations."
+  },
+  {
+    "id": 297,
+    "category": "HR",
+    "level": "hard",
+    "question": "Tell me about a time you handled a conflict where legal/HR rules limited what you could say.",
+    "options": [
+      "Kept confidentiality, followed process, communicated what was allowed",
+      "Shared details anyway",
+      "Gossiped",
+      "No example"
+    ],
+    "answerIndex": 0,
+    "explanation": "Confidentiality under constraint."
+  },
+  {
+    "id": 298,
+    "category": "HR",
+    "level": "hard",
+    "question": "How do you handle a scenario where you must choose between two teams’ priorities but both impact revenue?",
+    "options": [
+      "Quantify impact, align leadership, choose with transparency",
+      "Pick favorite",
+      "Delay forever",
+      "No decision"
+    ],
+    "answerIndex": 0,
+    "explanation": "Business-aware prioritization."
+  },
+  {
+    "id": 299,
+    "category": "HR",
+    "level": "hard",
+    "question": "Tell me about a time you handled a critical misunderstanding with a customer that could have caused churn.",
+    "options": [
+      "Owned, clarified, resolved fast, followed up, rebuilt trust",
+      "Argued",
+      "Ignored",
+      "No example"
+    ],
+    "answerIndex": 0,
+    "explanation": "Churn-risk communication skill."
+  },
+  {
+    "id": 300,
+    "category": "HR",
+    "level": "hard",
+    "question": "If we hire you and after 90 days you are not meeting expectations, what will you do?",
+    "options": [
+      "Ask feedback, create plan, execute improvements, communicate progress",
+      "Blame team",
+      "Quit",
+      "Hide"
+    ],
+    "answerIndex": 0,
+    "explanation": "Ownership and growth mindset under pressure."
+  }
+]

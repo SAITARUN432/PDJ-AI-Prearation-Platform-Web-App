@@ -1,0 +1,4618 @@
+[
+  {
+    "id": 1,
+    "category": "Node.js",
+    "level": "basic",
+    "question": "What is Node.js primarily used for?",
+    "options": [
+      "Styling web pages",
+      "Server-side JavaScript runtime",
+      "Database management tool",
+      "Image editing"
+    ],
+    "answerIndex": 1,
+    "explanation": "Node.js is a JavaScript runtime used to run JS on the server."
+  },
+  {
+    "id": 2,
+    "category": "Node.js",
+    "level": "basic",
+    "question": "Which module is used to create a server in Node.js?",
+    "options": ["fs", "http", "path", "os"],
+    "answerIndex": 1,
+    "explanation": "The built-in http module can create an HTTP server."
+  },
+  {
+    "id": 3,
+    "category": "Node.js",
+    "level": "basic",
+    "question": "Which command initializes a new Node.js project with package.json?",
+    "options": ["node init", "npm start", "npm init", "npm build"],
+    "answerIndex": 2,
+    "explanation": "npm init creates a package.json file."
+  },
+  {
+    "id": 4,
+    "category": "Node.js",
+    "level": "basic",
+    "question": "What does require() do in CommonJS?",
+    "options": [
+      "Deletes a module",
+      "Imports a module",
+      "Compiles TypeScript",
+      "Creates a server"
+    ],
+    "answerIndex": 1,
+    "explanation": "require() loads/imports modules in CommonJS."
+  },
+  {
+    "id": 5,
+    "category": "Node.js",
+    "level": "basic",
+    "question": "Which keyword is used to export something in CommonJS?",
+    "options": [
+      "export default",
+      "module.exports",
+      "exports default",
+      "public"
+    ],
+    "answerIndex": 1,
+    "explanation": "CommonJS uses module.exports (and exports) to export values."
+  },
+  {
+    "id": 6,
+    "category": "Node.js",
+    "level": "basic",
+    "question": "What is the purpose of the fs module?",
+    "options": [
+      "Networking",
+      "File system operations",
+      "Process scheduling",
+      "HTML parsing"
+    ],
+    "answerIndex": 1,
+    "explanation": "fs provides APIs to read/write files and directories."
+  },
+  {
+    "id": 7,
+    "category": "Node.js",
+    "level": "basic",
+    "question": "Which object contains environment variables in Node.js?",
+    "options": ["process.env", "env.process", "system.env", "node.env"],
+    "answerIndex": 0,
+    "explanation": "process.env stores environment variables."
+  },
+  {
+    "id": 8,
+    "category": "Node.js",
+    "level": "basic",
+    "question": "What is the event loop responsible for?",
+    "options": [
+      "Rendering HTML",
+      "Handling async operations and callbacks",
+      "Compiling JavaScript",
+      "Encrypting passwords"
+    ],
+    "answerIndex": 1,
+    "explanation": "The event loop enables non-blocking I/O by scheduling callbacks."
+  },
+  {
+    "id": 9,
+    "category": "Node.js",
+    "level": "basic",
+    "question": "Which function schedules a callback after a delay?",
+    "options": ["setTimeout", "setImmediate", "nextTick", "delay"],
+    "answerIndex": 0,
+    "explanation": "setTimeout runs a callback after the specified time."
+  },
+  {
+    "id": 10,
+    "category": "Node.js",
+    "level": "basic",
+    "question": "What does JSON.parse() do?",
+    "options": [
+      "Converts object to JSON string",
+      "Converts JSON string to object",
+      "Encrypts JSON",
+      "Validates HTML"
+    ],
+    "answerIndex": 1,
+    "explanation": "JSON.parse converts a JSON string into a JavaScript object."
+  },
+  {
+    "id": 11,
+    "category": "Express.js",
+    "level": "basic",
+    "question": "What is Express.js?",
+    "options": [
+      "A database",
+      "A Node.js web framework",
+      "A frontend library",
+      "A CSS framework"
+    ],
+    "answerIndex": 1,
+    "explanation": "Express is a minimalist framework for building APIs and web apps in Node.js."
+  },
+  {
+    "id": 12,
+    "category": "Express.js",
+    "level": "basic",
+    "question": "Which method is used to create an Express app instance?",
+    "options": ["express()", "new Express()", "createExpress()", "app()"],
+    "answerIndex": 0,
+    "explanation": "Calling express() returns an app instance."
+  },
+  {
+    "id": 13,
+    "category": "Express.js",
+    "level": "basic",
+    "question": "Which method defines a GET route in Express?",
+    "options": ["app.post()", "app.get()", "app.put()", "app.delete()"],
+    "answerIndex": 1,
+    "explanation": "app.get() registers a route handler for GET requests."
+  },
+  {
+    "id": 14,
+    "category": "Express.js",
+    "level": "basic",
+    "question": "What does req.params contain?",
+    "options": [
+      "Query string values",
+      "Route parameters",
+      "Request headers",
+      "Response body"
+    ],
+    "answerIndex": 1,
+    "explanation": "req.params holds dynamic route params like /users/:id."
+  },
+  {
+    "id": 15,
+    "category": "Express.js",
+    "level": "basic",
+    "question": "What does req.query contain?",
+    "options": [
+      "Route params",
+      "Query string key-values",
+      "Cookies only",
+      "Uploaded files"
+    ],
+    "answerIndex": 1,
+    "explanation": "req.query contains URL query parameters like ?page=2."
+  },
+  {
+    "id": 16,
+    "category": "Express.js",
+    "level": "basic",
+    "question": "Which Express middleware parses JSON request bodies?",
+    "options": [
+      "express.json()",
+      "express.body()",
+      "express.parse()",
+      "app.json()"
+    ],
+    "answerIndex": 0,
+    "explanation": "express.json() parses application/json bodies."
+  },
+  {
+    "id": 17,
+    "category": "Express.js",
+    "level": "basic",
+    "question": "What is middleware in Express?",
+    "options": [
+      "A database table",
+      "A function that runs before route handler",
+      "A CSS file",
+      "A MongoDB collection"
+    ],
+    "answerIndex": 1,
+    "explanation": "Middleware functions can modify req/res and control the request flow."
+  },
+  {
+    "id": 18,
+    "category": "Express.js",
+    "level": "basic",
+    "question": "How do you send a JSON response in Express?",
+    "options": [
+      "res.sendJSON()",
+      "res.json()",
+      "res.body()",
+      "res.writeJson()"
+    ],
+    "answerIndex": 1,
+    "explanation": "res.json() sends JSON with correct headers."
+  },
+  {
+    "id": 19,
+    "category": "Express.js",
+    "level": "basic",
+    "question": "Which status code means 'Created'?",
+    "options": ["200", "201", "400", "500"],
+    "answerIndex": 1,
+    "explanation": "201 indicates a new resource was created."
+  },
+  {
+    "id": 20,
+    "category": "Express.js",
+    "level": "basic",
+    "question": "Which object is used to access request headers in Express?",
+    "options": ["req.headers", "req.headerList", "res.headers", "app.headers"],
+    "answerIndex": 0,
+    "explanation": "req.headers contains incoming request headers."
+  },
+  {
+    "id": 21,
+    "category": "Express.js",
+    "level": "basic",
+    "question": "How do you define a route for all HTTP methods in Express?",
+    "options": ["app.any()", "app.all()", "app.every()", "app.routeAll()"],
+    "answerIndex": 1,
+    "explanation": "app.all() matches all HTTP methods for a path."
+  },
+  {
+    "id": 22,
+    "category": "Express.js",
+    "level": "basic",
+    "question": "What does next() do in middleware?",
+    "options": [
+      "Ends the request",
+      "Passes control to the next middleware/handler",
+      "Restarts server",
+      "Parses JSON"
+    ],
+    "answerIndex": 1,
+    "explanation": "next() moves execution to the next matching middleware."
+  },
+  {
+    "id": 23,
+    "category": "Express.js",
+    "level": "basic",
+    "question": "Which middleware is commonly used to handle CORS in Express?",
+    "options": ["helmet", "cors", "morgan", "bcrypt"],
+    "answerIndex": 1,
+    "explanation": "The cors package helps enable Cross-Origin Resource Sharing."
+  },
+  {
+    "id": 24,
+    "category": "Express.js",
+    "level": "basic",
+    "question": "Which method is used to serve static files in Express?",
+    "options": [
+      "app.static()",
+      "express.static()",
+      "app.public()",
+      "express.files()"
+    ],
+    "answerIndex": 1,
+    "explanation": "express.static() serves static assets like images, CSS, JS."
+  },
+  {
+    "id": 25,
+    "category": "Express.js",
+    "level": "basic",
+    "question": "What is the default port if you use process.env.PORT in hosting?",
+    "options": [
+      "It always exists",
+      "It may be undefined locally",
+      "It is always 80",
+      "It must be 3000"
+    ],
+    "answerIndex": 1,
+    "explanation": "On hosting platforms PORT is set; locally it may be undefined so you use a fallback."
+  },
+  {
+    "id": 26,
+    "category": "Node.js",
+    "level": "basic",
+    "question": "Which of these is a Promise-based way to handle async code?",
+    "options": [
+      "Callbacks only",
+      "async/await",
+      "HTML events",
+      "CSS media queries"
+    ],
+    "answerIndex": 1,
+    "explanation": "async/await is built on Promises and simplifies async flow."
+  },
+  {
+    "id": 27,
+    "category": "Node.js",
+    "level": "basic",
+    "question": "What does npm install do?",
+    "options": [
+      "Deletes node_modules",
+      "Installs dependencies from package.json",
+      "Runs tests only",
+      "Builds frontend"
+    ],
+    "answerIndex": 1,
+    "explanation": "npm install downloads packages and creates/updates node_modules."
+  },
+  {
+    "id": 28,
+    "category": "Node.js",
+    "level": "basic",
+    "question": "Which file commonly stores npm scripts and dependencies?",
+    "options": ["index.html", "package.json", "server.css", "db.sql"],
+    "answerIndex": 1,
+    "explanation": "package.json contains dependencies, scripts, and project metadata."
+  },
+  {
+    "id": 29,
+    "category": "Node.js",
+    "level": "basic",
+    "question": "What does 'nodemon' help with?",
+    "options": [
+      "Database backups",
+      "Auto-restarting server on file changes",
+      "CSS compilation",
+      "Image compression"
+    ],
+    "answerIndex": 1,
+    "explanation": "nodemon restarts the Node server when code changes."
+  },
+  {
+    "id": 30,
+    "category": "Express.js",
+    "level": "basic",
+    "question": "Which HTTP method is generally used to update a resource fully?",
+    "options": ["GET", "POST", "PUT", "HEAD"],
+    "answerIndex": 2,
+    "explanation": "PUT is typically used for full updates of a resource."
+  },
+  {
+    "id": 31,
+    "category": "Express.js",
+    "level": "basic",
+    "question": "Which HTTP method is generally used to update a resource partially?",
+    "options": ["PATCH", "TRACE", "OPTIONS", "CONNECT"],
+    "answerIndex": 0,
+    "explanation": "PATCH is used for partial updates."
+  },
+  {
+    "id": 32,
+    "category": "Express.js",
+    "level": "basic",
+    "question": "How do you read JSON body data sent by client (POST) in Express?",
+    "options": ["req.json", "req.body", "res.body", "app.body"],
+    "answerIndex": 1,
+    "explanation": "After express.json() middleware, JSON data is available in req.body."
+  },
+  {
+    "id": 33,
+    "category": "Express.js",
+    "level": "basic",
+    "question": "Which order is correct for middleware execution?",
+    "options": [
+      "Bottom to top",
+      "Random",
+      "Top to bottom as registered",
+      "Only in routes"
+    ],
+    "answerIndex": 2,
+    "explanation": "Express runs middleware in the order you register it."
+  },
+  {
+    "id": 34,
+    "category": "Express.js",
+    "level": "basic",
+    "question": "What is an Express Router used for?",
+    "options": [
+      "Connecting MongoDB",
+      "Organizing routes into modules",
+      "Encrypting JWT",
+      "Serving React build only"
+    ],
+    "answerIndex": 1,
+    "explanation": "Router helps split routes into separate files/modules."
+  },
+  {
+    "id": 35,
+    "category": "Express.js",
+    "level": "basic",
+    "question": "How do you create a router in Express?",
+    "options": [
+      "express.createRouter()",
+      "express.Router()",
+      "new Router()",
+      "app.Router()"
+    ],
+    "answerIndex": 1,
+    "explanation": "express.Router() creates a modular router instance."
+  },
+  {
+    "id": 36,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "MongoDB stores data in which format?",
+    "options": ["XML", "CSV", "BSON (JSON-like)", "YAML"],
+    "answerIndex": 2,
+    "explanation": "MongoDB stores documents in BSON, similar to JSON."
+  },
+  {
+    "id": 37,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "In MongoDB, a collection is similar to what in SQL?",
+    "options": ["Row", "Table", "Column", "Index"],
+    "answerIndex": 1,
+    "explanation": "A collection is similar to a table in relational databases."
+  },
+  {
+    "id": 38,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "In MongoDB, a document is similar to what in SQL?",
+    "options": ["Row", "Database", "Schema", "Join"],
+    "answerIndex": 0,
+    "explanation": "A document is similar to a row/record in SQL."
+  },
+  {
+    "id": 39,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "Which MongoDB command shows databases?",
+    "options": ["show dbs", "list db", "db.show()", "mongo dbs"],
+    "answerIndex": 0,
+    "explanation": "show dbs lists all databases in the Mongo shell."
+  },
+  {
+    "id": 40,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "Which command switches to a database in MongoDB shell?",
+    "options": ["change db", "use <dbName>", "select db", "open <dbName>"],
+    "answerIndex": 1,
+    "explanation": "use <dbName> switches (or creates) a database context."
+  },
+  {
+    "id": 41,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "What does _id represent in MongoDB?",
+    "options": [
+      "A random field",
+      "Primary unique identifier",
+      "A password hash",
+      "A collection name"
+    ],
+    "answerIndex": 1,
+    "explanation": "_id uniquely identifies each document in a collection."
+  },
+  {
+    "id": 42,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "Which method inserts one document in MongoDB?",
+    "options": ["insertOne()", "addOne()", "pushOne()", "createOne()"],
+    "answerIndex": 0,
+    "explanation": "insertOne() inserts a single document into a collection."
+  },
+  {
+    "id": 43,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "Which method finds documents in MongoDB?",
+    "options": ["search()", "find()", "select()", "get()"],
+    "answerIndex": 1,
+    "explanation": "find() queries documents from a collection."
+  },
+  {
+    "id": 44,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "Which method updates one document in MongoDB?",
+    "options": ["update()", "updateOne()", "changeOne()", "modifyOne()"],
+    "answerIndex": 1,
+    "explanation": "updateOne() updates the first matching document."
+  },
+  {
+    "id": 45,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "Which operator sets a field value during update?",
+    "options": ["$set", "$push", "$inc", "$unsetAll"],
+    "answerIndex": 0,
+    "explanation": "$set assigns a new value to a field."
+  },
+  {
+    "id": 46,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "Which operator increments a numeric field?",
+    "options": ["$sum", "$inc", "$add", "$plus"],
+    "answerIndex": 1,
+    "explanation": "$inc increases (or decreases) a numeric field by a value."
+  },
+  {
+    "id": 47,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "Which operator adds an item to an array field?",
+    "options": ["$push", "$set", "$inc", "$rename"],
+    "answerIndex": 0,
+    "explanation": "$push appends a value to an array."
+  },
+  {
+    "id": 48,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "Which operator removes a field from a document?",
+    "options": ["$remove", "$unset", "$delete", "$drop"],
+    "answerIndex": 1,
+    "explanation": "$unset removes the field from the document."
+  },
+  {
+    "id": 49,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "What is an index in MongoDB used for?",
+    "options": [
+      "Storing images",
+      "Faster queries on fields",
+      "Encrypting documents",
+      "Creating routes"
+    ],
+    "answerIndex": 1,
+    "explanation": "Indexes speed up reads by optimizing query lookup."
+  },
+  {
+    "id": 50,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "What does Mongoose provide?",
+    "options": [
+      "Frontend components",
+      "ODM for MongoDB in Node.js",
+      "CSS utilities",
+      "Docker images"
+    ],
+    "answerIndex": 1,
+    "explanation": "Mongoose is an ODM to model MongoDB data in Node.js."
+  },
+  {
+    "id": 51,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "In Mongoose, what is a Schema?",
+    "options": [
+      "A server route",
+      "A structure/shape definition for documents",
+      "A JWT token",
+      "A CSS style"
+    ],
+    "answerIndex": 1,
+    "explanation": "Schema defines fields, types, and rules for a collection's documents."
+  },
+  {
+    "id": 52,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "In Mongoose, what is a Model?",
+    "options": [
+      "A database itself",
+      "A class used to create and query documents",
+      "A router",
+      "A middleware only"
+    ],
+    "answerIndex": 1,
+    "explanation": "Model provides methods to create, read, update, delete documents based on a schema."
+  },
+  {
+    "id": 53,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "Which Mongoose method connects to MongoDB?",
+    "options": [
+      "mongoose.open()",
+      "mongoose.connect()",
+      "mongoose.link()",
+      "mongoose.start()"
+    ],
+    "answerIndex": 1,
+    "explanation": "mongoose.connect() connects your app to MongoDB."
+  },
+  {
+    "id": 54,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "Which Mongoose method creates a document?",
+    "options": [
+      "Model.create()",
+      "Model.build()",
+      "Model.insertDoc()",
+      "Schema.create()"
+    ],
+    "answerIndex": 0,
+    "explanation": "Model.create() creates and saves a new document."
+  },
+  {
+    "id": 55,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "Which Mongoose method returns all documents matching a filter?",
+    "options": [
+      "Model.get()",
+      "Model.find()",
+      "Model.fetchAll()",
+      "Model.searchAll()"
+    ],
+    "answerIndex": 1,
+    "explanation": "Model.find() returns an array of documents that match the filter."
+  },
+  {
+    "id": 56,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "Which Mongoose method returns the first matching document?",
+    "options": [
+      "Model.first()",
+      "Model.findOne()",
+      "Model.getOne()",
+      "Model.pickOne()"
+    ],
+    "answerIndex": 1,
+    "explanation": "Model.findOne() returns one matching document."
+  },
+  {
+    "id": 57,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "Which Mongoose method finds by _id?",
+    "options": [
+      "Model.findById()",
+      "Model.findId()",
+      "Model.getById()",
+      "Model.idFind()"
+    ],
+    "answerIndex": 0,
+    "explanation": "Model.findById() finds a document by its _id."
+  },
+  {
+    "id": 58,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "Which Mongoose method deletes one document?",
+    "options": [
+      "Model.removeOne()",
+      "Model.deleteOne()",
+      "Model.dropOne()",
+      "Model.eraseOne()"
+    ],
+    "answerIndex": 1,
+    "explanation": "Model.deleteOne() removes the first matching document."
+  },
+  {
+    "id": 59,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "Which Mongoose method updates a document and returns the updated one (with option)?",
+    "options": [
+      "Model.updateOne()",
+      "Model.findByIdAndUpdate()",
+      "Model.change()",
+      "Model.patchDoc()"
+    ],
+    "answerIndex": 1,
+    "explanation": "findByIdAndUpdate can return the updated doc when { new: true } is used."
+  },
+  {
+    "id": 60,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "What does 'populate' do in Mongoose?",
+    "options": [
+      "Encrypts fields",
+      "Replaces referenced IDs with actual documents",
+      "Deletes duplicates",
+      "Creates indexes"
+    ],
+    "answerIndex": 1,
+    "explanation": "populate() loads referenced documents for ObjectId refs."
+  },
+  {
+    "id": 61,
+    "category": "Express.js",
+    "level": "basic",
+    "question": "What does res.status(404).send() do?",
+    "options": [
+      "Sends success message",
+      "Sends a 404 response",
+      "Redirects to homepage",
+      "Stops the server"
+    ],
+    "answerIndex": 1,
+    "explanation": "It sets HTTP status to 404 and sends a response."
+  },
+  {
+    "id": 62,
+    "category": "Express.js",
+    "level": "basic",
+    "question": "Where should error-handling middleware be placed?",
+    "options": [
+      "At the top before routes",
+      "After routes and other middleware",
+      "Inside package.json",
+      "In MongoDB shell"
+    ],
+    "answerIndex": 1,
+    "explanation": "Error middleware should be after routes so it can catch errors."
+  },
+  {
+    "id": 63,
+    "category": "Express.js",
+    "level": "basic",
+    "question": "What is the signature of an Express error middleware?",
+    "options": [
+      "(req, res)",
+      "(err, req, res, next)",
+      "(res, next)",
+      "(err, res)"
+    ],
+    "answerIndex": 1,
+    "explanation": "Error middleware has 4 params: (err, req, res, next)."
+  },
+  {
+    "id": 64,
+    "category": "Node.js",
+    "level": "basic",
+    "question": "Which is true about synchronous code in Node.js?",
+    "options": [
+      "It never blocks",
+      "It can block the event loop",
+      "It runs on GPU",
+      "It only runs in browser"
+    ],
+    "answerIndex": 1,
+    "explanation": "Sync operations can block the event loop and slow down requests."
+  },
+  {
+    "id": 65,
+    "category": "Node.js",
+    "level": "basic",
+    "question": "Which built-in module helps work with file paths?",
+    "options": ["path", "http", "events", "tls"],
+    "answerIndex": 0,
+    "explanation": "path provides utilities to handle file and directory paths."
+  },
+  {
+    "id": 66,
+    "category": "Node.js",
+    "level": "basic",
+    "question": "Which module provides EventEmitter in Node.js?",
+    "options": ["events", "stream", "buffer", "crypto"],
+    "answerIndex": 0,
+    "explanation": "The events module exposes EventEmitter."
+  },
+  {
+    "id": 67,
+    "category": "Node.js",
+    "level": "basic",
+    "question": "What is a Buffer in Node.js?",
+    "options": [
+      "A UI component",
+      "A way to handle binary data",
+      "A CSS property",
+      "A MongoDB query"
+    ],
+    "answerIndex": 1,
+    "explanation": "Buffer is used to work with binary data like files and network streams."
+  },
+  {
+    "id": 68,
+    "category": "Node.js",
+    "level": "basic",
+    "question": "Which module is used for cryptographic functions like hashing?",
+    "options": ["crypto", "hash", "secure", "bcrypt"],
+    "answerIndex": 0,
+    "explanation": "Node's built-in crypto module provides hashing and encryption utilities."
+  },
+  {
+    "id": 69,
+    "category": "Express.js",
+    "level": "basic",
+    "question": "Which HTTP status code means 'Unauthorized'?",
+    "options": ["401", "403", "404", "409"],
+    "answerIndex": 0,
+    "explanation": "401 means authentication is required or failed."
+  },
+  {
+    "id": 70,
+    "category": "Express.js",
+    "level": "basic",
+    "question": "Which HTTP status code means 'Forbidden'?",
+    "options": ["401", "403", "200", "302"],
+    "answerIndex": 1,
+    "explanation": "403 means the user is authenticated but not allowed."
+  },
+  {
+    "id": 71,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "Which query finds users age greater than 18?",
+    "options": [
+      "{ age: > 18 }",
+      "{ age: { $gt: 18 } }",
+      "{ $gt: age: 18 }",
+      "{ age: { gt: 18 } }"
+    ],
+    "answerIndex": 1,
+    "explanation": "$gt operator means greater than."
+  },
+  {
+    "id": 72,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "Which query sorts documents by createdAt descending?",
+    "options": [
+      "sort({ createdAt: -1 })",
+      "orderBy(createdAt desc)",
+      "desc(createdAt)",
+      "sortDown(createdAt)"
+    ],
+    "answerIndex": 0,
+    "explanation": "MongoDB sort uses 1 for asc and -1 for desc."
+  },
+  {
+    "id": 73,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "Which method limits returned documents in MongoDB?",
+    "options": ["cap()", "limit()", "max()", "stop()"],
+    "answerIndex": 1,
+    "explanation": "limit() restricts number of documents returned."
+  },
+  {
+    "id": 74,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "Which method skips documents (pagination) in MongoDB?",
+    "options": ["skip()", "jump()", "offset()", "pass()"],
+    "answerIndex": 0,
+    "explanation": "skip() ignores the first N documents in the result."
+  },
+  {
+    "id": 75,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "What is aggregation in MongoDB?",
+    "options": [
+      "A frontend feature",
+      "Pipeline to process and transform data",
+      "A file system tool",
+      "A Node package manager"
+    ],
+    "answerIndex": 1,
+    "explanation": "Aggregation pipelines transform and compute results from documents."
+  },
+  {
+    "id": 76,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "Which stage filters documents in an aggregation pipeline?",
+    "options": ["$group", "$match", "$project", "$lookup"],
+    "answerIndex": 1,
+    "explanation": "$match filters documents like a query."
+  },
+  {
+    "id": 77,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "Which stage groups documents and calculates totals?",
+    "options": ["$group", "$match", "$sort", "$skip"],
+    "answerIndex": 0,
+    "explanation": "$group groups documents and allows accumulators like $sum."
+  },
+  {
+    "id": 78,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "Which stage selects fields to include/exclude in aggregation?",
+    "options": ["$project", "$match", "$limit", "$unwind"],
+    "answerIndex": 0,
+    "explanation": "$project reshapes documents by selecting/renaming fields."
+  },
+  {
+    "id": 79,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "Which stage joins another collection in aggregation?",
+    "options": ["$join", "$link", "$lookup", "$mergeOne"],
+    "answerIndex": 2,
+    "explanation": "$lookup performs a left outer join with another collection."
+  },
+  {
+    "id": 80,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "What does $unwind do?",
+    "options": [
+      "Encrypts array",
+      "Splits array elements into multiple documents",
+      "Deletes arrays",
+      "Creates indexes"
+    ],
+    "answerIndex": 1,
+    "explanation": "$unwind turns each array element into a separate document."
+  },
+  {
+    "id": 81,
+    "category": "Express.js",
+    "level": "basic",
+    "question": "Which header is commonly used to send JWT token?",
+    "options": [
+      "X-HTML",
+      "Authorization",
+      "Content-Style",
+      "Accept-Language-Token"
+    ],
+    "answerIndex": 1,
+    "explanation": "JWT is typically sent in Authorization: Bearer <token>."
+  },
+  {
+    "id": 82,
+    "category": "Node.js",
+    "level": "basic",
+    "question": "Which is best for storing secrets like DB password?",
+    "options": [
+      "Hardcode in code",
+      "Commit in GitHub",
+      "Environment variables",
+      "Put in client-side JS"
+    ],
+    "answerIndex": 2,
+    "explanation": "Environment variables keep secrets out of source code."
+  },
+  {
+    "id": 83,
+    "category": "Express.js",
+    "level": "basic",
+    "question": "What does app.use('/api', router) do?",
+    "options": [
+      "Deletes router",
+      "Mounts router under /api path",
+      "Runs DB migration",
+      "Starts server"
+    ],
+    "answerIndex": 1,
+    "explanation": "It prefixes all router routes with /api."
+  },
+  {
+    "id": 84,
+    "category": "Express.js",
+    "level": "basic",
+    "question": "Which HTTP status code means 'Bad Request'?",
+    "options": ["400", "401", "403", "404"],
+    "answerIndex": 0,
+    "explanation": "400 is used when request data is invalid."
+  },
+  {
+    "id": 85,
+    "category": "Express.js",
+    "level": "basic",
+    "question": "Which HTTP status code means 'Not Found'?",
+    "options": ["301", "404", "409", "500"],
+    "answerIndex": 1,
+    "explanation": "404 indicates the resource/route was not found."
+  },
+  {
+    "id": 86,
+    "category": "Express.js",
+    "level": "basic",
+    "question": "Which HTTP status code means 'Internal Server Error'?",
+    "options": ["422", "500", "502", "503"],
+    "answerIndex": 1,
+    "explanation": "500 is a generic server error."
+  },
+  {
+    "id": 87,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "Which query checks if a field exists?",
+    "options": [
+      "{ field: { $exists: true } }",
+      "{ field: exists(true) }",
+      "{ has(field) }",
+      "{ $has: field }"
+    ],
+    "answerIndex": 0,
+    "explanation": "$exists checks whether a field is present."
+  },
+  {
+    "id": 88,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "Which query finds documents where status is either 'open' or 'closed'?",
+    "options": [
+      "{ status: 'open|closed' }",
+      "{ status: { $in: ['open','closed'] } }",
+      "{ status: { in: [] } }",
+      "{ $orStatus: ['open','closed'] }"
+    ],
+    "answerIndex": 1,
+    "explanation": "$in matches any value in the array."
+  },
+  {
+    "id": 89,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "Which query matches multiple conditions using AND?",
+    "options": [
+      "{ $and: [] } only",
+      "Just put fields in same object",
+      "Use $either",
+      "MongoDB doesn't support AND"
+    ],
+    "answerIndex": 1,
+    "explanation": "Multiple fields in one query object are ANDed by default."
+  },
+  {
+    "id": 90,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "Which operator is used for OR conditions?",
+    "options": ["$or", "$any", "$either", "$oneOf"],
+    "answerIndex": 0,
+    "explanation": "$or takes an array of conditions."
+  },
+  {
+    "id": 91,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "Which Mongoose option helps enforce schema rules on updates?",
+    "options": ["timestamps", "runValidators", "populate", "strictQueryOnly"],
+    "answerIndex": 1,
+    "explanation": "runValidators: true makes update operations validate against schema."
+  },
+  {
+    "id": 92,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "What do timestamps do in a Mongoose schema?",
+    "options": [
+      "Encrypt fields",
+      "Automatically add createdAt and updatedAt",
+      "Create indexes only",
+      "Rename _id"
+    ],
+    "answerIndex": 1,
+    "explanation": "timestamps: true adds createdAt and updatedAt automatically."
+  },
+  {
+    "id": 93,
+    "category": "Node.js",
+    "level": "basic",
+    "question": "What is the purpose of module caching in Node.js?",
+    "options": [
+      "To slow down imports",
+      "To load the same module only once",
+      "To encrypt exports",
+      "To remove dependencies"
+    ],
+    "answerIndex": 1,
+    "explanation": "Node caches modules so requiring the same module doesn't reload it."
+  },
+  {
+    "id": 94,
+    "category": "Express.js",
+    "level": "basic",
+    "question": "How do you handle 404 for unknown routes in Express?",
+    "options": [
+      "Put a catch-all route at the top",
+      "Add a catch-all route after all routes",
+      "Delete app.get",
+      "Use MongoDB index"
+    ],
+    "answerIndex": 1,
+    "explanation": "A final handler like app.use((req,res)=>res.status(404).json(...)) should be after all routes."
+  },
+  {
+    "id": 95,
+    "category": "Node.js",
+    "level": "basic",
+    "question": "Which is true about async/await error handling?",
+    "options": [
+      "try/catch can catch awaited promise rejections",
+      "Errors are ignored",
+      "Only callbacks can catch",
+      "await prevents errors"
+    ],
+    "answerIndex": 0,
+    "explanation": "Using try/catch around await handles promise rejections."
+  },
+  {
+    "id": 96,
+    "category": "Express.js",
+    "level": "basic",
+    "question": "Which library is commonly used for logging HTTP requests in Express?",
+    "options": ["morgan", "cors", "dotenv", "multer"],
+    "answerIndex": 0,
+    "explanation": "morgan logs incoming HTTP requests."
+  },
+  {
+    "id": 97,
+    "category": "Express.js",
+    "level": "basic",
+    "question": "Which library is commonly used to secure HTTP headers in Express?",
+    "options": ["helmet", "morgan", "cors", "chalk"],
+    "answerIndex": 0,
+    "explanation": "helmet sets various HTTP headers for security."
+  },
+  {
+    "id": 98,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "What does 'lean()' do in Mongoose queries?",
+    "options": [
+      "Returns plain JS objects instead of Mongoose documents",
+      "Adds indexes",
+      "Validates schema",
+      "Populates refs automatically"
+    ],
+    "answerIndex": 0,
+    "explanation": "lean() improves read performance by skipping Mongoose document wrappers."
+  },
+  {
+    "id": 99,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "What is the benefit of unique: true in Mongoose schema?",
+    "options": [
+      "It encrypts the field",
+      "It creates a unique index (uniqueness constraint)",
+      "It makes field required",
+      "It auto-increments numbers"
+    ],
+    "answerIndex": 1,
+    "explanation": "unique creates a unique index so values must be unique (after index build)."
+  },
+  {
+    "id": 100,
+    "category": "Express.js",
+    "level": "basic",
+    "question": "What is the main purpose of using async error wrapper for Express routes?",
+    "options": [
+      "To make routes slower",
+      "To avoid repeating try/catch and forward errors to error middleware",
+      "To connect MongoDB",
+      "To enable CORS"
+    ],
+    "answerIndex": 1,
+    "explanation": "Async wrappers catch promise rejections and pass errors to next(err)."
+  },
+  {
+    "id": 1,
+    "category": "Node.js",
+    "level": "basic",
+    "question": "What is Node.js primarily used for?",
+    "options": [
+      "Styling web pages",
+      "Server-side JavaScript runtime",
+      "Database management tool",
+      "Image editing"
+    ],
+    "answerIndex": 1,
+    "explanation": "Node.js is a JavaScript runtime used to run JS on the server."
+  },
+  {
+    "id": 2,
+    "category": "Node.js",
+    "level": "basic",
+    "question": "Which module is used to create a server in Node.js?",
+    "options": ["fs", "http", "path", "os"],
+    "answerIndex": 1,
+    "explanation": "The built-in http module can create an HTTP server."
+  },
+  {
+    "id": 3,
+    "category": "Node.js",
+    "level": "basic",
+    "question": "Which command initializes a new Node.js project with package.json?",
+    "options": ["node init", "npm start", "npm init", "npm build"],
+    "answerIndex": 2,
+    "explanation": "npm init creates a package.json file."
+  },
+  {
+    "id": 4,
+    "category": "Node.js",
+    "level": "basic",
+    "question": "What does require() do in CommonJS?",
+    "options": [
+      "Deletes a module",
+      "Imports a module",
+      "Compiles TypeScript",
+      "Creates a server"
+    ],
+    "answerIndex": 1,
+    "explanation": "require() loads/imports modules in CommonJS."
+  },
+  {
+    "id": 5,
+    "category": "Node.js",
+    "level": "basic",
+    "question": "Which keyword is used to export something in CommonJS?",
+    "options": [
+      "export default",
+      "module.exports",
+      "exports default",
+      "public"
+    ],
+    "answerIndex": 1,
+    "explanation": "CommonJS uses module.exports (and exports) to export values."
+  },
+  {
+    "id": 6,
+    "category": "Node.js",
+    "level": "basic",
+    "question": "What is the purpose of the fs module?",
+    "options": [
+      "Networking",
+      "File system operations",
+      "Process scheduling",
+      "HTML parsing"
+    ],
+    "answerIndex": 1,
+    "explanation": "fs provides APIs to read/write files and directories."
+  },
+  {
+    "id": 7,
+    "category": "Node.js",
+    "level": "basic",
+    "question": "Which object contains environment variables in Node.js?",
+    "options": ["process.env", "env.process", "system.env", "node.env"],
+    "answerIndex": 0,
+    "explanation": "process.env stores environment variables."
+  },
+  {
+    "id": 8,
+    "category": "Node.js",
+    "level": "basic",
+    "question": "What is the event loop responsible for?",
+    "options": [
+      "Rendering HTML",
+      "Handling async operations and callbacks",
+      "Compiling JavaScript",
+      "Encrypting passwords"
+    ],
+    "answerIndex": 1,
+    "explanation": "The event loop enables non-blocking I/O by scheduling callbacks."
+  },
+  {
+    "id": 9,
+    "category": "Node.js",
+    "level": "basic",
+    "question": "Which function schedules a callback after a delay?",
+    "options": ["setTimeout", "setImmediate", "nextTick", "delay"],
+    "answerIndex": 0,
+    "explanation": "setTimeout runs a callback after the specified time."
+  },
+  {
+    "id": 10,
+    "category": "Node.js",
+    "level": "basic",
+    "question": "What does JSON.parse() do?",
+    "options": [
+      "Converts object to JSON string",
+      "Converts JSON string to object",
+      "Encrypts JSON",
+      "Validates HTML"
+    ],
+    "answerIndex": 1,
+    "explanation": "JSON.parse converts a JSON string into a JavaScript object."
+  },
+  {
+    "id": 11,
+    "category": "Express.js",
+    "level": "basic",
+    "question": "What is Express.js?",
+    "options": [
+      "A database",
+      "A Node.js web framework",
+      "A frontend library",
+      "A CSS framework"
+    ],
+    "answerIndex": 1,
+    "explanation": "Express is a minimalist framework for building APIs and web apps in Node.js."
+  },
+  {
+    "id": 12,
+    "category": "Express.js",
+    "level": "basic",
+    "question": "Which method is used to create an Express app instance?",
+    "options": ["express()", "new Express()", "createExpress()", "app()"],
+    "answerIndex": 0,
+    "explanation": "Calling express() returns an app instance."
+  },
+  {
+    "id": 13,
+    "category": "Express.js",
+    "level": "basic",
+    "question": "Which method defines a GET route in Express?",
+    "options": ["app.post()", "app.get()", "app.put()", "app.delete()"],
+    "answerIndex": 1,
+    "explanation": "app.get() registers a route handler for GET requests."
+  },
+  {
+    "id": 14,
+    "category": "Express.js",
+    "level": "basic",
+    "question": "What does req.params contain?",
+    "options": [
+      "Query string values",
+      "Route parameters",
+      "Request headers",
+      "Response body"
+    ],
+    "answerIndex": 1,
+    "explanation": "req.params holds dynamic route params like /users/:id."
+  },
+  {
+    "id": 15,
+    "category": "Express.js",
+    "level": "basic",
+    "question": "What does req.query contain?",
+    "options": [
+      "Route params",
+      "Query string key-values",
+      "Cookies only",
+      "Uploaded files"
+    ],
+    "answerIndex": 1,
+    "explanation": "req.query contains URL query parameters like ?page=2."
+  },
+  {
+    "id": 16,
+    "category": "Express.js",
+    "level": "basic",
+    "question": "Which Express middleware parses JSON request bodies?",
+    "options": [
+      "express.json()",
+      "express.body()",
+      "express.parse()",
+      "app.json()"
+    ],
+    "answerIndex": 0,
+    "explanation": "express.json() parses application/json bodies."
+  },
+  {
+    "id": 17,
+    "category": "Express.js",
+    "level": "basic",
+    "question": "What is middleware in Express?",
+    "options": [
+      "A database table",
+      "A function that runs before route handler",
+      "A CSS file",
+      "A MongoDB collection"
+    ],
+    "answerIndex": 1,
+    "explanation": "Middleware functions can modify req/res and control the request flow."
+  },
+  {
+    "id": 18,
+    "category": "Express.js",
+    "level": "basic",
+    "question": "How do you send a JSON response in Express?",
+    "options": [
+      "res.sendJSON()",
+      "res.json()",
+      "res.body()",
+      "res.writeJson()"
+    ],
+    "answerIndex": 1,
+    "explanation": "res.json() sends JSON with correct headers."
+  },
+  {
+    "id": 19,
+    "category": "Express.js",
+    "level": "basic",
+    "question": "Which status code means 'Created'?",
+    "options": ["200", "201", "400", "500"],
+    "answerIndex": 1,
+    "explanation": "201 indicates a new resource was created."
+  },
+  {
+    "id": 20,
+    "category": "Express.js",
+    "level": "basic",
+    "question": "Which object is used to access request headers in Express?",
+    "options": ["req.headers", "req.headerList", "res.headers", "app.headers"],
+    "answerIndex": 0,
+    "explanation": "req.headers contains incoming request headers."
+  },
+  {
+    "id": 21,
+    "category": "Express.js",
+    "level": "basic",
+    "question": "How do you define a route for all HTTP methods in Express?",
+    "options": ["app.any()", "app.all()", "app.every()", "app.routeAll()"],
+    "answerIndex": 1,
+    "explanation": "app.all() matches all HTTP methods for a path."
+  },
+  {
+    "id": 22,
+    "category": "Express.js",
+    "level": "basic",
+    "question": "What does next() do in middleware?",
+    "options": [
+      "Ends the request",
+      "Passes control to the next middleware/handler",
+      "Restarts server",
+      "Parses JSON"
+    ],
+    "answerIndex": 1,
+    "explanation": "next() moves execution to the next matching middleware."
+  },
+  {
+    "id": 23,
+    "category": "Express.js",
+    "level": "basic",
+    "question": "Which middleware is commonly used to handle CORS in Express?",
+    "options": ["helmet", "cors", "morgan", "bcrypt"],
+    "answerIndex": 1,
+    "explanation": "The cors package helps enable Cross-Origin Resource Sharing."
+  },
+  {
+    "id": 24,
+    "category": "Express.js",
+    "level": "basic",
+    "question": "Which method is used to serve static files in Express?",
+    "options": [
+      "app.static()",
+      "express.static()",
+      "app.public()",
+      "express.files()"
+    ],
+    "answerIndex": 1,
+    "explanation": "express.static() serves static assets like images, CSS, JS."
+  },
+  {
+    "id": 25,
+    "category": "Express.js",
+    "level": "basic",
+    "question": "What is the default port if you use process.env.PORT in hosting?",
+    "options": [
+      "It always exists",
+      "It may be undefined locally",
+      "It is always 80",
+      "It must be 3000"
+    ],
+    "answerIndex": 1,
+    "explanation": "On hosting platforms PORT is set; locally it may be undefined so you use a fallback."
+  },
+  {
+    "id": 26,
+    "category": "Node.js",
+    "level": "basic",
+    "question": "Which of these is a Promise-based way to handle async code?",
+    "options": [
+      "Callbacks only",
+      "async/await",
+      "HTML events",
+      "CSS media queries"
+    ],
+    "answerIndex": 1,
+    "explanation": "async/await is built on Promises and simplifies async flow."
+  },
+  {
+    "id": 27,
+    "category": "Node.js",
+    "level": "basic",
+    "question": "What does npm install do?",
+    "options": [
+      "Deletes node_modules",
+      "Installs dependencies from package.json",
+      "Runs tests only",
+      "Builds frontend"
+    ],
+    "answerIndex": 1,
+    "explanation": "npm install downloads packages and creates/updates node_modules."
+  },
+  {
+    "id": 28,
+    "category": "Node.js",
+    "level": "basic",
+    "question": "Which file commonly stores npm scripts and dependencies?",
+    "options": ["index.html", "package.json", "server.css", "db.sql"],
+    "answerIndex": 1,
+    "explanation": "package.json contains dependencies, scripts, and project metadata."
+  },
+  {
+    "id": 29,
+    "category": "Node.js",
+    "level": "basic",
+    "question": "What does 'nodemon' help with?",
+    "options": [
+      "Database backups",
+      "Auto-restarting server on file changes",
+      "CSS compilation",
+      "Image compression"
+    ],
+    "answerIndex": 1,
+    "explanation": "nodemon restarts the Node server when code changes."
+  },
+  {
+    "id": 30,
+    "category": "Express.js",
+    "level": "basic",
+    "question": "Which HTTP method is generally used to update a resource fully?",
+    "options": ["GET", "POST", "PUT", "HEAD"],
+    "answerIndex": 2,
+    "explanation": "PUT is typically used for full updates of a resource."
+  },
+  {
+    "id": 31,
+    "category": "Express.js",
+    "level": "basic",
+    "question": "Which HTTP method is generally used to update a resource partially?",
+    "options": ["PATCH", "TRACE", "OPTIONS", "CONNECT"],
+    "answerIndex": 0,
+    "explanation": "PATCH is used for partial updates."
+  },
+  {
+    "id": 32,
+    "category": "Express.js",
+    "level": "basic",
+    "question": "How do you read JSON body data sent by client (POST) in Express?",
+    "options": ["req.json", "req.body", "res.body", "app.body"],
+    "answerIndex": 1,
+    "explanation": "After express.json() middleware, JSON data is available in req.body."
+  },
+  {
+    "id": 33,
+    "category": "Express.js",
+    "level": "basic",
+    "question": "Which order is correct for middleware execution?",
+    "options": [
+      "Bottom to top",
+      "Random",
+      "Top to bottom as registered",
+      "Only in routes"
+    ],
+    "answerIndex": 2,
+    "explanation": "Express runs middleware in the order you register it."
+  },
+  {
+    "id": 34,
+    "category": "Express.js",
+    "level": "basic",
+    "question": "What is an Express Router used for?",
+    "options": [
+      "Connecting MongoDB",
+      "Organizing routes into modules",
+      "Encrypting JWT",
+      "Serving React build only"
+    ],
+    "answerIndex": 1,
+    "explanation": "Router helps split routes into separate files/modules."
+  },
+  {
+    "id": 35,
+    "category": "Express.js",
+    "level": "basic",
+    "question": "How do you create a router in Express?",
+    "options": [
+      "express.createRouter()",
+      "express.Router()",
+      "new Router()",
+      "app.Router()"
+    ],
+    "answerIndex": 1,
+    "explanation": "express.Router() creates a modular router instance."
+  },
+  {
+    "id": 36,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "MongoDB stores data in which format?",
+    "options": ["XML", "CSV", "BSON (JSON-like)", "YAML"],
+    "answerIndex": 2,
+    "explanation": "MongoDB stores documents in BSON, similar to JSON."
+  },
+  {
+    "id": 37,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "In MongoDB, a collection is similar to what in SQL?",
+    "options": ["Row", "Table", "Column", "Index"],
+    "answerIndex": 1,
+    "explanation": "A collection is similar to a table in relational databases."
+  },
+  {
+    "id": 38,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "In MongoDB, a document is similar to what in SQL?",
+    "options": ["Row", "Database", "Schema", "Join"],
+    "answerIndex": 0,
+    "explanation": "A document is similar to a row/record in SQL."
+  },
+  {
+    "id": 39,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "Which MongoDB command shows databases?",
+    "options": ["show dbs", "list db", "db.show()", "mongo dbs"],
+    "answerIndex": 0,
+    "explanation": "show dbs lists all databases in the Mongo shell."
+  },
+  {
+    "id": 40,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "Which command switches to a database in MongoDB shell?",
+    "options": ["change db", "use <dbName>", "select db", "open <dbName>"],
+    "answerIndex": 1,
+    "explanation": "use <dbName> switches (or creates) a database context."
+  },
+  {
+    "id": 41,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "What does _id represent in MongoDB?",
+    "options": [
+      "A random field",
+      "Primary unique identifier",
+      "A password hash",
+      "A collection name"
+    ],
+    "answerIndex": 1,
+    "explanation": "_id uniquely identifies each document in a collection."
+  },
+  {
+    "id": 42,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "Which method inserts one document in MongoDB?",
+    "options": ["insertOne()", "addOne()", "pushOne()", "createOne()"],
+    "answerIndex": 0,
+    "explanation": "insertOne() inserts a single document into a collection."
+  },
+  {
+    "id": 43,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "Which method finds documents in MongoDB?",
+    "options": ["search()", "find()", "select()", "get()"],
+    "answerIndex": 1,
+    "explanation": "find() queries documents from a collection."
+  },
+  {
+    "id": 44,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "Which method updates one document in MongoDB?",
+    "options": ["update()", "updateOne()", "changeOne()", "modifyOne()"],
+    "answerIndex": 1,
+    "explanation": "updateOne() updates the first matching document."
+  },
+  {
+    "id": 45,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "Which operator sets a field value during update?",
+    "options": ["$set", "$push", "$inc", "$unsetAll"],
+    "answerIndex": 0,
+    "explanation": "$set assigns a new value to a field."
+  },
+  {
+    "id": 46,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "Which operator increments a numeric field?",
+    "options": ["$sum", "$inc", "$add", "$plus"],
+    "answerIndex": 1,
+    "explanation": "$inc increases (or decreases) a numeric field by a value."
+  },
+  {
+    "id": 47,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "Which operator adds an item to an array field?",
+    "options": ["$push", "$set", "$inc", "$rename"],
+    "answerIndex": 0,
+    "explanation": "$push appends a value to an array."
+  },
+  {
+    "id": 48,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "Which operator removes a field from a document?",
+    "options": ["$remove", "$unset", "$delete", "$drop"],
+    "answerIndex": 1,
+    "explanation": "$unset removes the field from the document."
+  },
+  {
+    "id": 49,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "What is an index in MongoDB used for?",
+    "options": [
+      "Storing images",
+      "Faster queries on fields",
+      "Encrypting documents",
+      "Creating routes"
+    ],
+    "answerIndex": 1,
+    "explanation": "Indexes speed up reads by optimizing query lookup."
+  },
+  {
+    "id": 50,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "What does Mongoose provide?",
+    "options": [
+      "Frontend components",
+      "ODM for MongoDB in Node.js",
+      "CSS utilities",
+      "Docker images"
+    ],
+    "answerIndex": 1,
+    "explanation": "Mongoose is an ODM to model MongoDB data in Node.js."
+  },
+  {
+    "id": 51,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "In Mongoose, what is a Schema?",
+    "options": [
+      "A server route",
+      "A structure/shape definition for documents",
+      "A JWT token",
+      "A CSS style"
+    ],
+    "answerIndex": 1,
+    "explanation": "Schema defines fields, types, and rules for a collection's documents."
+  },
+  {
+    "id": 52,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "In Mongoose, what is a Model?",
+    "options": [
+      "A database itself",
+      "A class used to create and query documents",
+      "A router",
+      "A middleware only"
+    ],
+    "answerIndex": 1,
+    "explanation": "Model provides methods to create, read, update, delete documents based on a schema."
+  },
+  {
+    "id": 53,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "Which Mongoose method connects to MongoDB?",
+    "options": [
+      "mongoose.open()",
+      "mongoose.connect()",
+      "mongoose.link()",
+      "mongoose.start()"
+    ],
+    "answerIndex": 1,
+    "explanation": "mongoose.connect() connects your app to MongoDB."
+  },
+  {
+    "id": 54,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "Which Mongoose method creates a document?",
+    "options": [
+      "Model.create()",
+      "Model.build()",
+      "Model.insertDoc()",
+      "Schema.create()"
+    ],
+    "answerIndex": 0,
+    "explanation": "Model.create() creates and saves a new document."
+  },
+  {
+    "id": 55,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "Which Mongoose method returns all documents matching a filter?",
+    "options": [
+      "Model.get()",
+      "Model.find()",
+      "Model.fetchAll()",
+      "Model.searchAll()"
+    ],
+    "answerIndex": 1,
+    "explanation": "Model.find() returns an array of documents that match the filter."
+  },
+  {
+    "id": 56,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "Which Mongoose method returns the first matching document?",
+    "options": [
+      "Model.first()",
+      "Model.findOne()",
+      "Model.getOne()",
+      "Model.pickOne()"
+    ],
+    "answerIndex": 1,
+    "explanation": "Model.findOne() returns one matching document."
+  },
+  {
+    "id": 57,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "Which Mongoose method finds by _id?",
+    "options": [
+      "Model.findById()",
+      "Model.findId()",
+      "Model.getById()",
+      "Model.idFind()"
+    ],
+    "answerIndex": 0,
+    "explanation": "Model.findById() finds a document by its _id."
+  },
+  {
+    "id": 58,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "Which Mongoose method deletes one document?",
+    "options": [
+      "Model.removeOne()",
+      "Model.deleteOne()",
+      "Model.dropOne()",
+      "Model.eraseOne()"
+    ],
+    "answerIndex": 1,
+    "explanation": "Model.deleteOne() removes the first matching document."
+  },
+  {
+    "id": 59,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "Which Mongoose method updates a document and returns the updated one (with option)?",
+    "options": [
+      "Model.updateOne()",
+      "Model.findByIdAndUpdate()",
+      "Model.change()",
+      "Model.patchDoc()"
+    ],
+    "answerIndex": 1,
+    "explanation": "findByIdAndUpdate can return the updated doc when { new: true } is used."
+  },
+  {
+    "id": 60,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "What does 'populate' do in Mongoose?",
+    "options": [
+      "Encrypts fields",
+      "Replaces referenced IDs with actual documents",
+      "Deletes duplicates",
+      "Creates indexes"
+    ],
+    "answerIndex": 1,
+    "explanation": "populate() loads referenced documents for ObjectId refs."
+  },
+  {
+    "id": 61,
+    "category": "Express.js",
+    "level": "basic",
+    "question": "What does res.status(404).send() do?",
+    "options": [
+      "Sends success message",
+      "Sends a 404 response",
+      "Redirects to homepage",
+      "Stops the server"
+    ],
+    "answerIndex": 1,
+    "explanation": "It sets HTTP status to 404 and sends a response."
+  },
+  {
+    "id": 62,
+    "category": "Express.js",
+    "level": "basic",
+    "question": "Where should error-handling middleware be placed?",
+    "options": [
+      "At the top before routes",
+      "After routes and other middleware",
+      "Inside package.json",
+      "In MongoDB shell"
+    ],
+    "answerIndex": 1,
+    "explanation": "Error middleware should be after routes so it can catch errors."
+  },
+  {
+    "id": 63,
+    "category": "Express.js",
+    "level": "basic",
+    "question": "What is the signature of an Express error middleware?",
+    "options": [
+      "(req, res)",
+      "(err, req, res, next)",
+      "(res, next)",
+      "(err, res)"
+    ],
+    "answerIndex": 1,
+    "explanation": "Error middleware has 4 params: (err, req, res, next)."
+  },
+  {
+    "id": 64,
+    "category": "Node.js",
+    "level": "basic",
+    "question": "Which is true about synchronous code in Node.js?",
+    "options": [
+      "It never blocks",
+      "It can block the event loop",
+      "It runs on GPU",
+      "It only runs in browser"
+    ],
+    "answerIndex": 1,
+    "explanation": "Sync operations can block the event loop and slow down requests."
+  },
+  {
+    "id": 65,
+    "category": "Node.js",
+    "level": "basic",
+    "question": "Which built-in module helps work with file paths?",
+    "options": ["path", "http", "events", "tls"],
+    "answerIndex": 0,
+    "explanation": "path provides utilities to handle file and directory paths."
+  },
+  {
+    "id": 66,
+    "category": "Node.js",
+    "level": "basic",
+    "question": "Which module provides EventEmitter in Node.js?",
+    "options": ["events", "stream", "buffer", "crypto"],
+    "answerIndex": 0,
+    "explanation": "The events module exposes EventEmitter."
+  },
+  {
+    "id": 67,
+    "category": "Node.js",
+    "level": "basic",
+    "question": "What is a Buffer in Node.js?",
+    "options": [
+      "A UI component",
+      "A way to handle binary data",
+      "A CSS property",
+      "A MongoDB query"
+    ],
+    "answerIndex": 1,
+    "explanation": "Buffer is used to work with binary data like files and network streams."
+  },
+  {
+    "id": 68,
+    "category": "Node.js",
+    "level": "basic",
+    "question": "Which module is used for cryptographic functions like hashing?",
+    "options": ["crypto", "hash", "secure", "bcrypt"],
+    "answerIndex": 0,
+    "explanation": "Node's built-in crypto module provides hashing and encryption utilities."
+  },
+  {
+    "id": 69,
+    "category": "Express.js",
+    "level": "basic",
+    "question": "Which HTTP status code means 'Unauthorized'?",
+    "options": ["401", "403", "404", "409"],
+    "answerIndex": 0,
+    "explanation": "401 means authentication is required or failed."
+  },
+  {
+    "id": 70,
+    "category": "Express.js",
+    "level": "basic",
+    "question": "Which HTTP status code means 'Forbidden'?",
+    "options": ["401", "403", "200", "302"],
+    "answerIndex": 1,
+    "explanation": "403 means the user is authenticated but not allowed."
+  },
+  {
+    "id": 71,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "Which query finds users age greater than 18?",
+    "options": [
+      "{ age: > 18 }",
+      "{ age: { $gt: 18 } }",
+      "{ $gt: age: 18 }",
+      "{ age: { gt: 18 } }"
+    ],
+    "answerIndex": 1,
+    "explanation": "$gt operator means greater than."
+  },
+  {
+    "id": 72,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "Which query sorts documents by createdAt descending?",
+    "options": [
+      "sort({ createdAt: -1 })",
+      "orderBy(createdAt desc)",
+      "desc(createdAt)",
+      "sortDown(createdAt)"
+    ],
+    "answerIndex": 0,
+    "explanation": "MongoDB sort uses 1 for asc and -1 for desc."
+  },
+  {
+    "id": 73,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "Which method limits returned documents in MongoDB?",
+    "options": ["cap()", "limit()", "max()", "stop()"],
+    "answerIndex": 1,
+    "explanation": "limit() restricts number of documents returned."
+  },
+  {
+    "id": 74,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "Which method skips documents (pagination) in MongoDB?",
+    "options": ["skip()", "jump()", "offset()", "pass()"],
+    "answerIndex": 0,
+    "explanation": "skip() ignores the first N documents in the result."
+  },
+  {
+    "id": 75,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "What is aggregation in MongoDB?",
+    "options": [
+      "A frontend feature",
+      "Pipeline to process and transform data",
+      "A file system tool",
+      "A Node package manager"
+    ],
+    "answerIndex": 1,
+    "explanation": "Aggregation pipelines transform and compute results from documents."
+  },
+  {
+    "id": 76,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "Which stage filters documents in an aggregation pipeline?",
+    "options": ["$group", "$match", "$project", "$lookup"],
+    "answerIndex": 1,
+    "explanation": "$match filters documents like a query."
+  },
+  {
+    "id": 77,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "Which stage groups documents and calculates totals?",
+    "options": ["$group", "$match", "$sort", "$skip"],
+    "answerIndex": 0,
+    "explanation": "$group groups documents and allows accumulators like $sum."
+  },
+  {
+    "id": 78,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "Which stage selects fields to include/exclude in aggregation?",
+    "options": ["$project", "$match", "$limit", "$unwind"],
+    "answerIndex": 0,
+    "explanation": "$project reshapes documents by selecting/renaming fields."
+  },
+  {
+    "id": 79,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "Which stage joins another collection in aggregation?",
+    "options": ["$join", "$link", "$lookup", "$mergeOne"],
+    "answerIndex": 2,
+    "explanation": "$lookup performs a left outer join with another collection."
+  },
+  {
+    "id": 80,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "What does $unwind do?",
+    "options": [
+      "Encrypts array",
+      "Splits array elements into multiple documents",
+      "Deletes arrays",
+      "Creates indexes"
+    ],
+    "answerIndex": 1,
+    "explanation": "$unwind turns each array element into a separate document."
+  },
+  {
+    "id": 81,
+    "category": "Express.js",
+    "level": "basic",
+    "question": "Which header is commonly used to send JWT token?",
+    "options": [
+      "X-HTML",
+      "Authorization",
+      "Content-Style",
+      "Accept-Language-Token"
+    ],
+    "answerIndex": 1,
+    "explanation": "JWT is typically sent in Authorization: Bearer <token>."
+  },
+  {
+    "id": 82,
+    "category": "Node.js",
+    "level": "basic",
+    "question": "Which is best for storing secrets like DB password?",
+    "options": [
+      "Hardcode in code",
+      "Commit in GitHub",
+      "Environment variables",
+      "Put in client-side JS"
+    ],
+    "answerIndex": 2,
+    "explanation": "Environment variables keep secrets out of source code."
+  },
+  {
+    "id": 83,
+    "category": "Express.js",
+    "level": "basic",
+    "question": "What does app.use('/api', router) do?",
+    "options": [
+      "Deletes router",
+      "Mounts router under /api path",
+      "Runs DB migration",
+      "Starts server"
+    ],
+    "answerIndex": 1,
+    "explanation": "It prefixes all router routes with /api."
+  },
+  {
+    "id": 84,
+    "category": "Express.js",
+    "level": "basic",
+    "question": "Which HTTP status code means 'Bad Request'?",
+    "options": ["400", "401", "403", "404"],
+    "answerIndex": 0,
+    "explanation": "400 is used when request data is invalid."
+  },
+  {
+    "id": 85,
+    "category": "Express.js",
+    "level": "basic",
+    "question": "Which HTTP status code means 'Not Found'?",
+    "options": ["301", "404", "409", "500"],
+    "answerIndex": 1,
+    "explanation": "404 indicates the resource/route was not found."
+  },
+  {
+    "id": 86,
+    "category": "Express.js",
+    "level": "basic",
+    "question": "Which HTTP status code means 'Internal Server Error'?",
+    "options": ["422", "500", "502", "503"],
+    "answerIndex": 1,
+    "explanation": "500 is a generic server error."
+  },
+  {
+    "id": 87,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "Which query checks if a field exists?",
+    "options": [
+      "{ field: { $exists: true } }",
+      "{ field: exists(true) }",
+      "{ has(field) }",
+      "{ $has: field }"
+    ],
+    "answerIndex": 0,
+    "explanation": "$exists checks whether a field is present."
+  },
+  {
+    "id": 88,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "Which query finds documents where status is either 'open' or 'closed'?",
+    "options": [
+      "{ status: 'open|closed' }",
+      "{ status: { $in: ['open','closed'] } }",
+      "{ status: { in: [] } }",
+      "{ $orStatus: ['open','closed'] }"
+    ],
+    "answerIndex": 1,
+    "explanation": "$in matches any value in the array."
+  },
+  {
+    "id": 89,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "Which query matches multiple conditions using AND?",
+    "options": [
+      "{ $and: [] } only",
+      "Just put fields in same object",
+      "Use $either",
+      "MongoDB doesn't support AND"
+    ],
+    "answerIndex": 1,
+    "explanation": "Multiple fields in one query object are ANDed by default."
+  },
+  {
+    "id": 90,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "Which operator is used for OR conditions?",
+    "options": ["$or", "$any", "$either", "$oneOf"],
+    "answerIndex": 0,
+    "explanation": "$or takes an array of conditions."
+  },
+  {
+    "id": 91,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "Which Mongoose option helps enforce schema rules on updates?",
+    "options": ["timestamps", "runValidators", "populate", "strictQueryOnly"],
+    "answerIndex": 1,
+    "explanation": "runValidators: true makes update operations validate against schema."
+  },
+  {
+    "id": 92,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "What do timestamps do in a Mongoose schema?",
+    "options": [
+      "Encrypt fields",
+      "Automatically add createdAt and updatedAt",
+      "Create indexes only",
+      "Rename _id"
+    ],
+    "answerIndex": 1,
+    "explanation": "timestamps: true adds createdAt and updatedAt automatically."
+  },
+  {
+    "id": 93,
+    "category": "Node.js",
+    "level": "basic",
+    "question": "What is the purpose of module caching in Node.js?",
+    "options": [
+      "To slow down imports",
+      "To load the same module only once",
+      "To encrypt exports",
+      "To remove dependencies"
+    ],
+    "answerIndex": 1,
+    "explanation": "Node caches modules so requiring the same module doesn't reload it."
+  },
+  {
+    "id": 94,
+    "category": "Express.js",
+    "level": "basic",
+    "question": "How do you handle 404 for unknown routes in Express?",
+    "options": [
+      "Put a catch-all route at the top",
+      "Add a catch-all route after all routes",
+      "Delete app.get",
+      "Use MongoDB index"
+    ],
+    "answerIndex": 1,
+    "explanation": "A final handler like app.use((req,res)=>res.status(404).json(...)) should be after all routes."
+  },
+  {
+    "id": 95,
+    "category": "Node.js",
+    "level": "basic",
+    "question": "Which is true about async/await error handling?",
+    "options": [
+      "try/catch can catch awaited promise rejections",
+      "Errors are ignored",
+      "Only callbacks can catch",
+      "await prevents errors"
+    ],
+    "answerIndex": 0,
+    "explanation": "Using try/catch around await handles promise rejections."
+  },
+  {
+    "id": 96,
+    "category": "Express.js",
+    "level": "basic",
+    "question": "Which library is commonly used for logging HTTP requests in Express?",
+    "options": ["morgan", "cors", "dotenv", "multer"],
+    "answerIndex": 0,
+    "explanation": "morgan logs incoming HTTP requests."
+  },
+  {
+    "id": 97,
+    "category": "Express.js",
+    "level": "basic",
+    "question": "Which library is commonly used to secure HTTP headers in Express?",
+    "options": ["helmet", "morgan", "cors", "chalk"],
+    "answerIndex": 0,
+    "explanation": "helmet sets various HTTP headers for security."
+  },
+  {
+    "id": 98,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "What does 'lean()' do in Mongoose queries?",
+    "options": [
+      "Returns plain JS objects instead of Mongoose documents",
+      "Adds indexes",
+      "Validates schema",
+      "Populates refs automatically"
+    ],
+    "answerIndex": 0,
+    "explanation": "lean() improves read performance by skipping Mongoose document wrappers."
+  },
+  {
+    "id": 99,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "What is the benefit of unique: true in Mongoose schema?",
+    "options": [
+      "It encrypts the field",
+      "It creates a unique index (uniqueness constraint)",
+      "It makes field required",
+      "It auto-increments numbers"
+    ],
+    "answerIndex": 1,
+    "explanation": "unique creates a unique index so values must be unique (after index build)."
+  },
+  {
+    "id": 100,
+    "category": "Express.js",
+    "level": "basic",
+    "question": "What is the main purpose of using async error wrapper for Express routes?",
+    "options": [
+      "To make routes slower",
+      "To avoid repeating try/catch and forward errors to error middleware",
+      "To connect MongoDB",
+      "To enable CORS"
+    ],
+    "answerIndex": 1,
+    "explanation": "Async wrappers catch promise rejections and pass errors to next(err)."
+  },
+  {
+    "id": 101,
+    "category": "Node.js",
+    "level": "basic",
+    "question": "Which file extension is commonly used for Node.js files?",
+    "options": [".node", ".js", ".java", ".ts"],
+    "answerIndex": 1,
+    "explanation": "Node.js files are typically written in JavaScript with .js extension."
+  },
+  {
+    "id": 102,
+    "category": "Node.js",
+    "level": "basic",
+    "question": "Which global object gives information about the current file path in CommonJS?",
+    "options": ["__filename", "__file", "process.file", "module.file"],
+    "answerIndex": 0,
+    "explanation": "__filename contains the absolute path of the current file."
+  },
+  {
+    "id": 103,
+    "category": "Node.js",
+    "level": "basic",
+    "question": "Which global object gives information about the current directory in CommonJS?",
+    "options": ["__dirname", "__dir", "process.dir", "module.dir"],
+    "answerIndex": 0,
+    "explanation": "__dirname contains the absolute path of the current directory."
+  },
+  {
+    "id": 104,
+    "category": "Node.js",
+    "level": "basic",
+    "question": "Which method reads a file asynchronously in Node.js (fs module)?",
+    "options": ["fs.readFile()", "fs.read()", "fs.getFile()", "fs.openFile()"],
+    "answerIndex": 0,
+    "explanation": "fs.readFile() reads a file asynchronously and returns the content in a callback."
+  },
+  {
+    "id": 105,
+    "category": "Node.js",
+    "level": "basic",
+    "question": "Which method writes data to a file asynchronously in Node.js (fs module)?",
+    "options": ["fs.writeFile()", "fs.save()", "fs.put()", "fs.writeDoc()"],
+    "answerIndex": 0,
+    "explanation": "fs.writeFile() writes content to a file asynchronously."
+  },
+  {
+    "id": 106,
+    "category": "Node.js",
+    "level": "basic",
+    "question": "Which Node.js built-in module is used to create and extract .zip (gzip) streams?",
+    "options": ["zlib", "zipper", "compress", "archiver"],
+    "answerIndex": 0,
+    "explanation": "zlib is used for compression/decompression like gzip."
+  },
+  {
+    "id": 107,
+    "category": "Node.js",
+    "level": "basic",
+    "question": "Which Node.js module helps create child processes?",
+    "options": ["child_process", "process_child", "forker", "threads"],
+    "answerIndex": 0,
+    "explanation": "child_process is used to spawn or fork new processes."
+  },
+  {
+    "id": 108,
+    "category": "Node.js",
+    "level": "basic",
+    "question": "Which function runs a callback immediately after the current call stack, before other tasks?",
+    "options": [
+      "process.nextTick()",
+      "setTimeout()",
+      "setInterval()",
+      "setImmediate()"
+    ],
+    "answerIndex": 0,
+    "explanation": "process.nextTick() runs before the event loop continues to other phases."
+  },
+  {
+    "id": 109,
+    "category": "Node.js",
+    "level": "basic",
+    "question": "Which Node.js API is used to read command line arguments?",
+    "options": ["process.argv", "process.args", "node.argv", "cli.args"],
+    "answerIndex": 0,
+    "explanation": "process.argv contains command line arguments."
+  },
+  {
+    "id": 110,
+    "category": "Node.js",
+    "level": "basic",
+    "question": "Which Node.js module is used to create HTTPS servers?",
+    "options": ["https", "http2", "tls", "net"],
+    "answerIndex": 0,
+    "explanation": "The https module is used to create secure HTTPS servers."
+  },
+  {
+    "id": 111,
+    "category": "Node.js",
+    "level": "basic",
+    "question": "What does the 'stream' concept help with in Node.js?",
+    "options": [
+      "Reading/writing data in chunks",
+      "Creating CSS",
+      "Storing MongoDB documents",
+      "Building React components"
+    ],
+    "answerIndex": 0,
+    "explanation": "Streams handle data chunk-by-chunk, useful for large files and network data."
+  },
+  {
+    "id": 112,
+    "category": "Node.js",
+    "level": "basic",
+    "question": "Which stream is used to read data from a source in Node.js?",
+    "options": [
+      "Readable stream",
+      "Writable stream",
+      "Duplex stream",
+      "Transform stream"
+    ],
+    "answerIndex": 0,
+    "explanation": "Readable streams provide data to be consumed."
+  },
+  {
+    "id": 113,
+    "category": "Node.js",
+    "level": "basic",
+    "question": "Which stream is used to write data to a destination in Node.js?",
+    "options": [
+      "Writable stream",
+      "Readable stream",
+      "Transform stream",
+      "Inbound stream"
+    ],
+    "answerIndex": 0,
+    "explanation": "Writable streams accept data to be written somewhere."
+  },
+  {
+    "id": 114,
+    "category": "Node.js",
+    "level": "basic",
+    "question": "Which method is commonly used to load environment variables from a .env file?",
+    "options": [
+      "dotenv.config()",
+      "env.load()",
+      "process.loadEnv()",
+      "node.env()"
+    ],
+    "answerIndex": 0,
+    "explanation": "dotenv.config() loads variables from .env into process.env."
+  },
+  {
+    "id": 115,
+    "category": "Node.js",
+    "level": "basic",
+    "question": "Which file is commonly used to prevent node_modules from being committed to Git?",
+    "options": [".gitignore", ".npmignore", "ignore.txt", "package-lock.json"],
+    "answerIndex": 0,
+    "explanation": ".gitignore is used to ignore files/folders like node_modules in Git."
+  },
+  {
+    "id": 116,
+    "category": "Node.js",
+    "level": "basic",
+    "question": "Which npm file locks exact dependency versions?",
+    "options": [
+      "package-lock.json",
+      "lock.json",
+      "package-fixed.json",
+      "versions.json"
+    ],
+    "answerIndex": 0,
+    "explanation": "package-lock.json locks exact versions for consistent installs."
+  },
+  {
+    "id": 117,
+    "category": "Node.js",
+    "level": "basic",
+    "question": "Which Node.js object provides the exit code and allows exiting the process?",
+    "options": ["process", "module", "console", "runtime"],
+    "answerIndex": 0,
+    "explanation": "process provides process control methods like process.exit()."
+  },
+  {
+    "id": 118,
+    "category": "Node.js",
+    "level": "basic",
+    "question": "Which method ends the Node.js process with a successful exit code?",
+    "options": [
+      "process.exit(0)",
+      "process.stop(0)",
+      "process.close(1)",
+      "process.end(0)"
+    ],
+    "answerIndex": 0,
+    "explanation": "process.exit(0) exits with code 0 meaning success."
+  },
+  {
+    "id": 119,
+    "category": "Express.js",
+    "level": "basic",
+    "question": "Which Express method is used to start listening on a port?",
+    "options": ["app.listen()", "app.start()", "app.run()", "app.open()"],
+    "answerIndex": 0,
+    "explanation": "app.listen() starts the server on a given port."
+  },
+  {
+    "id": 120,
+    "category": "Express.js",
+    "level": "basic",
+    "question": "What does res.send() do in Express?",
+    "options": [
+      "Sends a response body",
+      "Only sends JSON",
+      "Only sets headers",
+      "Connects to MongoDB"
+    ],
+    "answerIndex": 0,
+    "explanation": "res.send() sends a response (string, object, buffer, etc.)."
+  },
+  {
+    "id": 121,
+    "category": "Express.js",
+    "level": "basic",
+    "question": "Which Express method is used to redirect a client to another URL?",
+    "options": ["res.redirect()", "res.move()", "res.route()", "res.forward()"],
+    "answerIndex": 0,
+    "explanation": "res.redirect() sends a redirect response to the client."
+  },
+  {
+    "id": 122,
+    "category": "Express.js",
+    "level": "basic",
+    "question": "Which method sets a response header in Express?",
+    "options": [
+      "res.set()",
+      "res.headerOnly()",
+      "req.set()",
+      "app.setHeader()"
+    ],
+    "answerIndex": 0,
+    "explanation": "res.set() sets response headers."
+  },
+  {
+    "id": 123,
+    "category": "Express.js",
+    "level": "basic",
+    "question": "Which Express method sends only status code without body?",
+    "options": [
+      "res.sendStatus()",
+      "res.onlyStatus()",
+      "res.statusSend()",
+      "res.code()"
+    ],
+    "answerIndex": 0,
+    "explanation": "res.sendStatus(code) sets status and sends its string representation."
+  },
+  {
+    "id": 124,
+    "category": "Express.js",
+    "level": "basic",
+    "question": "Which Express property helps you know the HTTP method used (GET/POST etc.)?",
+    "options": ["req.method", "req.type", "req.action", "req.http"],
+    "answerIndex": 0,
+    "explanation": "req.method contains the HTTP method as a string."
+  },
+  {
+    "id": 125,
+    "category": "Express.js",
+    "level": "basic",
+    "question": "Which Express property gives the requested URL path?",
+    "options": ["req.path", "req.route", "req.urlPath", "req.endpoint"],
+    "answerIndex": 0,
+    "explanation": "req.path provides the path part of the request URL."
+  },
+  {
+    "id": 126,
+    "category": "Express.js",
+    "level": "basic",
+    "question": "Which Express method is used to handle POST requests?",
+    "options": ["app.post()", "app.get()", "app.push()", "app.create()"],
+    "answerIndex": 0,
+    "explanation": "app.post() defines a route handler for POST requests."
+  },
+  {
+    "id": 127,
+    "category": "Express.js",
+    "level": "basic",
+    "question": "Which Express method is used to handle DELETE requests?",
+    "options": ["app.delete()", "app.remove()", "app.delRoute()", "app.cut()"],
+    "answerIndex": 0,
+    "explanation": "app.delete() registers a handler for DELETE requests."
+  },
+  {
+    "id": 128,
+    "category": "Express.js",
+    "level": "basic",
+    "question": "How can you access cookies in Express (commonly)?",
+    "options": [
+      "cookie-parser middleware",
+      "express.cookies()",
+      "req.cookie()",
+      "mongoose.cookies()"
+    ],
+    "answerIndex": 0,
+    "explanation": "cookie-parser middleware is commonly used to read cookies via req.cookies."
+  },
+  {
+    "id": 129,
+    "category": "Express.js",
+    "level": "basic",
+    "question": "Which middleware is commonly used to parse URL-encoded form data?",
+    "options": [
+      "express.urlencoded()",
+      "express.form()",
+      "express.encode()",
+      "body.urlencoded()"
+    ],
+    "answerIndex": 0,
+    "explanation": "express.urlencoded() parses application/x-www-form-urlencoded bodies."
+  },
+  {
+    "id": 130,
+    "category": "Express.js",
+    "level": "basic",
+    "question": "Which Express setting is used to set a template engine like EJS?",
+    "options": [
+      "app.set('view engine', 'ejs')",
+      "app.engine('ejs') only",
+      "app.template('ejs')",
+      "app.view('ejs')"
+    ],
+    "answerIndex": 0,
+    "explanation": "app.set('view engine', 'ejs') tells Express which template engine to use."
+  },
+  {
+    "id": 131,
+    "category": "Express.js",
+    "level": "basic",
+    "question": "Which Express method renders a view template?",
+    "options": ["res.render()", "res.view()", "res.template()", "res.page()"],
+    "answerIndex": 0,
+    "explanation": "res.render() renders a template with data."
+  },
+  {
+    "id": 132,
+    "category": "Express.js",
+    "level": "basic",
+    "question": "Which Express method can chain handlers for the same path using app.route()?",
+    "options": ["app.route()", "app.chain()", "app.stack()", "app.bundle()"],
+    "answerIndex": 0,
+    "explanation": "app.route(path) returns a route instance to chain get/post/put/etc."
+  },
+  {
+    "id": 133,
+    "category": "Express.js",
+    "level": "basic",
+    "question": "Which Express property is used to store local variables for all templates?",
+    "options": [
+      "app.locals",
+      "req.locals",
+      "res.localsOnly",
+      "express.locals()"
+    ],
+    "answerIndex": 0,
+    "explanation": "app.locals stores variables available in all rendered views."
+  },
+  {
+    "id": 134,
+    "category": "Express.js",
+    "level": "basic",
+    "question": "Which Express property is used to store variables for the current response lifecycle?",
+    "options": ["res.locals", "app.locals", "req.locals", "express.locals"],
+    "answerIndex": 0,
+    "explanation": "res.locals holds request-specific data for templates/middleware."
+  },
+  {
+    "id": 135,
+    "category": "Express.js",
+    "level": "basic",
+    "question": "Which Express method is used to set the status code before sending response?",
+    "options": [
+      "res.status()",
+      "res.code()",
+      "res.setStatus()",
+      "res.httpStatus()"
+    ],
+    "answerIndex": 0,
+    "explanation": "res.status(code) sets the HTTP status code."
+  },
+  {
+    "id": 136,
+    "category": "Express.js",
+    "level": "basic",
+    "question": "Which Express method sends a file to the client?",
+    "options": [
+      "res.sendFile()",
+      "res.file()",
+      "res.downloadOnly()",
+      "res.streamFile()"
+    ],
+    "answerIndex": 0,
+    "explanation": "res.sendFile() sends a file as the response."
+  },
+  {
+    "id": 137,
+    "category": "Express.js",
+    "level": "basic",
+    "question": "Which Express method prompts file download with a given filename?",
+    "options": [
+      "res.download()",
+      "res.saveAs()",
+      "res.getFile()",
+      "res.sendAttachment()"
+    ],
+    "answerIndex": 0,
+    "explanation": "res.download() triggers a file download response."
+  },
+  {
+    "id": 138,
+    "category": "Express.js",
+    "level": "basic",
+    "question": "Which Express method sets a cookie in the response?",
+    "options": [
+      "res.cookie()",
+      "req.cookie()",
+      "app.cookie()",
+      "res.setCookieOnly()"
+    ],
+    "answerIndex": 0,
+    "explanation": "res.cookie(name, value, options) sets a cookie."
+  },
+  {
+    "id": 139,
+    "category": "Express.js",
+    "level": "basic",
+    "question": "Which Express method clears a cookie?",
+    "options": [
+      "res.clearCookie()",
+      "res.removeCookie()",
+      "res.deleteCookie()",
+      "app.clearCookie()"
+    ],
+    "answerIndex": 0,
+    "explanation": "res.clearCookie(name) clears a cookie on the client."
+  },
+  {
+    "id": 140,
+    "category": "Express.js",
+    "level": "basic",
+    "question": "Which property tells if an Express app is running in development/production mode?",
+    "options": ["app.get('env')", "app.env()", "process.mode", "req.env"],
+    "answerIndex": 0,
+    "explanation": "app.get('env') reflects NODE_ENV or defaults to development."
+  },
+  {
+    "id": 141,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "Which command shows collections in the current database (Mongo shell)?",
+    "options": [
+      "show collections",
+      "list tables",
+      "db.collections()",
+      "show tables"
+    ],
+    "answerIndex": 0,
+    "explanation": "show collections lists all collections in the selected database."
+  },
+  {
+    "id": 142,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "Which method inserts many documents at once in MongoDB?",
+    "options": ["insertMany()", "addMany()", "createMany()", "pushMany()"],
+    "answerIndex": 0,
+    "explanation": "insertMany() inserts multiple documents in one operation."
+  },
+  {
+    "id": 143,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "Which method removes many documents at once in MongoDB?",
+    "options": ["deleteMany()", "removeMany()", "dropMany()", "eraseMany()"],
+    "answerIndex": 0,
+    "explanation": "deleteMany() deletes all documents matching a filter."
+  },
+  {
+    "id": 144,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "Which query matches documents where age is less than or equal to 30?",
+    "options": [
+      "{ age: { $lte: 30 } }",
+      "{ age: <= 30 }",
+      "{ $lte: age: 30 }",
+      "{ age: { lte: 30 } }"
+    ],
+    "answerIndex": 0,
+    "explanation": "$lte means less than or equal to."
+  },
+  {
+    "id": 145,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "Which operator matches values not equal to something?",
+    "options": ["$ne", "$notEq", "$neq", "$no"],
+    "answerIndex": 0,
+    "explanation": "$ne means not equal."
+  },
+  {
+    "id": 146,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "Which operator is used to match a value within a range (between) using two conditions?",
+    "options": ["$between", "$range", "$gte and $lte", "$mid"],
+    "answerIndex": 2,
+    "explanation": "Range queries are done using operators like $gte and $lte together."
+  },
+  {
+    "id": 147,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "Which operator is used for pattern matching with regular expressions?",
+    "options": ["$regex", "$like", "$pattern", "$matchText"],
+    "answerIndex": 0,
+    "explanation": "$regex matches strings using a regular expression."
+  },
+  {
+    "id": 148,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "Which operator selects documents where a field is of a specific BSON type?",
+    "options": ["$type", "$dtype", "$kind", "$schemaType"],
+    "answerIndex": 0,
+    "explanation": "$type checks the BSON type of a field."
+  },
+  {
+    "id": 149,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "Which query finds documents where an array contains a specific value?",
+    "options": [
+      "{ tags: 'js' }",
+      "{ tags: { $has: 'js' } }",
+      "{ tags: { $contains: 'js' } }",
+      "{ tags: { $inArray: 'js' } }"
+    ],
+    "answerIndex": 0,
+    "explanation": "Matching { tags: 'js' } works if tags array contains 'js'."
+  },
+  {
+    "id": 150,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "Which operator matches documents where an array has all specified elements?",
+    "options": ["$all", "$every", "$each", "$andAll"],
+    "answerIndex": 0,
+    "explanation": "$all matches arrays containing all specified values."
+  },
+  {
+    "id": 151,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "Which operator matches array elements meeting a condition (single element match)?",
+    "options": ["$elemMatch", "$arrayMatch", "$oneMatch", "$itemMatch"],
+    "answerIndex": 0,
+    "explanation": "$elemMatch matches documents that contain an array element matching criteria."
+  },
+  {
+    "id": 152,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "Which MongoDB update operator removes items from an array by condition/value?",
+    "options": ["$pull", "$pop", "$shift", "$removeItem"],
+    "answerIndex": 0,
+    "explanation": "$pull removes all matching values from an array."
+  },
+  {
+    "id": 153,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "Which MongoDB update operator removes the first or last element of an array?",
+    "options": ["$pop", "$pull", "$slice", "$trim"],
+    "answerIndex": 0,
+    "explanation": "$pop removes first (-1) or last (1) element."
+  },
+  {
+    "id": 154,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "Which MongoDB operator is used to rename a field?",
+    "options": ["$rename", "$name", "$moveField", "$changeKey"],
+    "answerIndex": 0,
+    "explanation": "$rename renames a field key."
+  },
+  {
+    "id": 155,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "Which MongoDB query operator matches values greater than or equal to?",
+    "options": ["$gte", "$ge", "$minEq", "$aboveEq"],
+    "answerIndex": 0,
+    "explanation": "$gte means greater than or equal."
+  },
+  {
+    "id": 156,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "Which MongoDB query operator matches values less than?",
+    "options": ["$lt", "$less", "$below", "$min"],
+    "answerIndex": 0,
+    "explanation": "$lt means less than."
+  },
+  {
+    "id": 157,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "Which feature allows MongoDB to enforce validation rules at the collection level?",
+    "options": [
+      "Schema Validation",
+      "CSS Rules",
+      "Express Middleware",
+      "Node Events"
+    ],
+    "answerIndex": 0,
+    "explanation": "MongoDB supports collection schema validation rules."
+  },
+  {
+    "id": 158,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "Which MongoDB tool is commonly used as a GUI to view databases and collections?",
+    "options": [
+      "MongoDB Compass",
+      "MongoDB Painter",
+      "Mongo Studio Lite",
+      "Mongo Visualizer"
+    ],
+    "answerIndex": 0,
+    "explanation": "MongoDB Compass is the official GUI tool."
+  },
+  {
+    "id": 159,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "In MongoDB, what is a replica set mainly used for?",
+    "options": [
+      "High availability and redundancy",
+      "Faster CSS loading",
+      "Frontend routing",
+      "Replacing Express"
+    ],
+    "answerIndex": 0,
+    "explanation": "Replica sets provide redundancy and failover for high availability."
+  },
+  {
+    "id": 160,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "In MongoDB, what is sharding mainly used for?",
+    "options": [
+      "Horizontal scaling by splitting data across servers",
+      "Encrypting collections",
+      "Rendering templates",
+      "Compressing images"
+    ],
+    "answerIndex": 0,
+    "explanation": "Sharding distributes data across multiple machines for scalability."
+  },
+  {
+    "id": 161,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "Which Mongoose schema type is used for storing MongoDB ObjectId references?",
+    "options": [
+      "Schema.Types.ObjectId",
+      "Schema.Object",
+      "ObjectID()",
+      "Types.RefId"
+    ],
+    "answerIndex": 0,
+    "explanation": "Schema.Types.ObjectId is used for ObjectId references."
+  },
+  {
+    "id": 162,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "Which Mongoose method counts documents matching a filter efficiently?",
+    "options": [
+      "Model.countDocuments()",
+      "Model.countAll()",
+      "Model.length()",
+      "Model.total()"
+    ],
+    "answerIndex": 0,
+    "explanation": "countDocuments() counts documents that match a query."
+  },
+  {
+    "id": 163,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "Which Mongoose method checks if at least one document exists (simple check)?",
+    "options": [
+      "Model.exists()",
+      "Model.has()",
+      "Model.any()",
+      "Model.present()"
+    ],
+    "answerIndex": 0,
+    "explanation": "Model.exists(filter) returns info if a matching document exists."
+  },
+  {
+    "id": 164,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "Which Mongoose method returns distinct values for a field?",
+    "options": [
+      "Model.distinct()",
+      "Model.unique()",
+      "Model.only()",
+      "Model.separate()"
+    ],
+    "answerIndex": 0,
+    "explanation": "distinct(field, filter) returns unique values for that field."
+  },
+  {
+    "id": 165,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "Which Mongoose method creates an index based on schema definitions?",
+    "options": [
+      "Model.createIndexes()",
+      "Model.buildSchema()",
+      "Model.makeUnique()",
+      "Schema.runIndex()"
+    ],
+    "answerIndex": 0,
+    "explanation": "createIndexes() builds indexes defined in schema."
+  },
+  {
+    "id": 166,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "Which Mongoose method removes a document instance after fetching it?",
+    "options": [
+      "doc.deleteOne()",
+      "doc.drop()",
+      "doc.removeAll()",
+      "doc.erase()"
+    ],
+    "answerIndex": 0,
+    "explanation": "doc.deleteOne() deletes that specific document instance."
+  },
+  {
+    "id": 167,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "In Mongoose, what does 'required: true' do?",
+    "options": [
+      "Makes field mandatory during validation",
+      "Encrypts the field",
+      "Auto-increments the field",
+      "Creates a route"
+    ],
+    "answerIndex": 0,
+    "explanation": "required enforces the field must be present when validating."
+  },
+  {
+    "id": 168,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "In Mongoose, what does 'default' in schema do?",
+    "options": [
+      "Sets a value if field is missing",
+      "Deletes the field",
+      "Makes field unique",
+      "Sorts queries automatically"
+    ],
+    "answerIndex": 0,
+    "explanation": "default provides a fallback value when a field is not provided."
+  },
+  {
+    "id": 169,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "Which Mongoose option prevents saving fields not in the schema (by default)?",
+    "options": ["strict", "safe", "lock", "freeze"],
+    "answerIndex": 0,
+    "explanation": "Mongoose strict mode controls whether unknown fields are saved."
+  },
+  {
+    "id": 170,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "What does MongoDB's 'ObjectId' mainly provide?",
+    "options": [
+      "Unique identifier with time-based component",
+      "Encryption for passwords",
+      "A file path",
+      "A CSS selector"
+    ],
+    "answerIndex": 0,
+    "explanation": "ObjectId is a unique identifier that also encodes creation time."
+  },
+  {
+    "id": 171,
+    "category": "Node.js",
+    "level": "basic",
+    "question": "Which Node.js module allows building command-line apps with prompts (commonly external)?",
+    "options": ["inquirer", "http", "fs", "events"],
+    "answerIndex": 0,
+    "explanation": "Inquirer is a common npm package for interactive CLI prompts."
+  },
+  {
+    "id": 172,
+    "category": "Node.js",
+    "level": "basic",
+    "question": "Which object provides the current Node.js version?",
+    "options": [
+      "process.version",
+      "node.version",
+      "runtime.version",
+      "app.version"
+    ],
+    "answerIndex": 0,
+    "explanation": "process.version contains the Node.js version string."
+  },
+  {
+    "id": 173,
+    "category": "Node.js",
+    "level": "basic",
+    "question": "Which method converts a Buffer to a string?",
+    "options": [
+      "buffer.toString()",
+      "buffer.stringify()",
+      "Buffer.parse()",
+      "buffer.text()"
+    ],
+    "answerIndex": 0,
+    "explanation": "toString() converts buffer bytes to a string with encoding."
+  },
+  {
+    "id": 174,
+    "category": "Node.js",
+    "level": "basic",
+    "question": "Which API is used to import modules in ES Modules (ESM)?",
+    "options": ["import", "require", "include", "inject"],
+    "answerIndex": 0,
+    "explanation": "ES Modules use the import syntax."
+  },
+  {
+    "id": 175,
+    "category": "Node.js",
+    "level": "basic",
+    "question": "Which key in package.json can enable ES Modules in Node (commonly)?",
+    "options": [
+      "\"type\": \"module\"",
+      "\"mode\": \"esm\"",
+      "\"module\": true",
+      "\"esm\": \"on\""
+    ],
+    "answerIndex": 0,
+    "explanation": "Setting \"type\": \"module\" treats .js files as ES modules."
+  },
+  {
+    "id": 176,
+    "category": "Node.js",
+    "level": "basic",
+    "question": "Which method reads a directory contents in Node.js (fs)?",
+    "options": [
+      "fs.readdir()",
+      "fs.readDirFile()",
+      "fs.dir()",
+      "fs.listFiles()"
+    ],
+    "answerIndex": 0,
+    "explanation": "fs.readdir() reads names of files/folders inside a directory."
+  },
+  {
+    "id": 177,
+    "category": "Node.js",
+    "level": "basic",
+    "question": "Which method checks if a file exists (modern approach) using fs.promises?",
+    "options": [
+      "fs.promises.access()",
+      "fs.promises.exists()",
+      "fs.promises.check()",
+      "fs.promises.hasFile()"
+    ],
+    "answerIndex": 0,
+    "explanation": "fs.promises.access() can verify existence and permissions."
+  },
+  {
+    "id": 178,
+    "category": "Express.js",
+    "level": "basic",
+    "question": "Which Express method is used to set app-level settings like 'trust proxy'?",
+    "options": ["app.set()", "app.config()", "app.settings()", "app.setup()"],
+    "answerIndex": 0,
+    "explanation": "app.set(key, value) sets application settings."
+  },
+  {
+    "id": 179,
+    "category": "Express.js",
+    "level": "basic",
+    "question": "Which Express method reads an app setting value?",
+    "options": ["app.get()", "app.read()", "app.value()", "app.fetch()"],
+    "answerIndex": 0,
+    "explanation": "app.get(key) reads an application setting value."
+  },
+  {
+    "id": 180,
+    "category": "Express.js",
+    "level": "basic",
+    "question": "Which method is used to enable JSON pretty print (setting) in Express (conceptually)?",
+    "options": [
+      "app.set('json spaces', n)",
+      "app.set('json pretty', true)",
+      "res.jsonPretty()",
+      "express.prettyJson()"
+    ],
+    "answerIndex": 0,
+    "explanation": "Express supports 'json spaces' setting for formatted JSON responses."
+  },
+  {
+    "id": 181,
+    "category": "Express.js",
+    "level": "basic",
+    "question": "Which middleware commonly parses multipart/form-data (file uploads)?",
+    "options": ["multer", "morgan", "helmet", "dotenv"],
+    "answerIndex": 0,
+    "explanation": "multer is commonly used for handling multipart/form-data uploads."
+  },
+  {
+    "id": 182,
+    "category": "Express.js",
+    "level": "basic",
+    "question": "What does Express use to match routes like /users/:id?",
+    "options": [
+      "Route parameters",
+      "MongoDB indexes",
+      "Node buffers",
+      "Zlib streams"
+    ],
+    "answerIndex": 0,
+    "explanation": "Route parameters allow dynamic parts in the URL path."
+  },
+  {
+    "id": 183,
+    "category": "Express.js",
+    "level": "basic",
+    "question": "Which object is used to mount middleware only for a specific path prefix?",
+    "options": [
+      "app.use('/path', middleware)",
+      "app.mount(middleware)",
+      "res.use('/path')",
+      "req.use('/path')"
+    ],
+    "answerIndex": 0,
+    "explanation": "app.use(path, middleware) applies middleware for that path prefix."
+  },
+  {
+    "id": 184,
+    "category": "Express.js",
+    "level": "basic",
+    "question": "Which method can return the matched route pattern inside a handler (when available)?",
+    "options": [
+      "req.route.path",
+      "req.pattern",
+      "res.route",
+      "app.currentRoute"
+    ],
+    "answerIndex": 0,
+    "explanation": "req.route.path can show the route path pattern for the matched handler."
+  },
+  {
+    "id": 185,
+    "category": "Express.js",
+    "level": "basic",
+    "question": "Which Express property helps identify if the request is secure (HTTPS) when configured correctly?",
+    "options": ["req.secure", "req.safe", "req.https", "req.ssl"],
+    "answerIndex": 0,
+    "explanation": "req.secure is true if the request is made via HTTPS."
+  },
+  {
+    "id": 186,
+    "category": "Express.js",
+    "level": "basic",
+    "question": "Which Express method can be used to set a response type like 'text/plain'?",
+    "options": [
+      "res.type()",
+      "res.mime()",
+      "res.formatOnly()",
+      "res.contentTypeOnly()"
+    ],
+    "answerIndex": 0,
+    "explanation": "res.type() sets the Content-Type based on extension or mime."
+  },
+  {
+    "id": 187,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "Which MongoDB query finds documents where a field is null OR missing (common behavior)?",
+    "options": [
+      "{ field: null }",
+      "{ field: { $isNull: true } }",
+      "{ field: { $missing: true } }",
+      "{ $null: field }"
+    ],
+    "answerIndex": 0,
+    "explanation": "Querying { field: null } matches null and missing fields (common MongoDB behavior)."
+  },
+  {
+    "id": 188,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "Which operator matches documents where a field is NOT in an array of values?",
+    "options": ["$nin", "$notIn", "$out", "$exclude"],
+    "answerIndex": 0,
+    "explanation": "$nin matches values not present in the given array."
+  },
+  {
+    "id": 189,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "Which MongoDB operator matches documents where a field value is within an array of values?",
+    "options": ["$in", "$inside", "$among", "$within"],
+    "answerIndex": 0,
+    "explanation": "$in checks if a field value is one of the given values."
+  },
+  {
+    "id": 190,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "Which MongoDB update operator sets a value only if the field does not exist?",
+    "options": ["$setOnInsert", "$setIfMissing", "$default", "$init"],
+    "answerIndex": 0,
+    "explanation": "$setOnInsert works with upsert to set fields only on insert."
+  },
+  {
+    "id": 191,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "What does 'upsert: true' mean in MongoDB update?",
+    "options": [
+      "Update and insert if not found",
+      "Only insert, never update",
+      "Only update existing",
+      "Deletes and inserts"
+    ],
+    "answerIndex": 0,
+    "explanation": "Upsert updates if found; otherwise inserts a new document."
+  },
+  {
+    "id": 192,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "Which Mongoose method updates many documents?",
+    "options": [
+      "Model.updateMany()",
+      "Model.updateAll()",
+      "Model.changeMany()",
+      "Model.patchMany()"
+    ],
+    "answerIndex": 0,
+    "explanation": "updateMany() updates all documents matching a filter."
+  },
+  {
+    "id": 193,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "Which Mongoose method deletes by id directly?",
+    "options": [
+      "Model.findByIdAndDelete()",
+      "Model.deleteById()",
+      "Model.removeById()",
+      "Model.dropById()"
+    ],
+    "answerIndex": 0,
+    "explanation": "findByIdAndDelete() deletes a document by _id."
+  },
+  {
+    "id": 194,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "Which Mongoose method replaces a document completely by id?",
+    "options": [
+      "Model.findByIdAndReplace()",
+      "Model.fullUpdateById()",
+      "Model.replaceDoc()",
+      "Model.putById()"
+    ],
+    "answerIndex": 0,
+    "explanation": "findByIdAndReplace() replaces the whole document (MongoDB replaceOne behavior)."
+  },
+  {
+    "id": 195,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "In Mongoose, what does 'min' validator do for numbers?",
+    "options": [
+      "Sets minimum allowed value",
+      "Sets maximum allowed value",
+      "Rounds the number",
+      "Converts to string"
+    ],
+    "answerIndex": 0,
+    "explanation": "min ensures a number is not less than a specified value."
+  },
+  {
+    "id": 196,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "In Mongoose, what does 'maxlength' validator do for strings?",
+    "options": [
+      "Limits max string length",
+      "Forces uppercase",
+      "Encrypts string",
+      "Creates index"
+    ],
+    "answerIndex": 0,
+    "explanation": "maxlength restricts the maximum length of a string."
+  },
+  {
+    "id": 197,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "In MongoDB Compass, what is a common use of the 'Filter' box?",
+    "options": [
+      "Run find queries using JSON filter",
+      "Write CSS rules",
+      "Create Express routes",
+      "Install npm packages"
+    ],
+    "answerIndex": 0,
+    "explanation": "Compass filter is used to query documents using MongoDB filter syntax."
+  },
+  {
+    "id": 198,
+    "category": "Express.js",
+    "level": "basic",
+    "question": "Which Express method can respond differently based on Accept header (content negotiation)?",
+    "options": [
+      "res.format()",
+      "res.accept()",
+      "res.negotiate()",
+      "res.pickType()"
+    ],
+    "answerIndex": 0,
+    "explanation": "res.format() sends a response based on the Accept header."
+  },
+  {
+    "id": 199,
+    "category": "Node.js",
+    "level": "basic",
+    "question": "Which module helps create TCP servers in Node.js?",
+    "options": ["net", "tcp", "socket", "http"],
+    "answerIndex": 0,
+    "explanation": "The net module provides an asynchronous network API for TCP servers/clients."
+  },
+  {
+    "id": 200,
+    "category": "Node.js",
+    "level": "basic",
+    "question": "Which Node.js module helps work with URLs (parsing/formatting)?",
+    "options": ["url", "link", "uri", "router"],
+    "answerIndex": 0,
+    "explanation": "The built-in url module helps parse and format URLs."
+  },
+
+  {
+    "id": 201,
+    "category": "Node.js",
+    "level": "basic",
+    "question": "Which Node.js module provides utilities for working with file and directory paths?",
+    "options": ["querystring", "path", "dns", "repl"],
+    "answerIndex": 1,
+    "explanation": "The path module helps join, resolve, and parse file system paths."
+  },
+  {
+    "id": 202,
+    "category": "Node.js",
+    "level": "basic",
+    "question": "Which Node.js method is used to resolve a file path to an absolute path?",
+    "options": [
+      "path.absolute()",
+      "path.resolve()",
+      "path.full()",
+      "path.fixed()"
+    ],
+    "answerIndex": 1,
+    "explanation": "path.resolve() builds an absolute path from given segments."
+  },
+  {
+    "id": 203,
+    "category": "Node.js",
+    "level": "basic",
+    "question": "Which Node.js method joins path segments safely for the current OS?",
+    "options": ["path.merge()", "path.join()", "path.concat()", "path.link()"],
+    "answerIndex": 1,
+    "explanation": "path.join() joins path parts using the correct separator."
+  },
+  {
+    "id": 204,
+    "category": "Node.js",
+    "level": "basic",
+    "question": "Which Node.js module can be used to work with DNS lookups?",
+    "options": ["dns", "net", "tls", "cluster"],
+    "answerIndex": 0,
+    "explanation": "The dns module provides name resolution functions."
+  },
+  {
+    "id": 205,
+    "category": "Node.js",
+    "level": "basic",
+    "question": "Which Node.js module provides a Read-Eval-Print Loop (interactive shell)?",
+    "options": ["repl", "shell", "cli", "prompt"],
+    "answerIndex": 0,
+    "explanation": "The repl module provides the interactive Node.js REPL."
+  },
+  {
+    "id": 206,
+    "category": "Node.js",
+    "level": "basic",
+    "question": "Which Node.js module helps run the same server code on multiple CPU cores?",
+    "options": ["cluster", "threads", "os", "perf_hooks"],
+    "answerIndex": 0,
+    "explanation": "The cluster module can fork worker processes to use multiple cores."
+  },
+  {
+    "id": 207,
+    "category": "Node.js",
+    "level": "basic",
+    "question": "Which Node.js module provides information about CPU and memory of the system?",
+    "options": ["os", "system", "hardware", "device"],
+    "answerIndex": 0,
+    "explanation": "The os module provides system-related utility methods and properties."
+  },
+  {
+    "id": 208,
+    "category": "Node.js",
+    "level": "basic",
+    "question": "Which Node.js method returns the current working directory?",
+    "options": [
+      "process.cwd()",
+      "process.dir()",
+      "process.pwd()",
+      "process.workdir()"
+    ],
+    "answerIndex": 0,
+    "explanation": "process.cwd() returns the current working directory of the Node process."
+  },
+  {
+    "id": 209,
+    "category": "Node.js",
+    "level": "basic",
+    "question": "Which Node.js API listens for unhandled Promise rejections?",
+    "options": [
+      "process.on('unhandledRejection')",
+      "process.on('promiseError')",
+      "process.catch('rejection')",
+      "node.on('unhandled')"
+    ],
+    "answerIndex": 0,
+    "explanation": "process.on('unhandledRejection', ...) catches unhandled Promise rejections."
+  },
+  {
+    "id": 210,
+    "category": "Node.js",
+    "level": "basic",
+    "question": "Which Node.js API listens for uncaught exceptions?",
+    "options": [
+      "process.on('uncaughtException')",
+      "process.on('fatalError')",
+      "process.on('crash')",
+      "node.on('exception')"
+    ],
+    "answerIndex": 0,
+    "explanation": "process.on('uncaughtException', ...) can catch exceptions not handled elsewhere."
+  },
+  {
+    "id": 211,
+    "category": "Node.js",
+    "level": "basic",
+    "question": "Which Node.js module is used to generate random bytes for tokens?",
+    "options": ["crypto", "buffer", "random", "secure"],
+    "answerIndex": 0,
+    "explanation": "crypto.randomBytes() can generate secure random bytes."
+  },
+  {
+    "id": 212,
+    "category": "Node.js",
+    "level": "basic",
+    "question": "Which Node.js method can convert a string to a Buffer?",
+    "options": [
+      "Buffer.from()",
+      "Buffer.parse()",
+      "Buffer.make()",
+      "Buffer.toBuffer()"
+    ],
+    "answerIndex": 0,
+    "explanation": "Buffer.from(string) creates a Buffer from a string."
+  },
+  {
+    "id": 213,
+    "category": "Node.js",
+    "level": "basic",
+    "question": "Which Node.js module is commonly used to handle WebSocket communication (external)?",
+    "options": ["ws", "socket-http", "websock", "wss-core"],
+    "answerIndex": 0,
+    "explanation": "The 'ws' package is a popular WebSocket library for Node.js."
+  },
+  {
+    "id": 214,
+    "category": "Node.js",
+    "level": "basic",
+    "question": "Which Node.js module is used to create HTTP/2 servers?",
+    "options": ["http2", "https2", "net2", "httpplus"],
+    "answerIndex": 0,
+    "explanation": "The http2 module supports HTTP/2 in Node.js."
+  },
+  {
+    "id": 215,
+    "category": "Node.js",
+    "level": "basic",
+    "question": "Which Node.js object provides standard output writing?",
+    "options": [
+      "process.stdout",
+      "console.out",
+      "process.output",
+      "node.stdout"
+    ],
+    "answerIndex": 0,
+    "explanation": "process.stdout is a writable stream for standard output."
+  },
+  {
+    "id": 216,
+    "category": "Node.js",
+    "level": "basic",
+    "question": "Which Node.js object provides standard error writing?",
+    "options": [
+      "process.stderr",
+      "console.err",
+      "process.error",
+      "node.stderr"
+    ],
+    "answerIndex": 0,
+    "explanation": "process.stderr is a writable stream for standard error."
+  },
+  {
+    "id": 217,
+    "category": "Node.js",
+    "level": "basic",
+    "question": "Which Node.js module helps create readline prompts from terminal input?",
+    "options": ["readline", "inputline", "terminal", "promptline"],
+    "answerIndex": 0,
+    "explanation": "The readline module reads input from stdin and writes to stdout."
+  },
+  {
+    "id": 218,
+    "category": "Node.js",
+    "level": "basic",
+    "question": "Which Node.js API measures performance timings (built-in)?",
+    "options": ["perf_hooks", "timers", "speed", "benchmark"],
+    "answerIndex": 0,
+    "explanation": "perf_hooks provides performance measurement tools like performance.now()."
+  },
+  {
+    "id": 219,
+    "category": "Express.js",
+    "level": "basic",
+    "question": "Which Express middleware helps protect apps from some well-known vulnerabilities by setting headers?",
+    "options": ["helmet", "multer", "dotenv", "axios"],
+    "answerIndex": 0,
+    "explanation": "helmet sets security-related HTTP headers."
+  },
+  {
+    "id": 220,
+    "category": "Express.js",
+    "level": "basic",
+    "question": "Which Express middleware can limit repeated requests (rate limiting) (commonly external)?",
+    "options": [
+      "express-rate-limit",
+      "express-stop",
+      "rateblocker",
+      "limit-js"
+    ],
+    "answerIndex": 0,
+    "explanation": "express-rate-limit is commonly used to limit request rates."
+  },
+  {
+    "id": 221,
+    "category": "Express.js",
+    "level": "basic",
+    "question": "Which Express middleware helps prevent HTTP parameter pollution (commonly external)?",
+    "options": ["hpp", "cors", "morgan", "cookie-parser"],
+    "answerIndex": 0,
+    "explanation": "hpp helps protect against HTTP Parameter Pollution."
+  },
+  {
+    "id": 222,
+    "category": "Express.js",
+    "level": "basic",
+    "question": "Which Express response method sets 'Content-Type: application/json' automatically?",
+    "options": ["res.json()", "res.sendFile()", "res.redirect()", "res.end()"],
+    "answerIndex": 0,
+    "explanation": "res.json() sends JSON and sets correct headers."
+  },
+  {
+    "id": 223,
+    "category": "Express.js",
+    "level": "basic",
+    "question": "Which Express request property gives the hostname from the request?",
+    "options": ["req.hostname", "req.hostName()", "req.domain", "req.server"],
+    "answerIndex": 0,
+    "explanation": "req.hostname contains the hostname derived from the Host header."
+  },
+  {
+    "id": 224,
+    "category": "Express.js",
+    "level": "basic",
+    "question": "Which Express request property gives the client's IP address (basic)?",
+    "options": ["req.ip", "req.clientIp", "req.address", "req.remote"],
+    "answerIndex": 0,
+    "explanation": "req.ip provides the remote IP (may depend on proxy settings)."
+  },
+  {
+    "id": 225,
+    "category": "Express.js",
+    "level": "basic",
+    "question": "Which Express request method checks if the request Content-Type matches a type?",
+    "options": ["req.is()", "req.type()", "req.mime()", "req.matchType()"],
+    "answerIndex": 0,
+    "explanation": "req.is(type) checks the request Content-Type."
+  },
+  {
+    "id": 226,
+    "category": "Express.js",
+    "level": "basic",
+    "question": "Which Express request method checks if a given header is accepted by the client?",
+    "options": [
+      "req.accepts()",
+      "req.allows()",
+      "req.permits()",
+      "req.supports()"
+    ],
+    "answerIndex": 0,
+    "explanation": "req.accepts() checks acceptable response types based on Accept header."
+  },
+  {
+    "id": 227,
+    "category": "Express.js",
+    "level": "basic",
+    "question": "Which Express request method reads a specific header value?",
+    "options": ["req.get()", "req.read()", "req.header()", "req.take()"],
+    "answerIndex": 0,
+    "explanation": "req.get('Header-Name') returns a header value."
+  },
+  {
+    "id": 228,
+    "category": "Express.js",
+    "level": "basic",
+    "question": "What does res.end() do in an Express response?",
+    "options": [
+      "Ends the response without sending more data",
+      "Parses JSON body",
+      "Connects MongoDB",
+      "Restarts server"
+    ],
+    "answerIndex": 0,
+    "explanation": "res.end() ends the response process."
+  },
+  {
+    "id": 229,
+    "category": "Express.js",
+    "level": "basic",
+    "question": "Which Express method can set multiple response headers at once using an object?",
+    "options": [
+      "res.set()",
+      "res.multiSet()",
+      "res.headers()",
+      "res.applyHeaders()"
+    ],
+    "answerIndex": 0,
+    "explanation": "res.set({ key: value }) can set multiple headers."
+  },
+  {
+    "id": 230,
+    "category": "Express.js",
+    "level": "basic",
+    "question": "Which Express method checks if a response header is already set?",
+    "options": [
+      "res.get()",
+      "res.has()",
+      "res.headerExists()",
+      "res.checkHeader()"
+    ],
+    "answerIndex": 0,
+    "explanation": "res.get('Header-Name') reads a response header value."
+  },
+  {
+    "id": 231,
+    "category": "Express.js",
+    "level": "basic",
+    "question": "Which Express method sets a response header to trigger a file download in browser?",
+    "options": [
+      "res.attachment()",
+      "res.downloadHeader()",
+      "res.fileAttach()",
+      "res.forceDownload()"
+    ],
+    "answerIndex": 0,
+    "explanation": "res.attachment() sets Content-Disposition to attachment."
+  },
+  {
+    "id": 232,
+    "category": "Express.js",
+    "level": "basic",
+    "question": "Which Express response method helps create caching headers easily (example: res.set)?",
+    "options": ["res.set()", "res.cache()", "res.maxAge()", "res.store()"],
+    "answerIndex": 0,
+    "explanation": "Caching headers are typically set using res.set('Cache-Control', ...)."
+  },
+  {
+    "id": 233,
+    "category": "Express.js",
+    "level": "basic",
+    "question": "Which Express app property holds the router stack internally (conceptually)?",
+    "options": [
+      "app._router",
+      "app.routerStack",
+      "app.routesList",
+      "app.stack()"
+    ],
+    "answerIndex": 0,
+    "explanation": "app._router contains internal routing stack (not recommended to depend on)."
+  },
+  {
+    "id": 234,
+    "category": "Express.js",
+    "level": "basic",
+    "question": "Which Express method is used to handle PUT requests?",
+    "options": ["app.put()", "app.update()", "app.replace()", "app.change()"],
+    "answerIndex": 0,
+    "explanation": "app.put() registers a handler for PUT requests."
+  },
+  {
+    "id": 235,
+    "category": "Express.js",
+    "level": "basic",
+    "question": "Which Express method is used to handle PATCH requests?",
+    "options": ["app.patch()", "app.partial()", "app.edit()", "app.modify()"],
+    "answerIndex": 0,
+    "explanation": "app.patch() registers a handler for PATCH requests."
+  },
+  {
+    "id": 236,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "Which MongoDB method returns one matching document (native driver/collection)?",
+    "options": ["findOne()", "findFirst()", "getOne()", "selectOne()"],
+    "answerIndex": 0,
+    "explanation": "findOne() returns the first matching document."
+  },
+  {
+    "id": 237,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "Which MongoDB method replaces one entire document by filter?",
+    "options": ["replaceOne()", "updateAll()", "setOne()", "swapOne()"],
+    "answerIndex": 0,
+    "explanation": "replaceOne() replaces the document except for _id."
+  },
+  {
+    "id": 238,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "Which MongoDB method updates exactly one document by filter?",
+    "options": ["updateOne()", "updateSingle()", "patchOne()", "modifyOne()"],
+    "answerIndex": 0,
+    "explanation": "updateOne() updates one matching document."
+  },
+  {
+    "id": 239,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "Which MongoDB method finds documents and returns a cursor?",
+    "options": ["find()", "findMany()", "getAll()", "selectAll()"],
+    "answerIndex": 0,
+    "explanation": "find() returns a cursor that can be iterated."
+  },
+  {
+    "id": 240,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "Which MongoDB query operator matches fields that are equal to a value?",
+    "options": [
+      "Direct match like { field: value }",
+      "$eqOnly",
+      "$matchValue",
+      "$same"
+    ],
+    "answerIndex": 0,
+    "explanation": "MongoDB supports direct equality queries using { field: value }."
+  },
+  {
+    "id": 241,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "Which MongoDB operator is used for text search on a text index?",
+    "options": ["$text", "$search", "$findText", "$containsText"],
+    "answerIndex": 0,
+    "explanation": "$text performs text search on fields indexed with a text index."
+  },
+  {
+    "id": 242,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "Which MongoDB method creates an index on a collection?",
+    "options": ["createIndex()", "addIndex()", "makeIndex()", "indexOn()"],
+    "answerIndex": 0,
+    "explanation": "createIndex() creates an index on a field or fields."
+  },
+  {
+    "id": 243,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "Which MongoDB method drops (removes) an index by name?",
+    "options": [
+      "dropIndex()",
+      "removeIndex()",
+      "deleteIndex()",
+      "clearIndex()"
+    ],
+    "answerIndex": 0,
+    "explanation": "dropIndex() removes an index from a collection."
+  },
+  {
+    "id": 244,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "Which MongoDB operation removes an entire collection including its documents?",
+    "options": ["drop()", "deleteMany({})", "removeAll()", "truncate()"],
+    "answerIndex": 0,
+    "explanation": "drop() deletes the whole collection and its indexes."
+  },
+  {
+    "id": 245,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "Which MongoDB method returns statistics about a collection (like size, count)?",
+    "options": ["stats()", "info()", "describe()", "details()"],
+    "answerIndex": 0,
+    "explanation": "collection.stats() returns collection statistics."
+  },
+  {
+    "id": 246,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "Which MongoDB method explains how a query will be executed (query plan)?",
+    "options": ["explain()", "plan()", "analyze()", "debugQuery()"],
+    "answerIndex": 0,
+    "explanation": "explain() shows query execution details and plan."
+  },
+  {
+    "id": 247,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "Which MongoDB method creates a text index on a field (basic example)?",
+    "options": [
+      "createIndex({ field: 'text' })",
+      "createIndex({ text: field })",
+      "textIndex(field)",
+      "indexText(field)"
+    ],
+    "answerIndex": 0,
+    "explanation": "Text index is created using createIndex with 'text' type."
+  },
+  {
+    "id": 248,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "Which MongoDB operator is used to include fields in a projection?",
+    "options": ["1", "true only", "$include", "$pick"],
+    "answerIndex": 0,
+    "explanation": "In projection, field: 1 includes that field."
+  },
+  {
+    "id": 249,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "Which MongoDB operator is used to exclude fields in a projection?",
+    "options": ["0", "false only", "$exclude", "$dropField"],
+    "answerIndex": 0,
+    "explanation": "In projection, field: 0 excludes that field."
+  },
+  {
+    "id": 250,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "What is the default unique field MongoDB creates for every document?",
+    "options": ["_key", "_docId", "_id", "idOnly"],
+    "answerIndex": 2,
+    "explanation": "MongoDB automatically creates an _id field for each document."
+  },
+  {
+    "id": 251,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "Which Mongoose schema option automatically removes __v from JSON output (commonly done via transform)?",
+    "options": ["toJSON", "hideVersion", "noVersion", "cleanJSON"],
+    "answerIndex": 0,
+    "explanation": "toJSON can be configured with transform to remove fields like __v."
+  },
+  {
+    "id": 252,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "Which Mongoose schema option can enable virtuals in JSON output?",
+    "options": [
+      "toJSON: { virtuals: true }",
+      "virtuals: true",
+      "enableVirtuals()",
+      "jsonVirtuals: true"
+    ],
+    "answerIndex": 0,
+    "explanation": "Setting toJSON virtuals true includes virtual fields in JSON output."
+  },
+  {
+    "id": 253,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "In Mongoose, what is a 'virtual' field?",
+    "options": [
+      "A computed field not stored in DB",
+      "A hidden database collection",
+      "An encrypted field",
+      "A backup index"
+    ],
+    "answerIndex": 0,
+    "explanation": "Virtuals are computed properties not persisted to MongoDB."
+  },
+  {
+    "id": 254,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "In Mongoose, what does 'trim: true' do for strings?",
+    "options": [
+      "Removes spaces at start/end",
+      "Encrypts the value",
+      "Converts to number",
+      "Adds indexes"
+    ],
+    "answerIndex": 0,
+    "explanation": "trim removes leading and trailing whitespace."
+  },
+  {
+    "id": 255,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "In Mongoose, what does 'lowercase: true' do for strings?",
+    "options": [
+      "Converts string to lowercase before saving",
+      "Validates only lowercase",
+      "Encrypts lowercase",
+      "Deletes uppercase letters"
+    ],
+    "answerIndex": 0,
+    "explanation": "lowercase converts the value to lowercase before saving."
+  },
+  {
+    "id": 256,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "In Mongoose, what does 'uppercase: true' do for strings?",
+    "options": [
+      "Converts string to uppercase before saving",
+      "Validates only uppercase",
+      "Encrypts uppercase",
+      "Adds caps lock"
+    ],
+    "answerIndex": 0,
+    "explanation": "uppercase converts the value to uppercase before saving."
+  },
+  {
+    "id": 257,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "Which Mongoose query method selects only specific fields?",
+    "options": ["select()", "pick()", "fields()", "only()"],
+    "answerIndex": 0,
+    "explanation": "select() controls which fields are returned."
+  },
+  {
+    "id": 258,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "Which Mongoose query method sorts results?",
+    "options": ["sort()", "order()", "arrange()", "rank()"],
+    "answerIndex": 0,
+    "explanation": "sort() orders query results by fields."
+  },
+  {
+    "id": 259,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "Which Mongoose query method limits the number of results?",
+    "options": ["limit()", "cap()", "max()", "top()"],
+    "answerIndex": 0,
+    "explanation": "limit() restricts the number of returned documents."
+  },
+  {
+    "id": 260,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "Which Mongoose query method skips a number of results (pagination)?",
+    "options": ["skip()", "offset()", "jump()", "pass()"],
+    "answerIndex": 0,
+    "explanation": "skip() ignores the first N results."
+  },
+  {
+    "id": 261,
+    "category": "Express.js",
+    "level": "basic",
+    "question": "Which Express method is used to group routes under the same base path using a Router?",
+    "options": [
+      "router.use()",
+      "router.base()",
+      "router.group()",
+      "router.mountBase()"
+    ],
+    "answerIndex": 0,
+    "explanation": "router.use() can mount middleware/routes under a base path inside the router."
+  },
+  {
+    "id": 262,
+    "category": "Express.js",
+    "level": "basic",
+    "question": "Which Express Router method defines a route for GET requests?",
+    "options": [
+      "router.get()",
+      "router.fetch()",
+      "router.read()",
+      "router.select()"
+    ],
+    "answerIndex": 0,
+    "explanation": "router.get() defines a GET handler on a router."
+  },
+  {
+    "id": 263,
+    "category": "Express.js",
+    "level": "basic",
+    "question": "Which Express Router method defines a route for POST requests?",
+    "options": [
+      "router.post()",
+      "router.create()",
+      "router.push()",
+      "router.add()"
+    ],
+    "answerIndex": 0,
+    "explanation": "router.post() defines a POST handler on a router."
+  },
+  {
+    "id": 264,
+    "category": "Express.js",
+    "level": "basic",
+    "question": "Which Express response method sets the Location header for redirects automatically?",
+    "options": [
+      "res.redirect()",
+      "res.locationOnly()",
+      "res.goto()",
+      "res.relocate()"
+    ],
+    "answerIndex": 0,
+    "explanation": "res.redirect() sets Location header and sends a redirect response."
+  },
+  {
+    "id": 265,
+    "category": "Express.js",
+    "level": "basic",
+    "question": "Which Express request property gives the original URL including mounted router prefixes?",
+    "options": [
+      "req.originalUrl",
+      "req.fullUrl",
+      "req.baseUrlOnly",
+      "req.completePath"
+    ],
+    "answerIndex": 0,
+    "explanation": "req.originalUrl includes the complete original request URL."
+  },
+  {
+    "id": 266,
+    "category": "Express.js",
+    "level": "basic",
+    "question": "Which Express request property shows the path where a router was mounted?",
+    "options": ["req.baseUrl", "req.mountPath", "req.routerPath", "req.prefix"],
+    "answerIndex": 0,
+    "explanation": "req.baseUrl shows the matched URL path on which the router was mounted."
+  },
+  {
+    "id": 267,
+    "category": "Express.js",
+    "level": "basic",
+    "question": "Which Express response method sets the response location header without redirecting?",
+    "options": [
+      "res.location()",
+      "res.place()",
+      "res.setLocationOnly()",
+      "res.loc()"
+    ],
+    "answerIndex": 0,
+    "explanation": "res.location(url) sets the Location header."
+  },
+  {
+    "id": 268,
+    "category": "Express.js",
+    "level": "basic",
+    "question": "Which Express app setting can help when your app is behind a proxy (like Nginx)?",
+    "options": ["trust proxy", "use proxy", "behind proxy", "proxy mode"],
+    "answerIndex": 0,
+    "explanation": "Setting 'trust proxy' helps Express read forwarded headers correctly."
+  },
+  {
+    "id": 269,
+    "category": "Express.js",
+    "level": "basic",
+    "question": "Which Express method returns the mount path of the app (when mounted as sub-app)?",
+    "options": ["app.mountpath", "app.path()", "app.base()", "app.prefix()"],
+    "answerIndex": 0,
+    "explanation": "app.mountpath contains the path pattern(s) where the app is mounted."
+  },
+  {
+    "id": 270,
+    "category": "Node.js",
+    "level": "basic",
+    "question": "Which Node.js module provides a way to create a simple HTTP client request?",
+    "options": ["http", "request", "client", "fetch"],
+    "answerIndex": 0,
+    "explanation": "The http module can also make client requests via http.request()."
+  },
+  {
+    "id": 271,
+    "category": "Node.js",
+    "level": "basic",
+    "question": "Which Node.js module helps parse query strings like 'a=1&b=2'?",
+    "options": ["querystring", "qs-native", "urlparams", "searchparams"],
+    "answerIndex": 0,
+    "explanation": "querystring can parse and stringify URL query strings."
+  },
+  {
+    "id": 272,
+    "category": "Node.js",
+    "level": "basic",
+    "question": "Which Node.js module provides utilities for formatting and inspecting objects?",
+    "options": ["util", "inspect", "format", "debugger"],
+    "answerIndex": 0,
+    "explanation": "The util module provides helper functions like util.format and util.inspect."
+  },
+  {
+    "id": 273,
+    "category": "Node.js",
+    "level": "basic",
+    "question": "Which Node.js function is used to schedule repeated execution every fixed interval?",
+    "options": [
+      "setInterval()",
+      "setTimeout()",
+      "process.nextTick()",
+      "repeat()"
+    ],
+    "answerIndex": 0,
+    "explanation": "setInterval() runs a callback repeatedly after every interval."
+  },
+  {
+    "id": 274,
+    "category": "Node.js",
+    "level": "basic",
+    "question": "Which Node.js function clears a repeating interval?",
+    "options": [
+      "clearInterval()",
+      "stopInterval()",
+      "removeInterval()",
+      "endInterval()"
+    ],
+    "answerIndex": 0,
+    "explanation": "clearInterval() stops a setInterval timer."
+  },
+  {
+    "id": 275,
+    "category": "Node.js",
+    "level": "basic",
+    "question": "Which Node.js function clears a timeout?",
+    "options": [
+      "clearTimeout()",
+      "stopTimeout()",
+      "removeTimeout()",
+      "endTimeout()"
+    ],
+    "answerIndex": 0,
+    "explanation": "clearTimeout() cancels a setTimeout timer."
+  },
+  {
+    "id": 276,
+    "category": "Node.js",
+    "level": "basic",
+    "question": "Which Node.js module provides utilities to encode/decode base64 or other encodings?",
+    "options": ["Buffer", "crypto", "base64", "encode"],
+    "answerIndex": 0,
+    "explanation": "Buffer supports encoding/decoding using methods like Buffer.from(str, 'base64')."
+  },
+  {
+    "id": 277,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "Which MongoDB method returns the current database name in shell?",
+    "options": ["db.getName()", "db.name()", "db.current()", "db.this()"],
+    "answerIndex": 1,
+    "explanation": "In Mongo shell, db.getName() exists, but commonly db.getName() or db itself shows context; db.getName() is the correct method."
+  },
+  {
+    "id": 278,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "Which MongoDB shell command shows the current database you are using?",
+    "options": ["db", "show current", "which db", "current db"],
+    "answerIndex": 0,
+    "explanation": "Typing 'db' in the shell shows the current database context."
+  },
+  {
+    "id": 279,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "Which MongoDB method returns estimated document count faster (approx)?",
+    "options": [
+      "estimatedDocumentCount()",
+      "countFast()",
+      "approxCount()",
+      "quickCount()"
+    ],
+    "answerIndex": 0,
+    "explanation": "estimatedDocumentCount() can be faster as it uses collection metadata."
+  },
+  {
+    "id": 280,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "Which MongoDB operator matches documents where a field value is greater than a value?",
+    "options": ["$gt", "$greater", "$more", "$up"],
+    "answerIndex": 0,
+    "explanation": "$gt means greater than."
+  },
+  {
+    "id": 281,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "Which MongoDB operator matches documents where a field is less than or equal to a value?",
+    "options": ["$lte", "$le", "$maxEq", "$belowEq"],
+    "answerIndex": 0,
+    "explanation": "$lte means less than or equal."
+  },
+  {
+    "id": 282,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "Which MongoDB query operator matches values in an array of conditions (logical AND)?",
+    "options": ["$and", "$all", "$both", "$together"],
+    "answerIndex": 0,
+    "explanation": "$and combines multiple query conditions."
+  },
+  {
+    "id": 283,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "Which MongoDB operator matches if a field value matches any of multiple expressions (logical OR)?",
+    "options": ["$or", "$any", "$either", "$some"],
+    "answerIndex": 0,
+    "explanation": "$or matches if any condition in the array is true."
+  },
+  {
+    "id": 284,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "Which MongoDB operator negates a query expression?",
+    "options": ["$not", "$no", "$negate", "$invert"],
+    "answerIndex": 0,
+    "explanation": "$not performs logical NOT on an operator expression."
+  },
+  {
+    "id": 285,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "Which MongoDB operator matches values that are not within a range or condition set?",
+    "options": ["$nor", "$notOr", "$noneOr", "$orNot"],
+    "answerIndex": 0,
+    "explanation": "$nor matches documents that fail all given conditions."
+  },
+  {
+    "id": 286,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "Which MongoDB feature allows running JavaScript expressions in queries (use carefully)?",
+    "options": ["$where", "$js", "$code", "$evalQuery"],
+    "answerIndex": 0,
+    "explanation": "$where allows custom JS but is slower and risky; generally avoided."
+  },
+  {
+    "id": 287,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "Which MongoDB update operator adds a value to an array only if it does not already exist?",
+    "options": ["$addToSet", "$pushUnique", "$uniquePush", "$noDuplicate"],
+    "answerIndex": 0,
+    "explanation": "$addToSet prevents duplicate values in arrays."
+  },
+  {
+    "id": 288,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "Which MongoDB update operator multiplies a numeric field by a value?",
+    "options": ["$mul", "$times", "$multiply", "$product"],
+    "answerIndex": 0,
+    "explanation": "$mul multiplies the value of a field by the given number."
+  },
+  {
+    "id": 289,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "Which MongoDB update operator sets a field to the current date/time?",
+    "options": ["$currentDate", "$now", "$dateNow", "$time"],
+    "answerIndex": 0,
+    "explanation": "$currentDate sets a field to the current date."
+  },
+  {
+    "id": 290,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "Which MongoDB update operator sets a field to the minimum of its current value and a specified value?",
+    "options": ["$min", "$smallest", "$least", "$lower"],
+    "answerIndex": 0,
+    "explanation": "$min updates the field only if the specified value is lower."
+  },
+  {
+    "id": 291,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "Which MongoDB update operator sets a field to the maximum of its current value and a specified value?",
+    "options": ["$max", "$largest", "$greatest", "$higher"],
+    "answerIndex": 0,
+    "explanation": "$max updates the field only if the specified value is higher."
+  },
+  {
+    "id": 292,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "In Mongoose, which option converts documents to plain objects?",
+    "options": ["toObject()", "toPlain()", "asObject()", "docify()"],
+    "answerIndex": 0,
+    "explanation": "doc.toObject() converts a Mongoose document to a plain JS object."
+  },
+  {
+    "id": 293,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "In Mongoose, which option converts documents to JSON?",
+    "options": ["toJSON()", "toJsonify()", "asJSON()", "json()"],
+    "answerIndex": 0,
+    "explanation": "doc.toJSON() converts a Mongoose document to JSON representation."
+  },
+  {
+    "id": 294,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "In Mongoose, what does 'enum' validator do?",
+    "options": [
+      "Restricts values to a set of allowed values",
+      "Encrypts a field",
+      "Makes field optional",
+      "Creates a compound index"
+    ],
+    "answerIndex": 0,
+    "explanation": "enum ensures the field value is one of the allowed values."
+  },
+  {
+    "id": 295,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "In Mongoose, what does 'match' validator do?",
+    "options": [
+      "Validates a string with a regular expression",
+      "Matches two collections",
+      "Matches routes in Express",
+      "Matches Node version"
+    ],
+    "answerIndex": 0,
+    "explanation": "match validates string values against a regex pattern."
+  },
+  {
+    "id": 296,
+    "category": "Node.js",
+    "level": "basic",
+    "question": "Which Node.js module is used to work with worker threads (multi-threading)?",
+    "options": ["worker_threads", "threads", "cluster_threads", "multiworker"],
+    "answerIndex": 0,
+    "explanation": "worker_threads enables running JS in parallel threads."
+  },
+  {
+    "id": 297,
+    "category": "Express.js",
+    "level": "basic",
+    "question": "Which Express method returns a Router instance that can be exported from a routes file?",
+    "options": [
+      "express.Router()",
+      "express.Route()",
+      "app.Router()",
+      "router.create()"
+    ],
+    "answerIndex": 0,
+    "explanation": "express.Router() creates a router that can be exported and mounted."
+  },
+  {
+    "id": 298,
+    "category": "Express.js",
+    "level": "basic",
+    "question": "Which Express response method sends a response with a specific status and JSON in one chain?",
+    "options": [
+      "res.status(code).json(data)",
+      "res.jsonStatus(code, data)",
+      "res.sendJSON(code, data)",
+      "res.chain(code).json(data)"
+    ],
+    "answerIndex": 0,
+    "explanation": "res.status(code).json(data) is the common chained way."
+  },
+  {
+    "id": 299,
+    "category": "Node.js",
+    "level": "basic",
+    "question": "Which Node.js built-in module is used to handle TLS/SSL for secure connections (low-level)?",
+    "options": ["tls", "ssl", "secure", "cert"],
+    "answerIndex": 0,
+    "explanation": "The tls module provides TLS/SSL secure networking."
+  },
+  {
+    "id": 300,
+    "category": "MongoDB",
+    "level": "basic",
+    "question": "Which MongoDB feature ensures atomicity at the single-document level by default?",
+    "options": [
+      "Single-document atomic operations",
+      "Sharding",
+      "MapReduce",
+      "Text Index"
+    ],
+    "answerIndex": 0,
+    "explanation": "MongoDB guarantees atomic updates within a single document."
+  }
+]

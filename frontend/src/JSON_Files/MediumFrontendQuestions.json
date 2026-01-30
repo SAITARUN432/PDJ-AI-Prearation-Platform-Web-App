@@ -1,0 +1,3544 @@
+[
+  {
+    "id": 1,
+    "category": "JavaScript",
+    "level": "medium",
+    "question": "What is the output of: typeof NaN ?",
+    "options": ["'number'", "'NaN'", "'undefined'", "'object'"],
+    "answerIndex": 0,
+    "explanation": "NaN is a special numeric value, so typeof NaN is 'number'."
+  },
+  {
+    "id": 2,
+    "category": "JavaScript",
+    "level": "medium",
+    "question": "Which statement about '==' and '===' is correct?",
+    "options": [
+      "Both compare value only",
+      "== compares value after type coercion, === compares value and type",
+      "=== does type coercion, == does not",
+      "Both compare type only"
+    ],
+    "answerIndex": 1,
+    "explanation": "== coerces types, === is strict (no coercion)."
+  },
+  {
+    "id": 3,
+    "category": "JavaScript",
+    "level": "medium",
+    "question": "What is the output of: Object.is(NaN, NaN) ?",
+    "options": ["true", "false", "throws error", "undefined"],
+    "answerIndex": 0,
+    "explanation": "Object.is considers NaN equal to NaN."
+  },
+  {
+    "id": 4,
+    "category": "JavaScript",
+    "level": "medium",
+    "question": "What is the output of: Object.is(+0, -0) ?",
+    "options": ["true", "false", "throws error", "same as (+0 === -0) always"],
+    "answerIndex": 1,
+    "explanation": "Object.is distinguishes +0 and -0, returns false."
+  },
+  {
+    "id": 5,
+    "category": "JavaScript",
+    "level": "medium",
+    "question": "Which method creates a new array by flattening one level?",
+    "options": ["flat(1)", "flatten()", "reduceFlat()", "merge()"],
+    "answerIndex": 0,
+    "explanation": "Array.prototype.flat(1) flattens one level."
+  },
+  {
+    "id": 6,
+    "category": "JavaScript",
+    "level": "medium",
+    "question": "Which option correctly clones an object with its prototype preserved?",
+    "options": [
+      "{...obj}",
+      "Object.assign({}, obj)",
+      "Object.create(Object.getPrototypeOf(obj), Object.getOwnPropertyDescriptors(obj))",
+      "JSON.parse(JSON.stringify(obj))"
+    ],
+    "answerIndex": 2,
+    "explanation": "This pattern preserves prototype and property descriptors."
+  },
+  {
+    "id": 7,
+    "category": "JavaScript",
+    "level": "medium",
+    "question": "Which statement about closures is correct?",
+    "options": [
+      "Closures only exist in classes",
+      "A closure is a function with access to variables from its outer scope even after outer returns",
+      "Closures prevent garbage collection always",
+      "Closures are the same as callbacks"
+    ],
+    "answerIndex": 1,
+    "explanation": "Closures capture lexical scope."
+  },
+  {
+    "id": 8,
+    "category": "JavaScript",
+    "level": "medium",
+    "question": "What does event loop primarily manage in the browser?",
+    "options": [
+      "GPU rendering only",
+      "Execution order between call stack and queues (tasks/microtasks)",
+      "CSS parsing",
+      "HTTP caching"
+    ],
+    "answerIndex": 1,
+    "explanation": "Event loop coordinates stack and task/microtask queues."
+  },
+  {
+    "id": 9,
+    "category": "JavaScript",
+    "level": "medium",
+    "question": "Which queue runs before the next macrotask?",
+    "options": [
+      "Macrotask queue",
+      "Microtask queue",
+      "Render queue",
+      "IO queue"
+    ],
+    "answerIndex": 1,
+    "explanation": "Microtasks (Promises) run before next macrotask."
+  },
+  {
+    "id": 10,
+    "category": "JavaScript",
+    "level": "medium",
+    "question": "Which API schedules a microtask?",
+    "options": [
+      "setTimeout(fn, 0)",
+      "queueMicrotask(fn)",
+      "requestAnimationFrame(fn)",
+      "setInterval(fn, 0)"
+    ],
+    "answerIndex": 1,
+    "explanation": "queueMicrotask schedules a microtask."
+  },
+  {
+    "id": 11,
+    "category": "JavaScript",
+    "level": "medium",
+    "question": "What is the output of: ['1','2','3'].map(parseInt) ?",
+    "options": ["[1,2,3]", "[1, NaN, NaN]", "[1,1,1]", "[NaN, NaN, NaN]"],
+    "answerIndex": 1,
+    "explanation": "parseInt gets (value, index) => radix becomes 0/1/2, causing NaN for 2."
+  },
+  {
+    "id": 12,
+    "category": "JavaScript",
+    "level": "medium",
+    "question": "Which statement about 'this' in arrow functions is correct?",
+    "options": [
+      "Arrow functions have their own this",
+      "Arrow functions inherit this from the surrounding scope",
+      "Arrow functions bind this to window always",
+      "Arrow functions can be used as constructors"
+    ],
+    "answerIndex": 1,
+    "explanation": "Arrow functions do not have their own this."
+  },
+  {
+    "id": 13,
+    "category": "JavaScript",
+    "level": "medium",
+    "question": "Which method prevents adding new properties but allows changing existing writable ones?",
+    "options": [
+      "Object.freeze()",
+      "Object.seal()",
+      "Object.preventExtensions()",
+      "Object.lock()"
+    ],
+    "answerIndex": 1,
+    "explanation": "seal() prevents add/remove, but can modify existing writable props."
+  },
+  {
+    "id": 14,
+    "category": "JavaScript",
+    "level": "medium",
+    "question": "Which method prevents any changes to existing properties (shallow)?",
+    "options": [
+      "Object.freeze()",
+      "Object.seal()",
+      "Object.preventExtensions()",
+      "Object.block()"
+    ],
+    "answerIndex": 0,
+    "explanation": "freeze() makes properties non-writable and non-configurable (shallow)."
+  },
+  {
+    "id": 15,
+    "category": "JavaScript",
+    "level": "medium",
+    "question": "Which is TRUE about JSON.stringify and functions?",
+    "options": [
+      "Functions are converted to strings",
+      "Functions are removed/ignored in objects",
+      "Functions throw an error always",
+      "Functions become null"
+    ],
+    "answerIndex": 1,
+    "explanation": "Functions are omitted during JSON serialization."
+  },
+  {
+    "id": 16,
+    "category": "JavaScript",
+    "level": "medium",
+    "question": "Which statement about 'debounce' is correct?",
+    "options": [
+      "Runs function at fixed intervals",
+      "Delays execution until after user stops triggering events",
+      "Runs immediately every time",
+      "It is same as throttle"
+    ],
+    "answerIndex": 1,
+    "explanation": "Debounce delays until events stop for a time."
+  },
+  {
+    "id": 17,
+    "category": "JavaScript",
+    "level": "medium",
+    "question": "Which statement about 'throttle' is correct?",
+    "options": [
+      "Runs only after events stop",
+      "Limits function to run at most once per interval",
+      "Runs more frequently than debounce always",
+      "Stops function forever"
+    ],
+    "answerIndex": 1,
+    "explanation": "Throttle limits frequency to an interval."
+  },
+  {
+    "id": 18,
+    "category": "JavaScript",
+    "level": "medium",
+    "question": "Which method can abort a fetch request?",
+    "options": [
+      "AbortController",
+      "CancelToken",
+      "StopFetch",
+      "clearTimeout(fetch)"
+    ],
+    "answerIndex": 0,
+    "explanation": "AbortController can cancel fetch."
+  },
+  {
+    "id": 19,
+    "category": "JavaScript",
+    "level": "medium",
+    "question": "Which is correct about try/catch with async/await?",
+    "options": [
+      "try/catch cannot catch await errors",
+      "try/catch can catch awaited promise rejections",
+      "await never rejects",
+      "catch runs before await"
+    ],
+    "answerIndex": 1,
+    "explanation": "await unwraps rejections as thrown errors."
+  },
+  {
+    "id": 20,
+    "category": "JavaScript",
+    "level": "medium",
+    "question": "Which array method is best to find the first matching item?",
+    "options": ["filter()", "find()", "map()", "reduce()"],
+    "answerIndex": 1,
+    "explanation": "find() returns the first matching element."
+  },
+  {
+    "id": 21,
+    "category": "JavaScript",
+    "level": "medium",
+    "question": "Which array method returns the index of first matching item by condition?",
+    "options": ["findIndex()", "indexOf()", "includes()", "some()"],
+    "answerIndex": 0,
+    "explanation": "findIndex() returns index by predicate."
+  },
+  {
+    "id": 22,
+    "category": "JavaScript",
+    "level": "medium",
+    "question": "Which is TRUE about Map vs Object keys?",
+    "options": [
+      "Map keys must be strings only",
+      "Map can use objects as keys",
+      "Object can use objects as keys without conversion",
+      "Map has no iteration"
+    ],
+    "answerIndex": 1,
+    "explanation": "Map keys can be any type, including objects."
+  },
+  {
+    "id": 23,
+    "category": "JavaScript",
+    "level": "medium",
+    "question": "Which operator checks if a property exists anywhere on the prototype chain?",
+    "options": ["hasOwnProperty", "in", "Object.keys", "typeof"],
+    "answerIndex": 1,
+    "explanation": "'prop' in obj checks own + inherited."
+  },
+  {
+    "id": 24,
+    "category": "JavaScript",
+    "level": "medium",
+    "question": "Which API observes DOM changes (added/removed nodes)?",
+    "options": [
+      "IntersectionObserver",
+      "MutationObserver",
+      "ResizeObserver",
+      "PerformanceObserver"
+    ],
+    "answerIndex": 1,
+    "explanation": "MutationObserver watches DOM mutations."
+  },
+  {
+    "id": 25,
+    "category": "JavaScript",
+    "level": "medium",
+    "question": "Which API observes element size changes?",
+    "options": [
+      "IntersectionObserver",
+      "MutationObserver",
+      "ResizeObserver",
+      "LayoutObserver"
+    ],
+    "answerIndex": 2,
+    "explanation": "ResizeObserver tracks element size changes."
+  },
+  {
+    "id": 26,
+    "category": "JavaScript",
+    "level": "medium",
+    "question": "Which API detects when an element enters the viewport?",
+    "options": [
+      "IntersectionObserver",
+      "MutationObserver",
+      "ResizeObserver",
+      "ScrollObserver"
+    ],
+    "answerIndex": 0,
+    "explanation": "IntersectionObserver tracks visibility in viewport."
+  },
+  {
+    "id": 27,
+    "category": "HTML",
+    "level": "medium",
+    "question": "What is the main benefit of using semantic HTML tags (like <article>, <nav>)?",
+    "options": [
+      "They load faster always",
+      "Better accessibility and SEO meaning",
+      "They automatically style the page",
+      "They prevent XSS"
+    ],
+    "answerIndex": 1,
+    "explanation": "Semantics improve structure for assistive tech and search engines."
+  },
+  {
+    "id": 28,
+    "category": "HTML",
+    "level": "medium",
+    "question": "Which attribute improves performance by deferring offscreen image loading?",
+    "options": ["async", "loading='lazy'", "defer", "fetch='low'"],
+    "answerIndex": 1,
+    "explanation": "loading='lazy' delays loading offscreen images."
+  },
+  {
+    "id": 29,
+    "category": "HTML",
+    "level": "medium",
+    "question": "Which attribute is used for responsive image selection on <img>?",
+    "options": ["srcset", "sourceset", "imgset", "responsive"],
+    "answerIndex": 0,
+    "explanation": "srcset provides multiple image sources."
+  },
+  {
+    "id": 30,
+    "category": "HTML",
+    "level": "medium",
+    "question": "Which attribute pairs with srcset to describe display sizes?",
+    "options": ["sizes", "scale", "widthset", "density"],
+    "answerIndex": 0,
+    "explanation": "sizes tells the browser how large the image will be."
+  },
+  {
+    "id": 31,
+    "category": "HTML",
+    "level": "medium",
+    "question": "What does 'defer' do on a script tag?",
+    "options": [
+      "Executes immediately",
+      "Executes after HTML parsing, in order",
+      "Executes before HTML parsing",
+      "Executes only on click"
+    ],
+    "answerIndex": 1,
+    "explanation": "defer delays execution until parsing ends and preserves order."
+  },
+  {
+    "id": 32,
+    "category": "HTML",
+    "level": "medium",
+    "question": "What does 'async' do on a script tag?",
+    "options": [
+      "Loads and executes independently (order not guaranteed)",
+      "Executes after parsing in order",
+      "Blocks parsing always",
+      "Makes script synchronous"
+    ],
+    "answerIndex": 0,
+    "explanation": "async runs as soon as downloaded, order may change."
+  },
+  {
+    "id": 33,
+    "category": "CSS",
+    "level": "medium",
+    "question": "Which CSS feature helps reduce specificity issues by grouping layers?",
+    "options": ["@scope", "@layer", "@media", "@supports"],
+    "answerIndex": 1,
+    "explanation": "@layer controls cascade order between groups of styles."
+  },
+  {
+    "id": 34,
+    "category": "CSS",
+    "level": "medium",
+    "question": "Which CSS unit is best for scalable typography across the site?",
+    "options": ["px", "rem", "vw only", "cm"],
+    "answerIndex": 1,
+    "explanation": "rem scales based on root font size."
+  },
+  {
+    "id": 35,
+    "category": "CSS",
+    "level": "medium",
+    "question": "Which CSS property can create a new stacking context (commonly)?",
+    "options": ["opacity < 1", "margin", "padding", "font-size"],
+    "answerIndex": 0,
+    "explanation": "opacity less than 1 creates a stacking context."
+  },
+  {
+    "id": 36,
+    "category": "CSS",
+    "level": "medium",
+    "question": "Which property is most appropriate for smooth animations (performance)?",
+    "options": ["top/left", "transform", "width/height", "border-width"],
+    "answerIndex": 1,
+    "explanation": "transform animations are typically more performant."
+  },
+  {
+    "id": 37,
+    "category": "CSS",
+    "level": "medium",
+    "question": "Which property hints the browser an element will animate soon?",
+    "options": ["will-change", "animation-hint", "optimize", "pre-render"],
+    "answerIndex": 0,
+    "explanation": "will-change can help optimize future changes."
+  },
+  {
+    "id": 38,
+    "category": "CSS",
+    "level": "medium",
+    "question": "What is the default flex-direction in a flex container?",
+    "options": ["column", "row", "row-reverse", "column-reverse"],
+    "answerIndex": 1,
+    "explanation": "Default flex-direction is row."
+  },
+  {
+    "id": 39,
+    "category": "CSS",
+    "level": "medium",
+    "question": "Which property controls the minimum size shrink behavior in flex items (common fix)?",
+    "options": [
+      "min-width: 0",
+      "max-width: 0",
+      "flex-shrink: 0 always",
+      "overflow: auto always"
+    ],
+    "answerIndex": 0,
+    "explanation": "Setting min-width: 0 often fixes overflow in flex children."
+  },
+  {
+    "id": 40,
+    "category": "CSS",
+    "level": "medium",
+    "question": "Which CSS function clamps a value between min and max?",
+    "options": ["min()", "max()", "clamp()", "limit()"],
+    "answerIndex": 2,
+    "explanation": "clamp(min, preferred, max) clamps values."
+  },
+  {
+    "id": 41,
+    "category": "CSS",
+    "level": "medium",
+    "question": "Which selector has higher specificity?",
+    "options": [".btn.primary", "#btn", "button.primary", "div button"],
+    "answerIndex": 1,
+    "explanation": "ID selectors (#) have higher specificity."
+  },
+  {
+    "id": 42,
+    "category": "CSS",
+    "level": "medium",
+    "question": "Which property controls whether an element can receive pointer events?",
+    "options": [
+      "pointer-events",
+      "cursor-events",
+      "mouse-events",
+      "touch-events"
+    ],
+    "answerIndex": 0,
+    "explanation": "pointer-events can disable clicks on an element."
+  },
+  {
+    "id": 43,
+    "category": "CSS",
+    "level": "medium",
+    "question": "Which CSS property changes how overflow is handled on x-axis only?",
+    "options": [
+      "overflow-x",
+      "overflow-inline",
+      "x-overflow",
+      "overflow-width"
+    ],
+    "answerIndex": 0,
+    "explanation": "overflow-x controls horizontal overflow."
+  },
+  {
+    "id": 44,
+    "category": "CSS",
+    "level": "medium",
+    "question": "Which CSS layout is best for 2D layouts (rows and columns)?",
+    "options": ["Flexbox", "Grid", "Float", "Position absolute"],
+    "answerIndex": 1,
+    "explanation": "CSS Grid is designed for 2D layouts."
+  },
+  {
+    "id": 45,
+    "category": "CSS",
+    "level": "medium",
+    "question": "Which property in Grid defines column sizes?",
+    "options": [
+      "grid-template-columns",
+      "grid-columns",
+      "grid-col",
+      "columns-template"
+    ],
+    "answerIndex": 0,
+    "explanation": "grid-template-columns sets column tracks."
+  },
+  {
+    "id": 46,
+    "category": "CSS",
+    "level": "medium",
+    "question": "Which Grid unit represents a fraction of free space?",
+    "options": ["fr", "fx", "%", "em"],
+    "answerIndex": 0,
+    "explanation": "fr distributes remaining space in grid."
+  },
+  {
+    "id": 47,
+    "category": "React",
+    "level": "medium",
+    "question": "What is the main reason to avoid using array index as key in lists?",
+    "options": [
+      "It breaks CSS",
+      "It can cause wrong UI updates when items reorder/insert/delete",
+      "It slows JavaScript execution always",
+      "It prevents useEffect"
+    ],
+    "answerIndex": 1,
+    "explanation": "Unstable keys can cause incorrect reconciliation."
+  },
+  {
+    "id": 48,
+    "category": "React",
+    "level": "medium",
+    "question": "When does a component re-render in React?",
+    "options": [
+      "Only on page refresh",
+      "When state/props/context it uses change",
+      "Only when useEffect runs",
+      "Only when CSS changes"
+    ],
+    "answerIndex": 1,
+    "explanation": "React re-renders when relevant inputs change."
+  },
+  {
+    "id": 49,
+    "category": "React",
+    "level": "medium",
+    "question": "Which hook is best for memoizing derived data from props/state?",
+    "options": ["useEffect", "useMemo", "useCallback", "useRef"],
+    "answerIndex": 1,
+    "explanation": "useMemo memoizes computed values."
+  },
+  {
+    "id": 50,
+    "category": "React",
+    "level": "medium",
+    "question": "Which hook is best for memoizing event handlers passed to children?",
+    "options": ["useMemo", "useCallback", "useEffect", "useRef"],
+    "answerIndex": 1,
+    "explanation": "useCallback memoizes function references."
+  },
+  {
+    "id": 51,
+    "category": "React",
+    "level": "medium",
+    "question": "What problem does React Context mainly help with?",
+    "options": [
+      "Image optimization",
+      "Avoiding prop drilling for shared values",
+      "Replacing CSS",
+      "Caching HTTP requests automatically"
+    ],
+    "answerIndex": 1,
+    "explanation": "Context shares values without passing through every level."
+  },
+  {
+    "id": 52,
+    "category": "React",
+    "level": "medium",
+    "question": "What is a common downside of putting too much state in Context?",
+    "options": [
+      "Context cannot update",
+      "It can cause many re-renders of consumers",
+      "It breaks routing",
+      "It disables hooks"
+    ],
+    "answerIndex": 1,
+    "explanation": "Context changes can re-render all consuming components."
+  },
+  {
+    "id": 53,
+    "category": "React",
+    "level": "medium",
+    "question": "Which is the correct cleanup pattern in useEffect?",
+    "options": [
+      "useEffect(() => cleanup, [])",
+      "useEffect(() => { return () => cleanup }, [])",
+      "useEffect(cleanup(), [])",
+      "cleanup(useEffect)"
+    ],
+    "answerIndex": 1,
+    "explanation": "Return a cleanup function from the effect."
+  },
+  {
+    "id": 54,
+    "category": "React",
+    "level": "medium",
+    "question": "Which hook runs before the browser paints and can block painting?",
+    "options": ["useEffect", "useLayoutEffect", "useMemo", "useCallback"],
+    "answerIndex": 1,
+    "explanation": "useLayoutEffect runs synchronously before paint."
+  },
+  {
+    "id": 55,
+    "category": "React",
+    "level": "medium",
+    "question": "What is the purpose of React.memo?",
+    "options": [
+      "Memoize values",
+      "Memoize components by props (skip re-render if props same)",
+      "Memoize CSS",
+      "Memoize state updates"
+    ],
+    "answerIndex": 1,
+    "explanation": "React.memo prevents re-render when props don't change."
+  },
+  {
+    "id": 56,
+    "category": "React",
+    "level": "medium",
+    "question": "What is the purpose of useRef in React beyond DOM refs?",
+    "options": [
+      "Triggers re-render on change",
+      "Store mutable value across renders without re-render",
+      "Replace state",
+      "Fetch data"
+    ],
+    "answerIndex": 1,
+    "explanation": "useRef stores mutable values without causing re-render."
+  },
+  {
+    "id": 57,
+    "category": "React",
+    "level": "medium",
+    "question": "Which is correct about setState batching in React 18?",
+    "options": [
+      "No batching exists",
+      "Updates may be batched automatically in more cases",
+      "Only class components batch",
+      "Batching only happens in useEffect"
+    ],
+    "answerIndex": 1,
+    "explanation": "React 18 expands automatic batching."
+  },
+  {
+    "id": 58,
+    "category": "React",
+    "level": "medium",
+    "question": "What is the role of <Suspense> with React.lazy?",
+    "options": [
+      "Provides routing",
+      "Shows fallback while lazy component loads",
+      "Handles errors only",
+      "Caches images"
+    ],
+    "answerIndex": 1,
+    "explanation": "Suspense fallback renders during lazy load."
+  },
+  {
+    "id": 59,
+    "category": "React",
+    "level": "medium",
+    "question": "Which prop is used to set fallback in <Suspense>?",
+    "options": ["loading", "fallback", "pending", "placeholder"],
+    "answerIndex": 1,
+    "explanation": "fallback prop sets the placeholder UI."
+  },
+  {
+    "id": 60,
+    "category": "React",
+    "level": "medium",
+    "question": "What is a portal mainly used for?",
+    "options": [
+      "State management",
+      "Rendering children outside parent DOM hierarchy (modals/tooltips)",
+      "Routing",
+      "Fetching data"
+    ],
+    "answerIndex": 1,
+    "explanation": "Portals render into a different DOM node."
+  },
+  {
+    "id": 61,
+    "category": "HTML",
+    "level": "medium",
+    "question": "Which attribute helps screen readers understand an input when no visible label exists?",
+    "options": ["aria-label", "role='input'", "alt", "tabindex"],
+    "answerIndex": 0,
+    "explanation": "aria-label provides accessible name."
+  },
+  {
+    "id": 62,
+    "category": "HTML",
+    "level": "medium",
+    "question": "Which ARIA attribute connects an input to descriptive help text element?",
+    "options": [
+      "aria-help",
+      "aria-describedby",
+      "aria-description",
+      "aria-hint"
+    ],
+    "answerIndex": 1,
+    "explanation": "aria-describedby points to an element describing it."
+  },
+  {
+    "id": 63,
+    "category": "HTML",
+    "level": "medium",
+    "question": "What is the purpose of the 'role' attribute in HTML/ARIA?",
+    "options": [
+      "To add CSS styles",
+      "To describe element semantics for assistive tech",
+      "To speed up rendering",
+      "To store data"
+    ],
+    "answerIndex": 1,
+    "explanation": "role communicates semantic meaning to accessibility APIs."
+  },
+  {
+    "id": 64,
+    "category": "HTML",
+    "level": "medium",
+    "question": "Which input attribute improves mobile keyboard for numeric entry without forcing number type?",
+    "options": [
+      "inputmode='numeric'",
+      "keyboard='number'",
+      "type='digits'",
+      "mode='num'"
+    ],
+    "answerIndex": 0,
+    "explanation": "inputmode hints the virtual keyboard type."
+  },
+  {
+    "id": 65,
+    "category": "HTML",
+    "level": "medium",
+    "question": "Which attribute can be used to store custom data on elements?",
+    "options": ["data-*", "custom-*", "meta-*", "store-*"],
+    "answerIndex": 0,
+    "explanation": "data-* attributes store custom data."
+  },
+  {
+    "id": 66,
+    "category": "CSS",
+    "level": "medium",
+    "question": "Which CSS function picks the minimum of values?",
+    "options": ["min()", "max()", "clamp()", "calc()"],
+    "answerIndex": 0,
+    "explanation": "min() chooses the smallest value."
+  },
+  {
+    "id": 67,
+    "category": "CSS",
+    "level": "medium",
+    "question": "Which CSS function picks the maximum of values?",
+    "options": ["min()", "max()", "clamp()", "var()"],
+    "answerIndex": 1,
+    "explanation": "max() chooses the largest value."
+  },
+  {
+    "id": 68,
+    "category": "CSS",
+    "level": "medium",
+    "question": "Which property can enable smooth scrolling when clicking anchor links?",
+    "options": [
+      "scroll-behavior: smooth",
+      "smooth-scroll: on",
+      "scroll: smooth",
+      "anchor-smooth: true"
+    ],
+    "answerIndex": 0,
+    "explanation": "scroll-behavior: smooth enables smooth scrolling."
+  },
+  {
+    "id": 69,
+    "category": "CSS",
+    "level": "medium",
+    "question": "Which property controls snapping behavior while scrolling?",
+    "options": [
+      "scroll-snap-type",
+      "scroll-snap",
+      "snap-scroll",
+      "scroll-lock"
+    ],
+    "answerIndex": 0,
+    "explanation": "scroll-snap-type enables scroll snapping."
+  },
+  {
+    "id": 70,
+    "category": "CSS",
+    "level": "medium",
+    "question": "Which property defines how an element participates in scroll snapping?",
+    "options": [
+      "scroll-snap-align",
+      "scroll-align",
+      "snap-align",
+      "scroll-snap-point"
+    ],
+    "answerIndex": 0,
+    "explanation": "scroll-snap-align sets snap position for an element."
+  },
+  {
+    "id": 71,
+    "category": "JavaScript",
+    "level": "medium",
+    "question": "Which statement about localStorage values is correct?",
+    "options": [
+      "It stores objects directly",
+      "It stores only strings",
+      "It stores numbers only",
+      "It stores binary data"
+    ],
+    "answerIndex": 1,
+    "explanation": "localStorage stores strings; objects must be JSON-stringified."
+  },
+  {
+    "id": 72,
+    "category": "JavaScript",
+    "level": "medium",
+    "question": "Which method safely converts stored JSON string back to object?",
+    "options": [
+      "JSON.stringify()",
+      "JSON.parse()",
+      "Object.fromJSON()",
+      "parseJSON() built-in"
+    ],
+    "answerIndex": 1,
+    "explanation": "JSON.parse converts JSON string to object."
+  },
+  {
+    "id": 73,
+    "category": "JavaScript",
+    "level": "medium",
+    "question": "What is the output of: [] + [] ?",
+    "options": ["0", "'' (empty string)", "[]", "NaN"],
+    "answerIndex": 1,
+    "explanation": "Both arrays coerce to '' and concatenate => ''."
+  },
+  {
+    "id": 74,
+    "category": "JavaScript",
+    "level": "medium",
+    "question": "What is the output of: [] + {} (in most cases) ?",
+    "options": ["'[object Object]'", "'{}'", "NaN", "throws error"],
+    "answerIndex": 0,
+    "explanation": "[] becomes '', {} becomes '[object Object]' => concatenation."
+  },
+  {
+    "id": 75,
+    "category": "JavaScript",
+    "level": "medium",
+    "question": "Which is correct about 'for...in' vs 'for...of'?",
+    "options": [
+      "for...of iterates object keys",
+      "for...in iterates enumerable keys, for...of iterates iterable values",
+      "Both iterate values only",
+      "Both require arrays only"
+    ],
+    "answerIndex": 1,
+    "explanation": "for...in is for keys, for...of is for values of iterables."
+  },
+  {
+    "id": 76,
+    "category": "JavaScript",
+    "level": "medium",
+    "question": "Which method checks if an object has its own property (not inherited)?",
+    "options": [
+      "'prop' in obj",
+      "obj.hasOwnProperty('prop')",
+      "Object.keys(obj).includes('prop') always",
+      "typeof obj.prop !== 'undefined' always"
+    ],
+    "answerIndex": 1,
+    "explanation": "hasOwnProperty checks only own properties."
+  },
+  {
+    "id": 77,
+    "category": "JavaScript",
+    "level": "medium",
+    "question": "Which statement about shallow copy is correct?",
+    "options": [
+      "It copies nested objects deeply",
+      "Nested objects are still shared by reference",
+      "It copies functions as strings",
+      "It always freezes the object"
+    ],
+    "answerIndex": 1,
+    "explanation": "Shallow copy shares nested references."
+  },
+  {
+    "id": 78,
+    "category": "CSS",
+    "level": "medium",
+    "question": "Which CSS property can prevent layout shift by reserving space for images?",
+    "options": [
+      "width/height attributes or aspect-ratio",
+      "opacity",
+      "z-index",
+      "overflow"
+    ],
+    "answerIndex": 0,
+    "explanation": "Defining size/aspect ratio reserves layout space."
+  },
+  {
+    "id": 79,
+    "category": "CSS",
+    "level": "medium",
+    "question": "Which CSS property sets an element's intrinsic aspect ratio?",
+    "options": ["aspect-ratio", "ratio", "image-ratio", "intrinsic-size"],
+    "answerIndex": 0,
+    "explanation": "aspect-ratio defines preferred ratio."
+  },
+  {
+    "id": 80,
+    "category": "CSS",
+    "level": "medium",
+    "question": "Which property is used to hide content visually but keep it accessible (common pattern)?",
+    "options": [
+      "display:none",
+      "visibility:hidden",
+      "screen-reader-only CSS technique",
+      "opacity:0 always"
+    ],
+    "answerIndex": 2,
+    "explanation": "SR-only styles hide visually but keep for screen readers."
+  },
+  {
+    "id": 81,
+    "category": "React",
+    "level": "medium",
+    "question": "Which hook helps avoid re-creating objects/arrays passed as props each render?",
+    "options": ["useMemo", "useEffect", "useRef", "useContext"],
+    "answerIndex": 0,
+    "explanation": "useMemo can memoize derived objects/arrays."
+  },
+  {
+    "id": 82,
+    "category": "React",
+    "level": "medium",
+    "question": "Which is a common cause of infinite re-render loop in React?",
+    "options": [
+      "Calling setState during render",
+      "Using CSS modules",
+      "Using Fragment",
+      "Using props"
+    ],
+    "answerIndex": 0,
+    "explanation": "setState in render triggers re-render repeatedly."
+  },
+  {
+    "id": 83,
+    "category": "React",
+    "level": "medium",
+    "question": "In useEffect, why should you include dependencies?",
+    "options": [
+      "To make code shorter",
+      "To ensure effect uses latest values and runs when needed",
+      "To disable re-render",
+      "To speed up CSS"
+    ],
+    "answerIndex": 1,
+    "explanation": "Dependencies keep effect in sync with values used."
+  },
+  {
+    "id": 84,
+    "category": "React",
+    "level": "medium",
+    "question": "Which is correct way to avoid stale state when updating based on previous state?",
+    "options": [
+      "setX(x + 1)",
+      "setX(prev => prev + 1)",
+      "x = x + 1",
+      "useMemo(() => x + 1)"
+    ],
+    "answerIndex": 1,
+    "explanation": "Functional updates use latest state safely."
+  },
+  {
+    "id": 85,
+    "category": "React",
+    "level": "medium",
+    "question": "Which hook is used to subscribe to an external store safely in concurrent rendering?",
+    "options": [
+      "useStore",
+      "useSyncExternalStore",
+      "useExternal",
+      "useSubscribe"
+    ],
+    "answerIndex": 1,
+    "explanation": "useSyncExternalStore is designed for external stores."
+  },
+  {
+    "id": 86,
+    "category": "HTML",
+    "level": "medium",
+    "question": "Which attribute can improve security when opening links in new tab?",
+    "options": [
+      "rel='noopener noreferrer'",
+      "target='_safe'",
+      "referrer='off'",
+      "secure='true'"
+    ],
+    "answerIndex": 0,
+    "explanation": "noopener prevents tabnabbing; noreferrer also removes referrer."
+  },
+  {
+    "id": 87,
+    "category": "HTML",
+    "level": "medium",
+    "question": "Which attribute allows an iframe to run with restrictions (security)?",
+    "options": ["secure", "sandbox", "safeMode", "restrict"],
+    "answerIndex": 1,
+    "explanation": "sandbox restricts iframe capabilities."
+  },
+  {
+    "id": 88,
+    "category": "HTML",
+    "level": "medium",
+    "question": "Which input attribute helps browsers validate emails/URLs and show correct keyboard?",
+    "options": ["pattern", "type='email'/'url'", "maxlength", "autocomplete"],
+    "answerIndex": 1,
+    "explanation": "Proper input types enable validation and keyboard hints."
+  },
+  {
+    "id": 89,
+    "category": "CSS",
+    "level": "medium",
+    "question": "Which property can reduce motion for users who prefer less animation?",
+    "options": [
+      "@media (prefers-reduced-motion: reduce)",
+      "@media (no-motion)",
+      "@supports (reduce-motion)",
+      "motion: reduce"
+    ],
+    "answerIndex": 0,
+    "explanation": "prefers-reduced-motion media query supports accessibility."
+  },
+  {
+    "id": 90,
+    "category": "CSS",
+    "level": "medium",
+    "question": "Which property controls whether an element participates in layout or not?",
+    "options": ["display", "opacity", "z-index", "filter"],
+    "answerIndex": 0,
+    "explanation": "display controls layout participation."
+  },
+  {
+    "id": 91,
+    "category": "JavaScript",
+    "level": "medium",
+    "question": "Which statement about destructuring is correct?",
+    "options": [
+      "It only works for arrays",
+      "It can extract values from arrays and objects",
+      "It changes the original object",
+      "It requires JSON"
+    ],
+    "answerIndex": 1,
+    "explanation": "Destructuring works for arrays and objects."
+  },
+  {
+    "id": 92,
+    "category": "JavaScript",
+    "level": "medium",
+    "question": "Which syntax sets a default during destructuring?",
+    "options": [
+      "const {a:1} = obj",
+      "const {a = 1} = obj",
+      "const {a ?? 1} = obj",
+      "const {a -> 1} = obj"
+    ],
+    "answerIndex": 1,
+    "explanation": "a = 1 sets default if a is undefined."
+  },
+  {
+    "id": 93,
+    "category": "JavaScript",
+    "level": "medium",
+    "question": "Which is a correct way to create a deep clone in modern browsers (when supported)?",
+    "options": [
+      "structuredClone(obj)",
+      "Object.assign({}, obj)",
+      "{...obj}",
+      "JSON.stringify(obj)"
+    ],
+    "answerIndex": 0,
+    "explanation": "structuredClone performs deep cloning for many types."
+  },
+  {
+    "id": 94,
+    "category": "JavaScript",
+    "level": "medium",
+    "question": "Which statement about structuredClone is correct?",
+    "options": [
+      "It can clone functions",
+      "It cannot clone functions",
+      "It always keeps DOM nodes",
+      "It mutates original object"
+    ],
+    "answerIndex": 1,
+    "explanation": "Functions are not cloneable with structuredClone."
+  },
+  {
+    "id": 95,
+    "category": "React",
+    "level": "medium",
+    "question": "Which is the correct way to pass a ref to a custom child component?",
+    "options": [
+      "Pass ref as prop name 'ref' without changes",
+      "Use React.forwardRef in the child component",
+      "Use useMemo on ref",
+      "Use Context for ref"
+    ],
+    "answerIndex": 1,
+    "explanation": "forwardRef is required for refs to custom components."
+  },
+  {
+    "id": 96,
+    "category": "React",
+    "level": "medium",
+    "question": "What is a typical use case for useImperativeHandle?",
+    "options": [
+      "Fetching data",
+      "Exposing custom methods on a ref",
+      "Styling components",
+      "Routing"
+    ],
+    "answerIndex": 1,
+    "explanation": "useImperativeHandle customizes ref exposed API."
+  },
+  {
+    "id": 97,
+    "category": "HTML",
+    "level": "medium",
+    "question": "Which attribute can improve loading performance for external resources like fonts/scripts?",
+    "options": ["preload", "preconnect", "Both can help", "None"],
+    "answerIndex": 2,
+    "explanation": "preconnect warms connections; preload fetches early."
+  },
+  {
+    "id": 98,
+    "category": "CSS",
+    "level": "medium",
+    "question": "Which CSS property helps prevent text selection by user?",
+    "options": ["user-select", "text-select", "select: none", "no-select"],
+    "answerIndex": 0,
+    "explanation": "user-select: none prevents selecting text."
+  },
+  {
+    "id": 99,
+    "category": "React",
+    "level": "medium",
+    "question": "What is the main reason to split state into multiple useState calls sometimes?",
+    "options": [
+      "To make React faster always",
+      "To update independently and reduce unnecessary updates",
+      "Because useState supports only one value",
+      "To avoid JSX"
+    ],
+    "answerIndex": 1,
+    "explanation": "Separate state can update independently and improve clarity."
+  },
+  {
+    "id": 100,
+    "category": "JavaScript",
+    "level": "medium",
+    "question": "Which API is used to store key-value pairs that are removed when page session ends?",
+    "options": ["localStorage", "sessionStorage", "cookies", "indexedDB"],
+    "answerIndex": 1,
+    "explanation": "sessionStorage persists per-tab session."
+  },
+
+  {
+    "id": 101,
+    "category": "JavaScript",
+    "level": "medium",
+    "question": "What will Promise.resolve(5).then(console.log) log?",
+    "options": ["Promise {5}", "5", "undefined", "Error"],
+    "answerIndex": 1,
+    "explanation": "then receives the resolved value 5."
+  },
+  {
+    "id": 102,
+    "category": "JavaScript",
+    "level": "medium",
+    "question": "Which Promise method returns results even if some promises reject (as statuses)?",
+    "options": [
+      "Promise.all()",
+      "Promise.any()",
+      "Promise.allSettled()",
+      "Promise.race()"
+    ],
+    "answerIndex": 2,
+    "explanation": "allSettled returns fulfilled/rejected status objects for all."
+  },
+  {
+    "id": 103,
+    "category": "JavaScript",
+    "level": "medium",
+    "question": "What is the output of: typeof (() => {}) ?",
+    "options": ["'function'", "'object'", "'arrow'", "'undefined'"],
+    "answerIndex": 0,
+    "explanation": "Arrow functions are still functions."
+  },
+  {
+    "id": 104,
+    "category": "JavaScript",
+    "level": "medium",
+    "question": "What will Array(3).fill(0) return?",
+    "options": ["[0,0,0]", "[3,0]", "[0,3]", "[]"],
+    "answerIndex": 0,
+    "explanation": "fill sets all 3 items to 0."
+  },
+  {
+    "id": 105,
+    "category": "JavaScript",
+    "level": "medium",
+    "question": "Which method creates a new array with elements that pass a test?",
+    "options": ["map()", "filter()", "reduce()", "splice()"],
+    "answerIndex": 1,
+    "explanation": "filter returns only items matching condition."
+  },
+  {
+    "id": 106,
+    "category": "JavaScript",
+    "level": "medium",
+    "question": "Which method creates a new array by transforming each element?",
+    "options": ["filter()", "map()", "find()", "some()"],
+    "answerIndex": 1,
+    "explanation": "map transforms each element into a new array."
+  },
+  {
+    "id": 107,
+    "category": "JavaScript",
+    "level": "medium",
+    "question": "Which method tests whether at least one element passes a condition?",
+    "options": ["every()", "some()", "find()", "includes()"],
+    "answerIndex": 1,
+    "explanation": "some returns true if any item passes."
+  },
+  {
+    "id": 108,
+    "category": "JavaScript",
+    "level": "medium",
+    "question": "Which method tests whether all elements pass a condition?",
+    "options": ["every()", "some()", "filter()", "findIndex()"],
+    "answerIndex": 0,
+    "explanation": "every returns true only if all pass."
+  },
+  {
+    "id": 109,
+    "category": "JavaScript",
+    "level": "medium",
+    "question": "Which statement about rest parameters is correct?",
+    "options": [
+      "Rest collects remaining args into an array",
+      "Rest works only in objects",
+      "Rest returns a string",
+      "Rest is same as spread in arrays"
+    ],
+    "answerIndex": 0,
+    "explanation": "function f(...args) collects arguments into an array."
+  },
+  {
+    "id": 110,
+    "category": "JavaScript",
+    "level": "medium",
+    "question": "Which is the correct way to copy an array shallowly?",
+    "options": ["arr.copy()", "[...arr]", "arr.cloneDeep()", "Array.copy(arr)"],
+    "answerIndex": 1,
+    "explanation": "Spread copies array shallowly."
+  },
+  {
+    "id": 111,
+    "category": "JavaScript",
+    "level": "medium",
+    "question": "What does 'use strict' mainly do?",
+    "options": [
+      "Makes code run faster always",
+      "Enables stricter parsing/errors (e.g., no implicit globals)",
+      "Disables ES6 features",
+      "Auto-fixes bugs"
+    ],
+    "answerIndex": 1,
+    "explanation": "Strict mode catches mistakes and changes some behaviors."
+  },
+  {
+    "id": 112,
+    "category": "JavaScript",
+    "level": "medium",
+    "question": "Which statement about hoisting is correct?",
+    "options": [
+      "let is hoisted and usable before declaration",
+      "var declarations are hoisted (initialized as undefined)",
+      "const is initialized as undefined",
+      "Functions are never hoisted"
+    ],
+    "answerIndex": 1,
+    "explanation": "var is hoisted; let/const are in TDZ."
+  },
+  {
+    "id": 113,
+    "category": "JavaScript",
+    "level": "medium",
+    "question": "TDZ (Temporal Dead Zone) mainly applies to?",
+    "options": ["var", "let and const", "functions", "arrays"],
+    "answerIndex": 1,
+    "explanation": "let/const cannot be accessed before declaration."
+  },
+  {
+    "id": 114,
+    "category": "JavaScript",
+    "level": "medium",
+    "question": "Which statement about default parameters is correct?",
+    "options": [
+      "Defaults apply when argument is null",
+      "Defaults apply when argument is undefined",
+      "Defaults apply always",
+      "Defaults apply only for numbers"
+    ],
+    "answerIndex": 1,
+    "explanation": "Default params trigger when value is undefined."
+  },
+  {
+    "id": 115,
+    "category": "JavaScript",
+    "level": "medium",
+    "question": "Which operator can be used to safely access nested properties?",
+    "options": ["?.", "::", "!!", "=>"],
+    "answerIndex": 0,
+    "explanation": "Optional chaining ?. prevents errors on null/undefined."
+  },
+  {
+    "id": 116,
+    "category": "JavaScript",
+    "level": "medium",
+    "question": "What is the output of: (0 ?? 10) ?",
+    "options": ["10", "0", "null", "undefined"],
+    "answerIndex": 1,
+    "explanation": "?? only falls back on null/undefined; 0 is kept."
+  },
+  {
+    "id": 117,
+    "category": "JavaScript",
+    "level": "medium",
+    "question": "What is the output of: (0 || 10) ?",
+    "options": ["10", "0", "null", "undefined"],
+    "answerIndex": 0,
+    "explanation": "|| falls back on falsy; 0 is falsy."
+  },
+  {
+    "id": 118,
+    "category": "JavaScript",
+    "level": "medium",
+    "question": "Which statement about fetch() is correct?",
+    "options": [
+      "fetch rejects on HTTP 404 automatically",
+      "fetch resolves for HTTP errors; you must check res.ok",
+      "fetch only works with POST",
+      "fetch requires jQuery"
+    ],
+    "answerIndex": 1,
+    "explanation": "Fetch resolves unless network error; check res.ok/status."
+  },
+  {
+    "id": 119,
+    "category": "JavaScript",
+    "level": "medium",
+    "question": "Which Response property is true when status is 200–299?",
+    "options": ["res.good", "res.ok", "res.success", "res.valid"],
+    "answerIndex": 1,
+    "explanation": "res.ok is true for 2xx responses."
+  },
+  {
+    "id": 120,
+    "category": "JavaScript",
+    "level": "medium",
+    "question": "Which header is commonly used to send JSON to server?",
+    "options": [
+      "Content-Type: application/json",
+      "Accept-Encoding: json",
+      "Content-JSON: true",
+      "Type: JSON"
+    ],
+    "answerIndex": 0,
+    "explanation": "Content-Type tells server the body format."
+  },
+  {
+    "id": 121,
+    "category": "JavaScript",
+    "level": "medium",
+    "question": "Which API is used to read query parameters easily?",
+    "options": ["URLSearchParams", "QueryParams()", "SearchURL", "ParamReader"],
+    "answerIndex": 0,
+    "explanation": "URLSearchParams parses and builds query strings."
+  },
+  {
+    "id": 122,
+    "category": "JavaScript",
+    "level": "medium",
+    "question": "Which statement about localStorage is correct?",
+    "options": [
+      "Stores objects directly",
+      "Stores only strings",
+      "Is asynchronous",
+      "Is cleared on tab close"
+    ],
+    "answerIndex": 1,
+    "explanation": "localStorage values are strings."
+  },
+  {
+    "id": 123,
+    "category": "JavaScript",
+    "level": "medium",
+    "question": "Which method is used to remove a specific key from localStorage?",
+    "options": ["delete()", "removeItem()", "unset()", "clearKey()"],
+    "answerIndex": 1,
+    "explanation": "removeItem(key) removes one entry."
+  },
+  {
+    "id": 124,
+    "category": "JavaScript",
+    "level": "medium",
+    "question": "Which is correct about sessionStorage?",
+    "options": [
+      "Persists forever",
+      "Cleared when tab is closed",
+      "Shared across all tabs always",
+      "Stores numbers only"
+    ],
+    "answerIndex": 1,
+    "explanation": "sessionStorage is per-tab session."
+  },
+  {
+    "id": 125,
+    "category": "JavaScript",
+    "level": "medium",
+    "question": "Which array method can convert an array-like NodeList to array?",
+    "options": [
+      "Array.from()",
+      "Array.cast()",
+      "NodeList.toArray()",
+      "toArray() built-in"
+    ],
+    "answerIndex": 0,
+    "explanation": "Array.from converts array-like objects."
+  },
+  {
+    "id": 126,
+    "category": "JavaScript",
+    "level": "medium",
+    "question": "Which method stops default browser behavior in an event?",
+    "options": [
+      "stopDefault()",
+      "preventDefault()",
+      "stop()",
+      "cancelDefault()"
+    ],
+    "answerIndex": 1,
+    "explanation": "preventDefault prevents default action."
+  },
+  {
+    "id": 127,
+    "category": "JavaScript",
+    "level": "medium",
+    "question": "Which method stops event bubbling?",
+    "options": [
+      "stopPropagation()",
+      "preventPropagation()",
+      "stopBubble()",
+      "cancelBubble() only"
+    ],
+    "answerIndex": 0,
+    "explanation": "stopPropagation stops bubbling."
+  },
+  {
+    "id": 128,
+    "category": "JavaScript",
+    "level": "medium",
+    "question": "Which phase comes first in event flow?",
+    "options": ["Bubbling", "Capturing", "Target", "None"],
+    "answerIndex": 1,
+    "explanation": "Event flow: capturing -> target -> bubbling."
+  },
+  {
+    "id": 129,
+    "category": "JavaScript",
+    "level": "medium",
+    "question": "Event delegation is best described as?",
+    "options": [
+      "Attaching handlers to every child",
+      "Attaching one handler to a parent and using event.target",
+      "Using only capture phase",
+      "Disabling bubbling"
+    ],
+    "answerIndex": 1,
+    "explanation": "Delegation uses bubbling to handle many children efficiently."
+  },
+  {
+    "id": 130,
+    "category": "JavaScript",
+    "level": "medium",
+    "question": "Which method checks if an element matches a CSS selector?",
+    "options": ["matches()", "select()", "is()", "query()"],
+    "answerIndex": 0,
+    "explanation": "element.matches(selector) returns true/false."
+  },
+  {
+    "id": 131,
+    "category": "React",
+    "level": "medium",
+    "question": "Which hook is best to memoize expensive calculations?",
+    "options": ["useCallback", "useMemo", "useEffect", "useRef"],
+    "answerIndex": 1,
+    "explanation": "useMemo memoizes computed values."
+  },
+  {
+    "id": 132,
+    "category": "React",
+    "level": "medium",
+    "question": "Which hook is best to memoize a callback passed to memoized child?",
+    "options": ["useMemo", "useCallback", "useEffect", "useId"],
+    "answerIndex": 1,
+    "explanation": "useCallback memoizes function references."
+  },
+  {
+    "id": 133,
+    "category": "React",
+    "level": "medium",
+    "question": "Which is true about state updates in React?",
+    "options": [
+      "Always immediate",
+      "May be batched and asynchronous",
+      "Only async in class components",
+      "Never batched"
+    ],
+    "answerIndex": 1,
+    "explanation": "React may batch updates for performance."
+  },
+  {
+    "id": 134,
+    "category": "React",
+    "level": "medium",
+    "question": "Which is the correct way to update state based on previous value?",
+    "options": [
+      "setX(x + 1)",
+      "setX(prev => prev + 1)",
+      "x++",
+      "useMemo(() => x + 1)"
+    ],
+    "answerIndex": 1,
+    "explanation": "Functional updates use latest state safely."
+  },
+  {
+    "id": 135,
+    "category": "React",
+    "level": "medium",
+    "question": "Which hook can store a mutable value without re-rendering?",
+    "options": ["useState", "useRef", "useEffect", "useMemo"],
+    "answerIndex": 1,
+    "explanation": "useRef updates do not trigger re-render."
+  },
+  {
+    "id": 136,
+    "category": "React",
+    "level": "medium",
+    "question": "Which is the correct dependency array to run effect only once on mount?",
+    "options": ["[props]", "[]", "[state]", "No dependency array"],
+    "answerIndex": 1,
+    "explanation": "Empty array runs once on mount (plus strict mode dev behavior)."
+  },
+  {
+    "id": 137,
+    "category": "React",
+    "level": "medium",
+    "question": "What is the purpose of cleanup function in useEffect?",
+    "options": [
+      "To set initial state",
+      "To clean subscriptions/timers on unmount or before re-run",
+      "To prevent rendering",
+      "To create context"
+    ],
+    "answerIndex": 1,
+    "explanation": "Cleanup prevents memory leaks and duplicates."
+  },
+  {
+    "id": 138,
+    "category": "React",
+    "level": "medium",
+    "question": "Which React feature is used to render a modal outside parent DOM stacking context?",
+    "options": ["Context", "Portal", "Reducer", "Fragment"],
+    "answerIndex": 1,
+    "explanation": "Portals render into a different DOM node."
+  },
+  {
+    "id": 139,
+    "category": "React",
+    "level": "medium",
+    "question": "Why is using array index as key risky?",
+    "options": [
+      "It causes syntax error",
+      "It can break UI when list changes order/length",
+      "It blocks CSS",
+      "It makes props read-only"
+    ],
+    "answerIndex": 1,
+    "explanation": "Unstable keys cause wrong reconciliation."
+  },
+  {
+    "id": 140,
+    "category": "React",
+    "level": "medium",
+    "question": "Which is correct about controlled inputs in React?",
+    "options": [
+      "They use defaultValue only",
+      "They use value from state and onChange updates state",
+      "They cannot be used with forms",
+      "They don't need onChange"
+    ],
+    "answerIndex": 1,
+    "explanation": "Controlled inputs bind value to state."
+  },
+  {
+    "id": 141,
+    "category": "React",
+    "level": "medium",
+    "question": "Which prop sets initial value for an uncontrolled input?",
+    "options": ["value", "defaultValue", "initialValue", "startValue"],
+    "answerIndex": 1,
+    "explanation": "defaultValue sets initial value for uncontrolled inputs."
+  },
+  {
+    "id": 142,
+    "category": "React",
+    "level": "medium",
+    "question": "Which is used to lazy load a component?",
+    "options": ["React.lazy()", "useLazy()", "lazyComponent()", "importSync()"],
+    "answerIndex": 0,
+    "explanation": "React.lazy enables code-splitting for components."
+  },
+  {
+    "id": 143,
+    "category": "React",
+    "level": "medium",
+    "question": "Which component is required to show fallback for a lazy component?",
+    "options": ["<Fallback>", "<Suspense>", "<Loader>", "<Await>"],
+    "answerIndex": 1,
+    "explanation": "<Suspense fallback renders during lazy load."
+  },
+  {
+    "id": 144,
+    "category": "React",
+    "level": "medium",
+    "question": "Which hook generates unique IDs for accessibility (React 18)?",
+    "options": ["useUniqueId", "useId", "useKey", "useUID"],
+    "answerIndex": 1,
+    "explanation": "useId generates stable IDs."
+  },
+  {
+    "id": 145,
+    "category": "React",
+    "level": "medium",
+    "question": "Which hook is best for complex state logic with actions?",
+    "options": ["useState", "useReducer", "useMemo", "useCallback"],
+    "answerIndex": 1,
+    "explanation": "useReducer manages state transitions via actions."
+  },
+  {
+    "id": 146,
+    "category": "React",
+    "level": "medium",
+    "question": "Which is a typical reason to use useReducer instead of useState?",
+    "options": [
+      "To avoid JSX",
+      "To manage related state updates with predictable actions",
+      "To make CSS work",
+      "To reduce bundle size always"
+    ],
+    "answerIndex": 1,
+    "explanation": "Reducers help with complex, related state changes."
+  },
+  {
+    "id": 147,
+    "category": "React",
+    "level": "medium",
+    "question": "What is the correct way to pass styles inline in React?",
+    "options": [
+      "style='color:red'",
+      "style={{ color: 'red' }}",
+      "css={{color:'red'}}",
+      "styles={color:'red'}"
+    ],
+    "answerIndex": 1,
+    "explanation": "Inline style uses an object."
+  },
+  {
+    "id": 148,
+    "category": "React",
+    "level": "medium",
+    "question": "Which prop name should be used instead of 'class' in JSX?",
+    "options": ["class", "className", "cssClass", "classname"],
+    "answerIndex": 1,
+    "explanation": "JSX uses className."
+  },
+  {
+    "id": 149,
+    "category": "React",
+    "level": "medium",
+    "question": "Which prop name should be used instead of 'for' in JSX label?",
+    "options": ["for", "htmlFor", "labelFor", "forId"],
+    "answerIndex": 1,
+    "explanation": "JSX uses htmlFor."
+  },
+  {
+    "id": 150,
+    "category": "React",
+    "level": "medium",
+    "question": "What does React StrictMode do in development (common effect)?",
+    "options": [
+      "Disables hooks",
+      "May run certain functions/effects twice to detect side effects",
+      "Boosts performance",
+      "Minifies code"
+    ],
+    "answerIndex": 1,
+    "explanation": "StrictMode can double-invoke in dev to surface issues."
+  },
+  {
+    "id": 151,
+    "category": "HTML",
+    "level": "medium",
+    "question": "Which attribute is used to associate a label with an input?",
+    "options": ["connect", "for", "htmlFor", "bind"],
+    "answerIndex": 1,
+    "explanation": "label for='id' connects to input id."
+  },
+  {
+    "id": 152,
+    "category": "HTML",
+    "level": "medium",
+    "question": "Which element is best to group related inputs with a title?",
+    "options": ["<div>", "<fieldset> + <legend>", "<section>", "<group>"],
+    "answerIndex": 1,
+    "explanation": "fieldset groups controls; legend provides label."
+  },
+  {
+    "id": 153,
+    "category": "HTML",
+    "level": "medium",
+    "question": "Which input attribute prevents user from editing but still submits value?",
+    "options": ["disabled", "readonly", "blocked", "lock"],
+    "answerIndex": 1,
+    "explanation": "readonly allows submission; disabled does not."
+  },
+  {
+    "id": 154,
+    "category": "HTML",
+    "level": "medium",
+    "question": "Which attribute stops an element from receiving keyboard focus via Tab?",
+    "options": ["tabindex='-1'", "tabindex='0'", "focus='off'", "noTab"],
+    "answerIndex": 0,
+    "explanation": "tabindex='-1' removes from tab order."
+  },
+  {
+    "id": 155,
+    "category": "HTML",
+    "level": "medium",
+    "question": "Which attribute makes an input required before form submit?",
+    "options": ["mandatory", "required", "must", "validate"],
+    "answerIndex": 1,
+    "explanation": "required enforces validation."
+  },
+  {
+    "id": 156,
+    "category": "HTML",
+    "level": "medium",
+    "question": "Which attribute specifies a regex pattern for input validation?",
+    "options": ["pattern", "regex", "validate", "format"],
+    "answerIndex": 0,
+    "explanation": "pattern uses regex for validation."
+  },
+  {
+    "id": 157,
+    "category": "HTML",
+    "level": "medium",
+    "question": "Which attribute suggests expected value format inside an input?",
+    "options": ["placeholder", "hint", "title", "label"],
+    "answerIndex": 0,
+    "explanation": "placeholder shows hint text."
+  },
+  {
+    "id": 158,
+    "category": "HTML",
+    "level": "medium",
+    "question": "Which attribute can improve image loading performance for offscreen images?",
+    "options": ["loading='lazy'", "defer", "async", "fetch='low'"],
+    "answerIndex": 0,
+    "explanation": "loading='lazy' defers loading."
+  },
+  {
+    "id": 159,
+    "category": "HTML",
+    "level": "medium",
+    "question": "Which attribute is used to define multiple image sources for responsive images?",
+    "options": ["srcset", "sources", "multiSrc", "imgset"],
+    "answerIndex": 0,
+    "explanation": "srcset provides multiple resolutions/sources."
+  },
+  {
+    "id": 160,
+    "category": "HTML",
+    "level": "medium",
+    "question": "Which attribute provides image display size rules for srcset?",
+    "options": ["sizes", "scale", "width", "density"],
+    "answerIndex": 0,
+    "explanation": "sizes tells browser which source to choose."
+  },
+  {
+    "id": 161,
+    "category": "CSS",
+    "level": "medium",
+    "question": "Which is correct about z-index?",
+    "options": [
+      "Works on any element always",
+      "Works only on positioned elements or stacking contexts",
+      "Only works on flex items",
+      "Only works on inline elements"
+    ],
+    "answerIndex": 1,
+    "explanation": "z-index applies in stacking contexts, typically positioned elements."
+  },
+  {
+    "id": 162,
+    "category": "CSS",
+    "level": "medium",
+    "question": "Which property creates a new block formatting context helping contain floats?",
+    "options": ["overflow: auto/hidden", "color", "border", "font-weight"],
+    "answerIndex": 0,
+    "explanation": "overflow auto/hidden creates a BFC in many cases."
+  },
+  {
+    "id": 163,
+    "category": "CSS",
+    "level": "medium",
+    "question": "Which property can make an element 'not clickable' while still visible?",
+    "options": [
+      "pointer-events: none",
+      "cursor: none",
+      "opacity: 0",
+      "display: none"
+    ],
+    "answerIndex": 0,
+    "explanation": "pointer-events: none disables pointer interactions."
+  },
+  {
+    "id": 164,
+    "category": "CSS",
+    "level": "medium",
+    "question": "Which is correct about CSS transitions?",
+    "options": [
+      "They require keyframes",
+      "They animate between two states",
+      "They only work on colors",
+      "They only work on transforms"
+    ],
+    "answerIndex": 1,
+    "explanation": "Transitions animate property changes between states."
+  },
+  {
+    "id": 165,
+    "category": "CSS",
+    "level": "medium",
+    "question": "Which CSS animation rule defines intermediate steps?",
+    "options": ["@frames", "@keyframes", "@animate", "@steps"],
+    "answerIndex": 1,
+    "explanation": "@keyframes defines animation stages."
+  },
+  {
+    "id": 166,
+    "category": "CSS",
+    "level": "medium",
+    "question": "Which property controls animation timing curve?",
+    "options": [
+      "animation-speed",
+      "animation-timing-function",
+      "animation-curve",
+      "timing"
+    ],
+    "answerIndex": 1,
+    "explanation": "animation-timing-function controls easing."
+  },
+  {
+    "id": 167,
+    "category": "CSS",
+    "level": "medium",
+    "question": "Which property makes an element stick relative to its scroll container?",
+    "options": [
+      "position: fixed",
+      "position: sticky",
+      "position: absolute",
+      "position: static"
+    ],
+    "answerIndex": 1,
+    "explanation": "sticky sticks after threshold."
+  },
+  {
+    "id": 168,
+    "category": "CSS",
+    "level": "medium",
+    "question": "Which property defines the sticky threshold distance?",
+    "options": ["top/right/bottom/left", "z-index", "sticky-offset", "margin"],
+    "answerIndex": 0,
+    "explanation": "top/left etc. define sticky offset."
+  },
+  {
+    "id": 169,
+    "category": "CSS",
+    "level": "medium",
+    "question": "Which CSS function is used to calculate values dynamically?",
+    "options": ["calc()", "math()", "compute()", "sum()"],
+    "answerIndex": 0,
+    "explanation": "calc() combines units and expressions."
+  },
+  {
+    "id": 170,
+    "category": "CSS",
+    "level": "medium",
+    "question": "Which is correct to center a block element horizontally with known width?",
+    "options": [
+      "margin: auto",
+      "padding: auto",
+      "text-align: center",
+      "position: center"
+    ],
+    "answerIndex": 0,
+    "explanation": "margin-left/right auto centers block elements."
+  },
+  {
+    "id": 171,
+    "category": "CSS",
+    "level": "medium",
+    "question": "Which property controls text rendering when it overflows (ellipsis)?",
+    "options": ["text-overflow", "overflow-text", "ellipsis", "clip-text"],
+    "answerIndex": 0,
+    "explanation": "text-overflow: ellipsis works with overflow hidden + nowrap."
+  },
+  {
+    "id": 172,
+    "category": "CSS",
+    "level": "medium",
+    "question": "Which combination is required for single-line ellipsis?",
+    "options": [
+      "overflow:hidden + white-space:nowrap + text-overflow:ellipsis",
+      "display:flex only",
+      "position:absolute only",
+      "font-weight:bold only"
+    ],
+    "answerIndex": 0,
+    "explanation": "All three are typically required."
+  },
+  {
+    "id": 173,
+    "category": "CSS",
+    "level": "medium",
+    "question": "Which pseudo-class selects an element when it is the target of a URL fragment (#id)?",
+    "options": [":focus", ":target", ":active", ":visited"],
+    "answerIndex": 1,
+    "explanation": ":target applies to the element matching the URL hash."
+  },
+  {
+    "id": 174,
+    "category": "CSS",
+    "level": "medium",
+    "question": "Which pseudo-class matches when an input is invalid by browser validation?",
+    "options": [":invalid", ":error", ":wrong", ":failed"],
+    "answerIndex": 0,
+    "explanation": ":invalid matches invalid form controls."
+  },
+  {
+    "id": 175,
+    "category": "CSS",
+    "level": "medium",
+    "question": "Which pseudo-class matches a checked checkbox/radio?",
+    "options": [":selected", ":checked", ":ticked", ":on"],
+    "answerIndex": 1,
+    "explanation": ":checked matches checked controls."
+  },
+  {
+    "id": 176,
+    "category": "JavaScript",
+    "level": "medium",
+    "question": "Which method freezes only the first level of an object?",
+    "options": [
+      "Object.freeze()",
+      "deepFreeze()",
+      "Object.lock()",
+      "Object.deepFreeze() built-in"
+    ],
+    "answerIndex": 0,
+    "explanation": "Object.freeze is shallow."
+  },
+  {
+    "id": 177,
+    "category": "JavaScript",
+    "level": "medium",
+    "question": "Which is correct about shallow vs deep equality for objects?",
+    "options": [
+      "Two different objects with same keys are ===",
+      "Objects compare by reference with ===",
+      "=== compares deep values",
+      "Object.is always deep compares"
+    ],
+    "answerIndex": 1,
+    "explanation": "=== checks reference for objects."
+  },
+  {
+    "id": 178,
+    "category": "JavaScript",
+    "level": "medium",
+    "question": "Which operator can be used to convert a string to number quickly (if valid)?",
+    "options": ["+", "!!", "&&", "??"],
+    "answerIndex": 0,
+    "explanation": "Unary + converts to number."
+  },
+  {
+    "id": 179,
+    "category": "JavaScript",
+    "level": "medium",
+    "question": "What is the output of: +'10' + 1 ?",
+    "options": ["'101'", "11", "NaN", "Error"],
+    "answerIndex": 1,
+    "explanation": "Unary + makes 10 a number, then 10+1=11."
+  },
+  {
+    "id": 180,
+    "category": "JavaScript",
+    "level": "medium",
+    "question": "What is the output of: '10' + 1 ?",
+    "options": ["'101'", "11", "NaN", "Error"],
+    "answerIndex": 0,
+    "explanation": "String + number concatenates => '101'."
+  },
+  {
+    "id": 181,
+    "category": "JavaScript",
+    "level": "medium",
+    "question": "Which is correct about setTimeout timing?",
+    "options": [
+      "Runs exactly after delay always",
+      "Runs after at least the delay when call stack is free",
+      "Runs before microtasks",
+      "Blocks main thread"
+    ],
+    "answerIndex": 1,
+    "explanation": "Timers are not exact; they wait for the stack."
+  },
+  {
+    "id": 182,
+    "category": "JavaScript",
+    "level": "medium",
+    "question": "Which API runs a callback before next repaint (good for animations)?",
+    "options": [
+      "setTimeout",
+      "requestAnimationFrame",
+      "queueMicrotask",
+      "setInterval"
+    ],
+    "answerIndex": 1,
+    "explanation": "requestAnimationFrame syncs with repaint."
+  },
+  {
+    "id": 183,
+    "category": "React",
+    "level": "medium",
+    "question": "Why should you avoid putting derived state directly in state?",
+    "options": [
+      "It improves performance always",
+      "It can get out of sync; better derive during render or memoize",
+      "React forbids it",
+      "It breaks hooks"
+    ],
+    "answerIndex": 1,
+    "explanation": "Derived values can be computed from existing state/props."
+  },
+  {
+    "id": 184,
+    "category": "React",
+    "level": "medium",
+    "question": "Which hook is recommended to memoize derived state computations?",
+    "options": ["useEffect", "useMemo", "useRef", "useId"],
+    "answerIndex": 1,
+    "explanation": "useMemo memoizes derived computations."
+  },
+  {
+    "id": 185,
+    "category": "React",
+    "level": "medium",
+    "question": "What is the purpose of dependency array in useCallback?",
+    "options": [
+      "Controls when callback is re-created",
+      "Controls CSS updates",
+      "Controls routing",
+      "Controls refs"
+    ],
+    "answerIndex": 0,
+    "explanation": "Dependencies decide when to update memoized function."
+  },
+  {
+    "id": 186,
+    "category": "React",
+    "level": "medium",
+    "question": "What is the purpose of dependency array in useMemo?",
+    "options": [
+      "Controls when value is recomputed",
+      "Controls when component mounts",
+      "Controls when props change in parent",
+      "Controls when DOM updates only"
+    ],
+    "answerIndex": 0,
+    "explanation": "Dependencies decide when to recompute value."
+  },
+  {
+    "id": 187,
+    "category": "React",
+    "level": "medium",
+    "question": "Which scenario best fits useLayoutEffect?",
+    "options": [
+      "Fetching data",
+      "Measuring DOM and synchronously re-positioning before paint",
+      "Memoizing a function",
+      "Storing token"
+    ],
+    "answerIndex": 1,
+    "explanation": "useLayoutEffect is for layout reads/writes before paint."
+  },
+  {
+    "id": 188,
+    "category": "React",
+    "level": "medium",
+    "question": "Which is correct about React portals?",
+    "options": [
+      "They break event bubbling",
+      "Events still bubble through React tree even if DOM is elsewhere",
+      "They disable context",
+      "They can only be used once"
+    ],
+    "answerIndex": 1,
+    "explanation": "Portals keep React event bubbling through component tree."
+  },
+  {
+    "id": 189,
+    "category": "React",
+    "level": "medium",
+    "question": "Which hook labels custom hooks in React DevTools?",
+    "options": ["useLabel", "useDebugValue", "useDevLabel", "useTrace"],
+    "answerIndex": 1,
+    "explanation": "useDebugValue adds labels for custom hooks."
+  },
+  {
+    "id": 190,
+    "category": "React",
+    "level": "medium",
+    "question": "Which hook is useful to defer updating heavy UI while typing?",
+    "options": ["useDeferredValue", "useMemo", "useRef", "useId"],
+    "answerIndex": 0,
+    "explanation": "useDeferredValue helps keep input responsive."
+  },
+  {
+    "id": 191,
+    "category": "React",
+    "level": "medium",
+    "question": "Which hook provides pending state for transition updates?",
+    "options": [
+      "useTransition",
+      "useDeferredValue",
+      "useMemo",
+      "useLayoutEffect"
+    ],
+    "answerIndex": 0,
+    "explanation": "useTransition returns [isPending, startTransition]."
+  },
+  {
+    "id": 192,
+    "category": "React",
+    "level": "medium",
+    "question": "What is the correct usage of startTransition?",
+    "options": [
+      "startTransition(() => setState(...))",
+      "startTransition(setState(...))",
+      "startTransition = setState",
+      "startTransition(() => fetch()) only"
+    ],
+    "answerIndex": 0,
+    "explanation": "Wrap non-urgent updates inside startTransition callback."
+  },
+  {
+    "id": 193,
+    "category": "HTML",
+    "level": "medium",
+    "question": "What is the purpose of rel='noopener' on target='_blank' links?",
+    "options": [
+      "Improves SEO only",
+      "Prevents the new page from accessing window.opener",
+      "Makes link open faster always",
+      "Blocks cookies"
+    ],
+    "answerIndex": 1,
+    "explanation": "noopener helps prevent tabnabbing via window.opener."
+  },
+  {
+    "id": 194,
+    "category": "HTML",
+    "level": "medium",
+    "question": "Which attribute indicates the current page in navigation for accessibility?",
+    "options": [
+      "aria-current='page'",
+      "aria-active='true'",
+      "role='current'",
+      "data-current='page'"
+    ],
+    "answerIndex": 0,
+    "explanation": "aria-current='page' indicates current item."
+  },
+  {
+    "id": 195,
+    "category": "CSS",
+    "level": "medium",
+    "question": "Which CSS feature allows styling only if browser supports something?",
+    "options": ["@supports", "@media", "@layer", "@import"],
+    "answerIndex": 0,
+    "explanation": "@supports applies rules conditionally based on support."
+  },
+  {
+    "id": 196,
+    "category": "CSS",
+    "level": "medium",
+    "question": "Which CSS property can reduce repaint by isolating an element’s layout/paint?",
+    "options": ["contain", "isolate", "optimize", "render-mode"],
+    "answerIndex": 0,
+    "explanation": "contain can limit layout/paint scope."
+  },
+  {
+    "id": 197,
+    "category": "JavaScript",
+    "level": "medium",
+    "question": "Which method converts an iterable into an array?",
+    "options": [
+      "Array.from()",
+      "Array.to()",
+      "Iterable.array()",
+      "toArray() built-in"
+    ],
+    "answerIndex": 0,
+    "explanation": "Array.from works with iterables and array-like."
+  },
+  {
+    "id": 198,
+    "category": "JavaScript",
+    "level": "medium",
+    "question": "Which API is used to store larger structured data in the browser?",
+    "options": ["localStorage", "sessionStorage", "IndexedDB", "window.name"],
+    "answerIndex": 2,
+    "explanation": "IndexedDB is for larger structured storage."
+  },
+  {
+    "id": 199,
+    "category": "React",
+    "level": "medium",
+    "question": "Why can useEffect run twice in development in React 18?",
+    "options": [
+      "Because of bugs",
+      "StrictMode intentionally double-invokes to detect side effects",
+      "Because dependencies are ignored",
+      "Because of CSS reload"
+    ],
+    "answerIndex": 1,
+    "explanation": "StrictMode dev behavior helps catch unsafe side effects."
+  },
+  {
+    "id": 200,
+    "category": "CSS",
+    "level": "medium",
+    "question": "Which media query targets users in dark mode preference?",
+    "options": [
+      "@media (prefers-theme: dark)",
+      "@media (prefers-color-scheme: dark)",
+      "@media (dark-mode: on)",
+      "@media (theme: dark)"
+    ],
+    "answerIndex": 1,
+    "explanation": "prefers-color-scheme detects dark/light preference."
+  },
+
+  {
+    "id": 201,
+    "category": "JavaScript",
+    "level": "medium",
+    "question": "What is the output of: Number.isNaN('NaN') ?",
+    "options": ["true", "false", "throws error", "undefined"],
+    "answerIndex": 1,
+    "explanation": "Number.isNaN checks for actual NaN, and 'NaN' is a string."
+  },
+  {
+    "id": 202,
+    "category": "JavaScript",
+    "level": "medium",
+    "question": "What is the output of: isNaN('NaN') ?",
+    "options": ["true", "false", "throws error", "undefined"],
+    "answerIndex": 0,
+    "explanation": "Global isNaN coerces to number first; Number('NaN') is NaN."
+  },
+  {
+    "id": 203,
+    "category": "JavaScript",
+    "level": "medium",
+    "question": "Which statement about async/await is correct?",
+    "options": [
+      "await blocks the whole browser",
+      "await pauses only the async function execution",
+      "await works only in global scope",
+      "await converts value to string"
+    ],
+    "answerIndex": 1,
+    "explanation": "await pauses within the async function, not the whole thread."
+  },
+  {
+    "id": 204,
+    "category": "JavaScript",
+    "level": "medium",
+    "question": "Which API schedules a callback in the microtask queue?",
+    "options": [
+      "setTimeout",
+      "queueMicrotask",
+      "requestAnimationFrame",
+      "setInterval"
+    ],
+    "answerIndex": 1,
+    "explanation": "queueMicrotask queues a microtask."
+  },
+  {
+    "id": 205,
+    "category": "JavaScript",
+    "level": "medium",
+    "question": "Which statement about Promise.then is correct?",
+    "options": [
+      "then runs immediately before synchronous code",
+      "then callback runs as a microtask",
+      "then callback runs as a macrotask",
+      "then runs only on errors"
+    ],
+    "answerIndex": 1,
+    "explanation": "Promise reactions are scheduled in the microtask queue."
+  },
+  {
+    "id": 206,
+    "category": "JavaScript",
+    "level": "medium",
+    "question": "Which statement about try/catch with Promises is correct?",
+    "options": [
+      "try/catch catches errors inside .then automatically without return",
+      "try/catch catches only synchronous errors unless you await",
+      "try/catch can catch setTimeout errors",
+      "try/catch catches all async errors globally"
+    ],
+    "answerIndex": 1,
+    "explanation": "try/catch catches sync errors; use await or .catch for async."
+  },
+  {
+    "id": 207,
+    "category": "JavaScript",
+    "level": "medium",
+    "question": "What does Promise.finally receive as an argument?",
+    "options": [
+      "Resolved value",
+      "Rejected error",
+      "No argument (value is not provided)",
+      "Both value and error"
+    ],
+    "answerIndex": 2,
+    "explanation": "finally does not receive the settled value/reason."
+  },
+  {
+    "id": 208,
+    "category": "JavaScript",
+    "level": "medium",
+    "question": "Which Promise method returns the first fulfilled promise (ignores rejections until all reject)?",
+    "options": [
+      "Promise.race()",
+      "Promise.any()",
+      "Promise.all()",
+      "Promise.allSettled()"
+    ],
+    "answerIndex": 1,
+    "explanation": "Promise.any resolves with first fulfilled promise."
+  },
+  {
+    "id": 209,
+    "category": "JavaScript",
+    "level": "medium",
+    "question": "What is the output of: [1,2,3].reduce((a,b)=>a+b, 0) ?",
+    "options": ["6", "0", "undefined", "throws error"],
+    "answerIndex": 0,
+    "explanation": "Reduce sums: 0+1+2+3=6."
+  },
+  {
+    "id": 210,
+    "category": "JavaScript",
+    "level": "medium",
+    "question": "What does Array.prototype.reduce primarily do?",
+    "options": [
+      "Filters items",
+      "Transforms to same length array",
+      "Accumulates array into a single value",
+      "Sorts array"
+    ],
+    "answerIndex": 2,
+    "explanation": "reduce accumulates to one value (number/object/etc.)."
+  },
+  {
+    "id": 211,
+    "category": "JavaScript",
+    "level": "medium",
+    "question": "Which method creates a new array from a string characters?",
+    "options": [
+      "Array.from('abc')",
+      "Object.from('abc')",
+      "String.toArray()",
+      "splitChars()"
+    ],
+    "answerIndex": 0,
+    "explanation": "Array.from converts iterable string into array of characters."
+  },
+  {
+    "id": 212,
+    "category": "JavaScript",
+    "level": "medium",
+    "question": "What is the output of: [...'abc'] ?",
+    "options": ["['abc']", "['a','b','c']", "['a','bc']", "throws error"],
+    "answerIndex": 1,
+    "explanation": "Spread on string iterates characters."
+  },
+  {
+    "id": 213,
+    "category": "JavaScript",
+    "level": "medium",
+    "question": "Which statement about Set is correct?",
+    "options": [
+      "Set allows duplicate values",
+      "Set stores unique values",
+      "Set stores key-value pairs",
+      "Set keys must be strings"
+    ],
+    "answerIndex": 1,
+    "explanation": "Set stores unique values only."
+  },
+  {
+    "id": 214,
+    "category": "JavaScript",
+    "level": "medium",
+    "question": "Which statement about WeakMap is correct?",
+    "options": [
+      "Keys can be primitives",
+      "Keys must be objects",
+      "It is iterable",
+      "It prevents garbage collection of keys"
+    ],
+    "answerIndex": 1,
+    "explanation": "WeakMap keys must be objects and are weakly held."
+  },
+  {
+    "id": 215,
+    "category": "JavaScript",
+    "level": "medium",
+    "question": "Which statement about WeakSet is correct?",
+    "options": [
+      "Stores primitives",
+      "Stores only objects",
+      "Is iterable",
+      "Keeps objects from being GC'd"
+    ],
+    "answerIndex": 1,
+    "explanation": "WeakSet stores objects weakly (not iterable)."
+  },
+  {
+    "id": 216,
+    "category": "JavaScript",
+    "level": "medium",
+    "question": "Which operator checks if an object has a property as its own (not inherited) (modern)?",
+    "options": [
+      "obj.hasOwnProperty()",
+      "Object.hasOwn(obj, prop)",
+      "'prop' in obj",
+      "Object.keys(obj).has(prop)"
+    ],
+    "answerIndex": 1,
+    "explanation": "Object.hasOwn(obj, prop) checks own property."
+  },
+  {
+    "id": 217,
+    "category": "JavaScript",
+    "level": "medium",
+    "question": "What is the output of: [1,2,3].slice(1) ?",
+    "options": ["[1]", "[2,3]", "[1,2]", "[]"],
+    "answerIndex": 1,
+    "explanation": "slice(1) returns from index 1 to end."
+  },
+  {
+    "id": 218,
+    "category": "JavaScript",
+    "level": "medium",
+    "question": "What is the output of: [1,2,3].splice(1,1) and the original array becomes?",
+    "options": [
+      "Returns [2], original becomes [1,3]",
+      "Returns [1], original becomes [2,3]",
+      "Returns [2,3], original becomes [1]",
+      "Returns [], original becomes [1,2,3]"
+    ],
+    "answerIndex": 0,
+    "explanation": "splice removes items and mutates original."
+  },
+  {
+    "id": 219,
+    "category": "JavaScript",
+    "level": "medium",
+    "question": "Which statement about Array.sort() is correct?",
+    "options": [
+      "It returns a new array always",
+      "It mutates the original array",
+      "It sorts numbers correctly by default",
+      "It only sorts objects"
+    ],
+    "answerIndex": 1,
+    "explanation": "sort() mutates the original array."
+  },
+  {
+    "id": 220,
+    "category": "JavaScript",
+    "level": "medium",
+    "question": "Why can [10, 2].sort() produce [10,2] instead of [2,10]?",
+    "options": [
+      "Because sort is random",
+      "Because default sort compares as strings",
+      "Because numbers cannot be sorted",
+      "Because sort uses descending order"
+    ],
+    "answerIndex": 1,
+    "explanation": "Default sort converts to strings and sorts lexicographically."
+  },
+  {
+    "id": 221,
+    "category": "JavaScript",
+    "level": "medium",
+    "question": "Which comparator sorts numbers ascending correctly?",
+    "options": ["(a,b)=>a>b", "(a,b)=>a-b", "(a,b)=>b-a-a", "(a,b)=>a+b"],
+    "answerIndex": 1,
+    "explanation": "a-b gives negative/positive for ordering."
+  },
+  {
+    "id": 222,
+    "category": "JavaScript",
+    "level": "medium",
+    "question": "Which method creates a new array with values that pass a condition AND transforms them in one go?",
+    "options": ["map()", "filter()", "flatMap()", "reduceRight()"],
+    "answerIndex": 2,
+    "explanation": "flatMap maps then flattens one level."
+  },
+  {
+    "id": 223,
+    "category": "JavaScript",
+    "level": "medium",
+    "question": "What is the output of: JSON.stringify({a:undefined, b:1}) ?",
+    "options": [
+      "{\"a\":null,\"b\":1}",
+      "{\"b\":1}",
+      "{\"a\":undefined,\"b\":1}",
+      "throws error"
+    ],
+    "answerIndex": 1,
+    "explanation": "undefined values in objects are omitted."
+  },
+  {
+    "id": 224,
+    "category": "JavaScript",
+    "level": "medium",
+    "question": "What is the output of: JSON.stringify([undefined, 1]) ?",
+    "options": ["[null,1]", "[undefined,1]", "[,1]", "throws error"],
+    "answerIndex": 0,
+    "explanation": "undefined in arrays becomes null in JSON."
+  },
+  {
+    "id": 225,
+    "category": "JavaScript",
+    "level": "medium",
+    "question": "Which function is used to run code when the DOM is parsed (without waiting for images)?",
+    "options": [
+      "window.onload",
+      "DOMContentLoaded event",
+      "beforeunload event",
+      "pageshow event"
+    ],
+    "answerIndex": 1,
+    "explanation": "DOMContentLoaded fires when HTML is parsed."
+  },
+  {
+    "id": 226,
+    "category": "JavaScript",
+    "level": "medium",
+    "question": "Which DOM method finds the closest ancestor matching a selector?",
+    "options": ["closest()", "parent()", "near()", "ancestor()"],
+    "answerIndex": 0,
+    "explanation": "element.closest(selector) walks up ancestors."
+  },
+  {
+    "id": 227,
+    "category": "JavaScript",
+    "level": "medium",
+    "question": "Which DOM property returns only element nodes (no text nodes)?",
+    "options": ["childNodes", "children", "firstChild", "nextSibling"],
+    "answerIndex": 1,
+    "explanation": "children returns HTMLCollection of element nodes."
+  },
+  {
+    "id": 228,
+    "category": "JavaScript",
+    "level": "medium",
+    "question": "Which DOM property returns text including hidden CSS text (varies) (more like rendered)?",
+    "options": ["textContent", "innerText", "innerHTML", "outerHTML"],
+    "answerIndex": 1,
+    "explanation": "innerText is closer to rendered text, can be slower."
+  },
+  {
+    "id": 229,
+    "category": "JavaScript",
+    "level": "medium",
+    "question": "Which API is best for measuring element position/size relative to viewport?",
+    "options": [
+      "element.getBoundingClientRect()",
+      "element.getBox()",
+      "window.measure()",
+      "document.rect()"
+    ],
+    "answerIndex": 0,
+    "explanation": "getBoundingClientRect returns size and position."
+  },
+  {
+    "id": 230,
+    "category": "JavaScript",
+    "level": "medium",
+    "question": "What is event.target vs event.currentTarget?",
+    "options": [
+      "Both always same",
+      "target is actual clicked element, currentTarget is handler element",
+      "currentTarget is the deepest element",
+      "target is always parent"
+    ],
+    "answerIndex": 1,
+    "explanation": "target is origin; currentTarget is listener element."
+  },
+  {
+    "id": 231,
+    "category": "React",
+    "level": "medium",
+    "question": "Why is directly mutating state (e.g., arr.push) a problem in React?",
+    "options": [
+      "It causes syntax errors",
+      "React may not detect changes leading to stale UI",
+      "It deletes the state",
+      "It makes code run faster"
+    ],
+    "answerIndex": 1,
+    "explanation": "Mutations can keep same reference, preventing proper updates."
+  },
+  {
+    "id": 232,
+    "category": "React",
+    "level": "medium",
+    "question": "In React, what is 'lifting state up'?",
+    "options": [
+      "Moving CSS to parent",
+      "Moving shared state to the closest common parent",
+      "Using Redux",
+      "Using refs instead of state"
+    ],
+    "answerIndex": 1,
+    "explanation": "Lift state to share it between siblings."
+  },
+  {
+    "id": 233,
+    "category": "React",
+    "level": "medium",
+    "question": "What is a common sign you should lift state up?",
+    "options": [
+      "Only one component uses it",
+      "Two sibling components need the same state",
+      "You want animations",
+      "You use Tailwind"
+    ],
+    "answerIndex": 1,
+    "explanation": "Shared state across siblings often belongs in parent."
+  },
+  {
+    "id": 234,
+    "category": "React",
+    "level": "medium",
+    "question": "Which hook is designed for external store subscriptions in concurrent rendering?",
+    "options": [
+      "useStore",
+      "useSyncExternalStore",
+      "useExternalStore",
+      "useSubscribeStore"
+    ],
+    "answerIndex": 1,
+    "explanation": "useSyncExternalStore is the recommended API."
+  },
+  {
+    "id": 235,
+    "category": "React",
+    "level": "medium",
+    "question": "Which issue can happen if you forget dependencies in useEffect?",
+    "options": [
+      "CSS breaks",
+      "Stale values or missing updates",
+      "React stops rendering",
+      "Hooks stop working"
+    ],
+    "answerIndex": 1,
+    "explanation": "Effect may use old values and not re-run."
+  },
+  {
+    "id": 236,
+    "category": "React",
+    "level": "medium",
+    "question": "Which is the correct way to update object state deeply (recommended approach)?",
+    "options": [
+      "Mutate nested object directly",
+      "Create new copies for each nested level you change",
+      "Use JSON.stringify always",
+      "Use Object.freeze then mutate"
+    ],
+    "answerIndex": 1,
+    "explanation": "Immutable updates require copying changed levels."
+  },
+  {
+    "id": 237,
+    "category": "React",
+    "level": "medium",
+    "question": "What is a common benefit of React key prop?",
+    "options": [
+      "Adds styling",
+      "Helps React match elements between renders",
+      "Makes component faster always",
+      "Fixes CORS"
+    ],
+    "answerIndex": 1,
+    "explanation": "Keys help reconciliation for lists."
+  },
+  {
+    "id": 238,
+    "category": "React",
+    "level": "medium",
+    "question": "What does React reconciliation do?",
+    "options": [
+      "Builds CSS",
+      "Decides minimal DOM updates based on Virtual DOM diff",
+      "Fetches data",
+      "Validates HTML"
+    ],
+    "answerIndex": 1,
+    "explanation": "Reconciliation computes updates efficiently."
+  },
+  {
+    "id": 239,
+    "category": "React",
+    "level": "medium",
+    "question": "Why can using inline object literals in props cause extra re-renders?",
+    "options": [
+      "Objects are compared by reference, new object each render",
+      "Objects are invalid in props",
+      "It breaks JSX parsing",
+      "It changes DOM order"
+    ],
+    "answerIndex": 0,
+    "explanation": "New object reference triggers props change for memoized children."
+  },
+  {
+    "id": 240,
+    "category": "React",
+    "level": "medium",
+    "question": "What is the correct fix for inline objects causing memoized child re-renders?",
+    "options": [
+      "Use useMemo for the object",
+      "Use useEffect for the object",
+      "Use useRef for CSS",
+      "Disable React.memo"
+    ],
+    "answerIndex": 0,
+    "explanation": "useMemo keeps stable object reference."
+  },
+  {
+    "id": 241,
+    "category": "HTML",
+    "level": "medium",
+    "question": "What is the difference between disabled and readonly?",
+    "options": [
+      "Same",
+      "disabled not submitted; readonly submitted",
+      "readonly not submitted; disabled submitted",
+      "disabled is only for textarea"
+    ],
+    "answerIndex": 1,
+    "explanation": "disabled fields are not submitted; readonly fields can be."
+  },
+  {
+    "id": 242,
+    "category": "HTML",
+    "level": "medium",
+    "question": "Which attribute sets the initial checked state of a radio/checkbox?",
+    "options": ["selected", "checked", "default", "value"],
+    "answerIndex": 1,
+    "explanation": "checked sets initial checked state."
+  },
+  {
+    "id": 243,
+    "category": "HTML",
+    "level": "medium",
+    "question": "Which tag is best for navigation links group semantically?",
+    "options": ["<nav>", "<section>", "<header>", "<aside>"],
+    "answerIndex": 0,
+    "explanation": "<nav> is for major navigation blocks."
+  },
+  {
+    "id": 244,
+    "category": "HTML",
+    "level": "medium",
+    "question": "Which attribute controls tab order manually when needed?",
+    "options": ["tabindex", "taborder", "focusindex", "order"],
+    "answerIndex": 0,
+    "explanation": "tabindex controls focus order."
+  },
+  {
+    "id": 245,
+    "category": "HTML",
+    "level": "medium",
+    "question": "What does aria-hidden='true' mean?",
+    "options": [
+      "Element is not visible",
+      "Element is hidden from assistive technologies",
+      "Element cannot be clicked",
+      "Element is removed from DOM"
+    ],
+    "answerIndex": 1,
+    "explanation": "aria-hidden hides from screen readers but not necessarily visually."
+  },
+  {
+    "id": 246,
+    "category": "CSS",
+    "level": "medium",
+    "question": "Why is transform better than top/left for animations?",
+    "options": [
+      "It uses less CSS",
+      "It usually avoids layout recalculation and is more performant",
+      "It makes HTML smaller",
+      "It prevents repaint always"
+    ],
+    "answerIndex": 1,
+    "explanation": "Transforms often avoid layout and use compositor."
+  },
+  {
+    "id": 247,
+    "category": "CSS",
+    "level": "medium",
+    "question": "Which property helps create a new stacking context besides opacity?",
+    "options": ["transform (not none)", "margin", "padding", "border-radius"],
+    "answerIndex": 0,
+    "explanation": "transform creates a new stacking context."
+  },
+  {
+    "id": 248,
+    "category": "CSS",
+    "level": "medium",
+    "question": "Which is correct about position: sticky?",
+    "options": [
+      "It works inside overflow:hidden containers always",
+      "It needs a threshold like top: 0 to stick",
+      "It is same as fixed",
+      "It ignores scroll containers"
+    ],
+    "answerIndex": 1,
+    "explanation": "Sticky needs top/left etc. to define stick point."
+  },
+  {
+    "id": 249,
+    "category": "CSS",
+    "level": "medium",
+    "question": "Which property controls spacing between flex items in modern CSS?",
+    "options": ["gap", "space", "margin-between", "flex-gap only"],
+    "answerIndex": 0,
+    "explanation": "gap works with flex and grid."
+  },
+  {
+    "id": 250,
+    "category": "CSS",
+    "level": "medium",
+    "question": "Which CSS pseudo-class selects input when it is focused within a form group?",
+    "options": [":focus", ":focus-within", ":active", ":target"],
+    "answerIndex": 1,
+    "explanation": ":focus-within applies to parent when any child is focused."
+  },
+  {
+    "id": 251,
+    "category": "CSS",
+    "level": "medium",
+    "question": "Which selector selects elements that are NOT matching a selector?",
+    "options": [":not()", ":none()", ":exclude()", ":except()"],
+    "answerIndex": 0,
+    "explanation": ":not(selector) negates a selector."
+  },
+  {
+    "id": 252,
+    "category": "CSS",
+    "level": "medium",
+    "question": "Which property controls whether a background image scrolls with the page or stays fixed?",
+    "options": [
+      "background-attachment",
+      "background-position",
+      "background-repeat",
+      "background-clip"
+    ],
+    "answerIndex": 0,
+    "explanation": "background-attachment can be fixed/scroll."
+  },
+  {
+    "id": 253,
+    "category": "CSS",
+    "level": "medium",
+    "question": "Which CSS property controls how an image fits inside <img> without distortion?",
+    "options": ["object-fit", "background-size", "fit", "image-rendering"],
+    "answerIndex": 0,
+    "explanation": "object-fit controls <img>/<video> fitting."
+  },
+  {
+    "id": 254,
+    "category": "CSS",
+    "level": "medium",
+    "question": "Which object-fit value ensures whole image is visible but may leave empty space?",
+    "options": ["cover", "contain", "fill", "none"],
+    "answerIndex": 1,
+    "explanation": "contain shows full image without cropping."
+  },
+  {
+    "id": 255,
+    "category": "CSS",
+    "level": "medium",
+    "question": "Which object-fit value fills box and crops extra parts?",
+    "options": ["contain", "cover", "fill", "scale-down"],
+    "answerIndex": 1,
+    "explanation": "cover fills and may crop."
+  },
+  {
+    "id": 256,
+    "category": "JavaScript",
+    "level": "medium",
+    "question": "Which API is used to group multiple DOM updates efficiently?",
+    "options": [
+      "requestAnimationFrame",
+      "document.batch()",
+      "useBatch()",
+      "setTimeout 0 always"
+    ],
+    "answerIndex": 0,
+    "explanation": "requestAnimationFrame can batch visual updates per frame."
+  },
+  {
+    "id": 257,
+    "category": "JavaScript",
+    "level": "medium",
+    "question": "Which is correct about requestAnimationFrame?",
+    "options": [
+      "Runs multiple times per second synced to refresh rate",
+      "Runs only once ever",
+      "Runs as a microtask",
+      "Blocks rendering"
+    ],
+    "answerIndex": 0,
+    "explanation": "rAF schedules per frame callbacks."
+  },
+  {
+    "id": 258,
+    "category": "JavaScript",
+    "level": "medium",
+    "question": "Which method can be used to copy text to clipboard (modern)?",
+    "options": [
+      "document.execCommand('copy') only",
+      "navigator.clipboard.writeText()",
+      "window.copyText()",
+      "Clipboard.copy()"
+    ],
+    "answerIndex": 1,
+    "explanation": "Clipboard API provides writeText."
+  },
+  {
+    "id": 259,
+    "category": "JavaScript",
+    "level": "medium",
+    "question": "Which statement about CORS is correct (frontend view)?",
+    "options": [
+      "CORS is fixed by CSS",
+      "CORS is enforced by browsers; server must allow origin",
+      "CORS is a React feature",
+      "CORS affects only HTML forms"
+    ],
+    "answerIndex": 1,
+    "explanation": "Browser enforces CORS; server sends headers to allow."
+  },
+  {
+    "id": 260,
+    "category": "JavaScript",
+    "level": "medium",
+    "question": "Which header is commonly used by servers to allow cross-origin requests?",
+    "options": [
+      "Access-Control-Allow-Origin",
+      "Allow-Origin",
+      "Cross-Origin-Allow",
+      "CORS-Allow"
+    ],
+    "answerIndex": 0,
+    "explanation": "Access-Control-Allow-Origin controls allowed origins."
+  },
+  {
+    "id": 261,
+    "category": "React",
+    "level": "medium",
+    "question": "What is the main purpose of useEffect dependency array?",
+    "options": [
+      "To speed up JSX",
+      "To control when effect runs based on used values",
+      "To prevent state updates",
+      "To style components"
+    ],
+    "answerIndex": 1,
+    "explanation": "Dependencies ensure effect runs when values change."
+  },
+  {
+    "id": 262,
+    "category": "React",
+    "level": "medium",
+    "question": "Which is true about useEffect with empty dependency array in StrictMode dev?",
+    "options": [
+      "It always runs exactly once",
+      "It can run twice (mount/unmount simulation)",
+      "It never runs",
+      "It runs only on updates"
+    ],
+    "answerIndex": 1,
+    "explanation": "StrictMode may double-invoke effects in development."
+  },
+  {
+    "id": 263,
+    "category": "React",
+    "level": "medium",
+    "question": "Which hook is best to read and write DOM measurements before paint?",
+    "options": ["useEffect", "useLayoutEffect", "useMemo", "useTransition"],
+    "answerIndex": 1,
+    "explanation": "useLayoutEffect runs before paint."
+  },
+  {
+    "id": 264,
+    "category": "React",
+    "level": "medium",
+    "question": "Which is the correct way to conditionally render a component?",
+    "options": [
+      "if inside JSX directly",
+      "condition && <Comp />",
+      "render.if(condition)",
+      "<Comp if={condition} />"
+    ],
+    "answerIndex": 1,
+    "explanation": "Logical && is common for conditional rendering."
+  },
+  {
+    "id": 265,
+    "category": "React",
+    "level": "medium",
+    "question": "Which approach avoids re-creating inline functions passed to memoized children?",
+    "options": [
+      "Use useCallback",
+      "Use useEffect",
+      "Use useId",
+      "Use Fragment"
+    ],
+    "answerIndex": 0,
+    "explanation": "useCallback memoizes function reference."
+  },
+  {
+    "id": 266,
+    "category": "React",
+    "level": "medium",
+    "question": "Which is correct about React state updates with objects/arrays?",
+    "options": [
+      "Mutate then set same reference",
+      "Create new copy and set it",
+      "Use push/pop directly",
+      "React deep compares automatically"
+    ],
+    "answerIndex": 1,
+    "explanation": "React relies on reference change for updates."
+  },
+  {
+    "id": 267,
+    "category": "React",
+    "level": "medium",
+    "question": "Which prop is used to set default checked for uncontrolled checkbox in React?",
+    "options": ["checked", "defaultChecked", "value", "defaultValue"],
+    "answerIndex": 1,
+    "explanation": "defaultChecked sets initial checked state."
+  },
+  {
+    "id": 268,
+    "category": "React",
+    "level": "medium",
+    "question": "Which prop controls checkbox state in controlled component?",
+    "options": ["defaultChecked", "checked", "selected", "value"],
+    "answerIndex": 1,
+    "explanation": "checked binds checkbox to state."
+  },
+  {
+    "id": 269,
+    "category": "HTML",
+    "level": "medium",
+    "question": "What does the <details> element provide?",
+    "options": [
+      "A modal",
+      "A disclosure widget that can be toggled open/closed",
+      "A grid layout",
+      "A tooltip"
+    ],
+    "answerIndex": 1,
+    "explanation": "<details> creates a built-in expandable section."
+  },
+  {
+    "id": 270,
+    "category": "HTML",
+    "level": "medium",
+    "question": "Which element is used as the visible summary label for <details>?",
+    "options": ["<label>", "<summary>", "<caption>", "<legend>"],
+    "answerIndex": 1,
+    "explanation": "<summary> is the clickable heading."
+  },
+  {
+    "id": 271,
+    "category": "HTML",
+    "level": "medium",
+    "question": "Which attribute opens <details> by default?",
+    "options": ["open", "expanded", "show", "visible"],
+    "answerIndex": 0,
+    "explanation": "open attribute expands details initially."
+  },
+  {
+    "id": 272,
+    "category": "CSS",
+    "level": "medium",
+    "question": "Which property controls whether long words break to next line?",
+    "options": ["word-break", "letter-spacing", "line-height", "text-align"],
+    "answerIndex": 0,
+    "explanation": "word-break controls breaking behavior."
+  },
+  {
+    "id": 273,
+    "category": "CSS",
+    "level": "medium",
+    "question": "Which property is commonly used to break long URLs nicely?",
+    "options": [
+      "overflow-wrap: anywhere",
+      "white-space: nowrap",
+      "text-overflow: ellipsis",
+      "display: block"
+    ],
+    "answerIndex": 0,
+    "explanation": "overflow-wrap helps wrap long strings."
+  },
+  {
+    "id": 274,
+    "category": "CSS",
+    "level": "medium",
+    "question": "Which selector selects only direct children of an element?",
+    "options": ["A B", "A > B", "A + B", "A ~ B"],
+    "answerIndex": 1,
+    "explanation": "A > B selects direct children."
+  },
+  {
+    "id": 275,
+    "category": "CSS",
+    "level": "medium",
+    "question": "Which selector selects the immediate next sibling?",
+    "options": ["A B", "A > B", "A + B", "A ~ B"],
+    "answerIndex": 2,
+    "explanation": "A + B selects the next sibling only."
+  },
+  {
+    "id": 276,
+    "category": "CSS",
+    "level": "medium",
+    "question": "Which selector selects all following siblings?",
+    "options": ["A B", "A > B", "A + B", "A ~ B"],
+    "answerIndex": 3,
+    "explanation": "A ~ B selects all following siblings."
+  },
+  {
+    "id": 277,
+    "category": "JavaScript",
+    "level": "medium",
+    "question": "Which statement about '==' with null is correct?",
+    "options": [
+      "null == undefined is false",
+      "null == undefined is true",
+      "null == 0 is true",
+      "null == '' is true"
+    ],
+    "answerIndex": 1,
+    "explanation": "Loose equality treats null and undefined as equal."
+  },
+  {
+    "id": 278,
+    "category": "JavaScript",
+    "level": "medium",
+    "question": "What is the output of: null === undefined ?",
+    "options": ["true", "false", "throws error", "undefined"],
+    "answerIndex": 1,
+    "explanation": "Strict equality compares type too; different types."
+  },
+  {
+    "id": 279,
+    "category": "JavaScript",
+    "level": "medium",
+    "question": "What is the output of: [] == false ?",
+    "options": ["true", "false", "throws error", "depends on browser"],
+    "answerIndex": 0,
+    "explanation": "[] coerces to '' then 0, false coerces to 0 => true."
+  },
+  {
+    "id": 280,
+    "category": "JavaScript",
+    "level": "medium",
+    "question": "What is the output of: [] === false ?",
+    "options": ["true", "false", "throws error", "undefined"],
+    "answerIndex": 1,
+    "explanation": "Different types; strict equality is false."
+  },
+  {
+    "id": 281,
+    "category": "React",
+    "level": "medium",
+    "question": "What is the primary difference between props and state?",
+    "options": [
+      "Props are internal; state is external",
+      "Props are passed in; state is managed within component",
+      "Props are mutable; state is immutable",
+      "Props update only with useEffect"
+    ],
+    "answerIndex": 1,
+    "explanation": "Props come from parent; state is component-managed."
+  },
+  {
+    "id": 282,
+    "category": "React",
+    "level": "medium",
+    "question": "What is a common pattern for passing data from child to parent?",
+    "options": [
+      "Child updates parent state directly",
+      "Pass a callback prop from parent to child",
+      "Use CSS variables",
+      "Use portals"
+    ],
+    "answerIndex": 1,
+    "explanation": "Parent passes a function; child calls it with data."
+  },
+  {
+    "id": 283,
+    "category": "React",
+    "level": "medium",
+    "question": "What can happen if you call setState inside useEffect without dependencies?",
+    "options": [
+      "Nothing",
+      "It can cause an infinite loop",
+      "It fixes performance",
+      "It stops re-rendering"
+    ],
+    "answerIndex": 1,
+    "explanation": "Effect runs after every render, setState triggers another render."
+  },
+  {
+    "id": 284,
+    "category": "React",
+    "level": "medium",
+    "question": "Which is correct to avoid infinite loop when fetching data in useEffect?",
+    "options": [
+      "No dependency array",
+      "Empty dependency array [] (or correct deps)",
+      "Use useMemo only",
+      "Fetch inside render"
+    ],
+    "answerIndex": 1,
+    "explanation": "Use [] for run-once fetch (plus strict mode dev behavior)."
+  },
+  {
+    "id": 285,
+    "category": "React",
+    "level": "medium",
+    "question": "Which hook is used to share logic between components (custom hook concept)?",
+    "options": ["useShare", "Custom Hooks", "useLogic", "React.mixins"],
+    "answerIndex": 1,
+    "explanation": "Custom hooks share reusable logic."
+  },
+  {
+    "id": 286,
+    "category": "HTML",
+    "level": "medium",
+    "question": "What does the 'autofocus' attribute do?",
+    "options": [
+      "Autofills values",
+      "Focuses the element on page load",
+      "Validates input",
+      "Makes input required"
+    ],
+    "answerIndex": 1,
+    "explanation": "autofocus sets focus when the page loads."
+  },
+  {
+    "id": 287,
+    "category": "HTML",
+    "level": "medium",
+    "question": "Which attribute helps browsers store/reuse form values?",
+    "options": ["autocomplete", "autofill", "remember", "store"],
+    "answerIndex": 0,
+    "explanation": "autocomplete controls autofill suggestions."
+  },
+  {
+    "id": 288,
+    "category": "CSS",
+    "level": "medium",
+    "question": "Which property can create a blur effect?",
+    "options": [
+      "filter: blur()",
+      "opacity: blur()",
+      "transform: blur()",
+      "background-blur"
+    ],
+    "answerIndex": 0,
+    "explanation": "filter: blur(px) blurs an element."
+  },
+  {
+    "id": 289,
+    "category": "CSS",
+    "level": "medium",
+    "question": "Which property can apply grayscale to an element?",
+    "options": [
+      "filter: grayscale()",
+      "color: gray()",
+      "transform: gray()",
+      "opacity: gray()"
+    ],
+    "answerIndex": 0,
+    "explanation": "filter: grayscale() applies grayscale."
+  },
+  {
+    "id": 290,
+    "category": "CSS",
+    "level": "medium",
+    "question": "Which property can invert colors of an element?",
+    "options": [
+      "filter: invert()",
+      "color: invert()",
+      "transform: invert()",
+      "opacity: invert()"
+    ],
+    "answerIndex": 0,
+    "explanation": "filter: invert() inverts colors."
+  },
+  {
+    "id": 291,
+    "category": "JavaScript",
+    "level": "medium",
+    "question": "What does Array.prototype.includes() return?",
+    "options": ["Index", "Boolean", "Array", "Object"],
+    "answerIndex": 1,
+    "explanation": "includes returns true/false if value exists."
+  },
+  {
+    "id": 292,
+    "category": "JavaScript",
+    "level": "medium",
+    "question": "Which statement about includes vs indexOf is correct?",
+    "options": [
+      "includes finds NaN, indexOf does not",
+      "indexOf finds NaN, includes does not",
+      "Both behave same for NaN",
+      "Neither works on arrays"
+    ],
+    "answerIndex": 0,
+    "explanation": "includes can find NaN; indexOf cannot."
+  },
+  {
+    "id": 293,
+    "category": "JavaScript",
+    "level": "medium",
+    "question": "Which method converts an object to primitive string (default) when concatenated?",
+    "options": [
+      "toString()",
+      "valueOf()",
+      "toJSON()",
+      "toPrimitive() built-in only"
+    ],
+    "answerIndex": 0,
+    "explanation": "Objects often use toString for string coercion."
+  },
+  {
+    "id": 294,
+    "category": "JavaScript",
+    "level": "medium",
+    "question": "Which symbol allows customizing object primitive conversion?",
+    "options": [
+      "Symbol.iterator",
+      "Symbol.toPrimitive",
+      "Symbol.toStringTag",
+      "Symbol.species"
+    ],
+    "answerIndex": 1,
+    "explanation": "Symbol.toPrimitive customizes coercion."
+  },
+  {
+    "id": 295,
+    "category": "JavaScript",
+    "level": "medium",
+    "question": "Which statement about optional chaining is correct?",
+    "options": [
+      "It prevents all errors",
+      "It returns undefined if target is null/undefined",
+      "It converts values to boolean",
+      "It throws when missing"
+    ],
+    "answerIndex": 1,
+    "explanation": "?. returns undefined when short-circuiting."
+  },
+  {
+    "id": 296,
+    "category": "React",
+    "level": "medium",
+    "question": "What is one common issue with storing non-serializable values in state (like DOM nodes)?",
+    "options": [
+      "It is required",
+      "Harder debugging and unexpected behavior; refs are better",
+      "It improves performance",
+      "React forbids refs"
+    ],
+    "answerIndex": 1,
+    "explanation": "Refs are better for DOM nodes/mutable non-UI state."
+  },
+  {
+    "id": 297,
+    "category": "React",
+    "level": "medium",
+    "question": "Which hook should be used to store a timer id without causing re-render?",
+    "options": ["useState", "useRef", "useMemo", "useId"],
+    "answerIndex": 1,
+    "explanation": "useRef stores mutable values without re-render."
+  },
+  {
+    "id": 298,
+    "category": "React",
+    "level": "medium",
+    "question": "In React, why is state update after unmount a problem?",
+    "options": [
+      "It makes CSS break",
+      "It can cause memory leaks or warnings",
+      "It speeds up app",
+      "It changes DOM order"
+    ],
+    "answerIndex": 1,
+    "explanation": "Updating after unmount indicates stale async work."
+  },
+  {
+    "id": 299,
+    "category": "CSS",
+    "level": "medium",
+    "question": "Which property is used to control element visibility without removing layout space?",
+    "options": [
+      "display: none",
+      "visibility: hidden",
+      "position: absolute",
+      "float: none"
+    ],
+    "answerIndex": 1,
+    "explanation": "visibility: hidden hides but keeps space."
+  },
+  {
+    "id": 300,
+    "category": "HTML",
+    "level": "medium",
+    "question": "Which attribute should be used to specify that a button submits a form?",
+    "options": [
+      "type='submit'",
+      "submit='true'",
+      "role='submit'",
+      "action='submit'"
+    ],
+    "answerIndex": 0,
+    "explanation": "button type='submit' submits the form."
+  }
+]

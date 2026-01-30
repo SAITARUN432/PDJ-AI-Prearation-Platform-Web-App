@@ -1,0 +1,3989 @@
+[
+  {
+    "id": 1,
+    "category": "JavaScript",
+    "level": "hard",
+    "question": "What will `Object.is(NaN, NaN)` return?",
+    "options": ["true", "false", "Throws TypeError", "Depends on strict mode"],
+    "answerIndex": 0,
+    "explanation": "Object.is treats NaN as equal to itself (unlike ===)."
+  },
+  {
+    "id": 2,
+    "category": "JavaScript",
+    "level": "hard",
+    "question": "Which statement about the event loop is correct?",
+    "options": [
+      "Microtasks run after the next macrotask",
+      "Macrotasks always run before microtasks",
+      "Microtasks are drained before rendering and before the next macrotask",
+      "Rendering happens before microtasks"
+    ],
+    "answerIndex": 2,
+    "explanation": "Microtask queue (Promises, queueMicrotask) is drained after a task and before the next task/render."
+  },
+  {
+    "id": 3,
+    "category": "JavaScript",
+    "level": "hard",
+    "question": "What does `typeof null` evaluate to in JavaScript?",
+    "options": ["\"null\"", "\"object\"", "\"undefined\"", "\"number\""],
+    "answerIndex": 1,
+    "explanation": "`typeof null` is a long-standing JavaScript bug; it returns \"object\"."
+  },
+  {
+    "id": 4,
+    "category": "JavaScript",
+    "level": "hard",
+    "question": "Which is true about `WeakMap` keys?",
+    "options": [
+      "Keys can be strings",
+      "Keys must be objects",
+      "Keys can be numbers",
+      "Keys are enumerable by default"
+    ],
+    "answerIndex": 1,
+    "explanation": "WeakMap keys must be non-primitive objects and are not enumerable."
+  },
+  {
+    "id": 5,
+    "category": "JavaScript",
+    "level": "hard",
+    "question": "What is the main purpose of `AbortController` in fetch?",
+    "options": [
+      "Retry failed requests",
+      "Cancel an in-flight request",
+      "Cache responses",
+      "Throttle requests automatically"
+    ],
+    "answerIndex": 1,
+    "explanation": "AbortController provides an abort signal to cancel fetch/streams."
+  },
+  {
+    "id": 6,
+    "category": "JavaScript",
+    "level": "hard",
+    "question": "Which method creates a new Promise that settles when all input Promises settle (not just fulfill)?",
+    "options": [
+      "Promise.all",
+      "Promise.race",
+      "Promise.allSettled",
+      "Promise.any"
+    ],
+    "answerIndex": 2,
+    "explanation": "Promise.allSettled returns results for both fulfilled and rejected promises."
+  },
+  {
+    "id": 7,
+    "category": "JavaScript",
+    "level": "hard",
+    "question": "What does `Array.prototype.flatMap()` do?",
+    "options": [
+      "Maps then deeply flattens all levels",
+      "Maps then flattens one level",
+      "Flattens then maps",
+      "Only flattens arrays without mapping"
+    ],
+    "answerIndex": 1,
+    "explanation": "flatMap = map + flat(1)."
+  },
+  {
+    "id": 8,
+    "category": "JavaScript",
+    "level": "hard",
+    "question": "Which is true about `structuredClone()`?",
+    "options": [
+      "It can clone functions",
+      "It can clone DOM nodes",
+      "It can clone many built-in types like Map/Set",
+      "It always preserves prototype chains for custom classes"
+    ],
+    "answerIndex": 2,
+    "explanation": "structuredClone supports many built-ins (Map/Set/Date/ArrayBuffer), but not functions/DOM nodes."
+  },
+  {
+    "id": 9,
+    "category": "JavaScript",
+    "level": "hard",
+    "question": "In strict mode, what is the value of `this` inside a regular function called as `fn()`?",
+    "options": [
+      "global object",
+      "undefined",
+      "the function itself",
+      "window always"
+    ],
+    "answerIndex": 1,
+    "explanation": "In strict mode, unbound `this` is undefined."
+  },
+  {
+    "id": 10,
+    "category": "JavaScript",
+    "level": "hard",
+    "question": "Which operation is NOT allowed in a JavaScript module (ESM)?",
+    "options": [
+      "Top-level await (where supported)",
+      "Importing JSON (with proper support)",
+      "Using `import` statements conditionally inside blocks",
+      "Using `export` statements"
+    ],
+    "answerIndex": 2,
+    "explanation": "Static `import` must be top-level; use dynamic `import()` for conditional loading."
+  },
+
+  {
+    "id": 11,
+    "category": "React",
+    "level": "hard",
+    "question": "What problem does the `key` prop primarily solve in React lists?",
+    "options": [
+      "Improves CSS specificity",
+      "Helps React match elements between renders for correct reconciliation",
+      "Prevents re-renders completely",
+      "Enables SSR automatically"
+    ],
+    "answerIndex": 1,
+    "explanation": "Keys help React identify which items changed/added/removed during reconciliation."
+  },
+  {
+    "id": 12,
+    "category": "React",
+    "level": "hard",
+    "question": "Why is using array index as `key` risky when rendering a dynamic list?",
+    "options": [
+      "It breaks JSX parsing",
+      "It causes slower bundling",
+      "It can cause state/input to jump between rows when items reorder/insert",
+      "It disables React DevTools"
+    ],
+    "answerIndex": 2,
+    "explanation": "Index keys change meaning when the list order changes, confusing reconciliation and preserving wrong state."
+  },
+  {
+    "id": 13,
+    "category": "React",
+    "level": "hard",
+    "question": "Which hook is best for reading layout and synchronously measuring DOM after React commits changes?",
+    "options": ["useEffect", "useMemo", "useLayoutEffect", "useCallback"],
+    "answerIndex": 2,
+    "explanation": "useLayoutEffect runs synchronously after DOM mutations but before paint."
+  },
+  {
+    "id": 14,
+    "category": "React",
+    "level": "hard",
+    "question": "What is the correct statement about React state updates in the same event handler?",
+    "options": [
+      "They always run immediately one-by-one",
+      "They are batched and may be applied together",
+      "They are ignored in strict mode",
+      "They only batch in class components"
+    ],
+    "answerIndex": 1,
+    "explanation": "React batches updates for performance; use functional updates to avoid stale state."
+  },
+  {
+    "id": 15,
+    "category": "React",
+    "level": "hard",
+    "question": "What is a common reason `useEffect` runs twice in development even if dependencies don't change?",
+    "options": [
+      "Browser bug",
+      "Strict Mode intentionally double-invokes effects in dev to surface side-effects",
+      "It happens only on slow devices",
+      "It means dependencies are wrong always"
+    ],
+    "answerIndex": 1,
+    "explanation": "React Strict Mode in dev may re-run effects to help detect unsafe side effects."
+  },
+  {
+    "id": 16,
+    "category": "React",
+    "level": "hard",
+    "question": "What does `useMemo` guarantee?",
+    "options": [
+      "No recomputation ever",
+      "Memoization only within a render, not across renders",
+      "Returns same value between renders while dependencies unchanged",
+      "Prevents child re-renders always"
+    ],
+    "answerIndex": 2,
+    "explanation": "useMemo caches a value between renders until deps change, but React may discard cache in some cases."
+  },
+  {
+    "id": 17,
+    "category": "React",
+    "level": "hard",
+    "question": "When should you prefer `useCallback`?",
+    "options": [
+      "To memoize expensive values",
+      "To memoize function identity passed to memoized children or deps",
+      "To replace all functions in components",
+      "To avoid writing functions inline"
+    ],
+    "answerIndex": 1,
+    "explanation": "useCallback stabilizes function identity, useful for memoized children or hook dependencies."
+  },
+  {
+    "id": 18,
+    "category": "React",
+    "level": "hard",
+    "question": "Which is true about controlled vs uncontrolled inputs?",
+    "options": [
+      "Controlled inputs cannot be validated",
+      "Uncontrolled inputs require `value` and `onChange`",
+      "Controlled inputs are driven by React state",
+      "Uncontrolled inputs always re-render on every keystroke"
+    ],
+    "answerIndex": 2,
+    "explanation": "Controlled inputs: value comes from state; uncontrolled inputs rely on DOM with refs/defaultValue."
+  },
+  {
+    "id": 19,
+    "category": "React",
+    "level": "hard",
+    "question": "What can cause an infinite re-render loop in React?",
+    "options": [
+      "Calling setState during render",
+      "Using React.Fragment",
+      "Using keys in lists",
+      "Using CSS modules"
+    ],
+    "answerIndex": 0,
+    "explanation": "Updating state while rendering triggers another render repeatedly."
+  },
+  {
+    "id": 20,
+    "category": "React",
+    "level": "hard",
+    "question": "What is the main purpose of React Context?",
+    "options": [
+      "To replace all props",
+      "To share data through the component tree without prop drilling",
+      "To manage server databases",
+      "To optimize CSS rendering"
+    ],
+    "answerIndex": 1,
+    "explanation": "Context provides a way to pass values deep without manually passing props at every level."
+  },
+
+  {
+    "id": 21,
+    "category": "HTML",
+    "level": "hard",
+    "question": "Which HTML attribute improves form accessibility by connecting a `<label>` to an `<input>`?",
+    "options": ["aria-name", "for (label) + id (input)", "role", "tabindex"],
+    "answerIndex": 1,
+    "explanation": "`label for` must match the input's `id` to associate them."
+  },
+  {
+    "id": 22,
+    "category": "HTML",
+    "level": "hard",
+    "question": "What does the `autocomplete=\"one-time-code\"` hint help with?",
+    "options": [
+      "Autofilling credit cards",
+      "Autofilling OTP/verification codes on supported devices",
+      "Disabling browser autofill",
+      "Saving passwords"
+    ],
+    "answerIndex": 1,
+    "explanation": "It hints that the field expects an OTP code for easier autofill."
+  },
+  {
+    "id": 23,
+    "category": "HTML",
+    "level": "hard",
+    "question": "Which element is best for marking up a self-contained article that could be syndicated?",
+    "options": ["<section>", "<article>", "<div>", "<aside>"],
+    "answerIndex": 1,
+    "explanation": "<article> represents a self-contained composition (post, news, blog)."
+  },
+  {
+    "id": 24,
+    "category": "HTML",
+    "level": "hard",
+    "question": "What is the correct use of `<button type=\"button\">` inside a form?",
+    "options": [
+      "It submits the form by default",
+      "It resets the form by default",
+      "It will not submit unless you handle it",
+      "It becomes disabled automatically"
+    ],
+    "answerIndex": 2,
+    "explanation": "Default button type in forms is submit; setting type=button avoids accidental submit."
+  },
+  {
+    "id": 25,
+    "category": "HTML",
+    "level": "hard",
+    "question": "Which attribute is used with `<script>` to avoid blocking HTML parsing and execute after download (order not guaranteed)?",
+    "options": ["defer", "async", "nomodule", "integrity"],
+    "answerIndex": 1,
+    "explanation": "`async` downloads in parallel and executes as soon as ready; order is not guaranteed."
+  },
+
+  {
+    "id": 26,
+    "category": "CSS",
+    "level": "hard",
+    "question": "What is a new containing block in CSS that can affect `position: fixed` descendants?",
+    "options": [
+      "Any element with padding",
+      "An element with `transform` (or certain properties like filter)",
+      "Any flex container",
+      "Any element with `overflow: visible`"
+    ],
+    "answerIndex": 1,
+    "explanation": "Transforms (and some other properties) create a containing block affecting fixed/absolute positioning."
+  },
+  {
+    "id": 27,
+    "category": "CSS",
+    "level": "hard",
+    "question": "Which property creates a new stacking context?",
+    "options": [
+      "z-index: auto",
+      "position: static",
+      "opacity: 0.99",
+      "margin: 10px"
+    ],
+    "answerIndex": 2,
+    "explanation": "Opacity less than 1 creates a stacking context (among other triggers)."
+  },
+  {
+    "id": 28,
+    "category": "CSS",
+    "level": "hard",
+    "question": "What does `minmax(200px, 1fr)` mean in CSS Grid?",
+    "options": [
+      "Always 1fr",
+      "Minimum 200px, maximum flexible fraction of remaining space",
+      "Minimum 1fr, maximum 200px",
+      "Locks column at 200px always"
+    ],
+    "answerIndex": 1,
+    "explanation": "Grid track won't shrink below 200px, but can grow to fill remaining space."
+  },
+  {
+    "id": 29,
+    "category": "CSS",
+    "level": "hard",
+    "question": "What is the effect of `pointer-events: none` on an element?",
+    "options": [
+      "It becomes invisible",
+      "It ignores mouse/touch events and lets clicks pass through",
+      "It disables keyboard focus",
+      "It prevents reflow"
+    ],
+    "answerIndex": 1,
+    "explanation": "The element doesn't receive pointer events; underlying elements can be targeted."
+  },
+  {
+    "id": 30,
+    "category": "CSS",
+    "level": "hard",
+    "question": "Which CSS function helps clamp a responsive value between min and max?",
+    "options": ["calc()", "clamp()", "var()", "attr()"],
+    "answerIndex": 1,
+    "explanation": "clamp(min, preferred, max) constrains the computed value."
+  },
+
+  {
+    "id": 31,
+    "category": "JavaScript",
+    "level": "hard",
+    "question": "What is the output of `[] + {}` in JavaScript (in a typical JS console expression context)?",
+    "options": ["\"[object Object]\"", "\"{}\"", "NaN", "Throws error"],
+    "answerIndex": 0,
+    "explanation": "Both operands coerce to primitives; {} becomes \"[object Object]\" and [] becomes \"\" -> concatenation."
+  },
+  {
+    "id": 32,
+    "category": "JavaScript",
+    "level": "hard",
+    "question": "Which API is best to schedule a callback right after the current call stack but before repaint?",
+    "options": [
+      "setTimeout(fn, 0)",
+      "requestAnimationFrame",
+      "queueMicrotask",
+      "setInterval"
+    ],
+    "answerIndex": 2,
+    "explanation": "queueMicrotask runs in microtask queue after current stack, before next task/render."
+  },
+  {
+    "id": 33,
+    "category": "JavaScript",
+    "level": "hard",
+    "question": "What does `Promise.any()` do when all promises reject?",
+    "options": [
+      "Resolves with undefined",
+      "Rejects with the first error",
+      "Rejects with an AggregateError",
+      "Never settles"
+    ],
+    "answerIndex": 2,
+    "explanation": "Promise.any rejects with AggregateError if all inputs reject."
+  },
+  {
+    "id": 34,
+    "category": "JavaScript",
+    "level": "hard",
+    "question": "What is the key difference between `Map` and plain object for keys?",
+    "options": [
+      "Object keys can be objects without coercion",
+      "Map keys can be any value including objects without string coercion",
+      "Map keys are always strings",
+      "Objects preserve insertion order better than Map always"
+    ],
+    "answerIndex": 1,
+    "explanation": "Map supports non-string keys directly; objects coerce keys to strings/symbols."
+  },
+  {
+    "id": 35,
+    "category": "JavaScript",
+    "level": "hard",
+    "question": "Which is true about `===` vs `Object.is` for `-0` and `0`?",
+    "options": [
+      "Both treat them as different",
+      "`===` treats them different but Object.is same",
+      "`===` treats them same but Object.is different",
+      "Both throw an error"
+    ],
+    "answerIndex": 2,
+    "explanation": "`0 === -0` is true, but `Object.is(0, -0)` is false."
+  },
+
+  {
+    "id": 36,
+    "category": "React",
+    "level": "hard",
+    "question": "What is the correct reason to use functional updates like `setCount(c => c + 1)`?",
+    "options": [
+      "It makes state immutable automatically",
+      "It avoids stale closures when updates depend on previous state",
+      "It prevents batching",
+      "It runs faster in all cases"
+    ],
+    "answerIndex": 1,
+    "explanation": "Functional updates always receive the latest state value, safe with batching."
+  },
+  {
+    "id": 37,
+    "category": "React",
+    "level": "hard",
+    "question": "What does `React.memo` do?",
+    "options": [
+      "Memoizes hooks",
+      "Prevents re-render if props are shallow-equal (by default)",
+      "Stops all renders permanently",
+      "Memoizes context values"
+    ],
+    "answerIndex": 1,
+    "explanation": "React.memo memoizes a component render based on props equality (custom compare optional)."
+  },
+  {
+    "id": 38,
+    "category": "React",
+    "level": "hard",
+    "question": "Why can defining objects/arrays inline in JSX props break memoization?",
+    "options": [
+      "Because JSX can't compare objects",
+      "Because new references are created every render",
+      "Because React converts them to strings",
+      "Because it changes DOM attributes"
+    ],
+    "answerIndex": 1,
+    "explanation": "Inline literals create new references each render, failing shallow prop comparisons."
+  },
+  {
+    "id": 39,
+    "category": "React",
+    "level": "hard",
+    "question": "Which hook is intended to hold a mutable value that does NOT trigger re-renders when changed?",
+    "options": ["useState", "useReducer", "useRef", "useEffect"],
+    "answerIndex": 2,
+    "explanation": "useRef holds `.current` across renders without causing re-render on mutation."
+  },
+  {
+    "id": 40,
+    "category": "React",
+    "level": "hard",
+    "question": "What is the main risk of calling hooks inside loops or conditions?",
+    "options": [
+      "It slows down rendering",
+      "It breaks the Rules of Hooks and can mismatch hook order between renders",
+      "It disables TypeScript",
+      "It prevents SSR"
+    ],
+    "answerIndex": 1,
+    "explanation": "Hooks must be called in the same order every render."
+  },
+
+  {
+    "id": 41,
+    "category": "HTML",
+    "level": "hard",
+    "question": "Which ARIA practice is best for an icon-only button?",
+    "options": [
+      "No label needed",
+      "Use `aria-label` or visible text for accessible name",
+      "Use `aria-hidden=false` on the icon only",
+      "Use `role=img` on the button"
+    ],
+    "answerIndex": 1,
+    "explanation": "Icon-only buttons need an accessible name via aria-label or text."
+  },
+  {
+    "id": 42,
+    "category": "HTML",
+    "level": "hard",
+    "question": "What is the effect of `rel=\"noopener\"` on `<a target=\"_blank\">`?",
+    "options": [
+      "Forces HTTPS",
+      "Prevents new page from accessing `window.opener` (security)",
+      "Improves SEO ranking",
+      "Preloads the page"
+    ],
+    "answerIndex": 1,
+    "explanation": "noopener prevents reverse-tabnabbing by removing opener access."
+  },
+  {
+    "id": 43,
+    "category": "HTML",
+    "level": "hard",
+    "question": "Which input type provides built-in validation for email format?",
+    "options": ["text", "email", "url", "tel"],
+    "answerIndex": 1,
+    "explanation": "type=email enables basic email validation and appropriate keyboard on mobile."
+  },
+  {
+    "id": 44,
+    "category": "HTML",
+    "level": "hard",
+    "question": "Which attribute helps prevent duplicate form submissions on slow networks (best practice)?",
+    "options": [
+      "method=\"fast\"",
+      "novalidate",
+      "disabled submit button via JS during submit",
+      "autocomplete=\"off\""
+    ],
+    "answerIndex": 2,
+    "explanation": "Disabling the submit button on submit is a common UX pattern to prevent double submits."
+  },
+  {
+    "id": 45,
+    "category": "HTML",
+    "level": "hard",
+    "question": "What does the `<meta name=\"viewport\" ...>` tag primarily control?",
+    "options": [
+      "SEO keywords",
+      "Mobile layout scaling/viewport size",
+      "HTTP caching",
+      "Cross-origin permissions"
+    ],
+    "answerIndex": 1,
+    "explanation": "Viewport meta controls how pages scale on mobile devices."
+  },
+
+  {
+    "id": 46,
+    "category": "CSS",
+    "level": "hard",
+    "question": "What is the difference between `em` and `rem`?",
+    "options": [
+      "Both always relative to root",
+      "`em` relative to parent font-size, `rem` relative to root font-size",
+      "`rem` relative to parent, `em` relative to root",
+      "They are absolute units"
+    ],
+    "answerIndex": 1,
+    "explanation": "em depends on current element/parent; rem depends on root element."
+  },
+  {
+    "id": 47,
+    "category": "CSS",
+    "level": "hard",
+    "question": "Which technique is best to create a container query-based layout?",
+    "options": [
+      "@media queries only",
+      "@container queries with `container-type` on parent",
+      "CSS variables only",
+      "float layout"
+    ],
+    "answerIndex": 1,
+    "explanation": "Container queries require setting container-type on a parent and using @container."
+  },
+  {
+    "id": 48,
+    "category": "CSS",
+    "level": "hard",
+    "question": "What does `content-visibility: auto` mainly optimize?",
+    "options": [
+      "Network requests",
+      "Scroll performance by skipping rendering offscreen content",
+      "Image compression",
+      "Font loading"
+    ],
+    "answerIndex": 1,
+    "explanation": "It allows the browser to skip rendering/layout for offscreen elements until needed."
+  },
+  {
+    "id": 49,
+    "category": "CSS",
+    "level": "hard",
+    "question": "Which is true about `position: sticky`?",
+    "options": [
+      "It works without specifying top/left",
+      "It sticks relative to the nearest scrolling ancestor",
+      "It always sticks to viewport only",
+      "It ignores overflow containers"
+    ],
+    "answerIndex": 1,
+    "explanation": "Sticky positioning is constrained by its scroll container and needs an offset (like top)."
+  },
+  {
+    "id": 50,
+    "category": "CSS",
+    "level": "hard",
+    "question": "What does `aspect-ratio: 16 / 9` do?",
+    "options": [
+      "Forces width only",
+      "Forces height only",
+      "Helps browsers calculate intrinsic size to maintain ratio",
+      "Disables responsive sizing"
+    ],
+    "answerIndex": 2,
+    "explanation": "aspect-ratio helps compute size so element keeps the desired ratio when one dimension is auto."
+  },
+
+  {
+    "id": 51,
+    "category": "JavaScript",
+    "level": "hard",
+    "question": "Which API should you use to observe DOM changes (added/removed nodes)?",
+    "options": [
+      "IntersectionObserver",
+      "MutationObserver",
+      "ResizeObserver",
+      "PerformanceObserver"
+    ],
+    "answerIndex": 1,
+    "explanation": "MutationObserver watches DOM mutations like childList/attributes changes."
+  },
+  {
+    "id": 52,
+    "category": "JavaScript",
+    "level": "hard",
+    "question": "Which pattern best avoids blocking the main thread for heavy computation in the browser?",
+    "options": [
+      "setTimeout loops",
+      "Web Workers",
+      "More Promises",
+      "requestAnimationFrame only"
+    ],
+    "answerIndex": 1,
+    "explanation": "Web Workers run JS in a separate thread for CPU-heavy work."
+  },
+  {
+    "id": 53,
+    "category": "JavaScript",
+    "level": "hard",
+    "question": "What does `event.stopImmediatePropagation()` do?",
+    "options": [
+      "Stops bubbling only",
+      "Stops capturing only",
+      "Stops other listeners on the same element and prevents further propagation",
+      "Prevents default action"
+    ],
+    "answerIndex": 2,
+    "explanation": "It stops remaining listeners on the same target and halts propagation."
+  },
+  {
+    "id": 54,
+    "category": "JavaScript",
+    "level": "hard",
+    "question": "Which is true about `Symbol` as an object key?",
+    "options": [
+      "It will appear in JSON.stringify",
+      "It avoids name collisions because symbols are unique",
+      "It can only be used in Maps",
+      "It is automatically enumerable in for...in"
+    ],
+    "answerIndex": 1,
+    "explanation": "Symbols are unique keys and reduce collisions; JSON/string iteration behaves differently."
+  },
+  {
+    "id": 55,
+    "category": "JavaScript",
+    "level": "hard",
+    "question": "What is the purpose of `requestIdleCallback`?",
+    "options": [
+      "Run code at 60fps exactly",
+      "Run low-priority work when the browser is idle",
+      "Replace setTimeout",
+      "Force garbage collection"
+    ],
+    "answerIndex": 1,
+    "explanation": "It schedules background/low-priority tasks during idle periods (not guaranteed timing)."
+  },
+
+  {
+    "id": 56,
+    "category": "React",
+    "level": "hard",
+    "question": "In React, why can reading state right after calling setState be unreliable?",
+    "options": [
+      "State updates are synchronous",
+      "State updates may be batched and applied later",
+      "State is immutable so you can't read it",
+      "Because of CSS"
+    ],
+    "answerIndex": 1,
+    "explanation": "Updates may be queued/batched; use effects or functional updates for correctness."
+  },
+  {
+    "id": 57,
+    "category": "React",
+    "level": "hard",
+    "question": "What does `useId` primarily help with?",
+    "options": [
+      "Generating crypto-safe random IDs",
+      "Stable IDs for accessibility attributes across SSR/hydration",
+      "Creating database IDs",
+      "Replacing keys in lists"
+    ],
+    "answerIndex": 1,
+    "explanation": "useId provides consistent IDs between server and client for aria-labelledby, etc."
+  },
+  {
+    "id": 58,
+    "category": "React",
+    "level": "hard",
+    "question": "What is a common cause of hydration mismatch in SSR apps?",
+    "options": [
+      "Using CSS Grid",
+      "Rendering non-deterministic values (Date.now/Math.random) on server and client",
+      "Using props",
+      "Using HTML labels"
+    ],
+    "answerIndex": 1,
+    "explanation": "Server HTML must match client render; random/time-based values can mismatch."
+  },
+  {
+    "id": 59,
+    "category": "React",
+    "level": "hard",
+    "question": "Why should you avoid setting state from inside `useMemo`?",
+    "options": [
+      "useMemo is async",
+      "useMemo may run during render; side effects there are unsafe",
+      "useMemo runs only once",
+      "useMemo is deprecated"
+    ],
+    "answerIndex": 1,
+    "explanation": "useMemo is for pure computation; state updates are side effects."
+  },
+  {
+    "id": 60,
+    "category": "React",
+    "level": "hard",
+    "question": "What is the best way to avoid re-creating context value objects every render?",
+    "options": [
+      "Put context value in global variable",
+      "Use `useMemo` for the value object",
+      "Use `useEffect` to update context",
+      "Use `React.Fragment`"
+    ],
+    "answerIndex": 1,
+    "explanation": "Memoizing the context value prevents unnecessary consumer re-renders due to new reference."
+  },
+
+  {
+    "id": 61,
+    "category": "HTML",
+    "level": "hard",
+    "question": "Which element is best for providing a caption/legend for `<figure>` content?",
+    "options": ["<legend>", "<figcaption>", "<caption>", "<summary>"],
+    "answerIndex": 1,
+    "explanation": "<figcaption> provides a caption for a figure."
+  },
+  {
+    "id": 62,
+    "category": "HTML",
+    "level": "hard",
+    "question": "What does `aria-live=\"polite\"` mean?",
+    "options": [
+      "Screen reader ignores updates",
+      "Announces updates immediately interrupting current speech",
+      "Announces updates when the user is idle (non-interrupting)",
+      "Only works on buttons"
+    ],
+    "answerIndex": 2,
+    "explanation": "Polite live regions are announced at the next reasonable opportunity."
+  },
+  {
+    "id": 63,
+    "category": "HTML",
+    "level": "hard",
+    "question": "Which tag is used to define a popover content region (modern HTML)?",
+    "options": [
+      "<dialog>",
+      "<popover>",
+      "Any element with `popover` attribute",
+      "<details>"
+    ],
+    "answerIndex": 2,
+    "explanation": "Popover is an attribute (`popover`) used on elements like divs; it integrates with the Popover API."
+  },
+  {
+    "id": 64,
+    "category": "HTML",
+    "level": "hard",
+    "question": "What is the default `type` of a `<button>` inside a `<form>`?",
+    "options": ["button", "submit", "reset", "none"],
+    "answerIndex": 1,
+    "explanation": "Inside forms, `<button>` defaults to `type=\"submit\"` unless specified."
+  },
+  {
+    "id": 65,
+    "category": "HTML",
+    "level": "hard",
+    "question": "Which attribute is used to hint that a resource should be fetched with high priority?",
+    "options": ["fetchpriority", "importance", "priority", "loading"],
+    "answerIndex": 0,
+    "explanation": "`fetchpriority` can hint high/low priority for certain resources in supporting browsers."
+  },
+
+  {
+    "id": 66,
+    "category": "CSS",
+    "level": "hard",
+    "question": "What does `will-change: transform` hint to the browser?",
+    "options": [
+      "Never animate transform",
+      "Prepare optimizations because transform is likely to change",
+      "Disable GPU usage",
+      "Forces layout thrash"
+    ],
+    "answerIndex": 1,
+    "explanation": "It hints upcoming changes so the browser can optimize, but overuse can hurt performance."
+  },
+  {
+    "id": 67,
+    "category": "CSS",
+    "level": "hard",
+    "question": "Which selector matches an element that has NO children (including text nodes)?",
+    "options": [":empty", ":blank", ":not(*)", ":void"],
+    "answerIndex": 0,
+    "explanation": ":empty matches elements with no children at all (no elements or text nodes)."
+  },
+  {
+    "id": 68,
+    "category": "CSS",
+    "level": "hard",
+    "question": "What does `contain: layout paint;` primarily do?",
+    "options": [
+      "Increases font size",
+      "Creates containment boundaries for layout/paint to improve performance",
+      "Disables scrolling",
+      "Forces element to be fixed"
+    ],
+    "answerIndex": 1,
+    "explanation": "CSS containment limits layout/paint scope to improve performance and isolation."
+  },
+  {
+    "id": 69,
+    "category": "CSS",
+    "level": "hard",
+    "question": "Which property controls how an element's content is clipped when using `overflow: hidden` with rounded corners?",
+    "options": ["clip-path", "border-radius", "outline", "mask-repeat"],
+    "answerIndex": 1,
+    "explanation": "border-radius affects clipping of the background/content with overflow hidden."
+  },
+  {
+    "id": 70,
+    "category": "CSS",
+    "level": "hard",
+    "question": "What is the purpose of `@supports` in CSS?",
+    "options": [
+      "To import CSS files",
+      "To apply styles only if a feature is supported",
+      "To minify CSS",
+      "To set variables globally"
+    ],
+    "answerIndex": 1,
+    "explanation": "@supports enables feature queries for progressive enhancement."
+  },
+
+  {
+    "id": 71,
+    "category": "JavaScript",
+    "level": "hard",
+    "question": "Which API lets you measure element size changes?",
+    "options": [
+      "MutationObserver",
+      "ResizeObserver",
+      "IntersectionObserver",
+      "PerformanceObserver"
+    ],
+    "answerIndex": 1,
+    "explanation": "ResizeObserver notifies when an element's content box size changes."
+  },
+  {
+    "id": 72,
+    "category": "JavaScript",
+    "level": "hard",
+    "question": "What happens if you call `preventDefault()` on a passive wheel/touch listener?",
+    "options": [
+      "It always works",
+      "It throws an error",
+      "It is ignored and may log a warning",
+      "It blocks the main thread"
+    ],
+    "answerIndex": 2,
+    "explanation": "Passive listeners disallow preventDefault to keep scrolling fast."
+  },
+  {
+    "id": 73,
+    "category": "JavaScript",
+    "level": "hard",
+    "question": "Which is true about `BigInt`?",
+    "options": [
+      "It can be mixed with Number in arithmetic directly",
+      "It supports decimals",
+      "It represents integers with arbitrary precision",
+      "It is only for JSON"
+    ],
+    "answerIndex": 2,
+    "explanation": "BigInt stores large integers; you cannot mix with Number without explicit conversion."
+  },
+  {
+    "id": 74,
+    "category": "JavaScript",
+    "level": "hard",
+    "question": "What does `event.composedPath()` return?",
+    "options": [
+      "Only the target element",
+      "The propagation path including shadow DOM boundary-crossing nodes (when composed)",
+      "Only capturing phase nodes",
+      "Only bubbling phase nodes"
+    ],
+    "answerIndex": 1,
+    "explanation": "It returns the full event path, useful with Shadow DOM."
+  },
+  {
+    "id": 75,
+    "category": "JavaScript",
+    "level": "hard",
+    "question": "Which API is used to schedule work aligned with the browser's next repaint?",
+    "options": [
+      "setTimeout",
+      "queueMicrotask",
+      "requestAnimationFrame",
+      "Promise.then"
+    ],
+    "answerIndex": 2,
+    "explanation": "requestAnimationFrame runs before the next repaint, ideal for animations."
+  },
+
+  {
+    "id": 76,
+    "category": "React",
+    "level": "hard",
+    "question": "What is the main role of an Error Boundary in React?",
+    "options": [
+      "Catch errors in event handlers",
+      "Catch rendering/lifecycle errors in descendant tree and show fallback UI",
+      "Catch network errors automatically",
+      "Prevent console logs"
+    ],
+    "answerIndex": 1,
+    "explanation": "Error boundaries catch errors during render/commit in children and render fallback UI."
+  },
+  {
+    "id": 77,
+    "category": "React",
+    "level": "hard",
+    "question": "Do Error Boundaries catch errors inside async code like `setTimeout` or promise rejections?",
+    "options": [
+      "Yes always",
+      "No, they only catch errors in render/lifecycle/constructors",
+      "Only in production",
+      "Only with React.memo"
+    ],
+    "answerIndex": 1,
+    "explanation": "They do not catch async errors; you must handle those separately."
+  },
+  {
+    "id": 78,
+    "category": "React",
+    "level": "hard",
+    "question": "What is the best reason to lift state up in React?",
+    "options": [
+      "To avoid writing CSS",
+      "To share state between siblings via a common parent",
+      "To make components bigger",
+      "To reduce bundle size always"
+    ],
+    "answerIndex": 1,
+    "explanation": "Lifting state up allows multiple components to stay in sync with shared state."
+  },
+  {
+    "id": 79,
+    "category": "React",
+    "level": "hard",
+    "question": "Why can passing inline arrow functions to many children hurt performance?",
+    "options": [
+      "They cause syntax errors",
+      "They create new function references each render, defeating memoization",
+      "They break DOM",
+      "They disable hooks"
+    ],
+    "answerIndex": 1,
+    "explanation": "New function references each render can cause unnecessary re-renders in memoized children."
+  },
+  {
+    "id": 80,
+    "category": "React",
+    "level": "hard",
+    "question": "Which pattern helps avoid prop drilling without global state libraries?",
+    "options": [
+      "Using only CSS variables",
+      "React Context + custom hooks",
+      "Writing more components",
+      "Using HTML forms only"
+    ],
+    "answerIndex": 1,
+    "explanation": "Context with custom hooks encapsulates shared state access cleanly."
+  },
+
+  {
+    "id": 81,
+    "category": "HTML",
+    "level": "hard",
+    "question": "Which HTML element provides a built-in disclosure widget (expand/collapse) without JS?",
+    "options": ["<dialog>", "<details>", "<summary>", "<fieldset>"],
+    "answerIndex": 1,
+    "explanation": "<details> creates a disclosure widget; <summary> is its visible label."
+  },
+  {
+    "id": 82,
+    "category": "HTML",
+    "level": "hard",
+    "question": "What is the purpose of the `inert` attribute?",
+    "options": [
+      "Makes element sticky",
+      "Makes subtree unfocusable and non-interactive",
+      "Speeds up rendering",
+      "Auto-adds aria-label"
+    ],
+    "answerIndex": 1,
+    "explanation": "`inert` disables interaction/focus for an element subtree (useful for modals)."
+  },
+  {
+    "id": 83,
+    "category": "HTML",
+    "level": "hard",
+    "question": "Which element is most correct for a standalone modal dialog (semantic)?",
+    "options": ["<div>", "<dialog>", "<section>", "<aside>"],
+    "answerIndex": 1,
+    "explanation": "<dialog> is designed for dialogs/modals with built-in semantics."
+  },
+  {
+    "id": 84,
+    "category": "HTML",
+    "level": "hard",
+    "question": "Which attribute prevents an input from being edited but still submits its value with the form?",
+    "options": ["disabled", "readonly", "hidden", "aria-disabled"],
+    "answerIndex": 1,
+    "explanation": "readonly fields submit; disabled fields do not submit."
+  },
+  {
+    "id": 85,
+    "category": "HTML",
+    "level": "hard",
+    "question": "Which is the best way to provide multiple sources for responsive images?",
+    "options": ["<img srcset> and sizes", "<video>", "<canvas>", "<svg only>"],
+    "answerIndex": 0,
+    "explanation": "srcset+sizes lets the browser choose optimal image based on viewport and density."
+  },
+
+  {
+    "id": 86,
+    "category": "CSS",
+    "level": "hard",
+    "question": "What does `:where()` do differently compared to `:is()`?",
+    "options": [
+      ":where() has higher specificity",
+      ":where() has zero specificity contribution",
+      ":is() has zero specificity",
+      "Both are identical in specificity"
+    ],
+    "answerIndex": 1,
+    "explanation": ":where() always contributes zero specificity, useful for low-specificity utilities."
+  },
+  {
+    "id": 87,
+    "category": "CSS",
+    "level": "hard",
+    "question": "Which CSS feature allows selecting a parent based on its children (where supported)?",
+    "options": [":has()", ":parent()", ":contains()", ":nth-parent()"],
+    "answerIndex": 0,
+    "explanation": ":has() is a relational pseudo-class that can match parents based on descendants."
+  },
+  {
+    "id": 88,
+    "category": "CSS",
+    "level": "hard",
+    "question": "What does `mix-blend-mode` control?",
+    "options": [
+      "Text wrapping",
+      "How an element’s pixels blend with the background",
+      "Flex item order",
+      "Image lazy loading"
+    ],
+    "answerIndex": 1,
+    "explanation": "mix-blend-mode defines blending between an element and what's behind it."
+  },
+  {
+    "id": 89,
+    "category": "CSS",
+    "level": "hard",
+    "question": "Which property helps reduce layout shifts for images without known height?",
+    "options": ["display: block", "aspect-ratio", "z-index", "float"],
+    "answerIndex": 1,
+    "explanation": "aspect-ratio reserves space and reduces CLS (layout shift)."
+  },
+  {
+    "id": 90,
+    "category": "CSS",
+    "level": "hard",
+    "question": "In Flexbox, what does `flex: 1 1 0` mean?",
+    "options": [
+      "Grow 1, shrink 1, basis 0",
+      "Grow 0, shrink 1, basis 1",
+      "Grow 1, shrink 0, basis auto",
+      "Grow 0, shrink 0, basis 0"
+    ],
+    "answerIndex": 0,
+    "explanation": "Item can grow and shrink, starting from a 0 basis (distributes space evenly)."
+  },
+
+  {
+    "id": 91,
+    "category": "JavaScript",
+    "level": "hard",
+    "question": "Which API is best to detect when an element enters/leaves the viewport efficiently?",
+    "options": [
+      "MutationObserver",
+      "IntersectionObserver",
+      "ResizeObserver",
+      "setInterval + getBoundingClientRect"
+    ],
+    "answerIndex": 1,
+    "explanation": "IntersectionObserver efficiently observes visibility changes without polling."
+  },
+  {
+    "id": 92,
+    "category": "JavaScript",
+    "level": "hard",
+    "question": "What is a practical benefit of using `event delegation`?",
+    "options": [
+      "More CSS control",
+      "Fewer listeners by handling events at a parent using bubbling",
+      "Disables propagation",
+      "Makes events capture-only"
+    ],
+    "answerIndex": 1,
+    "explanation": "Delegation uses bubbling to handle many child events with one parent listener."
+  },
+  {
+    "id": 93,
+    "category": "JavaScript",
+    "level": "hard",
+    "question": "What is the effect of `history.replaceState()` compared to `pushState()`?",
+    "options": [
+      "Adds a new entry to history",
+      "Replaces the current history entry without adding a new one",
+      "Reloads the page",
+      "Clears sessionStorage"
+    ],
+    "answerIndex": 1,
+    "explanation": "replaceState updates URL/state without creating a new history entry."
+  },
+  {
+    "id": 94,
+    "category": "JavaScript",
+    "level": "hard",
+    "question": "Which is true about CORS preflight requests?",
+    "options": [
+      "They happen for all GET requests",
+      "They are OPTIONS requests sent before certain cross-origin requests",
+      "They are sent by the server to the client",
+      "They disable cookies"
+    ],
+    "answerIndex": 1,
+    "explanation": "Browsers send an OPTIONS preflight for non-simple requests to check permissions."
+  },
+  {
+    "id": 95,
+    "category": "JavaScript",
+    "level": "hard",
+    "question": "Which statement about `SameSite` cookies is correct?",
+    "options": [
+      "SameSite=None blocks cross-site usage",
+      "SameSite=Strict allows third-party requests",
+      "SameSite=Lax generally allows top-level navigation GETs but restricts many cross-site contexts",
+      "SameSite is unrelated to CSRF"
+    ],
+    "answerIndex": 2,
+    "explanation": "SameSite helps mitigate CSRF; Lax allows some top-level navigations while restricting many cross-site sends."
+  },
+
+  {
+    "id": 96,
+    "category": "React",
+    "level": "hard",
+    "question": "Why is updating state based on props inside render considered an anti-pattern?",
+    "options": [
+      "It always improves performance",
+      "It can cause extra renders and confusing derived state bugs",
+      "It makes props mutable",
+      "It breaks JSX"
+    ],
+    "answerIndex": 1,
+    "explanation": "Derived state from props often causes syncing bugs; compute derived values directly or use effects carefully."
+  },
+  {
+    "id": 97,
+    "category": "React",
+    "level": "hard",
+    "question": "What is a correct way to avoid stale values inside a long-lived event handler in React?",
+    "options": [
+      "Store latest value in a ref and read from it",
+      "Disable Strict Mode",
+      "Use only global variables",
+      "Never use hooks"
+    ],
+    "answerIndex": 0,
+    "explanation": "Refs can hold the latest value without re-rendering; handlers can read from ref to avoid stale closures."
+  },
+  {
+    "id": 98,
+    "category": "React",
+    "level": "hard",
+    "question": "What is the main reason to split bundles with dynamic `import()` in frontend apps?",
+    "options": [
+      "To make JS run on GPU",
+      "To reduce initial load by loading code only when needed",
+      "To avoid writing CSS",
+      "To disable caching"
+    ],
+    "answerIndex": 1,
+    "explanation": "Code-splitting reduces initial JS payload and improves first load performance."
+  },
+  {
+    "id": 99,
+    "category": "CSS",
+    "level": "hard",
+    "question": "Which CSS property can reduce painting work during animations by limiting which properties animate?",
+    "options": [
+      "transition-property",
+      "border-collapse",
+      "white-space",
+      "outline-offset"
+    ],
+    "answerIndex": 0,
+    "explanation": "transition-property limits which properties transition; animating transform/opacity is generally cheaper than layout properties."
+  },
+  {
+    "id": 100,
+    "category": "HTML",
+    "level": "hard",
+    "question": "What is the purpose of `aria-describedby`?",
+    "options": [
+      "Provides an element’s visible label",
+      "Points to element(s) that provide additional descriptive text",
+      "Makes element focusable",
+      "Sets keyboard shortcuts"
+    ],
+    "answerIndex": 1,
+    "explanation": "aria-describedby references other element IDs that describe the control (help text/error text)."
+  },
+
+  {
+    "id": 101,
+    "category": "JavaScript",
+    "level": "hard",
+    "question": "What does `globalThis` provide in JavaScript?",
+    "options": [
+      "A reference to the current module scope",
+      "A standard way to access the global object across environments",
+      "A replacement for `this` in strict mode",
+      "A way to access only browser globals"
+    ],
+    "answerIndex": 1,
+    "explanation": "`globalThis` is the unified global object reference in browsers, Node, and workers."
+  },
+  {
+    "id": 102,
+    "category": "JavaScript",
+    "level": "hard",
+    "question": "Which expression creates a truly private field in a class (not just convention)?",
+    "options": ["this._x", "private x", "#x", "Symbol('x')"],
+    "answerIndex": 2,
+    "explanation": "`#x` is a real private class field enforced by the language."
+  },
+  {
+    "id": 103,
+    "category": "JavaScript",
+    "level": "hard",
+    "question": "Which statement about `Proxy` is correct?",
+    "options": [
+      "Proxy can only intercept reads, not writes",
+      "Proxy cannot wrap functions",
+      "Proxy can intercept operations like get/set/has/ownKeys",
+      "Proxy is only for arrays"
+    ],
+    "answerIndex": 2,
+    "explanation": "Proxy traps many fundamental operations (get, set, has, apply, construct, etc.)."
+  },
+  {
+    "id": 104,
+    "category": "JavaScript",
+    "level": "hard",
+    "question": "What does `Reflect.set(target, prop, value, receiver)` mainly help with?",
+    "options": [
+      "It deep clones objects",
+      "It performs property setting with proper `this` binding for setters via receiver",
+      "It prevents prototype inheritance",
+      "It makes properties non-enumerable"
+    ],
+    "answerIndex": 1,
+    "explanation": "The receiver controls `this` inside setters, important with prototypes/proxies."
+  },
+  {
+    "id": 105,
+    "category": "JavaScript",
+    "level": "hard",
+    "question": "What is true about `import()` (dynamic import)?",
+    "options": [
+      "It is synchronous",
+      "It returns a Promise that resolves to the module namespace object",
+      "It can only be used at top-level",
+      "It replaces `export`"
+    ],
+    "answerIndex": 1,
+    "explanation": "Dynamic import returns a Promise and can be used conditionally."
+  },
+  {
+    "id": 106,
+    "category": "JavaScript",
+    "level": "hard",
+    "question": "Which method checks whether an object has an own property (not inherited) without using the prototype chain directly?",
+    "options": [
+      "obj.hasOwnProperty(prop)",
+      "Object.hasOwn(obj, prop)",
+      "prop in obj",
+      "Object.keys(obj).includes(prop) always safe"
+    ],
+    "answerIndex": 1,
+    "explanation": "Object.hasOwn avoids issues when hasOwnProperty is shadowed."
+  },
+  {
+    "id": 107,
+    "category": "JavaScript",
+    "level": "hard",
+    "question": "What does `Intl.Segmenter` primarily help with?",
+    "options": [
+      "Encrypting strings",
+      "Locale-aware text segmentation (graphemes/words/sentences)",
+      "Converting JSON to CSV",
+      "Parsing HTML"
+    ],
+    "answerIndex": 1,
+    "explanation": "It segments text correctly for different languages and emoji graphemes."
+  },
+  {
+    "id": 108,
+    "category": "JavaScript",
+    "level": "hard",
+    "question": "Which is true about transferable objects in `postMessage`?",
+    "options": [
+      "They are copied byte-by-byte always",
+      "They can be moved (zero-copy) like ArrayBuffer to another context",
+      "Only strings are transferable",
+      "Transfer makes data read-only everywhere"
+    ],
+    "answerIndex": 1,
+    "explanation": "Transferables (e.g., ArrayBuffer) can be transferred to avoid copying."
+  },
+  {
+    "id": 109,
+    "category": "JavaScript",
+    "level": "hard",
+    "question": "What is the output of `Number.isNaN('NaN')`?",
+    "options": ["true", "false", "Throws error", "null"],
+    "answerIndex": 1,
+    "explanation": "Number.isNaN only returns true for actual NaN (no coercion)."
+  },
+  {
+    "id": 110,
+    "category": "JavaScript",
+    "level": "hard",
+    "question": "Which is true about `JSON.stringify` and `BigInt`?",
+    "options": [
+      "It converts BigInt to number automatically",
+      "It serializes BigInt as a string",
+      "It throws a TypeError unless you convert BigInt",
+      "It ignores BigInt properties silently"
+    ],
+    "answerIndex": 2,
+    "explanation": "BigInt is not supported by JSON; you must convert (e.g., to string)."
+  },
+
+  {
+    "id": 111,
+    "category": "React",
+    "level": "hard",
+    "question": "What is the key difference between `useEffect` and `useLayoutEffect` timing?",
+    "options": [
+      "useEffect runs before DOM updates",
+      "useLayoutEffect runs after paint",
+      "useLayoutEffect runs before paint, useEffect runs after paint",
+      "They are identical"
+    ],
+    "answerIndex": 2,
+    "explanation": "useLayoutEffect runs synchronously before paint; useEffect runs after paint."
+  },
+  {
+    "id": 112,
+    "category": "React",
+    "level": "hard",
+    "question": "Why is storing derived data in state usually discouraged in React?",
+    "options": [
+      "It makes state immutable",
+      "It risks inconsistencies and extra syncing logic",
+      "It prevents memoization",
+      "It disables effects"
+    ],
+    "answerIndex": 1,
+    "explanation": "Derived values can often be computed during render to avoid sync bugs."
+  },
+  {
+    "id": 113,
+    "category": "React",
+    "level": "hard",
+    "question": "What does `flushSync` (react-dom) do?",
+    "options": [
+      "Disables React batching forever",
+      "Forces React to flush updates synchronously",
+      "Cancels pending effects",
+      "Runs updates in a web worker"
+    ],
+    "answerIndex": 1,
+    "explanation": "flushSync forces updates to be processed immediately (use carefully)."
+  },
+  {
+    "id": 114,
+    "category": "React",
+    "level": "hard",
+    "question": "What is the best reason to use `startTransition`?",
+    "options": [
+      "To make network faster",
+      "To mark updates as non-urgent so UI stays responsive",
+      "To prevent re-renders",
+      "To replace useEffect"
+    ],
+    "answerIndex": 1,
+    "explanation": "Transitions let React prioritize urgent updates and defer non-urgent ones."
+  },
+  {
+    "id": 115,
+    "category": "React",
+    "level": "hard",
+    "question": "Which issue can happen if you create a new function inside render and pass it to a memoized child?",
+    "options": [
+      "Child will never re-render",
+      "Child may re-render because prop reference changes",
+      "React throws error",
+      "Keys stop working"
+    ],
+    "answerIndex": 1,
+    "explanation": "New function identity each render breaks shallow prop comparison."
+  },
+  {
+    "id": 116,
+    "category": "React",
+    "level": "hard",
+    "question": "What does `useImperativeHandle` allow you to do?",
+    "options": [
+      "Force parent to re-render",
+      "Expose a custom ref API from a child to parent",
+      "Create global variables",
+      "Replace props with refs"
+    ],
+    "answerIndex": 1,
+    "explanation": "It customizes what the parent sees when using `ref` on a forwarded ref component."
+  },
+  {
+    "id": 117,
+    "category": "React",
+    "level": "hard",
+    "question": "What is required to pass a ref into a function component?",
+    "options": ["useMemo", "forwardRef", "useContext", "memo"],
+    "answerIndex": 1,
+    "explanation": "Function components need `React.forwardRef` to receive a ref."
+  },
+  {
+    "id": 118,
+    "category": "React",
+    "level": "hard",
+    "question": "Why can calling `setState` in `useEffect` without a dependency array cause problems?",
+    "options": [
+      "It never runs",
+      "It may run on every render and can create loops",
+      "It only runs once",
+      "It breaks JSX"
+    ],
+    "answerIndex": 1,
+    "explanation": "Effect runs after every render; setting state triggers another render repeatedly."
+  },
+  {
+    "id": 119,
+    "category": "React",
+    "level": "hard",
+    "question": "What is the correct statement about React Portals?",
+    "options": [
+      "They render children into a different DOM subtree but keep React hierarchy",
+      "They break event bubbling",
+      "They cannot be used for modals",
+      "They only work in SSR"
+    ],
+    "answerIndex": 0,
+    "explanation": "Portals keep React tree for events/context while mounting elsewhere in DOM."
+  },
+  {
+    "id": 120,
+    "category": "React",
+    "level": "hard",
+    "question": "In React, what is the main purpose of `useDeferredValue`?",
+    "options": [
+      "To delay all state updates",
+      "To defer rendering a value so urgent updates stay fast",
+      "To replace useMemo",
+      "To fetch data"
+    ],
+    "answerIndex": 1,
+    "explanation": "It helps keep UI responsive by deferring expensive re-renders from changing values."
+  },
+
+  {
+    "id": 121,
+    "category": "HTML",
+    "level": "hard",
+    "question": "What does the `loading=\"lazy\"` attribute on `<img>` do?",
+    "options": [
+      "Loads images immediately with higher priority",
+      "Defers loading images until near the viewport",
+      "Compresses the image automatically",
+      "Preloads the image in cache"
+    ],
+    "answerIndex": 1,
+    "explanation": "Lazy loading delays offscreen image fetch until needed."
+  },
+  {
+    "id": 122,
+    "category": "HTML",
+    "level": "hard",
+    "question": "Which attribute can reduce security risks when embedding external content in an `<iframe>`?",
+    "options": ["sandbox", "poster", "decoding", "referrerpolicy (only)"],
+    "answerIndex": 0,
+    "explanation": "`sandbox` restricts capabilities; you can selectively allow features."
+  },
+  {
+    "id": 123,
+    "category": "HTML",
+    "level": "hard",
+    "question": "Which attribute helps prevent mixed-content referrer leakage when linking out?",
+    "options": ["rel=\"noreferrer\"", "alt", "target", "download"],
+    "answerIndex": 0,
+    "explanation": "noreferrer prevents sending the Referer header (also implies noopener in many browsers)."
+  },
+  {
+    "id": 124,
+    "category": "HTML",
+    "level": "hard",
+    "question": "Which HTML feature allows associating a single `<label>` with multiple form controls?",
+    "options": [
+      "Wrapping controls inside the `<label>`",
+      "Using multiple `for` attributes",
+      "Using `aria-label` only",
+      "Using `<legend>`"
+    ],
+    "answerIndex": 0,
+    "explanation": "A label can wrap multiple inputs (though UX should still be clear)."
+  },
+  {
+    "id": 125,
+    "category": "HTML",
+    "level": "hard",
+    "question": "What is the purpose of `inputmode` on an `<input>`?",
+    "options": [
+      "Validation rules",
+      "Hints the preferred virtual keyboard on mobile",
+      "Enables autofill",
+      "Sets tab order"
+    ],
+    "answerIndex": 1,
+    "explanation": "inputmode suggests keyboard type (numeric, email, etc.) without changing validation like type does."
+  },
+
+  {
+    "id": 126,
+    "category": "CSS",
+    "level": "hard",
+    "question": "What does `isolation: isolate` do?",
+    "options": [
+      "Disables flexbox",
+      "Creates a new stacking context for blending/stacking behavior",
+      "Forces GPU acceleration",
+      "Prevents font inheritance"
+    ],
+    "answerIndex": 1,
+    "explanation": "It creates a new stacking context, often used with mix-blend-mode."
+  },
+  {
+    "id": 127,
+    "category": "CSS",
+    "level": "hard",
+    "question": "Which CSS property helps control how font files load to reduce FOIT/FOUT?",
+    "options": ["font-style", "font-display", "text-rendering", "font-variant"],
+    "answerIndex": 1,
+    "explanation": "`font-display` controls swap/block/fallback behavior."
+  },
+  {
+    "id": 128,
+    "category": "CSS",
+    "level": "hard",
+    "question": "What does `overscroll-behavior: contain` do?",
+    "options": [
+      "Disables scrolling",
+      "Prevents scroll chaining/bounce to parent scroll containers",
+      "Makes scrolling smoother automatically",
+      "Locks scroll to x-axis"
+    ],
+    "answerIndex": 1,
+    "explanation": "It stops scroll from propagating to parent (useful in modals)."
+  },
+  {
+    "id": 129,
+    "category": "CSS",
+    "level": "hard",
+    "question": "Which property is most relevant for optimizing CLS (layout shifts) due to late-loading web fonts?",
+    "options": ["letter-spacing", "font-display", "line-height", "text-indent"],
+    "answerIndex": 2,
+    "explanation": "Setting a consistent line-height helps reduce layout jumps when fonts swap."
+  },
+  {
+    "id": 130,
+    "category": "CSS",
+    "level": "hard",
+    "question": "What does `@layer` in CSS help with?",
+    "options": [
+      "Image layering",
+      "Controlling cascade order between groups of styles",
+      "Creating animations",
+      "Making gradients"
+    ],
+    "answerIndex": 1,
+    "explanation": "Cascade layers let you define predictable priority across style sources."
+  },
+
+  {
+    "id": 131,
+    "category": "JavaScript",
+    "level": "hard",
+    "question": "Which API is used to read a file in the browser as text without uploading?",
+    "options": ["FileReader", "fetch", "localStorage", "History API"],
+    "answerIndex": 0,
+    "explanation": "FileReader can read File/Blob contents (text, data URL, array buffer)."
+  },
+  {
+    "id": 132,
+    "category": "JavaScript",
+    "level": "hard",
+    "question": "What is the main difference between `==` and `===`?",
+    "options": [
+      "No difference",
+      "`==` performs type coercion, `===` does not",
+      "`===` coerces types, `==` does not",
+      "`===` is slower always"
+    ],
+    "answerIndex": 1,
+    "explanation": "`==` can coerce types leading to surprising results; `===` is strict equality."
+  },
+  {
+    "id": 133,
+    "category": "JavaScript",
+    "level": "hard",
+    "question": "Which is true about `for...in` vs `for...of`?",
+    "options": [
+      "for...of iterates object keys",
+      "for...in iterates enumerable property names; for...of iterates iterable values",
+      "They are identical",
+      "for...in is for arrays only"
+    ],
+    "answerIndex": 1,
+    "explanation": "for...in enumerates keys; for...of consumes iterables (arrays, strings, maps)."
+  },
+  {
+    "id": 134,
+    "category": "JavaScript",
+    "level": "hard",
+    "question": "What will `Object.freeze(obj)` prevent?",
+    "options": [
+      "Reading properties",
+      "Adding/removing/changing properties at top level",
+      "Mutating nested objects automatically",
+      "Enumerating keys"
+    ],
+    "answerIndex": 1,
+    "explanation": "Freeze is shallow: it prevents top-level changes, not nested mutations."
+  },
+  {
+    "id": 135,
+    "category": "JavaScript",
+    "level": "hard",
+    "question": "What does `navigator.sendBeacon()` mainly provide?",
+    "options": [
+      "Real-time websockets",
+      "Reliable background sending (analytics) during unload",
+      "Faster downloads",
+      "Offline caching"
+    ],
+    "answerIndex": 1,
+    "explanation": "sendBeacon sends small data reliably even when the page is closing."
+  },
+
+  {
+    "id": 136,
+    "category": "React",
+    "level": "hard",
+    "question": "Why is using `useLayoutEffect` on the server problematic?",
+    "options": [
+      "It runs twice",
+      "It doesn't run in SSR and may warn; it's meant for DOM measurements",
+      "It makes CSS fail",
+      "It breaks keys"
+    ],
+    "answerIndex": 1,
+    "explanation": "SSR has no DOM; useEffect is preferred for client-only effects."
+  },
+  {
+    "id": 137,
+    "category": "React",
+    "level": "hard",
+    "question": "What does `Suspense` primarily coordinate?",
+    "options": [
+      "CSS animations",
+      "Waiting for async boundaries (like lazy-loaded components/data integrations) and showing fallback UI",
+      "Redux state",
+      "HTML parsing"
+    ],
+    "answerIndex": 1,
+    "explanation": "Suspense shows fallback while something 'suspends' (e.g., React.lazy)."
+  },
+  {
+    "id": 138,
+    "category": "React",
+    "level": "hard",
+    "question": "What is true about `React.lazy`?",
+    "options": [
+      "It works without Suspense",
+      "It code-splits components loaded via dynamic import and needs Suspense fallback",
+      "It loads all routes eagerly",
+      "It replaces useEffect"
+    ],
+    "answerIndex": 1,
+    "explanation": "React.lazy integrates with Suspense to load components asynchronously."
+  },
+  {
+    "id": 139,
+    "category": "React",
+    "level": "hard",
+    "question": "Why can using `setState(newState)` be incorrect when based on previous state?",
+    "options": [
+      "State is read-only",
+      "Because updates are batched; previous state might be stale",
+      "Because React ignores updates",
+      "Because setState is async always"
+    ],
+    "answerIndex": 1,
+    "explanation": "Use functional update `setState(prev => ...)` when deriving from previous value."
+  },
+  {
+    "id": 140,
+    "category": "React",
+    "level": "hard",
+    "question": "What does `useSyncExternalStore` help with?",
+    "options": [
+      "Fetching REST APIs",
+      "Subscribing to external stores safely with concurrent rendering",
+      "Replacing context",
+      "Running effects only once"
+    ],
+    "answerIndex": 1,
+    "explanation": "It provides a safe way to read/subscribe to external stores in concurrent React."
+  },
+
+  {
+    "id": 141,
+    "category": "HTML",
+    "level": "hard",
+    "question": "Which attribute is used to declare a Content Security Policy in HTML?",
+    "options": [
+      "http-equiv=\"Content-Security-Policy\"",
+      "policy=\"csp\"",
+      "csp=\"on\"",
+      "secure=\"true\""
+    ],
+    "answerIndex": 0,
+    "explanation": "CSP can be delivered via HTTP header or `<meta http-equiv=\"Content-Security-Policy\">`."
+  },
+  {
+    "id": 142,
+    "category": "HTML",
+    "level": "hard",
+    "question": "Which attribute helps a script load without blocking parsing but still preserves execution order?",
+    "options": ["async", "defer", "module", "integrity"],
+    "answerIndex": 1,
+    "explanation": "`defer` loads in parallel and executes after parsing, in order."
+  },
+  {
+    "id": 143,
+    "category": "HTML",
+    "level": "hard",
+    "question": "What is the best semantic element for repeated navigation links in a page?",
+    "options": ["<div>", "<nav>", "<main>", "<footer> only"],
+    "answerIndex": 1,
+    "explanation": "<nav> represents a section of navigation links."
+  },
+  {
+    "id": 144,
+    "category": "HTML",
+    "level": "hard",
+    "question": "Which attribute is best to provide an accessible name for an `<input>` when no visible label exists?",
+    "options": ["placeholder", "aria-label", "title only", "role"],
+    "answerIndex": 1,
+    "explanation": "aria-label provides an accessible name; placeholder is not a label."
+  },
+  {
+    "id": 145,
+    "category": "HTML",
+    "level": "hard",
+    "question": "Which statement about `tabindex=\"-1\"` is correct?",
+    "options": [
+      "It removes element from DOM",
+      "It makes element focusable by script but not via tab key",
+      "It makes element the first tab stop",
+      "It disables screen readers"
+    ],
+    "answerIndex": 1,
+    "explanation": "tabindex=-1 allows programmatic focus without keyboard tab navigation."
+  },
+
+  {
+    "id": 146,
+    "category": "CSS",
+    "level": "hard",
+    "question": "What does `backface-visibility: hidden` help with?",
+    "options": [
+      "Hide scrollbars",
+      "Improve 3D transform rendering by hiding the back face",
+      "Prevent hover",
+      "Enable GPU always"
+    ],
+    "answerIndex": 1,
+    "explanation": "Useful for 3D flips to avoid showing mirrored backside."
+  },
+  {
+    "id": 147,
+    "category": "CSS",
+    "level": "hard",
+    "question": "What does `scroll-snap-type: y mandatory` do?",
+    "options": [
+      "Disables scroll",
+      "Forces scroll positions to snap on the y-axis",
+      "Only snaps with mouse",
+      "Makes scrolling horizontal"
+    ],
+    "answerIndex": 1,
+    "explanation": "Creates snap container that snaps to children snap points vertically."
+  },
+  {
+    "id": 148,
+    "category": "CSS",
+    "level": "hard",
+    "question": "Which is true about `calc()`?",
+    "options": [
+      "It can't mix units",
+      "It can combine compatible units like %, px, rem",
+      "It only works in JS",
+      "It is deprecated"
+    ],
+    "answerIndex": 1,
+    "explanation": "calc() can mix units to compute values at runtime."
+  },
+  {
+    "id": 149,
+    "category": "CSS",
+    "level": "hard",
+    "question": "What does `prefers-reduced-motion` media query detect?",
+    "options": [
+      "Low battery",
+      "User preference for reduced animations",
+      "Dark mode only",
+      "Slow internet"
+    ],
+    "answerIndex": 1,
+    "explanation": "Respect users who prefer less motion for accessibility."
+  },
+  {
+    "id": 150,
+    "category": "CSS",
+    "level": "hard",
+    "question": "Which CSS rule is best to ensure an element’s border and padding are included in its width calculation?",
+    "options": [
+      "box-sizing: content-box",
+      "box-sizing: border-box",
+      "display: inline",
+      "overflow: hidden"
+    ],
+    "answerIndex": 1,
+    "explanation": "border-box includes padding/border in the specified width/height."
+  },
+
+  {
+    "id": 151,
+    "category": "JavaScript",
+    "level": "hard",
+    "question": "What does `FormData` help you do in the browser?",
+    "options": [
+      "Store data in localStorage",
+      "Construct multipart/form-data payloads for forms/files",
+      "Encrypt payloads",
+      "Render forms"
+    ],
+    "answerIndex": 1,
+    "explanation": "FormData is used to build form submissions including files."
+  },
+  {
+    "id": 152,
+    "category": "JavaScript",
+    "level": "hard",
+    "question": "Which API is used to create a readable stream from a fetch response body (where supported)?",
+    "options": [
+      "response.body (ReadableStream)",
+      "response.text()",
+      "response.json()",
+      "response.blob()"
+    ],
+    "answerIndex": 0,
+    "explanation": "response.body exposes a ReadableStream in supporting environments."
+  },
+  {
+    "id": 153,
+    "category": "JavaScript",
+    "level": "hard",
+    "question": "Which is true about `EventTarget.addEventListener` third argument options object?",
+    "options": [
+      "capture controls bubbling only",
+      "`once` auto-removes the listener after first call",
+      "`passive` enables preventDefault",
+      "signal is ignored"
+    ],
+    "answerIndex": 1,
+    "explanation": "`once: true` removes the listener automatically after it fires once."
+  },
+  {
+    "id": 154,
+    "category": "JavaScript",
+    "level": "hard",
+    "question": "What is a common security reason to avoid using `innerHTML` with user input?",
+    "options": [
+      "It breaks CSS",
+      "It causes XSS vulnerabilities",
+      "It disables caching",
+      "It makes code slower always"
+    ],
+    "answerIndex": 1,
+    "explanation": "Unsanitized HTML injection can execute scripts (XSS)."
+  },
+  {
+    "id": 155,
+    "category": "JavaScript",
+    "level": "hard",
+    "question": "Which API helps capture performance timings for custom marks and measures?",
+    "options": [
+      "Performance API (performance.mark/measure)",
+      "History API",
+      "Cache API",
+      "Clipboard API"
+    ],
+    "answerIndex": 0,
+    "explanation": "Use performance.mark() and performance.measure() for custom performance metrics."
+  },
+
+  {
+    "id": 156,
+    "category": "React",
+    "level": "hard",
+    "question": "What is the main difference between `useReducer` and `useState`?",
+    "options": [
+      "useReducer cannot update state",
+      "useReducer is better for complex state transitions with actions",
+      "useState is only for arrays",
+      "useReducer is deprecated"
+    ],
+    "answerIndex": 1,
+    "explanation": "useReducer centralizes updates via a reducer, useful for complex logic."
+  },
+  {
+    "id": 157,
+    "category": "React",
+    "level": "hard",
+    "question": "Why is it important to clean up subscriptions in `useEffect`?",
+    "options": [
+      "To enable SSR",
+      "To prevent memory leaks and duplicate handlers",
+      "To reduce bundle size",
+      "To avoid JSX warnings only"
+    ],
+    "answerIndex": 1,
+    "explanation": "Cleanup avoids leaked listeners/timers and stale updates after unmount."
+  },
+  {
+    "id": 158,
+    "category": "React",
+    "level": "hard",
+    "question": "What is the recommended way to update state that depends on previous state inside an interval?",
+    "options": [
+      "setCount(count + 1)",
+      "setCount(prev => prev + 1)",
+      "count++ then setCount",
+      "Use props instead"
+    ],
+    "answerIndex": 1,
+    "explanation": "Functional update avoids stale closure inside intervals."
+  },
+  {
+    "id": 159,
+    "category": "React",
+    "level": "hard",
+    "question": "Why can you see stale props/state inside a closure in React?",
+    "options": [
+      "Because React mutates objects",
+      "Because functions capture values from the render they were created in",
+      "Because hooks run randomly",
+      "Because JSX is async"
+    ],
+    "answerIndex": 1,
+    "explanation": "Closures capture variables from that render; later renders create new closures."
+  },
+  {
+    "id": 160,
+    "category": "React",
+    "level": "hard",
+    "question": "What is the purpose of `key` on a component instance (not just lists)?",
+    "options": [
+      "Adds DOM id attribute",
+      "Forces React to treat it as a different instance and remount when key changes",
+      "Improves CSS selectors",
+      "Prevents unmounting"
+    ],
+    "answerIndex": 1,
+    "explanation": "Changing key resets component state by remounting."
+  },
+
+  {
+    "id": 161,
+    "category": "HTML",
+    "level": "hard",
+    "question": "Which attribute allows a form control to be associated with a form even if it's outside the `<form>` element?",
+    "options": ["form", "name", "target", "rel"],
+    "answerIndex": 0,
+    "explanation": "The `form` attribute links control to a form by id."
+  },
+  {
+    "id": 162,
+    "category": "HTML",
+    "level": "hard",
+    "question": "What does `aria-current=\"page\"` indicate?",
+    "options": [
+      "The page is loading",
+      "The element represents the current item in a set (current page in nav)",
+      "The element is disabled",
+      "The element is hidden"
+    ],
+    "answerIndex": 1,
+    "explanation": "aria-current marks the current item (page/step/location) for assistive tech."
+  },
+  {
+    "id": 163,
+    "category": "HTML",
+    "level": "hard",
+    "question": "Which attribute limits what features an `<iframe>` can use (camera, mic, fullscreen, etc.)?",
+    "options": ["allow", "sandbox", "referrerpolicy", "decoding"],
+    "answerIndex": 0,
+    "explanation": "`allow` (Permissions Policy) grants/denies features to iframes."
+  },
+  {
+    "id": 164,
+    "category": "HTML",
+    "level": "hard",
+    "question": "Which element is used for machine-readable date/time?",
+    "options": ["<date>", "<time>", "<timestamp>", "<meta>"],
+    "answerIndex": 1,
+    "explanation": "<time datetime=\"...\"> provides machine-readable date/time."
+  },
+  {
+    "id": 165,
+    "category": "HTML",
+    "level": "hard",
+    "question": "What is the best semantic role for the main unique content of the document?",
+    "options": ["<section>", "<main>", "<article>", "<aside>"],
+    "answerIndex": 1,
+    "explanation": "<main> represents the dominant content of the body."
+  },
+
+  {
+    "id": 166,
+    "category": "CSS",
+    "level": "hard",
+    "question": "What does `text-wrap: balance` aim to improve (where supported)?",
+    "options": [
+      "Faster font loading",
+      "More balanced line breaks in headings",
+      "Right-to-left text direction",
+      "Underline thickness"
+    ],
+    "answerIndex": 1,
+    "explanation": "It balances wrapping to avoid awkward short last lines in headings."
+  },
+  {
+    "id": 167,
+    "category": "CSS",
+    "level": "hard",
+    "question": "What does `hyphens: auto` require for best results?",
+    "options": [
+      "Nothing, works perfectly always",
+      "Correct language metadata (e.g., `lang` attribute) and hyphenation support",
+      "Only a monospace font",
+      "A JS library always"
+    ],
+    "answerIndex": 1,
+    "explanation": "Auto hyphenation depends on language and browser dictionaries."
+  },
+  {
+    "id": 168,
+    "category": "CSS",
+    "level": "hard",
+    "question": "Which property controls underline position/thickness in modern CSS?",
+    "options": [
+      "text-decoration-thickness / text-underline-offset",
+      "font-weight",
+      "letter-spacing",
+      "line-height"
+    ],
+    "answerIndex": 0,
+    "explanation": "These properties control underline thickness and offset."
+  },
+  {
+    "id": 169,
+    "category": "CSS",
+    "level": "hard",
+    "question": "What is true about `position: absolute` elements?",
+    "options": [
+      "They always position relative to viewport",
+      "They position relative to the nearest positioned ancestor (non-static)",
+      "They participate in normal document flow",
+      "They cannot be flex items"
+    ],
+    "answerIndex": 1,
+    "explanation": "Absolute elements are removed from normal flow and use nearest positioned ancestor."
+  },
+  {
+    "id": 170,
+    "category": "CSS",
+    "level": "hard",
+    "question": "Which is true about `z-index`?",
+    "options": [
+      "It works on any element always",
+      "It works only on positioned elements or flex/grid items in stacking contexts",
+      "Higher z-index always beats everything",
+      "It affects layout size"
+    ],
+    "answerIndex": 1,
+    "explanation": "z-index interacts with stacking contexts; it’s not global across the page."
+  },
+
+  {
+    "id": 171,
+    "category": "JavaScript",
+    "level": "hard",
+    "question": "Which API is used to safely write text to the clipboard (with permissions)?",
+    "options": [
+      "document.execCommand('copy') only",
+      "Clipboard API: navigator.clipboard.writeText",
+      "localStorage.setItem",
+      "History API"
+    ],
+    "answerIndex": 1,
+    "explanation": "navigator.clipboard.writeText is the modern async Clipboard API (requires secure context)."
+  },
+  {
+    "id": 172,
+    "category": "JavaScript",
+    "level": "hard",
+    "question": "What does `URL.createObjectURL(blob)` do?",
+    "options": [
+      "Uploads blob to server",
+      "Creates a temporary local URL for the Blob/File",
+      "Converts blob to JSON",
+      "Encrypts blob"
+    ],
+    "answerIndex": 1,
+    "explanation": "It creates a blob URL you can use as src/href; revoke when done."
+  },
+  {
+    "id": 173,
+    "category": "JavaScript",
+    "level": "hard",
+    "question": "What is the correct use of `URL.revokeObjectURL()`?",
+    "options": [
+      "Before creating the URL",
+      "To free memory when the blob URL is no longer needed",
+      "To refresh the page",
+      "To make URL permanent"
+    ],
+    "answerIndex": 1,
+    "explanation": "Revoke object URLs to avoid leaking memory."
+  },
+  {
+    "id": 174,
+    "category": "JavaScript",
+    "level": "hard",
+    "question": "Which is true about `fetch` and HTTP errors (like 404)?",
+    "options": [
+      "fetch rejects Promise on 404 automatically",
+      "fetch resolves, but `response.ok` is false for 404/500",
+      "fetch throws SyntaxError",
+      "fetch returns null"
+    ],
+    "answerIndex": 1,
+    "explanation": "fetch only rejects on network errors; check response.ok/status for HTTP errors."
+  },
+  {
+    "id": 175,
+    "category": "JavaScript",
+    "level": "hard",
+    "question": "Which API provides persistent, structured client-side storage with indexes and transactions?",
+    "options": ["Cookies", "sessionStorage", "indexedDB", "History API"],
+    "answerIndex": 2,
+    "explanation": "IndexedDB supports large structured data with indexes/transactions."
+  },
+
+  {
+    "id": 176,
+    "category": "React",
+    "level": "hard",
+    "question": "What does `useInsertionEffect` mainly target?",
+    "options": [
+      "Data fetching",
+      "Injecting styles before layout effects (CSS-in-JS use case)",
+      "Replacing useState",
+      "Handling errors"
+    ],
+    "answerIndex": 1,
+    "explanation": "It runs before layout effects to avoid style flicker (advanced use)."
+  },
+  {
+    "id": 177,
+    "category": "React",
+    "level": "hard",
+    "question": "What is the correct statement about context updates?",
+    "options": [
+      "Only direct children re-render",
+      "All consumers reading that context may re-render when value reference changes",
+      "Context never triggers re-render",
+      "Context updates are always ignored in memoized components"
+    ],
+    "answerIndex": 1,
+    "explanation": "Consumers re-render when the context value they use changes (by reference/value)."
+  },
+  {
+    "id": 178,
+    "category": "React",
+    "level": "hard",
+    "question": "What is the best practice for expensive computations based on props?",
+    "options": [
+      "Run them inside render always",
+      "Use useMemo with correct dependencies",
+      "Store results in global variable",
+      "Do it in CSS"
+    ],
+    "answerIndex": 1,
+    "explanation": "useMemo can avoid recompute when deps unchanged (when truly expensive)."
+  },
+  {
+    "id": 179,
+    "category": "React",
+    "level": "hard",
+    "question": "Why can `useEffect(() => {...}, [])` still run twice in development?",
+    "options": [
+      "Because [] means run every render",
+      "Because Strict Mode in dev re-mounts to detect side effects",
+      "Because bundler duplicates code",
+      "Because browser caches effects"
+    ],
+    "answerIndex": 1,
+    "explanation": "Dev Strict Mode may intentionally remount to surface unsafe side effects."
+  },
+  {
+    "id": 180,
+    "category": "React",
+    "level": "hard",
+    "question": "What is a common pitfall when using `useRef` to store DOM nodes?",
+    "options": [
+      "Refs can't store DOM",
+      "Ref value is available only after mount; can be null initially",
+      "Refs trigger re-render always",
+      "Refs work only in class components"
+    ],
+    "answerIndex": 1,
+    "explanation": "DOM ref is null on first render; access safely (effects/layout effects)."
+  },
+
+  {
+    "id": 181,
+    "category": "HTML",
+    "level": "hard",
+    "question": "Which is correct about `aria-hidden=\"true\"`?",
+    "options": [
+      "Hides element visually",
+      "Removes element from accessibility tree",
+      "Disables click events",
+      "Adds tooltip"
+    ],
+    "answerIndex": 1,
+    "explanation": "aria-hidden hides from assistive tech, not from visual rendering."
+  },
+  {
+    "id": 182,
+    "category": "HTML",
+    "level": "hard",
+    "question": "Which element can improve accessibility for tables by grouping header content?",
+    "options": ["<thead>", "<group>", "<headers>", "<caption> only"],
+    "answerIndex": 0,
+    "explanation": "<thead> groups header rows; combine with th scope for better semantics."
+  },
+  {
+    "id": 183,
+    "category": "HTML",
+    "level": "hard",
+    "question": "What is the best semantic element for a short side note related to main content?",
+    "options": ["<aside>", "<article>", "<main>", "<nav>"],
+    "answerIndex": 0,
+    "explanation": "<aside> is for tangentially related content like sidebars/callouts."
+  },
+  {
+    "id": 184,
+    "category": "HTML",
+    "level": "hard",
+    "question": "Which attribute enables a form to submit files?",
+    "options": [
+      "enctype=\"multipart/form-data\"",
+      "method=\"file\"",
+      "accept=\"files\"",
+      "type=\"multipart\""
+    ],
+    "answerIndex": 0,
+    "explanation": "multipart/form-data is required when sending file inputs."
+  },
+  {
+    "id": 185,
+    "category": "HTML",
+    "level": "hard",
+    "question": "Which is correct about `<picture>`?",
+    "options": [
+      "It replaces <img>",
+      "It lets you provide multiple sources with media/type conditions",
+      "It only works for SVG",
+      "It disables lazy loading"
+    ],
+    "answerIndex": 1,
+    "explanation": "<picture> with <source> enables art direction and format switching."
+  },
+
+  {
+    "id": 186,
+    "category": "CSS",
+    "level": "hard",
+    "question": "What is the main purpose of `@media (prefers-color-scheme: dark)`?",
+    "options": [
+      "Detect screen brightness",
+      "Detect user preference for dark mode",
+      "Detect GPU type",
+      "Detect internet speed"
+    ],
+    "answerIndex": 1,
+    "explanation": "It applies styles based on user's OS/browser theme preference."
+  },
+  {
+    "id": 187,
+    "category": "CSS",
+    "level": "hard",
+    "question": "Which CSS property can reduce accidental text selection during drag interactions?",
+    "options": [
+      "user-select: none",
+      "pointer-events: none",
+      "white-space: nowrap",
+      "text-transform: none"
+    ],
+    "answerIndex": 0,
+    "explanation": "user-select controls whether text can be selected."
+  },
+  {
+    "id": 188,
+    "category": "CSS",
+    "level": "hard",
+    "question": "What does `scrollbar-gutter: stable` do (where supported)?",
+    "options": [
+      "Hides scrollbar",
+      "Reserves space for scrollbar to prevent layout shift",
+      "Changes scrollbar color",
+      "Makes scrollbar thicker"
+    ],
+    "answerIndex": 1,
+    "explanation": "It avoids layout shift when scrollbar appears/disappears."
+  },
+  {
+    "id": 189,
+    "category": "CSS",
+    "level": "hard",
+    "question": "What is true about CSS logical properties like `margin-inline-start`?",
+    "options": [
+      "They ignore writing-mode",
+      "They adapt to direction/writing-mode (LTR/RTL, vertical)",
+      "They are deprecated",
+      "They work only in RTL"
+    ],
+    "answerIndex": 1,
+    "explanation": "Logical properties adapt to text direction and writing mode."
+  },
+  {
+    "id": 190,
+    "category": "CSS",
+    "level": "hard",
+    "question": "Which is true about `gap` in flexbox?",
+    "options": [
+      "gap works only in grid",
+      "gap works in flex and grid to space items without margins",
+      "gap breaks wrapping",
+      "gap changes item width always"
+    ],
+    "answerIndex": 1,
+    "explanation": "gap is supported in flex layouts in modern browsers and simplifies spacing."
+  },
+
+  {
+    "id": 191,
+    "category": "JavaScript",
+    "level": "hard",
+    "question": "Which API helps store responses for offline usage and request caching strategies in PWAs?",
+    "options": [
+      "Cache Storage (Cache API)",
+      "sessionStorage",
+      "History API",
+      "DOMParser"
+    ],
+    "answerIndex": 0,
+    "explanation": "Cache API stores Request/Response pairs, often used with Service Workers."
+  },
+  {
+    "id": 192,
+    "category": "JavaScript",
+    "level": "hard",
+    "question": "In Service Workers, which event is used to intercept network requests?",
+    "options": ["install", "activate", "fetch", "message"],
+    "answerIndex": 2,
+    "explanation": "The fetch event allows responding with cached/network strategies."
+  },
+  {
+    "id": 193,
+    "category": "JavaScript",
+    "level": "hard",
+    "question": "Which API is used to observe long tasks that block the main thread?",
+    "options": [
+      "PerformanceObserver (longtask)",
+      "ResizeObserver",
+      "MutationObserver",
+      "IntersectionObserver"
+    ],
+    "answerIndex": 0,
+    "explanation": "PerformanceObserver can observe long tasks (where supported) for performance monitoring."
+  },
+  {
+    "id": 194,
+    "category": "JavaScript",
+    "level": "hard",
+    "question": "What does `document.createDocumentFragment()` help with?",
+    "options": [
+      "Encrypt DOM",
+      "Batch DOM inserts to reduce reflow/repaint",
+      "Create shadow DOM",
+      "Create an iframe"
+    ],
+    "answerIndex": 1,
+    "explanation": "Fragments allow building DOM offscreen then inserting once."
+  },
+  {
+    "id": 195,
+    "category": "JavaScript",
+    "level": "hard",
+    "question": "Which is a correct way to avoid layout thrashing when reading/writing DOM?",
+    "options": [
+      "Alternate read/write repeatedly",
+      "Batch reads first, then batch writes",
+      "Use more setTimeout",
+      "Use inline styles always"
+    ],
+    "answerIndex": 1,
+    "explanation": "Batching reads then writes prevents forced synchronous layouts."
+  },
+
+  {
+    "id": 196,
+    "category": "React",
+    "level": "hard",
+    "question": "What is the main benefit of code-splitting routes in React apps?",
+    "options": [
+      "Better CSS",
+      "Smaller initial JS bundle and faster first load",
+      "No need for bundlers",
+      "Disables hydration"
+    ],
+    "answerIndex": 1,
+    "explanation": "Lazy loading route chunks reduces initial payload."
+  },
+  {
+    "id": 197,
+    "category": "React",
+    "level": "hard",
+    "question": "What is the correct way to avoid re-rendering a heavy child when parent state unrelated changes?",
+    "options": [
+      "Put child inside useEffect",
+      "Use React.memo + stable props (useMemo/useCallback)",
+      "Use setTimeout",
+      "Use innerHTML"
+    ],
+    "answerIndex": 1,
+    "explanation": "Memoize the child and keep props stable to benefit from memoization."
+  },
+  {
+    "id": 198,
+    "category": "React",
+    "level": "hard",
+    "question": "Why can putting an object in a dependency array cause an effect to run often?",
+    "options": [
+      "Because objects are compared by reference and new object is created each render",
+      "Because React compares deeply",
+      "Because dependency arrays ignore objects",
+      "Because useEffect runs once only"
+    ],
+    "answerIndex": 0,
+    "explanation": "New object reference each render makes deps change; memoize or depend on primitives."
+  },
+  {
+    "id": 199,
+    "category": "React",
+    "level": "hard",
+    "question": "What is the purpose of `useTransition` return value `isPending`?",
+    "options": [
+      "Indicates network is offline",
+      "Indicates a transition update is ongoing so you can show a pending UI",
+      "Indicates component is unmounted",
+      "Indicates props changed"
+    ],
+    "answerIndex": 1,
+    "explanation": "isPending helps show loading states during non-urgent transitions."
+  },
+  {
+    "id": 200,
+    "category": "React",
+    "level": "hard",
+    "question": "What is a common cause of memory leaks in React apps?",
+    "options": [
+      "Using JSX",
+      "Not cleaning up timers/subscriptions in effects on unmount",
+      "Using keys in lists",
+      "Using fragments"
+    ],
+    "answerIndex": 1,
+    "explanation": "Uncleared intervals/listeners can keep references alive after components unmount."
+  },
+
+  {
+    "id": 201,
+    "category": "JavaScript",
+    "level": "hard",
+    "question": "What does `Object.getOwnPropertyDescriptor(obj, 'x')` return?",
+    "options": [
+      "Only the value of x",
+      "A property descriptor (value/writable/get/set/enumerable/configurable)",
+      "All inherited properties",
+      "A deep clone of obj"
+    ],
+    "answerIndex": 1,
+    "explanation": "It returns the descriptor describing how the property is defined on the object itself."
+  },
+  {
+    "id": 202,
+    "category": "JavaScript",
+    "level": "hard",
+    "question": "What is the purpose of `Object.defineProperty()`?",
+    "options": [
+      "Define multiple objects at once",
+      "Create properties with precise descriptors (writable/enumerable/get/set)",
+      "Freeze all nested objects",
+      "Convert object to JSON"
+    ],
+    "answerIndex": 1,
+    "explanation": "It defines or modifies a property using a descriptor (including getters/setters)."
+  },
+  {
+    "id": 203,
+    "category": "JavaScript",
+    "level": "hard",
+    "question": "Which statement about getters/setters is correct?",
+    "options": [
+      "They can only exist on classes",
+      "They are data properties, not descriptors",
+      "They are accessor properties and don’t store a value directly",
+      "They work only on arrays"
+    ],
+    "answerIndex": 2,
+    "explanation": "Accessor properties use get/set functions instead of holding a direct value."
+  },
+  {
+    "id": 204,
+    "category": "JavaScript",
+    "level": "hard",
+    "question": "Which is true about `Object.seal(obj)`?",
+    "options": [
+      "Prevents any changes including value updates",
+      "Prevents adding/removing properties but allows modifying existing writable values",
+      "Deep seals nested objects automatically",
+      "Makes all properties non-enumerable"
+    ],
+    "answerIndex": 1,
+    "explanation": "Sealed objects can’t add/remove properties; existing properties may still be writable."
+  },
+  {
+    "id": 205,
+    "category": "JavaScript",
+    "level": "hard",
+    "question": "What does `Object.preventExtensions(obj)` do?",
+    "options": [
+      "Prevents modifying existing properties",
+      "Prevents adding new properties only",
+      "Deletes all properties",
+      "Makes object immutable"
+    ],
+    "answerIndex": 1,
+    "explanation": "It blocks adding new properties, but existing ones can still change (depending on descriptors)."
+  },
+  {
+    "id": 206,
+    "category": "JavaScript",
+    "level": "hard",
+    "question": "Which is true about `Map` iteration order?",
+    "options": [
+      "Random order",
+      "Sorted by key",
+      "Insertion order",
+      "Depends on engine"
+    ],
+    "answerIndex": 2,
+    "explanation": "Map preserves insertion order for iteration."
+  },
+  {
+    "id": 207,
+    "category": "JavaScript",
+    "level": "hard",
+    "question": "Which feature helps safely access deeply nested properties without throwing?",
+    "options": [
+      "Nullish coalescing",
+      "Optional chaining",
+      "Spread operator",
+      "Bitwise OR"
+    ],
+    "answerIndex": 1,
+    "explanation": "Optional chaining (`?.`) short-circuits if a reference is null/undefined."
+  },
+  {
+    "id": 208,
+    "category": "JavaScript",
+    "level": "hard",
+    "question": "What is the difference between `??` and `||`?",
+    "options": [
+      "No difference",
+      "`??` uses null/undefined only; `||` treats many falsy values (0, '', false) as fallback",
+      "`||` only checks undefined",
+      "`??` checks empty strings only"
+    ],
+    "answerIndex": 1,
+    "explanation": "Nullish coalescing only falls back for null/undefined, not for 0/''/false."
+  },
+  {
+    "id": 209,
+    "category": "JavaScript",
+    "level": "hard",
+    "question": "Which is true about `EventTarget` in the DOM?",
+    "options": [
+      "Only elements are EventTargets",
+      "Many objects like window, document, and elements implement EventTarget",
+      "EventTarget works only for click events",
+      "EventTarget is deprecated"
+    ],
+    "answerIndex": 1,
+    "explanation": "window/document/elements and more can add/remove event listeners via EventTarget."
+  },
+  {
+    "id": 210,
+    "category": "JavaScript",
+    "level": "hard",
+    "question": "What does `new URL('/a', 'https://x.com/b')` produce?",
+    "options": [
+      "https://x.com/b/a",
+      "https://x.com/a",
+      "https://x.com/b",
+      "/a"
+    ],
+    "answerIndex": 1,
+    "explanation": "A leading slash resets to origin root: https://x.com/a."
+  },
+
+  {
+    "id": 211,
+    "category": "React",
+    "level": "hard",
+    "question": "What is the main purpose of `useCallback` with dependency arrays?",
+    "options": [
+      "Memoize values",
+      "Memoize function identity between renders until deps change",
+      "Run effects earlier",
+      "Stop reconciliation"
+    ],
+    "answerIndex": 1,
+    "explanation": "useCallback returns a stable function reference until dependencies change."
+  },
+  {
+    "id": 212,
+    "category": "React",
+    "level": "hard",
+    "question": "Why can `React.memo` still re-render even if props seem unchanged?",
+    "options": [
+      "memo only works in class components",
+      "Context updates or parent forcing render can still update children, and props may be new references",
+      "memo disables hooks",
+      "memo works only with primitive props"
+    ],
+    "answerIndex": 1,
+    "explanation": "Context changes and new object/function references can trigger renders."
+  },
+  {
+    "id": 213,
+    "category": "React",
+    "level": "hard",
+    "question": "What does `useReducer` return?",
+    "options": [
+      "[state, setState]",
+      "[state, dispatch]",
+      "[dispatch, state]",
+      "Only state"
+    ],
+    "answerIndex": 1,
+    "explanation": "useReducer returns current state and a dispatch function."
+  },
+  {
+    "id": 214,
+    "category": "React",
+    "level": "hard",
+    "question": "What is the key rule when using reducers in React?",
+    "options": [
+      "Reducer can mutate state directly",
+      "Reducer should be pure (no side effects) and return next state",
+      "Reducer must be async",
+      "Reducer can call hooks"
+    ],
+    "answerIndex": 1,
+    "explanation": "Reducers should be pure functions: same input -> same output, no side effects."
+  },
+  {
+    "id": 215,
+    "category": "React",
+    "level": "hard",
+    "question": "Why is `setState({ ...state, x: 1 })` risky when multiple updates happen quickly?",
+    "options": [
+      "Spread is invalid in React",
+      "It always deep clones",
+      "It can read stale `state`; functional updates are safer",
+      "It disables batching"
+    ],
+    "answerIndex": 2,
+    "explanation": "If updates are batched, `state` could be stale; use `setState(prev => ...)`."
+  },
+  {
+    "id": 216,
+    "category": "React",
+    "level": "hard",
+    "question": "What does `key` change do to a component?",
+    "options": [
+      "Only changes DOM id",
+      "Forces React to remount it (resetting state)",
+      "Prevents unmount",
+      "Makes it memoized"
+    ],
+    "answerIndex": 1,
+    "explanation": "Changing key makes React treat it as a different instance and remount."
+  },
+  {
+    "id": 217,
+    "category": "React",
+    "level": "hard",
+    "question": "What is a correct use case for Portals?",
+    "options": [
+      "Rendering inside Shadow DOM only",
+      "Rendering modals/tooltips outside normal DOM hierarchy while keeping React tree",
+      "Replacing context",
+      "Improving CSS specificity"
+    ],
+    "answerIndex": 1,
+    "explanation": "Portals render to another DOM node but keep context/events in React tree."
+  },
+  {
+    "id": 218,
+    "category": "React",
+    "level": "hard",
+    "question": "What is the risk of updating state in `useLayoutEffect` unnecessarily?",
+    "options": [
+      "It never runs",
+      "It can block paint and cause visible jank",
+      "It disables Strict Mode",
+      "It prevents hydration"
+    ],
+    "answerIndex": 1,
+    "explanation": "Layout effects run before paint; extra state updates can delay painting."
+  },
+  {
+    "id": 219,
+    "category": "React",
+    "level": "hard",
+    "question": "What does `useRef` NOT do?",
+    "options": [
+      "Persist value across renders",
+      "Store DOM references",
+      "Trigger re-render when `.current` changes",
+      "Hold mutable values"
+    ],
+    "answerIndex": 2,
+    "explanation": "Ref changes don’t trigger re-renders."
+  },
+  {
+    "id": 220,
+    "category": "React",
+    "level": "hard",
+    "question": "When is it appropriate to use `dangerouslySetInnerHTML`?",
+    "options": [
+      "For any string content",
+      "When rendering trusted/sanitized HTML (e.g., Markdown output) and you understand XSS risks",
+      "To improve performance always",
+      "To fix hydration"
+    ],
+    "answerIndex": 1,
+    "explanation": "It bypasses escaping; only use with sanitized/trusted HTML."
+  },
+
+  {
+    "id": 221,
+    "category": "HTML",
+    "level": "hard",
+    "question": "What does `decoding=\"async\"` on `<img>` hint?",
+    "options": [
+      "Decode image synchronously blocking render",
+      "Decode image asynchronously to avoid blocking",
+      "Disable decoding",
+      "Only for SVG"
+    ],
+    "answerIndex": 1,
+    "explanation": "It hints that the browser may decode asynchronously."
+  },
+  {
+    "id": 222,
+    "category": "HTML",
+    "level": "hard",
+    "question": "Which element is best for a progress indicator with a known value?",
+    "options": ["<meter>", "<progress>", "<input type='range'>", "<status>"],
+    "answerIndex": 1,
+    "explanation": "<progress> indicates task completion progress (0..max)."
+  },
+  {
+    "id": 223,
+    "category": "HTML",
+    "level": "hard",
+    "question": "Which is true about `<meter>`?",
+    "options": [
+      "It shows indeterminate loading",
+      "It represents a scalar measurement within a known range",
+      "It replaces CSS",
+      "It is only for forms"
+    ],
+    "answerIndex": 1,
+    "explanation": "<meter> is for measurements like disk usage, score, etc., within a range."
+  },
+  {
+    "id": 224,
+    "category": "HTML",
+    "level": "hard",
+    "question": "Which attribute is used to group related radio inputs semantically?",
+    "options": [
+      "<fieldset> with <legend>",
+      "role='radio-group'",
+      "name only",
+      "tabindex"
+    ],
+    "answerIndex": 0,
+    "explanation": "fieldset/legend provide semantic grouping and accessible context."
+  },
+  {
+    "id": 225,
+    "category": "HTML",
+    "level": "hard",
+    "question": "What is the correct use of `scope` attribute in tables?",
+    "options": [
+      "To set table width",
+      "To indicate whether a th is header for row/col",
+      "To add captions",
+      "To merge cells"
+    ],
+    "answerIndex": 1,
+    "explanation": "scope helps screen readers understand header relationships in tables."
+  },
+
+  {
+    "id": 226,
+    "category": "CSS",
+    "level": "hard",
+    "question": "What does `display: contents` do?",
+    "options": [
+      "Hides the element and its children",
+      "Element box is removed, but children participate as if they were direct children of parent",
+      "Makes element inline",
+      "Creates a stacking context"
+    ],
+    "answerIndex": 1,
+    "explanation": "The element’s own box disappears; children remain in layout."
+  },
+  {
+    "id": 227,
+    "category": "CSS",
+    "level": "hard",
+    "question": "Which CSS feature allows scoping styles to a component-like boundary (experimental/modern)?",
+    "options": ["@scope", "@import", ":global()", "@keyframes"],
+    "answerIndex": 0,
+    "explanation": "@scope provides scoped styling rules within a boundary (support varies)."
+  },
+  {
+    "id": 228,
+    "category": "CSS",
+    "level": "hard",
+    "question": "What does `:focus-visible` target?",
+    "options": [
+      "Any focused element always",
+      "Only elements focused by mouse",
+      "Elements that should show focus ring (typically keyboard focus)",
+      "Only inputs"
+    ],
+    "answerIndex": 2,
+    "explanation": "It shows focus styles only when they are likely helpful (keyboard navigation)."
+  },
+  {
+    "id": 229,
+    "category": "CSS",
+    "level": "hard",
+    "question": "What is the purpose of `color-scheme` in CSS?",
+    "options": [
+      "Changes text color only",
+      "Tells UA which color themes to use for form controls/scrollbars",
+      "Replaces prefers-color-scheme",
+      "Controls gradients"
+    ],
+    "answerIndex": 1,
+    "explanation": "It hints supported schemes so built-in UI can match light/dark themes."
+  },
+  {
+    "id": 230,
+    "category": "CSS",
+    "level": "hard",
+    "question": "Which property is most directly related to subpixel text rendering issues during transforms?",
+    "options": [
+      "font-kerning",
+      "transform",
+      "backface-visibility",
+      "text-rendering"
+    ],
+    "answerIndex": 2,
+    "explanation": "backface-visibility can help reduce flicker during 3D transforms in some cases."
+  },
+
+  {
+    "id": 231,
+    "category": "JavaScript",
+    "level": "hard",
+    "question": "Which API lets you create and control browser history entries without reloading?",
+    "options": [
+      "History API (pushState/replaceState)",
+      "Cache API",
+      "Clipboard API",
+      "WebRTC"
+    ],
+    "answerIndex": 0,
+    "explanation": "pushState/replaceState update URL and state without full reload."
+  },
+  {
+    "id": 232,
+    "category": "JavaScript",
+    "level": "hard",
+    "question": "What does `crypto.getRandomValues()` provide?",
+    "options": [
+      "Pseudo-random numbers like Math.random",
+      "Cryptographically strong random values",
+      "UUIDs only",
+      "A password hash"
+    ],
+    "answerIndex": 1,
+    "explanation": "It generates cryptographically secure random bytes."
+  },
+  {
+    "id": 233,
+    "category": "JavaScript",
+    "level": "hard",
+    "question": "Which is true about `TextEncoder` and `TextDecoder`?",
+    "options": [
+      "They only work with UTF-16",
+      "They convert between strings and Uint8Array (bytes), commonly UTF-8",
+      "They parse HTML",
+      "They compress files"
+    ],
+    "answerIndex": 1,
+    "explanation": "They encode/decode strings to/from byte arrays (UTF-8 by default)."
+  },
+  {
+    "id": 234,
+    "category": "JavaScript",
+    "level": "hard",
+    "question": "Which API is used to observe when a resource (img/script) loading causes layout shifts (CLS debugging)?",
+    "options": [
+      "PerformanceObserver (layout-shift)",
+      "ResizeObserver",
+      "MutationObserver",
+      "IntersectionObserver"
+    ],
+    "answerIndex": 0,
+    "explanation": "PerformanceObserver can observe layout-shift entries (where supported) for CLS analysis."
+  },
+  {
+    "id": 235,
+    "category": "JavaScript",
+    "level": "hard",
+    "question": "What is the output type of `document.querySelectorAll()`?",
+    "options": ["Array", "NodeList", "HTMLCollection", "Map"],
+    "answerIndex": 1,
+    "explanation": "querySelectorAll returns a static NodeList (not live)."
+  },
+
+  {
+    "id": 236,
+    "category": "React",
+    "level": "hard",
+    "question": "What is the purpose of `Profiler` in React?",
+    "options": [
+      "Secure your app",
+      "Measure rendering performance (commit times) for components",
+      "Prevent re-renders",
+      "Replace memo"
+    ],
+    "answerIndex": 1,
+    "explanation": "React Profiler helps measure how often and how long components render."
+  },
+  {
+    "id": 237,
+    "category": "React",
+    "level": "hard",
+    "question": "What is the recommended pattern for sharing logic between components today?",
+    "options": ["Mixins", "HOCs only", "Custom hooks", "Inheritance"],
+    "answerIndex": 2,
+    "explanation": "Custom hooks are the modern primary way to reuse stateful logic."
+  },
+  {
+    "id": 238,
+    "category": "React",
+    "level": "hard",
+    "question": "Why can `useEffect` cleanup run before the next effect executes?",
+    "options": [
+      "Because cleanup runs only on unmount",
+      "Because React runs cleanup for the previous effect before applying the next one when deps change",
+      "Because cleanup is async only",
+      "Because Strict Mode disables cleanup"
+    ],
+    "answerIndex": 1,
+    "explanation": "When dependencies change, React cleans up old effect then runs the new effect."
+  },
+  {
+    "id": 239,
+    "category": "React",
+    "level": "hard",
+    "question": "What is the difference between `useMemo` and `React.memo`?",
+    "options": [
+      "They are identical",
+      "useMemo memoizes a value; React.memo memoizes a component render based on props",
+      "React.memo memoizes values; useMemo memoizes components",
+      "Both only work in class components"
+    ],
+    "answerIndex": 1,
+    "explanation": "useMemo caches computed values; React.memo prevents re-render when props are equal."
+  },
+  {
+    "id": 240,
+    "category": "React",
+    "level": "hard",
+    "question": "What can cause `useMemo` to give little/no benefit?",
+    "options": [
+      "Expensive computation",
+      "Cheap computation where memo overhead outweighs compute",
+      "Stable dependencies",
+      "Using primitives"
+    ],
+    "answerIndex": 1,
+    "explanation": "Memoization itself has cost; for cheap computations it may be slower."
+  },
+
+  {
+    "id": 241,
+    "category": "HTML",
+    "level": "hard",
+    "question": "Which attribute hints the browser to preload a resource needed soon?",
+    "options": [
+      "rel=\"preload\"",
+      "rel=\"nofollow\"",
+      "rel=\"author\"",
+      "rel=\"prev\""
+    ],
+    "answerIndex": 0,
+    "explanation": "preload fetches resources early with an as/type hint."
+  },
+  {
+    "id": 242,
+    "category": "HTML",
+    "level": "hard",
+    "question": "What does `rel=\"preconnect\"` do?",
+    "options": [
+      "Preloads the whole page",
+      "Establishes early connections (DNS/TCP/TLS) to an origin",
+      "Blocks third-party requests",
+      "Disables caching"
+    ],
+    "answerIndex": 1,
+    "explanation": "Preconnect warms up the connection to reduce latency."
+  },
+  {
+    "id": 243,
+    "category": "HTML",
+    "level": "hard",
+    "question": "Which is true about `<script type=\"module\">`?",
+    "options": [
+      "Runs in global scope like classic scripts",
+      "Is deferred by default and uses module scope",
+      "Cannot use import/export",
+      "Blocks parsing more than normal script"
+    ],
+    "answerIndex": 1,
+    "explanation": "Module scripts are deferred by default and have their own scope."
+  },
+  {
+    "id": 244,
+    "category": "HTML",
+    "level": "hard",
+    "question": "Which attribute is used for Subresource Integrity on scripts/styles?",
+    "options": ["integrity", "nonce", "crossorigin", "referrerpolicy"],
+    "answerIndex": 0,
+    "explanation": "integrity lets the browser verify the fetched resource hash."
+  },
+  {
+    "id": 245,
+    "category": "HTML",
+    "level": "hard",
+    "question": "What does the `nonce` attribute on `<script>` help with?",
+    "options": [
+      "Caching images",
+      "Allowing inline scripts under a strict CSP when the nonce matches",
+      "Making scripts async",
+      "Preventing CORS"
+    ],
+    "answerIndex": 1,
+    "explanation": "Nonce works with CSP to allow only scripts with matching nonce to execute."
+  },
+
+  {
+    "id": 246,
+    "category": "CSS",
+    "level": "hard",
+    "question": "What does `@property` in CSS enable (where supported)?",
+    "options": [
+      "Declaring CSS variables with types/inheritance to allow animation",
+      "Importing properties from other files",
+      "Defining HTML attributes",
+      "Adding vendor prefixes automatically"
+    ],
+    "answerIndex": 0,
+    "explanation": "@property registers custom properties for better interpolation and animation."
+  },
+  {
+    "id": 247,
+    "category": "CSS",
+    "level": "hard",
+    "question": "Which is true about animating `transform` vs `top/left`?",
+    "options": [
+      "top/left is always faster",
+      "transform is usually cheaper and avoids layout reflow",
+      "transform always triggers layout",
+      "They are identical in performance"
+    ],
+    "answerIndex": 1,
+    "explanation": "Transform animations typically avoid layout and are more performant."
+  },
+  {
+    "id": 248,
+    "category": "CSS",
+    "level": "hard",
+    "question": "What does `object-fit: cover` do for images/videos?",
+    "options": [
+      "Stretches to fit without cropping",
+      "Crops while preserving aspect ratio to fill the box",
+      "Adds blur background",
+      "Disables resizing"
+    ],
+    "answerIndex": 1,
+    "explanation": "cover fills the container, cropping overflow while keeping aspect ratio."
+  },
+  {
+    "id": 249,
+    "category": "CSS",
+    "level": "hard",
+    "question": "What is `currentColor` in CSS?",
+    "options": [
+      "Always black",
+      "The computed value of the element’s `color` property",
+      "A random theme color",
+      "Only works for borders"
+    ],
+    "answerIndex": 1,
+    "explanation": "currentColor resolves to the element's current text color."
+  },
+  {
+    "id": 250,
+    "category": "CSS",
+    "level": "hard",
+    "question": "Which CSS feature helps choose different image resources based on device pixel ratio?",
+    "options": [
+      "srcset in HTML",
+      "background-size",
+      "image-set()",
+      "clip-path"
+    ],
+    "answerIndex": 2,
+    "explanation": "CSS image-set() can provide multiple resolutions for background images."
+  },
+
+  {
+    "id": 251,
+    "category": "JavaScript",
+    "level": "hard",
+    "question": "What does `AbortSignal.timeout(ms)` do (where supported)?",
+    "options": [
+      "Sleeps the thread",
+      "Creates a signal that aborts automatically after ms",
+      "Retries fetch after ms",
+      "Caches requests for ms"
+    ],
+    "answerIndex": 1,
+    "explanation": "It produces an AbortSignal that aborts after a timeout duration."
+  },
+  {
+    "id": 252,
+    "category": "JavaScript",
+    "level": "hard",
+    "question": "Which API can persist large binary data efficiently in the browser?",
+    "options": ["Cookies", "IndexedDB", "sessionStorage", "History state only"],
+    "answerIndex": 1,
+    "explanation": "IndexedDB can store Blobs/ArrayBuffers and large structured data."
+  },
+  {
+    "id": 253,
+    "category": "JavaScript",
+    "level": "hard",
+    "question": "What does `document.visibilityState` help with?",
+    "options": [
+      "Detect if user is logged in",
+      "Detect whether the page is visible/hidden to optimize work",
+      "Detect network speed",
+      "Detect screen size"
+    ],
+    "answerIndex": 1,
+    "explanation": "Page Visibility API helps pause timers/analytics when tab is hidden."
+  },
+  {
+    "id": 254,
+    "category": "JavaScript",
+    "level": "hard",
+    "question": "Which event fires when the document visibility changes?",
+    "options": ["blur", "focus", "visibilitychange", "pagehide"],
+    "answerIndex": 2,
+    "explanation": "visibilitychange is fired by the Page Visibility API."
+  },
+  {
+    "id": 255,
+    "category": "JavaScript",
+    "level": "hard",
+    "question": "What is the benefit of `IntersectionObserver` over scroll event polling?",
+    "options": [
+      "It runs only on the server",
+      "It is more efficient and avoids per-scroll handler work",
+      "It prevents layout shifts",
+      "It disables repaint"
+    ],
+    "answerIndex": 1,
+    "explanation": "It’s optimized by the browser and reduces main-thread work vs scroll handlers."
+  },
+
+  {
+    "id": 256,
+    "category": "React",
+    "level": "hard",
+    "question": "Why can `useEffect` with `fetch` cause setting state on an unmounted component?",
+    "options": [
+      "fetch stops automatically on unmount",
+      "Component may unmount before request resolves; you must cancel/ignore result",
+      "React blocks network requests",
+      "This never happens"
+    ],
+    "answerIndex": 1,
+    "explanation": "AbortController or an ignore flag prevents updating state after unmount."
+  },
+  {
+    "id": 257,
+    "category": "React",
+    "level": "hard",
+    "question": "What is the best fix for stale state inside an async function triggered by an effect?",
+    "options": [
+      "Use setTimeout",
+      "Use functional updates or refs to latest state",
+      "Disable batching",
+      "Use more dependencies randomly"
+    ],
+    "answerIndex": 1,
+    "explanation": "Functional updates/refs avoid stale closures for async completions."
+  },
+  {
+    "id": 258,
+    "category": "React",
+    "level": "hard",
+    "question": "What does `useMemo(() => fn, deps)` return?",
+    "options": [
+      "It runs fn later",
+      "It returns the result of calling fn (memoized), not the function",
+      "It always returns a Promise",
+      "It memoizes component renders"
+    ],
+    "answerIndex": 1,
+    "explanation": "useMemo memoizes the computed value, which is fn’s return value."
+  },
+  {
+    "id": 259,
+    "category": "React",
+    "level": "hard",
+    "question": "Which technique helps avoid re-render storms from context?",
+    "options": [
+      "Put everything in one big context value object",
+      "Split contexts by concern and memoize values/selectors",
+      "Use inline objects always",
+      "Avoid providers"
+    ],
+    "answerIndex": 1,
+    "explanation": "Splitting contexts + memoizing values reduces unnecessary consumer updates."
+  },
+  {
+    "id": 260,
+    "category": "React",
+    "level": "hard",
+    "question": "What does it mean that React state updates are 'asynchronous'?",
+    "options": [
+      "They run in a web worker",
+      "They are scheduled and may be batched, not applied immediately",
+      "They always happen after 1 second",
+      "They only happen on next page load"
+    ],
+    "answerIndex": 1,
+    "explanation": "React schedules updates and may batch them, so reading immediately can be unreliable."
+  },
+
+  {
+    "id": 261,
+    "category": "HTML",
+    "level": "hard",
+    "question": "Which attribute helps ensure an `<img>` reserves space and reduces layout shift?",
+    "options": ["alt", "width and height", "referrerpolicy", "crossorigin"],
+    "answerIndex": 1,
+    "explanation": "Providing width/height lets browser calculate aspect ratio and reserve space."
+  },
+  {
+    "id": 262,
+    "category": "HTML",
+    "level": "hard",
+    "question": "Which tag best provides a title for an SVG for accessibility?",
+    "options": ["<label>", "<title> inside SVG", "<caption>", "<summary>"],
+    "answerIndex": 1,
+    "explanation": "An SVG <title> provides an accessible name for the SVG graphic."
+  },
+  {
+    "id": 263,
+    "category": "HTML",
+    "level": "hard",
+    "question": "What does `aria-expanded` communicate?",
+    "options": [
+      "Element is disabled",
+      "Whether a control expands/collapses related content",
+      "Element is hidden from screen readers",
+      "The element has focus"
+    ],
+    "answerIndex": 1,
+    "explanation": "aria-expanded indicates expanded/collapsed state (menus, accordions)."
+  },
+  {
+    "id": 264,
+    "category": "HTML",
+    "level": "hard",
+    "question": "Which attribute is used to declare the language of a document or subtree?",
+    "options": ["dir", "lang", "charset", "hreflang"],
+    "answerIndex": 1,
+    "explanation": "lang helps screen readers, hyphenation, spellcheck, and translation."
+  },
+  {
+    "id": 265,
+    "category": "HTML",
+    "level": "hard",
+    "question": "Which is correct about `role=\"presentation\"`?",
+    "options": [
+      "It improves SEO",
+      "It removes semantics from an element for assistive tech (used carefully)",
+      "It makes element clickable",
+      "It forces high contrast"
+    ],
+    "answerIndex": 1,
+    "explanation": "Presentation role strips semantic meaning; don’t remove needed semantics."
+  },
+
+  {
+    "id": 266,
+    "category": "CSS",
+    "level": "hard",
+    "question": "What does `contain-intrinsic-size` do with `content-visibility: auto`?",
+    "options": [
+      "Sets real size always",
+      "Provides a placeholder size to prevent layout jumps before content renders",
+      "Disables containment",
+      "Forces scrolling"
+    ],
+    "answerIndex": 1,
+    "explanation": "It reserves an estimated size so layout doesn’t jump when content becomes visible."
+  },
+  {
+    "id": 267,
+    "category": "CSS",
+    "level": "hard",
+    "question": "Which CSS property most directly controls the rendering area of a background image?",
+    "options": [
+      "background-origin",
+      "background-clip",
+      "background-size",
+      "background-repeat"
+    ],
+    "answerIndex": 1,
+    "explanation": "background-clip defines whether background paints to border/padding/content box."
+  },
+  {
+    "id": 268,
+    "category": "CSS",
+    "level": "hard",
+    "question": "What does `filter: blur(10px)` usually trigger compared to `transform`?",
+    "options": [
+      "No extra cost",
+      "It often triggers heavier painting/compositing work",
+      "It always avoids repaint",
+      "It disables GPU"
+    ],
+    "answerIndex": 1,
+    "explanation": "Filters can be expensive; they often require extra rendering work."
+  },
+  {
+    "id": 269,
+    "category": "CSS",
+    "level": "hard",
+    "question": "Which CSS function helps define fluid typography without media queries?",
+    "options": ["min()", "max()", "clamp()", "var()"],
+    "answerIndex": 2,
+    "explanation": "clamp enables min/preferred/max values for responsive font sizing."
+  },
+  {
+    "id": 270,
+    "category": "CSS",
+    "level": "hard",
+    "question": "What is true about `position: fixed` inside a transformed ancestor?",
+    "options": [
+      "It always fixes to viewport",
+      "It may behave like absolute relative to that ancestor",
+      "It becomes sticky",
+      "It stops receiving events"
+    ],
+    "answerIndex": 1,
+    "explanation": "Transforms can create a containing block affecting fixed positioning."
+  },
+
+  {
+    "id": 271,
+    "category": "JavaScript",
+    "level": "hard",
+    "question": "Which API helps detect network status changes (online/offline)?",
+    "options": [
+      "NetworkObserver",
+      "online/offline events + navigator.onLine",
+      "Cache API",
+      "Battery API"
+    ],
+    "answerIndex": 1,
+    "explanation": "Use `window` online/offline events and `navigator.onLine` as a hint."
+  },
+  {
+    "id": 272,
+    "category": "JavaScript",
+    "level": "hard",
+    "question": "What does the `storage` event do?",
+    "options": [
+      "Fires in the same tab whenever you call localStorage.setItem",
+      "Fires in other tabs/windows when localStorage changes",
+      "Fires only for sessionStorage",
+      "Fires only in iframes"
+    ],
+    "answerIndex": 1,
+    "explanation": "storage event is for cross-document updates (not the same tab that made the change)."
+  },
+  {
+    "id": 273,
+    "category": "JavaScript",
+    "level": "hard",
+    "question": "Which statement about `requestAnimationFrame` is correct?",
+    "options": [
+      "It runs even in background tabs at full rate",
+      "It schedules callback before next repaint, ideal for animations",
+      "It is a microtask",
+      "It guarantees 120fps"
+    ],
+    "answerIndex": 1,
+    "explanation": "rAF syncs with rendering; background tabs may throttle."
+  },
+  {
+    "id": 274,
+    "category": "JavaScript",
+    "level": "hard",
+    "question": "Which API is commonly used to throttle expensive events to once per frame?",
+    "options": [
+      "requestAnimationFrame",
+      "queueMicrotask",
+      "Promise.any",
+      "WeakSet"
+    ],
+    "answerIndex": 0,
+    "explanation": "Using rAF to batch updates ensures at most one run per frame."
+  },
+  {
+    "id": 275,
+    "category": "JavaScript",
+    "level": "hard",
+    "question": "What does `event.defaultPrevented` indicate?",
+    "options": [
+      "Event is bubbling",
+      "preventDefault() has been called successfully",
+      "Event is capturing",
+      "Listener is passive"
+    ],
+    "answerIndex": 1,
+    "explanation": "It becomes true when default action has been prevented."
+  },
+
+  {
+    "id": 276,
+    "category": "React",
+    "level": "hard",
+    "question": "What is the risk of using `useEffect` to mirror props into state?",
+    "options": [
+      "It improves correctness always",
+      "It can create double sources of truth and syncing bugs",
+      "It reduces renders",
+      "It enables SSR"
+    ],
+    "answerIndex": 1,
+    "explanation": "Mirroring props into state often causes stale or inconsistent state."
+  },
+  {
+    "id": 277,
+    "category": "React",
+    "level": "hard",
+    "question": "Which is a safe way to update state based on previous state when multiple updates happen?",
+    "options": [
+      "setState(state + 1)",
+      "setState(prev => prev + 1)",
+      "state++ then setState(state)",
+      "setState(() => state + 1)"
+    ],
+    "answerIndex": 1,
+    "explanation": "Functional updater always receives the latest queued state."
+  },
+  {
+    "id": 278,
+    "category": "React",
+    "level": "hard",
+    "question": "What happens if you omit dependencies that you use inside `useEffect`?",
+    "options": [
+      "Nothing, React auto-detects",
+      "Effect may capture stale values and behave incorrectly",
+      "Effect runs only once always",
+      "React throws build error always"
+    ],
+    "answerIndex": 1,
+    "explanation": "Missing deps can cause stale closures and bugs; prefer correct deps or refs."
+  },
+  {
+    "id": 279,
+    "category": "React",
+    "level": "hard",
+    "question": "What is a common reason to use `useRef` for timers/interval IDs?",
+    "options": [
+      "To trigger re-render on each tick",
+      "To persist mutable ID across renders without re-render",
+      "To make interval faster",
+      "To store it in localStorage"
+    ],
+    "answerIndex": 1,
+    "explanation": "Refs store mutable values without causing re-renders."
+  },
+  {
+    "id": 280,
+    "category": "React",
+    "level": "hard",
+    "question": "Why is `useEffect` not the best place for DOM measurements that must happen before paint?",
+    "options": [
+      "useEffect runs before DOM update",
+      "useEffect runs after paint; useLayoutEffect is needed for pre-paint measurements",
+      "useEffect runs on server only",
+      "useEffect disables refs"
+    ],
+    "answerIndex": 1,
+    "explanation": "useEffect is post-paint; layout measurements before paint belong in useLayoutEffect."
+  },
+
+  {
+    "id": 281,
+    "category": "HTML",
+    "level": "hard",
+    "question": "Which attribute on `<a>` is most important to prevent reverse-tabnabbing?",
+    "options": ["rel=\"nofollow\"", "rel=\"noopener\"", "download", "ping"],
+    "answerIndex": 1,
+    "explanation": "noopener prevents the new page from controlling window.opener."
+  },
+  {
+    "id": 282,
+    "category": "HTML",
+    "level": "hard",
+    "question": "Which technique is best to provide a label for a form control when the visible UI is custom?",
+    "options": [
+      "placeholder only",
+      "aria-label / aria-labelledby referencing visible text",
+      "role='label'",
+      "tabindex=0"
+    ],
+    "answerIndex": 1,
+    "explanation": "Use aria-label or aria-labelledby to ensure an accessible name."
+  },
+  {
+    "id": 283,
+    "category": "HTML",
+    "level": "hard",
+    "question": "What does `autocomplete=\"cc-number\"` indicate?",
+    "options": [
+      "Disable autofill",
+      "Hint the browser the field expects credit card number",
+      "Encrypt the input",
+      "Validate Luhn automatically always"
+    ],
+    "answerIndex": 1,
+    "explanation": "Autocomplete tokens hint the type of data for autofill."
+  },
+  {
+    "id": 284,
+    "category": "HTML",
+    "level": "hard",
+    "question": "Which is correct about `aria-invalid=\"true\"`?",
+    "options": [
+      "Prevents form submission automatically",
+      "Marks the field as invalid for assistive tech; you still implement validation behavior",
+      "Hides the field",
+      "Adds red border automatically"
+    ],
+    "answerIndex": 1,
+    "explanation": "ARIA communicates state; styling/behavior is still up to you."
+  },
+  {
+    "id": 285,
+    "category": "HTML",
+    "level": "hard",
+    "question": "Which attribute should you use to link an input to an error message element by id?",
+    "options": [
+      "aria-errormessage",
+      "aria-describedby",
+      "data-error",
+      "role='alert' only"
+    ],
+    "answerIndex": 1,
+    "explanation": "aria-describedby references descriptive/help/error text (common pattern)."
+  },
+
+  {
+    "id": 286,
+    "category": "CSS",
+    "level": "hard",
+    "question": "Which property helps reduce painting area by limiting what gets repainted (advanced optimization)?",
+    "options": [
+      "contain: paint",
+      "float: left",
+      "clear: both",
+      "white-space: nowrap"
+    ],
+    "answerIndex": 0,
+    "explanation": "paint containment can isolate paint work to an element."
+  },
+  {
+    "id": 287,
+    "category": "CSS",
+    "level": "hard",
+    "question": "What does `transform: translateZ(0)` commonly do (side effect)?",
+    "options": [
+      "Disables GPU",
+      "May promote element to its own compositing layer (can improve animation, but overuse costs memory)",
+      "Makes element invisible",
+      "Fixes all layout issues"
+    ],
+    "answerIndex": 1,
+    "explanation": "It may trigger layer promotion; use only when needed."
+  },
+  {
+    "id": 288,
+    "category": "CSS",
+    "level": "hard",
+    "question": "Which is true about `grid-auto-flow: dense`?",
+    "options": [
+      "It disables grid gaps",
+      "It can backfill holes by reordering auto-placed items visually",
+      "It turns grid into flexbox",
+      "It prevents wrapping"
+    ],
+    "answerIndex": 1,
+    "explanation": "Dense packing may change visual order from source order."
+  },
+  {
+    "id": 289,
+    "category": "CSS",
+    "level": "hard",
+    "question": "What is a common accessibility concern with removing outlines on focus?",
+    "options": [
+      "It improves keyboard navigation",
+      "It harms keyboard users by hiding focus indicator",
+      "It speeds up performance",
+      "It reduces bundle size"
+    ],
+    "answerIndex": 1,
+    "explanation": "Keyboard users need visible focus; use :focus-visible styling instead of removing."
+  },
+  {
+    "id": 290,
+    "category": "CSS",
+    "level": "hard",
+    "question": "What does `scroll-behavior: smooth` do?",
+    "options": [
+      "Smooths all animations",
+      "Smooth scrolling for in-page navigation/scroll APIs (where supported)",
+      "Improves FPS",
+      "Prevents user scrolling"
+    ],
+    "answerIndex": 1,
+    "explanation": "It enables smooth scrolling for programmatic and anchor navigations."
+  },
+
+  {
+    "id": 291,
+    "category": "JavaScript",
+    "level": "hard",
+    "question": "What is the main use of `BroadcastChannel`?",
+    "options": [
+      "Server push notifications",
+      "Communication between browsing contexts (tabs/windows/workers) of same origin",
+      "Encrypt messages",
+      "Share cookies across domains"
+    ],
+    "answerIndex": 1,
+    "explanation": "BroadcastChannel allows same-origin tabs/windows to message each other."
+  },
+  {
+    "id": 292,
+    "category": "JavaScript",
+    "level": "hard",
+    "question": "Which API would you use to monitor memory pressure or exact JS heap size reliably in all browsers?",
+    "options": [
+      "performance.memory",
+      "There is no reliable cross-browser standard for exact heap metrics",
+      "navigator.deviceMemory",
+      "console.memory"
+    ],
+    "answerIndex": 1,
+    "explanation": "Exact heap metrics aren’t standardized across browsers; availability varies."
+  },
+  {
+    "id": 293,
+    "category": "JavaScript",
+    "level": "hard",
+    "question": "Which statement about `navigator.deviceMemory` is correct?",
+    "options": [
+      "Gives exact RAM in bytes",
+      "Gives an approximate device memory in GB (hint), not exact",
+      "Works only in Node.js",
+      "Is deprecated everywhere"
+    ],
+    "answerIndex": 1,
+    "explanation": "deviceMemory is an approximate hint used for adaptive loading strategies."
+  },
+  {
+    "id": 294,
+    "category": "JavaScript",
+    "level": "hard",
+    "question": "What does `performance.now()` return?",
+    "options": [
+      "UNIX timestamp",
+      "High-resolution time in ms relative to a page-specific origin",
+      "Server time",
+      "Only integer milliseconds"
+    ],
+    "answerIndex": 1,
+    "explanation": "It gives a high-resolution, monotonic time relative to time origin."
+  },
+  {
+    "id": 295,
+    "category": "JavaScript",
+    "level": "hard",
+    "question": "What is the purpose of `rel=\"prefetch\"`?",
+    "options": [
+      "Fetch resource needed for current navigation with highest priority",
+      "Speculatively fetch resource for likely future navigation at low priority",
+      "Disable caching",
+      "Force DNS only"
+    ],
+    "answerIndex": 1,
+    "explanation": "Prefetch is low-priority speculative fetching for future use."
+  },
+  {
+    "id": 296,
+    "category": "React",
+    "level": "hard",
+    "question": "Why is mutating an array in React state directly (e.g., push) a bug risk?",
+    "options": [
+      "Because arrays are immutable in JS",
+      "Because React may not detect changes if reference doesn’t change",
+      "Because push is slow",
+      "Because it breaks CSS"
+    ],
+    "answerIndex": 1,
+    "explanation": "React state updates rely on new references; mutating can keep same reference and skip updates."
+  },
+  {
+    "id": 297,
+    "category": "React",
+    "level": "hard",
+    "question": "What is the common solution to avoid recreating a stable event handler that needs latest state?",
+    "options": [
+      "Use inline function always",
+      "Store latest state in a ref and read it inside handler",
+      "Disable memo",
+      "Use JSON.stringify in deps"
+    ],
+    "answerIndex": 1,
+    "explanation": "A ref can hold latest value without changing handler identity."
+  },
+  {
+    "id": 298,
+    "category": "CSS",
+    "level": "hard",
+    "question": "Which CSS feature can style elements based on their position inside the viewport during scrolling (modern)?",
+    "options": ["scroll-timeline / view-timeline", "float", "clear", "outline"],
+    "answerIndex": 0,
+    "explanation": "Scroll-driven animations use scroll-timeline/view-timeline (support varies)."
+  },
+  {
+    "id": 299,
+    "category": "HTML",
+    "level": "hard",
+    "question": "Which attribute helps ensure an input is announced as required by assistive technologies?",
+    "options": [
+      "required",
+      "aria-required=\"true\"",
+      "Both required and aria-required are used; required often sufficient",
+      "placeholder=\"required\""
+    ],
+    "answerIndex": 2,
+    "explanation": "Native `required` usually communicates; aria-required can be used for custom widgets."
+  },
+  {
+    "id": 300,
+    "category": "React",
+    "level": "hard",
+    "question": "What is the safest way to update state when the next state depends on previous state in React?",
+    "options": [
+      "setState(nextStateObject)",
+      "setState(prev => computeNext(prev))",
+      "state = nextState",
+      "mutate state and return it"
+    ],
+    "answerIndex": 1,
+    "explanation": "Functional updates avoid stale values and work correctly with batching."
+  }
+]

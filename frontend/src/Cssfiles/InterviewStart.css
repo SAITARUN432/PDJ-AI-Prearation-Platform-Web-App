@@ -1,0 +1,118 @@
+.mainDiv {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 16px;
+  padding: 12px;
+  margin-bottom: 12px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+.secondMainDiv {
+  border-left: "1px solid #eee";
+  padding-left: 12;
+}
+.interviewStartMainDiv {
+  padding: 10px;
+  margin: 0px 10px;
+}
+.interviewStartMainDiv2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+}
+.interviewStartMainDivh2 {
+  font-size: 45px;
+}
+.interviewStartMainDivp {
+  font-size: 25px;
+}
+.interviewStartMainDivButton {
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 12px;
+  border: none;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+.interviewStartMainDivButton:hover {
+  cursor: pointer;
+  z-index: 1;
+  transform: translateY(-3px);
+  box-shadow: 0 0 15px rgba(87, 80, 217, 0.8);
+}
+.interviewStartMainInput {
+  margin-right: 5px;
+  cursor: pointer;
+  accent-color: #4f46e5;
+}
+div.time {
+  position: fixed;
+  top: 60px;
+  right: 2rem;
+  font-size: 38px;
+}
+/* ✅ Mobile */
+@media (max-width: 768px) {
+  .mainDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .secondMainDiv {
+    border: none;
+    padding-left: 0px;
+  }
+  .interviewStartMainDiv {
+    padding: 12px;
+    margin: 0 12px;
+  }
+
+  .interviewStartMainDiv2 {
+    gap: 10px;
+    text-align: center;
+  }
+
+  .interviewStartMainDivh2 {
+    font-size: 28px;
+    line-height: 1.2;
+  }
+
+  .interviewStartMainDivp {
+    font-size: 16px;
+    line-height: 1.4;
+  }
+
+  .interviewStartMainDivButton {
+    width: 100%;
+    max-width: 320px;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 10px;
+  }
+
+  div.time {
+    top: 70px; /* below navbar */
+    right: 12px;
+    font-size: 22px;
+    z-index: 2000;
+  }
+}
+
+/* ✅ Very small phones */
+@media (max-width: 400px) {
+  .interviewStartMainDivh2 {
+    font-size: 24px;
+  }
+
+  .interviewStartMainDivp {
+    font-size: 14px;
+  }
+
+  div.time {
+    font-size: 20px;
+  }
+}
